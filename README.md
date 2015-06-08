@@ -1,4 +1,4 @@
-jetstrap-docs
+thingplus-docs
 =============
 
-Jetstrap Documentation and Tutorials
+Thingplus Documentation and Tutorials
