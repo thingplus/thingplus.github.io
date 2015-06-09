@@ -1,4 +1,4 @@
-thingplus-docs
+thingplus help docs
 =============
 
-Thingplus Documentation and Tutorials
+Thingplus Help Documentations
