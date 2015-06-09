@@ -1,13 +1,16 @@
 ---
 layout: default
-title: Welcome
 ---
 
-<div class="page-header">
-  <h1>Thing+ Docs</h1>
-</div>
-Welcome to the Thingplus documentation, tutorials, and help site! We are constantly adding content, so check back often.
+{% for post in site.posts %}
+<article class="post">
 
-<p>
-To get started, check out the links on the left.
-</p>
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+  <div class="entry">
+    {{ post.excerpt }}
+  </div>
+
+  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+</article>
+{% endfor %}

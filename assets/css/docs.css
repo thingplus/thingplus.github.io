@@ -4,6 +4,10 @@ body {
   font-family: "Apple SD Gothic Neo", NanumGothic, "Open Sans", sans-serif;
 }
 
+/*a {*/
+  /*text-decoration: none !important;*/
+/*}*/
+
 .navbar-inner {
   padding: 7px 0px;
   /*padding: 7px;*/
@@ -30,9 +34,6 @@ body {
 }
 .navbar .nav.pull-right a:hover {
   color: #fff;
-}
-.navbar .nav.pull-right a.orange-button {
-  display: inline-block;
 }
 
 #menu {
@@ -75,21 +76,6 @@ body {
 #menu li.active a {
   background-color: #ffC107;
   color: #fff;
-}
-
-.orange-button {
-  display: inline-block;
-  line-height: 20px;
-  border-radius: 20px;
-  vertical-align: middle;
-  color: #ffffff !important;
-  background-image: linear-gradient(90deg, #dc534b 0%, #d96f5f 100%);
-  background-image: -moz-linear-gradient(90deg, #dc534b 0%, #d96f5f 100%);
-  background-image: -webkit-linear-gradient(90deg, #dc534b 0%, #d96f5f 100%);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .2)
-  padding: 0px 10px;
-}
-.orange-button {
 }
 
 @media (max-width: 979px) {
