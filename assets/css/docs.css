@@ -8,9 +8,22 @@ body {
   /*text-decoration: none !important;*/
 /*}*/
 
+a:hover,
+a:focus {
+    color: #4183C4;
+    text-decoration: underline;
+}
+a,
+a:visited {
+    text-decoration: none !important;
+}
+
+.navbar {
+    border: 0px;
+}
+
 .navbar-inner {
   padding: 7px 0px;
-  /*padding: 7px;*/
   background-image: none;
   background-color: #212836;
   box-shadow: none !important;
