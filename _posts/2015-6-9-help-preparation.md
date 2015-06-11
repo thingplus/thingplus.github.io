@@ -6,8 +6,16 @@ published: true
 ---
 
 ---
-### 시작하기전에
+* 시작하기 전에
+* 용어집 
+* 주요기능
+* 어디서든 활용하기
+* 사례
+
+---
+### 시작하기 전에
 <br>
+![](/assets/1_thingplus.png)
 #### [Thing+란?](http://www.daliworks.net/?page_id=72)
   * 나만의 IoT 서비스를 구축 수 있는 클라우드 서비스입니다.
   * Thing+에 가입만 하면 바로 나만의 IoT 서비스가 만들어 집니다.
