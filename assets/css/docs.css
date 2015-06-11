@@ -4,6 +4,10 @@ body {
   font-family: "Apple SD Gothic Neo", NanumGothic, "Open Sans", sans-serif;
 }
 
+.container {
+  max-width: none;
+}
+
 /*a {*/
   /*text-decoration: none !important;*/
 /*}*/
