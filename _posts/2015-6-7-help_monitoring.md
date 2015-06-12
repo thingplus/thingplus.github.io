@@ -6,15 +6,19 @@ published: true
 ---
 
 ---
-* 대시보드
-* 타임라인
-* 센서목록
-* 센서분석
-* 태그관리 
-* 규칙관리
+대시보드, 규칙 및 타임라인, 데이터 분석 등의 주요 기능들에 대한 가이드 입니다.
+
+* [대시보드](#id-dashbaord)
+* [타임라인](#id-timeline)
+* [센서목록](#id-sensorlist)
+* [센서분석](#id-analysis)
+* [태그관리](#id-tag)
+* [규칙관리](#id-rule)
+
 
 ---
-### 대시보드
+<div id='id-dashboard'/>
+### **대시보드**
 대시보드는 위젯으로 구성된 모니터링화면입니다.
 ![](/assets/3_dashboard.png)
 
@@ -61,7 +65,8 @@ published: true
 <br>
 
 ---
-### 이벤트 타임라인
+<div id='id-timeline'/>
+### **타임라인**
 ![](/assets/3_timeline.png)
 
 #### 타임라인 사용하기
@@ -83,7 +88,8 @@ published: true
 <br>
 
 ---
-### 센서목록
+<div id='id-sensorlist'/>
+### **센서목록**
 내가 가진 센서목록을 한눈에 볼 수 있습니다. 상단의 탭메뉴를 눌러 게이트웨이 및 태그, 지도뷰로 확인할 수도 있습니다.
 ![](/assets/3_sensorlist.png)
 
@@ -104,7 +110,7 @@ published: true
 <br>
 
 #### 지도 기준 목록
-위치정보를 가진 게이트웨이를 지도 뷰로 확인할 수 있습니다. 위치정보 입력은 [게이트웨이 관리]() 페이지에서 입력할 수 있습니다.
+위치정보를 가진 게이트웨이를 지도 뷰로 확인할 수 있습니다. 위치정보 입력은 [게이트웨이 관리](/help_management/#id-gateway-management) 페이지에서 입력할 수 있습니다.
 ![](/assets/3_viewmap.png)
  
 * 지도뷰를 보고 싶은 ①게이트웨이를 선택하면, 해당 게이트웨이의 위치가 지도에 표시됩니다.
@@ -126,7 +132,8 @@ published: true
 <br>
 
 ---
-### 센서분석
+<div id='id-analysis'/>
+### **센서분석**
 센서분석페이지는 차트와 통계로 나누어져 있습니다.
 ![](/assets/3_sensoranalysis.png)
 
@@ -164,7 +171,8 @@ published: true
 <br>
 
 ---
-### 태그 관리
+<div id='id-tag'/>
+### **태그 관리**
 ![](/assets/3_m_tag0.png)
 
 #### 화면안내
@@ -190,7 +198,8 @@ published: true
 
 
 ---
-### 규칙 관리
+<div id='id-rule'/>
+### **규칙 관리**
 규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/help_rule/)를 이용해주세요. 
 ![](/assets/3_m_rule0.png)
 

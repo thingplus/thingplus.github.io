@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FAQ"
+title: "자주 묻는 질문"
 tags: help
 published: true
 ---

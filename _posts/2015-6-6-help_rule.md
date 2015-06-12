@@ -6,14 +6,17 @@ published: true
 ---
 
 ---
-* 규칙에 대하여
-* 규칙 관리
-* 규칙 만들기
-* 규칙 정보
-* 규칙 수정 및 삭제
-* 규칙 사례 따라하기 
+규칙을 생성하고 관리하는 방법에 대한 가이드입니다.
+
+* [규칙에 대하여](#id-rule-about)
+* [규칙 관리](#id-rule-management)
+* [규칙 만들기](#id-rule-creation)
+* [규칙 정보](#id-rule-info)
+* [규칙 수정 및 삭제](#id-rule-edit)
+* [규칙 사례 따라하기](#id-rule-tutorial)
 
 ---
+<div id='id-rule-about'/>
 ### 규칙에 대하여
 <br>
 #### 규칙이란?
@@ -50,6 +53,7 @@ published: true
 <br>
 
 ---
+<div id='id-rule-management'/>
 ### 규칙 관리
 현재 생성된 규칙 리스트를 볼 수 있습니다.
 
@@ -72,13 +76,14 @@ published: true
 <br>
 
 ---
+<div id='id-rule-creation'/>
 ### 규칙 만들기
 직접 규칙 만들기를 통해 가지고 있는 센서들로 규칙을 만들 수 있습니다. 또한 서비스에서 제공하는 규칙 템플릿을 이용하여 규칙을 만들수도 있습니다.
 
 <br>
 
 #### 직접 만들기
-1. 메뉴 우측의 <i class="fa fd-menu_setting"></i> 설정버튼을 눌러서 <i class="fa fd-menu_ruleManagement"></i> 규칙관리 메뉴를 클릭합니다. 규칙관리 페이지 상단의 <i class="fa fa-plus-circle"></i> Add 버튼을 눌러 <i class="fa fd-rule_creation"></i>직접 만들기를 선택합니다.
+1. 메뉴 우측의 <i class="fa fd-menu_setting"></i> 설정버튼을 눌러서 <i class="fa fd-menu_ruleManagement"></i> 규칙관리 메뉴를 클릭합니다. 규칙관리 페이지 상단의 <i class="fa fa-plus-circle"></i> 버튼을 눌러 <i class="fa fd-rule_creation"></i>직접 만들기를 선택합니다.
 2. 예제에서는 “온도가 30도 이상일 때 SMS를 보내시오” 라는 규칙을 만들어보도록 하겠습니다.
 3. ![](/assets/4_rule_trigger.png) Trigger 시작을 선택합니다.
 4. 규칙을 시작할 트리거 종류를 선택합니다. 예제에서는 <i class="fa fd-rule_trigger_temperature fa-2x" style="color: #e04937"></i>온도센서를 고르도록 하겠습니다.
@@ -105,6 +110,7 @@ published: true
 <br>
 
 ---
+<div id='id-rule-info'/>
 ### 규칙정보
 생성된 규칙의 정보를 수정할 수 있습니다. 규칙정보는 규칙관리페이지, 타임라인페이지에서 규칙이름을 선택해서 확인할 수 있습니다.
 ![](/assets/4_m_ruleinfo.png)
@@ -114,28 +120,26 @@ published: true
 
 <br>
 
-#### 규칙 수정
-언제든지 생성된 규칙은 수정이 가능합니다.
-
-* 규칙 수정하기
+<div id='id-rule-edit'/>
+#### 규칙 수정 및 삭제
+* **규칙 수정하기**
+  * 언제든지 생성된 규칙은 수정이 가능합니다.
   * 규칙정보 페이지에서 <i class="fa fa-cog"></i> 버튼을 선택합니다.
   * 규칙의 심각도를 수정할 수 있습니다.
   * 규칙의 이름과 설명을 수정할 수 있습니다.
   * 각 에이전트들의 메소드와 파라미터를 수정할 수 있습니다.
-
-<br>
-
-#### 규칙 삭제
-
-* 규칙을 삭제하면 다시 복구할 수 없습니다. 똑같은 규칙을 다시 만들고 싶다면 다시 규칙 만들기를 통해 규칙을 생성 해주세요.
-* 규칙 삭제하기
+* **규칙 삭제하기**
+  * 규칙을 삭제하면 다시 복구할 수 없습니다. 똑같은 규칙을 다시 만들고 싶다면 다시 규칙 만들기를 통해 규칙을 생성 해주세요.
   * 규칙정보 페이지에서 <i class="fa fa-cog"></i> 버튼을 선택합니다.
   * 삭제 안내 팝업을 확인하고 삭제를 합니다.
 
 <br>
 
 ---
+<div id='id-rule-tutorial'/>
 ### 규칙 사례 따라해보기
+(준비중입니다.)
+
 <br>
 
 <!---
