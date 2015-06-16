@@ -10,6 +10,7 @@ published: true
 
 * [서비스 관리자](#id-serviceadmin)
 * [일반 사용자](#id-enduser) 
+* [개발자](#id-developer) 
 
 ---
 <div id='id-serviceadmin'/>
@@ -53,6 +54,7 @@ published: true
     * 이메일을 올바르게 입력하셨습니까?
     * 스팸메일함을 확인하셨습니까?
   * 관리자의 승인 안내 이메일을 받은 후에 로그인창에 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
+
 
 <!---
 
@@ -118,3 +120,21 @@ published: true
 <!---
 * 개발자
 -->
+
+<br>
+
+---
+<div id='id-developer'/>
+### 개발자
+<br>
+
+<!---
+### 해당 서비스 사용을 위해 필요한 것
+  * {serviceName}.thingplus.net으로 회원가입
+  * 서비스 어드민의 가입승인 및 사용권한
+-->
+
+#### 하드웨어 연동 가이드
+  * [IGoT 2.1 연동 가이드 다운로드](/download/doc/ThingPlus_Guide_ko.pdf)
+
+<br>
