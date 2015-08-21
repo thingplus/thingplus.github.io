@@ -65,8 +65,8 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+#gems:
+#  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
@@ -74,3 +74,28 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+
+# Set default env for multilingual without plugin
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: ko
+      layout: default
+  -
+    scope:
+      path: _posts/en
+    values:
+      lang: en
+  -
+    scope:
+      path: _posts/ko/pages
+    values:
+      type: pages
+  -
+    scope:
+      path: _posts/en/pages
+    values:
+      type: pages
+

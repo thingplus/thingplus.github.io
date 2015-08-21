@@ -1,11 +1,10 @@
 ---
-layout: post
-title: "일반기능 사용법"
+title: 일반기능 사용법
 tags: help
 published: true
+permalink: /ko/monitoring.html
 ---
 
----
 대시보드, 규칙 및 타임라인, 데이터 분석 등의 주요 기능들에 대한 가이드 입니다.
 
 * [대시보드](#id-dashbaord)
@@ -17,7 +16,7 @@ published: true
 
 
 ---
-<div id='id-dashboard'/>
+<div id='id-dashboard'></div>
 ### **대시보드**
 대시보드는 위젯으로 구성된 모니터링화면입니다.
 ![](/assets/3_dashboard.png)
@@ -65,7 +64,7 @@ published: true
 <br>
 
 ---
-<div id='id-timeline'/>
+<div id='id-timeline'></div>
 ### **타임라인**
 ![](/assets/3_timeline.png)
 
@@ -88,7 +87,7 @@ published: true
 <br>
 
 ---
-<div id='id-sensorlist'/>
+<div id='id-sensorlist'></div>
 ### **센서목록**
 내가 가진 센서목록을 한눈에 볼 수 있습니다. 상단의 탭메뉴를 눌러 게이트웨이 및 태그, 지도뷰로 확인할 수도 있습니다.
 ![](/assets/3_sensorlist.png)
@@ -132,7 +131,7 @@ published: true
 <br>
 
 ---
-<div id='id-analysis'/>
+<div id='id-analysis'></div>
 ### **센서분석**
 센서분석페이지는 차트와 통계로 나누어져 있습니다.
 ![](/assets/3_sensoranalysis.png)
@@ -171,7 +170,7 @@ published: true
 <br>
 
 ---
-<div id='id-tag'/>
+<div id='id-tag'></div>
 ### **태그 관리**
 ![](/assets/3_m_tag0.png)
 
@@ -198,7 +197,7 @@ published: true
 
 
 ---
-<div id='id-rule'/>
+<div id='id-rule'></div>
 ### **규칙 관리**
 규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/help_rule/)를 이용해주세요. 
 ![](/assets/3_m_rule0.png)

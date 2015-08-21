@@ -1,12 +1,11 @@
 ---
-layout: post
-title: 규칙생성 및 제어
+title: Rule Guide
 tags: help
 published: true
+permalink: /en/rule.html
 ---
 
----
-규칙을 생성하고 관리하는 방법에 대한 가이드입니다.
+En 규칙을 생성하고 관리하는 방법에 대한 가이드입니다.
 
 * [규칙에 대하여](#id-rule-about)
 * [규칙 관리](#id-rule-management)
@@ -16,7 +15,7 @@ published: true
 * [규칙 사례 따라하기](#id-rule-tutorial)
 
 ---
-<div id='id-rule-about'/>
+<div id='id-rule-about'></div>
 ### 규칙에 대하여
 <br>
 #### 규칙이란?
@@ -53,7 +52,7 @@ published: true
 <br>
 
 ---
-<div id='id-rule-management'/>
+<div id='id-rule-management'></div>
 ### 규칙 관리
 현재 생성된 규칙 리스트를 볼 수 있습니다.
 
@@ -76,7 +75,7 @@ published: true
 <br>
 
 ---
-<div id='id-rule-creation'/>
+<div id='id-rule-creation'></div>
 ### 규칙 만들기
 직접 규칙 만들기를 통해 가지고 있는 센서들로 규칙을 만들 수 있습니다. 또한 서비스에서 제공하는 규칙 템플릿을 이용하여 규칙을 만들수도 있습니다.
 
@@ -110,7 +109,7 @@ published: true
 <br>
 
 ---
-<div id='id-rule-info'/>
+<div id='id-rule-info'></div>
 ### 규칙정보
 생성된 규칙의 정보를 수정할 수 있습니다. 규칙정보는 규칙관리페이지, 타임라인페이지에서 규칙이름을 선택해서 확인할 수 있습니다.
 ![](/assets/4_m_ruleinfo.png)
@@ -120,7 +119,7 @@ published: true
 
 <br>
 
-<div id='id-rule-edit'/>
+<div id='id-rule-edit'></div>
 #### 규칙 수정 및 삭제
 * **규칙 수정하기**
   * 언제든지 생성된 규칙은 수정이 가능합니다.
@@ -136,7 +135,7 @@ published: true
 <br>
 
 ---
-<div id='id-rule-tutorial'/>
+<div id='id-rule-tutorial'></div>
 ### 규칙 사례 따라해보기
 (준비중입니다.)
 

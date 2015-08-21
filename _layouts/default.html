@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang }}">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
@@ -28,14 +28,34 @@
 
     <body>
     <!--<a href="https://github.com/driftyco/jetstrap-docs"><img style="position: absolute; z-index: 10000; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>-->
+    
+
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a href="/"><img src="{{ site.baseurl }}/assets/logo.png"></a>
+          <div class="pull-left">
+            <a href="/"><img src="{{ site.baseurl }}/assets/logo.png"></a>
+          </div>
           <!--<ul class="nav pull-right">-->
             <!--<li><a href="http://www.thingplus.net/" target="_blank">Thing+</a></li>-->
             <!--<li><a href="http://techblog.daliworks.net/" target="_blank">Blog</a></li>-->
           <!--</ul>-->
+          <!-- language selector -->
+          <div class="pull-right lang-select">
+            <ul>
+              <li>
+                {% assign posts=site.posts | where:"date", page.date | sort: 'path' %}
+                {% for post in posts reversed %}
+                {% if page.lang == post.lang %} 
+                  {% assign current_lang = 'active' %} 
+                {% else %}
+                  {% assign current_lang = '' %} 
+                {% endif %}       
+                  <a href="{{ post.url }}" class="lang {{ current_lang }}">{{ site.data.i18n[post.lang].lang }}</a>
+                {% endfor %}
+              </li>
+            </ul>      
+          </div>
         </div>
       </div>
     </div>
@@ -44,27 +64,36 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3">
           <ul id="menu" class="nav nav-list" data-spy="affix">
-              <li class="nav-header">Thing+ 사용 안내</li>
-            {% for post in site.posts %}
-              {% assign current = nil %}
-              {% if page.url contains post.url %}
-                {% assign current = 'active' %}
+            <li class="nav-header">{{ site.data.i18n[page.lang].submenu_guide }}</li>
+            {% assign posts = site.posts | where:"lang", page.lang %} 
+            {% for post in posts %} 
+              {% if post.title != 'index' %} 
+                {% assign current = nil %} 
+                {% if page.url contains post.url %} 
+                  {% assign current = 'active' %} 
+                {% endif %}
+                <li data-section="{{ post.url }}" class="{{ current }} lang">
+                  <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
+                </li>
               {% endif %}
-              <li data-section="{{ post.url }}" class="{{current}}">
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              </li>
             {% endfor %}
-            <li class="nav-header">SUPPORT</li>
-            <li><a href="mailto:contact@thingplus.net">이메일 문의</a></li>
-            <li><a href="https://www.thingplus.net/" target="_blank">Thing+ 바로가기</a></li>
+            <li class="nav-header">{{ site.data.i18n[page.lang].submenu_support }}</li>
+            <li><a href="mailto:contact@thingplus.net">{{ site.data.i18n[page.lang].email_contact }}</a></li>
+            <li><a href="https://www.thingplus.net/" target="_blank">{{ site.data.i18n[page.lang].go_thingplus }}</a></li>
           </ul>
         </div>
 
         <div id="main" role="main" class="col-xs-12 col-sm-9">
+          {% if page.type != 'pages' %}
+            <h1>{{ page.title }}</h1>
+            <hr>
+          {% endif %}
+
           {{content}}
         </div>
 
       </div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">

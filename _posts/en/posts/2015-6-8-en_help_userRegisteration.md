@@ -1,19 +1,18 @@
 ---
-layout: post
-title: 하드웨어 설치와 회원가입 및 연동
+title: User Registeration & Hardware Installation
 tags: help
 published: true
+permalink: /en/registration.html
 ---
 
----
-서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.
+En 서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.
 
 * [서비스 관리자](#id-serviceadmin)
 * [일반 사용자](#id-enduser) 
 * [개발자](#id-developer) 
 
 ---
-<div id='id-serviceadmin'/>
+<div id='id-serviceadmin'></div>
 ### 서비스 관리자
 <br>
 #### 가입 및 사용
@@ -27,7 +26,7 @@ published: true
 <br>
 
 ---
-<div id='id-enduser'/>
+<div id='id-enduser'></div>
 ### 일반 사용자
 <br>
 
@@ -124,7 +123,7 @@ published: true
 <br>
 
 ---
-<div id='id-developer'/>
+<div id='id-developer'></div>
 ### 개발자
 <br>
 

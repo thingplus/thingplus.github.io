@@ -1,12 +1,11 @@
 ---
-layout: post
-title: "기본 가이드"
+title: Preparation
 tags: help
 published: true
+permalink: /en/preparation.html
 ---
 
----
-Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이드입니다.
+En Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이드입니다.
 
 * [시작하기 전에](#id-starting)
 * [용어집](#id-term) 
@@ -15,7 +14,7 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
 * [사례](#id-usecase)
 
 ---
-<div id='id-starting'/>
+<div id='id-starting'></div>
 ### 시작하기 전에
 <br>
 ![](/assets/1_thingplus.png)
@@ -39,7 +38,7 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
 <br>
 
 ---
-<div id='id-term'/>
+<div id='id-term'></div>
 ### 용어집
 <br>
 #### 서비스, 사이트
@@ -89,7 +88,7 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
 <br>
 
 ---
-<div id='id-feature'/>
+<div id='id-feature'></div>
 ### 주요 기능
 <br>
 #### 대시보드 꾸미기
@@ -132,7 +131,7 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
 <br>
 
 ---
-<div id='id-anytime'/>
+<div id='id-anytime'></div>
 ### 어디서든 활용하기
 <br>
 데스크탑, 태블릿, 스마트폰 등 언제 어느 기기에서나 웹으로 접속 가능합니다.
@@ -144,7 +143,7 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
 <br>
 
 ---
-<div id='id-usecase'/>
+<div id='id-usecase'></div>
 ### 사례
 <br>
 #### 집안 습도 모니터링

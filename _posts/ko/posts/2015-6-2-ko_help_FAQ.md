@@ -1,11 +1,10 @@
 ---
-layout: post
-title: "자주 묻는 질문"
+title: 자주 묻는 질문
 tags: help
 published: true
+permalink: /ko/faq.html
 ---
 
----
 자주 질문하시는 내용에 대한 답변을 준비했습니다.
 
 * Q. 대시보드 라인차트 기간 설정 변경은 어떻게 할 수 있나요?

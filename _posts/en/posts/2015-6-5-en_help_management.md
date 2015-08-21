@@ -1,12 +1,11 @@
 ---
-layout: post
-title: "관리기능 사용법"
+title: Management Guide
 tags: help
 published: true
+permalink: /en/management.html
 ---
 
----
-서비스, 사이트, 사용자 및 게이트웨이 관리에 대한 가이드입니다.
+En 서비스, 사이트, 사용자 및 게이트웨이 관리에 대한 가이드입니다.
 
 * [서비스 관리](#id-service-management)
 * [사이트 관리](#id-site-management)
@@ -14,7 +13,7 @@ published: true
 * [게이트웨이 관리](#id-gateway-management)
 
 ---
-<div id='id-service-management'/>
+<div id='id-service-management'></div>
 ### 서비스 관리
 **서비스 관리자를 위한 기능입니다.**
 
@@ -41,7 +40,7 @@ published: true
 <br>
 
 ---
-<div id='id-site-management'/>
+<div id='id-site-management'></div>
 ### 사이트 관리
 **사이트 관리자를 위한 기능입니다.**
 
@@ -63,7 +62,7 @@ published: true
 <br>
 
 ---
-<div id='id-user-management'/>
+<div id='id-user-management'></div>
 ### 사용자 관리
 **서비스 및 사이트 관리자를 위한 기능입니다.**
 ![](/assets/5_m_user0.png)
@@ -90,7 +89,7 @@ published: true
 <br>
 
 ---
-<div id='id-gateway-management'/>
+<div id='id-gateway-management'></div>
 ### 게이트웨이 관리
 **서비스 및 사이트 관리자를 위한 기능입니다.**
 ![](/assets/5_m_gateway0.png)
