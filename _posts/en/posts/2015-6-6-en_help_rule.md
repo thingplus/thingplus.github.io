@@ -5,7 +5,9 @@ published: true
 permalink: /en/rule.html
 ---
 
-En 규칙을 생성하고 관리하는 방법에 대한 가이드입니다.
+TBD
+
+규칙을 생성하고 관리하는 방법에 대한 가이드입니다.
 
 * [규칙에 대하여](#id-rule-about)
 * [규칙 관리](#id-rule-management)

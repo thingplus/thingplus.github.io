@@ -5,7 +5,9 @@ published: true
 permalink: /en/registration.html
 ---
 
-En 서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.
+TBD
+
+서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.
 
 * [서비스 관리자](#id-serviceadmin)
 * [일반 사용자](#id-enduser) 

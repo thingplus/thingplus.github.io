@@ -5,7 +5,9 @@ published: true
 permalink: /en/preparation.html
 ---
 
-En Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이드입니다.
+TBD
+
+Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이드입니다.
 
 * [시작하기 전에](#id-starting)
 * [용어집](#id-term) 

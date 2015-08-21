@@ -5,7 +5,9 @@ published: true
 permalink: /en/management.html
 ---
 
-En 서비스, 사이트, 사용자 및 게이트웨이 관리에 대한 가이드입니다.
+TBD
+
+서비스, 사이트, 사용자 및 게이트웨이 관리에 대한 가이드입니다.
 
 * [서비스 관리](#id-service-management)
 * [사이트 관리](#id-site-management)

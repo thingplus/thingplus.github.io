@@ -5,7 +5,9 @@ published: true
 permalink: /en/monitoring.html
 ---
 
-En 대시보드, 규칙 및 타임라인, 데이터 분석 등의 주요 기능들에 대한 가이드 입니다.
+TBD
+
+대시보드, 규칙 및 타임라인, 데이터 분석 등의 주요 기능들에 대한 가이드 입니다.
 
 * [대시보드](#id-dashbaord)
 * [타임라인](#id-timeline)
