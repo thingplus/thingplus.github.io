@@ -7,13 +7,14 @@ permalink: /en/faq.html
 
 TBD
 
-자주 질문하시는 내용에 대한 답변을 준비했습니다.
+Answer for frequently asked question. 
 
-* Q. 대시보드 라인차트 기간 설정 변경은 어떻게 할 수 있나요?
-  - 변경하고자 하는 위젯의 우측 상단 <i class="fa fa-cog fa-lg"></i> 설정 아이콘을 클릭하세요
-  - "위젯설정" 화면에서 "기간" 항목의 우측을 클릭하여 원하는 시간 범위를 선택하세요. 최대 24시간까지 선택할 수 있습니다.
+* Q. How to change time zone in line chart, Dashboard?
+  - Click set icon on upper right position in widget<i class="fa fa-cog fa-lg"></i>  
+  - Set time zone in "time zone" on "Widget setting" screen
+  - Set 24 hours for maxium.  
 
-* Q. 센서의 과거 데이터를 어떻게 조회하나요?
+* Q. How to monitor for old data on sensor.  
   - 상단 메뉴 중 <i class="fa fd-menu_analysis fa-lg"></i> 센서분석 선택
   - 게이트웨이를 선택
   - 센서 종류를 선택
