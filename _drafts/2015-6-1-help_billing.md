@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "요금관리"
+title: "billing"
 tags: help
 published: true
 ---
