@@ -1,40 +1,39 @@
 ---
 layout: post
-title: "관리기능 사용법"
+title: "Management guide"
 tags: help
 published: true
 ---
 
 ---
-서비스, 사이트, 사용자 및 게이트웨이 관리에 대한 가이드입니다.
+Guide for service, site, user and gateway.  
 
-* [서비스 관리](#id-service-management)
-* [사이트 관리](#id-site-management)
-* [사용자 관리](#id-user-management)
-* [게이트웨이 관리](#id-gateway-management)
+* [Service Management](#id-service-management)
+* [Site Managment](#id-site-management)
+* [User Management](#id-user-management)
+* [gateway Management](#id-gateway-management)
 
 ---
 <div id='id-service-management'/>
-### 서비스 관리
-**서비스 관리자를 위한 기능입니다.**
+### Service Management
+**Function for Service manager.**
 
-#### 화면안내 
-서비스에 대한 설정을 변경하 관리할 수 있습니다.
+#### Display informaton 
+Can set service management.
 
-#### 일반 설정
-* 서비스의 일반적인 설정을 변경할 수 있습니다.
-  - 이름: 서비스의 이름을 나타냅니다. 서비스의 이름은 포털 좌측 상단에 반영됩니다.
-  - 연락처: 서비스의 웹푸시 알람이나 서비스 관련 정보 알림을 받을 수 있는 메일입니다.
-  - 상세설명: 서비스의 상세한 설명을 적어주세요.
+#### Normal Setting
+* Can set normal setting.
+  - Name: Display name of service. Service name will be displayed on right upper side of portal. 
+  - Contact: mail for web push alarm and related information. 
+  - Detail Explanation: Put detail explanation of service.  
 
-#### 대시보드 설정
-* 대시보드에 추가할 수 있는 위젯리스트를 추가/변경할 수 있습니다.
-* 선택된 위젯리스트 요소들은 대시보드 페이지의 추가 버튼 하단에 보여집니다.
+#### Dashboard setting
+* Add/change widget list on dash board. 
+* Selected widget list will be diplayed on bottom of dashboard page.  
 
-#### 규칙 설정
-* 규칙 생성시에 나타나는 트리거와 액션 리스트를 추가/변경할 수 있습니다.
-* 선택된 트리거와 액션들은 규칙 생성 페이지에서 볼 수 있습니다.
-
+#### Rule setting
+* Add/change trigger and action list of rule command. 
+* Rule creation page will display selected trigger and action.  
 <br>
 
 ---
