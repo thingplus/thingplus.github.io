@@ -1,35 +1,35 @@
 ---
 layout: post
-title: "자주 묻는 질문"
+title: "FAQ"
 tags: help
 published: true
 ---
 
 ---
-자주 질문하시는 내용에 대한 답변을 준비했습니다.
+Answer for frequently asked questionaires.
 
-* Q. IoT에 대해서 아는 것이 없는데, 저 같은 사람도 Thing+를 사용할 수 있나요?
+* Q. Do not have enough knowledeg on IoT, can I use Thing+?
 
-* Q. Thing+는 누가 만들었나요?
+* Q. Who build Thing+?
 
-* Q. Thing+는 사용기간이 어떻게 되나요?
+* Q. How long we can use Thing+?
 
-* Q. Thing+의 요금 정책이 궁금합니다.
+* Q. price quotation of Thing+?
 
-* Q. 대시보드 라인차트 기간 설정 변경은 어떻게 할 수 있나요?
-  - 변경하고자 하는 위젯의 우측 상단 <i class="fa fa-cog fa-lg"></i> 설정 아이콘을 클릭하세요
-  - "위젯설정" 화면에서 "기간" 항목의 우측을 클릭하여 원하는 시간 범위를 선택하세요. 최대 24시간까지 선택할 수 있습니다.
+* Q. How to set line chart on Dash board? 
+  - Click set icon for upper side<i class="fa fa-cog fa-lg"></i> of widget.
+  - Click "time zone" on right side of "Set widget" screen. Can set up to 24 hours. 
 
-* Q. 센서의 과거 데이터를 어떻게 조회하나요?
-  - 상단 메뉴 중 <i class="fa fd-menu_analysis fa-lg"></i> 센서분석 선택
-  - 게이트웨이를 선택
-  - 센서 종류를 선택
-  - 1시간 전 ~ 7일 전 중 기간을 선택
-  - 조회 시작 날짜를 선택(기본은 현재 날짜이며, 선택한 날짜 기준으로 선택한 기간까지 조회됩니다.)
-  - 하단 주황색으로 표시된 영역만큼 상단 그래프 영역에 표시됩니다.(주황색 영역을 드래그하면 이전 그래프를 상단 그래프영역에서 볼 수 있습니다.)
-  - 위에서 설정한 기간 전체의 데이터는 <i class="fa fa-fw fa-download fa-lg"></i> 아이콘을 클릭하면 CSV파일로 다운로드가 가능합니다.(엑셀로 확인 가능)
-* Q. 센서데이터 비교하는 방법
-  - <i class="fa fa-fw fa-plus fa-lg"></i> 아이콘을 클릭하면 센서 선택창을 추가할 수 있습니다.
-  - 이후 데이터 조회하는 방법과 동일하게 설정하여 여러 센서데이터를 비교할 수 있습니다.
+* Q. How to monitor old data?
+  - Click sensor analysis on menu <i class="fa fd-menu_analysis fa-lg"></i> on top.
+  - Select Gateway. 
+  - Select sensor type.
+  - select from 1 hour to 7days. 
+  - choose initial date to monitor (Without adjustment, initial day is today)
+  - As selected time zone on orrange color, upper graph will display data.   (Drag orange colored area for previous graph on chart)
+  - Get CSV file to use excel in setting term of data by click <i class="fa fa-fw fa-download fa-lg"></i>. 
+* Q. Compare sensor data 
+  - Add sensor selection by click <i class="fa fa-fw fa-plus fa-lg"></i> icon.  
+  - Then, compare other sensor data by use of data analysis.  
 
 <br>
