@@ -127,7 +127,7 @@ Edit rule information that made.  Rule information can find rule managment page,
   * Click <i class="fa fa-cog"></i> button on rule information page.  
   * Edit detail condition of rule.
   * Edit name and description of rule. 
-  * Edit method and parameter of each agent. 각 에이전트들의 메소드와 파라미터를 수정할 수 있습니다.
+  * Edit method and parameter of each agent.  
 * **Remove rule**
   * Rule will not be recovred if remove. Create rule again for set. 
   * Click <i class="fa fa-cog"></i> button on rule informatino page.  
