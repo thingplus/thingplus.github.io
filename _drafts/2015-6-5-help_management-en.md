@@ -38,95 +38,95 @@ Can set service management.
 
 ---
 <div id='id-site-management'/>
-### 사이트 관리
-**사이트 관리자를 위한 기능입니다.**
+### Site Mangement
+**Function for site manager.**
 
-#### 화면안내 
-사이트를 만들고 관리할 수 있습니다.
+#### Display information 
+Create and change the site.
 
-* 전체 사이트 리스트를 볼 수 있습니다.
-* 사이트를 선택하면 해당 사이트의 이름과 코드를 확인할 수 있습니다.
+* Display the list of sites.  
+* CHeck name and code of each site by click.  
 
-#### 사이트 선택
-* 사이트 이름에서 사이트를 선택할 수 있습니다. 사이트를 선택하면 해당 사이트만 화면에 나타납니다.
+#### Select site
+* Select site by click site name. Selected site will be dispalyed.  
 
-#### 사이트 등록
-* 우측 상단의 <i class="fa fa-plus-circle"></i> 버튼을 누르면 사이트 등록 페이지로 이동합니다.
-* 사이트 이름과 사이트 코드를 입력하면 사이트를 등록할 수 있습니다.
-* 사이트를 등록하면 생성된 사이트의 요금제를 선택할 수 있습니다.
-* 요금제를 선택하면 해당 사이트의 요금제가 저장됩니다.
+#### Regisiter site  
+* Move site registration page by click <i class="fa fa-plus-circle"></i> buttom on right upper side of page.  
+* Can registor site by plug in site name and code.  
+* Select service options by registering site.  
+* Service option will be saved. 
 
 <br>
 
 ---
 <div id='id-user-management'/>
-### 사용자 관리
-**서비스 및 사이트 관리자를 위한 기능입니다.**
+### User management
+**Function for service ans site manager.**
 ![](/assets/5_m_user0.png)
 
-#### 화면안내
+#### Display information
 ![](/assets/5_user_m.png)
 
-* 서비스의 전체 사이트의 리스트와 각 사이트의 사용자를 확인할 수 있습니다.
+* Check list of users on sites of service. 
 
-#### 사이트 선택
-* 상단 ①사이트 이름에서 사이트를 선택할 수 있습니다. 사이트를 선택하면 해당 사이트에 속한 사용자 리스트만 화면에 나타납니다.
+#### Select Site
+* Select site on top  of ①site name. Click site and user list on selected site.  
 
-#### 사용자 목록
-* ②각 사이트별로 사용자 리스트를 볼 수 있습니다.
-* ③사용자 리스트에는 ④사용자 아이디, ⑤이메일, ⑥사용 권한을 확인 및 (권한이 있는 경우) 편집할 수 있습니다.
+#### User List
+* Can find user list on ②each site.
+* Edit ④User ID, ⑤e-mail, ⑥Authorization on ③User list. (If Authorized)  
 
-#### 사용자 권한
-* 관리자가 부여하는 권한에 따라, 사용자는 접근할 수 있는 수준이 결정됩니다.
-  -  예) 게이트웨이 보기 권한, 게이트웨이 설정 권한
-* 암호 초기화
-* 사용자 인증/비인증
-* 사용자 지우기
+#### User Management
+* Manager edit authorization for user's limited access.  
+  -  EX. Display gateway, Authorization of gateway setting 
+* Reset password
+* User Authoriziation/unathorization 
+* Remove user
 
 <br>
 
 ---
 <div id='id-gateway-management'/>
-### 게이트웨이 관리
-**서비스 및 사이트 관리자를 위한 기능입니다.**
+### Gateway management
+**Fuction for site and gateway.**
 ![](/assets/5_m_gateway0.png)
 
-#### 화면 안내
+#### Dispaly screen
 ![](/assets/5_m_gateway.png)
 
-#### 게이트웨이
-* 사이트 이름
-* 게이트웨이 이름
+#### Gateway
+* Site name
+* Gateway name
 
-#### 게이트웨이 리스트
-* 게이트웨이 기본정보
-  - 아이디
-  - 등록일
-  - 이름
-  - 데이터 전송주기
-  - 검색 대상 자동 추가
-    - 자동으로 센서 리스트를 게이트웨이가 획득할지 여부를 결정합니다.
-* 추가 옵션
-  - 위치
-  - 이메일
-  - 모바일
-  - 상세설명
-* 디바이스 및 센서 추가
-* 게이트웨이/디바이스/센서 삭제
-* 소프트웨어 관리
-  - 소프트웨어 버전 정보
-  - 소프트웨어 버전 업데이트
-* 게이트웨이 재구동
+#### Gateway list
+* Basic information of gateway 
+  - ID
+  - Registration data
+  - Name
+  - Term of transmitting data 
+  - Automatic add on search list 
+    - Decide automatically adding sensor list of gateway.  
+* Additional Option
+  - Location
+  - E-mail
+  - Smart Phone
+  - More Detail
+* Add sensor and device 
+* Remove gateway/device/sensor 
+* Software managment  
+  - Version info of software
+  - Update automatically
+* Rerun gateway
 
 <br>
 
-#### 게이트웨이 등록하기
+#### Gateway registration 
 ![](/assets/5_m_gateway2.png)
 
-1. ①게이트웨이 모델과 디바이스 모델을 고르게 됩니다.
-* ②게이트웨이 아이디, ③이름을 입력합니다.
-* 사용할 센서를 확인하게 됩니다.
-* ④등록할 사이트를 지정할 수도 있습니다.
+1. Select ①gateway  model and device model.
+* Put ②gateway ID, and ③name.
+* Check activating sensor.
+* Select ④registration site.
 
 <br>
 
@@ -134,10 +134,10 @@ Can set service management.
 
 
 <!---
-1. 서비스 관리
-* 사이트 관리
-* 사용자 관리
-* 게이트웨이 관리
-* 태그 관리
-* 규칙 관리
+1. Service management
+* Site management
+* User management
+* Gateway management 
+* Tag Mangement
+* Rule Management
 -->
