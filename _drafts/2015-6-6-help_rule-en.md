@@ -1,152 +1,152 @@
 ---
 layout: post
-title: 규칙생성 및 제어
+title: Rule creation and control
 tags: help
 published: true
 ---
 
 ---
-규칙을 생성하고 관리하는 방법에 대한 가이드입니다.
+Guide for rule creation and management. 
 
-* [규칙에 대하여](#id-rule-about)
-* [규칙 관리](#id-rule-management)
-* [규칙 만들기](#id-rule-creation)
-* [규칙 정보](#id-rule-info)
-* [규칙 수정 및 삭제](#id-rule-edit)
-* [규칙 사례 따라하기](#id-rule-tutorial)
+* [About Rule](#id-rule-about)
+* [Rule Management](#id-rule-management)
+* [Rule Creation](#id-rule-creation)
+* [Rule Informaton](#id-rule-info)
+* [Edit/Remove Rule](#id-rule-edit)
+* [Totorial for Rule](#id-rule-tutorial)
 
 ---
 <div id='id-rule-about'/>
-### 규칙에 대하여
+### About Rule
 <br>
-#### 규칙이란?
-* 규칙은 특정 조건에 따라서 무엇인가를 실행할 수 있도록 해줍니다. {화재가 감지되면, SMS 알림을 받을 수 있습니다.} 와 같은 규칙을 만들 수 있습니다.
-* 규칙을 통해 자동화된 실시간 모니터링이 가능하며, 한번의 규칙으로 수많은 센서의 값을 변경할 수도 있습니다.
-* 자신의 환경에 맞는 규칙을 만들고 효율적인 IoT 모니터링을 실현시켜보세요. 
+#### Rule?
+* Activate action for specific condition of rule. make a rule as {In case of fire, receive message service.}.
+* By rule, can be available to make automation monitoring system, can adjust data of sensors by one rule.
+* Make your own rule for proper condition, and make efficient experience IoT. 
 
-#### 에이전트란?
-* 트리거, 컨디션의 주인공이 되는 아이템들을 말합니다.
+#### Agent?
+* Items to make trigger and condtion.  
   
-#### 트리거-컨디션-액션이란?
-* 트리거란? 규칙의 조건입니다. 규칙을 시작하게 하는 방아쇠의 역할을 합니다.
-  - 예) 온도가 15도 이상일 때
-  - 종류) 게이트웨이 상태, 센서 상태, 온도, 습도, 조도, ...  
-* 컨디션이란? 선택적으로 조건을 하나 더 생성할 때, 그때의 조건을 컨디션이라고 부릅니다.
-  - 예) 온도가 15도 이상일 때, 습도가 50% 이상이면.
-  - 종류) 전력량, 배터리 게이지, 시간 조건, ...
-* 액션이란? 트리거 혹은 트리거와 컨디션의 조건에 따라 명령을 내리거나 원하는 제어를 생성하는 것을 액션이라고 합니다.
-  - 예) ~이면, SMS 알림을 주세요.
-  - 종류) 웹푸시, 파워스위치, RGB LED, 카메라, 이메일, 리포트, SMS, ...
+#### Trigger-Condition-Action?
+* Trigger? Condition of rule. Trigger to act rule.  
+  - Ex. If temperature move over 15 degree celcius. 
+  - Types. Gateway condition, sensor condition, temperature, humidity, illumination and so on.  
+* Condition? Add another trigger, Then, names condition.
+  - Ex. Temperature move over 15 celcious and humidity go over 50%.
+  - Types. Power consumption, battery gate, time condition and so on. 
+* Action? Contol units for satisfied trigger or trigger and condition.  
+  - Ex. if ~, send message alarm.
+  - Types. Web push, power switch,turn on/off RGB LED,snapshot, e-mail, report, SMS and so on.
 
-#### 메소드-파라미터란?
-*  각 조건의 범위를 지정하는 것을 메소드라고 합니다. 트리거-메소드, 컨디션-메소드, 액션-메소드가 있습니다.
-  - 예) 온도센서의 메소드 범위이상/범위이내/이상/이하
-* 각 메소드에 필요한 상세한 수치값과 센서 선택 등 옵션을 파라미터라고 합니다.
-  - 예) 온도센서의 메소드 '이상'의 파라미터는 숫자
+#### Method-parameter?
+*  Call method to set range of term. Have three types of mothod called Trigger-Method, Conditon-Method, Action-Method. 
+  - Ex. Temperature sensor -> over or under range/ in range/ over/ under. 
+* Parameter is the option of detail numbers and selection of each method.  
+  - Ex. Parament will be the number for over of temperature sensor method. 
 
-#### 액션이 너무 빈번히 발생할 것 같다고요?
-* **온도센서와 같이 주기적으로 트리거되는 규칙**에 의해서 발생하는 액션일 경우는 **5분내의 빈번한 발생은 제한**됩니다. 
-   - 5분내에 동일한 센서 및 규칙에 의해 발생하는 액션은 무시 됩니다.
-* **화재경보, 문열림등과 같이 불규칙적으로 트리거되는 규칙**에 의해서 발생하는 액션의 경우는 **15초 이내의 빈번한 발생은 제한**됩니다.
-   - 15초내에 동일한 센서 및 규칙에 의해 발생하는 액션은 무시되고, 마지막 값은 최대 15초 연기되어 발생할 수 있습니다.
+#### Activate Action too frequently?
+* For action that made by **Rule that have short term activating trigger like temperature sensor**, **ignore frequently activation in 5 minutues**. 
+   - Will ignore action that made in same sensor and rule in 5 minutes.  
+* Ignore action **in 15 Seconds** for **irregular action such as any fire alarm, door open**. 
+   - Will ignore action that made in same sensor and rule in 15 seconds.Then do action after 15 seconds. 
 
 <br>
 
 ---
 <div id='id-rule-management'/>
-### 규칙 관리
-현재 생성된 규칙 리스트를 볼 수 있습니다.
+### Rule Managemenet
+Display existing rules.
 
 ![](/assets/4_m_rule.png)
 
-#### 규칙관리하기 
-* ①생성된 규칙들의 리스트입니다.
-* ②트리거와 컨디션,액션으로 이루어진 규칙 아이콘입니다.
-* ③규칙의 이름과 설명, ④규칙이 수정된 시각입니다.
-* ⑤현재 생성되어진 규칙들의 상태를 활성화/비활성화 시킬 수 있는 스위치입니다. 
+#### Rule Managment 
+* Display ①Existing rule list.
+* ②rule icon for trigger, condition, and action.  
+* ③Name and description of rule, ④time to edit rule. 
+* ⑤Switch to activate/disactivate existing rule condtion.  
 
 <br>
-#### 규칙 아이콘 설명
-이벤트가 발생해서 조건에 따른 행동이 이루어지는 과정을 형상화 했습니다. 
+#### Description of rule icon
+Make visualization of action of event. 
 <br>
 ![](/assets/4_ruleicon.png)
 
-* 순서대로 트리거,컨디션,액션을 뜻합니다.
+* As order, means trigger, condition, and action.  
 
 <br>
 
 ---
 <div id='id-rule-creation'/>
-### 규칙 만들기
-직접 규칙 만들기를 통해 가지고 있는 센서들로 규칙을 만들 수 있습니다. 또한 서비스에서 제공하는 규칙 템플릿을 이용하여 규칙을 만들수도 있습니다.
+### Create Rule
+Set the rule by customer own sensor. In addition, make a rule by rule templetes provided. 
 
 <br>
 
-#### 직접 만들기
-1. 메뉴 우측의 <i class="fa fd-menu_setting"></i> 설정버튼을 눌러서 <i class="fa fd-menu_ruleManagement"></i> 규칙관리 메뉴를 클릭합니다. 규칙관리 페이지 상단의 <i class="fa fa-plus-circle"></i> 버튼을 눌러 <i class="fa fd-rule_creation"></i>직접 만들기를 선택합니다.
-2. 예제에서는 “온도가 30도 이상일 때 SMS를 보내시오” 라는 규칙을 만들어보도록 하겠습니다.
-3. ![](/assets/4_rule_trigger.png) Trigger 시작을 선택합니다.
-4. 규칙을 시작할 트리거 종류를 선택합니다. 예제에서는 <i class="fa fd-rule_trigger_temperature fa-2x" style="color: #e04937"></i>온도센서를 고르도록 하겠습니다.
-5. 두 번째 단계에서는 온도센서의 범위를 지정하도록 하겠습니다. 온도가 30도 이상일 때에 대한 규칙을 설정해야 하므로 <i class="fa fd-rule_method_over fa-2x"></i>“이상”을 선택하도록 하겠습니다.
-6. 세 번째 단계에서는 트리거 세부항목을 지정할 수 있습니다.
-7. 규칙에서 기준이 되는 값을 입력할 수 있습니다. 예제에서는 온도 30도에 해당하는 30을 입력합니다.
-8. 게이트웨이를 선택합니다.
-9. 온도센서가 부착되어 있는 게이트웨이를 선택합니다.
-10. 트리거가 될 온도 센서를 지정합니다.
-11. 설정이 모두 끝났으면 Action 선택을 선택합니다. 액션시작화면에서는 이전에 선택한 트리거를 확인할 수 있습니다. ![](/assets/4_rule_action.png) Action 시작을 눌러 계속 진행합니다.
-12. 액션 선택화면에서는 <i class="fa fd-rule_action_sms fa-2x"  style="color: #53ae55"></i> SMS를 선택합니다.
-13. SMS에 대한 액션방법으로는 <i class="fa fd-rule_method_send fa-2x"></i>“SEND(보내기)”를 선택합니다.
-14. 액션의 마지막 단계에서는 메시지 본문을 입력할 수 있습니다. <i class="fa fa-edit"></i>를 눌러 HTML을 입력하거나 <i class="fa fa-eye"></i>를 눌러 메시지 내용을 확인할 수 있습니다. 예제에서는 별도의 수정 없이 기본으로 설정된 메시지를 사용하도록 하겠습니다. ![](/assets/4_rule_create.png) 규칙생성을 눌러 액션을 마무리 합니다.
-15. 심각도를 설정하고 완료 버튼을 누르면 규칙이 만들어 집니다.
+#### Make own rule creation
+1. Click rule menu <i class="fa fd-menu_ruleManagement"></i> on right part of <i class="fa fd-menu_setting"></i> setting. Create own rule <i class="fa fd-rule_creation"></i> on <i class="fa fa-plus-circle"></i> buttom on top of menu. 
+2. Make rule as “If temperature move over 30 degree celcius, send message on mobile”.
+3. Select ![](/assets/4_rule_trigger.png) Trigger creation.
+4. Select trigger type for rule initiation. For example, select temperature sensor <i class="fa fd-rule_trigger_temperature fa-2x" style="color: #e04937"></i>. 
+5. Set the range of temperature sensor. Set 30 for temperature sensor as select <i class="fa fd-rule_method_over fa-2x"></i>“over”.
+6. Set trigger for detail setting.
+7. Put limit on rule. For example, put 30 for temeperature. 
+8. Select gateway. 
+9. Select gateway that have temperature sensor.  
+10. Set temperature sensor for trigger.  
+11. After done above, select action.  In action screen, check selected trigger.   ![](/assets/4_rule_action.png) Action initiation to activate.  
+12. Select <i class="fa fd-rule_action_sms fa-2x"  style="color: #53ae55"></i> SMS for selection screen.
+13. Select <i class="fa fd-rule_method_send fa-2x"></i>“SEND(보내기)” for options.  
+14. Put message on your own for last. Check your message by clicking <i class="fa fa-edit"></i>를 눌러 HTML을 입력하거나 <i class="fa fa-eye"></i>.  Can apply standard message that has been provided. Click rule creation by ![](/assets/4_rule_create.png).
+15. Set the detail condition and put finish button.  
 
 <br>
 
-#### 규칙 템플릿 
-1. 메뉴 우측의 <i class="fa fd-menu_setting"></i>설정버튼을 눌러서 <i class="fa fd-menu_ruleManagement"></i> 규칙관리 메뉴를 클릭합니다. 규칙관리 페이지 상단의 <i class="fa fa-plus-circle"></i> Add 버튼을 눌러 <i class="fa fa-copy fa-lg"></i> 템플릿 사용을 선택합니다.
-2. 규칙 관리 템플릿 페이지에서 원하는 템플릿을 고르고 <i class="fa fa-plus-circle"></i> Add 버튼을 선택합니다.
-3. 자신에게 맞게 규칙을 수정할 수 있습니다.
-4. 저장을 하면 규칙이 만들어 집니다.
+#### Rule Templetes 
+1. After click right side menu on <i class="fa fd-menu_setting"></i>, click rule management <i class="fa fd-menu_ruleManagement"></i>. On push add button on top of <i class="fa fa-plus-circle"></i> rule management page, select Add button <i class="fa fa-copy fa-lg"></i> on templetes.
+2. Select any templete provided, and select <i class="fa fa-plus-circle"></i> Add button.
+3. Edit rule for your demand.
+4. Save it and rule has been created. 
 
 <br>
 
 ---
 <div id='id-rule-info'/>
-### 규칙정보
-생성된 규칙의 정보를 수정할 수 있습니다. 규칙정보는 규칙관리페이지, 타임라인페이지에서 규칙이름을 선택해서 확인할 수 있습니다.
+### Rule Information
+Edit rule information that made.  Rule information can find rule managment page, timeline page.  
 ![](/assets/4_m_ruleinfo.png)
 
-* 규칙정보페이지에서는 ①규칙의 이름과 ②상세 에이전트들의 ③메소드, ④파라미터 값들을 확인할 수 있습니다.
-* ⑤규칙의 수정, ⑥삭제, ⑦활성화/비활성화 설정을 수정할 수 있습니다.
+* Rule information page display ①name of rule ②detail agents ③method, ④parameter.
+* Edit ⑤rule edition, ⑥remove, ⑦Activation/disactivation.
 
 <br>
 
 <div id='id-rule-edit'/>
-#### 규칙 수정 및 삭제
-* **규칙 수정하기**
-  * 언제든지 생성된 규칙은 수정이 가능합니다.
-  * 규칙정보 페이지에서 <i class="fa fa-cog"></i> 버튼을 선택합니다.
-  * 규칙의 심각도를 수정할 수 있습니다.
-  * 규칙의 이름과 설명을 수정할 수 있습니다.
-  * 각 에이전트들의 메소드와 파라미터를 수정할 수 있습니다.
-* **규칙 삭제하기**
-  * 규칙을 삭제하면 다시 복구할 수 없습니다. 똑같은 규칙을 다시 만들고 싶다면 다시 규칙 만들기를 통해 규칙을 생성 해주세요.
-  * 규칙정보 페이지에서 <i class="fa fa-cog"></i> 버튼을 선택합니다.
-  * 삭제 안내 팝업을 확인하고 삭제를 합니다.
+#### Edit and remove rule
+* **Rule Edit**
+  * Can edit rule for anytime. 
+  * Click <i class="fa fa-cog"></i> button on rule information page.  
+  * Edit detail condition of rule.
+  * Edit name and description of rule. 
+  * Edit method and parameter of each agent. 각 에이전트들의 메소드와 파라미터를 수정할 수 있습니다.
+* **Remove rule**
+  * Rule will not be recovred if remove. Create rule again for set. 
+  * Click <i class="fa fa-cog"></i> button on rule informatino page.  
+  * Check pop up screen of removal information and delete. 
 
 <br>
 
 ---
 <div id='id-rule-tutorial'/>
-### 규칙 사례 따라해보기
-(준비중입니다.)
+### Rule Tutorial
+(Will be open shortly.)
 
 <br>
 
 <!---
-1. 규칙에 대하여
-* 규칙 관리
-* 규칙 만들기
-* 규칙 정보
-* 규칙 수정
-* 규칙 삭제
+1. About Rule
+* Rule Management
+* Rule Creation
+* Rule information
+* Edit Rule
+* Remove Rule
 -->
