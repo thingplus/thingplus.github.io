@@ -199,7 +199,7 @@ permalink: /ko/monitoring.html
 ---
 <div id='id-rule'></div>
 ### **규칙 관리**
-규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/rule/)를 이용해주세요. 
+규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/ko/rule.html)를 이용해주세요. 
 ![](/assets/3_m_rule0.png)
 
 
