@@ -1,141 +1,120 @@
 ---
-title: User Registeration & Hardware Installation
+layout: post
+title: Hardware installation and synchronization
 tags: help
 published: true
-permalink: /en/registration.html
 ---
 
-TBD
+---
+User guide for a progress as hardware synchronization and user sign up. 
 
-서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.
-
-* [서비스 관리자](#id-serviceadmin)
-* [일반 사용자](#id-enduser) 
-* [개발자](#id-developer) 
+* [service administrator](#id-serviceadmin)
+* [User](#id-enduser) 
 
 ---
-<div id='id-serviceadmin'></div>
-### 서비스 관리자
+<div id='id-serviceadmin'/>
+### Service Manager
 <br>
-#### 가입 및 사용
-  * Thing+ 포털 사용을 위해서는 하드웨어 구입과 설치가 필요합니다. 귀사의 맞춤형 하드웨어 구입과 설치를 위해 [iot@daliworks.net](mailto:iot@daliworks.net)으로 연락바랍니다. 최고의 IoT 전문가가 친절히 도와 드리겠습니다.
-  * **하드웨어에 대해 알아보기**
-    * 귀사의 IoT 서비스 구축을 위한 하드웨어에 대해 알아보세요.
-    * Thing+에 연결가능한 [하드웨어 목록](http://www.daliworks.net/?page_id=11441)을 참고하시길 바랍니다.
-  * **이미 하드웨어를 가지고 있습니까? 새로운 IoT 하드웨어를 계획하고 있습니까?**
-    * [hw@daliworks.net](mailto:hw@daliworks.net)으로 연락주시면 하드웨어와 Thing+ 연동에 대해 안내해 드리겠습니다.
+#### Sign in and how to use
+  * •	Requires purchasing hardware and installation for Thing+ portal. Please, contact iot@daliworks.net for detail. World best IoT professional will kindly help you.
+  * **•	Hardware for IoT service**
+    * o	Your hardware for IoT service installation.
+    * Available [Hardware List](http://www.daliworks.net/?page_id=11441) for Thnig+ access
+  * **•	Got a hardware? Any plan for new IoT hardware? Any plan for new IoT hardware?**
+    * o Mail to hw@daliworks.net if you need Hardware and Thing+ synchronization.
 
 <br>
 
 ---
-<div id='id-enduser'></div>
-### 일반 사용자
+<div id='id-enduser'/>
+### User
 <br>
 
 <!---
-### 해당 서비스 사용을 위해 필요한 것
-  * {serviceName}.thingplus.net으로 회원가입
-  * 서비스 어드민의 가입승인 및 사용권한
+### Prerequestion for service 
+  * Registor member in {serviceName}.thingplus.net 
+  * Service administration approval and authorization 
 -->
 
-#### 해당 서비스 회원가입
-  * 인터넷 브라우저의 주소창에 서비스 주소를 입력합니다.
+#### Sing in daliworks website
+  * •	Put service address in internet browser.
 ![](/assets/2_address.png)
 
-  * 상단에 위치한 ![](/assets/2_register.png) 회원가입 버튼을 통해 회원가입 페이지로 이동합니다.
-  * 아이디, 이메일(2회 입력), 암호(2회 입력)를 입력하고, 이용약관에 동의를 하면, “등록 성공” 메세지가 나옵니다.
-  * 이 때, 입력했던 이메일 주소로 이메일이 전송됩니다.
-  * 이메일 수신을 확인하시고, 아래와 같이 이메일 본문의 이메일인증 버튼을 누르면, 인증이 완료됩니다.
+  * •	Push sign in ![](/assets/2_register.png) button on top for redirecting Sign in page. 
+  * •	Put your ID, e-mail(2 times for confirmation), passwords (2time for confirmation), and agree on access term. Then it return registration success message.   
+  * •	Will receive e-mail on your registered e-maill address for confirmation. 
+  * •	Click on e-mail confirmation and registration process to be done.   
 ![](/assets/2_email.png)
 
-#### 서비스 관리자의 가입승인 및 사용권한
-  * 이메일 인증 성공 후, 해당 서비스 관리자의 가입 승인 절차가 이뤄지게 됩니다.
-  * 관리자의 가입 승인이 확인되면, 승인 안내 이메일이 전송됩니다.
-  * 관리자의 가입 승인은 몇초에서부터 몇분까지 걸릴 수 있습니다. 만약 승인 안내 이메일이 전송되지 않는다면 다음을 확인해주세요.
-    * 이메일을 올바르게 입력하셨습니까?
-    * 스팸메일함을 확인하셨습니까?
-  * 관리자의 승인 안내 이메일을 받은 후에 로그인창에 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
-
+#### Sign in and Authorization progress for service administrator
+  * After confirmation on e-mail, follow sign in progress for service administrator
+  * •	Get confirmation e-mail after authorization from Daliworks.  
+  * •	Will takes few seconds to minutes for authorization. If you did not receive any e-mail, please check below.  
+    * o	Put re-check your e-mail address again. 
+    * o	Check your spam mail box. 
+  * •	After receive confirmation, put ID and Password to log in.  
 
 <!---
 
 <br>
 
 ---
-### 개발자
+### Developer
 <br>
-### Thing+ 포털 사용을 위해 필요한 것
-1) 하드웨어
-* 구입한 하드웨어의 핀 번호
-* Thing+ 계정
-* Thing+ 계정에 하드웨어 연결
+### Necessary step to use Thing+ portal
+1) Hardware
+* Pin number in puchased hardware 
+* Thing+ registration
+* Connect hardware in Thing+ registration
 
-### 하드웨어
+### Hardware
 
-### 하드웨어란?
+### Hardware?
 
-### 하드웨어 구입처
+### Purchasing Hardware?
 
-### 하드웨어의 핀 번호
+### Pin number in hardware
 
-### 하드웨어 핀 번호 확인하기
+### check pin number in hardware
 
-### 게이트웨이 연결하기
-* 구입한 하드웨어를 가입한 Thing+포털 계정에 연결할 수 있습니다.
+### Connect Gateway 
+* Can connect Thing+ protal if puchased hardware.
 
-### 게이트웨이 연결하기
+### Connect Gateway
 
-### 게이트웨이가 연결되었는지 확인하기
-1. 센서목록 메뉴로 이동합니다.
-* 센서 리스트 페이지에서 게이트웨이가 보이는지 확인합니다.
-* 게이트웨이가 보인다면 하단에 센서도 보이는지 확인합니다.
-* 게이트웨이 및 센서가 보이지 않는다면, 서비스 관리자에게 문의바랍니다.(알고 계신 연락처 혹은 서비스 화면 하단에 Contact의 이메일로 문의 가능)
+### Check gateway on Thing+
+1. Move to sensor list menu.  
+* Check gateway on sensor list page.  
+* After find gateway, check sensor below name of gateway. 
+* If not, ask service administrator.(Contact person or send e-mail on bottom of screen)
 -->
 
 
 
 <!---
-서비스 어드민 B2B
+Service administrator B2B
 - www.thingplus.net
-- 가입 및 사용 별도 문의
-- 1)원하는 하드웨어에 대한 간략한 가이드(설치 가이드가 아닌 연결가능한 하드웨어에 대한 안내)
-- 2)하드웨어 업체인 경우에는 직접 연락해서 연동하게끔 안내
+- Sign in and service  
+- 1)Guide for hardware that you want to add(Not installation guide. Access guide with hardware.)
+- 2)Contact directly to hardware 
 
-3)서비스 일반유저
+3)User
 - example.thingplus.net
-- 회원가입 후 서비스 어드민의 가입승인 및 게이트웨이 사용 권한 획득 필요
-- 하드웨어 안내없음
-- 가입안내와 사용권한에 대한 안내
+- Need authorization for service adminstrator and gateway after sign in 
+- Hardware information will not be provided
+- Information for sign in and authorization
 
-개발자(사이트 어드민)
+Developer(Site administrator)
 - 4)DIY
   - diy.thingplus.net
-  - 회원가입 후 자동 가입승인, 게이트웨이 직접등록
-  - 하드웨어 구매 안내(ICbanQ링크), 구매 후 쿠폰을 가지고 회원가입을 진행, 게이트웨이 연결
-- 프로그래머
+  - After sign in, automatic approval. Need direct connecting gateway on his own 
+  - Hardware purchase information(ICbanQ link), Sign in after get token by purchasement, Connect gateway
+- Programmer
   - dev.thingplus.net
-  - 회원가입 후 자동 가입승인, 게이트웨이 직접등록
-  - 하드웨어 구매 안내(ICbanQ링크), 구매 후 쿠폰을 가지고 회원가입을 진행, 게이트웨이 연결, 게이트웨이상의 프로그래밍하는 방법에 대한 안내
+  - After sign in, automatic approval, Need direct connecting gateway on his own
+  - Hardware purchase information(ICbanQ link), Sign in after get token by purchasement, Connect gateway, provide programming guide on gateway. 
 -->
 
 <!---
-* 개발자
+* Developer
 -->
-
-<br>
-
----
-<div id='id-developer'></div>
-### 개발자
-<br>
-
-<!---
-### 해당 서비스 사용을 위해 필요한 것
-  * {serviceName}.thingplus.net으로 회원가입
-  * 서비스 어드민의 가입승인 및 사용권한
--->
-
-#### 하드웨어 연동 가이드
-  * [IGoT 2.1 연동 가이드 다운로드](/download/doc/ThingPlus_Guide_ko.pdf)
-
-<br>

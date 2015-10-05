@@ -1,231 +1,230 @@
 ---
-title: Monitoring
+layout: post
+title: "Guide for functions"
 tags: help
 published: true
-permalink: /en/monitoring.html
 ---
 
-TBD
+---
+Guide for dashboard, rule and timeline, data analysis. 
 
-대시보드, 규칙 및 타임라인, 데이터 분석 등의 주요 기능들에 대한 가이드 입니다.
-
-* [대시보드](#id-dashbaord)
-* [타임라인](#id-timeline)
-* [센서목록](#id-sensorlist)
-* [센서분석](#id-analysis)
-* [태그관리](#id-tag)
-* [규칙관리](#id-rule)
+* [Dashboard](#id-dashbaord)
+* [Timeline](#id-timeline)
+* [Sensor list](#id-sensorlist)
+* [sensor Analysis](#id-analysis)
+* [Tag management](#id-tag)
+* [rule Management](#id-rule)
 
 
 ---
-<div id='id-dashboard'></div>
-### **대시보드**
-대시보드는 위젯으로 구성된 모니터링화면입니다.
+<div id='id-dashboard'/>
+### **Dashboard**
+Dashboard can monitor information structured by widget. 
 ![](/assets/3_dashboard.png)
 
-#### 대시보드에 대해 알아보기
-* 화면에서 다양한 위젯을 추가하여 실시간으로 데이터를 확인할 수 있습니다.
-* <i class="fa fd-widget_sensor"></i> 센서, <i class="fa fd-widget_actuator"></i> 액츄에이터, <i class="fa fd-menu_deviceManagement"></i> 디바이스, <i class="fa fd-widget_gateway"></i> 게이트웨이, <i class="fa fa-tags"></i> 태그, <i class="fa fd-widget_lineChart"></i> 라인차트, <i class="fa fd-widget_eventChart"></i> 이벤트 차트,<i class="fa fd-widget_cumulativeChart"></i> 증감차트, <i class="fa fd-widget_stackedChart"></i> 누적 차트, <i class="fa fd-widget_energyChart"></i> 에너지 차트, <i class="fa fa-laptop"></i> 게이트웨이 모니터, <i class="fa fd-menu_timeline"></i> 타임라인과 같은 다양한 위젯을 제공하고 있습니다.
+#### Learn about Dashboard 
+* Check real time data by adding various widgets.  
+* Provide various widgets such as <i class="fa fd-widget_sensor"></i> sensor, <i class="fa fd-widget_actuator"></i> actuator, <i class="fa fd-menu_deviceManagement"></i> device, <i class="fa fd-widget_gateway"></i> gateway, <i class="fa fa-tags"></i> tag, <i class="fa fd-widget_lineChart"></i> line chart, <i class="fa fd-widget_eventChart"></i> event chart,<i class="fa fd-widget_cumulativeChart"></i> cumulative chart, <i class="fa fd-widget_stackedChart"></i> stacked chart, <i class="fa fd-widget_energyChart"></i> energy chart, <i class="fa fa-laptop"></i> gateway monitor, <i class="fa fd-menu_timeline"></i> timeline and so on.  
 
 <br>
 
-#### 위젯에 대해 알아보기
+#### About Widget
 ![](/assets/3_widget.png)
 
-* ①위젯 아이콘/이름, ②새로고침, ③설정, ④센서 값, ⑤센서 아이콘/이름, ⑥게이트웨이, ⑦업데이트시간 
-* 위젯은 대시보드를 구성하는 요소로, 사용자가 원하는 방식으로 센서 값을 표현할 수 있습니다.
-* 모든 위젯은 상단에 <i class="fa fa-refresh"></i> 새로고침, <i class="fa fa-cog"></i> 설정 아이콘이 있습니다. 새로고침 아이콘이 회전하는 <i class="fa fa-refresh"></i> 녹색이면 위젯이 실시간으로 업데이트 되는 상태이며, 새로고침 아이콘이 <i class="fa fa-refresh"></i> 적색이면 위젯의 업데이트가 끊긴 상태기며, 새로고침 아이콘이 <i class="fa fa-refresh"></i> 회색이면 클릭하여 수동 업데이트가 가능한 상태입니다.
+* ①Widget icon/name, ②refresh, ③set, ④sensor data, ⑤sensor icon/name, ⑥gateway, ⑦last updated time. 
+* Can define units for your own by dashboard on widget. 
+* Each Widget provide <i class="fa fa-refresh"></i> refresh, <i class="fa fa-cog"></i> configuration icon on top. Check update if icon turn <i class="fa fa-refresh"></i> green, turn <i class="fa fa-refresh"></i> red if disconnected, and turn gray <i class="fa fa-refresh"></i> to make manually update.
 
 <br>
 
-#### 위젯 추가해보기
-* 대시보드에서 상단 우측의 <i class="fa fa-plus-circle"></i> 버튼을 눌러 위젯을 추가합니다.
-* 센서목록의 ![](/assets/3_sensorwidget.png) 센서위젯을 추가해 보도록 하겠습니다.
-* 대시보드에 센서위젯이 추가되면 가운데 ![](/assets/3_selectsensor.png) 센서선택 버튼을 눌러 위젯 옵션창을 엽니다.
-* 먼저 위젯의 1.이름을 입력합니다. 그리고 2.게이트웨이를 선택한 후 3.센서를 고릅니다.
-* 저장버튼을 누르면 해당센서가 센서 위젯에 나타납니다.
+#### Add Widget
+* Click <i class="fa fa-plus-circle"></i> button on right top of dashboard.  
+* For example, add ![](/assets/3_sensorwidget.png) sensor widget on widget list.  
+* After adding sensor widget on dashboard, Click ![](/assets/3_selectsensor.png) select sensor in the middle of widget option screen. 
+* Put 1.name of widget. And select 2.gateway 3.sensor.
+* Push save button and sensor widget will be displayed.  
 
 <br>
 
-#### 위젯 순서 바꾸기
-* 위젯의 순서를 변경할 수 있습니다. 위젯의 이름영역을 잡고 드래그해서 순서를 바꿔보세요.
+#### Order change of widget
+* Move widget for your own priority. Drag by clicking name area of widget. 
 ![](/assets/3_widgetdrag.png)
 
 <br>
 
-#### 위젯 설정
-* <i class="fa fa-cog"></i> 톱니바퀴 아이콘 버튼을 눌러 위젯 설정창으로 이동할 수 있습니다.
-* 위젯 크기
-  - 위젯의 종류에 따라 크기를 변경할 수 있습니다.
-  - 라인차트, 이벤트차트, 증감 차트, 누적 차트, 에너지 차트 위젯은 너비를 변경할 수 있습니다.
-  - 엑츄에이터, 디바이스, 타임라인, 게이트웨이 모니터 위젯은 높이를 변경할 수 있습니다.
-  - 센서 위젯은 크기 변경이 불가능합니다.
-* 위젯 삭제
-  - 위젯을 삭제할 수 있습니다. 
+#### Set Widget
+* <i class="fa fa-cog"></i> setting ico on widget. 
+* Size 
+  - Edit size of widget for types. 
+  - Edit area for line chart, event chart, variation chart, accumulation chart and energy chart.  
+  - Edit height of actuator, device, timeline, and gateway monitor.  
+  - Cannot edit any of sensor widget.  
+* Delete widget 
+  - Can delete widget. 
 
 <br>
 
 ---
-<div id='id-timeline'></div>
-### **타임라인**
+<div id='id-timeline'/>
+### **Timeline**
 ![](/assets/3_timeline.png)
 
-#### 타임라인 사용하기
-* 사용자가 미리 설정한 규칙에 의해 발생한 이벤트가 이벤트 타임라인창에 표시됩니다. 미리 설정한 규칙이 없다면 규칙설정로 이동하여 규칙을 설정해 보십시오. 
-* 페이지 상단에는 이벤트 타임라인을 심각도 별로 분류해서 볼 수 있는 버튼이 3개 있습니다. ![](/assets/3_fatalbtn.png) ![](/assets/3_warningbtn.png) ![](/assets/3_infobtn.png) 3개의 심각도 버튼을 눌러서 보여지는 타임라인을 분류할 수 있습니다.
-* 개별 이벤트 알림은 미리 설정된 규칙에 의해 발생합니다. 규칙의 제목을 누르면 규칙에 대한 세부정보 페이지로 이동합니다.
+#### Use Timeline 
+* Event will be displayed if user can set the rule. If not, move to rule management to set new rule.  
+* Display detail condition on top of event time line. Select ![](/assets/3_fatalbtn.png) ![](/assets/3_warningbtn.png) ![](/assets/3_infobtn.png) bottun to edit.  
+* Each event alarm will be set by selected. Click the name of rule. Then move to detail information page.  
 
 <br>
 
-#### 타임라인 메세지 내용
+#### Messate on timeline 
 ![](/assets/3_timeline_rule.png)
 
-  - ①이벤트를 발생한 규칙(아이콘과 이름으로 표시)
-  - ②이벤트 중요도(심각/경고/정보에 따른 색깔 구분)
-  - ③이벤트 발생 시각
-  - ④이벤트 내용
-    - 사용자가 지정한(혹은 시스템에서 기본적으로 제공한) 메세지를 보여줍니다.
+  - ①Rule of previous events (Icon and name will be displayed)
+  - ②Event condition(Color configuration on Fatal/Warning/Notification)
+  - ③Time of event
+  - ④Event message
+    - Message will be displayed by user or provided.  
 
 <br>
 
 ---
-<div id='id-sensorlist'></div>
-### **센서목록**
-내가 가진 센서목록을 한눈에 볼 수 있습니다. 상단의 탭메뉴를 눌러 게이트웨이 및 태그, 지도뷰로 확인할 수도 있습니다.
+<div id='id-sensorlist'/>
+### **Sensor list**
+Dispaly sensor list of your own. Click the tap menu on the top. Then display gateway, tag, and location on map.  
 ![](/assets/3_sensorlist.png)
 
 <br>
 
-#### 게이트웨이 기준 목록
-특정 사이트에 속해 있는 게이트웨이와 센서를 보고자 할 때 선택합니다.
+#### List of gateway
+Select for gateway and sensor of dedicated site. 
 ![](/assets/3_viewgateway.png)
 
-* ①게이트웨이 선택 창 : 특정 사이트에 속해 있는 게이트웨이와 센서를 보고자 할 때 선택합니다.
-* ②게이트웨이 이름
-* ③해당 게이트웨이 상세차트 보기 : 해당 게이트웨이에 부착된 모든 센서에 대한 자세한 차트를 볼 수 있는 페이지로 이동합니다. 
-* ④게이트웨이에 속한 센서 목록
-* ⑤해당 센서의 최근 값
-* ⑥해당 센서의 최근 업데이트 시간 : 센서가 마지막으로 업데이트된 시간을 나타냅니다. (녹색: 센서가 잘 작동하고 있음, 적색 : 센서에 문제가 있음)
-* ⑦해당 게이트웨이의 마지막 갱신 시간
+* ①Gateway selection screen : Select for gateway and sensor of dedicated site.  
+* ②Name of gateway
+* ③Detail chart on gateway : move to dispaly sensors that on dedicated gateway. 
+* ④Sensor list on gateway
+* ⑤Updated data on sensor
+* ⑥Display time to update : Display time that has been received latestly. (Green: normal, Red : Sensor error)
+* ⑦Updated time of gateway
 
 <br>
 
-#### 지도 기준 목록
-위치정보를 가진 게이트웨이를 지도 뷰로 확인할 수 있습니다. 위치정보 입력은 [게이트웨이 관리](/help_management/#id-gateway-management) 페이지에서 입력할 수 있습니다.
+#### Location list on map
+Check map view for gateway if have location information.  Put location in [Gateway management](/help_management/#id-gateway-management) page.
 ![](/assets/3_viewmap.png)
  
-* 지도뷰를 보고 싶은 ①게이트웨이를 선택하면, 해당 게이트웨이의 위치가 지도에 표시됩니다.
-* ②아이콘을 클릭하면 게이트웨이의 이름과 마지막으로 업데이트 된 시간, 디바이스와 센서의 갯수가 표시됩니다.
-* 지도 상단의 ③아이콘으로 지도 인터페이스를 제어할 수 있습니다.
+* Display location on gateway by select ①gateway on map. 
+* Display updated time of gateway and device and sensor units by click ②icon. 
+* Control map interface by select ③ icon on top of map. 
 
 <br>
 
-#### 태그 기준 목록
+#### Tag List
 ![](/assets/3_viewtag.png)
 
-* ①태그 선택 창 : 태그를 선택할 수 있습니다.
-* ②디바이스 정보 아이콘 : 해당 태그에 속한 센서들의 디바이스를 볼 수 있습니다.
-* ③차트분석 아이콘 : 해당 태그에 포함된 모든 센서에 대한 자세한 그래프를 볼 수 있는 페이지로 이동합니다. 
-* ④태그 설정 : 해당 태그 관리페이지로 이동합니다.
-* ⑤센서 정보 : 센서 이름을 클릭하면 센서정보 페이지로 이동하여 센서에 대한 간략한 그래프를 확인 할 수 있습니다.
-* 이벤트 타임라인 : 해당 태그에 대한 타임라인을 확인 할 수 있습니다.
+* ①Tag selection : select a tag.
+* ②Device information icon : Displa devices on tag. 
+* ③Chart analysis icon : move a page to display detail graph on tag. 
+* ④Tag setting : Move to tag management page.  
+* ⑤Sensor information : Click the sensor name to move and display rough sensor graph.  
+* Event timeline : Check timeline on tap.  
 
 <br>
 
 ---
-<div id='id-analysis'></div>
-### **센서분석**
-센서분석페이지는 차트와 통계로 나누어져 있습니다.
+<div id='id-analysis'/>
+### **Sensor Aanlysis**
+Sensor analysis page provide chart and statistics. 
 ![](/assets/3_sensoranalysis.png)
 
 <br>
 
-#### 차트
+#### Chart
 ![](/assets/3_analysis_chart.png)
 
-* 선택된 센서들의 시계열 차트를 제공합니다. ①분석하고자 하는 센서를 게이트웨이 혹은 태그로 선택할 수 있도록 기준을 정할 수 있습니다. 분석할 ②센서리스트를 선택하고, ④기간을 설정할 수 있습니다. 차트 영역에서는 화면의 ⑦확대/축소, ⑧영역선택/이동, ⑨초기 영역으로 복원등의 기능을 제공합니다. 센서 데이터를 ⑩내보내기 기능을 통해 다운로드할 수 있습니다.
+* Provide timeline chart for selected sensors. Set a term for ①analysis on sensor to gateway and tag. Select ②sensor list, ④time zone. Provide screen to ⑦Size up/down, ⑧Area selection/move, ⑨recovery to initial setting. Download sensor data by ⑩export function. 
 
-#### 차트분석 해보기
-1. 게이트웨이를 선택합니다.
-- 서비스를 선택합니다.
-- 차트에 보여질 센서가 부착된 게이트웨이를 선택합니다.
-- 차트에 보여질 센서를 선택합니다.
-- 데이터를 보여줄 기간을 선택합니다.
-- 상세차트를 다운받아 볼 수 있습니다.
-- 현재 보고 있는 센서를 표시합니다.
-- 화면을 확대, 축소한 경우 양쪽 화살표를 이용해 뒤로 가거나, 앞으로 갈 수 있습니다. 가운데 버튼을 누르면 원래대로 그래프가 복구됩니다.
-- 그래프를 클릭하여 드래그하면 원하는 영역을 확대해서 볼 수 있습니다.
-- 그래프 전체를 볼 수 있는 Overview 차트 입니다. 원하는 구간을 클릭-드래그하여 화면영역에 표시되는 그래프를 지정할 수 있습니다.
-- 그래프 구간을 이동하여 볼 수 있는 버튼입니다. 클릭하여 확인하기 원하는 그래프 위치로 이동할 수 있습니다.
+#### Chart Analysis
+1. Select Gateway. 
+- Select service. 
+- Select gateway that has sensor to display on chart. 
+- Select sensor.  
+- Select timze zone to display data.  
+- Can download detail chart.  
+- Click sensor on chart. 
+- If size up or down,click left/right arrow to move forward and backward. Click on the middle to return back to initial screen.  
+- Click and drag to stretch out.  
+- Overall chart for graph. Click and drag for specific area to stretch.  
+- Button to move graph area. Move graph position to check.  
 
 <br>
 
-#### 통계
+#### Statistics
 ![](/assets/3_analysis_statics.png)
 
-* 선택된 게이트웨이의 통계 정보를 제공합니다. 원하는 ②게이트웨이를 선택하고, 조회 버튼을 누르면 통계 정보를 제공 받을 수 있습니다. 여러개의 센서를 ③추가하여 비교해볼 수 있습니다. ④조회 기간과 조회를 원하는 ⑤날짜(월/연도)를 변경하여 조회할 수 있습니다.
+* Provide statistics on selected gateway. Select ②gateway, and click search button. Compare others to add ③sensors. Check ④time zone and ⑤date (month/year).  
 
-#### 통계 해보기
-1. 게이트웨이를 선택합니다. 
-- 서비스를 선택합니다.
+#### Statistic tutorial
+1. Select Gateway. 
+- select service.
 
 <br>
 
 ---
-<div id='id-tag'></div>
-### **태그 관리**
+<div id='id-tag'/>
+### **Tag Management**
 ![](/assets/3_m_tag0.png)
 
-#### 화면안내
+#### Screen Information
 ![](/assets/3_m_tag_desc.png)
 
-* 직접 태그를 만들어 원하는 센서들을 새로운 기준으로 관리할 수 있습니다.
+* Manage new rule by create own tag with sensors.  
 
-#### 태그 선택
-* 상단 ①태그 이름에서 태그를 선택할 수 있습니다. 태그를 선택하면 해당 태그에 속한 센서만 화면에 나타납니다.
+#### Tag selection
+* Select ①tag name on top. Selected senssor will be display. 
 
-#### 태그 목록
-* 각 ②태그 별로 센서리스트를 볼 수 있습니다.
-* 태그 리스트에서 ③태그 이름, ④태그에 속한 센서들의 ⑤게이트웨이, ⑥센타입, ⑦센서이름, ⑧센서ID를 볼 수 있습니다.
+#### Tag List
+* Dislapy ②each tag types.  
+* Dispaly ③Tag name, ④Senors in tag ⑤gateway, ⑥sensor type, ⑦sensor name, ⑧Sensor ID in tag list.
 
 
-#### 태그 만들기
-1. 상단의 <i class="widget-add-button fa fa-plus-circle"></i>Add 버튼을 눌러 새로운 태그를 만들 수 있습니다.
-- 새로 만들 태그의 이름을 작성합니다. 예제에서는 “모든 온도 센서” 라는 태그를 만들도록 하겠습니다.
-- 원하는 센서에 체크합니다.
-- 페이지 하단에 생성버튼을 눌러 태그를 만듭니다.
+#### Tag creation
+1. Create new tag by click <i class="widget-add-button fa fa-plus-circle"></i>Add button on top.  
+- Put new name of tag.  For example, we build “all temperature sensors” .
+- Check sensor.
+- Click creation button on bottom of page.  
 
 <br>
 
 
 ---
-<div id='id-rule'></div>
-### **규칙 관리**
-규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/help_rule/)를 이용해주세요. 
+<div id='id-rule'/>
+### **Rule Management**
+Can create and manage the rule.  Detail rule description is on  [Rule creation and control](/help_rule/). 
 ![](/assets/3_m_rule0.png)
 
 
 
 <!---
-Thing+ 를 통해서, IoT의 기본적인 내용인 사물을 연결하고 실시간으로 센서의 데이타를 확인할 수 있습니다.
-주요 기능들에 대해서 다음을 확인해보세요.
+Experience real time data analysis by connecting devices on Thing+. 
+Check for mainfunctions as below.  
 
-1. 대시보드
-  - 대시보드 알아보기
-  - 위젯 일반
-  - 위젯 추가하기
-  - 위젯 순서 바꾸기
-  - 위젯 설정
-2. 타임라인
-  - 타임라인 사용하기
-  - 규칙 알아보기
-3. 센서목록
-  - 게이트웨이 기준 목록
-  - 지도 기준 목록
-  - 태그 기준 목록
-4. 센서분석
-  - 차트
-  - 통계
+1. Dashboard
+  - Dashboard
+  - Standard Widget
+  - Add Widget
+  - Order change of widget
+  - Widget setting
+2. Timeline
+  - Use timeline
+  - About Rule
+3. Sensor list
+  - Gateway list
+  - Map list
+  - Tag list
+4. Sensor analysis
+  - Chart
+  - Staticistics
 -->
 
 <br>
