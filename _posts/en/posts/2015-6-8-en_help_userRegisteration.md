@@ -5,7 +5,6 @@ tags: help
 published: true
 ---
 
----
 User guide for a progress as hardware synchronization and user sign up. 
 
 * [service administrator](#id-serviceadmin)

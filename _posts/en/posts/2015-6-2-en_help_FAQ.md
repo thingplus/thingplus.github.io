@@ -5,7 +5,6 @@ tags: help
 published: true
 ---
 
----
 Answer for frequently asked questionaires.
 
 * Q. Do not have enough knowledeg on IoT, can I use Thing+?

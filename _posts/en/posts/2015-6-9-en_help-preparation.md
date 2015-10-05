@@ -5,7 +5,6 @@ tags: help
 published: true
 ---
 
----
 Guide for Thing+ service.
 
 * [Before you start ](#id-starting)

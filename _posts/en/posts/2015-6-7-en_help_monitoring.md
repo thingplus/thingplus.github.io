@@ -5,7 +5,6 @@ tags: help
 published: true
 ---
 
----
 Guide for dashboard, rule and timeline, data analysis. 
 
 * [Dashboard](#id-dashbaord)

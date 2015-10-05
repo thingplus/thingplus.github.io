@@ -5,7 +5,6 @@ tags: help
 published: true
 ---
 
----
 Guide for rule creation and management. 
 
 * [About Rule](#id-rule-about)
