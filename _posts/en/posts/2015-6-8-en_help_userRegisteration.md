@@ -38,11 +38,11 @@ User guide for a progress as hardware synchronization and user sign up.
   * •	Put service address in internet browser.
 ![](/assets/2_address.png)
 
-  * •	Push sign in ![](/assets/2_register.png) button on top for redirecting Sign in page. 
+  * •	Push sign in ![](/assets/en_2_register.png) button on top for redirecting Sign in page. 
   * •	Put your ID, e-mail(2 times for confirmation), passwords (2time for confirmation), and agree on access term. Then it return registration success message.   
   * •	Will receive e-mail on your registered e-maill address for confirmation. 
   * •	Click on e-mail confirmation and registration process to be done.   
-![](/assets/2_email.png)
+![](/assets/en_2_email.png)
 
 #### Sign in and Authorization progress for service administrator
   * After confirmation on e-mail, follow sign in progress for service administrator
