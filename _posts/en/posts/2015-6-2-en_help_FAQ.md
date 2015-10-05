@@ -15,7 +15,7 @@ Answer for frequently asked questionaires.
 * Q. price quotation of Thing+?
 
 * Q. How to set line chart on Dash board? 
-  - Click set icon for upper side<i class="fa fa-cog fa-lg"></i> of widget.
+  - Click set icon for upper side <i class="fa fa-cog fa-lg"></i> of widget.
   - Click "time zone" on right side of "Set widget" screen. Can set up to 24 hours. 
 
 * Q. How to monitor old data?

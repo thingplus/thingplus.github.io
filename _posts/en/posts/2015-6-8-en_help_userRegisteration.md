@@ -10,7 +10,7 @@ User guide for a progress as hardware synchronization and user sign up.
 * [User](#id-enduser) 
 
 ---
-<div id='id-serviceadmin'/>
+<div id='id-serviceadmin'></div>
 ### Service Manager
 <br>
 #### Sign in and how to use
@@ -24,7 +24,7 @@ User guide for a progress as hardware synchronization and user sign up.
 <br>
 
 ---
-<div id='id-enduser'/>
+<div id='id-enduser'></div>
 ### User
 <br>
 

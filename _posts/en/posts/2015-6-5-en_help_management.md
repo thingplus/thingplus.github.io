@@ -12,7 +12,7 @@ Guide for service, site, user and gateway.
 * [gateway Management](#id-gateway-management)
 
 ---
-<div id='id-service-management'/>
+<div id='id-service-management'></div>
 ### Service Management
 **Function for Service manager.**
 
@@ -35,7 +35,7 @@ Can set service management.
 <br>
 
 ---
-<div id='id-site-management'/>
+<div id='id-site-management'></div>
 ### Site Mangement
 **Function for site manager.**
 
@@ -57,7 +57,7 @@ Create and change the site.
 <br>
 
 ---
-<div id='id-user-management'/>
+<div id='id-user-management'></div>
 ### User management
 **Function for service ans site manager.**
 ![](/assets/5_m_user0.png)
@@ -84,7 +84,7 @@ Create and change the site.
 <br>
 
 ---
-<div id='id-gateway-management'/>
+<div id='id-gateway-management'></div>
 ### Gateway management
 **Fuction for site and gateway.**
 ![](/assets/5_m_gateway0.png)

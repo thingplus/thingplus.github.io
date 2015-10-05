@@ -15,7 +15,7 @@ Guide for dashboard, rule and timeline, data analysis.
 
 
 ---
-<div id='id-dashboard'/>
+<div id='id-dashboard'></div>
 ### **Dashboard**
 Dashboard can monitor information structured by widget. 
 ![](/assets/3_dashboard.png)
@@ -63,7 +63,7 @@ Dashboard can monitor information structured by widget.
 <br>
 
 ---
-<div id='id-timeline'/>
+<div id='id-timeline'></div>
 ### **Timeline**
 ![](/assets/3_timeline.png)
 
@@ -86,7 +86,7 @@ Dashboard can monitor information structured by widget.
 <br>
 
 ---
-<div id='id-sensorlist'/>
+<div id='id-sensorlist'></div>
 ### **Sensor list**
 Dispaly sensor list of your own. Click the tap menu on the top. Then display gateway, tag, and location on map.  
 ![](/assets/3_sensorlist.png)
@@ -130,7 +130,7 @@ Check map view for gateway if have location information.  Put location in [Gatew
 <br>
 
 ---
-<div id='id-analysis'/>
+<div id='id-analysis'></div>
 ### **Sensor Aanlysis**
 Sensor analysis page provide chart and statistics. 
 ![](/assets/3_sensoranalysis.png)
@@ -169,7 +169,7 @@ Sensor analysis page provide chart and statistics.
 <br>
 
 ---
-<div id='id-tag'/>
+<div id='id-tag'></div>
 ### **Tag Management**
 ![](/assets/3_m_tag0.png)
 
@@ -196,7 +196,7 @@ Sensor analysis page provide chart and statistics.
 
 
 ---
-<div id='id-rule'/>
+<div id='id-rule'></div>
 ### **Rule Management**
 Can create and manage the rule.  Detail rule description is on  [Rule creation and control](/help_rule/). 
 ![](/assets/3_m_rule0.png)

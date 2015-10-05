@@ -13,7 +13,7 @@ Guide for Thing+ service.
 * [User case](#id-usecase)
 
 ---
-<div id='id-starting'/>
+<div id='id-starting'></div>
 ### Before you start
 <br>
 ![](/assets/1_thingplus.png)
@@ -37,7 +37,7 @@ Guide for Thing+ service.
 <br>
 
 ---
-<div id='id-term'/>
+<div id='id-term'></div>
 ### Terminology
 <br>
 #### Service, Site
@@ -87,7 +87,7 @@ Guide for Thing+ service.
 <br>
 
 ---
-<div id='id-feature'/>
+<div id='id-feature'></div>
 ### Feature
 <br>
 #### Dashboard management
@@ -130,7 +130,7 @@ Guide for Thing+ service.
 <br>
 
 ---
-<div id='id-anytime'/>
+<div id='id-anytime'></div>
 ### Access
 <br>
 Any web based devices such as desk top, Tablet PC, and smartphone can access system.
@@ -142,7 +142,7 @@ Any web based devices such as desk top, Tablet PC, and smartphone can access sys
 <br>
 
 ---
-<div id='id-usecase'/>
+<div id='id-usecase'></div>
 ### User Case
 <br>
 ####Humidity monitoring for Smart-home

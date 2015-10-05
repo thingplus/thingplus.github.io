@@ -14,7 +14,7 @@ Guide for rule creation and management.
 * [Totorial for Rule](#id-rule-tutorial)
 
 ---
-<div id='id-rule-about'/>
+<div id='id-rule-about'></div>
 ### About Rule
 <br>
 #### Rule?
@@ -51,7 +51,7 @@ Guide for rule creation and management.
 <br>
 
 ---
-<div id='id-rule-management'/>
+<div id='id-rule-management'></div>
 ### Rule Managemenet
 Display existing rules.
 
@@ -74,7 +74,7 @@ Make visualization of action of event.
 <br>
 
 ---
-<div id='id-rule-creation'/>
+<div id='id-rule-creation'></div>
 ### Create Rule
 Set the rule by customer own sensor. In addition, make a rule by rule templetes provided. 
 
@@ -108,7 +108,7 @@ Set the rule by customer own sensor. In addition, make a rule by rule templetes 
 <br>
 
 ---
-<div id='id-rule-info'/>
+<div id='id-rule-info'></div>
 ### Rule Information
 Edit rule information that made.  Rule information can find rule managment page, timeline page.  
 ![](/assets/4_m_ruleinfo.png)
@@ -118,7 +118,7 @@ Edit rule information that made.  Rule information can find rule managment page,
 
 <br>
 
-<div id='id-rule-edit'/>
+<div id='id-rule-edit'></div>
 #### Edit and remove rule
 * **Rule Edit**
   * Can edit rule for anytime. 
@@ -134,7 +134,7 @@ Edit rule information that made.  Rule information can find rule managment page,
 <br>
 
 ---
-<div id='id-rule-tutorial'/>
+<div id='id-rule-tutorial'></div>
 ### Rule Tutorial
 (Will be open shortly.)
 
