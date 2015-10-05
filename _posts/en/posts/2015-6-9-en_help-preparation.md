@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Instruction"
 tags: help
 published: true

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Hardware installation and synchronization
 tags: help
 published: true

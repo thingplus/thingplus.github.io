@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Rule creation and control
 tags: help
 published: true

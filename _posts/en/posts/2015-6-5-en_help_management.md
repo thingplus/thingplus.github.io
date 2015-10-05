@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Management guide"
 tags: help
 published: true

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Guide for functions"
 tags: help
 published: true
