@@ -60,10 +60,10 @@ Create and change the site.
 <div id='id-user-management'></div>
 ### User management
 **Function for service ans site manager.**
-![](/assets/5_m_user0.png)
+![](/assets/en_5_m_user0.png)
 
 #### Display information
-![](/assets/5_user_m.png)
+![](/assets/en_5_user_m.png)
 
 * Check list of users on sites of service. 
 
@@ -87,10 +87,10 @@ Create and change the site.
 <div id='id-gateway-management'></div>
 ### Gateway management
 **Fuction for site and gateway.**
-![](/assets/5_m_gateway0.png)
+![](/assets/en_5_m_gateway0.png)
 
 #### Dispaly screen
-![](/assets/5_m_gateway.png)
+![](/assets/en_5_m_gateway.png)
 
 #### Gateway
 * Site name
@@ -119,7 +119,7 @@ Create and change the site.
 <br>
 
 #### Gateway registration 
-![](/assets/5_m_gateway2.png)
+![](/assets/en_5_m_gateway2.png)
 
 1. Select ①gateway  model and device model.
 * Put ②gateway ID, and ③name.
