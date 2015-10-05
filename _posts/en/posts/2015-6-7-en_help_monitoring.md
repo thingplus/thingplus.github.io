@@ -18,7 +18,7 @@ Guide for dashboard, rule and timeline, data analysis.
 <div id='id-dashboard'></div>
 ### **Dashboard**
 Dashboard can monitor information structured by widget. 
-![](/assets/3_dashboard.png)
+![](/assets/en_3_dashboard.png)
 
 #### Learn about Dashboard 
 * Check real time data by adding various widgets.  
@@ -27,7 +27,7 @@ Dashboard can monitor information structured by widget.
 <br>
 
 #### About Widget
-![](/assets/3_widget.png)
+![](/assets/en_3_widget.png)
 
 * ①Widget icon/name, ②refresh, ③set, ④sensor data, ⑤sensor icon/name, ⑥gateway, ⑦last updated time. 
 * Can define units for your own by dashboard on widget. 
@@ -37,8 +37,8 @@ Dashboard can monitor information structured by widget.
 
 #### Add Widget
 * Click <i class="fa fa-plus-circle"></i> button on right top of dashboard.  
-* For example, add ![](/assets/3_sensorwidget.png) sensor widget on widget list.  
-* After adding sensor widget on dashboard, Click ![](/assets/3_selectsensor.png) select sensor in the middle of widget option screen. 
+* For example, add ![](/assets/en_3_sensorwidget.png) sensor widget on widget list.  
+* After adding sensor widget on dashboard, Click ![](/assets/en_3_selectsensor.png) select sensor in the middle of widget option screen. 
 * Put 1.name of widget. And select 2.gateway 3.sensor.
 * Push save button and sensor widget will be displayed.  
 
@@ -46,7 +46,7 @@ Dashboard can monitor information structured by widget.
 
 #### Order change of widget
 * Move widget for your own priority. Drag by clicking name area of widget. 
-![](/assets/3_widgetdrag.png)
+![](/assets/en_3_widgetdrag.png)
 
 <br>
 
@@ -65,17 +65,17 @@ Dashboard can monitor information structured by widget.
 ---
 <div id='id-timeline'></div>
 ### **Timeline**
-![](/assets/3_timeline.png)
+![](/assets/en_3_timeline.png)
 
 #### Use Timeline 
 * Event will be displayed if user can set the rule. If not, move to rule management to set new rule.  
-* Display detail condition on top of event time line. Select ![](/assets/3_fatalbtn.png) ![](/assets/3_warningbtn.png) ![](/assets/3_infobtn.png) bottun to edit.  
+* Display detail condition on top of event time line. Select ![](/assets/en_3_fatalbtn.png) ![](/assets/en_3_warningbtn.png) ![](/assets/en_3_infobtn.png) bottun to edit.  
 * Each event alarm will be set by selected. Click the name of rule. Then move to detail information page.  
 
 <br>
 
 #### Messate on timeline 
-![](/assets/3_timeline_rule.png)
+![](/assets/en_3_timeline_rule.png)
 
   - ①Rule of previous events (Icon and name will be displayed)
   - ②Event condition(Color configuration on Fatal/Warning/Notification)
@@ -89,13 +89,13 @@ Dashboard can monitor information structured by widget.
 <div id='id-sensorlist'></div>
 ### **Sensor list**
 Dispaly sensor list of your own. Click the tap menu on the top. Then display gateway, tag, and location on map.  
-![](/assets/3_sensorlist.png)
+![](/assets/en_3_sensorlist.png)
 
 <br>
 
 #### List of gateway
 Select for gateway and sensor of dedicated site. 
-![](/assets/3_viewgateway.png)
+![](/assets/en_3_viewgateway.png)
 
 * ①Gateway selection screen : Select for gateway and sensor of dedicated site.  
 * ②Name of gateway
@@ -109,7 +109,7 @@ Select for gateway and sensor of dedicated site.
 
 #### Location list on map
 Check map view for gateway if have location information.  Put location in [Gateway management](/help_management/#id-gateway-management) page.
-![](/assets/3_viewmap.png)
+![](/assets/en_3_viewmap.png)
  
 * Display location on gateway by select ①gateway on map. 
 * Display updated time of gateway and device and sensor units by click ②icon. 
@@ -118,7 +118,7 @@ Check map view for gateway if have location information.  Put location in [Gatew
 <br>
 
 #### Tag List
-![](/assets/3_viewtag.png)
+![](/assets/en_3_viewtag.png)
 
 * ①Tag selection : select a tag.
 * ②Device information icon : Displa devices on tag. 
@@ -133,12 +133,12 @@ Check map view for gateway if have location information.  Put location in [Gatew
 <div id='id-analysis'></div>
 ### **Sensor Aanlysis**
 Sensor analysis page provide chart and statistics. 
-![](/assets/3_sensoranalysis.png)
+![](/assets/en_3_sensoranalysis.png)
 
 <br>
 
 #### Chart
-![](/assets/3_analysis_chart.png)
+![](/assets/en_3_analysis_chart.png)
 
 * Provide timeline chart for selected sensors. Set a term for ①analysis on sensor to gateway and tag. Select ②sensor list, ④time zone. Provide screen to ⑦Size up/down, ⑧Area selection/move, ⑨recovery to initial setting. Download sensor data by ⑩export function. 
 
@@ -158,7 +158,7 @@ Sensor analysis page provide chart and statistics.
 <br>
 
 #### Statistics
-![](/assets/3_analysis_statics.png)
+![](/assets/en_3_analysis_statics.png)
 
 * Provide statistics on selected gateway. Select ②gateway, and click search button. Compare others to add ③sensors. Check ④time zone and ⑤date (month/year).  
 
@@ -171,10 +171,10 @@ Sensor analysis page provide chart and statistics.
 ---
 <div id='id-tag'></div>
 ### **Tag Management**
-![](/assets/3_m_tag0.png)
+![](/assets/en-3_m_tag0.png)
 
 #### Screen Information
-![](/assets/3_m_tag_desc.png)
+![](/assets/en_3_m_tag_desc.png)
 
 * Manage new rule by create own tag with sensors.  
 
@@ -199,7 +199,7 @@ Sensor analysis page provide chart and statistics.
 <div id='id-rule'></div>
 ### **Rule Management**
 Can create and manage the rule.  Detail rule description is on  [Rule creation and control](/en_help_rule/). 
-![](/assets/3_m_rule0.png)
+![](/assets/en_3_m_rule0.png)
 
 
 
