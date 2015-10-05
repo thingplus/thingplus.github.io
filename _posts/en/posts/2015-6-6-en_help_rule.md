@@ -55,7 +55,7 @@ Guide for rule creation and management.
 ### Rule Managemenet
 Display existing rules.
 
-![](/assets/4_m_rule.png)
+![](/assets/en_4_m_rule.png)
 
 #### Rule Managment 
 * Display ①Existing rule list.
@@ -83,7 +83,7 @@ Set the rule by customer own sensor. In addition, make a rule by rule templetes 
 #### Make own rule creation
 1. Click rule menu <i class="fa fd-menu_ruleManagement"></i> on right part of <i class="fa fd-menu_setting"></i> setting. Create own rule <i class="fa fd-rule_creation"></i> on <i class="fa fa-plus-circle"></i> buttom on top of menu. 
 2. Make rule as “If temperature move over 30 degree celcius, send message on mobile”.
-3. Select ![](/assets/4_rule_trigger.png) Trigger creation.
+3. Select ![](/assets/en_4_rule_trigger.png) Trigger creation.
 4. Select trigger type for rule initiation. For example, select temperature sensor <i class="fa fd-rule_trigger_temperature fa-2x" style="color: #e04937"></i>. 
 5. Set the range of temperature sensor. Set 30 for temperature sensor as select <i class="fa fd-rule_method_over fa-2x"></i>“over”.
 6. Set trigger for detail setting.
@@ -91,10 +91,10 @@ Set the rule by customer own sensor. In addition, make a rule by rule templetes 
 8. Select gateway. 
 9. Select gateway that have temperature sensor.  
 10. Set temperature sensor for trigger.  
-11. After done above, select action.  In action screen, check selected trigger.   ![](/assets/4_rule_action.png) Action initiation to activate.  
+11. After done above, select action.  In action screen, check selected trigger.   ![](/assets/en_4_rule_action.png) Action initiation to activate.  
 12. Select <i class="fa fd-rule_action_sms fa-2x"  style="color: #53ae55"></i> SMS for selection screen.
 13. Select <i class="fa fd-rule_method_send fa-2x"></i>“SEND(보내기)” for options.  
-14. Put message on your own for last. Check your message by clicking <i class="fa fa-edit"></i>를 눌러 HTML을 입력하거나 <i class="fa fa-eye"></i>.  Can apply standard message that has been provided. Click rule creation by ![](/assets/4_rule_create.png).
+14. Put message on your own for last. Check your message by clicking <i class="fa fa-edit"></i>를 눌러 HTML을 입력하거나 <i class="fa fa-eye"></i>.  Can apply standard message that has been provided. Click rule creation by ![](/assets/en_4_rule_create.png).
 15. Set the detail condition and put finish button.  
 
 <br>
@@ -111,7 +111,7 @@ Set the rule by customer own sensor. In addition, make a rule by rule templetes 
 <div id='id-rule-info'></div>
 ### Rule Information
 Edit rule information that made.  Rule information can find rule managment page, timeline page.  
-![](/assets/4_m_ruleinfo.png)
+![](/assets/en_4_m_ruleinfo.png)
 
 * Rule information page display ①name of rule ②detail agents ③method, ④parameter.
 * Edit ⑤rule edition, ⑥remove, ⑦Activation/disactivation.
