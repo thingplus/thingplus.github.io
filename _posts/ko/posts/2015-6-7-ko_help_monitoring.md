@@ -37,7 +37,7 @@ permalink: /ko/monitoring.html
 <br>
 
 #### 위젯 추가해보기
-* 대시보드에서 상단 우측의 <i class="fa fa-plus-circle"></i> 버튼을 눌러 위젯을 추가합니다.
+* 대시보드에서 우측 상단의 <i class="fa fa-plus-circle"></i> 버튼을 눌러 위젯을 추가합니다.
 * 센서목록의 ![](/assets/3_sensorwidget.png) 센서위젯을 추가해 보도록 하겠습니다.
 * 대시보드에 센서위젯이 추가되면 가운데 ![](/assets/3_selectsensor.png) 센서선택 버튼을 눌러 위젯 옵션창을 엽니다.
 * 먼저 위젯의 1.이름을 입력합니다. 그리고 2.게이트웨이를 선택한 후 3.센서를 고릅니다.
@@ -89,7 +89,7 @@ permalink: /ko/monitoring.html
 ---
 <div id='id-sensorlist'></div>
 ### **센서목록**
-내가 가진 센서목록을 한눈에 볼 수 있습니다. 상단의 탭메뉴를 눌러 게이트웨이 및 태그, 지도뷰로 확인할 수도 있습니다.
+현재 보유한 센서목록을 한눈에 볼 수 있습니다. 상단의 탭메뉴를 눌러 게이트웨이 및 태그, 지도뷰로 확인할 수도 있습니다.
 ![](/assets/3_sensorlist.png)
 
 <br>
@@ -199,7 +199,7 @@ permalink: /ko/monitoring.html
 ---
 <div id='id-rule'></div>
 ### **규칙 관리**
-규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/help_rule/)를 이용해주세요. 
+규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/rule/)를 이용해주세요. 
 ![](/assets/3_m_rule0.png)
 
 
