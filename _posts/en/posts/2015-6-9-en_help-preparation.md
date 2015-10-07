@@ -22,18 +22,18 @@ Guide for Thing+ service.
   * Thing+ provide user own IoT service by cloud.
   * User own IoT service by sign in Thing+. 
   * Install IoT service by synchronization between Thing+ and qualified hardware.  
-  * •	Cloud Eco environment such as smart home, smart farm, smart energy and so on.  
+  * Cloud Eco environment such as smart home, smart farm, smart energy and so on.
 
 #### How useful tool named Thing+?
 * User can experience IoT eco environment by simple installation with cost competitiveness.
-* •	Check detail case to use various applications.  [Click](http://www.daliworks.net/?page_id=94)
+* Check detail case to use various applications.  [Click](http://www.daliworks.net/?page_id=94&lang=en)
 
 #### Start Thing+ by simple progress.
   *	Sign in Thing+ portal.
   *	Connect Thing+ by purchasing accessible hardware.
-  *	Monitor and analyze data generated from sensor. 
-  *	Control sensor by rule design for customer needs.  
-  *	Access Thing+ without physical limitation. 
+  *	Monitor and analyze data generated from sensors.
+  *	Control sensors by rule design for customer needs.
+  *	Access to Thing+ without physical limitation.
  
 <br>
 
@@ -45,32 +45,32 @@ Guide for Thing+ service.
 * Thing+ can manage separately by service and site.
   - For	example, Monitor ambient temperature in classrooms for school.
     - Deploy a school as service. 
-    - Set classroom for site. 
+    - Set each classroom as a site.
     - Install and register temperature sensor for each site. 
     - Students from each classroom sign in Thing+ portal. 
-    - Each student can get temperature data from each class by access Thin+ portal.   
+    - Each student can get temperature data from each class by access Thing+ portal.
 * Service also can be provided for company.
 * Service will have separated URL such as {service name}.thingplus.net.  
   - For exmaple, smarthome.thingplus.net, hello.thingplus.net and so on.
 * Service can create and manage internal sites.  
   - For exmaple, smart-home service owner can control its own sites from each building setting such as #101, #102, #103.  
-*	Site cannot authorize or share information for other site.  
+* Site cannot authorize or share information for other site.
 * Site can authorize users and gateway.  
 
 #### Manager, User
 * Manager can be separated between service manager and site manager.  
   - Service manager can get all authorization for internal service. 
   - Site manager can get all authorization for internal site. 
-  - User means registered in site, manager will allow user for access gateway.
+  - User means registered in site, manager will allow user for access to specific gateway.
 
 #### Gateway, device, sensor 
-* Hardware has three property as gateway> Device>sensor.  
+* Hardware has three property as gateway > Device > sensor.
     - For exmaple, Rasberrypie > Aduido > temperature sensor
     - For exmaple, Smartphone > Bluetooth > 3-Axes sensor 
 * Gateway has Thing+ Embedded(Gateway or Device) and connects Thing+ Cloud.
-* Gateway can send and receive signal from connected devices. 
-* Device has sensors and connect gateway for wire or wireless network.  
-* Sensor receives digital data and includes Actuators. 
+* Gateway can send and receive signals from connected devices.
+* Device has sensors and connects gateway for wire or wireless network.
+* Sensor consists of 'Sensor' receives data and 'Actuator' controls switchs, camera and so on.
   - For example, Sensor - temperature, humidity, illumination and so on 
   - For exmaple, Actuator – light switch, Power switch, Camera and so on. 
 
@@ -107,7 +107,7 @@ Guide for Thing+ service.
 -->
 
 #### Event Timeline 
-* Any event by justified rule will be exposed by timeline as twitter.  
+* Any event by justified rule will be exposed by timeline like twitter's one.
 * Event will be defined as detail setting (Fatal/Warning/notification) and each device can has its own time line.  
 
 <!---
@@ -115,7 +115,7 @@ Guide for Thing+ service.
 -->
 
 #### Sensor List
-* Check connected sensor condition on gateway/map/tag. 
+* Check condition of connected sensors on gateway/map/tag.
 
 <!---
 * [Detail description]()
