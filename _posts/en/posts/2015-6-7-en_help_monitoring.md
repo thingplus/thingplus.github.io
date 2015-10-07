@@ -199,7 +199,7 @@ Sensor analysis page provide chart and statistics.
 ---
 <div id='id-rule'></div>
 ### **Rule Management**
-Can create and manage the rule.  Detail rule description is on  [Rule creation and control](/en_help_rule/). 
+Can create and manage the rule.  Detail rule description is on  [Rule creation and control](/ko/rule.html). 
 ![](/assets/en_3_m_rule0.png)
 
 
