@@ -2,6 +2,7 @@
 title: "Guide for functions"
 tags: help
 published: true
+permalink: /en/monitoring.html
 ---
 
 Guide for dashboard, rule and timeline, data analysis. 

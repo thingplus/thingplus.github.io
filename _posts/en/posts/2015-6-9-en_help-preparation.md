@@ -2,6 +2,7 @@
 title: "Instruction"
 tags: help
 published: true
+permalink: /en/preparation.html
 ---
 
 Guide for Thing+ service.

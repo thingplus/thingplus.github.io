@@ -34,7 +34,11 @@
       <div class="navbar-inner">
         <div class="container">
           <div class="pull-left">
+            {% if page.lang != 'ko' %}
+            <a href="/{{ page.lang }}"><img src="{{ site.baseurl }}/assets/logo.png"></a>
+            {% else %}
             <a href="/"><img src="{{ site.baseurl }}/assets/logo.png"></a>
+            {% endif %}
           </div>
           <!--<ul class="nav pull-right">-->
             <!--<li><a href="http://www.thingplus.net/" target="_blank">Thing+</a></li>-->

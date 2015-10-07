@@ -2,6 +2,7 @@
 title: "Management guide"
 tags: help
 published: true
+permalink: /en/management.html
 ---
 
 Guide for service, site, user and gateway.  

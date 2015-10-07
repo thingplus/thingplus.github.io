@@ -2,6 +2,7 @@
 title: Hardware installation and synchronization
 tags: help
 published: true
+permalink: /en/registration.html
 ---
 
 User guide for a progress as hardware synchronization and user sign up. 

@@ -2,6 +2,7 @@
 title: Rule creation and control
 tags: help
 published: true
+permalink: /en/rule.html
 ---
 
 Guide for rule creation and management. 

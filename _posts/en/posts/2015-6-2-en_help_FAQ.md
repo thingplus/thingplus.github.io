@@ -2,6 +2,7 @@
 title: "FAQ"
 tags: help
 published: true
+permalink: /en/faq.html
 ---
 
 Answer for frequently asked questionaires.
