@@ -10,7 +10,7 @@ Guide for service, site, user and gateway.
 * [Service Management](#id-service-management)
 * [Site Managment](#id-site-management)
 * [User Management](#id-user-management)
-* [gateway Management](#id-gateway-management)
+* [Gateway Management](#id-gateway-management)
 
 ---
 <div id='id-service-management'></div>
@@ -21,17 +21,20 @@ Guide for service, site, user and gateway.
 Can set service management.
 
 #### Normal Setting
-* Can set normal setting.
-  - Name: Display name of service. Service name will be displayed on right upper side of portal. 
-  - Contact: mail for web push alarm and related information. 
-  - Detail Explanation: Put detail explanation of service.  
+Can set normal setting.
+
+* `Name`: Display name of service. Service name will be displayed on right upper side of portal.
+* `Contact`: mail for web push alarm and related information. Contact will be displayed as a link of contact on below side of portal.
+* `Detail Explanation`: Detail explanation of service. Will be displayed at Log-in screen and Sign up screen.
+* `Serice logo`: Put url of your own logo which will be displayed at Log-in screen and Sign up screen, if you have. If not, service name will be dispalyed.
+* `Service Hompage`: Put url of your own homepage or help page which will be displayed at Log-in screen and Sign up screen.
 
 #### Dashboard setting
-* Add/change widget list on dash board. 
+* Add/change `widget list` on dash board.
 * Selected widget list will be diplayed on bottom of dashboard page.  
 
 #### Rule setting
-* Add/change trigger and action list of rule command. 
+* Add/change `trigger and action list` of rule command.
 * Rule creation page will display selected trigger and action.  
 <br>
 
@@ -44,13 +47,13 @@ Can set service management.
 Create and change the site.
 
 * Display the list of sites.  
-* CHeck name and code of each site by click.  
+* Check name and code of each site by click.
 
 #### Select site
-* Select site by click site name. Selected site will be dispalyed.  
+* Select site by click site name. Only selected site will be dispalyed.
 
 #### Regisiter site  
-* Move site registration page by click <i class="fa fa-plus-circle"></i> buttom on right upper side of page.  
+* Move site registration page by click <i class="fa fa-plus-circle"></i> button on right upper side of page.
 * Can registor site by plug in site name and code.  
 * Select service options by registering site.  
 * Service option will be saved. 
@@ -79,7 +82,7 @@ Create and change the site.
 * Manager edit authorization for user's limited access.  
   -  EX. Display gateway, Authorization of gateway setting 
 * Reset password
-* User Authoriziation/unathorization 
+* User authoriziation/unathorization
 * Remove user
 
 <br>
@@ -105,16 +108,16 @@ Create and change the site.
   - Term of transmitting data 
   - Automatic add on search list 
     - Decide automatically adding sensor list of gateway.  
-* Additional Option
+* Additional Options
   - Location
   - E-mail
-  - Smart Phone
-  - More Detail
+  - Mobile
+  - Detail information
 * Add sensor and device 
 * Remove gateway/device/sensor 
 * Software managment  
   - Version info of software
-  - Update automatically
+  - Update version of software
 * Rerun gateway
 
 <br>
@@ -122,7 +125,8 @@ Create and change the site.
 #### Gateway registration 
 ![](/assets/en_5_m_gateway2.png)
 
-1. Select ①gateway  model and device model.
+1. Click <i class="fa fa-plus-circle"></i> button on right top side to add a new gateway
+* Select ①gateway  model and device model.
 * Put ②gateway ID, and ③name.
 * Check activating sensor.
 * Select ④registration site.
