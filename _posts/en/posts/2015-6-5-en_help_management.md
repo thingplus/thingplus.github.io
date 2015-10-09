@@ -26,7 +26,7 @@ Can set normal setting.
 * `Name`: Display name of service. Service name will be displayed on right upper side of portal.
 * `Contact`: mail for web push alarm and related information. Contact will be displayed as a link of contact on below side of portal.
 * `Detail Explanation`: Detail explanation of service. Will be displayed at Log-in screen and Sign up screen.
-* `Serice logo`: Put url of your own logo which will be displayed at Log-in screen and Sign up screen, if you have. If not, service name will be dispalyed.
+* `Service logo`: Put url of your own logo which will be displayed at Log-in screen and Sign up screen, if you have. If not, service name will be dispalyed.
 * `Service Hompage`: Put url of your own homepage or help page which will be displayed at Log-in screen and Sign up screen.
 
 #### Dashboard setting
