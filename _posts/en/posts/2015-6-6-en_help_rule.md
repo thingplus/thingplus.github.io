@@ -95,7 +95,7 @@ Set the rule by customer own sensor. In addition, make a rule by rule templetes 
 11. After done above, select action.  In action screen, check selected trigger.   ![](/assets/en_4_rule_action.png) Action initiation to activate.  
 12. Select <i class="fa fd-rule_action_sms fa-2x"  style="color: #53ae55"></i> SMS for selection screen.
 13. Select <i class="fa fd-rule_method_send fa-2x"></i>“SEND” for options.
-14. Put message on your own for last. Click <i class="fa fa-edit"></i> to check your message or click <i class="fa fa-eye"></i> to write HTML tags and contnets by yourself. Can apply standard message that has been provided. For example, use a provied mesage. Finish rule creation by clicking ![](/assets/en_4_rule_create.png).
+14. Put message on your own for last. Click <i class="fa fa-eye"></i> to check your message or click <i class="fa fa-edit"></i> to write HTML tags and contnets by yourself. Can apply standard message that has been provided. For example, use a provied mesage. Finish rule creation by clicking ![](/assets/en_4_rule_create.png).
 15. Set the serious level and put finish button.
 
 <br>
