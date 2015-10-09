@@ -7,7 +7,7 @@ permalink: /en/registration.html
 
 User guide for a progress as hardware synchronization and user sign up. 
 
-* [service administrator](#id-serviceadmin)
+* [Service Administrator](#id-serviceadmin)
 * [User](#id-enduser) 
 
 ---
@@ -15,12 +15,12 @@ User guide for a progress as hardware synchronization and user sign up.
 ### Service Manager
 <br>
 #### Sign in and how to use
-  * •	Requires purchasing hardware and installation for Thing+ portal. Please, contact iot@daliworks.net for detail. World best IoT professional will kindly help you.
-  * **•	Hardware for IoT service**
-    * o	Your hardware for IoT service installation.
-    * Available [Hardware List](http://www.daliworks.net/?page_id=11441) for Thnig+ access
-  * **•	Got a hardware? Any plan for new IoT hardware? Any plan for new IoT hardware?**
-    * o Mail to hw@daliworks.net if you need Hardware and Thing+ synchronization.
+  * Requires purchasing hardware and installation for Thing+ portal. Please, contact iot@daliworks.net for detail. World best IoT professional will kindly help you.
+  * **Hardware for IoT service**
+    * Your hardware for IoT service installation.
+    * Available [Hardware List](http://www.daliworks.net/?page_id=11441&lang=en) for Thnig+ access
+  * **Got a hardware? Any plan for new IoT hardware?**
+    * Mail to hw@daliworks.net if you need Hardware and Thing+ synchronization.
 
 <br>
 
@@ -36,22 +36,22 @@ User guide for a progress as hardware synchronization and user sign up.
 -->
 
 #### Sing in daliworks website
-  * •	Put service address in internet browser.
+  * Put service address in internet browser.
 ![](/assets/2_address.png)
 
-  * •	Push sign in ![](/assets/en_2_register.png) button on top for redirecting Sign in page. 
-  * •	Put your ID, e-mail(2 times for confirmation), passwords (2time for confirmation), and agree on access term. Then it return registration success message.   
-  * •	Will receive e-mail on your registered e-maill address for confirmation. 
-  * •	Click on e-mail confirmation and registration process to be done.   
+  * Push ![](/assets/en_2_register.png) sign up button on top for redirecting Sign in page.
+  * Put your ID, e-mail(2 times for confirmation), passwords (2time for confirmation), and agree on access term. Then it return registration success message.
+  * Will receive e-mail on your registered e-maill address for confirmation.
+  * Click on e-mail confirmation and registration process to be done.
 ![](/assets/en_2_email.png)
 
-#### Sign in and Authorization progress for service administrator
-  * After confirmation on e-mail, follow sign in progress for service administrator
-  * •	Get confirmation e-mail after authorization from Daliworks.  
-  * •	Will takes few seconds to minutes for authorization. If you did not receive any e-mail, please check below.  
-    * o	Put re-check your e-mail address again. 
-    * o	Check your spam mail box. 
-  * •	After receive confirmation, put ID and Password to log in.  
+#### Sign up and Authorization progress for service administrator
+  * After confirmation on e-mail, follow sign up progress for service administrator
+  * Get confirmation e-mail after authorization from the service manager.
+  * Will take few seconds to minutes for authorization. If you did not receive any e-mail, please check below.
+    * Put re-check your e-mail address again.
+    * Check your spam mail box.
+  * After receive confirmation, put ID and Password to log in.
 
 <!---
 

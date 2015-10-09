@@ -19,7 +19,7 @@ Guide for rule creation and management.
 ### About Rule
 <br>
 #### Rule?
-* Activate action for specific condition of rule. make a rule as {In case of fire, receive message service.}.
+* Activate an action for specific condition of rule. make a rule as {In case of fire, receive message service.}.
 * By rule, can be available to make automation monitoring system, can adjust data of sensors by one rule.
 * Make your own rule for proper condition, and make efficient experience IoT. 
 
@@ -35,7 +35,7 @@ Guide for rule creation and management.
   - Types. Power consumption, battery gate, time condition and so on. 
 * Action? Contol units for satisfied trigger or trigger and condition.  
   - Ex. if ~, send message alarm.
-  - Types. Web push, power switch,turn on/off RGB LED,snapshot, e-mail, report, SMS and so on.
+  - Types. Web push, power switch, turn on/off RGB LED ,snapshot, e-mail, report, SMS and so on.
 
 #### Method-parameter?
 *  Call method to set range of term. Have three types of mothod called Trigger-Method, Conditon-Method, Action-Method. 
@@ -60,7 +60,7 @@ Display existing rules.
 
 #### Rule Managment 
 * Display ①Existing rule list.
-* ②rule icon for trigger, condition, and action.  
+* ②Rule icon for trigger, condition, and action.
 * ③Name and description of rule, ④time to edit rule. 
 * ⑤Switch to activate/disactivate existing rule condtion.  
 
@@ -94,15 +94,15 @@ Set the rule by customer own sensor. In addition, make a rule by rule templetes 
 10. Set temperature sensor for trigger.  
 11. After done above, select action.  In action screen, check selected trigger.   ![](/assets/en_4_rule_action.png) Action initiation to activate.  
 12. Select <i class="fa fd-rule_action_sms fa-2x"  style="color: #53ae55"></i> SMS for selection screen.
-13. Select <i class="fa fd-rule_method_send fa-2x"></i>“SEND(보내기)” for options.  
-14. Put message on your own for last. Check your message by clicking <i class="fa fa-edit"></i>를 눌러 HTML을 입력하거나 <i class="fa fa-eye"></i>.  Can apply standard message that has been provided. Click rule creation by ![](/assets/en_4_rule_create.png).
-15. Set the detail condition and put finish button.  
+13. Select <i class="fa fd-rule_method_send fa-2x"></i>“SEND” for options.
+14. Put message on your own for last. Click <i class="fa fa-edit"></i> to check your message or click <i class="fa fa-eye"></i> to write HTML tags and contnets by yourself. Can apply standard message that has been provided. For example, use a provied mesage. Finish rule creation by clicking ![](/assets/en_4_rule_create.png).
+15. Set the serious level and put finish button.
 
 <br>
 
 #### Rule Templetes 
-1. After click right side menu on <i class="fa fd-menu_setting"></i>, click rule management <i class="fa fd-menu_ruleManagement"></i>. On push add button on top of <i class="fa fa-plus-circle"></i> rule management page, select Add button <i class="fa fa-copy fa-lg"></i> on templetes.
-2. Select any templete provided, and select <i class="fa fa-plus-circle"></i> Add button.
+1. After click right side menu on <i class="fa fd-menu_setting"></i>, click <i class="fa fd-menu_ruleManagement"></i>rule management. Push add button on top of <i class="fa fa-plus-circle"></i> rule management page, select the <i class="fa fa-copy fa-lg"></i>templete button.
+2. Select any templete provided, and click <i class="fa fa-plus-circle"></i> Add button.
 3. Edit rule for your demand.
 4. Save it and rule has been created. 
 
@@ -115,7 +115,7 @@ Edit rule information that made.  Rule information can find rule managment page,
 ![](/assets/en_4_m_ruleinfo.png)
 
 * Rule information page display ①name of rule ②detail agents ③method, ④parameter.
-* Edit ⑤rule edition, ⑥remove, ⑦Activation/disactivation.
+* ⑤Edit rule edition, ⑥remove, ⑦Activation/disactivation.
 
 <br>
 
@@ -124,11 +124,11 @@ Edit rule information that made.  Rule information can find rule managment page,
 * **Rule Edit**
   * Can edit rule for anytime. 
   * Click <i class="fa fa-cog"></i> button on rule information page.  
-  * Edit detail condition of rule.
+  * Edit serious level of rule.
   * Edit name and description of rule. 
   * Edit method and parameter of each agent.  
 * **Remove rule**
-  * Rule will not be recovred if remove. Create rule again for set. 
+  * Rule will not be recovred if remove. Create the rule again for set.
   * Click <i class="fa fa-cog"></i> button on rule informatino page.  
   * Check pop up screen of removal information and delete. 
 

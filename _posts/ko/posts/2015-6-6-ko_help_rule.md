@@ -70,7 +70,7 @@ permalink: /ko/rule.html
 <br>
 ![](/assets/4_ruleicon.png)
 
-* 순서대로 트리거,컨디션,액션을 뜻합니다.
+* 순서대로 트리거, 컨디션, 액션을 뜻합니다.
 
 <br>
 

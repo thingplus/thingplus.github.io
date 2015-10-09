@@ -41,7 +41,7 @@ Dashboard can monitor information structured by widget.
 * For example, add ![](/assets/en_3_sensorwidget.png) sensor widget on widget list.  
 * After adding sensor widget on dashboard, Click ![](/assets/en_3_selectsensor.png) select sensor in the middle of widget option screen. 
 * Put 1.name of widget. And select 2.gateway 3.sensor.
-* Push save button and sensor widget will be displayed.  
+* Push a save button and sensor widget will be displayed.
 
 <br>
 
@@ -52,11 +52,11 @@ Dashboard can monitor information structured by widget.
 <br>
 
 #### Set Widget
-* <i class="fa fa-cog"></i> setting ico on widget. 
+* Click the <i class="fa fa-cog"></i> setting icon widget.
 * Size 
   - Edit size of widget for types. 
-  - Edit area for line chart, event chart, variation chart, accumulation chart and energy chart.  
-  - Edit height of actuator, device, timeline, and gateway monitor.  
+  - Edit width for line chart, event chart, variation chart, accumulation chart and energy chart.
+  - Edit height for actuator, device, timeline, and gateway monitor.
   - Cannot edit any of sensor widget.  
 * Delete widget 
   - Can delete widget. 
@@ -69,18 +69,18 @@ Dashboard can monitor information structured by widget.
 ![](/assets/en_3_timeline.png)
 
 #### Use Timeline 
-* Event will be displayed if user can set the rule. If not, move to rule management to set new rule.  
-* Display detail condition on top of event time line. Select ![](/assets/en_3_fatalbtn.png) ![](/assets/en_3_warningbtn.png) ![](/assets/en_3_infobtn.png) bottun to edit.  
-* Each event alarm will be set by selected. Click the name of rule. Then move to detail information page.  
+* Event will be displayed if user set any rule. If not, move to rule management to set a new rule.
+* Buttons you can classify the events with serious level are on right top of event time line. Select ![](/assets/en_3_fatalbtn.png) ![](/assets/en_3_warningbtn.png) ![](/assets/en_3_infobtn.png) bottun to see specific level.
+* Each event alarm will be set by selected. Click the name of the rule. Then move to detail information page.
 
 <br>
 
 #### Messate on timeline 
 ![](/assets/en_3_timeline_rule.png)
 
-  - ①Rule of previous events (Icon and name will be displayed)
-  - ②Event condition(Color configuration on Fatal/Warning/Notification)
-  - ③Time of event
+  - ①Rule of this events (Icon and name will be displayed)
+  - ②Serious level of this event(Color configuration on Fatal/Warning/Information)
+  - ③Time of this event
   - ④Event message
     - Message will be displayed by user or provided.  
 
@@ -109,7 +109,7 @@ Select for gateway and sensor of dedicated site.
 <br>
 
 #### Location list on map
-Check map view for gateway if have location information.  Put location in [Gateway management](/help_management/#id-gateway-management) page.
+Check map view for gateway if have location information.  Put location in [Gateway management](/en/management.html#id-gateway-management) page.
 ![](/assets/en_3_viewmap.png)
  
 * Display location on gateway by select ①gateway on map. 
@@ -122,11 +122,11 @@ Check map view for gateway if have location information.  Put location in [Gatew
 ![](/assets/en_3_viewtag.png)
 
 * ①Tag selection : select a tag.
-* ②Device information icon : Displa devices on tag. 
+* ②Device information icon : Display devices on tag.
 * ③Chart analysis icon : move a page to display detail graph on tag. 
 * ④Tag setting : Move to tag management page.  
 * ⑤Sensor information : Click the sensor name to move and display rough sensor graph.  
-* Event timeline : Check timeline on tap.  
+* Event timeline : Check timeline of the selected tag.
 
 <br>
 
@@ -144,13 +144,13 @@ Sensor analysis page provide chart and statistics.
 * Provide timeline chart for selected sensors. Set a term for ①analysis on sensor to gateway and tag. Select ②sensor list, ④time zone. Provide screen to ⑦Size up/down, ⑧Area selection/move, ⑨recovery to initial setting. Download sensor data by ⑩export function. 
 
 #### Chart Analysis
-1. Select Gateway. 
-- Select service. 
-- Select gateway that has sensor to display on chart. 
+1. Select a gateway.
+- Select a service.
+- Select a gateway that has sensor to display on chart.
 - Select sensor.  
-- Select timze zone to display data.  
+- Select time zone to display data.
 - Can download detail chart.  
-- Click sensor on chart. 
+- Display values of current selected sensors.
 - If size up or down,click left/right arrow to move forward and backward. Click on the middle to return back to initial screen.  
 - Click and drag to stretch out.  
 - Overall chart for graph. Click and drag for specific area to stretch.  
@@ -183,8 +183,8 @@ Sensor analysis page provide chart and statistics.
 * Select ①tag name on top. Selected senssor will be display. 
 
 #### Tag List
-* Dislapy ②each tag types.  
-* Dispaly ③Tag name, ④Senors in tag ⑤gateway, ⑥sensor type, ⑦sensor name, ⑧Sensor ID in tag list.
+* Display ②each tag types.
+* Display ③Tag name, ④Senors in tag ⑤gateway, ⑥sensor type, ⑦sensor name, ⑧Sensor ID in tag list.
 
 
 #### Tag creation
@@ -199,7 +199,7 @@ Sensor analysis page provide chart and statistics.
 ---
 <div id='id-rule'></div>
 ### **Rule Management**
-Can create and manage the rule.  Detail rule description is on  [Rule creation and control](/en/rule.html). 
+Can create and manage the rule. Detail rule description is on  [Rule creation and control](/en/rule.html).
 ![](/assets/en_3_m_rule0.png)
 
 
