@@ -1,5 +1,5 @@
 ---
-title: Hardware installation and synchronization
+title: Hardware installation and service registration
 tags: help
 published: true
 permalink: /en/registration.html

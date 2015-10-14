@@ -1,5 +1,5 @@
 ---
-title: 하드웨어 설치와 회원가입 및 연동
+title: 하드웨어 설치와 회원가입
 tags: help
 published: true
 permalink: /ko/registration.html
