@@ -148,8 +148,13 @@ a, a:visited {
   color: #ffffff;
 }
 
+.navbar-inverse .navbar-toggle {
+  border-color: #ffffff;
+}
+
 .navbar .logo {
   padding: 10px 20px;
+  display: inline-block;
 }
 
 .navbar .logo img {
@@ -180,11 +185,16 @@ a, a:visited {
 }
 
 @media (max-width: 768px) {
+  
+  body {
+    padding-top: 50px;
+  }
+
   ul#sidebar {
     min-height: 0px;
     position: static;
     width: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 20px;
   }
 }
