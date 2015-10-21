@@ -80,19 +80,19 @@ xx:xx:xx:xx:xx:xx
 3) **사용자 PC**의 크롬브라우저를 열고 "[서비스 웹사이트](http://www.sp1.sktiot.com)"에 로그인한다.
 
 4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
-![gateway_management](/assets/open-hw/gateway_management_ko.png)
+![gateway_management](/assets/gateway_management_ko.png)
 
 5) `(+)` 버튼을 누른다.
-![register_gateway](/assets/open-hw/register_gateway_ko.png)
+![register_gateway](/assets/register_gateway_ko.png)
 
 6) `게이트웨이 API 키 발급받기` 버튼을 누른다.
-![register_with_apikey](/assets/open-hw/register_with_apikey_ko.png)
+![register_with_apikey](/assets/register_with_apikey_ko.png)
 
 7) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
-![macaddress](/assets/open-hw/macaddr_getapikey_ko.png)
+![macaddress](/assets/macaddr_getapikey_ko.png)
 
 8) API 키를 클립보드에 복사한다.
-![get_apikey](/assets/open-hw/get_apikey_ko.png)
+![get_apikey](/assets/get_apikey_ko.png)
 
 9) **BeagleBone Black에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
 
@@ -129,19 +129,19 @@ exit 0
    - 페이지를 다른 곳으로 이동하여 MAC 어드레스를 복사할 수 없는 경우는 `3. BeagleBone Black 등록`의 방법을 통해 다시 MAC 어드레스를 복사한다.
 
 2) `게이트웨이 등록하기`버튼을 누른다.
-![copy_apikey](/assets/open-hw/copy_apikey_ko.png)
+![copy_apikey](/assets/copy_apikey_ko.png)
 
 2) `게이트웨이 모델`에서 `Neuromeka Rev2.1`을 선택한다.
-![select_gwmodel](/assets/open-hw/select_gwmodel_ko.png)
+![select_gwmodel](/assets/select_gwmodel_ko.png)
 
 3) `게이트웨이 아이디`에 MAC 어드레스를 붙여넣기 하고 게이트웨이 이름을 입력한다.
-![select_gwmodel](/assets/open-hw/inputmac_name_ko.png)
+![select_gwmodel](/assets/inputmac_name_ko.png)
 
 4) `디바이스 모델`에서 `Basic Model Rev2.1`을 선택한다.
-![select_devicemodel](/assets/open-hw/select_devicemodel_ko.png)
+![select_devicemodel](/assets/select_devicemodel_ko.png)
 
 5) `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
-![register](/assets/open-hw/register_ko.png)
+![register](/assets/register_ko.png)
 
 6) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
 

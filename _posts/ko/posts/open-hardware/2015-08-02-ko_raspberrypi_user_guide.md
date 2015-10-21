@@ -28,7 +28,7 @@ Thing+ 연동가이드(Raspberry Pi)
 
 6) Raspbeery Pi에 GrovePi shield와 센서, Ethernet(LAN 케이블), power cable을 연결한다.
 
-   ![Raspberry Pi + Grove Pi](/assets/open-hw/rasp_grovePi.jpg)
+   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
 
 7) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 로그인한다
 

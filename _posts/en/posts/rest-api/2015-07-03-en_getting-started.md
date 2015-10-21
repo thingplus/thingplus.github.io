@@ -25,16 +25,16 @@ Getting Started with the Thing+ REST API
   - Install <a href="https://www.getpostman.com/docs/introduction" target="_blank">Postman</a>
     - <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" target="_blank">Direct link for Chrome browser user</a>
     - You don't need to sign up, click the 'Go to the app' button
-      <br> ![import](/assets/img-getting-started/postman-first-launch.png)
+      <br> ![import](/assets/postman-first-launch.png)
     - Postman guide
       - <a href="https://www.getpostman.com/docs/launch" target="_blank">Launch Postman</a> and <a href="https://www.getpostman.com/docs/requests" target="_blank">Sending requests</a>
 
 ### Step 1-2. Import a Postman collection
   1. Click the 'Import' button
-<br> ![import](/assets/img-getting-started/import.png)
+<br> ![import](/assets/import.png)
 <br><br>
   2. Select the 'Download from link'
-<br>![import link](/assets/img-getting-started/import-link.png)
+<br>![import link](/assets/import-link.png)
     - Add a below link
       - https://www.getpostman.com/collections/f1c2d8efb311d579eff6
     - Click the 'Import' button
@@ -44,26 +44,26 @@ Getting Started with the Thing+ REST API
 ### Step 1-3. Check the imported collection
 
   1. Select 'Collections' tab and select 'Getting Started with the Thing+ REST API' collection
-<br> ![collection](/assets/img-getting-started/collection.png)
+<br> ![collection](/assets/collection.png)
 
 
 ### Step 1-4. Creating a Thing+ OAuth Client ID & Client Secret
 
 1. Open Chrome browser on Chrome browser of a compute and <a href="https://www.thingplus.net/#/login" target="_blank">Sign in </a> to Thing+ Portal
-<br> ![interceptor enable](/assets/img-getting-started/sign-in.png)
+<br> ![interceptor enable](/assets/sign-in.png)
 <br><br>
 2. Launch Postman
 <br><br>
 3. Enable interceptor
-<br> ![interceptor enable](/assets/img-getting-started/interceptor-enable.png)
+<br> ![interceptor enable](/assets/interceptor-enable.png)
 <br><br>
 4. Install interceptor
 <br> https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo
-<br> ![interceptor enable](/assets/img-getting-started/interceptor-install.png)
+<br> ![interceptor enable](/assets/interceptor-install.png)
 <br><br>
 5. Getting a Client ID and Secret
 <br> - HTTP Method: POST
-<br> ![interceptor enable](/assets/img-getting-started/oauth-client-id-secret.png)
+<br> ![interceptor enable](/assets/oauth-client-id-secret.png)
 <br> 1) Select a **_Getting a client ID and secret_** on the collection
 <br> 2) Select a 'Body' tab
 <br> 3) Select a 'raw'
@@ -79,10 +79,10 @@ Getting Started with the Thing+ REST API
 <br> 8) Click the 'Send' button
 <br><br>
 6. Check the '201 Created' result status
-<br> ![interceptor enable](/assets/img-getting-started/oauth-client-id-secret-success.png)
+<br> ![interceptor enable](/assets/oauth-client-id-secret-success.png)
 <br><br>
 7. Disable interceptor
-<br> ![interceptor disable](/assets/img-getting-started/interceptor-disable.png)
+<br> ![interceptor disable](/assets/interceptor-disable.png)
 
 
 ### Step 1-5. Obtaining an OAuth Access token with <a href="./oauth2.md#authorization-code-grant-or-web-server" target="_blank">Authorization Code Grant</a> type
@@ -95,16 +95,16 @@ Getting Started with the Thing+ REST API
     - **{CLIENT_ID}** : Thing+ OAuth Client ID to received at Step 1-4
     - **{REDIRECT_URI}** : The URL in your app where users will be sent after authorization
       - Ex) http://www.daliworks.net
-  ![interceptor enable](/assets/img-getting-started/oauth-authorize.png)
+  ![interceptor enable](/assets/oauth-authorize.png)
 <br><br>
 2. Click the 'Allow' button
 <br><br>
 3. Then Thing+ redirects back to your {redirect_uri} with "code" in url
-  ![interceptor enable](/assets/img-getting-started/oauth-code.png)
+  ![interceptor enable](/assets/oauth-code.png)
 <br><br>
 4. Exchange code for an OAuth Access token
 <br> - HTTP Method: POST
-<br> ![interceptor enable](/assets/img-getting-started/oauth-exchange-code.png)
+<br> ![interceptor enable](/assets/oauth-exchange-code.png)
 <br> 1) Select a **_Exchange code for an OAuth Access token_** on the collection
 <br> 2) Select a 'Body' tab
 <br> 3) Select a 'x-www-form-urlencoded' (application/x-www-form-urlencoded)
@@ -120,7 +120,7 @@ Getting Started with the Thing+ REST API
 <br><br>
 5. Check the '200 OK' result status and Access token
 
-  ![interceptor enable](/assets/img-getting-started/oauth-access-token.png)
+  ![interceptor enable](/assets/oauth-access-token.png)
 
 ## Step 2. Using the Thing+ REST API with an OAuth Access token
 
@@ -130,33 +130,33 @@ Getting Started with the Thing+ REST API
 
   2. Select the 'Manage environments'
 
-    ![environment](/assets/img-getting-started/environment.png)
+    ![environment](/assets/environment.png)
 
   3. Click the 'Add' button
 
-    ![environment add](/assets/img-getting-started/environment-add.png)
+    ![environment add](/assets/environment-add.png)
 
   4. Add a 'Key' and 'Value' and Click the 'Submit' button
-<br> ![environment submit](/assets/img-getting-started/environment-submit.png)
+<br> ![environment submit](/assets/environment-submit.png)
     - Add a 'Thing+ Access Token' to 'New environment' field.
     - Add a **AccessToken** (Case Sensitive) to 'Key' field.
     - Add a your OAuth Access Token to 'Value' field.
     - Close the modal
 
   5. Select a 'Thing+ Access Token'
-<br> ![import](/assets/img-getting-started/environment-select.png)
+<br> ![import](/assets/environment-select.png)
 
 **Now you are ready to use the Thing+ REST API with an OAuth Access token**
 
 - 'Getting Started with the Thing+ REST API' collection uses {{AccessToken}} variable for the 'Authorization' http header
-![environment variable](/assets/img-getting-started/environment-variable.png)
+![environment variable](/assets/environment-variable.png)
 
 ## Step 3. Try some APIs
 
 #### **_Useful tip before trying some APIs with postman_**
   - Postman lets you generate code snippets in more than 15 languages.
   - <a href="http://blog.getpostman.com/2015/08/31/writing-front-end-api-code-with-postman" target="_blank">Writing front-end API code with Postman</a>
-  ![environment variable](/assets/img-getting-started/postman-code.png)
+  ![environment variable](/assets/postman-code.png)
 
 ### Gateway
   - Reading gateways
@@ -166,7 +166,7 @@ Getting Started with the Thing+ REST API
       - [GET] https://api.thingplus.net/v1/gateways
       - The response type is <a href="./restapi.md#array" target="_blank">Array</a>
 
-    ![http header](/assets/img-getting-started/reading-gateways.png)
+    ![http header](/assets/reading-gateways.png)
 
   - Reading gateways with queries
     - Select a **_Reading gateways_** on the collection and Click the 'Send' button.
