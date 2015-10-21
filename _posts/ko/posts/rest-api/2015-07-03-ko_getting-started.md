@@ -74,7 +74,7 @@ Getting Started with the Thing+ REST API
 <br>  6) Add a "name"
 <br>&nbsp;&nbsp;&nbsp;&nbsp;• This name is used to request access a user's account
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex) your company or service name
-<br> 7) You can change <a href="./oauth2.md#scopes" target="_blank">"Scopes"</a> if you need any change
+<br> 7) You can change <a href="./oauth2.html#scopes" target="_blank">"Scopes"</a> if you need any change
        Scopes limit access for OAuth tokens
 <br> 8) Click the 'Send' button
 <br><br>
@@ -85,7 +85,7 @@ Getting Started with the Thing+ REST API
 <br> ![interceptor disable](/assets/interceptor-disable.png)
 
 
-### Step 1-5. Obtaining an OAuth Access token with <a href="./oauth2.md#authorization-code-grant-or-web-server" target="_blank">Authorization Code Grant</a> type
+### Step 1-5. Obtaining an OAuth Access token with <a href="./oauth2.html#authorization-code-grant-or-web-server" target="_blank">Authorization Code Grant</a> type
 
    - An Access token Expires in 15 days (possibly can be changed without advance notification)
 
@@ -164,7 +164,7 @@ Getting Started with the Thing+ REST API
       - You can get your gateways's ID
     - Request URL
       - [GET] https://api.thingplus.net/v1/gateways
-      - The response type is <a href="./restapi.md#array" target="_blank">Array</a>
+      - The response type is <a href="./rest-api.html#array" target="_blank">Array</a>
 
     ![http header](/assets/reading-gateways.png)
 
@@ -172,7 +172,7 @@ Getting Started with the Thing+ REST API
     - Select a **_Reading gateways_** on the collection and Click the 'Send' button.
     - Request URL
       - [GET] https://api.thingplus.net/v1/gateways?count=10
-      - <a href="./restapi.md#collection-queries" target="_blank">Table for Query Parameters</a>
+      - <a href="./rest-api.html#collection-queries" target="_blank">Table for Query Parameters</a>
       - The response type is <a href="./restapi.md#object" target="_blank">Object</a>
 
   - Reading a specific gateway

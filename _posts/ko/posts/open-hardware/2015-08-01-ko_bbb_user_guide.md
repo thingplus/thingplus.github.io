@@ -79,21 +79,27 @@ xx:xx:xx:xx:xx:xx
 
 3) **사용자 PC**의 크롬브라우저를 열고 "[서비스 웹사이트](http://www.sp1.sktiot.com)"에 로그인한다.
 
+
 4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
 ![gateway_management](/assets/gateway_management_ko.png)
 
+<br/>
 5) `(+)` 버튼을 누른다.
 ![register_gateway](/assets/register_gateway_ko.png)
 
+<br/>
 6) `게이트웨이 API 키 발급받기` 버튼을 누른다.
 ![register_with_apikey](/assets/register_with_apikey_ko.png)
 
+<br/>
 7) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
 ![macaddress](/assets/macaddr_getapikey_ko.png)
 
+<br/>
 8) API 키를 클립보드에 복사한다.
 ![get_apikey](/assets/get_apikey_ko.png)
 
+<br/>
 9) **BeagleBone Black에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
 
 ```bash
@@ -131,21 +137,31 @@ exit 0
 2) `게이트웨이 등록하기`버튼을 누른다.
 ![copy_apikey](/assets/copy_apikey_ko.png)
 
-2) `게이트웨이 모델`에서 `Neuromeka Rev2.1`을 선택한다.
+<br/>
+
+3) `게이트웨이 모델`에서 `Neuromeka Rev2.1`을 선택한다.
 ![select_gwmodel](/assets/select_gwmodel_ko.png)
 
-3) `게이트웨이 아이디`에 MAC 어드레스를 붙여넣기 하고 게이트웨이 이름을 입력한다.
+<br/>
+
+4) `게이트웨이 아이디`에 MAC 어드레스를 붙여넣기 하고 게이트웨이 이름을 입력한다.
 ![select_gwmodel](/assets/inputmac_name_ko.png)
 
-4) `디바이스 모델`에서 `Basic Model Rev2.1`을 선택한다.
+<br/>
+
+5) `디바이스 모델`에서 `Basic Model Rev2.1`을 선택한다.
 ![select_devicemodel](/assets/select_devicemodel_ko.png)
 
-5) `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
+<br/>
+
+6) `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
 ![register](/assets/register_ko.png)
 
-6) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
+<br/>
 
-7) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
+7) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
+
+8) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
 
   - 센서는 게이트웨이(BeagelBone Black)에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
   - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.

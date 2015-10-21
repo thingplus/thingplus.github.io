@@ -1,5 +1,5 @@
 ---
-title: Raspberry PI 사용자 가이
+title: Raspberry PI 사용자 가이드
 tags: "open-hardware"
 published: true
 permalink: /ko/open-hardware/raspberry-pi-user-guide.html
