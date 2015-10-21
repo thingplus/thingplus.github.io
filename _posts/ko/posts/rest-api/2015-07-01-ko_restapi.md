@@ -331,6 +331,23 @@ __URL Parameters__
 
 `Reference Collection Queries`
 
+__Response Fields__
+
+|           Name         |      Type     |                         Description
+| ---------------------- | ------------- | ------------------------------------------------------------
+| id                     | string        | The ID of this gateway
+| name                   | string        | The name of this gateway
+| ctime                  | string        | The time this gateway was installed
+| mtime                  | string        | The time this gateway was modified
+| sensors                | array         | The list of IDs of installed sensors on this gateway
+| devices                | array         | The list of IDs of installed devices on this gateway
+| _site                  | string        | The ID of a site has this gateway
+| _service               | string        | The ID of a service has this gateway
+| status                 | string        | The status of this gateway
+| reportInterval         | string        | The report interval of this gateway (ms)
+| virtual                | string        | If this gateway is a virtual gateway, 'y', if not, "n"
+| location               | string        | The location of this gateway (longitude, latitude and address)
+
 
 __Response__
 
@@ -565,6 +582,16 @@ GET /gateways/:id/status
 GET /gateways/:id?embed=status
 ```
 
+__Response Fields__
+
+|      Name     |      Type     |                         Description
+| ------------- | ------------- | ------------------------------------------------------------
+| value         | string        | The status of this gateway, if gateway is alive, 'on', if not, 'off'
+| exipreAt      | string        | After this time, this gateway will be considered as a broken gateway.
+| gateway       | string        | The ID of a gateway has this status
+| vtime         | string        | The time value of status was modified
+
+
 __Response__
 
 ```js
@@ -646,6 +673,19 @@ __URL Parameters__
 | ------------- | ------------- | ------------------------------------------------------------
 | fields        | string        | Fields to retrieve only
 | embed         | string        | Embedding other resouces - series, status
+
+__Response Fields__
+
+|      Name     |      Type     |                         Description
+| ------------- | ------------- | ------------------------------------------------------------
+| id            | string        | The ID of this sensor
+| name          | string        | The name of this sensor
+| category      | string        | The category of this sensor ('sensor' or 'actuator')
+| type          | string        | The type of this sensor (temperature, camera, etc...)
+| deviceId      | string        | The ID of a device has this sensor
+| virtual       | string        | If this sensor is installed on a virtual gateway, 'y', if not, 'n'
+| owner         | string        | The ID of a gateway has this sensor
+
 
 __Response__
 
@@ -898,6 +938,14 @@ __Request Body__
 }
 ```
 
+__Response Fields__
+
+|      Name     |      Type     |                         Description
+| ------------- | ------------- | ------------------------------------------------------------
+| value         | string        | The status of this sensor, if sensor is alive, 'on', if not, 'off'
+| owner         | string        | The ID of a gateway has this sensor
+| sensor        | string        | The ID of this sensor
+| vtime         | string        | 
 
 __Response__
 
@@ -929,6 +977,15 @@ GET /gateways/:owner/sensors/:id?embed=series
 __URL parameters__
 
 `Reference Series Queries`
+
+__Response Fields__
+
+|      Name     |      Type     |                         Description
+| ------------- | ------------- | ------------------------------------------------------------
+| value         | string        | The value of this sensor
+| time          | string        | The time value of this sensor is updated
+| owner         | string        | The ID of a gateway has this sensor
+| sensor        | string        | The ID of this sensor
 
 __Response__
 
@@ -1067,7 +1124,7 @@ __Data parameters__
 
 __Request body__
 
-```Javascript
+```js
 {
   "name": "Tag Name 2",  
   "sensors": [
