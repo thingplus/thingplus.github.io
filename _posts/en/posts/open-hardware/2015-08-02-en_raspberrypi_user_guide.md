@@ -5,7 +5,7 @@ published: true
 permalink: /en/open-hardware/raspberry-pi-user-guide.html
 ---
 
-### Thing+ 연동가이드(Raspberry Pi)
+Thing+ 연동가이드(Raspberry Pi)
 
 #### 1. 환경 설정
 

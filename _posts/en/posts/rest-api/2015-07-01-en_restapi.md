@@ -5,7 +5,7 @@ published: true
 permalink: /en/rest-api/rest-api.html
 ---
 
-# REST APIs
+REST APIs
 
 <br>
 ## Schema

@@ -5,8 +5,7 @@ published: true
 permalink: /ko/rest-api/rest-api.html
 ---
 
-
-# REST APIs
+REST APIs
 
 <br>
 ## Schema

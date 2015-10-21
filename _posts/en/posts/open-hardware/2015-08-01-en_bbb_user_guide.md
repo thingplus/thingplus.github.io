@@ -5,7 +5,7 @@ published: true
 permalink: /en/open-hardware/bbb-user-guide.html
 ---
 
-### Thing+ 연동가이드(BeagleBone Black)
+Thing+ 연동가이드(BeagleBone Black)
 
 #### 1. 환경 설정
 

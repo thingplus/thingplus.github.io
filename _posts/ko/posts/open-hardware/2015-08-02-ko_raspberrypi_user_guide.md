@@ -1,11 +1,11 @@
 ---
-title: Raspberry PI 사용자 가이드
+title: Raspberry PI 사용자 가이
 tags: "open-hardware"
 published: true
 permalink: /ko/open-hardware/raspberry-pi-user-guide.html
 ---
 
-### Thing+ 연동가이드(Raspberry Pi)
+Thing+ 연동가이드(Raspberry Pi)
 
 #### 1. 환경 설정
 
