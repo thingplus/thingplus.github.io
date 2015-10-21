@@ -1,8 +1,8 @@
 ---
 title: "Management guide"
-tags: help
+tags: "user-guide"
 published: true
-permalink: /en/management.html
+permalink: /en/user-guide/management.html
 ---
 
 Guide for service, site, user and gateway.  

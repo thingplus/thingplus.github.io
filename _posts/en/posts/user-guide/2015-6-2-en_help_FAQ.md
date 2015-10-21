@@ -1,8 +1,8 @@
 ---
 title: "FAQ"
-tags: help
+tags: "user-guide"
 published: true
-permalink: /en/faq.html
+permalink: /en/user-guide/faq.html
 ---
 
 Answer for frequently asked questionaires.

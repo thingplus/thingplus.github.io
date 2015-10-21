@@ -9,6 +9,13 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/jquery.cookie.min.js"></script>
+    <script src="/assets/js/jquery.navgoco.min.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -24,67 +31,141 @@
     <link href="/assets/css/docs.css" rel="stylesheet">
     <link href="/assets/css/font-dali/fontdali.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+    <script type="text/javascript" id="menu-javascript">
+    $(document).ready(function() {
+      // Initialize navgoco with default options
+      $("#sidebar").navgoco({
+        caretHtml: '',
+        accordion: true,
+        openClass: 'active',
+        save: true,
+        cookie: {
+          name: 'navgoco',
+          expires: false,
+          path: '/'
+        },
+        slide: {
+          duration: 400,
+          easing: 'swing'
+        }
+      });
+
+      $("#collapseAll").click(function(e) {
+        e.preventDefault();
+        $("#sidebar").navgoco('toggle', false);
+      });
+
+      $("#expandAll").click(function(e) {
+        e.preventDefault();
+        $("#sidebar").navgoco('toggle', true);
+      });
+    });
+    </script>
+
   </head>
 
     <body>
     <!--<a href="https://github.com/driftyco/jetstrap-docs"><img style="position: absolute; z-index: 10000; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>-->
     
-
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="pull-left">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container topnavlinks">
+        <div class="navbar-header pull-left">     
+          <div class="logo">
             {% if page.lang != 'ko' %}
             <a href="/{{ page.lang }}"><img src="{{ site.baseurl }}/assets/logo.png"></a>
             {% else %}
             <a href="/"><img src="{{ site.baseurl }}/assets/logo.png"></a>
             {% endif %}
           </div>
-          <!--<ul class="nav pull-right">-->
-            <!--<li><a href="http://www.thingplus.net/" target="_blank">Thing+</a></li>-->
-            <!--<li><a href="http://techblog.daliworks.net/" target="_blank">Blog</a></li>-->
-          <!--</ul>-->
-          <!-- language selector -->
-          <div class="pull-right lang-select">
-            <ul>
-              <li>
+        </div>
+
+        <div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>          
+        </div>
+        
+        <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.thingplus.net/" target="_blank">{{ site.data.i18n[page.lang].go_thingplus }}</a></li>
+            <li><a href="mailto:contact@thingplus.net"><i class="fa fa-envelope-o"></i> {{ site.data.i18n[page.lang].email_contact }}</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ site.data.i18n[page.lang].lang }} &nbsp;<b class="caret"></b></a>
+              <ul class="dropdown-menu lang-select">
                 {% assign posts=site.posts | where:"date", page.date | sort: 'path' %}
-                {% for post in posts reversed %}
-                {% if page.lang == post.lang %} 
-                  {% assign current_lang = 'active' %} 
-                {% else %}
-                  {% assign current_lang = '' %} 
-                {% endif %}       
-                  <a href="{{ post.url }}" class="lang {{ current_lang }}">{{ site.data.i18n[post.lang].lang }}</a>
+                {% for post in posts reversed %}     
+                  <li><a href="{{ post.url }}" class="lang">{{ site.data.i18n[post.lang].lang }}</a></li>
                 {% endfor %}
-              </li>
-            </ul>      
-          </div>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-3">
-          <ul id="menu" class="nav nav-list" data-spy="affix">
-            <li class="nav-header">{{ site.data.i18n[page.lang].submenu_guide }}</li>
-            {% assign posts = site.posts | where:"lang", page.lang %} 
-            {% for post in posts %} 
-              {% if post.title != 'index' %} 
-                {% assign current = nil %} 
-                {% if page.url contains post.url %} 
-                  {% assign current = 'active' %} 
-                {% endif %}
-                <li data-section="{{ post.url }}" class="{{ current }} lang">
-                  <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-            <li class="nav-header">{{ site.data.i18n[page.lang].submenu_support }}</li>
-            <li><a href="mailto:contact@thingplus.net">{{ site.data.i18n[page.lang].email_contact }}</a></li>
-            <li><a href="https://www.thingplus.net/" target="_blank">{{ site.data.i18n[page.lang].go_thingplus }}</a></li>
-          </ul>
+        <div class="col-xs-12 col-sm-3 sidebar-outer">
+          <div>
+            <ul id="sidebar" class="nav sidebar-inner">
+              <!-- User Guide -->
+              <li><a href="#">{{ site.data.i18n[page.lang].submenu_user-guide }}</a>
+                <ul>
+                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% for post in posts %} 
+                  {% if post.title != 'index' and post.tags contains 'user-guide' %} 
+                    {% assign current = nil %} 
+                    {% if page.url contains post.url %} 
+                      {% assign current = 'active' %} 
+                    {% endif %}
+                    <li data-section="{{ post.url }}" class="{{ current }} lang">
+                      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+              </li>
+              <!-- Open Hardware -->
+              <li><a href="#">{{ site.data.i18n[page.lang].submenu_open-hardware }}</a>
+                <ul>
+                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% for post in posts %} 
+                  {% if post.title != 'index' and post.tags contains 'open-hardware' %} 
+                    {% assign current = nil %} 
+                    {% if page.url contains post.url %} 
+                      {% assign current = 'active' %} 
+                    {% endif %}
+                    <li data-section="{{ post.url }}" class="{{ current }} lang">
+                      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+              </li>
+              <!-- REST API -->
+              <li><a href="#">{{ site.data.i18n[page.lang].submenu_rest-api }}</a>
+                <ul>
+                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% for post in posts %} 
+                  {% if post.title != 'index' and post.tags contains 'rest-api' %} 
+                    {% assign current = nil %} 
+                    {% if page.url contains post.url %} 
+                      {% assign current = 'active' %} 
+                    {% endif %}
+                    <li data-section="{{ post.url }}" class="{{ current }} lang">
+                      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+              </li>            
+            </ul>      
+          </div>
         </div>
 
         <div id="main" role="main" class="col-xs-12 col-sm-9">
@@ -100,11 +181,6 @@
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
-    </script>
-    <script src="/assets/js/bootstrap.js">
-    </script>
-
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer pull-right">
@@ -112,6 +188,9 @@
         </footer>
       </div>
     </div>
+
+   <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+    <script>$("li.active").parents('li').toggleClass("active");</script>    
 
     {% include analytics.html %}
   </body>

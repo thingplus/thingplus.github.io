@@ -1,8 +1,8 @@
 ---
 title: 일반기능 사용법
-tags: help
+tags: "user-guide"
 published: true
-permalink: /ko/monitoring.html
+permalink: /ko/user-guide/monitoring.html
 ---
 
 대시보드, 규칙 및 타임라인, 데이터 분석 등의 주요 기능들에 대한 가이드입니다.

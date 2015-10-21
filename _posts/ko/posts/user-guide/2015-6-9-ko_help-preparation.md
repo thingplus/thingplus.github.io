@@ -1,8 +1,8 @@
 ---
 title: 기본 가이드
-tags: help
+tags: "user-guide"
 published: true
-permalink: /ko/preparation.html
+permalink: /ko/user-guide/preparation.html
 ---
 
 Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이드입니다.

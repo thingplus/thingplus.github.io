@@ -1,8 +1,8 @@
 ---
 title: 자주 묻는 질문
-tags: help
+tags: "user-guide"
 published: true
-permalink: /ko/faq.html
+permalink: /ko/user-guide/faq.html
 ---
 
 자주 질문하시는 내용에 대한 답변을 준비했습니다.

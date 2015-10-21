@@ -1,8 +1,8 @@
 ---
 title: Hardware installation and service registration
-tags: help
+tags: "user-guide"
 published: true
-permalink: /en/registration.html
+permalink: /en/user-guide/registration.html
 ---
 
 User guide for a progress as hardware synchronization and user sign up. 

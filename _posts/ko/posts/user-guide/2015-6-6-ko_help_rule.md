@@ -1,8 +1,8 @@
 ---
 title: 규칙생성 및 제어
-tags: help
+tags: "user-guide"
 published: true
-permalink: /ko/rule.html
+permalink: /ko/user-guide/rule.html
 ---
 
 규칙을 생성하고 관리하는 방법에 대한 가이드입니다.

@@ -1,8 +1,8 @@
 ---
 title: Rule creation and control
-tags: help
+tags: "user-guide"
 published: true
-permalink: /en/rule.html
+permalink: /en/user-guide/rule.html
 ---
 
 Guide for rule creation and management. 

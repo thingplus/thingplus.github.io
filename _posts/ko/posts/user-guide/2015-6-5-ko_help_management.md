@@ -1,8 +1,8 @@
 ---
 title: 관리기능 사용법
-tags: help
+tags: "user-guide"
 published: true
-permalink: /ko/management.html
+permalink: /ko/user-guide/management.html
 ---
 
 서비스, 사이트, 사용자 및 게이트웨이 관리에 대한 가이드입니다.

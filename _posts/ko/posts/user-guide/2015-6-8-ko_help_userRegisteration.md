@@ -1,8 +1,8 @@
 ---
 title: 하드웨어 설치와 회원가입
-tags: help
+tags: "user-guide"
 published: true
-permalink: /ko/registration.html
+permalink: /ko/user-guide/registration.html
 ---
 
 서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.

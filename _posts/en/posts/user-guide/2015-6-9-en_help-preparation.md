@@ -1,8 +1,8 @@
 ---
 title: "Instruction"
-tags: help
+tags: "user-guide"
 published: true
-permalink: /en/preparation.html
+permalink: /en/user-guide/preparation.html
 ---
 
 Guide for Thing+ service.

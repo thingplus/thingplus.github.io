@@ -1,8 +1,8 @@
 ---
 title: "Guide for functions"
-tags: help
+tags: "user-guide"
 published: true
-permalink: /en/monitoring.html
+permalink: /en/user-guide/monitoring.html
 ---
 
 Guide for dashboard, rule and timeline, data analysis. 
