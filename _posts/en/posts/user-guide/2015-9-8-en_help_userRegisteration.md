@@ -36,7 +36,7 @@ User guide for a progress as hardware synchronization and user sign up.
   * Service administration approval and authorization 
 -->
 
-#### Sing in daliworks website
+#### Sing in Thing+ portal 
   * Put service address in internet browser.
 ![](/assets/2_address.png)
 

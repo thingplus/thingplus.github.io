@@ -18,7 +18,7 @@ Guide for Thing+ service.
 ### Before you start
 <br>
 ![](/assets/1_thingplus.png)
-#### [What is Thing+?](http://www.daliworks.net/?page_id=72)
+#### What is Thing+?
   * Thing+ provide user own IoT service by cloud.
   * User own IoT service by sign in Thing+. 
   * Install IoT service by synchronization between Thing+ and qualified hardware.  

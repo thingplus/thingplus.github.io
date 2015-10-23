@@ -18,7 +18,7 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
 ### 시작하기 전에
 <br>
 ![](/assets/1_thingplus.png)
-#### [Thing+ 란?](http://www.daliworks.net/?page_id=72)
+#### Thing+ 란?
   * Thing+ (씽플러스)는 나만의 IoT 서비스를 구축할 수 있는 클라우드 서비스입니다.
   * Thing+ 에 가입만 하면 바로 나만의 IoT 서비스가 만들어 집니다.
   * Thing+ 와 연동된 하드웨어 제품을 사용하여 IoT 서비스를 쉽게 구축할 수 있습니다.
