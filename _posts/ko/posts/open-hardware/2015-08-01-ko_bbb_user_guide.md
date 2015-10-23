@@ -46,13 +46,13 @@ Enter new UNIX password:
 1) 데비안 패키지 파일을 다운로드한다.
 
 ```bash
-@BBB:$ wget https://www.sp1.sktiot.com/asset/download/tp_sktiot_armhf.deb
+@BBB:$ wget https://www.thingplus.net/asset/download/tp_bbb_armhf.deb
 ```
 
-2) 데비안 패키지를 설치한다. (반드시 root 계정을 이용해야 한다.)
+2) 데비안 패키지를 설치한다. (반드시 root 계정을 이용)
 
 ```bash
-@BBB:$ dpkg -i tp_sktiot_armhf.deb
+@BBB:$ dpkg -i tp_bbb_armhf.deb
 ```
 
 3) BeagleBone Black을 재시작한다.
@@ -128,7 +128,7 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 
 ```
 
-4) BeagleBone Black을 재드시작한다.
+4) BeagleBone Black을 재시작한다.
 
 > 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
 

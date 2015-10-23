@@ -80,13 +80,13 @@ v0.10.16
 2) 데비안 패키지 파일을 다운로드한다.
 
 ```bash
-@Pi2:$ wget https://www.sp1.sktiot.com/asset/download/tp_sktiot_raspberryPi2.deb
+@Pi2:$ wget https://www.thingplus.net/asset/download/tp_raspberryPi2.deb
 ```
 
 3) 데비안 패키지를 설치한다. (반드시 root 계정을 이용해야 한다.)
 
 ```bash
-@Pi2:$ dpkg -i tp_sktiot_raspberryPi2.deb
+@Pi2:$ dpkg -i tp_raspberryPi2.deb
 ```
 
 4) Raspberry Pi를 재시작한다.
@@ -125,7 +125,7 @@ v0.10.16
        ```bash
        @Pi2:$ sudo su
        @Pi2:$ cd /usr/local/tp
-       @Pi2:$ APIKEY='A7i3kT9w1-9xWVk447-oJ=' ./tp.sh start; ./driver.sh start
+       @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./tp.sh start; ./driver.sh start
        ```
 
    - Raspberry Pi가 켜질 때마다 자동으로 실행되도록 하기 위해서는 `/etc/rc.local`의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
