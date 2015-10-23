@@ -62,7 +62,7 @@ User guide for a progress as hardware synchronization and user sign up.
 ### Gateway Registration
 <br>
 
-#### BeagleBone Black 기준
+#### BeagleBone Black
 
 1) BeagleBone Black에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
