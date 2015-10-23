@@ -9,7 +9,7 @@ permalink: /ko/user-guide/registration.html
 
 * [서비스 관리자](#id-serviceadmin)
 * [일반 사용자](#id-enduser) 
-* [개발자](#id-developer) 
+* [게이트웨이 등록](#id-gateway) 
 
 ---
 <div id='id-serviceadmin'></div>
@@ -30,12 +30,6 @@ permalink: /ko/user-guide/registration.html
 ### 일반 사용자
 <br>
 
-<!---
-### 해당 서비스 사용을 위해 필요한 것
-  * {serviceName}.thingplus.net으로 회원가입
-  * 서비스 어드민의 가입승인 및 사용권한
--->
-
 #### 해당 서비스 회원가입
   * 인터넷 브라우저의 주소창에 서비스 주소를 입력합니다.
 ![](/assets/2_address.png)
@@ -54,86 +48,118 @@ permalink: /ko/user-guide/registration.html
     * 스팸메일함을 확인하셨습니까?
   * 관리자의 승인 안내 이메일을 받은 후에 로그인창에 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
 
-
-<!---
-
 <br>
 
 ---
-### 개발자
-<br>
-### Thing+ 포털 사용을 위해 필요한 것
-1) 하드웨어
-* 구입한 하드웨어의 핀 번호
-* Thing+ 계정
-* Thing+ 계정에 하드웨어 연결
-
-### 하드웨어
-
-### 하드웨어란?
-
-### 하드웨어 구입처
-
-### 하드웨어의 핀 번호
-
-### 하드웨어 핀 번호 확인하기
-
-### 게이트웨이 연결하기
-* 구입한 하드웨어를 가입한 Thing+포털 계정에 연결할 수 있습니다.
-
-### 게이트웨이 연결하기
-
-### 게이트웨이가 연결되었는지 확인하기
-1. 센서목록 메뉴로 이동합니다.
-* 센서 리스트 페이지에서 게이트웨이가 보이는지 확인합니다.
-* 게이트웨이가 보인다면 하단에 센서도 보이는지 확인합니다.
-* 게이트웨이 및 센서가 보이지 않는다면, 서비스 관리자에게 문의바랍니다.(알고 계신 연락처 혹은 서비스 화면 하단에 Contact의 이메일로 문의 가능)
--->
-
-
-
-<!---
-서비스 어드민 B2B
-- www.thingplus.net
-- 가입 및 사용 별도 문의
-- 1)원하는 하드웨어에 대한 간략한 가이드(설치 가이드가 아닌 연결가능한 하드웨어에 대한 안내)
-- 2)하드웨어 업체인 경우에는 직접 연락해서 연동하게끔 안내
-
-3)서비스 일반유저
-- example.thingplus.net
-- 회원가입 후 서비스 어드민의 가입승인 및 게이트웨이 사용 권한 획득 필요
-- 하드웨어 안내없음
-- 가입안내와 사용권한에 대한 안내
-
-개발자(사이트 어드민)
-- 4)DIY
-  - diy.thingplus.net
-  - 회원가입 후 자동 가입승인, 게이트웨이 직접등록
-  - 하드웨어 구매 안내(ICbanQ링크), 구매 후 쿠폰을 가지고 회원가입을 진행, 게이트웨이 연결
-- 프로그래머
-  - dev.thingplus.net
-  - 회원가입 후 자동 가입승인, 게이트웨이 직접등록
-  - 하드웨어 구매 안내(ICbanQ링크), 구매 후 쿠폰을 가지고 회원가입을 진행, 게이트웨이 연결, 게이트웨이상의 프로그래밍하는 방법에 대한 안내
--->
-
-<!---
-* 개발자
--->
-
+<div id='id-gateway'></div>
+### 게이트웨이 등록
 <br>
 
----
-<div id='id-developer'></div>
-### 개발자
+#### BeagleBone Black 기준 
+
+1) BeagleBone Black에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
+
+```bash
+@BBB:$ cd /usr/local/tp/scripts
+```
+
+2) BeagleBone Black의 MAC 어드레스를 얻어 클립보드에 복사한다.
+
+```bash
+@BBB:$ ./getmac
+Your MAC address is as below
+xx:xx:xx:xx:xx:xx
+```
+
+3) **사용자 PC**의 크롬브라우저를 열고 "[서비스 웹사이트](https://www.thingplus.net)"에 로그인한다.
+
+
+4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
+![gateway_management](/assets/gateway_management_ko.png)
+
+<br/>
+5) `(+)` 버튼을 누른다.
+![register_gateway](/assets/register_gateway_ko.png)
+
+<br/>
+6) `게이트웨이 API 키 발급받기` 버튼을 누른다.
+![register_with_apikey](/assets/register_with_apikey_ko.png)
+
+<br/>
+7) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
+![macaddress](/assets/macaddr_getapikey_ko.png)
+
+<br/>
+8) API 키를 클립보드에 복사한다.
+![get_apikey](/assets/get_apikey_ko.png)
+
+<br/>
+9) **BeagleBone Black에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
+
+```bash
+@BBB:$ cd /usr/local/tp
+@BBB:$ APIKEY='복사한 API 키' ./tp.sh start; ./driver.sh start
+```
+
+- 예제
+
+```bash
+@BBB:$ cd /usr/local/tp
+@BBB:$ APIKEY='A7i3kT9w1-9xWVk447-oJ=' ./tp.sh start; ./driver.sh start
+```
+
+> 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
+
+10) BeagleBone Black의 `/etc/rc.local`의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
+
+```bash
+@BBB:$ nano /etc/rc.local
+...
+(cd /usr/local/tp; ./driver.sh start)         # 추가
+(cd /usr/local/tp; ./tp.sh start)             # 추가
+
+exit 0
+```
+
+   - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+
+11) **크롬 브라우저**에서 다시 MAC 어드레스를 복사한다.
+
+   - 페이지를 다른 곳으로 이동하여 MAC 어드레스를 복사할 수 없는 경우는 `3. BeagleBone Black 등록`의 방법을 통해 다시 MAC 어드레스를 복사한다.
+
+12) `게이트웨이 등록하기`버튼을 누른다.
+![copy_apikey](/assets/copy_apikey_ko.png)
+
+<br/>
+
+13) `게이트웨이 모델`에서 `Neuromeka Rev2.1`을 선택한다.
+![select_gwmodel](/assets/select_gwmodel_ko.png)
+
+<br/>
+
+14) `게이트웨이 아이디`에 MAC 어드레스를 붙여넣기 하고 게이트웨이 이름을 입력한다.
+![select_gwmodel](/assets/inputmac_name_ko.png)
+
+<br/>
+
+15) `디바이스 모델`에서 `Basic Model Rev2.1`을 선택한다.
+![select_devicemodel](/assets/select_devicemodel_ko.png)
+
+<br/>
+
+16) `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
+![register](/assets/register_ko.png)
+
+<br/>
+
+17) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
+
 <br>
 
-<!---
-### 해당 서비스 사용을 위해 필요한 것
-  * {serviceName}.thingplus.net으로 회원가입
-  * 서비스 어드민의 가입승인 및 사용권한
--->
+18) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
 
-#### 하드웨어 연동 가이드
-  * [IGoT 2.1 연동 가이드 다운로드](/download/doc/ThingPlus_Guide_ko.pdf)
+  - 센서는 게이트웨이(BeagelBone Black)에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
+  - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.
 
 <br>
+

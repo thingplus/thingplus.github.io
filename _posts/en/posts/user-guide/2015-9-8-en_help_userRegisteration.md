@@ -9,6 +9,7 @@ User guide for a progress as hardware synchronization and user sign up.
 
 * [Service Administrator](#id-serviceadmin)
 * [User](#id-enduser) 
+* [Gateway Registration](#id-gateway) 
 
 ---
 <div id='id-serviceadmin'></div>
@@ -53,67 +54,118 @@ User guide for a progress as hardware synchronization and user sign up.
     * Check your spam mail box.
   * After receive confirmation, put ID and Password to log in.
 
-<!---
 
 <br>
 
 ---
-### Developer
+<div id='id-gateway'></div>
+### Gateway Registration
 <br>
-### Necessary step to use Thing+ portal
-1) Hardware
-* Pin number in puchased hardware 
-* Thing+ registration
-* Connect hardware in Thing+ registration
 
-### Hardware
+#### BeagleBone Black 기준
 
-### Hardware?
+1) BeagleBone Black에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
-### Purchasing Hardware?
+```bash
+@BBB:$ cd /usr/local/tp/scripts
+```
 
-### Pin number in hardware
+2) BeagleBone Black의 MAC 어드레스를 얻어 클립보드에 복사한다.
 
-### check pin number in hardware
+```bash
+@BBB:$ ./getmac
+Your MAC address is as below
+xx:xx:xx:xx:xx:xx
+```
 
-### Connect Gateway 
-* Can connect Thing+ protal if puchased hardware.
-
-### Connect Gateway
-
-### Check gateway on Thing+
-1. Move to sensor list menu.  
-* Check gateway on sensor list page.  
-* After find gateway, check sensor below name of gateway. 
-* If not, ask service administrator.(Contact person or send e-mail on bottom of screen)
--->
+3) **사용자 PC**의 크롬브라우저를 열고 "[서비스 웹사이트](https://www.thingplus.net)"에 로그인한다.
 
 
+4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
+![gateway_management](/assets/gateway_management_ko.png)
 
-<!---
-Service administrator B2B
-- www.thingplus.net
-- Sign in and service  
-- 1)Guide for hardware that you want to add(Not installation guide. Access guide with hardware.)
-- 2)Contact directly to hardware 
+<br/>
+5) `(+)` 버튼을 누른다.
+![register_gateway](/assets/register_gateway_ko.png)
 
-3)User
-- example.thingplus.net
-- Need authorization for service adminstrator and gateway after sign in 
-- Hardware information will not be provided
-- Information for sign in and authorization
+<br/>
+6) `게이트웨이 API 키 발급받기` 버튼을 누른다.
+![register_with_apikey](/assets/register_with_apikey_ko.png)
 
-Developer(Site administrator)
-- 4)DIY
-  - diy.thingplus.net
-  - After sign in, automatic approval. Need direct connecting gateway on his own 
-  - Hardware purchase information(ICbanQ link), Sign in after get token by purchasement, Connect gateway
-- Programmer
-  - dev.thingplus.net
-  - After sign in, automatic approval, Need direct connecting gateway on his own
-  - Hardware purchase information(ICbanQ link), Sign in after get token by purchasement, Connect gateway, provide programming guide on gateway. 
--->
+<br/>
+7) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
+![macaddress](/assets/macaddr_getapikey_ko.png)
 
-<!---
-* Developer
--->
+<br/>
+8) API 키를 클립보드에 복사한다.
+![get_apikey](/assets/get_apikey_ko.png)
+
+<br/>
+9) **BeagleBone Black에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
+
+```bash
+@BBB:$ cd /usr/local/tp
+@BBB:$ APIKEY='복사한 API 키' ./tp.sh start; ./driver.sh start
+```
+
+- 예제
+
+```bash
+@BBB:$ cd /usr/local/tp
+@BBB:$ APIKEY='A7i3kT9w1-9xWVk447-oJ=' ./tp.sh start; ./driver.sh start
+```
+
+> 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
+
+10) BeagleBone Black의 `/etc/rc.local`의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
+
+```bash
+@BBB:$ nano /etc/rc.local
+...
+(cd /usr/local/tp; ./driver.sh start)         # 추가
+(cd /usr/local/tp; ./tp.sh start)             # 추가
+
+exit 0
+```
+
+   - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+
+11) **크롬 브라우저**에서 다시 MAC 어드레스를 복사한다.
+
+   - 페이지를 다른 곳으로 이동하여 MAC 어드레스를 복사할 수 없는 경우는 `3. BeagleBone Black 등록`의 방법을 통해 다시 MAC 어드레스를 복사한다.
+
+12) `게이트웨이 등록하기`버튼을 누른다.
+![copy_apikey](/assets/copy_apikey_ko.png)
+
+<br/>
+
+13) `게이트웨이 모델`에서 `Neuromeka Rev2.1`을 선택한다.
+![select_gwmodel](/assets/select_gwmodel_ko.png)
+
+<br/>
+
+14) `게이트웨이 아이디`에 MAC 어드레스를 붙여넣기 하고 게이트웨이 이름을 입력한다.
+![select_gwmodel](/assets/inputmac_name_ko.png)
+
+<br/>
+
+15) `디바이스 모델`에서 `Basic Model Rev2.1`을 선택한다.
+![select_devicemodel](/assets/select_devicemodel_ko.png)
+
+<br/>
+
+16) `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
+![register](/assets/register_ko.png)
+
+<br/>
+
+17) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
+
+<br>
+
+18) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
+
+  - 센서는 게이트웨이(BeagelBone Black)에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
+  - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.
+
+<br>
