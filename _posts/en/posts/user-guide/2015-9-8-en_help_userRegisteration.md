@@ -106,7 +106,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 ```bash
 @shell:$ cd /usr/local/tp
-@shell:$ APIKEY='copied_api_key' ./tp.sh start; ./driver.sh start
+@shell:$ APIKEY='' ./tp.sh start; ./driver.sh start
 ```
 
 - Exmaple
@@ -116,7 +116,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 @shell:$ APIKEY='A7i3kT9w1-9xWVk447-oJ=' ./tp.sh start; ./driver.sh start
 ```
 
-> Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Question Marks('), like 'copied_api_key'.
+> Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Question Marks('), like `copied_api_key`.
 
 10) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
 
