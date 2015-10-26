@@ -78,7 +78,7 @@ Your MAC address is as below
 xx:xx:xx:xx:xx:xx   <= Copy this line
 ```
 
-3) Open the web browser on **your PC** and sign in "[Service Website](https://www.thingplus.net)".
+3) Open the web browser on **YOUR PC** and sign in "[Service Website](https://www.thingplus.net)".
 - We recommend to use the Chrome Browser
 
 
@@ -146,6 +146,7 @@ exit 0
 
 ![select_gwmodel](/assets/select_gwmodel_beagle_en.png)
 <br/>
+
 - For Raspberry Pi 2: `Raspberry Pi - Developer`
 
 ![select_gwmodel](/assets/select_gwmodel_raspberry_en.png)
@@ -163,6 +164,7 @@ exit 0
 
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
 <br/>
+
 - For Raspberry Pi 2: `GrovePi+ Starter Kit`
 
 ![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
