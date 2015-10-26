@@ -102,7 +102,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 ![get_apikey](/assets/get_apikey_en.png)
 
 <br/>
-9) Run Thing+ Gateway S/W with the following commands on the connected terminal with your device.
+9) Run Thing+ Gateway S/W with the following commands on **the connected terminal with your device**.
 
 ```bash
 @shell:$ cd /usr/local/tp
@@ -118,7 +118,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 > Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Question Marks('), like 'copied_api_key'.
 
-10) Open `/ect/rc.local` and add the below 2 lines right ahead the `exit 0` line.
+10) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
 
 ```bash
 @shell:$ nano /etc/rc.local
@@ -133,22 +133,20 @@ exit 0
 
 11) Copy the MAC Address from the **web browser** you got the API Key.
 
-   - If you alread moved to another webpage and can NOT copy the MAC address, please refer `2) Get a MAC address` to get it again.
+   - If you alread moved to another webpage and can NOT copy the MAC address, please refer `1) ~ 2) Get a MAC address` to get it again.
 
 12) Click the `Register Gateway`button.
 ![copy_apikey](/assets/copy_apikey_en.png)
 
 <br/>
 
-13) Choose a gateway model. <br/>
+13) Choose a gateway model.
 
 - For BeagleBone Black: `Neuromeka Rev2.1`
 
 ![select_gwmodel](/assets/select_gwmodel_beagle_en.png)
-<br/>
 
 - For Raspberry Pi 2: `Raspberry Pi - Developer`
-
 ![select_gwmodel](/assets/select_gwmodel_raspberry_en.png)
 
 <br/>
@@ -158,15 +156,14 @@ exit 0
 
 <br/>
 
-15) Choose a device model. <br/>
+15) Choose a device model.
 
 - For BeagleBone Black: `Basic Model Rev2.1`
 
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
-<br/>
+
 
 - For Raspberry Pi 2: `GrovePi+ Starter Kit`
-
 ![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
 
 <br/>
