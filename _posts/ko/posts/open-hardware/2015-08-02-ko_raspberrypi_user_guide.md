@@ -80,7 +80,7 @@ v0.10.16
 2) 데비안 패키지 파일을 다운로드한다.
 
 ```bash
-@Pi2:$ wget https://support.thingplus.net/download/deb/tp_raspberryPi2.deb
+@Pi2:$ wget http://support.thingplus.net/download/deb/tp_raspberryPi2.deb
 ```
 
 3) 데비안 패키지를 설치한다. (반드시 root 계정을 이용해야 한다.)
