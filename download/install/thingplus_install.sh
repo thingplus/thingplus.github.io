@@ -5,13 +5,13 @@ if [ -f ./config ]; then
 else
   cat <<EOF >./config
 MODEL="model_name"
-RSYNC_SERVER="rsync.thingbine.com"
+RSYNC_SERVER="rsync.thingplus.net"
 RSYNC_USER="rsync_user"
 RSYNC_PASSWORD="rsync_password"
 RSYNC_SIZE_ONLY_OPTION="false"
 DEST_DIR="installation_directory"
 EOF
-  echo "Error: edit config file first."
+  echo "Information: edit ./config file first."
   exit 1;
 fi
 
