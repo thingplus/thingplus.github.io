@@ -114,7 +114,7 @@ Getting Started with the Thing+ REST API
 <br>&nbsp;&nbsp;&nbsp;• The client ID you received from Thing+ when you registered your application
 <br> 6) Add a your "client_secret"
 <br>&nbsp;&nbsp;&nbsp;• The client secret you received from Thing+ when you registered your application
-<br> 7) Add a your "redirect_rul"
+<br> 7) Add a your "redirect_uri"
 <br>&nbsp;&nbsp;&nbsp;• The redirect URL when you registered your application
 <br> 8) Click the 'Send' button
 <br><br>
@@ -173,7 +173,7 @@ Getting Started with the Thing+ REST API
     - Request URL
       - [GET] https://api.thingplus.net/v1/gateways?count=10
       - <a href="./rest-api.html#collection-queries" target="_blank">Table for Query Parameters</a>
-      - The response type is <a href="./restapi.md#object" target="_blank">Object</a>
+      - The response type is <a href="./rest-api.html#object" target="_blank">Object</a>
 
   - Reading a specific gateway
 

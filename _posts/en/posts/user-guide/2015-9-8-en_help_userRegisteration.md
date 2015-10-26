@@ -62,110 +62,125 @@ User guide for a progress as hardware synchronization and user sign up.
 ### Gateway Registration
 <br>
 
-#### BeagleBone Black
+#### BeagleBone Black and Raspberry Pi 2
 
-1) BeagleBone Black에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
+1) Connect to a BeagleBon Black/Raspberry Pi 2 over SSH and go to `scripts` directory under the path which Thing+ Embedded package is inalled on.
 
 ```bash
-@BBB:$ cd /usr/local/tp/scripts
+@shell:$ cd /usr/local/tp/scripts
 ```
 
-2) BeagleBone Black의 MAC 어드레스를 얻어 클립보드에 복사한다.
+2) Get a MAC Address of the device and copy it to the clipboard.
 
 ```bash
-@BBB:$ ./getmac
+@shell:$ ./getmac
 Your MAC address is as below
-xx:xx:xx:xx:xx:xx
+xx:xx:xx:xx:xx:xx   <= Copy this line
 ```
 
-3) **사용자 PC**의 크롬브라우저를 열고 "[서비스 웹사이트](https://www.thingplus.net)"에 로그인한다.
+3) Open the web browser on **your PC** and sign in "[Service Website](https://www.thingplus.net)".
+- We recommend to use the Chrome Browser
 
 
-4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
-![gateway_management](/assets/gateway_management_ko.png)
-
-<br/>
-5) `(+)` 버튼을 누른다.
-![register_gateway](/assets/register_gateway_ko.png)
+4) Click the `Settings`button and `Gateway Management`button.
+![gateway_management](/assets/gateway_management_en.png)
 
 <br/>
-6) `게이트웨이 API 키 발급받기` 버튼을 누른다.
-![register_with_apikey](/assets/register_with_apikey_ko.png)
+5) Click the `(+)`button.
+![register_gateway](/assets/register_gateway_en.png)
 
 <br/>
-7) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
-![macaddress](/assets/macaddr_getapikey_ko.png)
+6) Click teh `Request for Gateway Certificates or API Key`button.
+![register_with_apikey](/assets/register_with_apikey_en.png)
 
 <br/>
-8) API 키를 클립보드에 복사한다.
-![get_apikey](/assets/get_apikey_ko.png)
+7) Input the MAC address you copied to the `Gateway ID` form and Click the `Get API Key`button.
+![macaddress](/assets/macaddr_getapikey_en.png)
 
 <br/>
-9) **BeagleBone Black에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
+8) Copy the generated API Key in the below green box.
+![get_apikey](/assets/get_apikey_en.png)
+
+<br/>
+9) Run Thing+ Gateway S/W with the following commands on the connected terminal with your device.
 
 ```bash
-@BBB:$ cd /usr/local/tp
-@BBB:$ APIKEY='복사한 API 키' ./tp.sh start; ./driver.sh start
+@shell:$ cd /usr/local/tp
+@shell:$ APIKEY='copied_api_key' ./tp.sh start; ./driver.sh start
 ```
 
-- 예제
+- Exmaple
 
 ```bash
-@BBB:$ cd /usr/local/tp
-@BBB:$ APIKEY='A7i3kT9w1-9xWVk447-oJ=' ./tp.sh start; ./driver.sh start
+@shell:$ cd /usr/local/tp
+@shell:$ APIKEY='A7i3kT9w1-9xWVk447-oJ=' ./tp.sh start; ./driver.sh start
 ```
 
-> 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
+> Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Question Marks('), like 'copied_api_key'.
 
-10) BeagleBone Black의 `/etc/rc.local`의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
+10) Open `/ect/rc.local` and add the below 2 lines right ahead the `exit 0` line.
 
 ```bash
-@BBB:$ nano /etc/rc.local
+@shell:$ nano /etc/rc.local
 ...
-(cd /usr/local/tp; ./driver.sh start)         # 추가
-(cd /usr/local/tp; ./tp.sh start)             # 추가
+(cd /usr/local/tp; ./driver.sh start)         # Added line
+(cd /usr/local/tp; ./tp.sh start)             # Added line
 
 exit 0
 ```
 
-   - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+   - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
-11) **크롬 브라우저**에서 다시 MAC 어드레스를 복사한다.
+11) Copy the MAC Address from the **web browser** you got the API Key.
 
-   - 페이지를 다른 곳으로 이동하여 MAC 어드레스를 복사할 수 없는 경우는 `3. BeagleBone Black 등록`의 방법을 통해 다시 MAC 어드레스를 복사한다.
+   - If you alread moved to another webpage and can NOT copy the MAC address, please refer `2) Get a MAC address` to get it again.
 
-12) `게이트웨이 등록하기`버튼을 누른다.
-![copy_apikey](/assets/copy_apikey_ko.png)
-
-<br/>
-
-13) `게이트웨이 모델`에서 `Neuromeka Rev2.1`을 선택한다.
-![select_gwmodel](/assets/select_gwmodel_ko.png)
+12) Click the `Register Gateway`button.
+![copy_apikey](/assets/copy_apikey_en.png)
 
 <br/>
 
-14) `게이트웨이 아이디`에 MAC 어드레스를 붙여넣기 하고 게이트웨이 이름을 입력한다.
-![select_gwmodel](/assets/inputmac_name_ko.png)
+13) Choose a gateway model. <br/>
+
+- For BeagleBone Black: `Neuromeka Rev2.1`
+
+![select_gwmodel](/assets/select_gwmodel_beagle_en.png)
+<br/>
+- For Raspberry Pi 2: `Raspberry Pi - Developer`
+
+![select_gwmodel](/assets/select_gwmodel_raspberry_en.png)
 
 <br/>
 
-15) `디바이스 모델`에서 `Basic Model Rev2.1`을 선택한다.
-![select_devicemodel](/assets/select_devicemodel_ko.png)
+14) Input the MAC address of your device to `Gateway ID` form and input your gateway name to `Gateway Name` form.
+![select_gwmodel](/assets/inputmac_name_en.png)
 
 <br/>
 
-16) `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
-![register](/assets/register_ko.png)
+15) Choose a device model. <br/>
+
+- For BeagleBone Black: `Basic Model Rev2.1`
+
+![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
+<br/>
+- For Raspberry Pi 2: `GrovePi+ Starter Kit`
+
+![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
 
 <br/>
 
-17) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
+16) Click the `Register a Gateway, Devices and Sensors` button.
+![register](/assets/register_en.png)
+
+<br/>
+
+17) You can see the `Success` popup message when the registration is completed
 
 <br>
 
-18) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
+18) You can see the registred Gateway from the `Sensor List` Menu
 
-  - 센서는 게이트웨이(BeagelBone Black)에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
-  - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.
+  - Sensor(s) is registered automatically by the Gateway(BeagleBone Black / Raspberry Pi 2) within 1 minute after you complete to register your gateway
+  - Values your Sensor are periodically aggregated and delivered to Thing+ Cloud by the Thing+ Gateway Software. You can see the values from Thing+ Portal after several minutes.
 
 <br>
