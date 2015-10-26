@@ -12,7 +12,7 @@ Getting Started with the Thing+ REST API
 
 ### Step 0-1
   - Thing+ service registration is required
-    - <a href="http://support.thingplus.net/en/registration.html" target="_blank">Thing+ service registration</a>
+    - <a href="http://support.thingplus.net/ko/user-guide/registration.html" target="_blank">Thing+ service registration</a>
 
 ### Step 0-2
   - Hardware installation is required
