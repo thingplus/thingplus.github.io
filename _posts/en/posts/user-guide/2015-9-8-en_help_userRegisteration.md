@@ -140,10 +140,14 @@ exit 0
 
 <br/>
 
-13) Choose a gateway model.
+13) Choose a gateway model. <br/>
+
 - For BeagleBone Black: `Neuromeka Rev2.1`
+
 ![select_gwmodel](/assets/select_gwmodel_beagle_en.png)
+<br/>
 - For Raspberry Pi 2: `Raspberry Pi - Developer`
+
 ![select_gwmodel](/assets/select_gwmodel_raspberry_en.png)
 
 <br/>
@@ -153,16 +157,20 @@ exit 0
 
 <br/>
 
-15) Choose a device model.
+15) Choose a device model. <br/>
+
 - For BeagleBone Black: `Basic Model Rev2.1`
+
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
+<br/>
 - For Raspberry Pi 2: `GrovePi+ Starter Kit`
+
 ![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
 
 <br/>
 
 16) Click the `Register a Gateway, Devices and Sensors` button.
-![register](/assets/register_ko.png)
+![register](/assets/register_en.png)
 
 <br/>
 
