@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [ "$1" = "b2d" ]; then
+  THINGPLUS_GATEWAY_DIR=""
+fi
+
 if [ -f ./config ]; then
   . ./config
 else
@@ -94,7 +98,11 @@ RSYNC_PASSWORD="$RSYNC_PASSWORD" $RSYNC $RSYNC_OPTIONS \
   --exclude device/ssl/cert.p12 \
   --exclude device/config/runtime.json \
   $STUNNEL_OPT \
-  $SRC_URL $DEST_DIR/thingplus-gateway
+  $SRC_URL $DEST_DIR/$THINGPLUS_GATEWAY_DIR
+
+if [ "$1" = "b2d" ]; then
+  mkdir -p $DEST_DIR/thingplus-gateway/device/config
+fi
 
 if [ -e $INIT_D_SCRIPT ]; then
   $INIT_D_SCRIPT setup
