@@ -586,7 +586,7 @@ __Response Fields__
 
 |      Name     |      Type     |                         Description
 | ------------- | ------------- | ------------------------------------------------------------
-| value         | string        | The status of this gateway, if gateway is alive, 'on', if not, 'off'
+| value         | string        | The status of this gateway, if gateway is alive, 'on', if not, 'off', and an error occurs, 'err'.
 | exipreAt      | string        | After this time, this gateway will be considered as a broken gateway.
 | gateway       | string        | The ID of a gateway has this status
 | vtime         | string        | The time value of status was modified
@@ -893,6 +893,15 @@ GET /gateways/:owner/sensors/:id?embed=status
 :owner - gateway id
 ```
 
+__Response Fields__
+
+|      Name     |      Type     |                         Description
+| ------------- | ------------- | ------------------------------------------------------------
+| value         | string        | The status of this sensor, if sensor is alive, 'on', if not, 'off', and an error occurs, 'err'.
+| owner         | string        | The ID of a gateway has this sensor
+| sensor        | string        | The ID of this sensor
+| vtime         | string        | The time value of status was modified
+
 __Response__
 
 ```js
@@ -937,15 +946,6 @@ __Request Body__
   "timeout": 90
 }
 ```
-
-__Response Fields__
-
-|      Name     |      Type     |                         Description
-| ------------- | ------------- | ------------------------------------------------------------
-| value         | string        | The status of this sensor, if sensor is alive, 'on', if not, 'off'
-| owner         | string        | The ID of a gateway has this sensor
-| sensor        | string        | The ID of this sensor
-| vtime         | string        | 
 
 __Response__
 
