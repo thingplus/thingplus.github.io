@@ -109,20 +109,20 @@ v0.10.16
 ```
 
    - 화면상단의 `USER_THINGPLUS_GATEWAY_DEST=`와 `USER_SDK_DEST=`의 뒤에 원하는 경로를 입력한다.
-     ```bash
-     # Destination directory for Thing+ Gateway
-     USER_THINGPLUS_GATEWAY_DEST='게이트웨이 경로'
 
-     # Destination directory for Open Hardware SDK
+     ```bash
+     Destination directory for Thing+ Gateway
+     USER_THINGPLUS_GATEWAY_DEST='게이트웨이 경로'
+     Destination directory for Open Hardware SDK
      USER_SDK_DEST='하드웨어 SDK 경로'
      ```
 
      - 예제
-       ```bash
-       # Destination directory for Thing+ Gateway
-       USER_THINGPLUS_GATEWAY_DEST=./gateway
 
-       # Destination directory for Open Hardware SDK
+       ```bash
+       Destination directory for Thing+ Gateway
+       USER_THINGPLUS_GATEWAY_DEST=./gateway
+       Destination directory for Open Hardware SDK
        USER_SDK_DEST=.
        ```
 
@@ -203,6 +203,7 @@ v0.10.16
      - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
 
      - 예제
+
        ```bash
        @Pi2:$ sudo nano /etc/rc.local
        ...
