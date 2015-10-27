@@ -19,7 +19,7 @@ if [ -z $USER_SDK_DEST ]; then
 fi
 
 MODEL="debian"
-RSYNC_SERVER="devrsync.thingbine.com"
+RSYNC_SERVER="rsync.thingplus.net"
 RSYNC_USER="debian_b2d"
 RSYNC_PASSWORD="fmLU~e2OhmyKDTj"
 RSYNC_SIZE_ONLY_OPTION="false"
