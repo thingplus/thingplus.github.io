@@ -74,6 +74,7 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+    - download
 
 # Set default env for multilingual without plugin
 defaults:
