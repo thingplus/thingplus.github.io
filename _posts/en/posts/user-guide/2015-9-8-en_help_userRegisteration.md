@@ -141,7 +141,8 @@ exit 0
 <br/>
 
 13) Choose a gateway model.
- - For BeagleBone Black: `Neuromeka Rev2.1`
+
+- For BeagleBone Black: `Neuromeka Rev2.1`
 ![select_gwmodel](/assets/select_gwmodel_beagle_en.png)
 
 - For Raspberry Pi 2: `Raspberry Pi - Developer`
@@ -155,7 +156,8 @@ exit 0
 <br/>
 
 15) Choose a device model.
- - For BeagleBone Black: `Basic Model Rev2.1`
+
+- For BeagleBone Black: `Basic Model Rev2.1`
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
 
 - For Raspberry Pi 2: `GrovePi+ Starter Kit`

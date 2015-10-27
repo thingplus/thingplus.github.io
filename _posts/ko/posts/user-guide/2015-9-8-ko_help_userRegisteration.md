@@ -134,6 +134,7 @@ exit 0
 <br/>
 
 13) `게이트웨이 모델`을 선택한다.
+
 - BeagleBon Black의 경우: `Neuromeka Rev2.1`
 ![select_gwmodel](/assets/select_gwmodel_ko.png)
 
@@ -148,6 +149,7 @@ exit 0
 <br/>
 
 15) `디바이스 모델`을 선택한다.
+
 - BeagleBon Black의 경우: `Basic Model Rev2.1`
 ![select_devicemodel](/assets/select_devicemodel_ko.png)
 
