@@ -194,8 +194,8 @@ v0.10.16
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd thingplus/'게이트웨이 경로'; ./thingplus.sh start;)                                             # 추가
-     (cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)       # 추가
+     (cd thingplus/'게이트웨이 경로'; ./thingplus.sh start;)                                        # 추가
+     (cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # 추가
      
      exit 0
      ```
@@ -215,20 +215,20 @@ v0.10.16
 
 ### 문제 해결 방법
 
-* `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우:
+* `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우
 
   - 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
   - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 Raspberry Pi에 접속하여 아래 명령을 실행하여 내용을 확인한다.
 
-  ```
-  @PC:$ ssh pi@<IP Address>
-  @Pi2:$ thingplus/'게이트웨이 경로'
-  @Pi2:$ ./thingplus.sh restart
-  @Pi2:$ cd log
-  @Pi2:$ tail -F -n 300 thingplus.log
-  ```
+    ```
+    @PC:$ ssh pi@<IP Address>
+    @Pi2:$ thingplus/'게이트웨이 경로'
+    @Pi2:$ ./thingplus.sh restart
+    @Pi2:$ cd log
+    @Pi2:$ tail -F -n 300 thingplus.log
+    ```
 
-* 한 개 이상의 센서가 등록되지 않았을 경우:
+* 한 개 이상의 센서가 등록되지 않았을 경우
 
   - 게이트웨이를 재시작하면 자동적으로 미등록 센서를 등록한다.
 
