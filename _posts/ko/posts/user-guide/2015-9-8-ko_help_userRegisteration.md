@@ -57,7 +57,11 @@ permalink: /ko/user-guide/registration.html
 
 #### BeagleBone Black & Raspberry Pi 2 
 
-1) BeagleBone Black/Raspberry Pi 2에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
+0) 하드웨어 구매 안내
+  * [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
+  * [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
+
+1) BeagleBone Green/Raspberry Pi 에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
 ```bash
 @shell:$ cd /usr/local/tp/scripts
@@ -135,7 +139,7 @@ exit 0
 
 13) `게이트웨이 모델`을 선택한다.
 
-- BeagleBon Black의 경우: `Neuromeka Rev2.1`
+- BeagleBon Green의 경우: `BeagleBone Green - Developer`
 ![select_gwmodel](/assets/select_gwmodel_ko.png)
 
 - Raspberry Pi 2의 경우: `Raspberry Pi - Developer`
@@ -150,7 +154,7 @@ exit 0
 
 15) `디바이스 모델`을 선택한다.
 
-- BeagleBon Black의 경우: `Basic Model Rev2.1`
+- BeagleBon Black의 경우: `Grove Starter Kit for BeagleBone Green`
 ![select_devicemodel](/assets/select_devicemodel_ko.png)
 
 - Raspberry Pi 2의 경우: `GrovePi+ Starter Kit`
@@ -169,7 +173,7 @@ exit 0
 
 18) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
 
-  - 센서는 게이트웨이(BeagelBone Black)에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
+  - 센서는 게이트웨이에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
   - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.
 
 <br>
