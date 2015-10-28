@@ -17,11 +17,15 @@ permalink: /ko/user-guide/registration.html
 <br>
 #### 가입 및 사용
   * Thing+ 포털 사용을 위해서는 하드웨어 구입과 설치가 필요합니다. 귀사의 맞춤형 하드웨어 구입과 설치를 위해 [iot@daliworks.net](mailto:iot@daliworks.net)으로 연락바랍니다. 최고의 IoT 전문가가 친절히 도와 드리겠습니다.
-  * **하드웨어에 대해 알아보기**
+  * 하드웨어에 대해 알아보기
     * 귀사의 IoT 서비스 구축을 위한 하드웨어에 대해 알아보세요.
     * Thing+에 연결가능한 [하드웨어 목록](http://www.daliworks.net/?page_id=11441)을 참고하시길 바랍니다.
-  * **이미 하드웨어를 가지고 있습니까? 새로운 IoT 하드웨어를 계획하고 있습니까?**
+  * 이미 하드웨어를 가지고 있습니까? 새로운 IoT 하드웨어를 계획하고 있습니까?
     * [hw@daliworks.net](mailto:hw@daliworks.net)으로 연락주시면 하드웨어와 Thing+ 연동에 대해 안내해 드리겠습니다.
+  * **오픈하드웨어 기반으로 서비스 이용하기**
+    * [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
+    * [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
+    * 더 많은 오픈하드웨어를 준비중에 있습니다.
 
 <br>
 
@@ -58,6 +62,7 @@ permalink: /ko/user-guide/registration.html
 #### BeagleBone Black & Raspberry Pi 2 
 
 0) 하드웨어 구매 안내
+
   * [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
   * [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
 
