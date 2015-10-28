@@ -45,6 +45,7 @@ permalink: /ko/user-guide/registration.html
 ![](/assets/2_email.png)
 
 #### 서비스 관리자의 가입승인 및 사용권한
+  * **iot.thingplus.net** 사용자의 경우 자동 가입처리 됩니다.
   * 이메일 인증 성공 후, 해당 서비스 관리자의 가입 승인 절차가 이뤄지게 됩니다.
   * 관리자의 가입 승인이 확인되면, 승인 안내 이메일이 전송됩니다.
   * 관리자의 가입 승인 안내 이메일은 몇초에서부터 몇분까지 걸릴 수 있습니다. 만약 승인 안내 이메일을 받지 못했다면 다음을 확인해주세요.
@@ -59,12 +60,9 @@ permalink: /ko/user-guide/registration.html
 ### 게이트웨이 등록
 <br>
 
-#### BeagleBone Black & Raspberry Pi 2 
+#### BeagleBone Green & Raspberry Pi 2 
 
-0) 하드웨어 구매 안내
-
-  * [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
-  * [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
+본 가이드는 비글본그린 및 라즈베리파이 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다.
 
 1) BeagleBone Green/Raspberry Pi 에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 

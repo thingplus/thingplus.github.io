@@ -47,6 +47,7 @@ User guide for a progress as hardware synchronization and user sign up.
 ![](/assets/en_2_email.png)
 
 #### Sign up and Authorization progress for service administrator
+  * No more process required for **iot.thingplus.net** user.
   * After confirmation on e-mail, follow sign up progress for service administrator
   * Get confirmation e-mail after authorization from the service manager.
   * Will take few seconds to minutes for authorization. If you did not receive any e-mail, please check below.
