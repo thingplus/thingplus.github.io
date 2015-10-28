@@ -5,12 +5,13 @@ published: true
 permalink: /ko/open-hardware/bbb-user-guide.html
 ---
 
-Thing+ 연동가이드(BeagleBone Black)
+Thing+ 연동가이드(BeagleBone Green)
 
 #### 1. 환경 설정
 
+0) [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
 
-1) BeagleBone Black에 5V 전원 어댑터를 연결한 후, 아래 URL을 참조하여 BeagleBone Black과 사용자의 PC를 USB 케이블로 연결하고(Step 1), 드라이버를 설치한다.(Step 2)
+1) BeagleBone Green(이하 BBG)에 5V 전원 어댑터를 연결한 후, 아래 URL을 참조하여 BBG와 사용자의 PC를 USB 케이블로 연결하고(Step 1), 드라이버를 설치한다.(Step 2)
 
    - http://beagleboard.org/getting-started#step1 참조
    - http://beagleboard.org/getting-started#step2 참조
@@ -20,10 +21,10 @@ Thing+ 연동가이드(BeagleBone Black)
 
 3) 인터넷 연결을 위하여 Ethernet(LAN 케이블)이나 WiFi USB 동글을 BeagleBone Black에 연결한다.
 
-   - BeagleBone Black은 기본적으로 DHCP를 지원한다.
+   - BBG는 기본적으로 DHCP를 지원한다.
    - WiFi를 사용할 경우, 본 문서의 `WiFi 동글 설정` 부분을 참조한다.
 
-4) BeagleBone Black을 재시작한다.
+4) BBG를 재시작한다.
    - PC와 연결된 USB 케이블과 전원 어댑터를 모두 뺐다가 다시 꽂아야 한다.
 
 5) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 로그인한다.
@@ -55,7 +56,7 @@ Enter new UNIX password:
 @BBB:$ dpkg -i tp_bbb_armhf.deb
 ```
 
-3) BeagleBone Black을 재시작한다.
+3) BBG를 재시작한다.
 
 ```bash
 @BBB:$ reboot -f
@@ -69,7 +70,7 @@ Enter new UNIX password:
 --------------------
 
 ### [선택사항] WiFi 동글 설정 - TP-LINK TL-WN727N
-- BeagleBone Black에서 지원하는 WiFi 동글 목록은 아래 URL을 참조한다.
+- BBG에서 지원하는 WiFi 동글 목록은 아래 URL을 참조한다.
 
   - http://www.elinux.org/Beagleboard:BeagleBoneBlack#WIFI_Adapters
 
@@ -77,11 +78,11 @@ Enter new UNIX password:
 
   - http://beagleboneblacksurya.blogspot.kr/2014/10/connecting-to-wireless-module-tp-link.html
 
-> 주의: WiFi 동글을 BeagleBone Black에 연결한 수 반드시 재시작해야 한다.
+> 주의: WiFi 동글을 BBG에 연결한 수 반드시 재시작해야 한다.
 
 - WiFi 동글 설정을 위해서는 **터미널**에서 아래의 단계를 수행한다.
 
-1) WiFi 동글을 BeagleBone Black의 USB 포트에 꽂은 후, BeagleBone Black을 재시작한다.
+1) WiFi 동글을 BBG의 USB 포트에 꽂은 후, BeagleBone Black을 재시작한다.
 
 2) 터미널에서 WiFi 인터페이스명을 확인한다.
 
@@ -128,7 +129,7 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 
 ```
 
-4) BeagleBone Black을 재시작한다.
+4) BBG를 재시작한다.
 
 > 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
 
@@ -138,7 +139,7 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 * `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우:
 
   - 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
-  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 BeagleBone Black에 접속한 후 아래 명령을 실행하여 내용을 확인한다.
+  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 BBG에 접속한 후 아래 명령을 실행하여 내용을 확인한다.
 
   ```
   @PC:$ ssh root@192.168.7.2
@@ -155,7 +156,7 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 
 * 1-Wire 온도센서가 등록되지 않았을 경우:
 
-  - Cape manager 설정을 확인한 후, BB-W1이 없을 경우 BeagleBone Black을 재시작한다.
+  - Cape manager 설정을 확인한 후, BB-W1이 없을 경우 BBG를 재시작한다.
 
   ```
   @PC:$ ssh root@192.168.7.2

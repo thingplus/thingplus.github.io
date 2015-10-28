@@ -9,6 +9,7 @@ Thing+ 연동가이드(Raspberry Pi)
 
 #### 1. 환경 설정
 
+0) [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
 
 1) Micro SD card(8GB 이상)을 준비한다.
 
