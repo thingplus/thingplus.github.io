@@ -95,8 +95,8 @@ v0.10.16
 2) thingplus 어플리케이션을 설치할 폴더를 만들고 이동한다.
 
 ```bash
-@Pi2:$ mkdir /home/pi/thingplus
-@Pi2:$ cd /home/pi/thingplus
+@Pi2:$ mkdir /opt/thingplus
+@Pi2:$ cd /opt/thingplus
 ```
 
 3) 인스톨 스크립트 파일을 다운로드한다.
@@ -135,7 +135,7 @@ v0.10.16
 
 ```bash
 @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
-@Pi2:$ ./thingplus_embedded_sdk_install.sh
+@Pi2:$ sudo ./thingplus_embedded_sdk_install.sh
 ```
 
 6) Raspberry Pi를 재시작한다.
@@ -148,7 +148,7 @@ v0.10.16
 
 ```bash
 @Pi2:$ sudo su
-@Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
+@Pi2:$ cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
 @Pi2:$ npm install
 @Pi2:$ sudo reboot
 ```
@@ -157,7 +157,7 @@ v0.10.16
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+     @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
      @Pi2:$ npm install
      @Pi2:$ sudo reboot
      ```
@@ -173,7 +173,8 @@ v0.10.16
    - MAC 어드레스를 얻는 방법은 아래와 같다.
 
      ```bash
-     @Pi2:$ cd /home/pi/thingplus/'게이트웨이 경로'/scripts
+     @Pi2:$ sudo su
+     @Pi2:$ cd /opt/thingplus/'게이트웨이 경로'/scripts
      @Pi2:$ ./getmac
      Your MAC address is as below
      xx:xx:xx:xx:xx:xx
@@ -182,7 +183,8 @@ v0.10.16
      - 예제
 
        ```bash
-       @Pi2:$ cd /home/pi/thingplus/gateway/scripts
+       @Pi2:$ sudo su
+       @Pi2:$ cd /opt/thingplus/gateway/scripts
        @Pi2:$ ./getmac
        Your MAC address is as below
        xx:xx:xx:xx:xx:xx
@@ -192,9 +194,9 @@ v0.10.16
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd /home/pi/thingplus/'게이트웨이 경로'
+     @Pi2:$ cd /opt/thingplus/'게이트웨이 경로'
      @Pi2:$ APIKEY='API 키' ./thingplus.sh start;
-     @Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
+     @Pi2:$ cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
      @Pi2:$ node app.js;
      ```
 
@@ -202,9 +204,9 @@ v0.10.16
 
        ```bash
        @Pi2:$ sudo su
-       @Pi2:$ cd /home/pi/thingplus/gateway
+       @Pi2:$ cd /opt/thingplus/gateway
        @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
-       @Pi2:$ cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
+       @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
        @Pi2:$ node app.js;
        ```
 
@@ -213,8 +215,8 @@ v0.10.16
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd /home/pi/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)
-     (cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+     (cd /opt/thingplus/'게이트웨이 경로'; sudo ./thingplus.sh start;)
+     (cd /opt/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
      exit 0
      ```
@@ -226,8 +228,8 @@ v0.10.16
        ```bash
        @Pi2:$ sudo nano /etc/rc.local
        ...
-       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)
-       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+       (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+       (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
        exit 0
        ```

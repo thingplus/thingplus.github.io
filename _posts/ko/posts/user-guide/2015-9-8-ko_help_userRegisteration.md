@@ -67,16 +67,16 @@ _본 가이드는 비글본그린 및 라즈베리파이 기준으로 작성되�
 1) BeagleBone Green/Raspberry Pi 에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
 ```bash
-@shell:$ cd /'your_device'/thingplus/'게이트웨이 경로'/scripts
+@shell:$ cd /opt/thingplus/'게이트웨이 경로'/scripts
 ```
 
-    - Raspberry Pi 2 예제
+   - Example
 
-    ```bash
-    @shell:$ cd /home/pi/thingplus/gateway/scripts
-    ```
 
->주의: `your_device`는 장치에 따라 다릅니다. 예) "Raspberry Pi2: /home/pi", "BBB/BBG: /root"
+     ```bash
+     @shell:$ cd /opt/thingplus/gateway/scripts
+     ```
+
 
 2) 장치의 MAC 어드레스를 얻어 클립보드에 복사한다.
 
@@ -113,17 +113,9 @@ xx:xx:xx:xx:xx:xx
 9) **장치에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
 
 ```bash
-@shell:$ cd /'your_device'/thingplus/'게이트웨이 경로'
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/'게이트웨이 경로'
 @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start;
-```
-
->주의: `your_device`는 장치에 따라 다릅니다. 예) "Raspberry Pi2: /home/pi", "BBB/BBG: /root"
-
-- Raspberry Pi 2 예제
-
-```bash
-@shell:$ cd /'your_device'/thingplus/'게이트웨이 경로'
-@shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
 ```
 
 > 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
@@ -133,24 +125,27 @@ xx:xx:xx:xx:xx:xx
 ```bash
 @shell:$ sudo nano /etc/rc.local
 ...
-(cd /'your_device'/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)
-(cd /'your_device'/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+(cd /opt/thingplus/'게이트웨이 경로'; sudo ./thingplus.sh start;)
+(cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/'your_device'/grovePi-starter-kit; sudo node app.js;)
 
 exit 0
 ```
 
-    - Raspberry Pi 2 예제
+   - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+
+> 주의: `'your_device'`는 장치에 따라 다릅니다. 예) "Raspberry Pi 2: raspberrypi", "BeagleBone Green: bbg"
+
+   - Raspberry Pi 2 예제
+
 
     ```bash
     @shell:$ sudo nano /etc/rc.local
     ...
-    (cd /home/pi/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)
-    (cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+    (cd /opt/thingplus/'게이트웨이 경로'; sudo ./thingplus.sh start;)
+    (cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
     exit 0
     ```
-
-   - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
 
 11) **웹브라우저**에서 다시 MAC 어드레스를 복사한다.
 

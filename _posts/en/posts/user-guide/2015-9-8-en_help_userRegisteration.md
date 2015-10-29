@@ -65,22 +65,20 @@ User guide for a progress as hardware synchronization and user sign up.
 
 #### BeagleBone Black and Raspberry Pi 2
 
-This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set other devices you is similar to following progress.
+_This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set other devices you is similar to following progress._
 
 1) Connect to a BeagleBon Black/Raspberry Pi 2 over SSH and go to `scripts` directory under the path which Thing+ Embedded package is inalled on.
 
 ```bash
-@shell:$ cd /'your_device'/thingplus/'path_to_gateway'/scripts
+@shell:$ cd /opt/thingplus/'path_to_gateway'/scripts
 ```
 
+   - Example
 
-    - Example for Raspberry Pi 2
 
-    ```bash
-    @shell:$ cd /home/pi/thingplus/gateway/scripts
-    ```
-
->Notice: The `your_device` depends on your device type. ex) "Raspberry Pi2: /home/pi", "BBB/BBG: /root"
+     ```bash
+     @shell:$ cd /opt/thingplus/gateway/scripts
+     ```
 
 2) Get a MAC Address of the device and copy it to the clipboard.
 
@@ -117,17 +115,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 9) Run Thing+ Gateway S/W with the following commands on **the connected terminal with your device**.
 
 ```bash
-@shell:$ cd /'your_device'/thingplus/'path_to_gateway'
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/'path_to_gateway'
 @shell:$ APIKEY='Copied API Key' ./thingplus.sh start;
-```
-
->Notice: The `your_device` depends on your device type. "Raspberry Pi2: /home/pi", "BBB/BBG: /root"
-
-- Example for Raspberry Pi 2
-
-```bash
-@shell:$ cd /'your_device'/thingplus/gateway
-@shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
 ```
 
 > Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Quotation Marks('), like `'copied_api_key'`.
@@ -137,25 +127,28 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 ```bash
 @shell:$ sudo nano /etc/rc.local
 ...
-(cd /'your_device'/thingplus/'path_to_gateway'; ./thingplus.sh start;)
-(cd /'your_device'/'path_to_open_hw_sdk'/openhardware/'your_device_name'/grovePi-starter-kit; node app.js;)
+(cd /opt/thingplus/'path_to_gateway'; sudo ./thingplus.sh start;)
+(cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/'your_device'/grovePi-starter-kit; sudo node app.js;)
 
 exit 0
 ```
 
-    - Example for Raspberry Pi
+   - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
+
+> Noteice: `'your_device'` depends on your device. ex) "Raspberry Pi 2: raspberrypi", "BeagleBon Green: bbg"
+
+   - Example for Raspberry Pi
+
 
     ```bash
     @shell:$ sudo nano /etc/rc.local
     ...
-    (cd /home/pi/thingplus/'path_to_gateway'; ./thingplus.sh start;)
-    (cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+    (cd /opt/thingplus/'path_to_gateway'; sudo ./thingplus.sh start;)
+    (cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
      exit 0
     ```
 
-
-   - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
 11) Copy the MAC Address from the **web browser** you got the API Key.
 

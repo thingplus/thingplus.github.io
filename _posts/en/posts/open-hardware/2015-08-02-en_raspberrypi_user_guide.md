@@ -95,8 +95,8 @@ v0.10.16
 2) Make a new folder where the thingplus application will be installed and Move to it.
 
 ```bash
-@Pi2:$ mkdir /home/pi/thingplus
-@Pi2:$ cd /home/pi/thingplus
+@Pi2:$ mkdir /opt/thingplus
+@Pi2:$ cd /opt/thingplus
 ```
 
 3) Download a install script file.
@@ -135,7 +135,7 @@ v0.10.16
 
 ```bash
 @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
-@Pi2:$ ./thingplus_embedded_sdk_install.sh
+@Pi2:$ sudo ./thingplus_embedded_sdk_install.sh
 ```
 
 6) Reboot your Raspberry Pi.
@@ -148,7 +148,7 @@ v0.10.16
 
 ```bash
 @Pi2:$ sudo su
-@Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit
+@Pi2:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit
 @Pi2:$ npm install
 @Pi2:$ sudo reboot
 ```
@@ -157,7 +157,7 @@ v0.10.16
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+     @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
      @Pi2:$ npm install
      @Pi2:$ sudo reboot
      ```
@@ -173,7 +173,7 @@ v0.10.16
    - Way to get your MAC Address is below
 
      ```bash
-     @Pi2:$ cd /home/pi/thingplus/'path_to_gateway'/scripts
+     @Pi2:$ cd /opt/thingplus/'path_to_gateway'/scripts
      @Pi2:$ ./getmac
      Your MAC address is as below
      xx:xx:xx:xx:xx:xx
@@ -182,7 +182,7 @@ v0.10.16
      - Example
 
        ```bash
-       @Pi2:$ cd /home/pi/thingplus/gateway/scripts
+       @Pi2:$ cd /opt/thingplus/gateway/scripts
        @Pi2:$ ./getmac
        Your MAC address is as below
        xx:xx:xx:xx:xx:xx
@@ -192,9 +192,9 @@ v0.10.16
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd /home/pi/thingplus/'path_to_gateway'
+     @Pi2:$ cd /opt/thingplus/'path_to_gateway'
      @Pi2:$ APIKEY='API Key' ./thingplus.sh start;
-     @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
+     @Pi2:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
      @Pi2:$ node app.js;
      ```
 
@@ -213,21 +213,21 @@ v0.10.16
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd /home/pi/thingplus/'path_to_gateway'; ./thingplus.sh start;)
-     (cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+     (cd /opt/thingplus/'path_to_gateway'; sudo ./thingplus.sh start;)
+     (cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
      exit 0
      ```
 
      - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
 
-     - 예제
+     - Example
 
        ```bash
        @Pi2:$ sudo nano /etc/rc.local
        ...
-       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)
-       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+       (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+       (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
        exit 0
        ```
