@@ -148,7 +148,16 @@ v0.10.16
 @Pi2:$ sudo su
 @Pi2:$ cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
 @Pi2:$ npm install
+@Pi2:$ sudo reboot
 ```
+     - 예제
+
+     ```bash
+     @Pi2:$ sudo su
+     @Pi2:$ cd thingplus/openhardware/raspberrypi/grovePi-starter-kit
+     @Pi2:$ npm install
+     @Pi2:$ sudo reboot
+     ```
 
 #### 3. Raspberry Pi 등록
 
