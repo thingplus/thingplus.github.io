@@ -62,7 +62,7 @@ permalink: /ko/user-guide/registration.html
 
 #### BeagleBone Green & Raspberry Pi 2 
 
-본 가이드는 비글본그린 및 라즈베리파이 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다.
+_본 가이드는 비글본그린 및 라즈베리파이 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다._
 
 1) BeagleBone Green/Raspberry Pi 에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 

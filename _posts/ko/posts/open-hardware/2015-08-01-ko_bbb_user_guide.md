@@ -1,5 +1,5 @@
 ---
-title: BBB 사용자 가이드
+title: 비글본그린 사용자 가이드
 tags: "open-hardware"
 published: true
 permalink: /ko/open-hardware/bbb-user-guide.html
