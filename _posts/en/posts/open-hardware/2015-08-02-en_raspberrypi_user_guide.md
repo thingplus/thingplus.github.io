@@ -1,20 +1,23 @@
 ---
-title: Raspberry PI User Guide
+title: Raspberry PI 사용자 가이드
 tags: "open-hardware"
 published: true
-permalink: /en/open-hardware/raspberry-pi-user-guide.html
+permalink: /ko/open-hardware/raspberry-pi-user-guide.html
 ---
 
 Thing+ 연동가이드(Raspberry Pi)
 
 #### 1. 환경 설정
 
+0) [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
 
 1) Micro SD card(8GB 이상)을 준비한다.
 
 2) 아래의 다운로드 페이지에서 Raspbian image를 다운로드 한다.
 
-   - https://www.raspberrypi.org/downloads/
+   - https://www.raspberrypi.org/downloads/raspbian/
+
+   - `RASPBIAN JESSIE` 이미지 권장
 
 3) 아래의 웹페이지를 참조하여 Micro SD card에 다운로드 받은 이미지로 OS를 설치한다.
 
@@ -22,13 +25,17 @@ Thing+ 연동가이드(Raspberry Pi)
 
 4) 윈도우즈 사용자의 경우 아래의 URL에서 putty를 다운받아 설치한다.
 
-   - http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+   - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
-5) Micro SD card를 Raspberry Pi에 꽂는다.
+5) Raspbian을 설치한 Micro SD card를 Raspberry Pi에 꽂는다.
+
+   ![Raspberry Pi + Grove Pi](/assets/insert_sdcard.png)
 
 6) Raspbeery Pi에 GrovePi shield와 센서, Ethernet(LAN 케이블), power cable을 연결한다.
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
+
+   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
 
 7) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 로그인한다
 
@@ -48,7 +55,13 @@ pi@<IP Address>'s password: raspberry
 
    a. 4GB 이상의 SD card를 사용하기 위해서 `1. Expand Filesystem`을 선택한다.
 
+   ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+
    b. I2C를 사용하기 위해서 `8. Advanced Options` --> `A7. I2C`을 선택하고 이후 물음에 모두 `Yes`를 선택한다.
+
+   ![Raspberry Pi + Grove Pi](/assets/advanced_options.png)
+
+   ![Raspberry Pi + Grove Pi](/assets/choose_i2c.png)
 
    c. Tab키를 누르고 Finish를 선택한 후 Reboot할 것이냐는 물음에 `No`를 선택한다.
 
@@ -61,6 +74,7 @@ pi@<IP Address>'s password: raspberry
    i2c-bcm2708
    ```
 
+     - `i2c-dev`는 Raspbian의 버전에 따라서 이미 추가되어 있을 수 있음.
      - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
 
 #### 2. 설치
@@ -77,22 +91,62 @@ pi@<IP Address>'s password: raspberry
 v0.10.16
 ```
 
-2) 데비안 패키지 파일을 다운로드한다.
+2) thingplus 어플리케이션을 설치할 폴더를 만들고 이동한다.
 
 ```bash
-@Pi2:$ wget https://www.sp1.sktiot.com/asset/download/tp_sktiot_raspberryPi2.deb
+@Pi2:$ mkdir /home/pi/thingplus
+@Pi2:$ cd /home/pi/thingplus
 ```
 
-3) 데비안 패키지를 설치한다. (반드시 root 계정을 이용해야 한다.)
+3) 인스톨 스크립트 파일을 다운로드한다.
 
 ```bash
-@Pi2:$ dpkg -i tp_sktiot_raspberryPi2.deb
+@Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install.sh
 ```
 
-4) Raspberry Pi를 재시작한다.
+4) thingplus 어플리케이션의 구성요소들이 설치될 경로를 지정한다.
+
+```bash
+@Pi2:$ nano thingplus_embedded_sdk_install.sh
+```
+
+   - 화면상단의 `USER_THINGPLUS_GATEWAY_DEST=`와 `USER_SDK_DEST=`의 뒤에 원하는 경로를 입력한다.
+
+     ```bash
+     Destination directory for Thing+ Gateway
+     USER_THINGPLUS_GATEWAY_DEST='게이트웨이 경로'
+     Destination directory for Open Hardware SDK
+     USER_SDK_DEST='하드웨어 SDK 경로'
+     ```
+
+     - 예제
+
+       ```bash
+       Destination directory for Thing+ Gateway
+       USER_THINGPLUS_GATEWAY_DEST=./gateway
+       Destination directory for Open Hardware SDK
+       USER_SDK_DEST=.
+       ```
+
+5) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
+
+```bash
+@Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
+@Pi2:$ ./thingplus_embedded_sdk_install.sh
+```
+
+6) Raspberry Pi를 재시작한다.
 
 ```bash
 @Pi2:$ reboot
+```
+
+7) 라즈베리파이에 재접속후, thingplus 어플리케이션을 설치하고 실행한다.
+
+```bash
+@Pi2:$ sudo su
+@Pi2:$ cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
+@Pi2:$ npm install
 ```
 
 #### 3. Raspberry Pi 등록
@@ -101,31 +155,40 @@ v0.10.16
 
    - `게이트웨이 모델` 선택 시 `Raspberry Pi - Developer`를 선택한다.
 
-   - `디바이스 모델` 선택 시 `GrovePi+`를 선택한다.
+   - `디바이스 모델` 선택 시 `GrovePi+ Starter Kit`을 선택한다.
 
    - MAC 어드레스를 얻는 방법은 아래와 같다.
 
      ```bash
-     @Pi2:$ cd /usr/local/tp/scripts
+     @Pi2:$ cd /thingplus/'게이트웨이 경로'/scripts
      @Pi2:$ ./getmac
      Your MAC address is as below
      xx:xx:xx:xx:xx:xx
      ```
 
+     - 예제
+
+       ```bash
+       @Pi2:$ cd /thingplus/gateway/scripts
+       @Pi2:$ ./getmac
+       Your MAC address is as below
+       xx:xx:xx:xx:xx:xx
+       ```
+
    - 처음 실행 방법은 아래와 같다. 이 때, `API 키`는 앞뒤를 작은 따옴표(')로 감싸야 한다.
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd /usr/local/tp
-     @Pi2:$ APIKEY='API 키' ./tp.sh start; ./driver.sh start
+     @Pi2:$ cd thingplus/'게이트웨이 경로'
+     @Pi2:$ APIKEY='API 키' ./thingplus.sh start;
      ```
 
      - 예제
 
        ```bash
        @Pi2:$ sudo su
-       @Pi2:$ cd /usr/local/tp
-       @Pi2:$ APIKEY='A7i3kT9w1-9xWVk447-oJ=' ./tp.sh start; ./driver.sh start
+       @Pi2:$ cd thingplus/gateway
+       @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
        ```
 
    - Raspberry Pi가 켜질 때마다 자동으로 실행되도록 하기 위해서는 `/etc/rc.local`의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
@@ -133,33 +196,41 @@ v0.10.16
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd /usr/local/tp; ./driver.sh start)         # 추가
-     (cd /usr/local/tp; ./tp.sh start)             # 추가
+     (cd thingplus/'게이트웨이 경로'; ./thingplus.sh start;)                                         # 추가
+     (cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # 추가
      
      exit 0
      ```
 
      - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
 
+     - 예제
+
+       ```bash
+       @Pi2:$ sudo nano /etc/rc.local
+       ...
+       (cd thingplus/gateway; ./thingplus.sh start;)                                       # 추가
+       (cd thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # 추가
+       ```
 
 --------------------
 
 ### 문제 해결 방법
 
-* `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우:
+* `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우
 
   - 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
   - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 Raspberry Pi에 접속하여 아래 명령을 실행하여 내용을 확인한다.
 
-  ```
-  @PC:$ ssh pi@<IP Address>
-  @Pi2:$ cd /usr/local/tp
-  @Pi2:$ ./tp.sh restart
-  @Pi2:$ cd log
-  @Pi2:$ tail -F -n 300 thingplus.log
-  ```
+    ```
+    @PC:$ ssh pi@<IP Address>
+    @Pi2:$ thingplus/'게이트웨이 경로'
+    @Pi2:$ ./thingplus.sh restart
+    @Pi2:$ cd log
+    @Pi2:$ tail -F -n 300 thingplus.log
+    ```
 
-* 한 개 이상의 센서가 등록되지 않았을 경우:
+* 한 개 이상의 센서가 등록되지 않았을 경우
 
   - 게이트웨이를 재시작하면 자동적으로 미등록 센서를 등록한다.
 

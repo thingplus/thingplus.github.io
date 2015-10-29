@@ -74,6 +74,7 @@ pi@<IP Address>'s password: raspberry
    i2c-bcm2708
    ```
 
+     - `i2c-dev`는 Raspbian의 버전에 따라서 이미 추가되어 있을 수 있음.
      - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
 
 #### 2. 설치
@@ -159,7 +160,7 @@ v0.10.16
    - MAC 어드레스를 얻는 방법은 아래와 같다.
 
      ```bash
-     @Pi2:$ cd /thingplus/'하드웨어 경로'/scripts
+     @Pi2:$ cd /thingplus/'게이트웨이 경로'/scripts
      @Pi2:$ ./getmac
      Your MAC address is as below
      xx:xx:xx:xx:xx:xx
@@ -178,7 +179,7 @@ v0.10.16
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd thingplus/'하드웨어 경로'
+     @Pi2:$ cd thingplus/'게이트웨이 경로'
      @Pi2:$ APIKEY='API 키' ./thingplus.sh start;
      ```
 
