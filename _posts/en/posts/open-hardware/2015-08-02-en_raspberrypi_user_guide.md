@@ -194,7 +194,7 @@ v0.10.16
      @Pi2:$ sudo su
      @Pi2:$ cd /home/pi/thingplus/'path_to_gateway'
      @Pi2:$ APIKEY='API Key' ./thingplus.sh start;
-     @Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
+     @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
      @Pi2:$ node app.js;
      ```
 
@@ -204,7 +204,7 @@ v0.10.16
        @Pi2:$ sudo su
        @Pi2:$ cd /home/pi/thingplus/gateway
        @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
-       @Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
+       @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
        @Pi2:$ node app.js;
        ```
 
@@ -213,8 +213,8 @@ v0.10.16
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd /home/pi/thingplus/'path_to_gateway'; ./thingplus.sh start;)                                          # Added
-     (cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # Added
+     (cd /home/pi/thingplus/'path_to_gateway'; ./thingplus.sh start;)
+     (cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
 
      exit 0
      ```
@@ -226,8 +226,8 @@ v0.10.16
        ```bash
        @Pi2:$ sudo nano /etc/rc.local
        ...
-       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)                                       # Added
-       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # Added
+       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)
+       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
 
        exit 0
        ```

@@ -213,8 +213,8 @@ v0.10.16
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd /home/pi/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)                                        # 추가
-     (cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # 추가
+     (cd /home/pi/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)
+     (cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
 
      exit 0
      ```
@@ -226,8 +226,8 @@ v0.10.16
        ```bash
        @Pi2:$ sudo nano /etc/rc.local
        ...
-       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)                                       # 추가
-       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # 추가
+       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)
+       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
 
        exit 0
        ```
