@@ -1,8 +1,8 @@
 ---
-title: Raspberry PI 사용자 가이드
+title: Raspberry PI User Guide
 tags: "open-hardware"
 published: true
-permalink: /ko/open-hardware/raspberry-pi-user-guide.html
+permalink: /en/open-hardware/raspberry-pi-user-guide.html
 ---
 
 Thing+ 연동가이드(Raspberry Pi)
