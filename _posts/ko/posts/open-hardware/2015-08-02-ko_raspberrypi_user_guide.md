@@ -114,18 +114,20 @@ v0.10.16
    - 화면상단의 `USER_THINGPLUS_GATEWAY_DEST=`와 `USER_SDK_DEST=`의 뒤에 원하는 경로를 입력한다.
 
      ```bash
-     Destination directory for Thing+ Gateway
+     #Destination directory for Thing+ Gateway
      USER_THINGPLUS_GATEWAY_DEST='게이트웨이 경로'
-     Destination directory for Open Hardware SDK
+
+     #Destination directory for Open Hardware SDK
      USER_SDK_DEST='하드웨어 SDK 경로'
      ```
 
      - 예제
 
        ```bash
-       Destination directory for Thing+ Gateway
+       #Destination directory for Thing+ Gateway
        USER_THINGPLUS_GATEWAY_DEST=./gateway
-       Destination directory for Open Hardware SDK
+
+       #Destination directory for Open Hardware SDK
        USER_SDK_DEST=.
        ```
 
@@ -146,15 +148,16 @@ v0.10.16
 
 ```bash
 @Pi2:$ sudo su
-@Pi2:$ cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
+@Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
 @Pi2:$ npm install
 @Pi2:$ sudo reboot
 ```
+
      - 예제
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd thingplus/openhardware/raspberrypi/grovePi-starter-kit
+     @Pi2:$ cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit
      @Pi2:$ npm install
      @Pi2:$ sudo reboot
      ```
@@ -170,7 +173,7 @@ v0.10.16
    - MAC 어드레스를 얻는 방법은 아래와 같다.
 
      ```bash
-     @Pi2:$ cd /thingplus/'게이트웨이 경로'/scripts
+     @Pi2:$ cd /home/pi/thingplus/'게이트웨이 경로'/scripts
      @Pi2:$ ./getmac
      Your MAC address is as below
      xx:xx:xx:xx:xx:xx
@@ -179,7 +182,7 @@ v0.10.16
      - 예제
 
        ```bash
-       @Pi2:$ cd /thingplus/gateway/scripts
+       @Pi2:$ cd /home/pi/thingplus/gateway/scripts
        @Pi2:$ ./getmac
        Your MAC address is as below
        xx:xx:xx:xx:xx:xx
@@ -189,9 +192,9 @@ v0.10.16
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd thingplus/'게이트웨이 경로'
+     @Pi2:$ cd /home/pi/thingplus/'게이트웨이 경로'
      @Pi2:$ APIKEY='API 키' ./thingplus.sh start;
-     @Pi2:$ cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
+     @Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
      @Pi2:$ node app.js;
      ```
 
@@ -199,9 +202,9 @@ v0.10.16
 
        ```bash
        @Pi2:$ sudo su
-       @Pi2:$ cd thingplus/gateway
+       @Pi2:$ cd /home/pi/thingplus/gateway
        @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
-       @Pi2:$ cd thingplus/openhardware/raspberrypi/grovePi-starter-kit;
+       @Pi2:$ cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
        @Pi2:$ node app.js;
        ```
 
@@ -210,9 +213,9 @@ v0.10.16
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd thingplus/'게이트웨이 경로'; ./thingplus.sh start;)                                         # 추가
-     (cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # 추가
-     
+     (cd /home/pi/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)                                        # 추가
+     (cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # 추가
+
      exit 0
      ```
 
@@ -223,9 +226,9 @@ v0.10.16
        ```bash
        @Pi2:$ sudo nano /etc/rc.local
        ...
-       (cd thingplus/gateway; ./thingplus.sh start;)                                       # 추가
-       (cd thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # 추가
-       
+       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)                                       # 추가
+       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # 추가
+
        exit 0
        ```
 
@@ -252,7 +255,7 @@ v0.10.16
 
 * Raspberry Pi의 IP address를 확인하는 방법
 
-  - 스마트폰의 app store에서 `Fing` app을 설치한다. (Android, iPhone 모두 가능)
+  - 스마트폰의 app store에서 `Fing` app을 설치한다. ([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
   - Raspberry Pi가 연결된 공유기에 WiFi를 이용하여 스마트폰을 연결한다.
   - `Fing`을 실행하면 공유기에 연결되어 있는 장비의 IP address의 목록이 표시된다.
   - 이 중 `raspberrypi`라는 이름의 장비의 IP address로 `ssh`를 이용하여 접속하면 된다.

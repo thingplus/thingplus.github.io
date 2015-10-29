@@ -5,67 +5,68 @@ published: true
 permalink: /en/open-hardware/raspberry-pi-user-guide.html
 ---
 
-Thing+ 연동가이드(Raspberry Pi)
+Thing+ Integragtion Guide for Raspberry Pi
 
-#### 1. 환경 설정
+#### 1. Environment Setting
 
-0) [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
+0) [Go to shop to buy the GrovePi+ Starter Kit](http://www.icbanq.com/P005700239)
 
-1) Micro SD card(8GB 이상)을 준비한다.
+1) Micro SD card(8GB+ storage) is required.
 
-2) 아래의 다운로드 페이지에서 Raspbian image를 다운로드 한다.
+2) Download Raspbian image from below link.
 
    - https://www.raspberrypi.org/downloads/raspbian/
+   - We recommend `RASPBIAN JESSIE` version one.
 
-   - `RASPBIAN JESSIE` 이미지 권장
-
-3) 아래의 웹페이지를 참조하여 Micro SD card에 다운로드 받은 이미지로 OS를 설치한다.
+3) Intall OS on the micro SD card with the donwloaded image. Please refer the below link for more deails about the OS installation.
 
    - https://www.raspberrypi.org/documentation/installation/installing-images/
 
-4) 윈도우즈 사용자의 경우 아래의 URL에서 putty를 다운받아 설치한다.
+4) Telnet/SSH Client is required for controlling the Raspberry Pi from your PC.
 
-   - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+   - If you are a Mac or Linux user, please use the default terminal utility.
+   - If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
+   - Putty Download link - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
-5) Raspbian을 설치한 Micro SD card를 Raspberry Pi에 꽂는다.
+5) Insert the micro SD card into your Raspberry Pi.
 
    ![Raspberry Pi + Grove Pi](/assets/insert_sdcard.png)
 
-6) Raspbeery Pi에 GrovePi shield와 센서, Ethernet(LAN 케이블), power cable을 연결한다.
+6) Connect Grove Pi+ shield, Sensors, Ethernet(LAN cable), and power cable to Raspberry Pi.
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
 
-7) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 로그인한다
+7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
 
-   - IP address를 찾기 힘들 경우 `문제 해결 방법`을 참고한다.
+   - When you can NOT get the IP Address of your device, please refer the `Troubleshooting` section.
 
 ```bash
 $ ssh pi@<IP Address>
 pi@<IP Address>'s password: raspberry
 ```
 
-8) 4GB 이상의 SD card를 사용하기 위해서, raspi-config를 실행한다.
+8) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
 
 ```bash
 @Pi2:$ sudo su
 @Pi2:$ raspi-config
 ```
 
-   a. 4GB 이상의 SD card를 사용하기 위해서 `1. Expand Filesystem`을 선택한다.
+   a. To use micro SD card which has storage bigger than 4GB, Choose `1. Expand Filesystem`.
 
    ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
 
-   b. I2C를 사용하기 위해서 `8. Advanced Options` --> `A7. I2C`을 선택하고 이후 물음에 모두 `Yes`를 선택한다.
+   b. To use I2C, Choose `8. Advanced Options` --> `A7. I2C`, and then please Select `Yes` for all the following questions.
 
    ![Raspberry Pi + Grove Pi](/assets/advanced_options.png)
 
    ![Raspberry Pi + Grove Pi](/assets/choose_i2c.png)
 
-   c. Tab키를 누르고 Finish를 선택한 후 Reboot할 것이냐는 물음에 `No`를 선택한다.
+   c. Press Tab key on your keyboard and choose `Finish`, and then please Select `No` for the question about Rebooting the device.
 
-   d. /etc/modules에 `i2c-dev`와 `i2c-bcm2708`을 추가한다.
+   d. Open /etc/modules file and add two new lines(`i2c-dev`, `i2c-bcm2708`) on that file.
 
    ```bash
    @Pi2:$ nano /etc/modules
@@ -74,12 +75,12 @@ pi@<IP Address>'s password: raspberry
    i2c-bcm2708
    ```
 
-     - `i2c-dev`는 Raspbian의 버전에 따라서 이미 추가되어 있을 수 있음.
-     - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+     - `i2c-dev` could be already added, because it depends on Raspbian's version.
+     - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
 
-#### 2. 설치
+#### 2. Installation
 
-1) nodejs를 다운로드 후 설치한다.
+1) Download nodejs and Install it.
 
 ```bash
 @Pi2:$ sudo su
@@ -91,152 +92,170 @@ pi@<IP Address>'s password: raspberry
 v0.10.16
 ```
 
-2) thingplus 어플리케이션을 설치할 폴더를 만들고 이동한다.
+2) Make a new folder where the thingplus application will be installed and Move to it.
 
 ```bash
 @Pi2:$ mkdir /home/pi/thingplus
 @Pi2:$ cd /home/pi/thingplus
 ```
 
-3) 인스톨 스크립트 파일을 다운로드한다.
+3) Download a install script file.
 
 ```bash
 @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install.sh
 ```
 
-4) thingplus 어플리케이션의 구성요소들이 설치될 경로를 지정한다.
+4) Set two paths for components of the thingplus application.
 
 ```bash
 @Pi2:$ nano thingplus_embedded_sdk_install.sh
 ```
 
-   - 화면상단의 `USER_THINGPLUS_GATEWAY_DEST=`와 `USER_SDK_DEST=`의 뒤에 원하는 경로를 입력한다.
+   - Add paths you want to use after both `USER_THINGPLUS_GATEWAY_DEST=` and `USER_SDK_DEST=`.
 
      ```bash
-     Destination directory for Thing+ Gateway
-     USER_THINGPLUS_GATEWAY_DEST='게이트웨이 경로'
-     Destination directory for Open Hardware SDK
-     USER_SDK_DEST='하드웨어 SDK 경로'
+     #Destination directory for Thing+ Gateway
+     USER_THINGPLUS_GATEWAY_DEST='path_to_gateway'
+
+     #Destination directory for Open Hardware SDK
+     USER_SDK_DEST='path_to_open_hw_sdk'
      ```
 
-     - 예제
+     - Example
 
        ```bash
-       Destination directory for Thing+ Gateway
+       #Destination directory for Thing+ Gateway
        USER_THINGPLUS_GATEWAY_DEST=./gateway
-       Destination directory for Open Hardware SDK
+
+       #Destination directory for Open Hardware SDK
        USER_SDK_DEST=.
        ```
 
-5) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
+5) Grant a run permission to the script you downloaded and Run it.
 
 ```bash
 @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
 @Pi2:$ ./thingplus_embedded_sdk_install.sh
 ```
 
-6) Raspberry Pi를 재시작한다.
+6) Reboot your Raspberry Pi.
 
 ```bash
-@Pi2:$ reboot
+@Pi2:$ sudo reboot
 ```
 
-7) 라즈베리파이에 재접속후, thingplus 어플리케이션을 설치하고 실행한다.
+7) Connect to your Raspberry Pi and Install the thingplus application.
 
 ```bash
 @Pi2:$ sudo su
-@Pi2:$ cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
+@Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit
 @Pi2:$ npm install
+@Pi2:$ sudo reboot
 ```
 
-#### 3. Raspberry Pi 등록
-
-1) `Gateway 등록 가이드`를 참고하여 Raspberry Pi를 등록한다.
-
-   - `게이트웨이 모델` 선택 시 `Raspberry Pi - Developer`를 선택한다.
-
-   - `디바이스 모델` 선택 시 `GrovePi+ Starter Kit`을 선택한다.
-
-   - MAC 어드레스를 얻는 방법은 아래와 같다.
+     - Example
 
      ```bash
-     @Pi2:$ cd /thingplus/'게이트웨이 경로'/scripts
+     @Pi2:$ sudo su
+     @Pi2:$ cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+     @Pi2:$ npm install
+     @Pi2:$ sudo reboot
+     ```
+
+#### 3. Raspberry Pi Registration
+
+1) Register your Raspberry Pi to Thing+ Portal, for more inforamtion, please refer `Gateway Registration`.
+
+   - When you select `Gateway Model`, Choose `Raspberry Pi - Developer`.
+
+   - When you select `Device Model`, Choose `GrovePi+ Starter Kit`.
+
+   - Way to get your MAC Address is below
+
+     ```bash
+     @Pi2:$ cd /home/pi/thingplus/'path_to_gateway'/scripts
      @Pi2:$ ./getmac
      Your MAC address is as below
      xx:xx:xx:xx:xx:xx
      ```
 
-     - 예제
+     - Example
 
        ```bash
-       @Pi2:$ cd /thingplus/gateway/scripts
+       @Pi2:$ cd /home/pi/thingplus/gateway/scripts
        @Pi2:$ ./getmac
        Your MAC address is as below
        xx:xx:xx:xx:xx:xx
        ```
 
-   - 처음 실행 방법은 아래와 같다. 이 때, `API 키`는 앞뒤를 작은 따옴표(')로 감싸야 한다.
+   - You can start Thing+ Gateway S/W with following commands. In case of `API Key`, and, it should be in between Single Quotation Marks('), like `'API Key'`.
 
      ```bash
      @Pi2:$ sudo su
-     @Pi2:$ cd thingplus/'게이트웨이 경로'
-     @Pi2:$ APIKEY='API 키' ./thingplus.sh start;
+     @Pi2:$ cd /home/pi/thingplus/'path_to_gateway'
+     @Pi2:$ APIKEY='API Key' ./thingplus.sh start;
+     @Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
+     @Pi2:$ node app.js;
      ```
 
-     - 예제
+     - Example
 
        ```bash
        @Pi2:$ sudo su
-       @Pi2:$ cd thingplus/gateway
+       @Pi2:$ cd /home/pi/thingplus/gateway
        @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
+       @Pi2:$ cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
+       @Pi2:$ node app.js;
        ```
 
-   - Raspberry Pi가 켜질 때마다 자동으로 실행되도록 하기 위해서는 `/etc/rc.local`의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
+   - If you want to start Thing+ S/W when Raspberry Pi is always booted completely, please Open `/etc/rc.local` file, and Add new two lines right above the `exit 0`.
 
      ```bash
      @Pi2:$ sudo nano /etc/rc.local
      ...
-     (cd thingplus/'게이트웨이 경로'; ./thingplus.sh start;)                                         # 추가
-     (cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # 추가
-     
+     (cd /home/pi/thingplus/'path_to_gateway'; ./thingplus.sh start;)                                          # Added
+     (cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)  # Added
+
      exit 0
      ```
 
-     - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+     - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
 
      - 예제
 
        ```bash
        @Pi2:$ sudo nano /etc/rc.local
        ...
-       (cd thingplus/gateway; ./thingplus.sh start;)                                       # 추가
-       (cd thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # 추가
+       (cd /home/pi/thingplus/gateway; ./thingplus.sh start;)                                       # Added
+       (cd /home/pi/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # Added
+
+       exit 0
        ```
 
 --------------------
 
-### 문제 해결 방법
+### Troubleshooting
 
-* `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우
+* When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it:
 
-  - 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
-  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 Raspberry Pi에 접속하여 아래 명령을 실행하여 내용을 확인한다.
+  - It takes few minutes to register sensors and gateways, so please Refresh the Sensor page after 1~2 minutes.
+  - If you still can NOT find them after few minutes, please Connect to your Raspberry Pi, and Try run below commands.
 
     ```
     @PC:$ ssh pi@<IP Address>
-    @Pi2:$ thingplus/'게이트웨이 경로'
+    @Pi2:$ thingplus/'path_to_gateway'
     @Pi2:$ ./thingplus.sh restart
     @Pi2:$ cd log
     @Pi2:$ tail -F -n 300 thingplus.log
     ```
 
-* 한 개 이상의 센서가 등록되지 않았을 경우
+* When you can NOT find some sensors:
 
-  - 게이트웨이를 재시작하면 자동적으로 미등록 센서를 등록한다.
+  - Unregistered snesors will be added automatically, when you reboot your Raspberry Pi.
 
-* Raspberry Pi의 IP address를 확인하는 방법
+* Wehn you can NOT know the IP Address of your Raspberry Pi:
 
-  - 스마트폰의 app store에서 `Fing` app을 설치한다. (Android, iPhone 모두 가능)
-  - Raspberry Pi가 연결된 공유기에 WiFi를 이용하여 스마트폰을 연결한다.
-  - `Fing`을 실행하면 공유기에 연결되어 있는 장비의 IP address의 목록이 표시된다.
-  - 이 중 `raspberrypi`라는 이름의 장비의 IP address로 `ssh`를 이용하여 접속하면 된다.
+  - Install `Fing` App on your mobile phone([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
+  - Connect to WiFi network of your router that your Raspberry Pi is connected.
+  - Run `Fing`. You can sell all the devices with the IP Adresses in the same Network.
+  - You can find the name, `raspberrypi`. It is the IP Address of your Raspberry, and you can connect to your device using it.
