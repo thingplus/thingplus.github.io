@@ -76,9 +76,9 @@ This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set ot
 
     - Example for Raspberry Pi 2
 
-      ```bash
-      @shell:$ cd /home/pi/thingplus/gateway/scripts
-      ```
+    ```bash
+    @shell:$ cd /home/pi/thingplus/gateway/scripts
+    ```
 
 >Notice: The `your_device` depends on your device type. ex) "Raspberry Pi2: /home/pi", "BBB/BBG: /root"
 
@@ -145,14 +145,14 @@ exit 0
 
     - Example for Raspberry Pi
 
-      ```bash
-      @shell:$ sudo nano /etc/rc.local
-      ...
-      (cd /home/pi/thingplus/'path_to_gateway'; ./thingplus.sh start;)
-      (cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+    ```bash
+    @shell:$ sudo nano /etc/rc.local
+    ...
+    (cd /home/pi/thingplus/'path_to_gateway'; ./thingplus.sh start;)
+    (cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
 
-      exit 0
-      ```
+     exit 0
+    ```
 
 
    - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.

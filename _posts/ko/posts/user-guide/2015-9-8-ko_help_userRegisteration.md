@@ -72,9 +72,9 @@ permalink: /ko/user-guide/registration.html
 
     - Raspberry Pi 2 예제
 
-      ```bash
-      @shell:$ cd /home/pi/thingplus/gateway/scripts
-      ```
+    ```bash
+    @shell:$ cd /home/pi/thingplus/gateway/scripts
+    ```
 
 >주의: `your_device`는 장치에 따라 다릅니다. 예) "Raspberry Pi2: /home/pi", "BBB/BBG: /root"
 
@@ -141,14 +141,14 @@ exit 0
 
     - Raspberry Pi 2 예제
 
-      ```bash
-      @shell:$ sudo nano /etc/rc.local
-      ...
-      (cd /home/pi/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)
-      (cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
+    ```bash
+    @shell:$ sudo nano /etc/rc.local
+    ...
+    (cd /home/pi/thingplus/'게이트웨이 경로'; ./thingplus.sh start;)
+    (cd /home/pi/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)
 
-      exit 0
-      ```
+    exit 0
+    ```
 
    - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
 
