@@ -16,22 +16,23 @@ Thing+ 연동가이드(Raspberry Pi)
 2) 아래의 다운로드 페이지에서 Raspbian image를 다운로드 한다.
 
    - https://www.raspberrypi.org/downloads/raspbian/
-
    - `RASPBIAN JESSIE` 이미지 권장
 
 3) 아래의 웹페이지를 참조하여 Micro SD card에 다운로드 받은 이미지로 OS를 설치한다.
 
    - https://www.raspberrypi.org/documentation/installation/installing-images/
 
-4) 윈도우즈 사용자의 경우 아래의 URL에서 putty를 다운받아 설치한다.
+4) 라즈베리 파이를 제어하기 위해서는 Telnet/SSH 클라이언트가 필요합니다.
 
-   - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+   - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
+   - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
+   - Putty 다운로드 링크 - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
 5) Raspbian을 설치한 Micro SD card를 Raspberry Pi에 꽂는다.
 
    ![Raspberry Pi + Grove Pi](/assets/insert_sdcard.png)
 
-6) Raspbeery Pi에 GrovePi shield와 센서, Ethernet(LAN 케이블), power cable을 연결한다.
+6) Raspbeery Pi에 Grove Pi+ shield와 센서, Ethernet(LAN 케이블), Power cable을 연결한다.
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
 
@@ -46,7 +47,7 @@ $ ssh pi@<IP Address>
 pi@<IP Address>'s password: raspberry
 ```
 
-8) 4GB 이상의 SD card를 사용하기 위해서, raspi-config를 실행한다.
+8) 4GB 이상의 SD card를 사용하기 위해서, `raspi-config`를 실행한다.
 
 ```bash
 @Pi2:$ sudo su
@@ -138,10 +139,10 @@ v0.10.16
 6) Raspberry Pi를 재시작한다.
 
 ```bash
-@Pi2:$ reboot
+@Pi2:$ sudo reboot
 ```
 
-7) 라즈베리파이에 재접속후, thingplus 어플리케이션을 설치하고 실행한다.
+7) 라즈베리파이에 재접속후, thingplus 어플리케이션을 설치한다.
 
 ```bash
 @Pi2:$ sudo su
@@ -181,6 +182,8 @@ v0.10.16
      @Pi2:$ sudo su
      @Pi2:$ cd thingplus/'게이트웨이 경로'
      @Pi2:$ APIKEY='API 키' ./thingplus.sh start;
+     @Pi2:$ cd thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
+     @Pi2:$ node app.js;
      ```
 
      - 예제
@@ -189,6 +192,8 @@ v0.10.16
        @Pi2:$ sudo su
        @Pi2:$ cd thingplus/gateway
        @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
+       @Pi2:$ cd thingplus/openhardware/raspberrypi/grovePi-starter-kit;
+       @Pi2:$ node app.js;
        ```
 
    - Raspberry Pi가 켜질 때마다 자동으로 실행되도록 하기 위해서는 `/etc/rc.local`의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
@@ -211,6 +216,8 @@ v0.10.16
        ...
        (cd thingplus/gateway; ./thingplus.sh start;)                                       # 추가
        (cd thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js;)           # 추가
+       
+       exit 0
        ```
 
 --------------------
