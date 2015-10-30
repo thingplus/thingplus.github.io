@@ -347,6 +347,7 @@ __Response Fields__
 | reportInterval         | string        | The report interval of this gateway (ms)
 | virtual                | string        | If this gateway is a virtual gateway, 'y', if not, "n"
 | location               | string        | The location of this gateway (longitude, latitude and address)
+| autoCreateDiscoverable | string        | determine to create devices and sensors which are discovered at a gateway automatically. 'y' or 'n'
 
 
 __Response__
