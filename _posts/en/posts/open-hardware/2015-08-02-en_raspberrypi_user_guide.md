@@ -57,8 +57,7 @@ pi@<IP Address>'s password: raspberry
 
    ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
 
-   - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
-
+     - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
 
  - Modify `/etc/hosts`.
 

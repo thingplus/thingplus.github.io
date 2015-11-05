@@ -109,7 +109,7 @@ Select for gateway and sensor of dedicated site.
 <br>
 
 #### Location list on map
-Check map view for gateway if have location information.  Put location in [Gateway management](/en/management.html#id-gateway-management) page.
+Check map view for gateway if have location information.  Put location in [Gateway management](/en/user-guide/management.html#id-gateway-management) page.
 ![](/assets/en_3_viewmap.png)
  
 * Display location on gateway by select ①gateway on map. 
@@ -199,7 +199,7 @@ Sensor analysis page provide chart and statistics.
 ---
 <div id='id-rule'></div>
 ### **Rule Management**
-Can create and manage the rule. Detail rule description is on  [Rule creation and control](/en/rule.html).
+Can create and manage the rule. Detail rule description is on  [Rule creation and control](/en/user-guide/rule.html).
 ![](/assets/en_3_m_rule0.png)
 
 

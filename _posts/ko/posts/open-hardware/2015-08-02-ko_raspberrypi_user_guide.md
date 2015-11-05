@@ -57,8 +57,7 @@ Thing+ 연동가이드(라즈베리파이)
 
    ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
 
-   - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
-
+     - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
 
  - `/etc/hosts`를 수정한다.
 

@@ -109,7 +109,7 @@ permalink: /ko/user-guide/monitoring.html
 <br>
 
 #### 지도 기준 목록
-위치정보를 가진 게이트웨이를 지도 뷰로 확인할 수 있습니다. 위치정보 입력은 [게이트웨이 관리](/ko/management.html#id-gateway-management) 페이지에서 입력할 수 있습니다.
+위치정보를 가진 게이트웨이를 지도 뷰로 확인할 수 있습니다. 위치정보 입력은 [게이트웨이 관리](/ko/user-guide/management.html#id-gateway-management) 페이지에서 입력할 수 있습니다.
 ![](/assets/3_viewmap.png)
  
 * 지도뷰를 보고 싶은 ①게이트웨이를 선택하면, 해당 게이트웨이의 위치가 지도에 표시됩니다.
@@ -199,7 +199,7 @@ permalink: /ko/user-guide/monitoring.html
 ---
 <div id='id-rule'></div>
 ### **규칙 관리**
-규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/ko/rule.html)를 이용해주세요. 
+규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/ko/user-guide/rule.html)를 이용해주세요. 
 ![](/assets/3_m_rule0.png)
 
 
