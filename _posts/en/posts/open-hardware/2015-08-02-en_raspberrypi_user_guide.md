@@ -30,7 +30,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 5) Insert the micro SD card into your Raspberry Pi.
 
-   ![Raspberry Pi + Grove Pi](/assets/insert_sdcard.png)
+   ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
 6) Connect Grove Pi+ shield, Sensors, Ethernet(LAN cable), and power cable to Raspberry Pi.
 
@@ -47,7 +47,37 @@ $ ssh pi@<IP Address>
 pi@<IP Address>'s password: raspberry
 ```
 
-8) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
+8) If you have more than two Raspberry Pi devices, you need to modify the hostname of them (If you have only one device, you can skip this step)
+  
+  - Modify `/etc/hostname`.
+
+   ```bash
+   @Pi2:$ sudo nano /etc/hostname
+   ```
+
+   - Change the `raspberrypi` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
+
+   ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
+
+   - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+
+ - Modify `/etc/hosts`.
+
+   ```bash
+   @Pi2:$ sudo nano /etc/hosts
+   ```
+
+   - Change the `raspberrypi` in the file to the same name you changed at before step.
+
+   ![Raspberry Pi Modify hosts](/assets/modify_hostname_2.png)
+
+ - To apply your modification, please reboot your Raspberry Pi.
+
+   ```bash
+   @Pi2:$ sudo reboot
+   ```
+
+9) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
 
 ```bash
 @Pi2:$ sudo su
@@ -75,10 +105,11 @@ pi@<IP Address>'s password: raspberry
    i2c-bcm2708
    ```
 
-     - `i2c-dev` could be already added, because it depends on Raspbian's version.
-     - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+   - `i2c-dev` could be already added, because it depends on Raspbian's version.
 
-#### 2. Installation
+   - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+
+#### 2. Install Thingplus application
 
 1) Download nodejs and Install it.
 
@@ -121,6 +152,8 @@ v0.10.16
      USER_SDK_DEST='path_to_open_hw_sdk'
      ```
 
+     - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+
      - Example
 
        ```bash
@@ -153,18 +186,18 @@ v0.10.16
 @Pi2:$ sudo reboot
 ```
 
-     - Example
-
-     ```bash
-     @Pi2:$ sudo su
-     @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-     @Pi2:$ npm install
-     @Pi2:$ sudo reboot
-     ```
+ - Example
+   
+   ```bash
+   @Pi2:$ sudo su
+   @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+   @Pi2:$ npm install
+   @Pi2:$ sudo reboot
+   ```
 
 #### 3. Raspberry Pi Registration
 
-1) Register your Raspberry Pi to Thing+ Portal, for more inforamtion, please refer `Gateway Registration`.
+1) Register your Raspberry Pi to Thing+ Portal, for more inforamtion, please refer [`Gateway Registration`](en/user-guide/registration.html#id-gateway).
 
    - When you select `Gateway Model`, Choose `Raspberry Pi - Developer`.
 
@@ -195,7 +228,7 @@ v0.10.16
      @Pi2:$ cd /opt/thingplus/'path_to_gateway'
      @Pi2:$ APIKEY='API Key' ./thingplus.sh start;
      @Pi2:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
-     @Pi2:$ node app.js;
+     @Pi2:$ node app.js > /dev/null &;
      ```
 
      - Example
@@ -207,6 +240,8 @@ v0.10.16
        @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
        @Pi2:$ node app.js;
        ```
+
+#### 4. Optional Settings
 
    - If you want to start Thing+ S/W when Raspberry Pi is always booted completely, please Open `/etc/rc.local` file, and Add new two lines right above the `exit 0`.
 

@@ -118,9 +118,24 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/'path_to_gateway'
 @shell:$ APIKEY='Copied API Key' ./thingplus.sh start;
+@shell:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/'your_device'/grovePi-starter-kit;
+@shell:$ node app.js > /dev/null &;
 ```
 
 > Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Quotation Marks('), like `'copied_api_key'`.
+
+> Noteice: `'your_device'` depends on your device. ex) "Raspberry Pi 2: raspberrypi", "BeagleBon Green: bbg"
+
+   - Example for Raspberry Pi
+
+
+   ```bash
+   @shell:$ sudo su
+   @shell:$ cd /opt/thingplus/gateway
+   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
+   @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
+   @shell:$ node app.js > /dev/null &;
+   ```
 
 10) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
 
@@ -134,8 +149,6 @@ exit 0
 ```
 
    - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
-
-> Noteice: `'your_device'` depends on your device. ex) "Raspberry Pi 2: raspberrypi", "BeagleBon Green: bbg"
 
    - Example for Raspberry Pi
 
