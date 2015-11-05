@@ -22,6 +22,10 @@ User guide for a progress as hardware synchronization and user sign up.
     * Available [Hardware List](http://www.daliworks.net/?page_id=11441&lang=en) for Thnig+ access
   * **Got a hardware? Any plan for new IoT hardware?**
     * Mail to hw@daliworks.net if you need Hardware and Thing+ synchronization.
+  * **Open Hardware for IoT service**
+    * [Go to shop to buy the GrovePi+ Starter Kit](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-p-2240.html)
+    * [Grove Starter Kit for BeagleBone Green](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
+    * More Open H/W will be supported
 
 <br>
 

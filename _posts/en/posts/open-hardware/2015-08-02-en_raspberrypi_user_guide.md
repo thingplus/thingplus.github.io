@@ -9,7 +9,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 #### 1. Environment Setting
 
-0) [Go to shop to buy the GrovePi+ Starter Kit](http://www.icbanq.com/P005700239)
+0) [Go to shop to buy the GrovePi+ Starter Kit](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-p-2240.html)
 
 1) Micro SD card(8GB+ storage) is required.
 
