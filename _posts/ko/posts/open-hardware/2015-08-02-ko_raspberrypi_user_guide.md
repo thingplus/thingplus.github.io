@@ -34,7 +34,7 @@ Thing+ 연동가이드(라즈베리파이)
 
 6) 라즈베리파이에 Ethernet(LAN 케이블), Power cable을 연결한다.
 
-   ![Raspberry Pi + Ethernet & power cable](/assests/rasp_power_ethernet.jpg)
+   ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 7) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 로그인한다
 
@@ -58,6 +58,7 @@ Thing+ 연동가이드(라즈베리파이)
    ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
 
    - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+
 
  - `/etc/hosts`를 수정한다.
 

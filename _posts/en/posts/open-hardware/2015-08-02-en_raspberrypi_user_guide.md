@@ -34,7 +34,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
 
-   ![Raspberry Pi + Ethernet & power cable](/assests/rasp_power_ethernet.jpg)
+   ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
 
@@ -58,6 +58,7 @@ pi@<IP Address>'s password: raspberry
    ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
 
    - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+
 
  - Modify `/etc/hosts`.
 
