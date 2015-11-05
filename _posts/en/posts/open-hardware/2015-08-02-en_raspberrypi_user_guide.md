@@ -32,11 +32,9 @@ Thing+ Integragtion Guide for Raspberry Pi
 
    ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
-6) Connect Grove Pi+ shield, Sensors, Ethernet(LAN cable), and power cable to Raspberry Pi.
+6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
 
-   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
-
-   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
+   ![Raspberry Pi + Ethernet & power cable](/assests/rasp_power_ethernet.jpg)
 
 7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
 
@@ -47,7 +45,7 @@ $ ssh pi@<IP Address>
 pi@<IP Address>'s password: raspberry
 ```
 
-8) If you have more than two Raspberry Pi devices, you need to modify the hostname of them (If you have only one device, you can skip this step)
+8) To distinguish your Raspberry Pi, you need to modify the hostname of it.
   
   - Modify `/etc/hostname`.
 
@@ -111,7 +109,13 @@ pi@<IP Address>'s password: raspberry
 
 #### 2. Install Thingplus application
 
-1) Download nodejs and Install it.
+1) Connect Grove Pi+ shield, Sensors, Ethernet(LAN cable), and power cable to Raspberry Pi.
+
+   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
+
+   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
+
+2) Download nodejs and Install it.
 
 ```bash
 @Pi2:$ sudo su
@@ -123,20 +127,20 @@ pi@<IP Address>'s password: raspberry
 v0.10.16
 ```
 
-2) Make a new folder where the thingplus application will be installed and Move to it.
+3) Make a new folder where the thingplus application will be installed and Move to it.
 
 ```bash
 @Pi2:$ mkdir /opt/thingplus
 @Pi2:$ cd /opt/thingplus
 ```
 
-3) Download a install script file.
+4) Download a install script file.
 
 ```bash
 @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install.sh
 ```
 
-4) Set two paths for components of the thingplus application.
+5) Set two paths for components of the thingplus application.
 
 ```bash
 @Pi2:$ nano thingplus_embedded_sdk_install.sh
@@ -164,20 +168,20 @@ v0.10.16
        USER_SDK_DEST=.
        ```
 
-5) Grant a run permission to the script you downloaded and Run it.
+6) Grant a run permission to the script you downloaded and Run it.
 
 ```bash
 @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
 @Pi2:$ sudo ./thingplus_embedded_sdk_install.sh
 ```
 
-6) Reboot your Raspberry Pi.
+7) Reboot your Raspberry Pi.
 
 ```bash
 @Pi2:$ sudo reboot
 ```
 
-7) Connect to your Raspberry Pi and Install the thingplus application.
+8) Connect to your Raspberry Pi and Install the thingplus application.
 
 ```bash
 @Pi2:$ sudo su
@@ -197,7 +201,7 @@ v0.10.16
 
 #### 3. Raspberry Pi Registration
 
-1) Register your Raspberry Pi to Thing+ Portal, for more inforamtion, please refer [`Gateway Registration`](en/user-guide/registration.html#id-gateway).
+1) Register your Raspberry Pi to Thing+ Portal, for more inforamtion, please refer [`Gateway Registration`](/en/user-guide/registration.html#id-gateway).
 
    - When you select `Gateway Model`, Choose `Raspberry Pi - Developer`.
 
@@ -240,6 +244,8 @@ v0.10.16
        @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
        @Pi2:$ node app.js;
        ```
+
+    - After running Thingplus application, please Click the button, ``
 
 #### 4. Optional Settings
 

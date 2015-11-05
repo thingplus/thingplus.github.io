@@ -32,11 +32,9 @@ Thing+ 연동가이드(라즈베리파이)
 
    ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
-6) 라즈베리파이에 Grove Pi+ shield와 센서, Ethernet(LAN 케이블), Power cable을 연결한다.
+6) 라즈베리파이에 Ethernet(LAN 케이블), Power cable을 연결한다.
 
-   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
-
-   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
+   ![Raspberry Pi + Ethernet & power cable](/assests/rasp_power_ethernet.jpg)
 
 7) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 로그인한다
 
@@ -47,7 +45,7 @@ Thing+ 연동가이드(라즈베리파이)
      pi@<IP Address>'s password: raspberry
      ```
 
-8) 동일 네트워크에 라즈베리파이가 2대 이상일 경우, 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다. (1대만 있을 경우 9번으로 가세요)
+8) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
 
  - `/etc/hostname`을 수정한다.
 
@@ -111,7 +109,13 @@ Thing+ 연동가이드(라즈베리파이)
 
 #### 2. Thingplus 어플리케이션 설치
 
-1) nodejs를 다운로드 후 설치한다.
+1) 라즈베리파이에 Grove Pi+ shield와 센서, Ethernet(LAN 케이블), Power cable을 연결한다.
+
+   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.jpg)
+
+   ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
+
+2) nodejs를 다운로드 후 설치한다.
 
 ```bash
 @Pi2:$ sudo su
@@ -123,20 +127,20 @@ Thing+ 연동가이드(라즈베리파이)
 v0.10.16
 ```
 
-2) thingplus 어플리케이션을 설치할 폴더를 만들고 이동한다.
+3) thingplus 어플리케이션을 설치할 폴더를 만들고 이동한다.
 
 ```bash
 @Pi2:$ mkdir /opt/thingplus
 @Pi2:$ cd /opt/thingplus
 ```
 
-3) 인스톨 스크립트 파일을 다운로드한다.
+4) 인스톨 스크립트 파일을 다운로드한다.
 
 ```bash
 @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install.sh
 ```
 
-4) thingplus 어플리케이션의 구성요소들이 설치될 경로를 지정한다.
+5) thingplus 어플리케이션의 구성요소들이 설치될 경로를 지정한다.
 
 ```bash
 @Pi2:$ nano thingplus_embedded_sdk_install.sh
@@ -164,20 +168,20 @@ v0.10.16
        USER_SDK_DEST=.
        ```
 
-5) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
+6) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
 
 ```bash
 @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
 @Pi2:$ sudo ./thingplus_embedded_sdk_install.sh
 ```
 
-6) 라즈베리파이를 재시작한다.
+7) 라즈베리파이를 재시작한다.
 
 ```bash
 @Pi2:$ sudo reboot
 ```
 
-7) 라즈베리파이에 재접속후, thingplus 어플리케이션을 설치한다.
+8) 라즈베리파이에 재접속후, thingplus 어플리케이션을 설치한다.
 
 ```bash
 @Pi2:$ sudo su
@@ -197,7 +201,7 @@ v0.10.16
 
 #### 3. 라즈베리파이 등록
 
-1) [`Gateway 등록 가이드`](ko/user-guide/registration.html#id-gateway)를 참고하여 라즈베리파이를 등록한다.
+1) [`Gateway 등록 가이드`](/ko/user-guide/registration.html#id-gateway)를 참고하여 라즈베리파이를 등록한다.
 
    - `게이트웨이 모델` 선택 시 `Raspberry Pi - Developer`를 선택한다.
 
@@ -242,7 +246,7 @@ v0.10.16
        @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
        @Pi2:$ node app.js > /dev/null &;
        ```
-   - 앱 실행 후, Thingplus 포탈 게이트웨이 등록화면의 `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 클릭하면 라즈베리파이가 등록된다.
+   - 어플리케이션 실행 후, Thingplus 포탈 게이트웨이 등록화면의 `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 클릭하면 라즈베리파이가 등록된다.
 
 #### 4. 추가 설정
 
