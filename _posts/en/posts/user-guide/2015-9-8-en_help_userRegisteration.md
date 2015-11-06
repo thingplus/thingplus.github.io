@@ -191,7 +191,7 @@ exit 0
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
 
 - For Raspberry Pi 2: `GrovePi+ Starter Kit`
-![select_devicemodel](/assets/select_devicemodel_rapberry_en.png)
+![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
 
 <br/>
 
