@@ -185,7 +185,7 @@ exit 0
 ![input_gateway_name](/assets/inputmac_name_en.png)
 
 <br/>
-14) Choose a device model.
+14) Choose a `Device Model`.
 
 - For BeagleBone Black: `Grove Starter Kit for BeagleBone Green`
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)

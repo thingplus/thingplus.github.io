@@ -210,6 +210,7 @@ v0.10.16
    - Way to get your MAC Address is below
 
      ```bash
+     @Pi2:$ sudo su
      @Pi2:$ cd /opt/thingplus/'path_to_gateway'/scripts
      @Pi2:$ ./getmac
      Your MAC address is as below
@@ -242,7 +243,7 @@ v0.10.16
        @Pi2:$ cd /home/pi/thingplus/gateway
        @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
        @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
-       @Pi2:$ node app.js;
+       @Pi2:$ node app.js > /dev/null &;
        ```
 
     - After running Thingplus application, please Click the button to Register Raspberry Pi, `Register a Gateway, Devices and Sensors`, on Gateway Register screen of the your web browser.

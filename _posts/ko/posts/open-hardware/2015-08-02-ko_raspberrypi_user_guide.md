@@ -62,7 +62,7 @@ Thing+ 연동가이드(라즈베리파이)
  - `/etc/hosts`를 수정한다.
 
    ```bash
-   @Pi2:$ sudo nano /etc/hostname
+   @Pi2:$ sudo nano /etc/hosts
    ```
 
    - 파일 내부의 `raspberrypi`를 아래 그림과 같이 위와 동일한 이름으로 변경한다.
@@ -256,7 +256,7 @@ v0.10.16
  @Pi2:$ sudo nano /etc/rc.local
  ...
  (cd /opt/thingplus/'게이트웨이 경로'; sudo ./thingplus.sh start;)
- (cd /opt/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
+ (cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
  exit 0
  ```
