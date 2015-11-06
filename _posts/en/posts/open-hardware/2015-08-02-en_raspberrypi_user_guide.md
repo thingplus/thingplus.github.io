@@ -245,7 +245,7 @@ v0.10.16
        @Pi2:$ node app.js;
        ```
 
-    - After running Thingplus application, please Click the button, ``
+    - After running Thingplus application, please Click the button to Register Raspberry Pi, `Register a Gateway, Devices and Sensors`, on Gateway Register screen of the your web browser.
 
 #### 4. Optional Settings
 

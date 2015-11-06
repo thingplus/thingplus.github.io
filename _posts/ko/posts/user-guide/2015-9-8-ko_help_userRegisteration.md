@@ -102,15 +102,24 @@ xx:xx:xx:xx:xx:xx
 ![register_with_apikey](/assets/register_with_apikey_ko.png)
 
 <br/>
-7) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
+7) 새로 추가할 `게이트웨이 모델`을 선택한다.
+
+- BeagleBon Green의 경우: `BeagleBone Green - Developer`
+![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
+
+- Raspberry Pi 2의 경우: `Raspberry Pi - Developer`
+![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_ko.png)
+
+<br/>
+8) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
 ![macaddress](/assets/macaddr_getapikey_ko.png)
 
 <br/>
-8) API 키를 클립보드에 복사한다.
+9) API 키를 클립보드에 복사한다.
 ![get_apikey](/assets/get_apikey_ko.png)
 
 <br/>
-9) **장치에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
+10) **장치에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
 
 ```bash
 @shell:$ sudo su
@@ -135,7 +144,8 @@ xx:xx:xx:xx:xx:xx
    @shell:$ node app.js > /dev/null &;
    ```
 
-10) 장치의 `/etc/rc.local` 파일의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
+<br/>
+11) 장치의 `/etc/rc.local` 파일의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
 
 ```bash
 @shell:$ sudo nano /etc/rc.local
@@ -160,50 +170,35 @@ exit 0
     exit 0
     ```
 
-11) **웹브라우저**에서 다시 MAC 어드레스를 복사한다.
-
-   - 페이지를 다른 곳으로 이동하여 MAC 어드레스를 복사할 수 없는 경우는 `1) ~ 2) 장치의 MAC 어드레스 얻기` 방법을 통해 다시 MAC 어드레스를 복사한다.
-
+<br/>
 12) `게이트웨이 등록하기`버튼을 누른다.
-![copy_apikey](/assets/copy_apikey_ko.png)
+![register_gwmodel](/assets/copy_apikey_ko.png)
 
 <br/>
-
-13) `게이트웨이 모델`을 선택한다.
-
-- BeagleBon Green의 경우: `BeagleBone Green - Developer`
-![select_gwmodel](/assets/select_gwmodel_ko.png)
-
-- Raspberry Pi 2의 경우: `Raspberry Pi - Developer`
-![select_gwmodel](/assets/select_gwmodel_raspberry_en.png)
+13) `게이트웨이 이름`을 입력한다.
+![input_gateway_name](/assets/inputmac_name_ko.png)
 
 <br/>
-
-14) `게이트웨이 아이디`에 MAC 어드레스를 붙여넣기 하고 `게이트웨이 이름`을 입력한다.
-![select_gwmodel](/assets/inputmac_name_ko.png)
-
-<br/>
-
-15) `디바이스 모델`을 선택한다.
+14) `디바이스 모델`을 선택한다.
 
 - BeagleBon Black의 경우: `Grove Starter Kit for BeagleBone Green`
-![select_devicemodel](/assets/select_devicemodel_ko.png)
+![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
 
 - Raspberry Pi 2의 경우: `GrovePi+ Starter Kit`
-![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
+![select_devicemodel](/assets/select_devicemodel_rapberry_ko.png)
 
 <br/>
 
-16) `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
+15) 게이트웨이가 추가될 `사이트`를 선택한 후, `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
 ![register](/assets/register_ko.png)
 
 <br/>
 
-17) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
+16) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
 
 <br>
 
-18) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
+17) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
 
   - 센서는 게이트웨이에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
   - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.

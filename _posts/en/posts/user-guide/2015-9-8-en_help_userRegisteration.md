@@ -108,15 +108,24 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 ![register_with_apikey](/assets/register_with_apikey_en.png)
 
 <br/>
-7) Input the MAC address you copied to the `Gateway ID` form and Click the `Get API Key`button.
+7) Choose a `Gateway Model` you have
+
+- For BeagleBone Green: `BeagleBone Green - Developer`
+![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_en.png)
+
+- For Raspberry Pi: `Raspberry Pi - Developer`
+![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_en.png)
+
+<br/>
+8) Input the MAC address you copied to the `Gateway ID` form and Click the `Get API Key`button.
 ![macaddress](/assets/macaddr_getapikey_en.png)
 
 <br/>
-8) Copy the generated API Key in the below green box.
+9) Copy the generated API Key in the below green box.
 ![get_apikey](/assets/get_apikey_en.png)
 
 <br/>
-9) Run Thing+ Gateway S/W with the following commands on **the connected terminal with your device**.
+10) Run Thing+ Gateway S/W with the following commands on **the connected terminal with your device**.
 
 ```bash
 @shell:$ sudo su
@@ -141,7 +150,8 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
    @shell:$ node app.js > /dev/null &;
    ```
 
-10) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
+<br/>
+11) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
 
 ```bash
 @shell:$ sudo nano /etc/rc.local
@@ -166,51 +176,35 @@ exit 0
      exit 0
     ```
 
-
-11) Copy the MAC Address from the **web browser** you got the API Key.
-
-   - If you alread moved to another webpage and can NOT copy the MAC address, please refer `1) ~ 2) Get a MAC address` to get it again.
-
+<br/>
 12) Click the `Register Gateway`button.
 ![copy_apikey](/assets/copy_apikey_en.png)
 
 <br/>
-
-13) Choose a gateway model.
-
-- For BeagleBone Black: `Neuromeka Rev2.1`
-![select_gwmodel](/assets/select_gwmodel_beagle_en.png)
-
-- For Raspberry Pi 2: `Raspberry Pi - Developer`
-![select_gwmodel](/assets/select_gwmodel_raspberry_en.png)
+13) Input your gateway name to `Gateway Name` form.
+![input_gateway_name](/assets/inputmac_name_en.png)
 
 <br/>
+14) Choose a device model.
 
-14) Input the MAC address of your device to `Gateway ID` form and input your gateway name to `Gateway Name` form.
-![select_gwmodel](/assets/inputmac_name_en.png)
-
-<br/>
-
-15) Choose a device model.
-
-- For BeagleBone Black: `Basic Model Rev2.1`
+- For BeagleBone Black: `Grove Starter Kit for BeagleBone Green`
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
 
 - For Raspberry Pi 2: `GrovePi+ Starter Kit`
-![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
+![select_devicemodel](/assets/select_devicemodel_rapberry_en.png)
 
 <br/>
 
-16) Click the `Register a Gateway, Devices and Sensors` button.
+15) Choose a `Site` this gateway will be added, and then, Click the `Register a Gateway, Devices and Sensors` button.
 ![register](/assets/register_en.png)
 
 <br/>
 
-17) You can see the `Success` popup message when the registration is completed
+16) You can see the `Success` popup message when the registration is completed
 
 <br>
 
-18) You can see the registred Gateway from the `Sensor List` Menu
+17) You can see the registred Gateway from the `Sensor List` Menu
 
   - Sensor(s) is registered automatically by the Gateway(BeagleBone Black / Raspberry Pi 2) within 1 minute after you complete to register your gateway
   - Values your Sensor are periodically aggregated and delivered to Thing+ Cloud by the Thing+ Gateway Software. You can see the values from Thing+ Portal after several minutes.
