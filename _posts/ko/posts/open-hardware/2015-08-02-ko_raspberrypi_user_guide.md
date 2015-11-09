@@ -20,6 +20,8 @@ Thing+ 연동가이드(라즈베리파이)
 
 3) 아래의 웹페이지를 참조하여 Micro SD card에 다운로드 받은 이미지로 OS를 설치한다.
 
+   - Raspbian image를 Micor SD card에 설치하는데 수분이 소요됩니다.
+
    - https://www.raspberrypi.org/documentation/installation/installing-images/
 
 4) 라즈베리파이를 제어하기 위해서는 Telnet/SSH 클라이언트가 필요합니다.
@@ -40,10 +42,29 @@ Thing+ 연동가이드(라즈베리파이)
 
    - IP address를 찾기 힘들 경우 `문제 해결 방법`을 참고한다.
 
+   - Default ID: pi / Default Password: raspberry
+
      ```bash
      $ ssh pi@<IP Address>
      pi@<IP Address>'s password: raspberry
      ```
+
+     - Mac & Linux 예제
+
+       ```bash
+       $ ssh pi@192.168.1.XXX
+       pi@<IP Address>'s password: raspberry
+       ```
+
+     - Windows 예제
+
+       -putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
+
+       ![Raspberry Pi putty login](/assets/putty_login.png)
+
+       ![Raspberry Pi putty login](/assets/putty_login_2.png)
+
+> 주의: Windows의 경우, 라즈베리파이를 재부팅할 때마다, putty를 새로 실행해야함.
 
 8) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
 
@@ -201,7 +222,7 @@ v0.10.16
 
 #### 3. 라즈베리파이 등록
 
-1) [`Gateway 등록 가이드`](/ko/user-guide/registration.html#id-gateway)를 참고하여 라즈베리파이를 등록한다.
+1) `Gateway 등록 가이드`[(링크)](/ko/user-guide/registration.html#id-gateway)를 참고하여 라즈베리파이를 등록한다.
 
    - `게이트웨이 모델` 선택 시 `Raspberry Pi - Developer`를 선택한다.
 
@@ -232,9 +253,9 @@ v0.10.16
      ```bash
      @Pi2:$ sudo su
      @Pi2:$ cd /opt/thingplus/'게이트웨이 경로'
-     @Pi2:$ APIKEY='API 키' ./thingplus.sh start;
-     @Pi2:$ cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit;
-     @Pi2:$ node app.js;
+     @Pi2:$ APIKEY='API 키' ./thingplus.sh start
+     @Pi2:$ cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit
+     @Pi2:$ node app.js > /dev/null &
      ```
 
      - 예제
@@ -242,10 +263,11 @@ v0.10.16
        ```bash
        @Pi2:$ sudo su
        @Pi2:$ cd /opt/thingplus/gateway
-       @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
-       @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
-       @Pi2:$ node app.js > /dev/null &;
+       @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
+       @Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+       @Pi2:$ node app.js > /dev/null &
        ```
+
    - 어플리케이션 실행 후, Thingplus 포탈 게이트웨이 등록화면의 `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 클릭하면 라즈베리파이가 등록된다.
 
 #### 4. 추가 설정

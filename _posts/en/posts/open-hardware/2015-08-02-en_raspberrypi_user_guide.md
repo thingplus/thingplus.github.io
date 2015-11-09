@@ -20,6 +20,8 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 3) Intall OS on the micro SD card with the donwloaded image. Please refer the below link for more deails about the OS installation.
 
+   - It can take few minutes to install the Raspbian image to the Micro SD card
+
    - https://www.raspberrypi.org/documentation/installation/installing-images/
 
 4) Telnet/SSH Client is required for controlling the Raspberry Pi from your PC.
@@ -40,10 +42,29 @@ Thing+ Integragtion Guide for Raspberry Pi
 
    - When you can NOT get the IP Address of your device, please refer the `Troubleshooting` section.
 
-```bash
-$ ssh pi@<IP Address>
-pi@<IP Address>'s password: raspberry
-```
+   - Default ID: pi / Default Password: raspberry
+
+     ```bash
+     $ ssh pi@<IP Address>
+     pi@<IP Address>'s password: raspberry
+     ```
+
+     - Example for Mac & Linux
+
+       ```bash
+       $ ssh pi@192.168.1.XXX
+       pi@<IP Address>'s password: raspberry
+       ```
+
+     - Example for Windows
+
+       - Run the putty, and Insert your IP Address, and then, Click the button `Open` and Enter a password.
+
+       ![Raspberry Pi putty login](/assets/putty_login.png)
+
+       ![Raspberry Pi putty login](/assets/putty_login_2.png)
+
+> Notice: In case of Windows, you have to re-launch putty, when Raspberry Pi is rebooted.
 
 8) To distinguish your Raspberry Pi, you need to modify the hostname of it.
   
@@ -201,7 +222,7 @@ v0.10.16
 
 #### 3. Raspberry Pi Registration
 
-1) Register your Raspberry Pi to Thing+ Portal, for more inforamtion, please refer [`Gateway Registration`](/en/user-guide/registration.html#id-gateway).
+1) Register your Raspberry Pi to Thing+ Portal, for more inforamtion, please refer `Gateway Registration`[(Link)](/en/user-guide/registration.html#id-gateway).
 
    - When you select `Gateway Model`, Choose `Raspberry Pi - Developer`.
 
@@ -231,9 +252,9 @@ v0.10.16
      ```bash
      @Pi2:$ sudo su
      @Pi2:$ cd /opt/thingplus/'path_to_gateway'
-     @Pi2:$ APIKEY='API Key' ./thingplus.sh start;
-     @Pi2:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
-     @Pi2:$ node app.js > /dev/null &;
+     @Pi2:$ APIKEY='API Key' ./thingplus.sh start
+     @Pi2:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit
+     @Pi2:$ node app.js > /dev/null &
      ```
 
      - Example
@@ -241,9 +262,9 @@ v0.10.16
        ```bash
        @Pi2:$ sudo su
        @Pi2:$ cd /home/pi/thingplus/gateway
-       @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
-       @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit;
-       @Pi2:$ node app.js > /dev/null &;
+       @Pi2:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
+       @Pi2:$ cd /home/pi/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit
+       @Pi2:$ node app.js > /dev/null &
        ```
 
     - After running Thingplus application, please Click the button to Register Raspberry Pi, `Register a Gateway, Devices and Sensors`, on Gateway Register screen of the your web browser.
