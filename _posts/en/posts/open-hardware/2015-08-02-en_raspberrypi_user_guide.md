@@ -42,7 +42,8 @@ Thing+ Integragtion Guide for Raspberry Pi
 
    - When you can NOT get the IP Address of your device, please refer the `Troubleshooting` section.
 
-   - Default ID: pi / Default Password: raspberry
+   - Default ID: **pi**
+   - Default Password: **raspberry**
 
      ```bash
      $ ssh pi@<IP Address>

@@ -42,7 +42,8 @@ Thing+ 연동가이드(라즈베리파이)
 
    - IP address를 찾기 힘들 경우 `문제 해결 방법`을 참고한다.
 
-   - Default ID: pi / Default Password: raspberry
+   - Default ID: **pi**
+   - Default Password: **raspberry**
 
      ```bash
      $ ssh pi@<IP Address>
@@ -58,7 +59,7 @@ Thing+ 연동가이드(라즈베리파이)
 
      - Windows 예제
 
-       -putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
+       - putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
 
        ![Raspberry Pi putty login](/assets/putty_login.png)
 
