@@ -130,9 +130,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/'path_to_gateway'
-@shell:$ APIKEY='Copied API Key' ./thingplus.sh start;
-@shell:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/'your_device'/grovePi-starter-kit;
-@shell:$ node app.js > /dev/null &;
+@shell:$ APIKEY='Copied API Key' ./thingplus.sh start
+@shell:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/'your_device'/grovePi-starter-kit
+@shell:$ node app.js > /dev/null &
 ```
 
 > Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Quotation Marks('), like `'copied_api_key'`.
@@ -145,9 +145,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
    ```bash
    @shell:$ sudo su
    @shell:$ cd /opt/thingplus/gateway
-   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
-   @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
-   @shell:$ node app.js > /dev/null &;
+   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
+   @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+   @shell:$ node app.js > /dev/null &
    ```
 
 <br/>
@@ -170,8 +170,8 @@ exit 0
     ```bash
     @shell:$ sudo nano /etc/rc.local
     ...
-    (cd /opt/thingplus/'path_to_gateway'; sudo ./thingplus.sh start;)
-    (cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
+    (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
      exit 0
     ```
