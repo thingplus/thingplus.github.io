@@ -76,7 +76,7 @@ Enter new UNIX password:
 ```
 
 #### 3. 게이트웨이 등록
-[게이트웨이 등록 방법](http://support.thingplus.net/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
+[게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
 
 --------------------

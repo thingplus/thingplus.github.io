@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Destination directory for Thing+ Gateway
-USER_THINGPLUS_GATEWAY_DEST=
+USER_THINGPLUS_GATEWAY_DEST=./gateway
 
 # Destination directory for Open Hardware SDK
-USER_SDK_DEST=
+USER_SDK_DEST=.
 
 if [ -z $USER_THINGPLUS_GATEWAY_DEST ]; then
   echo "Please set USER_THINGPLUS_GATEWAY_DEST."

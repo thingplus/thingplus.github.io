@@ -34,12 +34,6 @@ User guide for a progress as hardware synchronization and user sign up.
 ### User
 <br>
 
-<!---
-### Prerequestion for service 
-  * Registor member in {serviceName}.thingplus.net 
-  * Service administration approval and authorization 
--->
-
 #### Sing in Thing+ portal 
   * Put service address in internet browser.
 ![](/assets/2_address.png)
@@ -59,7 +53,6 @@ User guide for a progress as hardware synchronization and user sign up.
     * Check your spam mail box.
   * After receive confirmation, put ID and Password to log in.
 
-
 <br>
 
 ---
@@ -71,19 +64,16 @@ User guide for a progress as hardware synchronization and user sign up.
 
 _This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set other devices you is similar to following progress._
 
+_If you DO NOT install **Thing+ Embedded Pakcage on your Raspberry Pi/BeagleBone Green, Please refer the [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html)/[**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html)_
+
+<br/>
 1) Connect to a BeagleBon Black/Raspberry Pi 2 over SSH and go to `scripts` directory under the path which Thing+ Embedded package is inalled on.
 
 ```bash
-@shell:$ cd /opt/thingplus/'path_to_gateway'/scripts
+@shell:$ cd /opt/thingplus/gateway/scripts
 ```
 
-   - Example
-
-
-     ```bash
-     @shell:$ cd /opt/thingplus/gateway/scripts
-     ```
-
+<br/>
 2) Get a MAC Address of the device and copy it to the clipboard.
 
 ```bash
@@ -92,10 +82,12 @@ Your MAC address is as below
 xx:xx:xx:xx:xx:xx   <= Copy this line
 ```
 
+<br/>
 3) Open the web browser on **YOUR PC** and sign in "[Service Website](https://www.thingplus.net)".
-- We recommend to use the Chrome Browser
 
+ - We recommend to use the `Chrome Browser`([Link](https://www.google.com/chrome))
 
+<br/>
 4) Click the `Settings`button and `Gateway Management`button.
 ![gateway_management](/assets/gateway_management_en.png)
 
@@ -127,54 +119,56 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <br/>
 10) Run Thing+ Gateway S/W with the following commands on **the connected terminal with your device**.
 
-```bash
-@shell:$ sudo su
-@shell:$ cd /opt/thingplus/'path_to_gateway'
-@shell:$ APIKEY='Copied API Key' ./thingplus.sh start
-@shell:$ cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/'your_device'/grovePi-starter-kit
-@shell:$ node app.js > /dev/null &
-```
-
 > Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Quotation Marks('), like `'copied_api_key'`.
 
-> Noteice: `'your_device'` depends on your device. ex) "Raspberry Pi 2: raspberrypi", "BeagleBon Green: bbg"
+- For Raspberry Pi
 
-   - Example for Raspberry Pi
+ ```bash
+ @shell:$ sudo su
+ @shell:$ cd /opt/thingplus/gateway
+ @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+ @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+ @shell:$ node app.js > /dev/null &
+ ```
 
+- For BeagleBone Green
 
-   ```bash
-   @shell:$ sudo su
-   @shell:$ cd /opt/thingplus/gateway
-   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
-   @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-   @shell:$ node app.js > /dev/null &
-   ```
+ ```bash
+ @shell:$ sudo su
+ @shell:$ cd /opt/thingplus/gateway
+ @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+ @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+ @shell:$ node app.js > /dev/null &
+ ```
 
 <br/>
 11) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
 
-```bash
-@shell:$ sudo nano /etc/rc.local
-...
-(cd /opt/thingplus/'path_to_gateway'; sudo ./thingplus.sh start;)
-(cd /opt/thingplus/'path_to_open_hw_sdk'/openhardware/'your_device'/grovePi-starter-kit; sudo node app.js;)
+- Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.   
 
-exit 0
-```
+> Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
 
-   - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
+- For Raspberry Pi
 
-   - Example for Raspberry Pi
+ ```bash
+ @shell:$ sudo nano /etc/rc.local
+ ...
+ (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+ (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
+ exit 0
+ ```
 
-    ```bash
-    @shell:$ sudo nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
-    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
+- For BeagleBone Green
 
-     exit 0
-    ```
+ ```bash
+ @shell:$ sudo nano /etc/rc.local
+ ...
+ (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+ (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; sudo node app.js;)
+
+ exit 0
+ ```
 
 <br/>
 12) Click the `Register Gateway`button.
@@ -194,16 +188,13 @@ exit 0
 ![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
 
 <br/>
-
 15) Choose a `Site` this gateway will be added, and then, Click the `Register a Gateway, Devices and Sensors` button.
 ![register](/assets/register_en.png)
 
 <br/>
-
 16) You can see the `Success` popup message when the registration is completed
 
 <br>
-
 17) You can see the registred Gateway from the `Sensor List` Menu
 
   - Sensor(s) is registered automatically by the Gateway(BeagleBone Black / Raspberry Pi 2) within 1 minute after you complete to register your gateway

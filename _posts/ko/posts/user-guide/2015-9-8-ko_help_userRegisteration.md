@@ -64,20 +64,16 @@ permalink: /ko/user-guide/registration.html
 
 _본 가이드는 비글본그린 및 라즈베리파이 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다._
 
-1) BeagleBone Green/Raspberry Pi 에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
+_아직 라즈베리파이/비글본그린에 **Thing+ Embedded 패키지**가 설치되어 있지 않다면 [**라즈베리파이 가이드**](/ko/open-hardware/raspberry-pi-user-guide.html)/[**비글본그린 가이드**](/ko/open-hardware/bbb-user-guide.html)를 참조하세요._
+
+<br/>
+1) 비글본그린/라즈베리파이 에 접속 후 Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
 ```bash
-@shell:$ cd /opt/thingplus/'게이트웨이 경로'/scripts
+@shell:$ cd /opt/thingplus/gateway/scripts
 ```
 
-   - 예제
-
-
-     ```bash
-     @shell:$ cd /opt/thingplus/gateway/scripts
-     ```
-
-
+<br/>
 2) 장치의 MAC 어드레스를 얻어 클립보드에 복사한다.
 
 ```bash
@@ -86,10 +82,12 @@ Your MAC address is as below
 xx:xx:xx:xx:xx:xx
 ```
 
-3) **사용자 PC**의 웹브라우저를 열고 "[서비스 웹사이트](https://www.thingplus.net)"에 로그인한다.<br/>
- - Chrom 브라우저 사용을 권장합니다.
+<br/>
+3) **사용자 PC**의 웹브라우저를 열고 "[서비스 웹사이트](https://www.thingplus.net)"에 로그인한다.
 
+ - `Chrom 브라우저`([링크](https://www.google.com/chrome)) 사용을 권장합니다.
 
+<br/>
 4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
 ![gateway_management](/assets/gateway_management_ko.png)
 
@@ -104,11 +102,11 @@ xx:xx:xx:xx:xx:xx
 <br/>
 7) 새로 추가할 `게이트웨이 모델`을 선택한다.
 
-- BeagleBon Green의 경우: `BeagleBone Green - Developer`
-![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
-
-- Raspberry Pi 2의 경우: `Raspberry Pi - Developer`
+- 라즈베리파이의 경우: `Raspberry Pi - Developer`
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_ko.png)
+
+- 비글본그린의 경우: `BeagleBone Green - Developer`
+![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
 
 <br/>
 8) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
@@ -121,77 +119,56 @@ xx:xx:xx:xx:xx:xx
 <br/>
 10) **장치에 로그인했던 터미널**에서 아래처럼 게이트웨이를 실행한다.
 
-```bash
-@shell:$ sudo su
-@shell:$ cd /opt/thingplus/'게이트웨이 경로'
-@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
-@shell:$ cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/'your_device'/grovePi-starter-kit
-@shell:$ node app.js > /dev/null &
-```
-
 > 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
 
-> 주의: `'your_device'`는 장치에 따라 다릅니다. 예) "Raspberry Pi 2: raspberrypi", "BeagleBone Green: bbg"
+- 라즈베리파이의 경우
 
-   - Raspberry Pi 2 예제
+ ```bash
+ @shell:$ sudo su
+ @shell:$ cd /opt/thingplus/gateway
+ @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+ @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+ @shell:$ node app.js > /dev/null &
+ ```
 
+- 비글본그린의 경우
 
-   ```bash
-   @shell:$ sudo su
-   @shell:$ cd /opt/thingplus/gateway
-   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
-   @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-   @shell:$ node app.js > /dev/null &
-   ```
-
-   - BBG 예제
-
-
-   ```bash
-   @shell:$ sudo su
-   @shell:$ cd /opt/thingplus/gateway
-   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
-   @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
-   @shell:$ node app.js > /dev/null &
-   ```
+ ```bash
+ @shell:$ sudo su
+ @shell:$ cd /opt/thingplus/gateway
+ @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+ @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+ @shell:$ node app.js > /dev/null &
+ ```
 
 <br/>
 11) 장치의 `/etc/rc.local` 파일의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
 
-```bash
-@shell:$ sudo nano /etc/rc.local
-...
-(cd /opt/thingplus/'게이트웨이 경로'; sudo ./thingplus.sh start;)
-(cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/'your_device'/grovePi-starter-kit; sudo node app.js;)
+- 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
 
-exit 0
-```
+> 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
-   - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+- 라즈베리파이의 경우
 
-   - Raspberry Pi 2 예제
+ ```bash
+ @shell:$ sudo nano /etc/rc.local
+ ...
+ (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+ (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
+ exit 0
+ ```
 
-    ```bash
-    @shell:$ sudo nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
-    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
+- 비글본그린의 경우
 
-    exit 0
-    ```
+ ```bash
+ @shell:$ sudo nano /etc/rc.local
+ ...
+ (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+ (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; sudo node app.js;)
 
-   - BBG 예제
-
-
-    ```bash
-    @shell:$ sudo nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
-    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; sudo node app.js;)
-
-    exit 0
-    ```
+ exit 0
+ ```
 
 <br/>
 12) `게이트웨이 등록하기`버튼을 누른다.
@@ -204,27 +181,23 @@ exit 0
 <br/>
 14) `디바이스 모델`을 선택한다.
 
-- BeagleBone Green의 경우: `Grove Starter Kit for BeagleBone Green`
-![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
-
-- Raspberry Pi 2의 경우: `GrovePi+ Starter Kit`
+- 라즈베리파이의 경우: `GrovePi+ Starter Kit`
 ![select_devicemodel](/assets/select_devicemodel_rapberry_ko.png)
 
-<br/>
+- 비글본그린의 경우: `Grove Starter Kit for BeagleBone Green`
+![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
 
+<br/>
 15) 게이트웨이가 추가될 `사이트`를 선택한 후, `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
 ![register](/assets/register_ko.png)
 
 <br/>
-
 16) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
 
 <br>
-
 17) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
 
   - 센서는 게이트웨이에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
   - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.
 
 <br>
-
