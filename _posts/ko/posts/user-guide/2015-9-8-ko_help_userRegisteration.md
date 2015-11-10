@@ -144,6 +144,17 @@ xx:xx:xx:xx:xx:xx
    @shell:$ node app.js > /dev/null &
    ```
 
+   - BBG 예제
+
+
+   ```bash
+   @shell:$ sudo su
+   @shell:$ cd /opt/thingplus/gateway
+   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
+   @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+   @shell:$ node app.js > /dev/null &
+   ```
+
 <br/>
 11) 장치의 `/etc/rc.local` 파일의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
 
@@ -170,6 +181,18 @@ exit 0
     exit 0
     ```
 
+   - BBG 예제
+
+
+    ```bash
+    @shell:$ sudo nano /etc/rc.local
+    ...
+    (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; sudo node app.js;)
+
+    exit 0
+    ```
+
 <br/>
 12) `게이트웨이 등록하기`버튼을 누른다.
 ![register_gwmodel](/assets/copy_apikey_ko.png)
@@ -181,7 +204,7 @@ exit 0
 <br/>
 14) `디바이스 모델`을 선택한다.
 
-- BeagleBon Black의 경우: `Grove Starter Kit for BeagleBone Green`
+- BeagleBone Green의 경우: `Grove Starter Kit for BeagleBone Green`
 ![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
 
 - Raspberry Pi 2의 경우: `GrovePi+ Starter Kit`
