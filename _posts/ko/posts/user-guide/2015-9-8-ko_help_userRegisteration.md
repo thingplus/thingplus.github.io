@@ -124,9 +124,9 @@ xx:xx:xx:xx:xx:xx
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/'게이트웨이 경로'
-@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start;
-@shell:$ cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/'your_device'/grovePi-starter-kit;
-@shell:$ node app.js > /dev/null &;
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+@shell:$ cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/'your_device'/grovePi-starter-kit
+@shell:$ node app.js > /dev/null &
 ```
 
 > 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
@@ -139,9 +139,9 @@ xx:xx:xx:xx:xx:xx
    ```bash
    @shell:$ sudo su
    @shell:$ cd /opt/thingplus/gateway
-   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start;
-   @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit;
-   @shell:$ node app.js > /dev/null &;
+   @shell:$ APIKEY='A7i3kT***-***Vk447-***' ./thingplus.sh start
+   @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+   @shell:$ node app.js > /dev/null &
    ```
 
 <br/>
@@ -164,8 +164,8 @@ exit 0
     ```bash
     @shell:$ sudo nano /etc/rc.local
     ...
-    (cd /opt/thingplus/'게이트웨이 경로'; sudo ./thingplus.sh start;)
-    (cd /opt/thingplus/'하드웨어 SDK 경로'/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
+    (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
+    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; sudo node app.js;)
 
     exit 0
     ```
