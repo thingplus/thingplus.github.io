@@ -43,25 +43,37 @@ Enter new UNIX password:
 
 
 #### 2. 설치
+1) BBG에 Grove Starter Kit센서, Ethernet(LAN 케이블)을 연결한다.
 
-1) 데비안 패키지 파일을 다운로드한다.
+   ![BBG + Grove](/assets/bbg_grove2.jpg)
+
+   ![BBG + Grove](/assets/bbg_grove.jpg)
+
+2) thingplus 어플리케이션을 설치할 폴더를 만들고 이동한다.
 
 ```bash
-@BBB:$ wget https://www.thingplus.net/asset/download/tp_bbb_armhf.deb
+@BBG:$ mkdir /opt/thingplus
+@BBG:$ cd /opt/thingplus
 ```
 
-2) 데비안 패키지를 설치한다. (반드시 root 계정을 이용)
+3) 인스톨 스크립트 파일을 다운로드한다.
 
 ```bash
-@BBB:$ dpkg -i tp_bbb_armhf.deb
+@BBG:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install_for_bbg.sh
 ```
 
-3) BBG를 재시작한다.
+4) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
+
+```bash
+@BBG:$ sudo chmod 755 thingplus_embedded_sdk_install_for_bbg.sh
+@BBG:$ sudo ./thingplus_embedded_sdk_install_for_bbg.sh
+```
+
+5) BBG를 재시작한다.
 
 ```bash
 @BBB:$ reboot -f
 ```
-
 
 #### 3. 게이트웨이 등록
 [게이트웨이 등록 방법](http://support.thingplus.net/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
@@ -89,7 +101,7 @@ Enter new UNIX password:
 ```bash
 @PC:$ ssh root@192.168.7.2
 
-@BBB:$ iwconfig
+@BBG:$ iwconfig
 ra0
 
 lo        no wireless extensions.
@@ -111,7 +123,7 @@ usb0      no wireless extensions.
 ```bash
 @PC:$ ssh root@192.168.7.2
 
-@BBB:$ nano /etc/network/interfaces
+@BBG:$ nano /etc/network/interfaces
 
 ...
 # The primary network interface
@@ -143,10 +155,10 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 
   ```
   @PC:$ ssh root@192.168.7.2
-  @BBB:$ cd /usr/local/tp
-  @BBB:$ ./tp.sh restart
-  @BBB:$ cd log
-  @BBB:$ tail -F -n 300 thingplus.log
+  @BBG:$ cd /usr/local/tp
+  @BBG:$ ./tp.sh restart
+  @BBG:$ cd log
+  @BBG:$ tail -F -n 300 thingplus.log
   ```
 
 * 한 개 이상의 센서가 등록되지 않았을 경우:
@@ -160,8 +172,8 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 
   ```
   @PC:$ ssh root@192.168.7.2
-  @BBB:$ cd /sys/devices/bone_capemgr.9
-  @BBB:$ cat slots
+  @BBG:$ cd /sys/devices/bone_capemgr.9
+  @BBG:$ cat slots
   0: 54:PF---
   1: 55:PF---
   2: 56:PF---
