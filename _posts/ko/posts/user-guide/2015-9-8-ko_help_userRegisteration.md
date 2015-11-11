@@ -134,7 +134,6 @@ xx:xx:xx:xx:xx:xx
 - 비글본그린의 경우
 
  ```bash
- @shell:$ sudo su
  @shell:$ cd /opt/thingplus/gateway
  @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
  @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
@@ -162,10 +161,10 @@ xx:xx:xx:xx:xx:xx
 - 비글본그린의 경우
 
  ```bash
- @shell:$ sudo nano /etc/rc.local
+ @shell:$ nano /etc/rc.local
  ...
- (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
- (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; sudo node app.js;)
+ (cd /opt/thingplus/gateway; ./thingplus.sh start;)
+ (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js;)
 
  exit 0
  ```
@@ -194,10 +193,10 @@ xx:xx:xx:xx:xx:xx
 <br/>
 16) 등록 성공 시 `Success` 팝업 메시지가 화면에 출력된다.
 
-<br>
+<br/>
 17) `센서목록` 메뉴에서 등록된 게이트웨이를 확인할 수 있다.
 
   - 센서는 게이트웨이에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
   - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.
 
-<br>
+<br/>

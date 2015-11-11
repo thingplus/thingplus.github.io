@@ -38,28 +38,29 @@ Thing+ 연동가이드(라즈베리파이)
    ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
 <br/>
-6) 라즈베리파이에 Ethernet(LAN 케이블), Power cable을 연결한다.
+6) 라즈베리파이에 Ethernet(LAN 케이블), Power Cable을 연결한다.
    ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 <br/>
+<div id='id-pi-setting-seventh'></div>
 7) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 접한다
 
-   - IP address를 찾기 힘들 경우 `문제 해결 방법`을 참고한다.
+   - IP address를 찾기 힘들 경우 [`문제 해결 방법`](#id-pi-troubleshooting)을 참고한다.
 
    - 아이디: **pi**
    - 비밀번호: **raspberry**
 
-     ```bash
-     $ ssh pi@<IP Address>
-     pi@<IP Address>'s password: raspberry
-     ```
+    ```bash
+    $ ssh pi@<IP Address>
+    pi@<IP Address>'s password: raspberry
+    ```
 
      - Mac & Linux 예제
 
-       ```bash
-       $ ssh pi@192.168.1.XXX
-       pi@<IP Address>'s password: raspberry
-       ```
+        ```bash
+        $ ssh pi@192.168.1.XXX
+        pi@<IP Address>'s password: raspberry
+        ```
 
      - Windows 예제
 
@@ -70,15 +71,15 @@ Thing+ 연동가이드(라즈베리파이)
 > 주의: Windows의 경우, 라즈베리파이를 재부팅할 때마다, putty를 새로 실행해야함.
 
 <br/>
-> 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
-
 8) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
+
+> 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
  - `/etc/hostname`을 수정한다.
 
-   ```bash
-   @Pi2:$ sudo nano /etc/hostname
-   ```
+    ```bash
+    @Pi2:$ sudo nano /etc/hostname
+    ```
 
    - 파일 내부의 `raspberrypi`를 아래 그림과 같이 원하는 이름(알파벳 및 숫자, -만 허용)으로 변경한다.
    ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
@@ -89,9 +90,9 @@ Thing+ 연동가이드(라즈베리파이)
 
  - `/etc/hosts`를 수정한다.
 
-   ```bash
-   @Pi2:$ sudo nano /etc/hosts
-   ```
+    ```bash
+    @Pi2:$ sudo nano /etc/hosts
+    ```
 
    - 파일 내부의 `raspberrypi`를 아래 그림과 같이 위와 동일한 이름으로 변경한다.
    ![Raspberry Pi Modify hosts](/assets/modify_hostname_2.png)
@@ -102,12 +103,12 @@ Thing+ 연동가이드(라즈베리파이)
 
 - 변경한 호스트명 적용을 위해 라즈베리파이를 재시작한다.
 
-   ```bash
-   @Pi2:$ sudo reboot
-   ```
+    ```bash
+    @Pi2:$ sudo reboot
+    ```
 
 <br/>
-9) 재부팅이 완료된 라즈베리파이에 재접속한다. (`7번 과정` 참고)
+9) 재부팅이 완료된 라즈베리파이에 재접속한다. ([`7번 과정`](#id-pi-setting-seventh) 참고)
 
 <br/>
 10) 4GB 이상의 SD card를 사용하기 위해서, `raspi-config`를 실행한다.
@@ -136,9 +137,9 @@ Thing+ 연동가이드(라즈베리파이)
    <br/>
    d. /etc/modules에 `i2c-dev`와 `i2c-bcm2708`을 추가한다.
 
-   ```bash
-   @Pi2:$ nano /etc/modules   
-   ```
+```bash
+@Pi2:$ nano /etc/modules   
+```
 
    ![Raspberry Pi Add i2c settings](/assets/add_i2c_lines.png)
 
@@ -148,13 +149,13 @@ Thing+ 연동가이드(라즈베리파이)
 <br/><br/>
 #### 2. Thing+ Embedded 패키지 설치
 
-1) 라즈베리파이에 Grove Pi+ shield와 센서를 전원을 분리한 상태에서 연결한다.
+1) 라즈베리파이에 Grove Pi+ shield와 센서를, Ethernet(LAN 케이블)과 Power Cable을 분리한 상태에서 연결한다.
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.png)
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
 
 <br/>
-2) 라즈베리파이에 Ethernet(LAN 케이블), Power cable을 연결한다.
+2) 라즈베리파이에 Ethernet(LAN 케이블), Power Cable을 연결한다.
 ![Raspberry Pi + Grove Pi + Power + Ethernet](/assets/rasp_grovePi_power_ethernet.png)
 
 <br/>
@@ -211,13 +212,13 @@ v0.10.16
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
 --------------------
-
+<div id='id-pi-troubleshooting'></div>
 ### 문제 해결 방법
 
 * `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우
 
   - 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
-  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 Raspberry Pi에 접속하여 아래 명령을 실행하여 내용을 확인한다.
+  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 라즈베리파이에 접속하여 아래 명령을 실행하여 내용을 확인한다.
 
     ```
     @PC:$ ssh pi@<IP Address>

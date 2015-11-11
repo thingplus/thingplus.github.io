@@ -5,76 +5,124 @@ published: true
 permalink: /ko/open-hardware/bbb-user-guide.html
 ---
 
-Thing+ 연동가이드(BeagleBone Green)
+Thing+ 연동가이드(비글본그린)
 
 #### 1. 환경 설정
 
 0) [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
 
-1) BeagleBone Green(이하 BBG)에 5V 전원 어댑터를 연결한 후, 아래 URL을 참조하여 BBG와 사용자의 PC를 USB 케이블로 연결하고(Step 1), 드라이버를 설치한다.(Step 2)
+<br/>
+1) 비글본그린을 제어하기 위해서는 Telnet/SSH 클라이언트가 필요합니다.
 
-   - http://beagleboard.org/getting-started#step1 참조
-   - http://beagleboard.org/getting-started#step2 참조
+   - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
+   - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
+   - Putty 다운로드 링크 - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
-2) 윈도우즈 사용자의 경우 아래의 URL에서 putty를 다운받아 설치한다.
-   - http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+<br/>
+2) 비글본그린을 thernet(LAN 케이블), Power Cable을 연결한다.
 
-3) 인터넷 연결을 위하여 Ethernet(LAN 케이블)이나 WiFi USB 동글을 BeagleBone Black에 연결한다.
+![BBG + Ehternet + USB Cable](/assets/bbg_ethernet_usb.png)
 
-   - BBG는 기본적으로 DHCP를 지원한다.
-   - WiFi를 사용할 경우, 본 문서의 `WiFi 동글 설정` 부분을 참조한다.
+<br/>
+4) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 접한다.
 
-4) BBG를 재시작한다.
-   - PC와 연결된 USB 케이블과 전원 어댑터를 모두 뺐다가 다시 꽂아야 한다.
+ - IP address를 찾기 힘들 경우 [`문제 해결 방법`](#id-bbg-troubleshooting)을 참고한다.
 
-5) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 로그인한다.
+    ```bash
+    $ ssh root@<IP Address>
+    ```
 
-```bash
-$ ssh root@192.168.7.2
-```
+   - Mac & Linux의 경우
 
-- 주의: 로그인 후 비밀번호를 설정할 것을 강력히 권장함.
+        ```bash
+        $ ssh root@192.168.1.XXX
+        ```
+   
+   - Windows의 경우
+     - putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
+     ![BBG putty login](/assets/putty_login_bbg.png)
+
+> 주의: Windows의 경우, 비글본그린을 재부팅할 때마다, putty를 새로 실행해야함.
 
 
-```bash
-$ passwd
-Enter new UNIX password:
-```
+<br/>
+5) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
 
+> 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
-#### 2. 설치
-1) BBG에 Grove Starter Kit센서, Ethernet(LAN 케이블)을 연결한다.
+ - `/etc/hostname`을 수정한다.
 
-   ![BBG + Grove](/assets/bbg_grove2.jpg)
+    ```bash
+    @BBG:$ nano /etc/hostname
+    ```
 
-   ![BBG + Grove](/assets/bbg_grove.jpg)
+   - 파일 내부의 `beaglebone`을 아래 그림과 같이 원하는 이름(알파벳 및 숫자, -만 허용)으로 변경한다.
+   ![BBG Modify hostname](/assets/modify_hostname.png)
 
-2) thingplus 어플리케이션을 설치할 폴더를 만들고 이동한다.
+     - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+
+<br/>
+
+ - 변경한 호스트명 적용을 위해 비글본그린을 재시작한다.
+
+    ```bash
+    @BBG:$ reboot
+    ```
+
+<br/><br/>
+#### 2. Thing+ Embedded 패키지 설치
+
+1) BBG에 Grove Starter Kit센서를 Power Cable을 분리한 상태에서 연결한다.
+
+- I2C HUB: 비글본그린과 I2C HUB를 연결하는 선
+![BBG + Grove](/assets/bbg_grove.png)
+
+- BBG: 비글본그린과 I2C HUB를 연결하는 선을 의미한다.
+![BBG + Grove](/assets/bbg_grove_2.png)
+
+- RGB LED 백패널의 `IN`이라 표시된 쪽에 꽃는다.
+![BBG + Grove](/assets/bbg_grove_3.png)
+
+<br/>
+2) 비글본그린에 Ethernet(LAN 케이블), Power Cable을 연결한다.
+![BBG + Grove + Ehternet + Power](/assets/bbg_grove_ethernet_power.png)
+
+<br/>
+3) 비글본그린에 접속한다.
+
+<br/>
+4) Thing+ Embedded 패키지를 설치할 폴더를 만들고 이동한다.
 
 ```bash
 @BBG:$ mkdir /opt/thingplus
 @BBG:$ cd /opt/thingplus
 ```
 
-3) 인스톨 스크립트 파일을 다운로드한다.
+<br/>
+5) 인스톨 스크립트 파일을 다운로드한다.
 
 ```bash
 @BBG:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install_for_bbg.sh
 ```
 
-4) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
+<br/>
+6) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
 
 ```bash
-@BBG:$ sudo chmod 755 thingplus_embedded_sdk_install_for_bbg.sh
-@BBG:$ sudo ./thingplus_embedded_sdk_install_for_bbg.sh
+@BBG:$ chmod 755 thingplus_embedded_sdk_install_for_bbg.sh
+@BBG:$ ./thingplus_embedded_sdk_install_for_bbg.sh
 ```
 
-5) BBG를 재시작한다.
+<br/>
+7) Thing+ Embedded 패키지를 설치한다.
 
 ```bash
-@BBB:$ reboot -f
+@BBG:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+@BBG:$ npm install
+@BBG:$ reboot
 ```
 
+<br/><br/>
 #### 3. 게이트웨이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
@@ -146,40 +194,78 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 > 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
 
 ----------------------------------
+### 비글본그린 USB로 연결하기
+
+_Mac OS X El Capitan은 현재 드라이버 미지원(**2015-11-14 기준**)이기에 연결이 불가능 합니다._
+
+1) 아래 URL을 참조하여 비글본그린 드라이버를 설치한다.
+
+- [Windows 64bit 드라이버](http://beagleboard.org/static/Drivers/Windows/BONE_D64.exe)
+- [Windows 32bit 드라이버](http://beagleboard.org/static/Drivers/Windows/BONE_DRV.exe)
+- [Linux 드라이버](http://beagleboard.org/static/Drivers/Linux/FTDI/mkudevrule.sh)
+- Mac OS X 시리얼 드라이버
+ - [Mac OS X 10.3 ~ 10.4 32bit 시리얼 드라이버](http://www.ftdichip.com/drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
+ - [Mac OS X 10.3 ~ 10.8 64bit 시리얼 드라이버](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
+ - [Mac OS X 10.9 ~ 현재 64bit 시리얼 드라이버](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg)
+- [Mac OS X 네트워크 드라이버](http://joshuawise.com/downloads/HoRNDIS-rel7.pkg)
+
+<br/>
+2) 비글본그린을 제어하기 위해서는 Telnet/SSH 클라이언트가 필요합니다.
+
+   - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
+   - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
+   - Putty 다운로드 링크 - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+
+<br/>
+3) 비글본그린을 동봉된 USB Micro 5pin 케이블을 사용하여 PC와 연결한다.
+
+![BBG + USB Cable](/assets/bbg_usb_cable.png)
+
+<br/>
+4) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 접한다.
+
+   - Mac & Linux의 경우
+
+        ```bash
+        $ ssh root@192.168.7.2
+        ```
+   
+   - Windows의 경우
+     - putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
+     ![BBG putty login](/assets/putty_usb_login_bbg.png)
+
+> 주의: Windows의 경우, 비글본그린을 재부팅할 때마다, putty를 새로 실행해야함.
+
+----------------------------------
+<div id='id-bbg-troubleshooting'></div>
 ### 문제 해결 방법
 
 * `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우:
 
   - 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
-  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 BBG에 접속한 후 아래 명령을 실행하여 내용을 확인한다.
+  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 비글본그린에 접속한 후 아래 명령을 실행하여 내용을 확인한다.
 
-  ```
-  @PC:$ ssh root@192.168.7.2
-  @BBG:$ cd /usr/local/tp
-  @BBG:$ ./tp.sh restart
-  @BBG:$ cd log
-  @BBG:$ tail -F -n 300 thingplus.log
-  ```
+    ```bash
+    @PC:$ ssh root@192.168.7.2
+    @BBG:$ cd /usr/local/tp
+    @BBG:$ ./tp.sh restart
+    @BBG:$ cd log
+    @BBG:$ tail -F -n 300 thingplus.log
+    ```
+
+<br/>
 
 * 한 개 이상의 센서가 등록되지 않았을 경우:
 
   - 게이트웨이를 재시작하면 자동적으로 미등록 센서를 등록한다.
 
 
-* 1-Wire 온도센서가 등록되지 않았을 경우:
+<br/>
 
-  - Cape manager 설정을 확인한 후, BB-W1이 없을 경우 BBG를 재시작한다.
+* 비글본그린의 IP address를 확인하는 방법
 
-  ```
-  @PC:$ ssh root@192.168.7.2
-  @BBG:$ cd /sys/devices/bone_capemgr.9
-  @BBG:$ cat slots
-  0: 54:PF---
-  1: 55:PF---
-  2: 56:PF---
-  3: 57:PF---
-  4: ff:P-O-L Bone-LT-eMMC-2G,00A0,Texas Instrument,BB-BONE-EMMC-2G
-  5: ff:P-O-L Bone-Black-HDMI,00A0,Texas Instrument,BB-BONELT-HDMI
-  7: ff:P-O-L Override Board Name,00A0,Override Manuf,BB-W1
-  8: ff:P-O-L Override Board Name,00A0,Override Manuf,BB-IGOT-GPIO
-  ```
+ - 스마트폰의 app store에서 `Fing` app을 설치한다. ([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
+  - 비글본그린이 연결된 공유기에 WiFi를 이용하여 스마트폰을 연결한다.
+  - `Fing`을 실행하면 공유기에 연결되어 있는 장비의 IP address의 목록이 표시된다.
+  - 이 중 `beaglebone`라는 이름의 장비의 IP address로 `ssh`를 이용하여 접속하면 된다.
+

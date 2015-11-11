@@ -134,7 +134,6 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 - For BeagleBone Green
 
  ```bash
- @shell:$ sudo su
  @shell:$ cd /opt/thingplus/gateway
  @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
  @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
@@ -162,10 +161,10 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 - For BeagleBone Green
 
  ```bash
- @shell:$ sudo nano /etc/rc.local
+ @shell:$ nano /etc/rc.local
  ...
- (cd /opt/thingplus/gateway; sudo ./thingplus.sh start;)
- (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; sudo node app.js;)
+ (cd /opt/thingplus/gateway; ./thingplus.sh start;)
+ (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js;)
 
  exit 0
  ```
@@ -194,10 +193,10 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <br/>
 16) You can see the `Success` popup message when the registration is completed
 
-<br>
+<br/>
 17) You can see the registred Gateway from the `Sensor List` Menu
 
   - Sensor(s) is registered automatically by the Gateway(BeagleBone Black / Raspberry Pi 2) within 1 minute after you complete to register your gateway
   - Values your Sensor are periodically aggregated and delivered to Thing+ Cloud by the Thing+ Gateway Software. You can see the values from Thing+ Portal after several minutes.
 
-<br>
+<br/>

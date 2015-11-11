@@ -42,24 +42,25 @@ Thing+ Integragtion Guide for Raspberry Pi
    ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 <br/>
+<div id='id-pi-setting-seventh'></div>
 7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
 
-   - When you can NOT get the IP Address of your device, please refer the `Troubleshooting` section.
+   - When you can NOT get the IP Address of your device, please refer the [`Troubleshooting`](#id-pi-troubleshooting) section.
 
    - ID: **pi**
    - Password: **raspberry**
 
-     ```bash
-     $ ssh pi@<IP Address>
-     pi@<IP Address>'s password: raspberry
-     ```
+    ```bash
+    $ ssh pi@<IP Address>
+    pi@<IP Address>'s password: raspberry
+    ```
 
      - Example for Mac & Linux
 
-       ```bash
-       $ ssh pi@192.168.1.XXX
-       pi@<IP Address>'s password: raspberry
-       ```
+        ```bash
+        $ ssh pi@192.168.1.XXX
+        pi@<IP Address>'s password: raspberry
+        ```
 
      - Example for Windows
 
@@ -70,15 +71,15 @@ Thing+ Integragtion Guide for Raspberry Pi
 > Notice: In case of Windows, you have to re-launch putty, when Raspberry Pi is rebooted.
 
 <br/>
-> Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
-
 8) To distinguish your Raspberry Pi, you need to modify the hostname of it.
+
+> Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
   
   - Modify `/etc/hostname`.
 
-   ```bash
-   @Pi2:$ sudo nano /etc/hostname
-   ```
+    ```bash
+    @Pi2:$ sudo nano /etc/hostname
+    ```
 
    - Change the `raspberrypi` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
    ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
@@ -89,9 +90,9 @@ Thing+ Integragtion Guide for Raspberry Pi
 
  - Modify `/etc/hosts`.
 
-   ```bash
-   @Pi2:$ sudo nano /etc/hosts
-   ```
+    ```bash
+    @Pi2:$ sudo nano /etc/hosts
+    ```
 
    - Change the `raspberrypi` in the file to the same name you changed at before step.
    ![Raspberry Pi Modify hosts](/assets/modify_hostname_2.png)
@@ -102,12 +103,12 @@ Thing+ Integragtion Guide for Raspberry Pi
 
  - To apply your modification, please reboot your Raspberry Pi.
 
-   ```bash
-   @Pi2:$ sudo reboot
-   ```
+    ```bash
+    @Pi2:$ sudo reboot
+    ```
 
 <br/>
-9) Re-connect to your Raspberry Pi. (Refer `#7 step`)
+9) Re-connect to your Raspberry Pi. (Refer [`#7 step`](#id-pi-setting-seventh))
 
 <br/>
 10) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
@@ -136,9 +137,9 @@ Thing+ Integragtion Guide for Raspberry Pi
    <br/>
    d. Open /etc/modules file and add two new lines(`i2c-dev`, `i2c-bcm2708`) on that file.
 
-   ```bash
-   @Pi2:$ nano /etc/modules
-   ```
+```bash
+@Pi2:$ nano /etc/modules
+```
 
    ![Raspberry Pi Add i2c settings](/assets/add_i2c_lines.png)
 
@@ -148,13 +149,13 @@ Thing+ Integragtion Guide for Raspberry Pi
 <br/><br/>
 #### 2. Install Thing+ Embedded Package
 
-1) Connect Grove Pi+ shield, Sensors to Raspberry Pi.
+1) Connect Grove Pi+ shield, Sensors to Raspberry Pi without Ethernet(LAN cable) and Power Cable.
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.png)
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
 
 <br/>
-2) Connect Ethernet(LAN cable), and power cable to Raspberry Pi.
+2) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
 ![Raspberry Pi + Grove Pi + Power + Ethernet](/assets/rasp_grovePi_power_ethernet.png)
 
 <br/>
@@ -211,13 +212,13 @@ v0.10.16
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
 
 --------------------
-
+<div id='id-pi-troubleshooting'></div>
 ### Troubleshooting
 
 * When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it:
 
-  - It takes few minutes to register sensors and gateways, so please Refresh the Sensor page after 1~2 minutes.
-  - If you still can NOT find them after few minutes, please Connect to your Raspberry Pi, and Try run below commands.
+ - It takes few minutes to register sensors and gateways, so please Refresh the Sensor page after 1~2 minutes.
+ - If you still can NOT find them after few minutes, please Connect to your Raspberry Pi, and Try run below commands.
 
     ```
     @PC:$ ssh pi@<IP Address>

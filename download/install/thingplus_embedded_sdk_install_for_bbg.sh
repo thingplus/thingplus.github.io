@@ -1,45 +1,21 @@
 #!/bin/sh
 
 # Destination directory for Thing+ Gateway
-USER_THINGPLUS_GATEWAY_DEST=$1
+USER_THINGPLUS_GATEWAY_DEST=./gateway
 
 # Destination directory for Open Hardware SDK
-USER_SDK_DEST=$2
-
-yes_or_no() {
-  while read line
-  do
-    if [ "$line" = "y" ] || [ "$line" = "Y" ]; then 
-      return 1
-    elif [ "$line" = "n" ] || [ "$line" = "N" ]; then 
-      return 0
-    else
-      echo -n 'Enter y/n?'
-    fi
-  done
-}
+USER_SDK_DEST=.
 
 if [ -z $USER_THINGPLUS_GATEWAY_DEST ]; then
-  echo -n "Do you want to install thingplus at '$(pwd)/gateway'(y/n)?"
-  yes_or_no
-  if [ $? = 0 ]; then
-    echo -n "./thingplus_embedded_sdk_install_for_bbg.sh GATEWAY_DIR SDK_DIR"
-    exit 1
-  fi
-  USER_THINGPLUS_GATEWAY_DEST=$(pwd)/gateway
-  echo $USER_THINGPLUS_GATEWAY_DEST
+  echo "Please set USER_THINGPLUS_GATEWAY_DEST."
+  echo "ex) USER_THINGPLUS_GATEWAY_DEST=/opt/thingplus"
+  exit 1;
 fi
 
 if [ -z $USER_SDK_DEST ]; then
-  echo -n "Do you want to install thingplus sdk at '$(pwd)/'(y/n)?"
-  yes_or_no
-  if [ $? = 0 ]; then
-    echo -n "./thingplus_embedded_sdk_install_for_bbg.sh GATEWAY_DIR SDK_DIR"
-    exit 1
-  fi
-  USER_SDK_DEST=$(pwd)/
-  echo $USER_SDK_DEST
-
+  echo "Please set USER_SDK_DEST."
+  echo "ex) USER_SDK_DEST=/opt/thingplus-sdk"
+  exit 1;
 fi
 
 MODEL="debian"
