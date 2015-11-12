@@ -49,9 +49,28 @@ Thing+ 연동가이드(비글본그린)
 
 > 주의: Windows의 경우, 비글본그린을 재부팅할 때마다, putty를 새로 실행해야함.
 
+<br/>
+4) 라즈베리파이의 시스템 시간을 업데이트한다.
+
+- 진행 중, 설치를 확인하는 질문에서는 `y`를 입력한다.
+
+```bash
+@BBG:$ apt-get update
+@BBG:$ apt-get install ntp ntpdate
+@BBG:$ ntpdate -u ntp.ubuntu.com
+@BBG:$ hwclock -w -u
+```
+
+- 만약, 시스템 시간 업데이트에 실패할 경우, 직접 시간을 갱신한다.
+
+  - UTC 시간 기준 [(링크)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): 2015년 01월 01일 00:00:00 경우, 2015-01-01 00:00:00
+
+    ```bash
+    @BBG:$ date --set '20XX-XX-XX XX:XX:XX'
+    ```
 
 <br/>
-4) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
+5) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 

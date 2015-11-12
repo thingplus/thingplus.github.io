@@ -72,7 +72,27 @@ Thing+ 연동가이드(라즈베리파이)
 > 주의: Windows의 경우, 라즈베리파이를 재부팅할 때마다, putty를 새로 실행해야함.
 
 <br/>
-8) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
+8) 라즈베리파이의 시스템 시간을 업데이트한다.
+
+- 진행 중, 설치를 확인하는 질문에서는 `y`를 입력한다.
+
+```bash
+@Pi2:$ sudo su
+@Pi2:$ apt-get update
+@Pi2:$ apt-get install ntp ntpdate
+@Pi2:$ ntpdate -u ntp.ubuntu.com
+```
+
+- 만약, 시스템 시간 업데이트에 실패할 경우, 직접 시간을 갱신한다.
+
+  - UTC 시간 기준 [(링크)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): 2015년 01월 01일 00:00:00 경우, 2015-01-01 00:00:00
+
+    ```bash
+    @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
+    ```
+
+<br/>
+9) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
@@ -109,10 +129,10 @@ Thing+ 연동가이드(라즈베리파이)
     ```
 
 <br/>
-9) 재부팅이 완료된 라즈베리파이에 재접속한다. ([`7번 과정`](#id-pi-setting-seventh) 참고)
+10) 재부팅이 완료된 라즈베리파이에 재접속한다. ([`7번 과정`](#id-pi-setting-seventh) 참고)
 
 <br/>
-10) 4GB 이상의 SD card를 사용하기 위해서, `raspi-config`를 실행한다.
+11) 4GB 이상의 SD card를 사용하기 위해서, `raspi-config`를 실행한다.
 
 ```bash
 @Pi2:$ sudo su
@@ -139,13 +159,20 @@ Thing+ 연동가이드(라즈베리파이)
    d. /etc/modules에 `i2c-dev`와 `i2c-bcm2708`을 추가한다.
 
 ```bash
-@Pi2:$ nano /etc/modules   
+@Pi2:$ nano /etc/modules
 ```
 
    ![Raspberry Pi Add i2c settings](/assets/add_i2c_lines.png)
 
    - `i2c-dev`는 Raspbian의 버전에 따라서 이미 추가되어 있을 수 있음.
    - 파일 수정 후 저장은 `CTRL-O`키를 누른 후, 엔터키를 누르고, 종료할 때는 `CTRL-X`키를 누른다.
+
+<br/>
+12) 라즈베리파이를 재시작한다.
+
+```bash
+@Pi2:$ sudo reboot
+```
 
 <br/><br/>
 #### 2. Thing+ Embedded 패키지 설치

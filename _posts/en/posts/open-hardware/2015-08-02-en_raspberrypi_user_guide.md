@@ -72,7 +72,27 @@ Thing+ Integragtion Guide for Raspberry Pi
 > Notice: In case of Windows, you have to re-launch putty, when Raspberry Pi is rebooted.
 
 <br/>
-8) To distinguish your Raspberry Pi, you need to modify the hostname of it.
+8) Update time of Raspberry Pi.
+
+- While installing an application, please Enter `y` for installation questions.
+
+```bash
+@Pi2:$ sudo su
+@Pi2:$ apt-get update
+@Pi2:$ apt-get install ntp ntpdate
+@Pi2:$ ntpdate -u ntp.ubuntu.com
+```
+
+- If you failed to update the time, Update it directly.
+
+ - UTC Time zone [(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): ex) 2015/01/01 00:00:00 => 2015-01-01 00:00:00
+
+    ```bash
+    @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
+    ```
+
+<br/>
+9) To distinguish your Raspberry Pi, you need to modify the hostname of it.
 
 > Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
   
@@ -109,10 +129,10 @@ Thing+ Integragtion Guide for Raspberry Pi
     ```
 
 <br/>
-9) Re-connect to your Raspberry Pi. (Refer [`#7 step`](#id-pi-setting-seventh))
+10) Re-connect to your Raspberry Pi. (Refer [`#7 step`](#id-pi-setting-seventh))
 
 <br/>
-10) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
+11) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
 
 ```bash
 @Pi2:$ sudo su
@@ -146,6 +166,13 @@ Thing+ Integragtion Guide for Raspberry Pi
 
    - `i2c-dev` could be already added, because it depends on Raspbian's version.
    - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+
+<br/>
+12) Reboot Raspberry Pi
+
+```bash
+@Pi2:$ sudo reboot
+```
 
 <br/><br/>
 #### 2. Install Thing+ Embedded Package
