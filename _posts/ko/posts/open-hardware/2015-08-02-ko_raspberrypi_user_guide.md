@@ -7,6 +7,7 @@ permalink: /ko/open-hardware/raspberry-pi-user-guide.html
 
 Thing+ 연동가이드(라즈베리파이)
 
+<br/>
 #### 1. 환경 설정
 
 0) [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)

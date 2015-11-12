@@ -7,6 +7,7 @@ permalink: /en/open-hardware/raspberry-pi-user-guide.html
 
 Thing+ Integragtion Guide for Raspberry Pi
 
+<br/>
 #### 1. Environment Setting
 
 0) [Go to shop to buy the GrovePi+ Starter Kit](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-p-2240.html)

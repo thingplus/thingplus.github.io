@@ -7,6 +7,7 @@ permalink: /ko/open-hardware/bbb-user-guide.html
 
 Thing+ 연동가이드(비글본그린)
 
+<br/>
 #### 1. 환경 설정
 
 0) [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
@@ -19,12 +20,12 @@ Thing+ 연동가이드(비글본그린)
    - Putty 다운로드 링크 - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
 <br/>
-2) 비글본그린을 thernet(LAN 케이블), Power Cable을 연결한다.
+2) 비글본그린을 Ethernet(LAN 케이블), Power Cable을 연결한다.
 
 ![BBG + Ehternet + USB Cable](/assets/bbg_ethernet_usb.png)
 
 <br/>
-4) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 접한다.
+3) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 접한다.
 
  - IP address를 찾기 힘들 경우 [`문제 해결 방법`](#id-bbg-troubleshooting)을 참고한다.
 
@@ -42,11 +43,15 @@ Thing+ 연동가이드(비글본그린)
      - putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
      ![BBG putty login](/assets/putty_login_bbg.png)
 
+<br/>
+
+ - 참고: PC와 USB 케이블만으로도 접속이 가능합니다. 방법은 [`비글본그린 USB로 연결하기`](#id-bbg-usbconnect) 참조하세요.
+
 > 주의: Windows의 경우, 비글본그린을 재부팅할 때마다, putty를 새로 실행해야함.
 
 
 <br/>
-5) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
+4) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
@@ -194,6 +199,7 @@ iface ra0 inet dhcp       # 주석을 해제한다.
 > 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
 
 ----------------------------------
+<div id='id-bbg-usbconnect'></div>
 ### 비글본그린 USB로 연결하기
 
 _Mac OS X El Capitan은 현재 드라이버 미지원(**2015-11-14 기준**)이기에 연결이 불가능 합니다._
