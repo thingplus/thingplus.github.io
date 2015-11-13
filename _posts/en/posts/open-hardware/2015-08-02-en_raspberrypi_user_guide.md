@@ -214,11 +214,11 @@ v0.10.16
 6) Download a install script file.
 
 ```bash
-@Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install.sh
+@Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
 ```
 
 <br/>
-7) Grant a run permission to the script you downloaded and Run it.
+7) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
 
 ```bash
 @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
@@ -226,12 +226,9 @@ v0.10.16
 ```
 
 <br/>
-8) Install the Thing+ Embedded Package.
+8) Reboot Raspberry Pi
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-@Pi2:$ npm install
 @Pi2:$ sudo reboot
 ```
 

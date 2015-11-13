@@ -214,11 +214,11 @@ v0.10.16
 6) 인스톨 스크립트 파일을 다운로드한다.
 
 ```bash
-@Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_install.sh
+@Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
 ```
 
 <br/>
-7) 다운로드한 스크립트 파일에 실행권한을 부여하고 실행한다.
+7) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치한다.
 
 ```bash
 @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_install.sh
@@ -226,12 +226,9 @@ v0.10.16
 ```
 
 <br/>
-8) Thing+ Embedded 패키지를 설치한다.
+8) 라즈베리파이를 재시작한다.
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-@Pi2:$ npm install
 @Pi2:$ sudo reboot
 ```
 

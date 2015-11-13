@@ -13,12 +13,14 @@ Open Hardware List
   - [GrovePi+ Starter Kit](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-p-2240.html)
 * [Guide link](http://support.thingplus.net/en/open-hardware/raspberry-pi-user-guide.html)
 
+<br/>
 #### 2. Beagle Board
 * Beaglebone Black, Beaglebone Green
 * Sensor Kit
   - [Grove Starter Kit for BeagleBone Green](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
 * [Guide link](http://support.thingplus.net/en/open-hardware/bbb-user-guide.html)
 
+<br/>
 #### 3. Coming soon 
 * Arduino 
 * Edison

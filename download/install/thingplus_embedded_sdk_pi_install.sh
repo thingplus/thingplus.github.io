@@ -115,3 +115,5 @@ fi
 
 cd $USER_SDK_DEST
 git clone https://github.com/daliworks/openhardware.git
+cd openhardware/raspberrypi/grove-starter-kit/
+npm install
