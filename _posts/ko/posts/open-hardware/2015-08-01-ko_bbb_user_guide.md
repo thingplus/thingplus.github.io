@@ -135,8 +135,8 @@ Thing+ 연동가이드(비글본그린)
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
     ```bash
-    @BBG:$ chmod 755 thingplus_embedded_sdk_install_for_bbg.sh
-    @BBG:$ ./thingplus_embedded_sdk_install_for_bbg.sh
+    @BBG:$ chmod 755 thingplus_embedded_sdk_bbg_install.sh
+    @BBG:$ ./thingplus_embedded_sdk_bbg_install.sh
     ```
 
 <br/>
