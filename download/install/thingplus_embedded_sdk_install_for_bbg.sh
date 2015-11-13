@@ -117,3 +117,6 @@ cd $USER_SDK_DEST
 git clone https://github.com/daliworks/openhardware.git
 cd openhardware/beaglebonegreen/grove-starter-kit/
 git clone https://github.com/daliworks/3.Wooden_Lamp_BBG.git
+git clone https://github.com/daliworks/GrovePi.git
+npm install
+sed -i 's/cape_enable=capemgr.enable_partno=BB-UART2/\#cape_enable=capemgr.enable_partno=BB-UART2/g' /boot/uEnv.txt
