@@ -220,10 +220,12 @@ v0.10.16
 <br/>
 7) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
 
-```bash
-@Pi2:$ sudo chmod 755 thingplus_embedded_sdk_pi_install.sh
-@Pi2:$ sudo ./thingplus_embedded_sdk_pi_install.sh
-```
+- It can take few minutes to install the Thing+ Embedded Package.
+
+    ```bash
+    @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_pi_install.sh
+    @Pi2:$ sudo ./thingplus_embedded_sdk_pi_install.sh
+    ```
 
 <br/>
 8) Reboot Raspberry Pi

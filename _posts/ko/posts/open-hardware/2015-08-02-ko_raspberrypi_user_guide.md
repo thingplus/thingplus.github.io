@@ -220,10 +220,12 @@ v0.10.16
 <br/>
 7) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치한다.
 
-```bash
-@Pi2:$ sudo chmod 755 thingplus_embedded_sdk_pi_install.sh
-@Pi2:$ sudo ./thingplus_embedded_sdk_pi_install.sh
-```
+- Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
+
+    ```bash
+    @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_pi_install.sh
+    @Pi2:$ sudo ./thingplus_embedded_sdk_pi_install.sh
+    ```
 
 <br/>
 8) 라즈베리파이를 재시작한다.
