@@ -20,3 +20,6 @@ Thing+ API Sample Apps
 #### 3. Web
 
 - 추가예정
+
+<br/>
+##### **Thing+ API기반으로 개발한 앱을 알려주시면, 여기에 리스트업 해드리겠습니다. contact@thingplus.net**

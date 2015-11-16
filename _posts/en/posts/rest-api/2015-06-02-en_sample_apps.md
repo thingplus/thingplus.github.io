@@ -20,3 +20,6 @@ Thing+ API Sample Apps
 #### 3. Web
 
 - Coming Soon
+
+<br/>
+##### **Please share your Thing+ API based app, we will list up here. contact@thingplus.net**
