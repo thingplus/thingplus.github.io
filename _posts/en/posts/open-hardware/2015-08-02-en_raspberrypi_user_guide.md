@@ -190,45 +190,25 @@ Thing+ Integragtion Guide for Raspberry Pi
 3) Connect to your Raspberry Pi.
 
 <br/>
-4) Download [nodejs](https://nodejs.org) and Install it.
-
-```bash
-@Pi2:$ sudo su
-@Pi2:$ wget http://nodejs.org/dist/v0.10.16/node-v0.10.16-linux-arm-pi.tar.gz
-@Pi2:$ tar xvfz node-v0.10.16-linux-arm-pi.tar.gz
-@Pi2:$ cd node-v0.10.16-linux-arm-pi
-@Pi2:$ rsync -a bin lib share /usr/local/
-@Pi2:$ node --version
-v0.10.16
-```
-
-<br/>
-5) Make a new folder where the Thing+ Embedded Package will be installed and Move to it.
-
-```bash
-@Pi2:$ mkdir /opt/thingplus
-@Pi2:$ cd /opt/thingplus
-```
-
-<br/>
-6) Download a install script file.
+4) Download a install script file.
 
 ```bash
 @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
 ```
 
 <br/>
-7) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
+5) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
 
 - It can take few minutes to install the Thing+ Embedded Package.
 
     ```bash
-    @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_pi_install.sh
-    @Pi2:$ sudo ./thingplus_embedded_sdk_pi_install.sh
+    @Pi2:$ sudo su
+    @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+    @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
     ```
 
 <br/>
-8) Reboot Raspberry Pi
+6) Reboot Raspberry Pi
 
 ```bash
 @Pi2:$ sudo reboot

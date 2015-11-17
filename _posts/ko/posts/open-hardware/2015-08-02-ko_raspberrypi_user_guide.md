@@ -190,45 +190,25 @@ Thing+ 연동가이드(라즈베리파이)
 3) 라즈베리파이에 접속한다.
 
 <br/>
-4) [nodejs](https://nodejs.org)를 다운로드 후 설치한다.
-
-```bash
-@Pi2:$ sudo su
-@Pi2:$ wget http://nodejs.org/dist/v0.10.16/node-v0.10.16-linux-arm-pi.tar.gz
-@Pi2:$ tar xvfz node-v0.10.16-linux-arm-pi.tar.gz
-@Pi2:$ cd node-v0.10.16-linux-arm-pi
-@Pi2:$ rsync -a bin lib share /usr/local/
-@Pi2:$ node --version
-v0.10.16
-```
-
-<br/>
-5) Thing+ Embedded 패키지를 설치할 폴더를 만들고 이동한다.
-
-```bash
-@Pi2:$ mkdir /opt/thingplus
-@Pi2:$ cd /opt/thingplus
-```
-
-<br/>
-6) 인스톨 스크립트 파일을 다운로드한다.
+4) 인스톨 스크립트 파일을 다운로드한다.
 
 ```bash
 @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
 ```
 
 <br/>
-7) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치한다.
+5) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치한다.
 
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
     ```bash
-    @Pi2:$ sudo chmod 755 thingplus_embedded_sdk_pi_install.sh
-    @Pi2:$ sudo ./thingplus_embedded_sdk_pi_install.sh
+    @Pi2:$ sudo su
+    @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+    @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
     ```
 
 <br/>
-8) 라즈베리파이를 재시작한다.
+6) 라즈베리파이를 재시작한다.
 
 ```bash
 @Pi2:$ sudo reboot
