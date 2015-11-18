@@ -102,7 +102,7 @@ Thing+ 연동가이드(비글본그린)
 ![BBG + Grove](/assets/bbg_grove.png)
 
 - BBG: 비글본그린과 I2C HUB를 연결하는 선을 의미한다.
-![BBG + Grove](/assets/bbg_grove_2.png)
+![BBG + Grove](/assets/bbg_grove_2_ko.png)
 
 - RGB LED 백패널의 `IN`이라 표시된 쪽에 꽃는다.
 ![BBG + Grove](/assets/bbg_grove_3.png)
