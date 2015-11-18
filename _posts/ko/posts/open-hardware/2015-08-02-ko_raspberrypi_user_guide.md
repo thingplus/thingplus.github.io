@@ -229,7 +229,7 @@ Thing+ 연동가이드(라즈베리파이)
 
     ```
     @PC:$ ssh pi@<IP Address>
-    @Pi2:$ cd thingplus/gateway
+    @Pi2:$ cd /opt/thingplus/gateway
     @Pi2:$ ./thingplus.sh restart
     @Pi2:$ cd log
     @Pi2:$ tail -F -n 300 thingplus.log

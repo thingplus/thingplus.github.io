@@ -271,9 +271,9 @@ _Mac OS X El Capitan은 현재 드라이버 미지원(**2015-11-14 기준**)이�
   - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 비글본그린에 접속한 후 아래 명령을 실행하여 내용을 확인한다.
 
     ```bash
-    @PC:$ ssh root@192.168.7.2
-    @BBG:$ cd /usr/local/tp
-    @BBG:$ ./tp.sh restart
+    @PC:$ ssh root@<IP Address>
+    @BBG:$ cd /opt/thingplus/gateway
+    @BBG:$ ./thingplus.sh restart
     @BBG:$ cd log
     @BBG:$ tail -F -n 300 thingplus.log
     ```
