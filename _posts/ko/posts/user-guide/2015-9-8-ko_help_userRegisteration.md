@@ -123,51 +123,51 @@ xx:xx:xx:xx:xx:xx
 
 - 라즈베리파이의 경우
 
- ```bash
- @shell:$ sudo su
- @shell:$ cd /opt/thingplus/gateway
- @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
- @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
- @shell:$ node app.js > /dev/null &
- ```
+    ```bash
+    @shell:$ sudo su
+    @shell:$ cd /opt/thingplus/gateway
+    @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+    @shell:$ node app.js > /dev/null &
+    ```
 
 - 비글본그린의 경우
 
- ```bash
- @shell:$ cd /opt/thingplus/gateway
- @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
- @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
- @shell:$ node app.js > /dev/null &
- ```
+    ```bash
+    @shell:$ cd /opt/thingplus/gateway
+    @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+    @shell:$ node app.js > /dev/null &
+    ```
 
 <br/>
 11) 장치의 `/etc/rc.local` 파일의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
-
-- 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
 - 라즈베리파이의 경우
 
- ```bash
- @shell:$ sudo nano /etc/rc.local
- ...
- (cd /opt/thingplus/gateway; ./thingplus.sh start)
- (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js)
+    ```bash
+    @shell:$ sudo nano /etc/rc.local
+    ...
+    (cd /opt/thingplus/gateway; ./thingplus.sh start)
+    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js)
 
- exit 0
- ```
+    exit 0
+    ```
 
 - 비글본그린의 경우
 
- ```bash
- @shell:$ nano /etc/rc.local
- ...
- (cd /opt/thingplus/gateway; ./thingplus.sh start)
- (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js)
+    ```bash
+    @shell:$ nano /etc/rc.local
+    ...
+    (cd /opt/thingplus/gateway; ./thingplus.sh start)
+    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js)
 
- exit 0
- ```
+    exit 0
+    ```
+
+- 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
 
 <br/>
 12) `게이트웨이 등록하기`버튼을 누른다.

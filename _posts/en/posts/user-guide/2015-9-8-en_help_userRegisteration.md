@@ -123,51 +123,51 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 - For Raspberry Pi
 
- ```bash
- @shell:$ sudo su
- @shell:$ cd /opt/thingplus/gateway
- @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
- @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
- @shell:$ node app.js > /dev/null &
- ```
+    ```bash
+    @shell:$ sudo su
+    @shell:$ cd /opt/thingplus/gateway
+    @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+    @shell:$ node app.js > /dev/null &
+    ```
 
 - For BeagleBone Green
 
- ```bash
- @shell:$ cd /opt/thingplus/gateway
- @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
- @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
- @shell:$ node app.js > /dev/null &
- ```
+    ```bash
+    @shell:$ cd /opt/thingplus/gateway
+    @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+    @shell:$ node app.js > /dev/null &
+    ```
 
 <br/>
 11) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
-
-- Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.   
 
 > Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
 
 - For Raspberry Pi
 
- ```bash
- @shell:$ sudo nano /etc/rc.local
- ...
- (cd /opt/thingplus/gateway; ./thingplus.sh start)
- (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js)
+    ```bash
+    @shell:$ sudo nano /etc/rc.local
+    ...
+    (cd /opt/thingplus/gateway; ./thingplus.sh start)
+    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js)
 
- exit 0
- ```
+    exit 0
+    ```
 
 - For BeagleBone Green
 
- ```bash
- @shell:$ nano /etc/rc.local
- ...
- (cd /opt/thingplus/gateway; ./thingplus.sh start)
- (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js)
+    ```bash
+    @shell:$ nano /etc/rc.local
+    ...
+    (cd /opt/thingplus/gateway; ./thingplus.sh start)
+    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js)
 
- exit 0
- ```
+    exit 0
+    ```
+
+- Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
 <br/>
 12) Click the `Register Gateway`button.
