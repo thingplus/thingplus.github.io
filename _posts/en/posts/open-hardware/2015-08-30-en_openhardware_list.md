@@ -19,8 +19,9 @@ Open Hardware List
 ### 2. Beagle Board
 - Beaglebone Black, Beaglebone Green
 - Sensor Kit
-  - [Grove Starter Kit for BeagleBone Green (**Including I2C Hub & 8 Sensors**)](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
+  - [Grove Starter Kit for BeagleBone Green (**Including I2C Hub, ADC and 8 Sensors**)](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
   - [Grove I2C Hub Only](http://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html)
+  - [Grove I2C ADC Only](http://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html)
   - [Available Sensor List](#available-sensor-list-bbg)
 - [Guide link](http://support.thingplus.net/en/open-hardware/bbb-user-guide.html)
 
@@ -43,8 +44,8 @@ Open Hardware List
  - [Temperature and Humidity Sensor](http://www.seeedstudio.com/depot/Grove-TempHumi-Sensor-p-745.html)
  - [Ultrasonic Ranger](http://www.seeedstudio.com/depot/Grove-Ultrasonic-Ranger-p-960.html)
  - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
- - [Red](http://www.seeedstudio.com/depot/Grove-Red-LED-p-1142.html) / [Green](http://www.seeedstudio.com/depot/Grove-Green-LED-p-1144.html) / [Blue](http://www.seeedstudio.com/depot/Grove-Blue-LED-p-1139.html) LED
- - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Backlight-p-1643.html)
+ - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
+ - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
  - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
 
 <div id='available-sensor-list-bbg'></div>

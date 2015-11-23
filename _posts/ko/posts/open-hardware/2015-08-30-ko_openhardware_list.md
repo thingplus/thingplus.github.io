@@ -19,8 +19,9 @@ permalink: /ko/open-hardware/openhardware-list.html
 ### 2. 비글보드
 - 비글본 블랙, 그린 지원
 - 센서 구입경로
- - [비글본그린 Grove 스타터 센서 키트 (**허브 및 8종 센서 포함**)](http://www.icbanq.com/P005716600)
+ - [비글본그린 Grove 스타터 센서 키트 (**I2C Hub, ADC 및 8종 센서 포함**)](http://www.icbanq.com/P005716600)
  - [비글본그린 Grove I2C Hub 별도 구매](http://www.icbanq.com/P005719742/S)
+ - [비글본그린 Grove I2C ADC 별도 구매](http://www.icbanq.com/P005716571)
  - [지원 센서 목록 바로가기](#available-sensor-list-bbg)
 - [연동가이드 바로가기](http://support.thingplus.net/ko/open-hardware/bbb-user-guide.html)
 
@@ -40,10 +41,10 @@ permalink: /ko/open-hardware/openhardware-list.html
  - [조도 센서 (Light Sensor)](http://www.icbanq.com/P005700527/S)
  - [소리 센서 (Sound Sensor)](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
  - [회전각 센서 (Rotary Angle Sensor)](http://www.icbanq.com/P005604574/S)
- - [온도/습도 센서 (Temperature and Humidity Sensor)](http://www.seeedstudio.com/depot/Grove-TempHumi-Sensor-p-745.html)
+ - [온도/습도 센서 (Temperature and Humidity Sensor)](http://www.icbanq.com/P005700533/S)
  - [초음파 센서 (Ultrasonic Ranger)](http://www.icbanq.com/P005700488/S)
  - [버저 (Buzzer)](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
- - LED ([Red](http://www.icbanq.com/P005604554/S) / [Green](http://www.icbanq.com/P005604541/S) / [Blue](http://www.icbanq.com/P005604533/S) LED)
+ - [LED](http://www.icbanq.com/P005604557/S)
  - [LCD (LCD RGB Backlight)](http://www.icbanq.com/P005604576/S)
  - [파워 릴레이 (Relay)](http://www.icbanq.com/P005604584/S)
 
