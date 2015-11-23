@@ -161,7 +161,24 @@
                   {% endif %}
                 {% endfor %}
                 </ul>
-              </li>            
+              </li>    
+              <!-- FAQ  -->
+              <li><a href="#">{{ site.data.i18n[page.lang].submenu_help }}</a>
+                <ul>
+                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% for post in posts %} 
+                  {% if post.title != 'index' and post.tags contains 'help' %} 
+                    {% assign current = nil %} 
+                    {% if page.url contains post.url %} 
+                      {% assign current = 'active' %} 
+                    {% endif %}
+                    <li data-section="{{ post.url }}" class="{{ current }} lang">
+                      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+              </li>                 
             </ul>      
           </div>
         </div>

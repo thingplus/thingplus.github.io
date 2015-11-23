@@ -4,6 +4,7 @@ ko:
   submenu_open-hardware: "오픈 하드웨어"
   submenu_rest-api: "REST API"
   submenu_support: "SUPPORT"
+  submenu_help: "HELP"
   email_contact: "이메일 문의"
   go_thingplus: "Thing+ 바로가기"
 en:
@@ -12,5 +13,6 @@ en:
   submenu_open-hardware: "Open Hardware "
   submenu_rest-api: "REST API"
   submenu_support: "SUPPORT"
+  submenu_help: "HELP"
   email_contact: "Feedback"
   go_thingplus: "Go Thing+"
