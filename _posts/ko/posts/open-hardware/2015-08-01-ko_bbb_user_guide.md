@@ -5,7 +5,7 @@ published: true
 permalink: /ko/open-hardware/bbb-user-guide.html
 ---
 
-Thing+ 연동가이드(비글본그린)
+Thing+ 연동가이드(비글본 그린)
 
 <br/>
 #### 1. 환경 설정
