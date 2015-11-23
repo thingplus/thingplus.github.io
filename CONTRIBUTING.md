@@ -33,13 +33,13 @@ redcarpet:
 
  - see [참고글](http://stackoverflow.com/questions/19483975/jekyll-on-github-pages-any-way-to-add-footnotes-in-markdown)
 
+<div id='jekyll-installation'></div>
 ## 글쓰기 환경
 
  - http://jekyllrb.com/docs/installation/ 에서 필요한 것 설치.
  ```
-  $ sudo brew install ruby
-  $ sudo gem install jekyll
-  $ sudo gem install jekyll-sitemap
+  $ brew install ruby
+  $ gem install jekyll -v '2.5.3'
  ```
 
  - repo 꺼내고,
