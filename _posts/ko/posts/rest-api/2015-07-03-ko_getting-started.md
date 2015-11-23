@@ -210,7 +210,7 @@ Getting Started with the Thing+ REST API
 
 ## Step 4. Code Samples
 
-> To be updated
+- [Sample apps](/ko/rest-api/api-samples.html)
 
 
 ---
