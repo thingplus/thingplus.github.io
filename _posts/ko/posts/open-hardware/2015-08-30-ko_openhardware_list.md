@@ -12,9 +12,8 @@ permalink: /ko/open-hardware/openhardware-list.html
 - 센서 구입경로
  - [라즈베리파이 GrovePi+ 센서 키트 (**쉴드 및 10종 센서 포함**)](http://www.icbanq.com/P005700239)
  - [라즈베리파이 GrovePi+ 쉴드 별도 구매](http://www.icbanq.com/P005700248/S)
- - [Grove 센서 리스트](http://www.icbanq.com/shop/product_list.asp?catg_code=101141150108)
+ - [지원 센서 목록 바로가기](#available-sensor-list-pi)
 - [연동가이드 바로가기](http://support.thingplus.net/ko/open-hardware/raspberry-pi-user-guide.html)
-- [지원 센서 목록 바로가기](#available-sensor-list-pi)
 
 <br/>
 ### 2. 비글보드
@@ -22,9 +21,8 @@ permalink: /ko/open-hardware/openhardware-list.html
 - 센서 구입경로
  - [비글본그린 Grove 스타터 센서 키트 (**허브 및 8종 센서 포함**)](http://www.icbanq.com/P005716600)
  - [비글본그린 Grove I2C Hub 별도 구매](http://www.icbanq.com/P005719742/S)
- - [Grove 센서 리스트](http://www.icbanq.com/shop/product_list.asp?catg_code=101141150108)
+ - [지원 센서 목록 바로가기](#available-sensor-list-bbg)
 - [연동가이드 바로가기](http://support.thingplus.net/ko/open-hardware/bbb-user-guide.html)
-- [지원 센서 목록 바로가기](#available-sensor-list-bbg)
 
 <br/>
 ### 3. 추가 예정

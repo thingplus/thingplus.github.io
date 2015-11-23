@@ -12,9 +12,8 @@ Open Hardware List
 - Sensor Kit
   - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-p-2240.html)
   - [GrovePi+ Only](http://www.seeedstudio.com/depot/GrovePi-p-2241.html)
-  - [Grove Sensor List](http://www.seeedstudio.com/depot/category_products?themes_id=1417)
+  - [Available Sensor List](#available-sensor-list-pi)
 - [Guide link](http://support.thingplus.net/en/open-hardware/raspberry-pi-user-guide.html)
-- [Available Sensor List](#available-sensor-list-pi)
 
 <br/>
 ### 2. Beagle Board
@@ -22,9 +21,8 @@ Open Hardware List
 - Sensor Kit
   - [Grove Starter Kit for BeagleBone Green (**Including I2C Hub & 8 Sensors**)](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
   - [Grove I2C Hub Only](http://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html)
-  - [Grove Sensor List](http://www.seeedstudio.com/depot/category_products?themes_id=1417)
+  - [Available Sensor List](#available-sensor-list-bbg)
 - [Guide link](http://support.thingplus.net/en/open-hardware/bbb-user-guide.html)
-- [Available Sensor List](#available-sensor-list-bbg)
 
 <br/>
 ### 3. Coming soon
