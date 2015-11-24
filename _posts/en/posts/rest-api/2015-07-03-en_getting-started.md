@@ -16,7 +16,7 @@ Getting Started with the Thing+ REST API
 
 ### Step 0-2
   - Hardware installation is required
-    - [Korean only] <a href="http://support.thingplus.net/download/doc/ThingPlus_Guide_ko.pdf" target="_blank">Thing+ 연동가이드(BeagleBone Black)</a>
+    - [OpenHardware List](/en/open-hardware/openhardware-list.html)
 
 ## Step 1. Prerequisite
 
