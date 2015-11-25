@@ -8,7 +8,7 @@ permalink: /en/rest-api/getting-started.html
 Getting Started with the Thing+ REST API
 
 ## Step 0. Thing+ Service registration & Hardware installation
-  - <a href="https://www.thingplus.net" target="_blank">https://www.thingplus.net</a>
+  - <a href="https://www.thingplus.net" target="_blank">Thing+ Portal</a>
 
 ### Step 0-1
   - Thing+ service registration is required
