@@ -46,7 +46,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-pi-setting-seventh'></div>
 7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
 
-   - When you can NOT get the IP Address of your device, please refer the [`Troubleshooting`](#id-pi-troubleshooting) section.
+   - When you can NOT get the IP Address of your device, please refer the [`Troubleshooting`](/en/help/troubleshooting.html) section.
 
    - ID: **pi**
    - Password: **raspberry**
@@ -219,33 +219,3 @@ Thing+ Integragtion Guide for Raspberry Pi
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
 
 --------------------
-<div id='id-pi-troubleshooting'></div>
-### Troubleshooting
-
-* When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it:
-
- - It takes few minutes to register sensors and gateways, so please Refresh the Sensor page after 1~2 minutes.
- - If you still can NOT find them after few minutes, please Connect to your Raspberry Pi, and Try run below commands.
-
-    ```
-    @PC:$ ssh pi@<IP Address>
-    @Pi2:$ cd /opt/thingplus/gateway
-    @Pi2:$ ./thingplus.sh restart
-    @Pi2:$ cd log
-    @Pi2:$ tail -F -n 300 thingplus.log
-    ```
-
-<br/>
-
-* When you can NOT find some sensors:
-
-  - Unregistered snesors will be added automatically, when you reboot your Raspberry Pi.
-
-<br/>
-
-* Wehn you can NOT know the IP Address of your Raspberry Pi:
-
-  - Install `Fing` App on your mobile phone([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
-  - Connect to WiFi network of your router that your Raspberry Pi is connected.
-  - Run `Fing`. You can sell all the devices with the IP Adresses in the same Network.
-  - You can find the name, `raspberrypi`. It is the IP Address of your Raspberry, and you can connect to your device using it.

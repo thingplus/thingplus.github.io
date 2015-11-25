@@ -46,7 +46,7 @@ Thing+ 연동가이드(라즈베리파이)
 <div id='id-pi-setting-seventh'></div>
 7) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 접한다
 
-   - IP address를 찾기 힘들 경우 [`문제 해결 방법`](#id-pi-troubleshooting)을 참고한다.
+   - IP address를 찾기 힘들 경우 [`문제 해결 방법`](/ko/help/troubleshooting.html)을 참고한다.
 
    - 아이디: **pi**
    - 비밀번호: **raspberry**
@@ -219,33 +219,75 @@ Thing+ 연동가이드(라즈베리파이)
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
 --------------------
-<div id='id-pi-troubleshooting'></div>
-### 문제 해결 방법
 
-* `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우
+### WiFi 동글 설정
 
-  - 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
-  - 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널에서 라즈베리파이에 접속하여 아래 명령을 실행하여 내용을 확인한다.
+_본 가이드는 **TP-LINK TL-WN727N**을 기준으로 작성되었으나, 다른 WiFi 동글도 비슷한 과정으로 진행하면 됩니다._
 
-    ```
-    @PC:$ ssh pi@<IP Address>
-    @Pi2:$ cd /opt/thingplus/gateway
-    @Pi2:$ ./thingplus.sh restart
-    @Pi2:$ cd log
-    @Pi2:$ tail -F -n 300 thingplus.log
-    ```
+- 본 문서에서 테스트한 WiFi 동글 : [TP-LINK TL-WN727N](http://www.tp-link.co.kr/products/details/?model=TL-WN727N)
+
+- 라즈베리파이/비글본 그린에서 지원하는 WiFi 동글 목록은 아래 URL을 참조하세요.
+  - [라즈베리파이 지원 WiFi 동글 리스트](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
+  - WiFi 공유기가 5GHz WiFi 채널을 지원한다면 WiFi 동글이 해당 스펙을 지원하는지 확인이 필요합니다.
+
+> 주의: WiFi 동글을 장치에 연결한 후 반드시 재시작해야 한다.
 
 <br/>
-
-* 한 개 이상의 센서가 등록되지 않았을 경우
-
- - 게이트웨이를 재시작하면 자동적으로 미등록 센서를 등록한다.
+#### 1. WiFi 동글 설정 방법
 
 <br/>
+1) WiFi 동글을 장치의 USB 포트에 꽂은 후, 장치를 재시작한다.
 
-* 라즈베리파이의 IP address를 확인하는 방법
+<br/>
+2) 터미널/Putty를 사용하여 장치에 접속한다.
 
- - 스마트폰의 app store에서 `Fing` app을 설치한다. ([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
-  - 라즈베리파이가 연결된 공유기에 WiFi를 이용하여 스마트폰을 연결한다.
-  - `Fing`을 실행하면 공유기에 연결되어 있는 장비의 IP address의 목록이 표시된다.
-  - 이 중 `raspberrypi`라는 이름의 장비의 IP address로 `ssh`를 이용하여 접속하면 된다.
+<br/>
+3) 터미널에서 `WiFi 인터페이스명`을 확인한다.
+
+```bash
+@shell:$ iwconfig
+wlan0
+
+lo        no wireless extensions.
+
+eth0      no wireless extensions.
+
+usb0      no wireless extensions.
+```
+
+- 위의 경우, WiFI 인터페이스명은 `wlan0`이다. WiFi 동글에 따라 `wlan#`나 `ra#` (#은 숫자를 의미함) 등으로 이름이 달라질 수 있다.
+
+<br/>
+4) 네트워크 설정
+
+a) nano 에디터를 이용하여, `/etc/network/interfaces` 파일을 연다.
+
+```bash
+@shell:$ sudo nano /etc/network/interfaces
+```
+
+<br/>
+b) `auto wlan0` 단락의 `wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf`줄 아랫부분에 WiFi SSID와 비밀번호를 설정한다.
+
+- 여기서 `wlan0`은 위에서 확인한 `WiFi 인터페이스명`을 말한다.
+
+```bash
+...
+
+auto wlan0                    # WiFi 인터페이스 명이 'ra0'일 경우,
+allow-hotplug wlan0           # 단락 내의 'wlan0'을 모두 'ra0' 으로 변경한다.
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+  wpa-ssid "WiFi SSID"        # WiFi SSID와 WiFi password를 사용자의 SSID와
+  wpa-psk  "WiFI password"    # password로 입력한다.
+
+...
+
+```
+
+ - 파일을 수정한 후, `CTRL-O` and `Enter` 키를 눌러 저장하고, `CTRL-X` 키를 눌러 종료한다.
+
+<br/>
+5) 장치를 재시작한다.
+
+> 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
