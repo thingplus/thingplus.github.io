@@ -30,3 +30,36 @@ permalink: /en/help/troubleshooting.html
   - Run `Fing`. You can sell all the devices with the IP Adresses in the same Network.
     - Case of Raspberry Pi : You can find the name, `raspberrypi`. It is the IP Address of your Device, and you can connect to your device using it.
     - Case of BeagleBoard : You can find the name, `beaglebone`. It is the IP Address of your Device, and you can connect to your device using it.
+
+<br/>
+### Even though your device is registered at Thing+ Portal and turned on, Status at the Portal is `OFF`:
+
+- Connect to your Device using Terminal/Putty, and please Enter the below command to check system clock of your Device.
+
+- Please comapare the System Clock with UTC Time[(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx) whether both times are same or not.
+
+    ```bash
+    @shell:$ date
+    Thu 26 Nov 00:00:00 UTC 2015    #Display current system Clock
+    ```
+
+- If both times are not same, please Update the system clock of your Device.
+
+    ```bash
+    @shell:$ ntpdate -u ntp.ubuntu.com
+    @shell:$ hwclock -w -u
+    ```
+
+- If you failed to update the time, Update it directly.
+
+  - UTC Time zone [(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): ex) 2015/01/01 00:00:00 => 2015-01-01 00:00:00
+
+        ```bash
+        @shell:$ date --set '20XX-XX-XX XX:XX:XX'
+        ```
+
+- Reboot your Device.
+
+    ```bash
+    @shell:$ reboot
+    ```
