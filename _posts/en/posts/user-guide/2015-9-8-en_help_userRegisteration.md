@@ -58,6 +58,8 @@ User guide for a progress as hardware synchronization and user sign up.
 ---
 <div id='id-gateway'></div>
 ### Gateway Registration
+_If you DO NOT have any devices, you can register a virtual gateway at [Thing+ Portal](https://www.thingplus.net/) by using [Sensor Simulator](/en/open-hardware/sensor-simulator-user-guide.html)._
+
 <br>
 
 #### BeagleBone Black and Raspberry Pi 2

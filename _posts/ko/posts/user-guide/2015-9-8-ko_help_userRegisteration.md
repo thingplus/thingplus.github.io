@@ -58,6 +58,8 @@ permalink: /ko/user-guide/registration.html
 ---
 <div id='id-gateway'></div>
 ### 게이트웨이 등록
+_아직 보유한 게이트웨장비가 없다면, [Thing+ Portal](https://www.thingplus.net/)의 [센서 시뮬레이터](/ko/open-hardware/sensor-simulator-user-guide.html)를 사용해서 가상 게이트웨이를 등록하실 수 있습니다._
+
 <br>
 
 #### BeagleBone Green & Raspberry Pi 2 

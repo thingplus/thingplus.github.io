@@ -7,13 +7,17 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 오픈하드웨어 지원 리스트
 
+### 0. 센서 시뮬레이터
+- [연동가이드 바로가기](/ko/open-hardware/sensor-simulator-user-guide.html)
+
+<br/>
 ### 1. 라즈베리파이
 - 라즈베리파이 I, II 지원
 - 센서 구입경로
  - [라즈베리파이 GrovePi+ 센서 키트 (**쉴드 및 10종 센서 포함**)](http://www.icbanq.com/P005700239)
  - [라즈베리파이 GrovePi+ 쉴드 별도 구매](http://www.icbanq.com/P005700248/S)
  - [지원 센서 목록 바로가기](#available-sensor-list-pi)
-- [연동가이드 바로가기](http://support.thingplus.net/ko/open-hardware/raspberry-pi-user-guide.html)
+- [연동가이드 바로가기](/ko/open-hardware/raspberry-pi-user-guide.html)
 
 <br/>
 ### 2. 비글보드
@@ -23,7 +27,7 @@ permalink: /ko/open-hardware/openhardware-list.html
  - [비글본그린 Grove I2C Hub 별도 구매](http://www.icbanq.com/P005719742/S)
  - [비글본그린 Grove I2C ADC 별도 구매](http://www.icbanq.com/P005716571)
  - [지원 센서 목록 바로가기](#available-sensor-list-bbg)
-- [연동가이드 바로가기](http://support.thingplus.net/ko/open-hardware/bbb-user-guide.html)
+- [연동가이드 바로가기](/ko/open-hardware/bbb-user-guide.html)
 
 <br/>
 ### 3. 추가 예정
