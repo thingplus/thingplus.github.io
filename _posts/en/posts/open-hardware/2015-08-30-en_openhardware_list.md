@@ -7,13 +7,17 @@ permalink: /en/open-hardware/openhardware-list.html
 
 Open Hardware List
 
+### 0. Sensor Simulator
+- [Guide Link](/en/open-hardware/sensor-simulator-user-guide.html)
+
+<br/>
 ### 1. Raspberry Pi
 - Raspberry Pi I, II
 - Sensor Kit
   - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-p-2240.html)
   - [GrovePi+ Only](http://www.seeedstudio.com/depot/GrovePi-p-2241.html)
   - [Available Sensor List](#available-sensor-list-pi)
-- [Guide link](http://support.thingplus.net/en/open-hardware/raspberry-pi-user-guide.html)
+- [Guide link](/en/open-hardware/raspberry-pi-user-guide.html)
 
 <br/>
 ### 2. Beagle Board
@@ -23,7 +27,7 @@ Open Hardware List
   - [Grove I2C Hub Only](http://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html)
   - [Grove I2C ADC Only](http://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html)
   - [Available Sensor List](#available-sensor-list-bbg)
-- [Guide link](http://support.thingplus.net/en/open-hardware/bbb-user-guide.html)
+- [Guide link](/en/open-hardware/bbb-user-guide.html)
 
 <br/>
 ### 3. Coming soon
