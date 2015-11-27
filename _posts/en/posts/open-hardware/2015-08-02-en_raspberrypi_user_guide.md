@@ -46,7 +46,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-pi-setting-seventh'></div>
 7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
 
-   - When you can NOT get the IP Address of your device, please refer the [`Troubleshooting`](/en/help/troubleshooting.html) section.
+   - When you can NOT get the IP Address of your device, please refer the [`Troubleshooting`](en/help/troubleshooting.html) section.
 
    - ID: **pi**
    - Password: **raspberry**
