@@ -18,8 +18,8 @@ Thing+ 연동가이드(라즈베리파이)
 <br/>
 2) 아래의 다운로드 페이지에서 Raspbian image를 다운로드 한다.
 
-   - https://www.raspberrypi.org/downloads/raspbian/
-   - `RASPBIAN JESSIE` 이미지 권장
+   - Raspbian Image 다운로드 링크 - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
+   - `2015-09-24-RASPBIAN JESSIE` 이미지 권장
 
 <br/>
 3) 아래의 웹페이지를 참조하여 Micro SD card에 다운로드 받은 이미지로 OS를 설치한다.

@@ -18,8 +18,8 @@ Thing+ Integragtion Guide for Raspberry Pi
 <br/>
 2) Download Raspbian image from below link.
 
-   - https://www.raspberrypi.org/downloads/raspbian/
-   - We recommend `RASPBIAN JESSIE` version one.
+   - Raspbian Image Download Link - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
+   - We recommend `2015-09-24-RASPBIAN JESSIE` version one.
 
 <br/>
 3) Intall OS on the micro SD card with the donwloaded image. Please refer the below link for more deails about the OS installation.
