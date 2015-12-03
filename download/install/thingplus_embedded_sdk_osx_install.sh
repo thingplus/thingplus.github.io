@@ -52,7 +52,7 @@ thisplus_openhardware_arduino_install () {
   ARDUINO_SOURCE_DIR=openhardware/arduino/grove-starter-kit/
 
   cd $INSTALL_DIR/$ARDUINO_SOURCE_DIR;
-  npm install
+  $NODE_INSTALL_PREFIX/bin/npm install
   cd -
 }
 
@@ -65,7 +65,7 @@ if [ ! -d $SDK_DIR ]; then
 fi
 
 thisplus_openhardware_sdk_install $SDK_DIR
-thisplus_openhardware_arduino_install $SDK_DIR
 node_install
+thisplus_openhardware_arduino_install $SDK_DIR
 
 echo 'Installation is finished'
