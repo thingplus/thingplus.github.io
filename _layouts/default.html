@@ -116,7 +116,7 @@
                 <ul>
                 {% assign posts = site.posts | where:"lang", page.lang %} 
                 {% for post in posts %} 
-                  {% if post.title != 'index' and post.tags contains 'user-guide' %} 
+                  {% if post.title != 'ThingPlus' and post.tags contains 'user-guide' %} 
                     {% assign current = nil %} 
                     {% if page.url contains post.url %} 
                       {% assign current = 'active' %} 
@@ -133,7 +133,7 @@
                 <ul>
                 {% assign posts = site.posts | where:"lang", page.lang %} 
                 {% for post in posts %} 
-                  {% if post.title != 'index' and post.tags contains 'open-hardware' %} 
+                  {% if post.title != 'ThingPlus' and post.tags contains 'open-hardware' %} 
                     {% assign current = nil %} 
                     {% if page.url contains post.url %} 
                       {% assign current = 'active' %} 
@@ -150,7 +150,7 @@
                 <ul>
                 {% assign posts = site.posts | where:"lang", page.lang %} 
                 {% for post in posts %} 
-                  {% if post.title != 'index' and post.tags contains 'rest-api' %} 
+                  {% if post.title != 'ThingPlus' and post.tags contains 'rest-api' %} 
                     {% assign current = nil %} 
                     {% if page.url contains post.url %} 
                       {% assign current = 'active' %} 
@@ -167,7 +167,7 @@
                 <ul>
                 {% assign posts = site.posts | where:"lang", page.lang %} 
                 {% for post in posts %} 
-                  {% if post.title != 'index' and post.tags contains 'help' %} 
+                  {% if post.title != 'ThingPlus' and post.tags contains 'help' %} 
                     {% assign current = nil %} 
                     {% if page.url contains post.url %} 
                       {% assign current = 'active' %} 
