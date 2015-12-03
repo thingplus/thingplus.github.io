@@ -59,7 +59,6 @@ thisplus_openhardware_arduino_install () {
 ########## START ##########
 
 thingplus_install
-node_install
 
 if [ ! -d $SDK_DIR ]; then
   mkdir -p $SDK_DIR
@@ -67,5 +66,6 @@ fi
 
 thisplus_openhardware_sdk_install $SDK_DIR
 thisplus_openhardware_arduino_install $SDK_DIR
+node_install
 
 echo 'Installation is finished'
