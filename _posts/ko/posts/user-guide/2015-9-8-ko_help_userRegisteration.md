@@ -152,8 +152,9 @@ xx:xx:xx:xx:xx:xx
     ```bash
     @shell:$ sudo nano /etc/rc.local
     ...
-    (cd /opt/thingplus/gateway; ./thingplus.sh start)
     (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js)
+    (cd /opt/thingplus/gateway; ./thingplus.sh restart)
+    
 
     exit 0
     ```
@@ -163,8 +164,8 @@ xx:xx:xx:xx:xx:xx
     ```bash
     @shell:$ nano /etc/rc.local
     ...
-    (cd /opt/thingplus/gateway; ./thingplus.sh start)
     (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js)
+    (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
 
     exit 0
     ```
