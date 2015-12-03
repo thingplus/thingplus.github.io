@@ -5,6 +5,9 @@ GATEWAY_DIR=./gateway
 # Destination directory for Open Hardware SDK
 SDK_DIR=.
 
+NODE_VERSION=0.10.16
+NODE_INSTALL_PREFIX=$(PWD)/./openhardware/arduino/node/
+
 MODEL="osx"
 #RSYNC_SERVER="rsync.thingplus.net"
 RSYNC_SERVER="devrsync.thingbine.com"
@@ -32,6 +35,13 @@ thingplus_install () {
   rm ./config
 }
 
+node_install() {
+  wget http://support.thingplus.net/download/install/thingplus_embedded_node_install.sh
+  chmod +x ./thingplus_embedded_node_install.sh
+  ./thingplus_embedded_node_install.sh -nv $NODE_VERSION -p $NODE_INSTALL_PREFIX
+  rm ./thingplus_embedded_node_install.sh
+}
+
 thisplus_openhardware_sdk_install () {
   INSTALL_DIR=$1
   git clone https://github.com/daliworks/openhardware.git $INSTALL_DIR/openhardware
@@ -49,6 +59,7 @@ thisplus_openhardware_arduino_install () {
 ########## START ##########
 
 thingplus_install
+node_install
 
 if [ ! -d $SDK_DIR ]; then
   mkdir -p $SDK_DIR
