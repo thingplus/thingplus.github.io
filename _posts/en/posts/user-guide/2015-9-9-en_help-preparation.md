@@ -19,7 +19,7 @@ Guide for Thing+ service.
 <br>
 ![](/assets/1_thingplus.png)
 #### What is Thing+?
-  * Thing+ provide user own IoT service by cloud.
+  * ThingPlus provide user own IoT(Internet of Things) service by cloud.
   * User own IoT service by sign in Thing+. 
   * Install IoT service by synchronization between Thing+ and qualified hardware.  
   * Cloud Eco environment such as smart home, smart farm, smart energy and so on.
