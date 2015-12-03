@@ -41,20 +41,20 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 <div id='available-sensor-list-pi'></div>
 - 라즈베리파이
- - [버튼 센서 (Button Sensor)](http://www.icbanq.com/P005604580/S)
- - [조도 센서 (Light Sensor)](http://www.icbanq.com/P005700527/S)
- - [소리 센서 (Sound Sensor)](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
- - [회전각 센서 (Rotary Angle Sensor)](http://www.icbanq.com/P005604574/S)
- - [온도/습도 센서 (Temperature and Humidity Sensor)](http://www.icbanq.com/P005700533/S)
- - [초음파 센서 (Ultrasonic Ranger)](http://www.icbanq.com/P005700488/S)
- - [버저 (Buzzer)](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
- - [LED](http://www.icbanq.com/P005604557/S)
- - [LCD (LCD RGB Backlight)](http://www.icbanq.com/P005604576/S)
- - [파워 릴레이 (Relay)](http://www.icbanq.com/P005604584/S)
+ - [버튼 센서 (Button Sensor)](http://www.icbanq.com/P005604580)
+ - [조도 센서 (Light Sensor)](http://www.icbanq.com/P005700527)
+ - [소리 센서 (Sound Sensor)](http://www.icbanq.com/P005713936)
+ - [회전각 센서 (Rotary Angle Sensor)](http://www.icbanq.com/P005604574)
+ - [온도/습도 센서 (Temperature and Humidity Sensor)](http://www.icbanq.com/P005700533)
+ - [초음파 센서 (Ultrasonic Ranger)](http://www.icbanq.com/P005700488)
+ - [버저 (Buzzer)](http://www.icbanq.com/P005604566)
+ - [LED](http://www.icbanq.com/P005604557)
+ - [LCD (LCD RGB Backlight)](http://www.icbanq.com/P005604576)
+ - [파워 릴레이 (Relay)](http://www.icbanq.com/P005604584)
 
 <div id='available-sensor-list-bbg'></div>
 - 비글보드
- - [버튼 센서 (Button Sensor)](http://www.icbanq.com/P005604580/S)
- - [3축 센서 (3-Axis Digital Accelerometer)](http://www.icbanq.com/P005700487/S)
- - [RGB LED (Chainable RGB LED)](http://www.icbanq.com/P005604536/S)
- - [OLED 디스플레이 (OLED Display)](http://www.icbanq.com/P005700456/S)
+ - [버튼 센서 (Button Sensor)](http://www.icbanq.com/P005604580)
+ - [3축 센서 (3-Axis Digital Accelerometer)](http://www.icbanq.com/P005700487)
+ - [RGB LED (Chainable RGB LED)](http://www.icbanq.com/P005604536)
+ - [OLED 디스플레이 (OLED Display)](http://www.icbanq.com/P005700456)
