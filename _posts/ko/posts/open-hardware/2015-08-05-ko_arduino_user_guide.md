@@ -25,38 +25,38 @@ Thing+ 연동가이드(아두이노)
 
 <br/><br/>
 #### 2. 아두이노 펌웨어 설치
-1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치합니다.
+1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치한다.
 
    - 다운로드 링크 - https://www.arduino.cc/en/Main/Software
 
 <br/>
-2) 아누이노 IDE를 실행합니다.
+2) 아누이노 IDE를 실행한다.
 
 
 <br/>
-3) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다.
+3) 아두이노 IDE에서 아두이노 포트를 USB로 선택한다.
 
    - Tools -> Port -> Arduino/Genuino Uno
 ![Arduino Select Port](/assets/arduino_ide_select_port.png)
 
 <br/>
-4) 아두이노에 다운로드 할 펌웨어를 선택합니다.
+4) 아두이노에 다운로드 할 펌웨어를 선택한다.
 
    - File -> Examples -> Firmata -> StandardFirmata
 ![Arduino Select Firmware](/assets/arduino_ide_select_firmare.png)
 
 <br/>
-5) 펌웨어를 빌드합니다.
+5) 펌웨어를 빌드한다.
 
 ![Arduino Verify](/assets/arduino_ide_verify.png)
 
 <br/>
-6) 펌웨어를 아두이노에 다운로드 합니다.
+6) 펌웨어를 아두이노에 다운로드한다.
 
 ![Arduino Download](/assets/arduino_ide_upload.png)
 
 <br/>
-7) 펌웨어가 정상적으로 다운로드 되면 IDE 하단에 아래와 같은 메세지가 나옵니다.
+7) 펌웨어가 정상적으로 다운로드 되면 IDE 하단에 아래와 같은 메세지가 나온다.
 
 ![Arduino Download Success](/assets/arduino_ide_upload_done.png)
 
