@@ -118,7 +118,7 @@ xx:xx:xx:xx:xx:xx
 - 비글본그린의 경우: `BeagleBone Green - Developer`
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
 
-- 아두이노의 경우: `Arduino, PC - Developer`
+- 아두이노의 경우: `Edison kit for Arduino`
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
 
 <br/>
@@ -156,9 +156,9 @@ xx:xx:xx:xx:xx:xx
 - 아두이노의 경우 (**PC**)
 
     ```bash
-    @shell:$ cd $HOMEthingplus/openhardware/arduino/grove-starter-kit
+    @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
     @shell:$ ./thingplus_device.sh start
-    @shell:$ cd $HOMEthingplus/gateway
+    @shell:$ cd $HOME/thingplus/gateway
     @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
     ```
 
@@ -227,4 +227,4 @@ xx:xx:xx:xx:xx:xx
   - 센서는 게이트웨이에 의해 자동적으로 등록되며, 게이트웨이 등록 후 1분 이내에  최종 등록 완료된다.
   - 센서값은 게이트웨이에서 수집되고 주기적으로 서버에 전송하기 때문에 센서값을 서비스 사이트에서 볼 수 있기까지 몇 분이 소요된다.
 
-elbr/>
+

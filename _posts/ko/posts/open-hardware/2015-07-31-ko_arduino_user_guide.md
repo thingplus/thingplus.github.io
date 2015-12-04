@@ -4,30 +4,57 @@ tags: "open-hardware"
 published: true
 permalink: /ko/open-hardware/arduino-user-guide.html
 ---
+<style type="text/css">
+.ledtip { font:Verdana, Geneva, sans-serif; font-size:12px; font-weight:bold; color:#666; position:relative;  
+
+
+}
+.ledtip:hover:after{
+ content:attr(data-tooltip);
+ padding:10px;
+ width: 200px;
+ height: 200px;
+
+ background-image: url('../../../../assets/led.png');
+ display:block;
+ position:relative; top:20px; 
+ white-space:nowrap;
+}
+ledtip:hover:before{
+ display:block;
+ content:"";
+ position:absolute; top:15px; left:50px;
+ border-right:10px solid transparent; 
+ border-bottom:10px solid #333; 
+ border-left:10px solid transparent;  
+}
+</style>
 
 Thing+ 연동가이드(아두이노)
 
 <br/>
 #### 1. 아두이노 하드웨어 연결 
 
-0) [Grove Starter Kit for Arduino 구매 바로가기](https://www.icbanq.com/P005710113/S)
+0) <a href="https://www.icbanq.com/P005710113/S" target="_blank"> Grove Starter Kit for Arduino 구매 바로가기</a>
 
 <br/>
 1) 아두이노와 Grove Sensor Board를 연결한다.
 ![Arduino + Grove Starter kit](/assets/arduino_grove_board.png)
 
-2) Grove Sensor Board에 센서를 연결한다.
-![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 <br/>
-2) 아두이노에 USB Cable을 연결한다.
+2) Grove Sensor Board에 센서를 연결한다.<br/>
+  참고 : <a href="#" class="ledtip" data-tooltip="">LED의 극성</a>
+![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 
+<br/>
+3) 아두이노에 USB Cable을 PC와 연결한다.
 ![Arduino + USB Cable](/assets/arduino_usb.png)
 
 <br/><br/>
 #### 2. 아두이노 펌웨어 설치
 1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치한다.
 
-   - 다운로드 링크 - https://www.arduino.cc/en/Main/Software
+   - <a href="https://www.arduino.cc/en/Main/Software" target="_blank"> 다운로드 링크 </a>
 
 <br/>
 2) 아누이노 IDE를 실행한다.
@@ -81,7 +108,7 @@ Thing+ 연동가이드(아두이노)
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
     ```bash
-    @PC:$ chmod 755 thingplus_embedded_sdk_osc_install.sh
+    @PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
     @PC:$ ./thingplus_embedded_sdk_osx_install.sh
     ```
 
