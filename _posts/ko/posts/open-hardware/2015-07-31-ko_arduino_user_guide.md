@@ -6,7 +6,8 @@ permalink: /ko/open-hardware/arduino-user-guide.html
 ---
 
 Thing+ 연동가이드(아두이노)<br/>
-_현재는 Mac OS에서만 지원하고 있습니다._
+
+_현재는 `Mac OS`에서만 지원하고 있습니다._
 
 <br/>
 #### 1. 아두이노 하드웨어 연결 
