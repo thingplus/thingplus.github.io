@@ -44,6 +44,7 @@ Thing+ 연동가이드(아두이노)
 <br/>
 2) Grove Sensor Board에 센서를 연결한다.<br/>
   참고 : <a href="#" class="ledtip" data-tooltip="">LED의 극성</a>
+  
 ![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 
 <br/>
