@@ -5,6 +5,9 @@ published: true
 permalink: /ko/open-hardware/arduino-user-guide.html
 ---
 
+#### MAC OS만 지원하며 x86은 곧 지원 할 예정입니다.
+
+
 Thing+ 연동가이드(아두이노)
 
 <br/>
