@@ -77,7 +77,7 @@ _아직 라즈베리파이/비글본그린/아두이노에 **Thing+ Embedded 패
 @shell:$ cd /opt/thingplus/gateway/scripts
 ```
 
-- 아두이노의 경우 PC에서 이동
+- 아두이노의 경우 PC에서 이동 
 
 ```bash
 @shell:$ cd $HOME/thingplus/gateway/scripts
