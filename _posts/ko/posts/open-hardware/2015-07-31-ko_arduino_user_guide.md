@@ -5,7 +5,8 @@ published: true
 permalink: /ko/open-hardware/arduino-user-guide.html
 ---
 
-Thing+ 연동가이드(아두이노)
+Thing+ 연동가이드(아두이노)<br/>
+_현재는 Mac OS에서만 지원하고 있습니다._
 
 <br/>
 #### 1. 아두이노 하드웨어 연결 
@@ -19,7 +20,7 @@ Thing+ 연동가이드(아두이노)
 <br/>
 2) Grove Sensor Board에 센서를 연결한다.<br/>
   참고 : <a href="#" class="ledtip" data-tooltip="">LED의 극성</a>
-  
+
 ![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 
 <br/>

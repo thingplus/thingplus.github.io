@@ -219,3 +219,76 @@ Thing+ Integragtion Guide for Raspberry Pi
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
 
 --------------------
+
+### How to configure the Wifi Dongle
+
+_This docuement is based on **TP-LINK TL-WN727N** but you can refer this for other kinds of Wifi dongle_
+
+- The Wifi Dongle Model used for this Guide : [TP-LINK TL-WN727N](http://www.tp-link.co.kr/products/details/?model=TL-WN727N)
+
+- You can find out the list of Wifi Dongles supported by Raspberry Pi from the below URL
+  - [The list of Wifi Dongles supported by Raspberry Pi](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
+  - If your Wifi router can support the 5GHz Wifi Channel, your Wifi dongle should support the same spec
+
+> Remark: You should reboot your Raspberry Pi after you plug the Wifi dongle into the Raspberry Pi
+
+<br/>
+#### 1.  How to configure the Wifi Dongle
+
+<br/>
+1) reboot your Raspberry Pi after you plug the Wifi dongle into the Raspberry Pi
+
+<br/>
+2) Connect to your Raspberry Pi over SSH
+
+<br/>
+3) Check `Wifi Interface Name`
+
+```bash
+@shell:$ iwconfig
+wlan0
+
+lo        no wireless extensions.
+
+eth0      no wireless extensions.
+
+usb0      no wireless extensions.
+```
+
+- In this guide, The Wifi Interface Name is `wlan0`. The interface name can be different per each Wifi Dongle like `wlan#`or `ra#` (‘#’ stands for Number)
+
+<br/>
+4) Network Configuration
+
+a) open `/etc/network/interfaces` with nano editor
+
+```bash
+@shell:$ sudo nano /etc/network/interfaces
+```
+
+<br/>
+b) Configure the Wifi SSID and password at the next line of `wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf` in `auto wlan0` paragraph
+
+- `wlan0` is the `WiFi interface name`
+
+```bash
+...
+
+auto wlan0                    # If WiFi interface name is 'ra0',
+allow-hotplug wlan0           # Change 'wlan0' to 'ra0' in this paragraph
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+  wpa-ssid "WiFi SSID"        # Input your Wifi SSID Name 
+  wpa-psk  "WiFI password"    # Input your Wifi Password
+
+...
+
+```
+
+ - When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor.
+ 
+<br/>
+5) Reboot your device
+
+> Remark: Connection between your device and DC 5V Power Adaptor is required for using the Wifi Dongle because a Wifi Dongle consumes much more power than normal
+

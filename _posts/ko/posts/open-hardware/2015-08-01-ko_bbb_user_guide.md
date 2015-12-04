@@ -17,7 +17,8 @@ Thing+ 연동가이드(비글본그린)
 
    - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
    - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
-   - Putty 다운로드 링크 - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+   - ]Putty 다운로드 링크](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+   - [Putty 사용자 설명서](http://suhjin.tistory.com/37) 
 
 <br/>
 2) 비글본그린을 Ethernet(LAN 케이블), Power Cable을 연결한다.
@@ -153,7 +154,7 @@ Thing+ 연동가이드(비글본그린)
 
 --------------------
 
-### WiFi 동글 설정
+### [옵션] WiFi 동글 설정
 
 _본 가이드는 **NEXT-201N MINI**를 기준으로 작성되었으나, 다른 WiFi 동글도 비슷한 과정으로 진행하면 됩니다._
 
@@ -234,7 +235,7 @@ iface wlan0 inet dhcp         # 앞에 있는 #을 삭제한다. 'ra0'이면 'wl
 ----------------------------------
 ### 비글본그린 USB로 연결하기
 
-_Mac OS X El Capitan은 현재 드라이버 미지원(**2015-11-14 기준**)이기에 연결이 불가능 합니다._
+_Mac OS X El Capitan은 현재 드라이버 미지원(**2015-12-3 기준**)이기에 연결이 불가능 합니다._
 
 1) 아래 URL을 참조하여 비글본그린 드라이버를 설치한다.
 
