@@ -4,31 +4,6 @@ tags: "open-hardware"
 published: true
 permalink: /ko/open-hardware/arduino-user-guide.html
 ---
-<style type="text/css">
-.ledtip { font:Verdana, Geneva, sans-serif; font-size:12px; font-weight:bold; color:#666; position:relative;  
-
-
-}
-.ledtip:hover:after{
- content:attr(data-tooltip);
- padding:10px;
- width: 200px;
- height: 200px;
-
- background-image: url('../../../../assets/led.png');
- display:block;
- position:relative; top:20px; 
- white-space:nowrap;
-}
-ledtip:hover:before{
- display:block;
- content:"";
- position:absolute; top:15px; left:50px;
- border-right:10px solid transparent; 
- border-bottom:10px solid #333; 
- border-left:10px solid transparent;  
-}
-</style>
 
 Thing+ 연동가이드(아두이노)
 
