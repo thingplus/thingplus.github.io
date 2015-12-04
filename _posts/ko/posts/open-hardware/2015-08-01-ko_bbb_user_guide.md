@@ -17,7 +17,7 @@ Thing+ 연동가이드(비글본그린)
 
    - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
    - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
-   - ]Putty 다운로드 링크](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+   - [Putty 다운로드 링크](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
    - [Putty 사용자 설명서](http://suhjin.tistory.com/37) 
 
 <br/>
