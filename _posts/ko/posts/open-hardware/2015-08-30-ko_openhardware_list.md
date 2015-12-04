@@ -31,16 +31,15 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 <br/>
 ### 3. 아두이노
-- 아두이노 지원
+- 아두이노(우노, 오렌지보드 등) 지원
 - 센서 구입경로
- - [아두이노 Grove 스타터 센서 키](https://www.icbanq.com/P005710113/)
+ - [아두이노 Grove 스타터 센서 키트](https://www.icbanq.com/P005710113/)
  - [지원 센서 목록 바로가기](#available-sensor-list-arduino)
 - [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
 
 <br/>
 ### 4. 추가 예정
 - 에디슨
-- 엠베드
 
 <br/>
 ### 5. 지원 센서 목록

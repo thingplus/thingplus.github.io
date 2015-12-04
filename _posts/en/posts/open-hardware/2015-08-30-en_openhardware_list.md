@@ -30,10 +30,15 @@ Open Hardware List
 - [Guide link](/en/open-hardware/bbb-user-guide.html)
 
 <br/>
-### 3. Coming soon
-- Arduino
+### 3. Arudino 
+- Arduino compatible board(uno, orange board, etc)
+- Sensor kit
+  - [Grove - Starter Kit for Arduino](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
+- [Guide link(Korean version for now)](/ko/open-hardware/arduino-user-guide.html)
+
+<br/>
+### 4. Coming soon
 - Edison
-- Mbed
 
 <br/>
 ### 4. Available Sensor List
