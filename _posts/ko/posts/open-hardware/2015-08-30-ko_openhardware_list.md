@@ -30,13 +30,20 @@ permalink: /ko/open-hardware/openhardware-list.html
 - [연동가이드 바로가기](/ko/open-hardware/bbb-user-guide.html)
 
 <br/>
-### 3. 추가 예정
-- 아두이노
+### 3. 아두이노
+- 아두이노 지원
+- 센서 구입경로
+ - [아두이노 Grove 스타터 센서 키](https://www.icbanq.com/P005710113/)
+ - [지원 센서 목록 바로가기](#available-sensor-list-arduino)
+- [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
+
+<br/>
+### 4. 추가 예정
 - 에디슨
 - 엠베드
 
 <br/>
-### 4. 지원 센서 목록
+### 5. 지원 센서 목록
 - **센서는 계속 추가될 예정입니다.**
 
 <div id='available-sensor-list-pi'></div>
@@ -58,3 +65,8 @@ permalink: /ko/open-hardware/openhardware-list.html
  - [3축 센서 (3-Axis Digital Accelerometer)](http://www.icbanq.com/P005700487)
  - [RGB LED (Chainable RGB LED)](http://www.icbanq.com/P005604536)
  - [OLED 디스플레이 (OLED Display)](http://www.icbanq.com/P005700456)
+
+<div id='available-sensor-list-arduino'></div>
+- 아두이노
+ - 추후 업데이트 예정
+
