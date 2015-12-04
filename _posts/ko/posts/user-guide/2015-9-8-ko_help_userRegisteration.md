@@ -157,7 +157,7 @@ xx:xx:xx:xx:xx:xx
 
     ```bash
     @shell:$ cd $HOMEthingplus/openhardware/arduino/grove-starter-kit
-    @shell:$ node app.js > /dev/null &
+    @shell:$ ./thingplus_device.sh start
     @shell:$ cd $HOMEthingplus/gateway
     @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
     ```

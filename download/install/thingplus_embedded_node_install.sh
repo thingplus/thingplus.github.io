@@ -4,6 +4,21 @@ NODE_VERSION=0.10.16
 PREFIX=/usr/local
 
 node_install() {
+  OS=$(uname)
+
+  case $OS in
+    'Darwin')
+      NODE_FILE=node-v$NODE_VERSION-darwin-x64.tar.gz
+    ;;
+    'Linux')
+      NODE_FILE=node-v$NODE_VERSION-linux-arm-pi.tar.gz
+    ;;
+    *)
+      echo Invalid OS Version
+      exit 1
+    ;;
+  esac
+
   wget http://nodejs.org/dist/v$NODE_VERSION/$NODE_FILE
   tar xvfz $NODE_FILE
   rm $NODE_FILE
@@ -16,6 +31,8 @@ node_install() {
 
 argument_parse() {
   while (( $# )); do
+	  echo $1 $2
+
     case $1 in
       -nv|--node_version)
         NODE_VERSION=$2
@@ -30,10 +47,9 @@ argument_parse() {
 
 ########## START ##########
 
-argument_parse
+argument_parse $@
 
 echo "Install node v$NODE_VERSION @$PREFIX"
-NODE_FILE=node-v$NODE_VERSION-linux-arm-pi.tar.gz
 
 node_install
 
