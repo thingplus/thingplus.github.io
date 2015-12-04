@@ -19,7 +19,7 @@ _Windows version will be added soon._
 ![Arduino + Grove Starter kit](/assets/arduino_grove_board.png)
 
 <br/>
-2) Grove Sensor Board에 센서를 연결한다.<br/>
+2) Connect sensors to the Grove Sensor Board.<br/>
   Reference : <a href="#" class="ledtip" data-tooltip="">LED polarity</a>
 
 ![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
