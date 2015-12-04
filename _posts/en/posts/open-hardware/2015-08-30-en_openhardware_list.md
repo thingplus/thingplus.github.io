@@ -34,7 +34,7 @@ Open Hardware List
 - Arduino compatible board(uno, orange board, etc)
 - Sensor kit
   - [Grove - Starter Kit for Arduino](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
-- [Guide link(Korean version for now)](/ko/open-hardware/arduino-user-guide.html)
+- [Guide link](/en/open-hardware/arduino-user-guide.html)
 
 <br/>
 ### 4. Coming soon
