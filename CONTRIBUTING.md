@@ -55,12 +55,14 @@ redcarpet:
 
 ## Publish 하기전에 공유하기
 md 파일 헤더 예제
+    ```
     ---
     title: 문제 해결 방법
     tags: "help"
     published: false
     permalink: /ko/help/troubleshooting.html
     ---
+    ```
 
 터미널에서 실행할 때는 다음 옵션을 주면 published : false 로 된 문서도 볼 수 있습니다.
  => jekyll serve --unpublished
@@ -70,10 +72,12 @@ md 파일 헤더 예제
 
 2. 이전 문서의 수정 작업을 할 경우
     - 이전 문서를 같은 위치에 복사하고 title과 publish항목을 아래와 같이 수정후 작업 
+
+    ```
     ---
     title: 문제 해결 방법 (unpublished)
     tags: "help"
     published: false
     permalink: /ko/help/troubleshooting.html
     ---
-
+    ```
