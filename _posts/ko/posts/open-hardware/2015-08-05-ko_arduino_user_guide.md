@@ -81,7 +81,7 @@ Thing+ 연동가이드(아두이노)
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
     ```bash
-    @PC:$ chmod 755 thingplus_embedded_sdk_osc_install.sh
+    @PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
     @PC:$ ./thingplus_embedded_sdk_osx_install.sh
     ```
 
