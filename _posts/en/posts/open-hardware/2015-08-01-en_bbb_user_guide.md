@@ -235,7 +235,7 @@ iface wlan0 inet dhcp         :# remove ‘#’ from the beginning of this line.
 
 ----------------------------------
 
-### 비글본그린 USB로 연결하기
+### How to connect your Beagle Bone Green with your computer
 
 _Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not available(**we checked on 12/3/2015**)_
 
@@ -244,7 +244,7 @@ _Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not availabl
 - [For Windows 64bit](http://beagleboard.org/static/Drivers/Windows/BONE_D64.exe)
 - [For Windows 32bit](http://beagleboard.org/static/Drivers/Windows/BONE_DRV.exe)
 - [For Linux](http://beagleboard.org/static/Drivers/Linux/FTDI/mkudevrule.sh)
-- Mac OS X 시리얼 드라이버
+- Serial Driver for Mac OS X 
  - [Serial Driver for Mac OS X 10.3 ~ 10.4 32bit](http://www.ftdichip.com/drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
  - [Serial Driver for Mac OS X 10.3 ~ 10.8 64bit](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
  - [Serial Driver for Mac OS X 10.9 ~ 현재 64bit Serial Driver](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg)
