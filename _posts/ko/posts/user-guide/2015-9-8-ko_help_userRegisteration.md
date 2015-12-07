@@ -138,19 +138,19 @@ xx:xx:xx:xx:xx:xx
 
     ```bash
     @shell:$ sudo su
+    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+    @shell:$ ./thingplus_device.sh start
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
-    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-    @shell:$ node app.js > /dev/null &
     ```
 
 - 비글본그린의 경우 (**장치에 로그인했던 터미널**)
 
     ```bash
+    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+    @shell:$ ./thingplus_device.sh start
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
-    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
-    @shell:$ node app.js > /dev/null &
     ```
 
 - 아두이노의 경우 (**PC**)
@@ -174,7 +174,7 @@ xx:xx:xx:xx:xx:xx
     ```bash
     @shell:$ sudo nano /etc/rc.local
     ...
-    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js)
+    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
     (cd /opt/thingplus/gateway; ./thingplus.sh restart)
     
 
@@ -186,7 +186,7 @@ xx:xx:xx:xx:xx:xx
     ```bash
     @shell:$ nano /etc/rc.local
     ...
-    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js)
+    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thngplus_device.sh restart)
     (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
 
     exit 0
