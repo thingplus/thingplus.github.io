@@ -5,7 +5,7 @@ published: true
 permalink: /en/help/troubleshooting.html
 ---
 
-### When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it:
+When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it:
 
  - It takes few minutes to register sensors and gateways, so please Refresh the Sensor page after 1~2 minutes.
  - If you still can NOT find them after few minutes, please Connect to your Device, and Try run below commands.
