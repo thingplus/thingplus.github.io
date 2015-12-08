@@ -127,20 +127,30 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
     ```bash
     @shell:$ sudo su
+    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+    @shell:$ ./thingplus_device.sh start
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
-    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-    @shell:$ node app.js > /dev/null &
+    
     ```
 
 - For BeagleBone Green
 
     ```bash
+    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+    @shell:$ ./thingplus_device.sh start
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
-    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
-    @shell:$ node app.js > /dev/null &
+    
     ```
+
+- For Arduino (**PC**)
+
+    ```bash
+    @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
+    @shell:$ ./thingplus_device.sh start
+    @shell:$ cd $HOME/thingplus/gateway
+    @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
 
 <br/>
 11) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
@@ -152,8 +162,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     ```bash
     @shell:$ sudo nano /etc/rc.local
     ...
-    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; node app.js)
-    (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
+    (cd /opt/thingplus/gateway; ./thingplus.sh restart)
+    
 
     exit 0
     ```
@@ -163,7 +174,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     ```bash
     @shell:$ nano /etc/rc.local
     ...
-    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; node app.js)
+    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thngplus_device.sh restart)
     (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
 
     exit 0
