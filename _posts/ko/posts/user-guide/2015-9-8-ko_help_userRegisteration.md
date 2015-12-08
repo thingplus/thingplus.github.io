@@ -118,7 +118,7 @@ xx:xx:xx:xx:xx:xx
 - 비글본그린의 경우: `BeagleBone Green - Developer`
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
 
-- 아두이노의 경우: `Edison kit for Arduino`
+- 아두이노의 경우: `Arduino, PC - Developer`
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
 
 <br/>

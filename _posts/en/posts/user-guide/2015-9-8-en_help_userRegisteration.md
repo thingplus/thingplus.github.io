@@ -110,6 +110,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 - For Raspberry Pi: `Raspberry Pi - Developer`
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_en.png)
 
+- For Arduino: `Arduino, PC - Developer`
+![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
+
 <br/>
 8) Input the MAC address you copied to the `Gateway ID` form and Click the `Get API Key`button.
 ![macaddress](/assets/macaddr_getapikey_en.png)
