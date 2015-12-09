@@ -211,6 +211,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 - For Raspberry Pi 2: `GrovePi+ Starter Kit`
 ![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
 
+- For Arduino: `Grove Kit`
+![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)
+
 <br/>
 15) Choose a `Site` this gateway will be added, and then, Click the `Register a Gateway, Devices and Sensors` button.
 ![register](/assets/register_en.png)
