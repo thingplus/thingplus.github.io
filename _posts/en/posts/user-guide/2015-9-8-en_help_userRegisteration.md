@@ -66,14 +66,22 @@ _If you DO NOT have any devices, you can register a virtual gateway at [Thing+ P
 
 _This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set other devices you is similar to following progress._
 
-_If you DO NOT install **Thing+ Embedded Pakcage on your Raspberry Pi/BeagleBone Green, Please refer the [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html)/[**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html)_
+_If you DO NOT install **Thing+ Embedded Pakcage on your Raspberry Pi/BeagleBone Green, Please refer the [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) / [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) / [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html)_
 
 <br/>
-1) Connect to a BeagleBon Black/Raspberry Pi 2 over SSH and go to `scripts` directory under the path which Thing+ Embedded package is inalled on.
+1) Go to the `scripts`directory of a directory where Thing+ Embedded package was installed.
 
-```bash
-@shell:$ cd /opt/thingplus/gateway/scripts
-```
+- for BeagleBon Black/Raspberry Pi 2: Connect to your device over SSH and go to the `scripts` directory.
+
+    ```bash
+    @shell:$ cd /opt/thingplus/gateway/scripts
+    ```
+
+- for Arduino: Go to the `scripts` directory on your PC
+
+    ```bash
+    @shell:$ cd $HOME/thingplus/gateway/scripts
+    ```
 
 <br/>
 2) Get a MAC Address of the device and copy it to the clipboard.
@@ -134,7 +142,6 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ ./thingplus_device.sh start
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
-    
     ```
 
 - For BeagleBone Green
@@ -144,7 +151,6 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ ./thingplus_device.sh start
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
-    
     ```
 
 - For Arduino (**PC**)
@@ -154,9 +160,12 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ ./thingplus_device.sh start
     @shell:$ cd $HOME/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+    ```
 
 <br/>
 11) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
+
+- If you are an Arduino user, you can `SKIP THIS SECTION`. Please Move to next.
 
 > Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
 
