@@ -7,6 +7,13 @@ permalink: /en/open-hardware/openhardware-list.html
 
 Open Hardware List
 
+* [Sensor Simulator](#id-simulator-guide)
+* [Raspberry Pi](#id-pi-guide)
+* [Beagle Board](#id-beagle-guide)
+* [Arudino ](#id-arduino-guide)
+* [Available Sensor List](#id-sensor-list)
+
+
 ### 0. Sensor Simulator
 - [Guide Link](/en/open-hardware/sensor-simulator-user-guide.html)
 
@@ -29,6 +36,7 @@ Open Hardware List
   - [Available Sensor List](#available-sensor-list-bbg)
 - [Guide link](/en/open-hardware/bbb-user-guide.html)
 
+<div id='id-arduino-guide'></div>
 <br/>
 ### 3. Arudino 
 - Arduino compatible board(uno, orange board, etc)
@@ -43,7 +51,8 @@ Open Hardware List
 - Edison
 
 <br/>
-### 4. Available Sensor List
+<div id='id-sensor-list'></div>
+### 5. Available Sensor List
 - **We will add new sensors soon.**
 
 <div id='available-sensor-list-pi'></div>

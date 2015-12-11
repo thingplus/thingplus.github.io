@@ -6,6 +6,13 @@ permalink: /ko/open-hardware/bbb-user-guide.html
 ---
 
 Thing+ 연동가이드(비글본그린)
+<div id='id-setting'></div>
+
+* [환경 설정](#id-setting)
+* [Thing+ Embedded 패키지 설치](#id-package)
+* [게이트웨이 등록](#id-register)
+* [WiFi 동글 설정](#id-wifi-set)
+* [비글본그린 USB로 연결하기](#id-usb-set)
 
 <br/>
 #### 1. 환경 설정
@@ -94,6 +101,7 @@ Thing+ 연동가이드(비글본그린)
     @BBG:$ reboot
     ```
 
+<div id='id-package'></div>
 <br/><br/>
 #### 2. Thing+ Embedded 패키지 설치
 
@@ -147,10 +155,12 @@ Thing+ 연동가이드(비글본그린)
 @BBG:$ reboot
 ```
 
+<div id='id-register'></div>
 <br/><br/>
 #### 3. 게이트웨이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
+<div id='id-wifi-set'></div>
 
 --------------------
 
@@ -179,7 +189,7 @@ _본 가이드는 **NEXT-201N MINI**를 기준으로 작성되었으나, 다른 
 3) 터미널에서 `WiFi 인터페이스명`을 확인한다.
 
 ```bash
-@shell:$ iwconfig
+@shell:$ ifconfig
 wlan0
 
 lo        no wireless extensions.
@@ -232,10 +242,13 @@ iface wlan0 inet dhcp         # 앞에 있는 #을 삭제한다. 'ra0'이면 'wl
 <div id='id-bbg-usbconnect'></div>
 > 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
 
+<div id='id-usb-set'></div>
+
 ----------------------------------
 ### 비글본그린 USB로 연결하기
 
-_Mac OS X El Capitan은 현재 드라이버 미지원(**2015-12-3 기준**)이기에 연결이 불가능 합니다._
+_Mac OS X El Capitan은 현재 드라이버 미지원(**2015-12-3 기준**)이기에 연결이 불가능 합니다._ <br/>
+드라이버 지원 여부는 <a href="http://joshuawise.com/horndis" target="_blank">여기</a> 에서 확인 가능 합니다.
 
 1) 아래 URL을 참조하여 비글본그린 드라이버를 설치한다.
 
@@ -265,9 +278,9 @@ _Mac OS X El Capitan은 현재 드라이버 미지원(**2015-12-3 기준**)이�
 
    - Mac & Linux의 경우
 
-        ```bash
+
         $ ssh root@192.168.7.2
-        ```
+        
    
    - Windows의 경우
      - putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.

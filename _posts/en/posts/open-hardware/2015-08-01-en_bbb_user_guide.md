@@ -6,6 +6,13 @@ permalink: /en/open-hardware/bbb-user-guide.html
 ---
 
 Thing+ Integration Guide for BeagleBone Green
+<div id='id-setting'></div>
+
+* [Environment Setting](#id-setting)
+* [Install Thing+ Embedded Package](#id-package)
+* [Gatway Registration](#id-register)
+* [How to configure the Wifi Dongle](#id-wifi-set)
+* [How to connect your Beagle Bone Green with your computer](#id-usb-set)
 
 <br/>
 #### 1. Environment Setting
@@ -94,6 +101,8 @@ Thing+ Integration Guide for BeagleBone Green
     @BBG:$ reboot
     ```
 
+<div id='id-package'></div>
+
 <br/><br/>
 #### 2. Install Thing+ Embedded Package
 
@@ -144,11 +153,13 @@ Thing+ Integration Guide for BeagleBone Green
 ```bash
 @BBG:$ reboot
 ```
+<div id='id-register'></div>
 
 <br/><br/>
 #### 3. Gatway Registration
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
 
+<div id='id-wifi-set'></div>
 
 --------------------
 
@@ -178,7 +189,7 @@ _This docuement is based on **NEXT-201N MINI** but you can refer this for other 
 3) Check the Wifi Interface name after connect to BeagleBone Green over ssh.
 
 ```bash
-@shell:$ iwconfig
+@shell:$ ifconfig
 wlan0
 
 lo        no wireless extensions.
@@ -231,12 +242,14 @@ iface wlan0 inet dhcp         :# remove ‘#’ from the beginning of this line.
 <div id='id-bbg-usbconnect'></div>
 > Remark: Connection between your device and DC 5V Power Adaptor is required for using the Wifi Dongle because a Wifi Dongle consumes much more power than normal
 
+<div id='id-usb-set'></div>
 
 ----------------------------------
 
 ### How to connect your Beagle Bone Green with your computer
 
-_Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not available(**we checked on 12/3/2015**)_
+_Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not available(**we checked on 12/3/2015**)_<br/>
+Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a>.
 
 1) Download and Install the proper Beagle Bone Green Driver. You can download the driver from below links for your OS
 
@@ -267,14 +280,12 @@ _Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not availabl
 
    - For Mac & Linux
 
-        ```bash
+        
         $ ssh root@192.168.7.2
-        ```
+        
    
    - For Windows
-     - Run the putty client
-     - Input IP address and click ‘Open’ Button
-     - Input your password
+     - Run the putty, and Insert IP Address, and then, Click the button `Open` and Enter a password. 
      ![BBG putty login](/assets/putty_usb_login_bbg.png)
 
 > Remark: In case of Windows OS, You should close and run your putty clinet every time when you reboot your Beagle Bone Green Device

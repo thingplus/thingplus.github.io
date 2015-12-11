@@ -6,6 +6,12 @@ permalink: /en/open-hardware/arduino-user-guide.html
 ---
 
 Thing+ Guide for Arduino<br/>
+<div id='id-setting'></div>
+
+* [Arduino connection](#id-setting)
+* [Arduino Firmware install](#id-firmware)
+* [Install ThingPlus Embedded package](#id-package)
+* [게이트웨이 등록](#id-register)
 
 _Windows version will be added soon._
 
@@ -28,6 +34,7 @@ _Windows version will be added soon._
 3) Connect Arduino and PC via USB cable.
 ![Arduino + USB Cable](/assets/arduino_usb.png)
 
+<div id='id-firmware'></div>
 <br/><br/>
 #### 2. Arduino Firmware install
 1) Install Arduino IDE upon PC OS environment.
@@ -65,8 +72,9 @@ _Windows version will be added soon._
 
 ![Arduino Download Success](/assets/arduino_ide_upload_done.png)
 
+<div id='id-package'></div>
 <br/><br/>
-#### 3. Install Thingpls Embedded package
+#### 3. Install ThingPlus Embedded package
 
 1) Prepare to download.
 
@@ -90,6 +98,7 @@ _Windows version will be added soon._
     @PC:$ ./thingplus_embedded_sdk_osx_install.sh
     ```
 
+<div id='id-register'></div>
 <br/><br/>
 #### 4. Gateway Registration
 Follow the [Guide to register a gateway](/en/user-guide/registration.html#id-gateway) 

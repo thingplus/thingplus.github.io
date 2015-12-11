@@ -6,6 +6,12 @@ permalink: /en/open-hardware/raspberry-pi-user-guide.html
 ---
 
 Thing+ Integragtion Guide for Raspberry Pi
+<div id='id-setting'></div>
+
+* [Environment Setting](#id-setting)
+* [Install Thing+ Embedded Package](#id-package)
+* [Gatway Registration](#id-register)
+* [How to configure the Wifi Dongle](#id-wifi-set)
 
 <br/>
 #### 1. Environment Setting
@@ -173,6 +179,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 ```bash
 @Pi2:$ sudo reboot
 ```
+<div id='id-package'></div>
 
 <br/><br/>
 #### 2. Install Thing+ Embedded Package
@@ -213,10 +220,13 @@ Thing+ Integragtion Guide for Raspberry Pi
 ```bash
 @Pi2:$ sudo reboot
 ```
+<div id='id-register'></div>
 
 <br/><br/>
-#### 3. Raspberry Pi Registration
+#### 3. Gateway Registration
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
+
+<div id='id-wifi-set'></div>
 
 --------------------
 
@@ -286,7 +296,7 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
  - When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor.
- 
+
 <br/>
 5) Reboot your device
 

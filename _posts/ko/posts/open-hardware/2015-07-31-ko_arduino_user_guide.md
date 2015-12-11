@@ -6,6 +6,13 @@ permalink: /ko/open-hardware/arduino-user-guide.html
 ---
 
 Thing+ 연동가이드(아두이노)<br/>
+<div id='id-setting'></div>
+
+* [아두이노 하드웨어 연결](#id-setting)
+* [아두이노 펌웨어 설치](#id-firmware)
+* [ThingPlus Embedded 패키지 설치](#id-package)
+* [게이트웨이 등록](#id-register)
+
 
 _현재는 `Mac OS`에서만 지원하고 있습니다._
 
@@ -28,6 +35,7 @@ _현재는 `Mac OS`에서만 지원하고 있습니다._
 3) 아두이노에 USB Cable을 PC와 연결한다.
 ![Arduino + USB Cable](/assets/arduino_usb.png)
 
+<div id='id-firmware'></div>
 <br/><br/>
 #### 2. 아두이노 펌웨어 설치
 1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치한다.
@@ -65,8 +73,9 @@ _현재는 `Mac OS`에서만 지원하고 있습니다._
 
 ![Arduino Download Success](/assets/arduino_ide_upload_done.png)
 
+<div id='id-package'></div>
 <br/><br/>
-#### 3. Thingpls Embedded 패키지 설치
+#### 3. ThingPlus Embedded 패키지 설치
 
 1) Thing+ Embedded 패키지를 설치할 폴더를 만들고 이동한다.
 
@@ -89,6 +98,8 @@ _현재는 `Mac OS`에서만 지원하고 있습니다._
     @PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
     @PC:$ ./thingplus_embedded_sdk_osx_install.sh
     ```
+
+<div id='id-register'></div>
 
 <br/><br/>
 #### 4. 게이트웨이 등록

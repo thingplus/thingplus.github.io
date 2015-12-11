@@ -6,6 +6,14 @@ permalink: /ko/open-hardware/raspberry-pi-user-guide.html
 ---
 
 Thing+ 연동가이드(라즈베리파이)
+<div id='id-setting'></div>
+
+* [환경설정](#id-setting)
+* [Thing+ Embedded 패키지 설치](#id-package)
+* [라즈베리파이 등록](#id-register)
+* [WIFI 동글 설정](#id-wifi-set)
+
+
 
 <br/>
 #### 1. 환경 설정
@@ -173,6 +181,7 @@ Thing+ 연동가이드(라즈베리파이)
 ```bash
 @Pi2:$ sudo reboot
 ```
+<div id='id-package'></div>
 
 <br/><br/>
 #### 2. Thing+ Embedded 패키지 설치
@@ -213,10 +222,13 @@ Thing+ 연동가이드(라즈베리파이)
 ```bash
 @Pi2:$ sudo reboot
 ```
+<div id='id-register'></div>
 
 <br/><br/>
 #### 3. 라즈베리파이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
+
+<div id='id-wifi-set'></div>
 
 --------------------
 
