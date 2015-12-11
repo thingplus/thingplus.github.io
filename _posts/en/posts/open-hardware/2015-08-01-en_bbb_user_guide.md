@@ -101,7 +101,6 @@ Thing+ Integration Guide for BeagleBone Green
 
 - As the following image : How to Connection BeagleBone Green with I2C hub
 ![BBG + Grove](/assets/bbg_grove.png)
-
 ![BBG + Grove](/assets/bbg_grove_2_en.png)
 
 - In case of RGB LED, connect to `IN` slot.
@@ -244,7 +243,7 @@ _Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not availabl
 - [For Windows 64bit](http://beagleboard.org/static/Drivers/Windows/BONE_D64.exe)
 - [For Windows 32bit](http://beagleboard.org/static/Drivers/Windows/BONE_DRV.exe)
 - [For Linux](http://beagleboard.org/static/Drivers/Linux/FTDI/mkudevrule.sh)
-- Serial Driver for Mac OS X 
+- Serial Driver for Mac OS X 글
  - [Serial Driver for Mac OS X 10.3 ~ 10.4 32bit](http://www.ftdichip.com/drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
  - [Serial Driver for Mac OS X 10.3 ~ 10.8 64bit](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
  - [Serial Driver for Mac OS X 10.9 ~ 현재 64bit Serial Driver](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg)
