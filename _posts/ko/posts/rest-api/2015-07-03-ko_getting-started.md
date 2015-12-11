@@ -6,6 +6,16 @@ permalink: /ko/rest-api/getting-started.html
 ---
 
 Getting Started with the Thing+ REST API
+<div id='id-step0'></div>
+
+* [Thing+ Service registration & Hardware installation](#id-step0)
+* [Prerequisite](#id-step1)
+* [Using the Thing+ REST API with an OAuth Access token](#id-step2)
+* [Try some APIs](#id-step3)
+* [Code Samples](#id-step4)
+* [Thing+ REST API Quick Reference](#id-api)
+
+
 
 ## Step 0. Thing+ Service registration & Hardware installation
   - <a href="https://www.thingplus.net" target="_blank">Thing+ 포털</a>
@@ -17,6 +27,8 @@ Getting Started with the Thing+ REST API
 ### Step 0-2
   - Hardware installation is required
     - [오픈하드웨어 지원 리스트](/ko/open-hardware/openhardware-list.html)
+
+<div id='id-step1'></div>
 
 ## Step 1. Prerequisite
 
@@ -122,6 +134,8 @@ Getting Started with the Thing+ REST API
 
   ![interceptor enable](/assets/oauth-access-token.png)
 
+<div id='id-step2'></div>
+
 ## Step 2. Using the Thing+ REST API with an OAuth Access token
 
 ### Step 2-1. Create a <a href="https://www.getpostman.com/docs/environments" target="_blank">Postman Environments</a>
@@ -150,6 +164,8 @@ Getting Started with the Thing+ REST API
 
 - 'Getting Started with the Thing+ REST API' collection uses {{AccessToken}} variable for the 'Authorization' http header
 ![environment variable](/assets/environment-variable.png)
+
+<div id='id-step3'></div>
 
 ## Step 3. Try some APIs
 
@@ -202,6 +218,7 @@ Getting Started with the Thing+ REST API
 
     > To be updated
 
+<div id='id-step4'></div>
   - Reading a Item
 
     > To be updated
@@ -213,6 +230,7 @@ Getting Started with the Thing+ REST API
 - [Sample apps](/ko/rest-api/api-samples.html)
 
 
+<div id='id-api'></div>
 ---
 
 ## Thing+ REST API Quick Reference

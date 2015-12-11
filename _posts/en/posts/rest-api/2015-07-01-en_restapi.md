@@ -5,8 +5,21 @@ published: true
 permalink: /en/rest-api/rest-api.html
 ---
 
+<div id='id-schema'></div>
 REST APIs
 
+* [Schema](#id-schema)
+* [Base url](#id-url)
+* [Collection(Listing) response types](#id-types)
+* [Collection Queries](#id-queries)
+* [Series Queries for the sensor values](#id-series)
+* [Gateways](#id-gateways)
+* [Sensors](#id-sensors)
+* [Tags](#id-tags)
+* [Collection](#id-collection)
+
+
+<div id='id-url'></div>
 <br>
 ## Schema
   * All API access is over HTTPS
@@ -17,6 +30,7 @@ REST APIs
 
     https://api.thingplus.net/v1
 
+<div id='id-types'></div>
 <br>
 ## Collection(Listing) response types
 ### Array
@@ -67,6 +81,7 @@ REST APIs
 }
 ```
 
+<div id='id-queries'></div>
 <br>
 ## Collection Queries
 
@@ -114,6 +129,7 @@ __Response__
 }
 ```
 
+<div id='id-series'></div>
 <br>
 ## Series Queries for the sensor values
 
@@ -318,6 +334,7 @@ Response has series and the series has data and _meta.
 }
 ```
 
+<div id='id-gateways'></div>
 <br>
 ## Gateways
 
@@ -655,7 +672,7 @@ __Response__
   "id": "status.gateway.5F36S1"
 }
 ```
-
+<div id='id-sensors'></div>
 
 <br>
 ## Sensors
@@ -1073,6 +1090,7 @@ __Request body__
 ]
 ```
 
+<div id='id-tags'></div>
 <br>
 ## Tags
 
@@ -1217,6 +1235,7 @@ __Response__
 DELETE /tags/:id
 ```
 
+<div id='id-collection'></div>
 <br>
 ## Collection
 

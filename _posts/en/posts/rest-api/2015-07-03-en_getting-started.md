@@ -6,6 +6,14 @@ permalink: /en/rest-api/getting-started.html
 ---
 
 Getting Started with the Thing+ REST API
+<div id='id-step0'></div>
+
+* [Thing+ Service registration & Hardware installation](#id-step0)
+* [Prerequisite](#id-step1)
+* [Using the Thing+ REST API with an OAuth Access token](#id-step2)
+* [Try some APIs](#id-step3)
+* [Code Samples](#id-step4)
+* [Thing+ REST API Quick Reference](#id-api)
 
 ## Step 0. Thing+ Service registration & Hardware installation
   - <a href="https://www.thingplus.net" target="_blank">Thing+ Portal</a>
@@ -14,6 +22,7 @@ Getting Started with the Thing+ REST API
   - Thing+ service registration is required
     - <a href="http://support.thingplus.net/en/user-guide/registration.html" target="_blank">Thing+ service registration</a>
 
+<div id='id-step1'></div>
 ### Step 0-2
   - Hardware installation is required
     - [OpenHardware List](/en/open-hardware/openhardware-list.html)
@@ -118,9 +127,12 @@ Getting Started with the Thing+ REST API
 <br>&nbsp;&nbsp;&nbsp;• The redirect URL when you registered your application
 <br> 8) Click the 'Send' button
 <br><br>
+
 5. Check the '200 OK' result status and Access token
 
   ![interceptor enable](/assets/oauth-access-token.png)
+
+<div id='id-step2'></div>
 
 ## Step 2. Using the Thing+ REST API with an OAuth Access token
 
@@ -147,6 +159,8 @@ Getting Started with the Thing+ REST API
 <br> ![import](/assets/environment-select.png)
 
 **Now you are ready to use the Thing+ REST API with an OAuth Access token**
+
+<div id='id-step3'></div>
 
 - 'Getting Started with the Thing+ REST API' collection uses {{AccessToken}} variable for the 'Authorization' http header
 ![environment variable](/assets/environment-variable.png)
@@ -198,6 +212,8 @@ Getting Started with the Thing+ REST API
 
     > To be updated
 
+<div id='id-step4'></div>
+
   - Reading Collection with queries
 
     > To be updated
@@ -209,6 +225,7 @@ Getting Started with the Thing+ REST API
 
 
 ## Step 4. Code Samples
+<div id='id-api'></div>
 
 - [Sample apps](/en/rest-api/api-samples.html)
 
