@@ -73,15 +73,15 @@ _아직 라즈베리파이/비글본그린/아두이노에 **Thing+ Embedded 패
 
 - 비글본그린/라즈베리파이의 경우 타겟보드의 접속 후에 이동
 
-```bash
-@shell:$ cd /opt/thingplus/gateway/scripts
-```
+    ```bash
+    @shell:$ cd /opt/thingplus/gateway/scripts
+    ```
 
 - 아두이노의 경우 PC에서 이동 
 
-```bash
-@shell:$ cd $HOME/thingplus/gateway/scripts
-```
+    ```bash
+    @shell:$ cd $HOME/thingplus/gateway/scripts
+    ```
 
 <br/>
 2) 장치의 MAC 어드레스를 얻어 클립보드에 복사한다.
@@ -165,7 +165,7 @@ xx:xx:xx:xx:xx:xx
 <br/>
 11) 장치의 `/etc/rc.local` 파일의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
 
-`아두이노의 경우는 생략`
+- 아두이노 유저일 경우, `이 과정이 필요 없습니다`. 다음으로 넘어가세요.
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
