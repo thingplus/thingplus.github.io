@@ -359,5 +359,16 @@ ledtip:hover:before{
  border-left:10px solid transparent;  
 }
 
-
+/*chris*/
+.markdown-block p {
+margin-left:1.5em;
+}
+.markdown-block .ui-closed:before {
+  font-family:monospace;
+  content:"+ ";
+}
+.markdown-block .ui-open:before {
+  font-family:monospace;
+  content:"- ";
+}
 /* end sidebar */

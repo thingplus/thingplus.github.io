@@ -34,6 +34,8 @@ Open Hardware List
 - Arduino compatible board(uno, orange board, etc)
 - Sensor kit
   - [Grove - Starter Kit for Arduino](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
+  - [Grove Base shield Only](http://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html)
+  - [Available Sensor List](#available-sensor-list-arduino)
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
 
 <br/>
@@ -63,3 +65,17 @@ Open Hardware List
  - [3-Axis Digital Accelerometer](http://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html)
  - [Chainable RGB LED](http://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html)
  - [OLED Display](http://www.seeedstudio.com/depot/Grove-OLED-Display-096-p-824.html)
+
+<div id='available-sensor-list-arduino'></div>
+- Arduino
+ - [Touch sensor](http://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html)
+ - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
+ - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
+ - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
+ - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
+ [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
+ - [Sound Sensor](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
+ - [Rotary Angle Sensor](http://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)
+ - [Light Sensor](http://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html)
+ - [Temperature Sensor](http://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)
+
