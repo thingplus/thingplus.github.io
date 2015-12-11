@@ -42,12 +42,12 @@ node_install() {
   rm ./thingplus_embedded_node_install.sh
 }
 
-thisplus_openhardware_sdk_install () {
+thingplus_openhardware_sdk_install () {
   INSTALL_DIR=$1
   git clone https://github.com/daliworks/openhardware.git $INSTALL_DIR/openhardware
 }
 
-thisplus_openhardware_arduino_install () {
+thingplus_openhardware_arduino_install () {
   INSTALL_DIR=$1
   ARDUINO_SOURCE_DIR=openhardware/arduino/grove-starter-kit/
 
@@ -64,8 +64,8 @@ if [ ! -d $SDK_DIR ]; then
   mkdir -p $SDK_DIR
 fi
 
-thisplus_openhardware_sdk_install $SDK_DIR
+thingplus_openhardware_sdk_install $SDK_DIR
 node_install
-thisplus_openhardware_arduino_install $SDK_DIR
+thingplus_openhardware_arduino_install $SDK_DIR
 
 echo 'Installation is finished'

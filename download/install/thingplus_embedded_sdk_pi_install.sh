@@ -13,7 +13,7 @@ RSYNC_USER="debian_b2d"
 RSYNC_PASSWORD="fmLU~e2OhmyKDTj"
 RSYNC_SIZE_ONLY_OPTION="false"
 
-thisplus_openhardware_pi_install () {
+thingplus_openhardware_pi_install () {
   INSTALL_DIR=$1
   PI_SOURCE_DIR=openhardware/raspberrypi/grovePi-starter-kit
 
@@ -22,7 +22,7 @@ thisplus_openhardware_pi_install () {
   cd -
 }
 
-thisplus_openhardware_sdk_install () {
+thingplus_openhardware_sdk_install () {
   INSTALL_DIR=$1
   git clone https://github.com/daliworks/openhardware.git $INSTALL_DIR/openhardware
 }
@@ -77,8 +77,8 @@ fi
 
 thingplus_install
 
-thisplus_openhardware_sdk_install $SDK_DIR
-thisplus_openhardware_pi_install $SDK_DIR
+thingplus_openhardware_sdk_install $SDK_DIR
+thingplus_openhardware_pi_install $SDK_DIR
 
 echo 'Installation is finished'
 echo 'Please Reboot'
