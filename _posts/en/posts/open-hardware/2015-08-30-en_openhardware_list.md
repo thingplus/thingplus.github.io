@@ -10,7 +10,7 @@ Open Hardware List
 * [Sensor Simulator](#id-simulator-guide)
 * [Raspberry Pi](#id-pi-guide)
 * [Beagle Board](#id-beagle-guide)
-* [Arudino ](#id-arduino-guide)
+* [Arduino](#id-arduino-guide)
 * [Available Sensor List](#id-sensor-list)
 
 <br/>
@@ -41,7 +41,7 @@ Open Hardware List
 
 <div id='id-arduino-guide'></div>
 <br/>
-### 3. Arudino 
+### 3. Arduino 
 - Arduino compatible board(uno, orange board, etc)
 - Sensor kit
   - [Grove - Starter Kit for Arduino](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
