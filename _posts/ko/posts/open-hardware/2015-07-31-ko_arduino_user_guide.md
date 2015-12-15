@@ -149,18 +149,18 @@ _현재는 `Mac OS, Windows7`에서만 지원하고 있습니다._
 
 <p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Windows</p>
 
-    ```
-    @PC:$ chmod 755 thingplus_embedded_sdk_win_install.sh
-    @PC:$ ./thingplus_embedded_sdk_win_install.sh
-    ```
+```
+@PC:$ chmod 755 thingplus_embedded_sdk_win_install.sh
+@PC:$ ./thingplus_embedded_sdk_win_install.sh
+```
 <div class="dwExpand2"></div>
 
 <p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Mac OS</p>
 
-    ```
-    @PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
-    @PC:$ ./thingplus_embedded_sdk_osx_install.sh
-    ```
+```
+@PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
+@PC:$ ./thingplus_embedded_sdk_osx_install.sh
+```
 <div class="dwExpand2"></div>
 <div id='id-register'></div>
 
