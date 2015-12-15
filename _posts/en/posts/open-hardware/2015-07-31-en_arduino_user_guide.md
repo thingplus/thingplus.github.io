@@ -6,17 +6,53 @@ permalink: /en/open-hardware/arduino-user-guide.html
 ---
 
 Thing+ Guide for Arduino<br/>
-<div id='id-setting'></div>
+<div id='win-setting'></div>
 
-* [Arduino connection](#id-setting)
+* [Environment Setting for window](#win-setting)
+* [Environment Setting](#id-setting)
 * [Arduino Firmware install](#id-firmware)
 * [Install ThingPlus Embedded package](#id-package)
-* [게이트웨이 등록](#id-register)
+* [Gatway Registration](#id-register)
 
-_Windows version will be added soon._
+_`Mac OS` and `windows7` is supported at now_
 
 <br/>
-#### 1. Arduino connection
+#### 0. Environment Setting for Windows 
+* `Mac OS` user is not requierd this process. Go to [Environment Setting](#id-setting)
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> View environment setting for Windows</p>
+
+
+1) install Node Js
+- install Node JS(v0.10.16)
+
+- <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit download</a>
+- <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
+
+2) install Cygwin 
+
+- <a href="https://cygwin.com/setup-x86.exe" target="_blank"> 32bit download</a>
+- <a href="https://cygwin.com/setup-x86_64.exe" target="_blank"> 64bit download</a>
+
+- If `Choose Download site` for Cygwin is shown, select `ftp://ftp.kaist.ac.kr`
+![Cygwin select ftp site](/assets/cygwin_site_select.png)
+
+- If `Select Package` for Cygwin is shown, select 'wget'
+
+  - Input 'wget' in `Search` field -> Web -> select 1.16.3-1 
+![Cygwin wget package select](/assets/cygwin_wget.png)
+
+
+- When installation is completed, then you can show as the follow icon on your desktop.
+
+![Cygwin Icon](/assets/cygwin_icon.png)
+
+<p class="dwExpand2"></p>
+
+
+<div id='id-setting'></div>
+<br/><br/>
+#### 1. Environment Setting
 
 0) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
 
@@ -46,7 +82,7 @@ _Windows version will be added soon._
 
 
 <br/>
-3) Select USB for Arduino Port in IDE.
+3) Select USB for Arduino Port in IDE. (for windows, COMxx)
 
    - Tools -> Port -> Arduino/Genuino Uno
 ![Arduino Select Port](/assets/arduino_ide_select_port.png)
@@ -75,30 +111,60 @@ _Windows version will be added soon._
 <div id='id-package'></div>
 <br/><br/>
 #### 3. Install ThingPlus Embedded package
+1) Run the `Terminal`
 
-1) Prepare to download.
+ - Windows : Run the 'Cygwin Terminal'.
+
+ - Mac OS : Run the 'Terminal'.
+
+2) Prepare to download.
 
 ```bash
 @PC:$ mkdir $HOME/thingplus
 @PC:$ cd $HOME/thingplus
 ```
 
-5) Download the install script file.
+3) Download the install script file.
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Windows</p>
+
+```bash
+@PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_win_install.sh
+```
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Mac OS</p>
 
 ```bash
 @PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_osx_install.sh
 ```
+<div class="dwExpand2"></div>
+<br/>
 
-6) Add excution permission on the script file then Install it.
+4) Add excution permission on the script file then Install it.
 
 - It may take some minutes upon network performance.
 
-    ```bash
-    @PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
-    @PC:$ ./thingplus_embedded_sdk_osx_install.sh
-    ```
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Windows</p>
+
+```
+@PC:$ chmod 755 thingplus_embedded_sdk_win_install.sh
+@PC:$ ./thingplus_embedded_sdk_win_install.sh
+```
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Mac OS</p>
+
+```
+@PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
+@PC:$ ./thingplus_embedded_sdk_osx_install.sh
+```
+<div class="dwExpand2"></div>
 
 <div id='id-register'></div>
 <br/><br/>
 #### 4. Gateway Registration
-Follow the [Guide to register a gateway](/en/user-guide/registration.html#id-gateway) 
+Follow the [Guide to register a gateway](/en/user-guide/registration.html#id-gateway)
+
+<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a> 

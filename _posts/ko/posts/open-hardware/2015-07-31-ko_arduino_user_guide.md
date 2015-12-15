@@ -44,7 +44,7 @@ _현재는 `Mac OS, Windows7`에서만 지원하고 있습니다._
 ![Cygwin wget package select](/assets/cygwin_wget.png)
 
 
-- 설치과 완료되면 바탕화면에 Cygwin Terminal 아이콘이 보입니다.
+- 설치가 완료되면 바탕화면에 Cygwin Terminal 아이콘이 보입니다.
 
 ![Cygwin Icon](/assets/cygwin_icon.png)
 
@@ -83,7 +83,7 @@ _현재는 `Mac OS, Windows7`에서만 지원하고 있습니다._
 
 
 <br/>
-3) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다.
+3) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다. (windows에서는 COMxx 입니다.)
 
    - Tools -> Port -> Arduino/Genuino Uno
 ![Arduino Select Port](/assets/arduino_ide_select_port.png)
