@@ -1369,3 +1369,6 @@ __Response__
   "id": "1"
 }
 ```
+
+
+<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>

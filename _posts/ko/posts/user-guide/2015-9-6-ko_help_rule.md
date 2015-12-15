@@ -140,7 +140,7 @@ permalink: /ko/user-guide/rule.html
 (준비중입니다.)
 
 <br>
-
+<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
 <!---
 1. 규칙에 대하여
 * 규칙 관리

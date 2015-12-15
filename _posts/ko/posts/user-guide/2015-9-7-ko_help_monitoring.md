@@ -202,7 +202,7 @@ permalink: /ko/user-guide/monitoring.html
 규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/ko/user-guide/rule.html)를 이용해주세요. 
 ![](/assets/3_m_rule0.png)
 
-
+<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
 
 <!---
 Thing+ 를 통해서, IoT의 기본적인 내용인 사물을 연결하고 실시간으로 센서의 데이타를 확인할 수 있습니다.

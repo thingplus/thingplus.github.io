@@ -167,3 +167,5 @@ _현재는 `Mac OS, Windows7`에서만 지원하고 있습니다._
 <br/><br/>
 #### 4. 게이트웨이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
+
+<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>

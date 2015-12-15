@@ -287,3 +287,5 @@ _Mac OS X El Capitan은 현재 드라이버 미지원(**2015-12-3 기준**)이�
      ![BBG putty login](/assets/putty_usb_login_bbg.png)
 
 > 주의: Windows의 경우, 비글본그린을 재부팅할 때마다, putty를 새로 실행해야함.
+
+<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>

@@ -262,3 +262,5 @@ Getting Started with the Thing+ REST API
 |                      | [GET] https://api.thingplus.net/v1/gateways/{gatewayId}/sensors/{sensorId}/series?dataStart={startDate}&dataEnd={endDate}&series[interval]=1m
 | timelines            | [GET] https://api.thingplus.net/v1/timelines
 | timeline             | [GET] https://api.thingplus.net/v1/timelines/{timelineId}
+
+<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
