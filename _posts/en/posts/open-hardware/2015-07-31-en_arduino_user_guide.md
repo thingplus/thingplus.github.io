@@ -62,7 +62,12 @@ _`Mac OS` and `windows7` is supported at now_
 
 <br/>
 2) Connect sensors to the Grove Sensor Board.<br/>
-  Reference : <a href="#" class="ledtip" data-tooltip="">LED polarity</a>
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Reference : LED polarity</p>
+
+![LED polarity](/assets/led.png)
+
+<div class="dwExpand2"></div>
 
 ![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 

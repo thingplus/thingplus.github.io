@@ -63,7 +63,12 @@ _현재는 `Mac OS, Windows7`에서만 지원하고 있습니다._
 
 <br/>
 2) Grove Sensor Board에 센서를 연결합니다.<br/>
-  참고 : <a href="#" class="ledtip" data-tooltip="">LED의 극성</a>
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 참고 : LED의 극성</p>
+
+![LED 극성](/assets/led.png)
+
+<div class="dwExpand2"></div>
 
 ![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 
