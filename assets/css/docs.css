@@ -360,15 +360,32 @@ ledtip:hover:before{
 }
 
 /*chris*/
-.markdown-block p {
-margin-left:1.5em;
+
+.dwExpand.ui-closed:before {
+  /*font-family:monospace;*/
+  font-family: FontAwesome;
+  content:"\f078 ";
 }
-.markdown-block .ui-closed:before {
-  font-family:monospace;
-  content:"+ ";
-}
-.markdown-block .ui-open:before {
-  font-family:monospace;
-  content:"- ";
+.dwExpand.ui-open:before {
+  /*font-family:monospace;*/
+  font-family: FontAwesome;
+  content:"\f077";
 }
 /* end sidebar */
+
+
+a.back-to-top {
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 50px;
+    bottom: 70px;
+    background: transparent url("http://static1.squarespace.com/static/565d8903e4b07ad504d433d8/t/566aab96c21b86abf170e486/1449831318773/arrows-48px-glyph-1_circle-up-39.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    transition: all .8s ease;
+}

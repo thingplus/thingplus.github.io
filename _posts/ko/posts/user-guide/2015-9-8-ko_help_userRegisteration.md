@@ -47,7 +47,7 @@ permalink: /ko/user-guide/registration.html
 #### 서비스 관리자의 가입승인 및 사용권한
   * **iot.thingplus.net** 사용자의 경우 자동 가입처리 됩니다.
   * 이메일 인증 성공 후, 해당 서비스 관리자의 가입 승인 절차가 이뤄지게 됩니다.
-  * 관리자의 가입 승인이 확인되면, 승인 안내 이메일이 전송됩니다.
+  * 관리자의 가입 승인이 확인되면, 승인 안내 이메일이 전송됩니다정.
   * 관리자의 가입 승인 안내 이메일은 몇초에서부터 몇분까지 걸릴 수 있습니다. 만약 승인 안내 이메일을 받지 못했다면 다음을 확인해주세요.
     * 이메일을 올바르게 입력하셨습니까?
     * 스팸메일함을 확인하셨습니까?
@@ -112,14 +112,21 @@ xx:xx:xx:xx:xx:xx
 <br/>
 7) 새로 추가할 `게이트웨이 모델`을 선택한다.
 
-- 라즈베리파이의 경우: `Raspberry Pi - Developer`
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우: <b>Raspberry Pi - Developer</b></p>
+
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_ko.png)
 
-- 비글본그린의 경우: `BeagleBone Green - Developer`
+<div class="dwExpand2"></div>
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우: <b>BeagleBone Green - Developer</b></p>
+
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
 
-- 아두이노의 경우: `Arduino, PC - Developer`
+<div class="dwExpand2"></div>
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의 경우: <b>Arduino, PC - Developer</b></p>
+
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
+
+<div class="dwExpand2"></div>
 
 <br/>
 8) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
@@ -134,33 +141,49 @@ xx:xx:xx:xx:xx:xx
 
 > 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
 
-- 라즈베리파이의 경우 (**장치에 로그인했던 터미널**)
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
 
-    ```bash
-    @shell:$ sudo su
-    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-    @shell:$ ./thingplus_device.sh start
-    @shell:$ cd /opt/thingplus/gateway
-    @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
-    ```
+   
+```bash
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
 
-- 비글본그린의 경우 (**장치에 로그인했던 터미널**)
+<div class="dwExpand2"></div>
 
-    ```bash
-    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
-    @shell:$ ./thingplus_device.sh start
-    @shell:$ cd /opt/thingplus/gateway
-    @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
-    ```
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
+    
+```bash
+@shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
 
-- 아두이노의 경우 (**PC**)
+<div class="dwExpand2"></div>
 
-    ```bash
-    @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
-    @shell:$ ./thingplus_device.sh start
-    @shell:$ cd $HOME/thingplus/gateway
-    @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
-    ```
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의 경우 (<b>Mac PC</b>)</p>
+
+```bash
+@shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd $HOME/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의 경우 (<b>windows PC</b>)</p>
+
+```bash
+@shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd $HOME/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.bat start
+```
+<div class="dwExpand2"></div>
 
 <br/>
 11) 장치의 `/etc/rc.local` 파일의 `exit 0` 명령 바로 위에 아래처럼 추가한다.
@@ -169,30 +192,32 @@ xx:xx:xx:xx:xx:xx
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
-- 라즈베리파이의 경우
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우 </p>
 
-    ```bash
-    @shell:$ sudo nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
-    (cd /opt/thingplus/gateway; ./thingplus.sh restart)
-    
+```bash
+@shell:$ sudo nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)  
+ 
+exit 0
+```
+<div class="dwExpand2"></div>
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우 </p>
 
-    exit 0
-    ```
 
-- 비글본그린의 경우
-
-    ```bash
-    @shell:$ nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thngplus_device.sh restart)
-    (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
-
-    exit 0
-    ```
+```bash
+@shell:$ nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thngplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+ 
+exit 0
+```
 
 - 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
+
+<div class="dwExpand2"></div>
 
 <br/>
 12) `게이트웨이 등록하기`버튼을 누른다.
@@ -205,14 +230,24 @@ xx:xx:xx:xx:xx:xx
 <br/>
 14) `디바이스 모델`을 선택한다.
 
-- 라즈베리파이의 경우: `GrovePi+ Starter Kit`
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우: <b>GrovePi+ Starter Kit</b></p>
+
 ![select_devicemodel](/assets/select_devicemodel_rapberry_ko.png)
 
-- 비글본그린의 경우: `Grove Starter Kit for BeagleBone Green`
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우: <b>Grove Starter Kit for BeagleBone Green</b></p>
+
 ![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의경우: <b>Grove Starter Kit </b></p>
 
 - 아두이노 경우: `Grove Kit`
 ![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)
+
+<div class="dwExpand2"></div>
 
 <br/>
 15) 게이트웨이가 추가될 `사이트`를 선택한 후, `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
