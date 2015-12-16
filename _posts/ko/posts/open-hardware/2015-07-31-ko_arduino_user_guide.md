@@ -15,11 +15,9 @@ Thing+ 연동가이드(아두이노)<br/>
 * [게이트웨이 등록](#id-register)
 
 
-_현재는 `Mac OS, Windows7`에서만 지원하고 있습니다._
-
 <br/>
 #### 0. Windows 환경 설정
-* `Mac OS` 사용자는 이 과정이 필요없습니다. [환경 설정](#id-setting)로 가세요.
+* `Mac OS` 사용자는 이 과정이 필요없습니다. [환경 설정](#id-setting)으로 가세요.
 
 <p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Windows 환경설정 보기</p>
 

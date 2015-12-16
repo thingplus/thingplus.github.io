@@ -14,7 +14,6 @@ Thing+ Guide for Arduino<br/>
 * [Install ThingPlus Embedded package](#id-package)
 * [Gatway Registration](#id-register)
 
-_`Mac OS` and `windows7` is supported at now_
 
 <br/>
 #### 0. Environment Setting for Windows 
