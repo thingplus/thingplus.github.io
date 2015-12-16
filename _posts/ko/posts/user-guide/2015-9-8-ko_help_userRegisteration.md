@@ -71,19 +71,20 @@ _아직 라즈베리파이/비글본그린/아두이노에 **Thing+ Embedded 패
 <br/>
 1) Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
-- 비글본그린/라즈베리파이의 경우 타겟보드의 접속 후에 이동
+<p class="dwExpand" > 비글본그린/라즈베리파이의 경우 타겟보드의 접속 후에 이동</p>
 
-    ```bash
-    @shell:$ cd /opt/thingplus/gateway/scripts
-    ```
+```bash
+@shell:$ cd /opt/thingplus/gateway/scripts
+```
+<div class="dwExpand2"></div>
+<p class="dwExpand" > 아두이노의 경우 PC에서 이동</p> 
 
-- 아두이노의 경우 PC에서 이동 
-
-    ```bash
-    @shell:$ cd $HOME/thingplus/gateway/scripts
-    ```
-
+```bash
+@shell:$ cd $HOME/thingplus/gateway/scripts
+```
+<div class="dwExpand2"></div>
 <br/>
+
 2) 장치의 MAC 어드레스를 얻어 클립보드에 복사한다.
 
 ```bash
@@ -112,17 +113,17 @@ xx:xx:xx:xx:xx:xx
 <br/>
 7) 새로 추가할 `게이트웨이 모델`을 선택한다.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우: <b>Raspberry Pi - Developer</b></p>
+<p class="dwExpand" > 라즈베리파이의 경우: <b>Raspberry Pi - Developer</b></p>
 
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_ko.png)
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우: <b>BeagleBone Green - Developer</b></p>
+<p class="dwExpand" > 비글본그린의 경우: <b>BeagleBone Green - Developer</b></p>
 
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의 경우: <b>Arduino, PC - Developer</b></p>
+<p class="dwExpand" > 아두이노의 경우: <b>Arduino, PC - Developer</b></p>
 
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
 
@@ -141,7 +142,7 @@ xx:xx:xx:xx:xx:xx
 
 > 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
+<p class="dwExpand" > 라즈베리파이의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
 
    
 ```bash
@@ -154,7 +155,7 @@ xx:xx:xx:xx:xx:xx
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
+<p class="dwExpand" > 비글본그린의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
     
 ```bash
 @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
@@ -165,7 +166,7 @@ xx:xx:xx:xx:xx:xx
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의 경우 (<b>Mac PC</b>)</p>
+<p class="dwExpand" > 아두이노의 경우 (<b>Mac PC</b>)</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -175,7 +176,7 @@ xx:xx:xx:xx:xx:xx
 ```
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의 경우 (<b>windows PC</b>)</p>
+<p class="dwExpand" > 아두이노의 경우 (<b>windows PC</b>)</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -192,7 +193,7 @@ xx:xx:xx:xx:xx:xx
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 함.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우 </p>
+<p class="dwExpand" > 라즈베리파이의 경우 </p>
 
 ```bash
 @shell:$ sudo nano /etc/rc.local
@@ -203,7 +204,7 @@ xx:xx:xx:xx:xx:xx
 exit 0
 ```
 <div class="dwExpand2"></div>
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우 </p>
+<p class="dwExpand" > 비글본그린의 경우 </p>
 
 
 ```bash
@@ -230,19 +231,19 @@ exit 0
 <br/>
 14) `디바이스 모델`을 선택한다.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 라즈베리파이의 경우: <b>GrovePi+ Starter Kit</b></p>
+<p class="dwExpand" > 라즈베리파이의 경우: <b>GrovePi+ Starter Kit</b></p>
 
 ![select_devicemodel](/assets/select_devicemodel_rapberry_ko.png)
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 비글본그린의 경우: <b>Grove Starter Kit for BeagleBone Green</b></p>
+<p class="dwExpand" > 비글본그린의 경우: <b>Grove Starter Kit for BeagleBone Green</b></p>
 
 ![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 아두이노의경우: <b>Grove Starter Kit </b></p>
+<p class="dwExpand" > 아두이노의경우: <b>Grove Starter Kit </b></p>
 
 - 아두이노 경우: `Grove Kit`
 ![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)

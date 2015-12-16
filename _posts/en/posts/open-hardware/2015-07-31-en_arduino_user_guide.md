@@ -19,7 +19,7 @@ Thing+ Guide for Arduino<br/>
 #### 0. Environment Setting for Windows 
 * `Mac OS` user is not requierd this process. Go to [Environment Setting](#id-setting)
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> View environment setting for Windows</p>
+<p class="dwExpand"> View environment setting for Windows</p>
 
 
 1) install Node Js
@@ -62,7 +62,7 @@ Thing+ Guide for Arduino<br/>
 <br/>
 2) Connect sensors to the Grove Sensor Board.<br/>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Reference : LED polarity</p>
+<p class="dwExpand"> Reference : LED polarity</p>
 
 ![LED polarity](/assets/led.png)
 
@@ -130,7 +130,7 @@ Thing+ Guide for Arduino<br/>
 
 3) Download the install script file.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Windows</p>
+<p class="dwExpand"> For Windows</p>
 
 ```bash
 @PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_win_install.sh
@@ -138,7 +138,7 @@ Thing+ Guide for Arduino<br/>
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Mac OS</p>
+<p class="dwExpand"> For Mac OS</p>
 
 ```bash
 @PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_osx_install.sh
@@ -150,7 +150,7 @@ Thing+ Guide for Arduino<br/>
 
 - It may take some minutes upon network performance.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Windows</p>
+<p class="dwExpand"> For Windows</p>
 
 ```
 @PC:$ chmod 755 thingplus_embedded_sdk_win_install.sh
@@ -158,7 +158,7 @@ Thing+ Guide for Arduino<br/>
 ```
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> For Mac OS</p>
+<p class="dwExpand"> For Mac OS</p>
 
 ```
 @PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh

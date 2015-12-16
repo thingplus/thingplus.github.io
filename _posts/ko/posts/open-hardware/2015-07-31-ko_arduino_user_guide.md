@@ -19,7 +19,7 @@ Thing+ 연동가이드(아두이노)<br/>
 #### 0. Windows 환경 설정
 * `Mac OS` 사용자는 이 과정이 필요없습니다. [환경 설정](#id-setting)으로 가세요.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Windows 환경설정 보기</p>
+<p class="dwExpand"> Windows 환경설정 보기</p>
 
 
 1) Node Js 설치
@@ -62,7 +62,7 @@ Thing+ 연동가이드(아두이노)<br/>
 <br/>
 2) Grove Sensor Board에 센서를 연결합니다.<br/>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> 참고 : LED의 극성</p>
+<p class="dwExpand"> 참고 : LED의 극성</p>
 
 ![LED 극성](/assets/led.png)
 
@@ -130,7 +130,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 3) 인스톨 스크립트 파일을 다운로드합니다.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Windows</p>
+<p class="dwExpand"> Windows</p>
 
 ```bash
 @PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_win_install.sh
@@ -138,7 +138,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Mac OS</p>
+<p class="dwExpand"> Mac OS</p>
 
 ```bash
 @PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_osx_install.sh
@@ -150,7 +150,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Windows</p>
+<p class="dwExpand"> Windows</p>
 
 ```
 @PC:$ chmod 755 thingplus_embedded_sdk_win_install.sh
@@ -158,7 +158,7 @@ Thing+ 연동가이드(아두이노)<br/>
 ```
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" style="color:#c7254e; background-color:#f9f2f4; border-radius:4px; padding: 2px 4px; font-size: 90%; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"> Mac OS</p>
+<p class="dwExpand"> Mac OS</p>
 
 ```
 @PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh

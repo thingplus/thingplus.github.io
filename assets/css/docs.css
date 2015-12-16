@@ -360,7 +360,14 @@ ledtip:hover:before{
 }
 
 /*chris*/
-
+p.dwExpand {
+  color:#c7254e; 
+  background-color:#f9f2f4; 
+  border-radius:4px; 
+  padding: 2px 4px; 
+  font-size: 90%; 
+  font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+}
 .dwExpand.ui-closed:before {
   /*font-family:monospace;*/
   font-family: FontAwesome;
