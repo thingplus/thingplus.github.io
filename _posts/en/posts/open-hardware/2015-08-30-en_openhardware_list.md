@@ -24,7 +24,7 @@ Open Hardware List
 ### 1. Raspberry Pi
 - Raspberry Pi I, II
 - Sensor Kit
-  - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-p-2240.html)
+  - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-CE-certified-p-2572.html)
   - [GrovePi+ Only](http://www.seeedstudio.com/depot/GrovePi-p-2241.html)
   - [Available Sensor List](#available-sensor-list-pi)
 - [Guide link](/en/open-hardware/raspberry-pi-user-guide.html)
