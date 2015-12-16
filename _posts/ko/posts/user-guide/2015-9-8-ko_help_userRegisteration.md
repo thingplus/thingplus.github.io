@@ -209,7 +209,7 @@ exit 0
 ```bash
 @shell:$ nano /etc/rc.local
 ...
-(cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thngplus_device.sh restart)
+(cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thingplus_device.sh restart)
 (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
  
 exit 0
