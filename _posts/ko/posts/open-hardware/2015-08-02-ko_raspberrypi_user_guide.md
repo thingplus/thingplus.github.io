@@ -238,7 +238,7 @@ _본 가이드는 **TP-LINK TL-WN727N**을 기준으로 작성되었으나, 다�
 
 - 본 문서에서 테스트한 WiFi 동글 : [TP-LINK TL-WN727N](http://www.tp-link.co.kr/products/details/?model=TL-WN727N)
 
-- 라즈베리파이/비글본 그린에서 지원하는 WiFi 동글 목록은 아래 URL을 참조하세요.
+- 라즈베리파이에서 지원하는 WiFi 동글 목록은 아래 URL을 참조하세요.
   - [라즈베리파이 지원 WiFi 동글 리스트](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
   - WiFi 공유기가 5GHz WiFi 채널을 지원한다면 WiFi 동글이 해당 스펙을 지원하는지 확인이 필요합니다.
 

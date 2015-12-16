@@ -50,7 +50,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 - 아두이노(우노, 오렌지보드 등) 지원
 - 센서 구입경로
  - [아두이노 Grove 스타터 센서 키트](https://www.icbanq.com/P005710113/)
- - [그로브 호환 베이스 쉴드 별도 구매](https://www.icbanq.com/P005700460/)
+ - [Grove 호환 베이스 쉴드 별도 구매](https://www.icbanq.com/P005700460/)
  - [지원 센서 목록 바로가기](#available-sensor-list-arduino)
 - [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
 
