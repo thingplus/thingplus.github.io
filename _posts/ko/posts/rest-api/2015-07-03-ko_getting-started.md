@@ -56,7 +56,11 @@ Getting Started with the Thing+ REST API
 ### Step 1-3. Check the imported collection
 
   1. Select 'Collections' tab and select 'Getting Started with the Thing+ REST API' collection
-<br> ![collection](/assets/collection.png)
+
+<br/>
+<div id='id-step1-4'></div>
+<br> 
+![collection](/assets/collection.png)
 
 
 ### Step 1-4. Creating a Thing+ OAuth Client ID & Client Secret
