@@ -171,4 +171,8 @@ Thing+ 연동가이드(아두이노)<br/>
 #### 4. 게이트웨이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
-<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
+<!-- <a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a> -->
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>

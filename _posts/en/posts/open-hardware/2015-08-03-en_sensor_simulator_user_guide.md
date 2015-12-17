@@ -48,3 +48,7 @@ Thing+ Integragtion Guide for Sensor Simulator
   - Values your Sensor are periodically aggregated and delivered to Thing+ Cloud by the Thing+ Gateway Software. You can see the values from Thing+ Portal after several minutes.
 
 <br/>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>

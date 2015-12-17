@@ -4,7 +4,7 @@ tags: "open-hardware"
 published: true
 permalink: /ko/open-hardware/openhardware-list.html
 ---
-
+<div class='thetop'></div>
 오픈하드웨어 지원 리스트
 <div id='id-simulator-guide'></div>
 
@@ -94,8 +94,11 @@ permalink: /ko/open-hardware/openhardware-list.html
  - [소리 센서 (Sound Sensor)](http://www.icbanq.com/P005713936)
  - [회전각 센서 (Rotary Angle Sensor)](http://www.icbanq.com/P005604574)
  - [조도 센서 (Light Sensor)](http://www.icbanq.com/P005700527)
- - [온도센서 (Temperature and Humidity Sensor)](https://www.icbanq.com/P005713933/)
+ - [온도센서 (Temperature Sensor)](https://www.icbanq.com/P005713933/)
 
 
-<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
+<!-- <a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a> -->
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>
 

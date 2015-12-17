@@ -202,7 +202,9 @@ Sensor analysis page provide chart and statistics.
 Can create and manage the rule. Detail rule description is on  [Rule creation and control](/en/user-guide/rule.html).
 ![](/assets/en_3_m_rule0.png)
 
-
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>
 
 <!---
 Experience real time data analysis by connecting devices on Thing+. 

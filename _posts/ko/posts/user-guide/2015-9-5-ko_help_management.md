@@ -136,7 +136,9 @@ permalink: /ko/user-guide/management.html
 
 ---
 
-<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>
 <!---
 1. 서비스 관리
 * 사이트 관리

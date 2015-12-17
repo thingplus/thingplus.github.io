@@ -289,3 +289,7 @@ Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a
      ![BBG putty login](/assets/putty_usb_login_bbg.png)
 
 > Remark: In case of Windows OS, You should close and run your putty clinet every time when you reboot your Beagle Bone Green Device
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>

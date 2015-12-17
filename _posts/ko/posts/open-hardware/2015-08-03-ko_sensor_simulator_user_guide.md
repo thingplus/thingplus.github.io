@@ -49,4 +49,6 @@ Thing+ 연동가이드(센서 시뮬레이터)
 
 <br/>
 
-<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>

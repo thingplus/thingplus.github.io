@@ -168,7 +168,9 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
   * 규칙설정의 마지막 단계에서는 규칙의 이름과 상세설명을 입력할 수 있습니다. 그리고 규칙의 심각도를 설정하고 "완료"버튼을 누르면 규칙이 만들어 집니다.
 
 
-<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>
 <!---
   * 더 자세한 규칙생성 사례 보기
 

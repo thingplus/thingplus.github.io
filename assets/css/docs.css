@@ -385,13 +385,13 @@ a.back-to-top {
     display: none;
     width: 50px;
     height: 50px;
-    /*text-indent: -9999px;*/
+    text-indent: -9999px;
     position: fixed;
     z-index: 999;
     right: 30px;
     bottom: 30px;
     font-family: FontAwesome;
-    content:"\f077";
+    content: "\f077";
     font-size: 40px;
     color: #333;
     /*background: transparent url("http://static1.squarespace.com/static/565d8903e4b07ad504d433d8/t/566aab96c21b86abf170e486/1449831318773/arrows-48px-glyph-1_circle-up-39.png") no-repeat center 43%;*/
@@ -399,4 +399,51 @@ a.back-to-top {
     -moz-border-radius: 30px;
     border-radius: 30px;
     transition: all .8s ease;
+}
+
+
+.testheight {
+  height:1200px;
+  font-size:20px;
+  text-align:center;
+  padding:100px 20px;
+}
+.scrolltop {
+  display:none;
+  width:100%;
+  margin:0 auto;
+  position:fixed;
+  bottom:20px;
+  right:10px; 
+}
+.scroll {
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  padding:20px;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor:pointer;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;    
+}
+.scroll:hover {
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;    
+}
+.scroll:hover .fa {
+  padding-top:-10px;
+}
+.scroll .fa {
+  font-size:30px;
+  margin-top:-5px;
+  margin-left:1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;  
 }

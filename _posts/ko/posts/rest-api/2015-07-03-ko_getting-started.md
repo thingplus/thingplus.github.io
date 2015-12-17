@@ -267,4 +267,6 @@ Getting Started with the Thing+ REST API
 | timelines            | [GET] https://api.thingplus.net/v1/timelines
 | timeline             | [GET] https://api.thingplus.net/v1/timelines/{timelineId}
 
-<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a>
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>

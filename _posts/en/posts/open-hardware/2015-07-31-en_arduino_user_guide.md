@@ -23,10 +23,10 @@ Thing+ Guide for Arduino<br/>
 
 
 1) install Node Js
-- install Node JS(v0.10.16)
+  - install Node JS(v0.10.16)
 
-- <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit download</a>
-- <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
+    - <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit download</a>
+    - <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
 
 2) install Cygwin 
 
@@ -171,4 +171,6 @@ Thing+ Guide for Arduino<br/>
 #### 4. Gateway Registration
 Follow the [Guide to register a gateway](/en/user-guide/registration.html#id-gateway)
 
-<a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a> 
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div> 

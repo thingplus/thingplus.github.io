@@ -302,3 +302,6 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 > Remark: Connection between your device and DC 5V Power Adaptor is required for using the Wifi Dongle because a Wifi Dongle consumes much more power than normal
 
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>

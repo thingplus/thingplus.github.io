@@ -167,6 +167,10 @@ Any web based devices such as desk top, Tablet PC, and smartphone can access sys
   * You can put message for action. Put HTML in double quotes.  For example, we do not have any message so that we put “”.
   * As final, you can set the name of rule and detail description. Then set detail setting (means Fatal/Warning/notification) and press finish button.  
 
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>
 <!---
   * Other cases
 
