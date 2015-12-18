@@ -36,10 +36,13 @@ Thing+ 연동가이드(아두이노)<br/>
 - Cygwin 다운로드 사이트 선택화면이 나오면 `ftp://ftp.kaist.ac.kr`을 선택합니다.
 ![Cygwin select ftp site](/assets/cygwin_site_select.png)
 
-- Cygwin Package 선택화면에서는 'wget'을 선택합니다.
+- Cygwin Package 선택화면에 'wget', 'git'을 선택합니다.
 
-  - Search에 wget 입력 -> Web -> 1.16.3-1 선택
+  - Search에 wget 입력 -> Web -> wget 선택
 ![Cygwin wget package select](/assets/cygwin_wget.png)
+
+  - Search에 git 입력 -> Devel ->  git 선택
+![Cygwin git package select](/assets/cygwin_git.png)
 
 <br/>
 

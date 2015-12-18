@@ -46,14 +46,7 @@ thingplus_openhardware_arduino_install () {
   cd -
 }
 
-cygwin_setup () {
-  lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
-  install apt-cyg /bin
-  apt-cyg install git
-}
-
 ########## START ##########
-cygwin_setup
 
 thingplus_install
 
