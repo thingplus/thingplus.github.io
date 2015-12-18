@@ -39,10 +39,10 @@ Thing+ 연동가이드(아두이노)<br/>
 - Cygwin Package 선택화면에 'wget', 'git'을 선택합니다.
 
   - Search에 wget 입력 -> Web -> wget 선택
-![Cygwin wget package select](/assets/cygwin_wget.png)
-
+  ![Cygwin wget package select](/assets/cygwin_wget.png)
+  -
   - Search에 git 입력 -> Devel ->  git 선택
-![Cygwin git package select](/assets/cygwin_git.png)
+  ![Cygwin git package select](/assets/cygwin_git.png)
 
 <br/>
 
