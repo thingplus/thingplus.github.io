@@ -1,2 +1,4 @@
-IF EXIST "C:\Program Files\nodejs" SETX PATH=%PATH%;"C:\Program Files\nodejs"
-IF EXIST "C:\Program Files (x86)\nodejs" SETX PATH=%PATH%;"C:\Program Files (x86)\nodejs"
+echo off
+setx PATH "C:\Program Files\nodejs;%PATH%"
+setx PATH "C:\Program Files\nodejs;%PATH%"
+

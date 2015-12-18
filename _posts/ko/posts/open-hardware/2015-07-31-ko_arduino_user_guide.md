@@ -28,6 +28,9 @@ Thing+ 연동가이드(아두이노)<br/>
 - <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit 다운로드</a>
 - <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit 다운로드</a>
 
+  - `64bit` 사용자는 `Node Js 설치 후` 아래파일를 다운받아 실행시켜 주시기 바랍니다.
+     - <a href="http://support.thingplus.net/download/install/x86_64_env_set.bat" target="_blank"> 64bit 환경설정 다운로드 </a>
+
 2) Cygwin 설치
 
 - <a href="https://cygwin.com/setup-x86.exe" target="_blank"> 32bit 다운로드</a>
