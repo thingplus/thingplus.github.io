@@ -9,8 +9,8 @@ Thing+ 연동가이드(아두이노)<br/>
 <div id='id-windows'></div>
 
 * [Windows 환경 설정](#id-windows)
-* [아두이노 하드웨어 연결](#id-setting)
 * [아두이노 펌웨어 설치](#id-firmware)
+* [환경설정](#id-setting)
 * [ThingPlus Embedded 패키지 설치](#id-package)
 * [게이트웨이 등록](#id-register)
 
@@ -41,6 +41,7 @@ Thing+ 연동가이드(아두이노)<br/>
   - Search에 wget 입력 -> Web -> 1.16.3-1 선택
 ![Cygwin wget package select](/assets/cygwin_wget.png)
 
+<br/>
 
 - 설치가 완료되면 바탕화면에 Cygwin Terminal 아이콘이 보입니다.
 
@@ -49,37 +50,13 @@ Thing+ 연동가이드(아두이노)<br/>
 <p class="dwExpand2"></p>
 
 
-<div id='id-setting'></div>
-<br/><br/>
-#### 1. 환경 설정 
-
-0) <a href="https://www.icbanq.com/P005710113/S" target="_blank"> Grove Starter Kit for Arduino 구매 바로가기</a>
-
-<br/>
-1) 아두이노와 Grove Sensor Board를 연결합니다.
-![Arduino + Grove Starter kit](/assets/arduino_grove_board.png)
-
-<br/>
-2) Grove Sensor Board에 센서를 연결합니다.<br/>
-
-<p class="dwExpand"> 참고 : LED의 극성</p>
-
-![LED 극성](/assets/led.png)
-
-<div class="dwExpand2"></div>
-
-![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
-
-<br/>
-3) 아두이노에 USB Cable을 PC와 연결합니다.
-![Arduino + USB Cable](/assets/arduino_usb.png)
-
 <div id='id-firmware'></div>
 <br/><br/>
-#### 2. 아두이노 펌웨어 설치
+#### 1. 아두이노 펌웨어 설치
+
 1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치합니다.
 
-   - <a href="https://www.arduino.cc/en/Main/Software" target="_blank"> 다운로드 링크 </a>
+   - [다운로드링크](https://www.arduino.cc/en/Main/Software)
 
 <br/>
 2) 아누이노 IDE를 실행합니다.
@@ -103,7 +80,7 @@ Thing+ 연동가이드(아두이노)<br/>
 ![Arduino Verify](/assets/arduino_ide_verify.png)
 
 <br/>
-6) 펌웨어를 아두이노에 다운로드합니다.
+6) 펌웨어를 아두이노에 업로드 합니다..
 
 ![Arduino Download](/assets/arduino_ide_upload.png)
 
@@ -111,6 +88,37 @@ Thing+ 연동가이드(아두이노)<br/>
 7) 펌웨어가 정상적으로 다운로드 되면 IDE 하단에 아래와 같은 메세지가 나옵니다.
 
 ![Arduino Download Success](/assets/arduino_ide_upload_done.png)
+
+
+
+<div id='id-setting'></div>
+<br/><br/>
+#### 2. 환경 설정 
+
+1) <a href="https://www.icbanq.com/P005710113/S" target="_blank"> Grove Starter Kit for Arduino 구매 바로가기</a>
+
+<br/>
+
+<br/>
+2) 아두이노와 Grove Sensor Board를 연결합니다.
+![Arduino + Grove Starter kit](/assets/arduino_grove_board.png)
+
+<br/>
+3) Grove Sensor Board에 센서를 연결합니다.<br/>
+
+<p class="dwExpand"> 참고 : LED의 극성</p>
+
+![LED 극성](/assets/led.png)
+
+<div class="dwExpand2"></div>
+
+![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
+
+<br/>
+4) 아두이노에 USB Cable을 PC와 연결합니다.
+![Arduino + USB Cable](/assets/arduino_usb.png)
+
+
 
 <div id='id-package'></div>
 <br/><br/>

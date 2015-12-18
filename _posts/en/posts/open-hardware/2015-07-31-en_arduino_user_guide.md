@@ -9,8 +9,8 @@ Thing+ Guide for Arduino<br/>
 <div id='win-setting'></div>
 
 * [Environment Setting for window](#win-setting)
-* [Environment Setting](#id-setting)
 * [Arduino Firmware install](#id-firmware)
+* [Environment Setting](#id-setting)
 * [Install ThingPlus Embedded package](#id-package)
 * [Gatway Registration](#id-register)
 
@@ -21,13 +21,14 @@ Thing+ Guide for Arduino<br/>
 
 <p class="dwExpand"> View environment setting for Windows</p>
 
-
+<br/>
 1) install Node Js
-  - install Node JS(v0.10.16)
+- install Node JS(v0.10.16)
 
-    - <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit download</a>
-    - <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
+- <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit download</a>
+- <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
 
+<br/>
 2) install Cygwin 
 
 - <a href="https://cygwin.com/setup-x86.exe" target="_blank"> 32bit download</a>
@@ -41,42 +42,16 @@ Thing+ Guide for Arduino<br/>
   - Input 'wget' in `Search` field -> Web -> select 1.16.3-1 
 ![Cygwin wget package select](/assets/cygwin_wget.png)
 
+<br/>
 
 - When installation is completed, then you can show as the follow icon on your desktop.
 
 ![Cygwin Icon](/assets/cygwin_icon.png)
 
 <p class="dwExpand2"></p>
-
-
-<div id='id-setting'></div>
-<br/><br/>
-#### 1. Environment Setting
-
-0) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
-
-<br/>
-1) Connect Arduino and Grove Sensor Board.
-![Arduino + Grove Starter kit](/assets/arduino_grove_board.png)
-
-<br/>
-2) Connect sensors to the Grove Sensor Board.<br/>
-
-<p class="dwExpand"> Reference : LED polarity</p>
-
-![LED polarity](/assets/led.png)
-
-<div class="dwExpand2"></div>
-
-![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
-
-<br/>
-3) Connect Arduino and PC via USB cable.
-![Arduino + USB Cable](/assets/arduino_usb.png)
-
 <div id='id-firmware'></div>
-<br/><br/>
-#### 2. Arduino Firmware install
+<br/>
+#### 1. Arduino Firmware install
 1) Install Arduino IDE upon PC OS environment.
 
    - <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Download Link</a>
@@ -103,17 +78,45 @@ Thing+ Guide for Arduino<br/>
 ![Arduino Verify](/assets/arduino_ide_verify.png)
 
 <br/>
-6) Download Firmwaare to Arduino.
+6) upload Firmware to Arduino.
 
-![Arduino Download](/assets/arduino_ide_upload.png)
+![Arduino upload](/assets/arduino_ide_upload.png)
 
 <br/>
 7) Check if the below message shown at IDE.
 
-![Arduino Download Success](/assets/arduino_ide_upload_done.png)
+![Arduino upload Success](/assets/arduino_ide_upload_done.png)
+
+
+<div id='id-setting'></div>
+<br/><br/>
+#### 2. Environment Setting
+
+0) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
+
+<br/>
+1) Connect Arduino and Grove Sensor Board.
+![Arduino + Grove Starter kit](/assets/arduino_grove_board.png)
+
+<br/>
+2) Connect sensors to the Grove Sensor Board.<br/>
+
+<p class="dwExpand"> Reference : LED polarity</p>
+
+![LED polarity](/assets/led.png)
+
+<div class="dwExpand2"></div>
+
+![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
+
+<br/>
+3) Connect Arduino and PC via USB cable.
+![Arduino + USB Cable](/assets/arduino_usb.png)
 
 <div id='id-package'></div>
 <br/><br/>
+<br/><br/>
+
 #### 3. Install ThingPlus Embedded package
 1) Run the `Terminal`
 
