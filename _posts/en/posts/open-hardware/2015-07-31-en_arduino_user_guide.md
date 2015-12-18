@@ -28,6 +28,9 @@ Thing+ Guide for Arduino<br/>
 - <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit download</a>
 - <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
 
+  - `For 64bit` after install `Node Js, then download and run as the follow file.
+     - <a href="http://support.thingplus.net/download/install/x86_64_env_set.bat" target="_blank"> download for Environment setting of 64bit </a>
+
 <br/>
 2) install Cygwin 
 
