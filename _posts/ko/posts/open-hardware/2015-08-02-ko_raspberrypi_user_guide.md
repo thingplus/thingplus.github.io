@@ -87,7 +87,7 @@ Thing+ 연동가이드(라즈베리파이)
 ```bash
 @Pi2:$ sudo su
 @Pi2:$ apt-get update
-@Pi2:$ apt-get install ntp ntpdate
+@Pi2:$ apt-get install -y --force-yes ntp ntpdate
 @Pi2:$ ntpdate -u ntp.ubuntu.com
 ```
 

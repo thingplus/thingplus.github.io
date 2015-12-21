@@ -85,7 +85,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 ```bash
 @Pi2:$ sudo su
 @Pi2:$ apt-get update
-@Pi2:$ apt-get install ntp ntpdate
+@Pi2:$ apt-get install -y --force-yes ntp ntpdate
 @Pi2:$ ntpdate -u ntp.ubuntu.com
 ```
 
