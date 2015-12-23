@@ -8,11 +8,11 @@ permalink: /en/open-hardware/bbb-user-guide.html
 Thing+ Integration Guide for BeagleBone Green
 <div id='id-setting'></div>
 
-* [Environment Setting](#id-setting)
-* [Install Thing+ Embedded Package](#id-package)
-* [Gatway Registration](#id-register)
-* [How to configure the Wifi Dongle](#id-wifi-set)
-* [How to connect your Beagle Bone Green with your computer](#id-usb-set)
+1. [Environment Setting](#id-setting)
+2. [Install Thing+ Embedded Package](#id-package)
+3. [Gatway Registration](#id-register)
+4. [How to configure the Wifi Dongle](#id-wifi-set)
+5. [How to connect your Beagle Bone Green with your computer](#id-usb-set)
 
 <br/>
 #### 1. Environment Setting

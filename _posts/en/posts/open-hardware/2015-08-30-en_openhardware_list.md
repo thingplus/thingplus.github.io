@@ -7,21 +7,21 @@ permalink: /en/open-hardware/openhardware-list.html
 
 Open Hardware List
 
-* [Sensor Simulator](#id-simulator-guide)
-* [Raspberry Pi](#id-pi-guide)
-* [Beagle Board](#id-beagle-guide)
-* [Arduino](#id-arduino-guide)
-* [Available Sensor List](#id-sensor-list)
+1. [Sensor Simulator](#id-simulator-guide)
+2. [Raspberry Pi](#id-pi-guide)
+3. [Beagle Board](#id-beagle-guide)
+4. [Arduino](#id-arduino-guide)
+5. [Available Sensor List](#id-sensor-list)
 
 <br/>
 #### ***ThingPlus login is required. Please visit [HERE](https://thingplus.net/signup-en/) to Free user registeration.***
 <hr>
 
-### 0. Sensor Simulator
+### 1. Sensor Simulator
 - [Guide Link](/en/open-hardware/sensor-simulator-user-guide.html)
 
 <br/>
-### 1. Raspberry Pi
+### 2. Raspberry Pi
 - Raspberry Pi I, II
 - Sensor Kit
   - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-CE-certified-p-2572.html)
@@ -30,7 +30,7 @@ Open Hardware List
 - [Guide link](/en/open-hardware/raspberry-pi-user-guide.html)
 
 <br/>
-### 2. Beagle Board
+### 3. Beagle Board
 - Beaglebone Black, Beaglebone Green
 - Sensor Kit
   - [Grove Starter Kit for BeagleBone Green (**Including I2C Hub, ADC and 8 Sensors**)](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
@@ -41,7 +41,7 @@ Open Hardware List
 
 <div id='id-arduino-guide'></div>
 <br/>
-### 3. Arduino 
+### 4. Arduino 
 - Arduino compatible board(uno, orange board, etc)
 - Sensor kit
   - [Grove - Starter Kit for Arduino](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
@@ -50,12 +50,12 @@ Open Hardware List
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
 
 <br/>
-### 4. Coming soon
+### 5. Coming soon
 - Edison
 
 <br/>
 <div id='id-sensor-list'></div>
-### 5. Available Sensor List
+### 6. Available Sensor List
 - **We will add new sensors soon.**
 
 <div id='available-sensor-list-pi'></div>

@@ -8,15 +8,15 @@ permalink: /en/open-hardware/arduino-user-guide.html
 Thing+ Guide for Arduino<br/>
 <div id='win-setting'></div>
 
-* [Environment Setting for window](#win-setting)
-* [Arduino Firmware install](#id-firmware)
-* [Environment Setting](#id-setting)
-* [Install ThingPlus Embedded package](#id-package)
-* [Gatway Registration](#id-register)
+1. [Environment Setting for window](#win-setting)
+2. [Arduino Firmware install](#id-firmware)
+3. [Environment Setting](#id-setting)
+4. [Install ThingPlus Embedded package](#id-package)
+5. [Gatway Registration](#id-register)
 
 
 <br/>
-#### 0. Environment Setting for Windows 
+#### 1. Environment Setting for Windows 
 * `Mac OS` user is not requierd this process. Go to [Environment Setting](#id-setting)
 
 <p class="dwExpand"> View environment setting for Windows</p>
@@ -54,7 +54,7 @@ Thing+ Guide for Arduino<br/>
 <p class="dwExpand2"></p>
 <div id='id-firmware'></div>
 <br/>
-#### 1. Arduino Firmware install
+#### 2. Arduino Firmware install
 1) Install Arduino IDE upon PC OS environment.
 
    - <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Download Link</a>
@@ -93,7 +93,7 @@ Thing+ Guide for Arduino<br/>
 
 <div id='id-setting'></div>
 <br/><br/>
-#### 2. Environment Setting
+#### 3. Environment Setting
 
 0) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
 
@@ -120,7 +120,7 @@ Thing+ Guide for Arduino<br/>
 <br/><br/>
 <br/><br/>
 
-#### 3. Install ThingPlus Embedded package
+#### 4. Install ThingPlus Embedded package
 1) Run the `Terminal`
 
  - Windows : Run the 'Cygwin Terminal'.
@@ -174,7 +174,7 @@ Thing+ Guide for Arduino<br/>
 
 <div id='id-register'></div>
 <br/><br/>
-#### 4. Gateway Registration
+#### 5. Gateway Registration
 Follow the [Guide to register a gateway](/en/user-guide/registration.html#id-gateway)
 
 <div class='scrolltop'>

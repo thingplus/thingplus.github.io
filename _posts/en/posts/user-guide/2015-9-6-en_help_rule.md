@@ -7,12 +7,12 @@ permalink: /en/user-guide/rule.html
 
 Guide for rule creation and management. 
 
-* [About Rule](#id-rule-about)
-* [Rule Management](#id-rule-management)
-* [Rule Creation](#id-rule-creation)
-* [Rule Informaton](#id-rule-info)
-* [Edit/Remove Rule](#id-rule-edit)
-* [Totorial for Rule](#id-rule-tutorial)
+1. [About Rule](#id-rule-about)
+2. [Rule Management](#id-rule-management)
+3. [Rule Creation](#id-rule-creation)
+4. [Rule Informaton](#id-rule-info)
+5. [Edit/Remove Rule](#id-rule-edit)
+6. [Totorial for Rule](#id-rule-tutorial)
 
 ---
 <div id='id-rule-about'></div>

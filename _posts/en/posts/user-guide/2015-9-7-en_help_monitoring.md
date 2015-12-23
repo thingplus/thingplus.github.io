@@ -7,12 +7,12 @@ permalink: /en/user-guide/monitoring.html
 
 Guide for dashboard, rule and timeline, data analysis. 
 
-* [Dashboard](#id-dashbaord)
-* [Timeline](#id-timeline)
-* [Sensor list](#id-sensorlist)
-* [sensor Analysis](#id-analysis)
-* [Tag management](#id-tag)
-* [rule Management](#id-rule)
+1. [Dashboard](#id-dashbaord)
+2. [Timeline](#id-timeline)
+3. [Sensor list](#id-sensorlist)
+4. [sensor Analysis](#id-analysis)
+5. [Tag management](#id-tag)
+6. [rule Management](#id-rule)
 
 
 ---

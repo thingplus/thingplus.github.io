@@ -8,11 +8,11 @@ permalink: /ko/open-hardware/openhardware-list.html
 오픈하드웨어 지원 리스트
 <div id='id-simulator-guide'></div>
 
-* [센서 시뮬레이터](#id-simulator-guide)
-* [라즈베리파이](#id-pi-guide)
-* [비글보드](#id-beagle-guide)
-* [아두이노](#id-arduino-guide)
-* [지원센서 목록](#id-sensor-list)
+1. [센서 시뮬레이터](#id-simulator-guide)
+2. [라즈베리파이](#id-pi-guide)
+3. [비글보드](#id-beagle-guide)
+4. [아두이노](#id-arduino-guide)
+5. [지원센서 목록](#id-sensor-list)
 
 
 <br/>

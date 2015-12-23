@@ -7,10 +7,10 @@ permalink: /en/user-guide/management.html
 
 Guide for service, site, user and gateway.  
 
-* [Service Management](#id-service-management)
-* [Site Managment](#id-site-management)
-* [User Management](#id-user-management)
-* [Gateway Management](#id-gateway-management)
+1. [Service Management](#id-service-management)
+2. [Site Managment](#id-site-management)
+3. [User Management](#id-user-management)
+4. [Gateway Management](#id-gateway-management)
 
 ---
 <div id='id-service-management'></div>

@@ -7,12 +7,12 @@ permalink: /ko/user-guide/monitoring.html
 
 대시보드, 규칙 및 타임라인, 데이터 분석 등의 주요 기능들에 대한 가이드입니다.
 
-* [대시보드](#id-dashbaord)
-* [타임라인](#id-timeline)
-* [센서목록](#id-sensorlist)
-* [센서분석](#id-analysis)
-* [태그관리](#id-tag)
-* [규칙관리](#id-rule)
+1. [대시보드](#id-dashbaord)
+2. [타임라인](#id-timeline)
+3. [센서목록](#id-sensorlist)
+4. [센서분석](#id-analysis)
+5. [태그관리](#id-tag)
+6. [규칙관리](#id-rule)
 
 
 ---

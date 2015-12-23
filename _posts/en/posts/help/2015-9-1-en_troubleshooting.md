@@ -7,10 +7,10 @@ permalink: /en/help/troubleshooting.html
 <div id='id-trouble1'></div>
 Troubleshooting
 
-* [When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it](#id-trouble1)
-* [When you can NOT find some sensors](#id-trouble2)
-* [When you can NOT know the IP Address of your Device](#id-trouble3)
-* [Even though your device is registered at Thing+ Portal and turned on, Status at the Portal is `OFF`](#id-trouble4)
+1. [When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it](#id-trouble1)
+2. [When you can NOT find some sensors](#id-trouble2)
+3. [When you can NOT know the IP Address of your Device](#id-trouble3)
+4. [Even though your device is registered at Thing+ Portal and turned on, Status at the Portal is `OFF`](#id-trouble4)
 
 ### When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it:
 

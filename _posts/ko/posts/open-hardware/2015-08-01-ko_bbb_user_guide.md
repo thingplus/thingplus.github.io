@@ -8,11 +8,11 @@ permalink: /ko/open-hardware/bbb-user-guide.html
 Thing+ 연동가이드(비글본그린)
 <div id='id-setting'></div>
 
-* [환경 설정](#id-setting)
-* [Thing+ Embedded 패키지 설치](#id-package)
-* [게이트웨이 등록](#id-register)
-* [WiFi 동글 설정](#id-wifi-set)
-* [비글본그린 USB로 연결하기](#id-usb-set)
+1. [환경 설정](#id-setting)
+2. [Thing+ Embedded 패키지 설치](#id-package)
+3. [게이트웨이 등록](#id-register)
+4. [WiFi 동글 설정](#id-wifi-set)
+5. [비글본그린 USB로 연결하기](#id-usb-set)
 
 <br/>
 #### 1. 환경 설정

@@ -8,10 +8,10 @@ permalink: /en/open-hardware/raspberry-pi-user-guide.html
 Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-setting'></div>
 
-* [Environment Setting](#id-setting)
-* [Install Thing+ Embedded Package](#id-package)
-* [Gatway Registration](#id-register)
-* [How to configure the Wifi Dongle](#id-wifi-set)
+1. [Environment Setting](#id-setting)
+2. [Install Thing+ Embedded Package](#id-package)
+3. [Gatway Registration](#id-register)
+4. [How to configure the Wifi Dongle](#id-wifi-set)
 
 <br/>
 #### 1. Environment Setting

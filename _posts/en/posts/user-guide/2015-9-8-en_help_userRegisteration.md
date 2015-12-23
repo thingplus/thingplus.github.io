@@ -7,9 +7,9 @@ permalink: /en/user-guide/registration.html
 
 User guide for a progress as hardware synchronization and user sign up. 
 
-* [Service Administrator](#id-serviceadmin)
-* [User](#id-enduser) 
-* [Gateway Registration](#id-gateway) 
+1. [Service Administrator](#id-serviceadmin)
+2. [User](#id-enduser) 
+3. [Gateway Registration](#id-gateway) 
 
 ---
 <div id='id-serviceadmin'></div>

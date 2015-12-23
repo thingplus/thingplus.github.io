@@ -7,12 +7,12 @@ permalink: /ko/user-guide/rule.html
 
 규칙을 생성하고 관리하는 방법에 대한 가이드입니다.
 
-* [규칙에 대하여](#id-rule-about)
-* [규칙 관리](#id-rule-management)
-* [규칙 만들기](#id-rule-creation)
-* [규칙 정보](#id-rule-info)
-* [규칙 수정 및 삭제](#id-rule-edit)
-* [규칙 사례 따라하기](#id-rule-tutorial)
+1. [규칙에 대하여](#id-rule-about)
+2. [규칙 관리](#id-rule-management)
+3. [규칙 만들기](#id-rule-creation)
+4. [규칙 정보](#id-rule-info)
+5. [규칙 수정 및 삭제](#id-rule-edit)
+6. [규칙 사례 따라하기](#id-rule-tutorial)
 
 ---
 <div id='id-rule-about'></div>

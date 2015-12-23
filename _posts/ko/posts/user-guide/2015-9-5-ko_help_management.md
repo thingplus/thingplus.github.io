@@ -7,10 +7,10 @@ permalink: /ko/user-guide/management.html
 
 서비스, 사이트, 사용자 및 게이트웨이 관리에 대한 가이드입니다.
 
-* [서비스 관리](#id-service-management)
-* [사이트 관리](#id-site-management)
-* [사용자 관리](#id-user-management)
-* [게이트웨이 관리](#id-gateway-management)
+1. [서비스 관리](#id-service-management)
+2. [사이트 관리](#id-site-management)
+3. [사용자 관리](#id-user-management)
+4. [게이트웨이 관리](#id-gateway-management)
 
 ---
 <div id='id-service-management'></div>

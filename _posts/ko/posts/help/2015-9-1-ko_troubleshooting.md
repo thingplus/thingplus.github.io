@@ -7,10 +7,10 @@ permalink: /ko/help/troubleshooting.html
 <div id='id-trouble1'></div>
 문제 해결 방법
 
-* [센서목록 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우](#id-trouble1)
-* [한 개 이상의 센서가 등록되지 않았을 경우](#id-trouble2)
-* [장치의 IP address를 확인하는 방법](#id-trouble3)
-* [Thing+ Portal에 등록되어 있는 장치가 전원이 들어와 있음에도 불구하고, 상태가 `OFF`일 경우](#id-trouble4)
+1. [센서목록 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우](#id-trouble1)
+2. [한 개 이상의 센서가 등록되지 않았을 경우](#id-trouble2)
+3. [장치의 IP address를 확인하는 방법](#id-trouble3)
+4. [Thing+ Portal에 등록되어 있는 장치가 전원이 들어와 있음에도 불구하고, 상태가 `OFF`일 경우](#id-trouble4)
 
 
 ### `센서목록` 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우

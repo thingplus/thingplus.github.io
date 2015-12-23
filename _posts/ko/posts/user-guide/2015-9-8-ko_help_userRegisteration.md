@@ -7,9 +7,9 @@ permalink: /ko/user-guide/registration.html
 
 서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.
 
-* [서비스 관리자](#id-serviceadmin)
-* [일반 사용자](#id-enduser) 
-* [게이트웨이 등록](#id-gateway) 
+1. [서비스 관리자](#id-serviceadmin)
+2. [일반 사용자](#id-enduser) 
+3. [게이트웨이 등록](#id-gateway) 
 
 ---
 <div id='id-serviceadmin'></div>

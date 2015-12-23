@@ -7,11 +7,11 @@ permalink: /ko/user-guide/preparation.html
 
 Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이드입니다.
 
-* [시작하기 전에](#id-starting)
-* [용어집](#id-term) 
-* [주요기능](#id-feature)
-* [언제 어디서든 활용하기](#id-anytime)
-* [사례](#id-usecase)
+1. [시작하기 전에](#id-starting)
+2. [용어집](#id-term) 
+3. [주요기능](#id-feature)
+4. [언제 어디서든 활용하기](#id-anytime)
+5. [사례](#id-usecase)
 
 ---
 <div id='id-starting'></div>

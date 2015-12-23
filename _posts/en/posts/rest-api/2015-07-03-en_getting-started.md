@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Tutorial
 tags: "rest-api"
 published: true
 permalink: /en/rest-api/getting-started.html
@@ -8,28 +8,31 @@ permalink: /en/rest-api/getting-started.html
 Getting Started with the Thing+ REST API
 <div id='id-step0'></div>
 
-* [Thing+ Service registration & Hardware installation](#id-step0)
-* [Prerequisite](#id-step1)
-* [Using the Thing+ REST API with an OAuth Access token](#id-step2)
-* [Try some APIs](#id-step3)
-* [Code Samples](#id-step4)
-* [Thing+ REST API Quick Reference](#id-api)
+1. [Thing+ Service registration & Hardware installation](#id-step0)
+2. [Prerequisite](#id-step1)
+3. [Using the Thing+ REST API with an OAuth Access token](#id-step2)
+4. [Try some APIs](#id-step3)
+5. [Code Samples](#id-step4)
+6. [Thing+ REST API Quick Reference](#id-api)
 
-## Step 0. Thing+ Service registration & Hardware installation
-  - <a href="https://www.thingplus.net" target="_blank">Thing+ Portal</a>
 
-### Step 0-1
+
+## Step 1. Thing+ Service registration & Hardware installation
+  - <a href="https://www.thingplus.net" target="_blank">Thing+ 포털</a>
+
+### Step 1-1
   - Thing+ service registration is required
-    - <a href="http://support.thingplus.net/en/user-guide/registration.html" target="_blank">Thing+ service registration</a>
+    - <a href="http://support.thingplus.net/ko/user-guide/registration.html" target="_blank">Thing+ service registration</a>
+
+### Step 1-2
+  - Hardware installation is required
+    - [오픈하드웨어 지원 리스트](/ko/open-hardware/openhardware-list.html)
 
 <div id='id-step1'></div>
-### Step 0-2
-  - Hardware installation is required
-    - [OpenHardware List](/en/open-hardware/openhardware-list.html)
 
-## Step 1. Prerequisite
+## Step 2. Prerequisite
 
-### Step 1-1. Postman for getting started with the Thing+ REST API
+### Step 2-1. Postman for getting started with the Thing+ REST API
   - Install <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a>
   - Install <a href="https://www.getpostman.com/docs/introduction" target="_blank">Postman</a>
     - <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" target="_blank">Direct link for Chrome browser user</a>
@@ -38,7 +41,7 @@ Getting Started with the Thing+ REST API
     - Postman guide
       - <a href="https://www.getpostman.com/docs/launch" target="_blank">Launch Postman</a> and <a href="https://www.getpostman.com/docs/requests" target="_blank">Sending requests</a>
 
-### Step 1-2. Import a Postman collection
+### Step 2-2. Import a Postman collection
   1. Click the 'Import' button
 <br> ![import](/assets/import.png)
 <br><br>
@@ -50,17 +53,17 @@ Getting Started with the Thing+ REST API
 <br><br>
   3. Close the modal
 
-### Step 1-3. Check the imported collection
+### Step 2-3. Check the imported collection
 
   1. Select 'Collections' tab and select 'Getting Started with the Thing+ REST API' collection
 
 <br/>
 <div id='id-step1-4'></div>
-<br/> 
+<br> 
 ![collection](/assets/collection.png)
 
 
-### Step 1-4. Creating a Thing+ OAuth Client ID & Client Secret
+### Step 2-4. Creating a Thing+ OAuth Client ID & Client Secret
 
 1. Open Chrome browser on Chrome browser of a compute and <a href="https://www.thingplus.net/#/login" target="_blank">Sign in </a> to Thing+ Portal
 <br> ![interceptor enable](/assets/sign-in.png)
@@ -98,7 +101,7 @@ Getting Started with the Thing+ REST API
 <br> ![interceptor disable](/assets/interceptor-disable.png)
 
 
-### Step 1-5. Obtaining an OAuth Access token with <a href="./oauth2.html#authorization-code-grant-or-web-server" target="_blank">Authorization Code Grant</a> type
+### Step 2-5. Obtaining an OAuth Access token with <a href="./oauth2.html#authorization-code-grant-or-web-server" target="_blank">Authorization Code Grant</a> type
 
    - An Access token Expires in 15 days (possibly can be changed without advance notification)
 
@@ -127,20 +130,19 @@ Getting Started with the Thing+ REST API
 <br>&nbsp;&nbsp;&nbsp;• The client ID you received from Thing+ when you registered your application
 <br> 6) Add a your "client_secret"
 <br>&nbsp;&nbsp;&nbsp;• The client secret you received from Thing+ when you registered your application
-<br> 7) Add a your "redirect_rul"
+<br> 7) Add a your "redirect_uri"
 <br>&nbsp;&nbsp;&nbsp;• The redirect URL when you registered your application
 <br> 8) Click the 'Send' button
 <br><br>
-
 5. Check the '200 OK' result status and Access token
 
   ![interceptor enable](/assets/oauth-access-token.png)
 
 <div id='id-step2'></div>
 
-## Step 2. Using the Thing+ REST API with an OAuth Access token
+## Step 3. Using the Thing+ REST API with an OAuth Access token
 
-### Step 2-1. Create a <a href="https://www.getpostman.com/docs/environments" target="_blank">Postman Environments</a>
+### Step 3-1. Create a <a href="https://www.getpostman.com/docs/environments" target="_blank">Postman Environments</a>
 
   1. Launch Postman
 
@@ -164,12 +166,12 @@ Getting Started with the Thing+ REST API
 
 **Now you are ready to use the Thing+ REST API with an OAuth Access token**
 
-<div id='id-step3'></div>
-
 - 'Getting Started with the Thing+ REST API' collection uses {{AccessToken}} variable for the 'Authorization' http header
 ![environment variable](/assets/environment-variable.png)
 
-## Step 3. Try some APIs
+<div id='id-step3'></div>
+
+## Step 4. Try some APIs
 
 #### **_Useful tip before trying some APIs with postman_**
   - Postman lets you generate code snippets in more than 15 languages.
@@ -216,24 +218,23 @@ Getting Started with the Thing+ REST API
 
     > To be updated
 
-<div id='id-step4'></div>
-
   - Reading Collection with queries
 
     > To be updated
 
+<div id='id-step4'></div>
   - Reading a Item
 
     > To be updated
 
 
 
-## Step 4. Code Samples
+## Step 5. Code Samples
+
+- [Sample apps](/ko/rest-api/api-samples.html)
+
+
 <div id='id-api'></div>
-
-- [Sample apps](/en/rest-api/api-samples.html)
-
-
 ---
 
 ## Thing+ REST API Quick Reference
@@ -265,7 +266,6 @@ Getting Started with the Thing+ REST API
 |                      | [GET] https://api.thingplus.net/v1/gateways/{gatewayId}/sensors/{sensorId}/series?dataStart={startDate}&dataEnd={endDate}&series[interval]=1m
 | timelines            | [GET] https://api.thingplus.net/v1/timelines
 | timeline             | [GET] https://api.thingplus.net/v1/timelines/{timelineId}
-
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

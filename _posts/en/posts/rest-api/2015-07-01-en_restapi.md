@@ -8,15 +8,15 @@ permalink: /en/rest-api/rest-api.html
 <div id='id-schema'></div>
 REST APIs
 
-* [Schema](#id-schema)
-* [Base url](#id-url)
-* [Collection(Listing) response types](#id-types)
-* [Collection Queries](#id-queries)
-* [Series Queries for the sensor values](#id-series)
-* [Gateways](#id-gateways)
-* [Sensors](#id-sensors)
-* [Tags](#id-tags)
-* [Collection](#id-collection)
+1. [Schema](#id-schema)
+2. [Base url](#id-url)
+3. [Collection(Listing) response types](#id-types)
+4. [Collection Queries](#id-queries)
+5. [Series Queries for the sensor values](#id-series)
+6. [Gateways](#id-gateways)
+7. [Sensors](#id-sensors)
+8. [Tags](#id-tags)
+9. [Collection](#id-collection)
 
 
 <div id='id-url'></div>

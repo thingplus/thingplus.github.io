@@ -7,11 +7,11 @@ permalink: /en/user-guide/preparation.html
 
 Guide for Thing+ service.
 
-* [Before you start ](#id-starting)
-* [Terminology ](#id-term) 
-* [Main feature](#id-feature)
-* [Access](#id-anytime)
-* [User case](#id-usecase)
+1. [Before you start ](#id-starting)
+2. [Terminology ](#id-term) 
+3. [Main feature](#id-feature)
+4. [Access](#id-anytime)
+5. [User case](#id-usecase)
 
 ---
 <div id='id-starting'></div>

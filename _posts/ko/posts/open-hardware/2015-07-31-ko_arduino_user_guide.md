@@ -8,15 +8,15 @@ permalink: /ko/open-hardware/arduino-user-guide.html
 Thing+ 연동가이드(아두이노)<br/>
 <div id='id-windows'></div>
 
-* [Windows 환경 설정](#id-windows)
-* [아두이노 펌웨어 설치](#id-firmware)
-* [환경설정](#id-setting)
-* [ThingPlus Embedded 패키지 설치](#id-package)
-* [게이트웨이 등록](#id-register)
+0. [Windows 환경 설정](#id-windows)
+1. [아두이노 펌웨어 설치](#id-firmware)
+2. [환경설정](#id-setting)
+3. [ThingPlus Embedded 패키지 설치](#id-package)
+4. [게이트웨이 등록](#id-register)
 
 
 <br/>
-#### 0. Windows 환경 설정
+#### 1. Windows 환경 설정
 * `Mac OS` 사용자는 이 과정이 필요없습니다. [환경 설정](#id-setting)으로 가세요.
 
 <p class="dwExpand"> Windows 환경설정 보기</p>
@@ -58,7 +58,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 <div id='id-firmware'></div>
 <br/><br/>
-#### 1. 아두이노 펌웨어 설치
+#### 2. 아두이노 펌웨어 설치
 
 1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치합니다.
 
@@ -99,7 +99,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 <div id='id-setting'></div>
 <br/><br/>
-#### 2. 환경 설정 
+#### 3. 환경 설정 
 
 1) <a href="https://www.icbanq.com/P005710113/S" target="_blank"> Grove Starter Kit for Arduino 구매 바로가기</a>
 
@@ -128,7 +128,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 <div id='id-package'></div>
 <br/><br/>
-#### 3. ThingPlus Embedded 패키지 설치
+#### 4. ThingPlus Embedded 패키지 설치
 1) Terminal을 실행시킵니다.
 
 - Windows : 바탕화면의 'Cygwin Terminal' 실행
@@ -182,7 +182,7 @@ Thing+ 연동가이드(아두이노)<br/>
 <div id='id-register'></div>
 
 <br/><br/>
-#### 4. 게이트웨이 등록
+#### 5. 게이트웨이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
 <!-- <a href="#" class="back-to-top" id="up" style="display: block;"><i class="fa fa-arrow-circle-up"></i></a> -->

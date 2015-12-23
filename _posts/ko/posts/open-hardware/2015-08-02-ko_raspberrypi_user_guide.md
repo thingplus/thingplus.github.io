@@ -8,10 +8,10 @@ permalink: /ko/open-hardware/raspberry-pi-user-guide.html
 Thing+ 연동가이드(라즈베리파이)
 <div id='id-setting'></div>
 
-* [환경설정](#id-setting)
-* [Thing+ Embedded 패키지 설치](#id-package)
-* [라즈베리파이 등록](#id-register)
-* [WIFI 동글 설정](#id-wifi-set)
+1. [환경설정](#id-setting)
+2. [Thing+ Embedded 패키지 설치](#id-package)
+3. [라즈베리파이 등록](#id-register)
+4. [WIFI 동글 설정](#id-wifi-set)
 
 
 
