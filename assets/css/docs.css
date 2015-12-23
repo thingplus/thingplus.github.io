@@ -364,22 +364,31 @@ h4{
   font-size: 28px}
 
 p.dwExpand {
-  color:#c7254e; 
-  background-color:#f9f2f4; 
+  color:#000000; 
+  /*background-color:#f9f2f4; */
+  background-color:#e0e8f3; 
   border-radius:4px; 
-  padding: 2px 4px; 
+  padding: 2px 4px;
+  padding-left: 26px; 
   font-size: 90%; 
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
 }
 .dwExpand.ui-closed:before {
   /*font-family:monospace;*/
+  position: absolute; 
+  right: 50px;
+  padding-left: 30px;
   font-family: FontAwesome;
   content:"\f078 ";
 }
 .dwExpand.ui-open:before {
   /*font-family:monospace;*/
+  position: absolute; 
+  right: 50px;
+  padding-left: 30px;
   font-family: FontAwesome;
-  content:"\f077";
+  content:"\f077 ";
+  border-left: 5px;
 }
 /* end sidebar */
 

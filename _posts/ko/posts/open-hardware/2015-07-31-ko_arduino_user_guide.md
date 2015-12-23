@@ -17,7 +17,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 <br/>
 #### 1. Windows 환경 설정
-* `Mac OS` 사용자는 이 과정이 필요없습니다. [환경 설정](#id-setting)으로 가세요.
+
 
 <p class="dwExpand"> Windows 환경설정 보기</p>
 
@@ -55,6 +55,7 @@ Thing+ 연동가이드(아두이노)<br/>
 
 <p class="dwExpand2"></p>
 
+* `Mac OS` 사용자는 이 과정이 필요없습니다. [환경 설정](#id-setting)으로 가세요.
 
 <div id='id-firmware'></div>
 <br/><br/>

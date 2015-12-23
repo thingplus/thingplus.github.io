@@ -17,7 +17,6 @@ Thing+ Guide for Arduino<br/>
 
 <br/>
 #### 1. Environment Setting for Windows 
-* `Mac OS` user is not requierd this process. Go to [Environment Setting](#id-setting)
 
 <p class="dwExpand"> View environment setting for Windows</p>
 
@@ -52,6 +51,9 @@ Thing+ Guide for Arduino<br/>
 ![Cygwin Icon](/assets/cygwin_icon.png)
 
 <p class="dwExpand2"></p>
+
+* `Mac OS` user is not requierd this process. Go to [Environment Setting](#id-setting)
+
 <div id='id-firmware'></div>
 <br/>
 #### 2. Arduino Firmware install
