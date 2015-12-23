@@ -16,6 +16,8 @@ Thing+ Guide for Arduino<br/>
 
 
 <br/>
+
+---
 #### 1. Environment Setting for Windows 
 
 <p class="dwExpand"> View environment setting for Windows</p>
@@ -56,6 +58,8 @@ Thing+ Guide for Arduino<br/>
 
 <div id='id-firmware'></div>
 <br/>
+
+---
 #### 2. Arduino Firmware install
 1) Install Arduino IDE upon PC OS environment.
 
@@ -95,6 +99,8 @@ Thing+ Guide for Arduino<br/>
 
 <div id='id-setting'></div>
 <br/><br/>
+
+---
 #### 3. Environment Setting
 
 0) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
@@ -122,6 +128,8 @@ Thing+ Guide for Arduino<br/>
 <br/><br/>
 <br/><br/>
 
+
+---
 #### 4. Install ThingPlus Embedded package
 1) Run the `Terminal`
 
@@ -176,6 +184,8 @@ Thing+ Guide for Arduino<br/>
 
 <div id='id-register'></div>
 <br/><br/>
+
+---
 #### 5. Gateway Registration
 Follow the [Guide to register a gateway](/en/user-guide/registration.html#id-gateway)
 

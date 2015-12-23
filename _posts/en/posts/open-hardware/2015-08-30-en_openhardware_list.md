@@ -14,6 +14,8 @@ Open Hardware List
 5. [Available Sensor List](#id-sensor-list)
 
 <br/>
+
+---
 #### ***ThingPlus login is required. Please visit [HERE](https://thingplus.net/signup-en/) to Free user registeration.***
 <hr>
 

@@ -16,6 +16,8 @@ Thing+ 연동가이드(라즈베리파이)
 
 
 <br/>
+
+---
 #### 1. 환경 설정
 
 0) [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
@@ -184,6 +186,8 @@ Thing+ 연동가이드(라즈베리파이)
 <div id='id-package'></div>
 
 <br/><br/>
+
+---
 #### 2. Thing+ Embedded 패키지 설치
 
 1) 라즈베리파이에 Grove Pi+ shield와 센서를, Ethernet(LAN 케이블)과 Power Cable을 분리한 상태에서 연결한다.
@@ -225,6 +229,8 @@ Thing+ 연동가이드(라즈베리파이)
 <div id='id-register'></div>
 
 <br/><br/>
+
+---
 #### 3. 라즈베리파이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
@@ -245,6 +251,8 @@ _본 가이드는 **TP-LINK TL-WN727N**을 기준으로 작성되었으나, 다�
 > 주의: WiFi 동글을 장치에 연결한 후 반드시 재시작해야 한다.
 
 <br/>
+
+---
 #### 1. WiFi 동글 설정 방법
 
 <br/>

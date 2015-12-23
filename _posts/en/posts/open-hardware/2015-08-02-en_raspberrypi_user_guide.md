@@ -14,6 +14,8 @@ Thing+ Integragtion Guide for Raspberry Pi
 4. [How to configure the Wifi Dongle](#id-wifi-set)
 
 <br/>
+
+---
 #### 1. Environment Setting
 
 0) [Go to shop to buy the GrovePi+ Starter Kit](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-CE-certified-p-2572.html)
@@ -182,6 +184,8 @@ Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-package'></div>
 
 <br/><br/>
+
+---
 #### 2. Install Thing+ Embedded Package
 
 1) Connect Grove Pi+ shield, Sensors to Raspberry Pi without Ethernet(LAN cable) and Power Cable.
@@ -223,6 +227,8 @@ Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-register'></div>
 
 <br/><br/>
+
+---
 #### 3. Gateway Registration
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
 
@@ -243,6 +249,8 @@ _This docuement is based on **TP-LINK TL-WN727N** but you can refer this for oth
 > Remark: You should reboot your Raspberry Pi after you plug the Wifi dongle into the Raspberry Pi
 
 <br/>
+
+---
 #### 1.  How to configure the Wifi Dongle
 
 <br/>

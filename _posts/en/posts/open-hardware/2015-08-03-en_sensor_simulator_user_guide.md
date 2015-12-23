@@ -8,6 +8,8 @@ permalink: /en/open-hardware/sensor-simulator-user-guide.html
 Thing+ Integragtion Guide for Sensor Simulator
 
 <br/>
+
+---
 #### 1. Regist Sensor Simulator
 
 <br/>

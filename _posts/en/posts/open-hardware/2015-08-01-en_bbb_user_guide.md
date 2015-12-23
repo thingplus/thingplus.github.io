@@ -15,6 +15,8 @@ Thing+ Integration Guide for BeagleBone Green
 5. [How to connect your Beagle Bone Green with your computer](#id-usb-set)
 
 <br/>
+
+---
 #### 1. Environment Setting
 
 0) [Go to shop to buy the Grove Starter Kit](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
@@ -104,6 +106,8 @@ Thing+ Integration Guide for BeagleBone Green
 <div id='id-package'></div>
 
 <br/><br/>
+
+---
 #### 2. Install Thing+ Embedded Package
 
 1) Connect Grove Starter kit sensor to BeagleBone Green without Ethernet(LAN cable) and Power Cable.
@@ -156,6 +160,8 @@ Thing+ Integration Guide for BeagleBone Green
 <div id='id-register'></div>
 
 <br/><br/>
+
+---
 #### 3. Gatway Registration
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
 
@@ -176,6 +182,8 @@ _This docuement is based on **NEXT-201N MINI** but you can refer this for other 
 > Remark: BeagleBone Green should be restarted after the Wifi Dongle is plugged in
 
 <br/>
+
+---
 #### 1. How to configure the Wifi Dongle
 
 <br/>

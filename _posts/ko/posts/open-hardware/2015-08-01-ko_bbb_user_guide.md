@@ -15,6 +15,8 @@ Thing+ 연동가이드(비글본그린)
 5. [비글본그린 USB로 연결하기](#id-usb-set)
 
 <br/>
+
+---
 #### 1. 환경 설정
 
 0) [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
@@ -103,6 +105,8 @@ Thing+ 연동가이드(비글본그린)
 
 <div id='id-package'></div>
 <br/><br/>
+
+---
 #### 2. Thing+ Embedded 패키지 설치
 
 1) BBG에 Grove Starter Kit센서를 Power Cable을 분리한 상태에서 연결한다.
@@ -157,6 +161,8 @@ Thing+ 연동가이드(비글본그린)
 
 <div id='id-register'></div>
 <br/><br/>
+
+---
 #### 3. 게이트웨이 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
 
@@ -177,6 +183,8 @@ _본 가이드는 **NEXT-201N MINI**를 기준으로 작성되었으나, 다른 
 > 주의: WiFi 동글을 장치에 연결한 후 반드시 재시작해야 한다.
 
 <br/>
+
+---
 #### 1. WiFi 동글 설정 방법
 
 <br/>

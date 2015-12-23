@@ -8,6 +8,8 @@ permalink: /ko/open-hardware/sensor-simulator-user-guide.html
 Thing+ 연동가이드(센서 시뮬레이터)
 
 <br/>
+
+---
 #### 1. 센서 시뮬레이터 등록
 
 <br/>
