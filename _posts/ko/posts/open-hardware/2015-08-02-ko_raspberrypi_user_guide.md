@@ -191,6 +191,12 @@ Thing+ 연동가이드(라즈베리파이)
 #### 2. Thing+ Embedded 패키지 설치
 
 1) 라즈베리파이에 Grove Pi+ shield와 센서를, Ethernet(LAN 케이블)과 Power Cable을 분리한 상태에서 연결한다.
+<p class="dwExpand"> 참고 : LED의 극성</p>
+
+![LED polarity](/assets/led.png)
+
+<div class="dwExpand2"></div>
+
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.png)
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)

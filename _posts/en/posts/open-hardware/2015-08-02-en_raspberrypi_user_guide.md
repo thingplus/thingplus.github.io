@@ -189,6 +189,12 @@ Thing+ Integragtion Guide for Raspberry Pi
 #### 2. Install Thing+ Embedded Package
 
 1) Connect Grove Pi+ shield, Sensors to Raspberry Pi without Ethernet(LAN cable) and Power Cable.
+<p class="dwExpand"> Reference : LED polarity</p>
+
+![LED polarity](/assets/led.png)
+
+<div class="dwExpand2"></div>
+
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.png)
 
    ![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
