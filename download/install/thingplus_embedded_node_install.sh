@@ -11,7 +11,11 @@ node_install() {
       NODE_FILE=node-v$NODE_VERSION-darwin-x64.tar.gz
     ;;
     'Linux')
-      NODE_FILE=node-v$NODE_VERSION-linux-arm-pi.tar.gz
+      if [ $NODE_VERSION == '0.10.16' ] ; then
+        NODE_FILE=node-v$NODE_VERSION-linux-arm-pi.tar.gz
+      else
+        NODE_FILE=node-v$NODE_VERSION-linux-armv7l.tar.gz
+      fi
     ;;
     *)
       echo Invalid OS Version
