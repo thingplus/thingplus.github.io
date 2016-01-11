@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $(".dwExpand").addClass('ui-closed').css('cursor','pointer');
+    $(".dwExpand").nextUntil(".dwExpand2").addClass('detail');
     $(".dwExpand").nextUntil(".dwExpand2").slideToggle();
     $(".dwExpand").click(function() {
       
