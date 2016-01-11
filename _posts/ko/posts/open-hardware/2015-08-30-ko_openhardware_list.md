@@ -101,49 +101,49 @@ permalink: /ko/open-hardware/openhardware-list.html
 <br><br>
 ### 6. 추가 생성할 수 있 센서 목록
 
-|icon                                                   |Type       | Model                |Categrory         
-|-------------------------------------------------------|-----------|----------------------|----------
-|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png) |7색 컬러 LED | jsonrpc7colorRGBLed |actuator              
-|![accelerometer](/assets/icon/icon-accelerometer-small.png) |가속도 | jsonrpcAccelerometer |sensor
-|![aircondition](/assets/icon/icon-airConditioner-small.png)|에어컨|jsonrpcAirConditioner|actuator
-|![battery](/assets/icon/icon-batteryGauge-small.png)|배터리|jsonrpcBatteryGauge|sensor
-|![buzzer](/assets/icon/icon-buzzer-small.png)|버저|jsonrpcBuzzer|actuator
-|![co](/assets/icon/icon-co-small.png)|일산화탄소|jsonrpcCo|sensor
-|![co2](/assets/icon/icon-co2-small.png)|이산화탄소|jsonrpcCo2|sensor
-|![color](/assets/icon/icon-color-small.png)|색상|jsonrpcColor|sensor
-|![count](/assets/icon/icon-count-small.png)|횟수|jsonrpcCount|sensor
-|![countevent](/assets/icon/icon-countEvent-small.png)|횟수(이벤트)|jsonrpcCountEvent|sensor
-|![current](/assets/icon/icon-current-small.png)|전류|jsonrpcCurrent|sensor
-|![door](/assets/icon/icon-door-small.png)|문열림|jsonrpcDoor|sensor
-|![dust](/assets/icon/icon-dust-small.png)|먼지|jsonrpcDust|sensor
-|![fan](/assets/icon/icon-electricFan-small.png)|선풍기|jsonrpcElectricFan|actuator
-|![humi](/assets/icon/icon-humidity-small.png)|습도|jsonrpcHumi|sensor
-|![lcd](/assets/icon/icon-lcd-small.png)|LCD|jsonrpcLcd|actuator
-|![led](/assets/icon/icon-led-small.png)|LED|jsonrpcLed|actuator
-|![light](/assets/icon/icon-light-small.png)|조도|jsonrpcLight|sensor
-|![motion](/assets/icon/icon-motion-small.png)|동작|jsonrpcMotion|sensor
-|![noise](/assets/icon/icon-noise-small.png)|소음|jsonrpcNoise|sensor
-|![number](/assets/icon/icon-number-small.png)|일반(숫자)|jsonrpcNumber|sensor
-|![onoff](/assets/icon/icon-onoff-small.png)|온오프|jsonrpcDi|sensor
-|![percent](/assets/icon/icon-percent-small.png)|퍼센트|jsonrpcPercent|sensor
-|![power](/assets/icon/icon-power-small.png)|전력량|jsonrpcPower|sensor
-|![switch](/assets/icon/icon-powerSwitch-small.png)|스위치|jsonrpcDo|actuator
-|![pressure](/assets/icon/icon-pressure-small.png)|압력|jsonrpcPressure|sensor
-|![reader](/assets/icon/icon-reader-small.png)|리더|jsonrpcReader|sensor
-|![colorLed](/assets/icon/icon-rgbLed-small.png)|컬러 LED|jsonrpcRGBLed|actuator
-|![rotaryAngle](/assets/icon/icon-rotaryAngle-small.png)|회전각|jsonrpcRotaryAngle|sensor
-|![sleepStage](/assets/icon/icon-sleepStage-small.png)|수면단계|jsonrpcSleepStage|sensor
-|![speed](/assets/icon/icon-speed-small.png)|속도|jsonrpcSpeed|sensor
-|![stepCount](/assets/icon/icon-stepCount-small.png)|걸음수|jsonrpcStepCount|sensor
-|![string](/assets/icon/icon-string-small.png)|일반(문자)|jsonrpcString|sensor
-|![tag](/assets/icon/icon-tag-small.png)|태그|jsonrpcTag|sensor
-|![televistion](/assets/icon/icon-television-small.png)|TV|jsonrpcTelevision|actuator
-|![temp](/assets/icon/icon-temperature-small.png)|온도|jsonrpcTemp|sensor
-|![tempCrt](/assets/icon/icon-temperatureController-small.png)|온도 조절기|jsonrpcTempCtrl|actuator
-|![vibration](/assets/icon/icon-vibration-small.png)|진동수|jsonrpcVibration|sensor
-|![voc](/assets/icon/icon-voc-small.png)|휘발성 유기 화합물|jsonrpcVoc|sensor
-|![voltage](/assets/icon/icon-voltage-small.png)|전압|jsonrpcVoltage|sensor
-|![weight](/assets/icon/icon-weight-small.png)|무게|jsonrpcWeight|sensor
+|icon                                                        |Type         |Description       | Model                |Categrory         
+|------------------------------------------------------------|-------------|-----------|----------------------|----------
+|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png)      |7colorRGBLed |7색 컬러 LED | jsonrpc7colorRGBLed |actuator              
+|![accelerometer](/assets/icon/icon-accelerometer-small.png) |accelerometer|가속도 | jsonrpcAccelerometer |sensor
+|![aircondition](/assets/icon/icon-airConditioner-small.png) |airConditioner|에어컨|jsonrpcAirConditioner|actuator
+|![battery](/assets/icon/icon-batteryGauge-small.png)        |batteryGauge|배터리|jsonrpcBatteryGauge|sensor
+|![buzzer](/assets/icon/icon-buzzer-small.png)               |buzzer|버저|jsonrpcBuzzer|actuator
+|![co](/assets/icon/icon-co-small.png)                       |co|일산화탄소|jsonrpcCo|sensor
+|![co2](/assets/icon/icon-co2-small.png)                     |co2|이산화탄소|jsonrpcCo2|sensor
+|![color](/assets/icon/icon-color-small.png)                 |color|색상|jsonrpcColor|sensor
+|![count](/assets/icon/icon-count-small.png)                 |count|횟수|jsonrpcCount|sensor
+|![countevent](/assets/icon/icon-countEvent-small.png)       |countEvent|횟수(이벤트)|jsonrpcCountEvent|sensor
+|![current](/assets/icon/icon-current-small.png)             |current|전류|jsonrpcCurrent|sensor
+|![door](/assets/icon/icon-door-small.png)                   |door|문열림|jsonrpcDoor|sensor
+|![dust](/assets/icon/icon-dust-small.png)                   |dust|먼지|jsonrpcDust|sensor
+|![fan](/assets/icon/icon-electricFan-small.png)             |electricFan|선풍기|jsonrpcElectricFan|actuator
+|![humi](/assets/icon/icon-humidity-small.png)               |humidity|습도|jsonrpcHumi|sensor
+|![lcd](/assets/icon/icon-lcd-small.png)                     |lcd|LCD|jsonrpcLcd|actuator
+|![led](/assets/icon/icon-led-small.png)                     |led|LED|jsonrpcLed|actuator
+|![light](/assets/icon/icon-light-small.png)                 |light|조도|jsonrpcLight|sensor
+|![motion](/assets/icon/icon-motion-small.png)               |motion|동작|jsonrpcMotion|sensor
+|![noise](/assets/icon/icon-noise-small.png)                 |noise|소음|jsonrpcNoise|sensor
+|![number](/assets/icon/icon-number-small.png)               |number|일반(숫자)|jsonrpcNumber|sensor
+|![onoff](/assets/icon/icon-onoff-small.png)                 |onoff|온오프|jsonrpcDi|sensor
+|![percent](/assets/icon/icon-percent-small.png)             |percent|퍼센트|jsonrpcPercent|sensor
+|![power](/assets/icon/icon-power-small.png)                 |power|전력량|jsonrpcPower|sensor
+|![switch](/assets/icon/icon-powerSwitch-small.png)          |powerSwitch|스위치|jsonrpcDo|actuator
+|![pressure](/assets/icon/icon-pressure-small.png)           |pressure|압력|jsonrpcPressure|sensor
+|![reader](/assets/icon/icon-reader-small.png)               |reader|리더|jsonrpcReader|sensor
+|![colorLed](/assets/icon/icon-rgbLed-small.png)             |rgbLed|컬러 LED|jsonrpcRGBLed|actuator
+|![rotaryAngle](/assets/icon/icon-rotaryAngle-small.png)     |rotaryAngle|회전각|jsonrpcRotaryAngle|sensor
+|![sleepStage](/assets/icon/icon-sleepStage-small.png)       |sleepStage|수면단계|jsonrpcSleepStage|sensor
+|![speed](/assets/icon/icon-speed-small.png)                 |speed|속도|jsonrpcSpeed|sensor
+|![stepCount](/assets/icon/icon-stepCount-small.png)         |stepCount|걸음수|jsonrpcStepCount|sensor
+|![string](/assets/icon/icon-string-small.png)               |string|일반(문자)|jsonrpcString|sensor
+|![tag](/assets/icon/icon-tag-small.png)                     |tag|태그|jsonrpcTag|sensor
+|![televistion](/assets/icon/icon-television-small.png)      |television|TV|jsonrpcTelevision|actuator
+|![temp](/assets/icon/icon-temperature-small.png)            |temperature|온도|jsonrpcTemp|sensor
+|![tempCrt](/assets/icon/icon-temperatureController-small.png)|temperatureController|온도 조절기|jsonrpcTempCtrl|actuator
+|![vibration](/assets/icon/icon-vibration-small.png)         |vibration|진동수|jsonrpcVibration|sensor
+|![voc](/assets/icon/icon-voc-small.png)                     |voc|휘발성 유기 화합물|jsonrpcVoc|sensor
+|![voltage](/assets/icon/icon-voltage-small.png)             |voltage|전압|jsonrpcVoltage|sensor
+|![weight](/assets/icon/icon-weight-small.png)               |weight|무게|jsonrpcWeight|sensor
 
 
 

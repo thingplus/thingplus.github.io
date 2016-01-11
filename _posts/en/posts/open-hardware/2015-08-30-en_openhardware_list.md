@@ -100,49 +100,49 @@ Open Hardware List
 <br><br>
 ### 6. List of Sensors to Create
 
-|icon                                                           |Type           | Model                |Categrory         
-|---------------------------------------------------------------|---------------|----------------------|----------
-|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png)         |7Color RGB LED |jsonrpc7colorRGBLed   |actuator              
-|![accelerometer](/assets/icon/icon-accelerometer-small.png)    |Accelerometer  |jsonrpcAccelerometer  |sensor
-|![aircondition](/assets/icon/icon-airConditioner-small.png)    |Air Conditioner|jsonrpcAirConditioner |actuator
-|![battery](/assets/icon/icon-batteryGauge-small.png)           |Battery Gauge  |jsonrpcBatteryGauge   |sensor
-|![buzzer](/assets/icon/icon-buzzer-small.png)                  |Buzzer         |jsonrpcBuzzer         |actuator
-|![co](/assets/icon/icon-co-small.png)                          |CO             |jsonrpcCo             |sensor
-|![co2](/assets/icon/icon-co2-small.png)                        |CO2            |jsonrpcCo2            |sensor
-|![color](/assets/icon/icon-color-small.png)                    |Color          |jsonrpcColor          |sensor
-|![count](/assets/icon/icon-count-small.png)                    |Count          |jsonrpcCount          |sensor
-|![countevent](/assets/icon/icon-countEvent-small.png)          |Count(Event)   |jsonrpcCountEvent     |sensor
-|![current](/assets/icon/icon-current-small.png)                |Current        |jsonrpcCurrent        |sensor
-|![door](/assets/icon/icon-door-small.png)                      |Door           |jsonrpcDoor           |sensor
-|![dust](/assets/icon/icon-dust-small.png)                      |Dust           |jsonrpcDust           |sensor
-|![fan](/assets/icon/icon-electricFan-small.png)                |Electric Fan   |jsonrpcElectricFan    |actuator
-|![humi](/assets/icon/icon-humidity-small.png)                  |Humidity       |jsonrpcHumi           |sensor
-|![lcd](/assets/icon/icon-lcd-small.png)                        |LCD            |jsonrpcLcd            |actuator
-|![led](/assets/icon/icon-led-small.png)                        |LED            |jsonrpcLed            |actuator
-|![light](/assets/icon/icon-light-small.png)                    |Light          |jsonrpcLight          |sensor
-|![motion](/assets/icon/icon-motion-small.png)                  |Motion         |jsonrpcMotion         |sensor
-|![noise](/assets/icon/icon-noise-small.png)                    |Noise          |jsonrpcNoise          |sensor
-|![number](/assets/icon/icon-number-small.png)                  |Generic(Number)|jsonrpcNumber         |sensor
-|![onoff](/assets/icon/icon-onoff-small.png)                    |On/Off         |jsonrpcDi             |sensor
-|![percent](/assets/icon/icon-percent-small.png)                |Percent        |jsonrpcPercent        |sensor
-|![power](/assets/icon/icon-power-small.png)                    |Electric Energy|jsonrpcPower          |sensor
-|![switch](/assets/icon/icon-powerSwitch-small.png)             |Power Switch   |jsonrpcDo             |actuator
-|![pressure](/assets/icon/icon-pressure-small.png)              |Pressure       |jsonrpcPressure       |sensor
-|![reader](/assets/icon/icon-reader-small.png)                  |Reader         |jsonrpcReader         |sensor
-|![colorLed](/assets/icon/icon-rgbLed-small.png)                |RGB LED        |jsonrpcRGBLed         |actuator
-|![rotaryAngle](/assets/icon/icon-rotaryAngle-small.png)        |Rotary Angle   |jsonrpcRotaryAngle    |sensor
-|![sleepStage](/assets/icon/icon-sleepStage-small.png)          |Sleep Stage    |jsonrpcSleepStage     |sensor
-|![speed](/assets/icon/icon-speed-small.png)                    |Speed          |jsonrpcSpeed          |sensor
-|![stepCount](/assets/icon/icon-stepCount-small.png)            |Step Count     |jsonrpcStepCount      |sensor
-|![string](/assets/icon/icon-string-small.png)                  |Generic(String)|jsonrpcString         |sensor
-|![tag](/assets/icon/icon-tag-small.png)                        |Tag            |jsonrpcTag            |sensor
-|![televistion](/assets/icon/icon-television-small.png)         |Television     |jsonrpcTelevision     |actuator
-|![temp](/assets/icon/icon-temperature-small.png)               |Temperature    |jsonrpcTemp           |sensor
-|![tempCrt](/assets/icon/icon-temperatureController-small.png)  |Temperature Controller|jsonrpcTempCtrl|actuator
-|![vibration](/assets/icon/icon-vibration-small.png)            |Vibration      |jsonrpcVibration      |sensor
-|![voc](/assets/icon/icon-voc-small.png)                        |VOC            |jsonrpcVoc            |sensor
-|![voltage](/assets/icon/icon-voltage-small.png)                |Voltage        |jsonrpcVoltage        |sensor
-|![weight](/assets/icon/icon-weight-small.png)                  |Weight         |jsonrpcWeight         |sensors
+|icon                                                           |Type           |Description    | Model                |Categrory         
+|---------------------------------------------------------------|---------------|---------------|----------------------|----------
+|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png)         |7colorRGBLed   |7Color RGB LED |jsonrpc7colorRGBLed   |actuator              
+|![accelerometer](/assets/icon/icon-accelerometer-small.png)    |accelerometer  |Accelerometer  |jsonrpcAccelerometer  |sensor
+|![aircondition](/assets/icon/icon-airConditioner-small.png)    |airConditioner |Air Conditioner|jsonrpcAirConditioner |actuator
+|![battery](/assets/icon/icon-batteryGauge-small.png)           |batteryGauge   |Battery Gauge  |jsonrpcBatteryGauge   |sensor
+|![buzzer](/assets/icon/icon-buzzer-small.png)                  |buzzer         |Buzzer         |jsonrpcBuzzer         |actuator
+|![co](/assets/icon/icon-co-small.png)                          |co             |CO             |jsonrpcCo             |sensor
+|![co2](/assets/icon/icon-co2-small.png)                        |co2            |CO2            |jsonrpcCo2            |sensor
+|![color](/assets/icon/icon-color-small.png)                    |color          |Color          |jsonrpcColor          |sensor
+|![count](/assets/icon/icon-count-small.png)                    |count          |Count          |jsonrpcCount          |sensor
+|![countevent](/assets/icon/icon-countEvent-small.png)          |countEvent     |Count(Event)   |jsonrpcCountEvent     |sensor
+|![current](/assets/icon/icon-current-small.png)                |current        |Current        |jsonrpcCurrent        |sensor
+|![door](/assets/icon/icon-door-small.png)                      |door           |Door           |jsonrpcDoor           |sensor
+|![dust](/assets/icon/icon-dust-small.png)                      |dust           |Dust           |jsonrpcDust           |sensor
+|![fan](/assets/icon/icon-electricFan-small.png)                |electricFan    |Electric Fan   |jsonrpcElectricFan    |actuator
+|![humi](/assets/icon/icon-humidity-small.png)                  |humidity       |Humidity       |jsonrpcHumi           |sensor
+|![lcd](/assets/icon/icon-lcd-small.png)                        |lec            |LCD            |jsonrpcLcd            |actuator
+|![led](/assets/icon/icon-led-small.png)                        |led            |LED            |jsonrpcLed            |actuator
+|![light](/assets/icon/icon-light-small.png)                    |light          |Light          |jsonrpcLight          |sensor
+|![motion](/assets/icon/icon-motion-small.png)                  |motion         |Motion         |jsonrpcMotion         |sensor
+|![noise](/assets/icon/icon-noise-small.png)                    |noise          |Noise          |jsonrpcNoise          |sensor
+|![number](/assets/icon/icon-number-small.png)                  |number         |Generic(Number)|jsonrpcNumber         |sensor
+|![onoff](/assets/icon/icon-onoff-small.png)                    |onoff          |On/Off         |jsonrpcDi             |sensor
+|![percent](/assets/icon/icon-percent-small.png)                |percent        |Percent        |jsonrpcPercent        |sensor
+|![power](/assets/icon/icon-power-small.png)                    |power          |Electric Energy|jsonrpcPower          |sensor
+|![switch](/assets/icon/icon-powerSwitch-small.png)             |powerSwitch    |Power Switch   |jsonrpcDo             |actuator
+|![pressure](/assets/icon/icon-pressure-small.png)              |pressure       |Pressure       |jsonrpcPressure       |sensor
+|![reader](/assets/icon/icon-reader-small.png)                  |reader         |Reader         |jsonrpcReader         |sensor
+|![colorLed](/assets/icon/icon-rgbLed-small.png)                |rgbLed         |RGB LED        |jsonrpcRGBLed         |actuator
+|![rotaryAngle](/assets/icon/icon-rotaryAngle-small.png)        |rotaryAngle    |Rotary Angle   |jsonrpcRotaryAngle    |sensor
+|![sleepStage](/assets/icon/icon-sleepStage-small.png)          |sleepStage     |Sleep Stage    |jsonrpcSleepStage     |sensor
+|![speed](/assets/icon/icon-speed-small.png)                    |speed          |Speed          |jsonrpcSpeed          |sensor
+|![stepCount](/assets/icon/icon-stepCount-small.png)            |stepCount      |Step Count     |jsonrpcStepCount      |sensor
+|![string](/assets/icon/icon-string-small.png)                  |string         |Generic(String)|jsonrpcString         |sensor
+|![tag](/assets/icon/icon-tag-small.png)                        |tag            |Tag            |jsonrpcTag            |sensor
+|![televistion](/assets/icon/icon-television-small.png)         |television     |Television     |jsonrpcTelevision     |actuator
+|![temp](/assets/icon/icon-temperature-small.png)               |temperature    |Temperature    |jsonrpcTemp           |sensor
+|![tempCrt](/assets/icon/icon-temperatureController-small.png)  |temperatureController|Temperature Controller|jsonrpcTempCtrl|actuator
+|![vibration](/assets/icon/icon-vibration-small.png)            |vibration      |Vibration      |jsonrpcVibration      |sensor
+|![voc](/assets/icon/icon-voc-small.png)                        |voc            |VOC            |jsonrpcVoc            |sensor
+|![voltage](/assets/icon/icon-voltage-small.png)                |voltage        |Voltage        |jsonrpcVoltage        |sensor
+|![weight](/assets/icon/icon-weight-small.png)                  |weight         |Weight         |jsonrpcWeight         |sensors
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
