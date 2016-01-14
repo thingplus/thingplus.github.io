@@ -8,7 +8,6 @@ permalink: /ko/open-hardware/arduinoPi-user-guide.html
 Thing+ 연동가이드(아두이노 & 라즈베리파이)<br/>
 <div id='id-windows'></div>
 
-0. [Windows 환경 설정](#id-windows)
 1. [아두이노 펌웨어 설치](#id-firmware)
 2. [환경설정](#id-setting)
 3. [ThingPlus Embedded 패키지 설치](#id-package)
@@ -21,85 +20,43 @@ Thing+ 연동가이드(아두이노 & 라즈베리파이)<br/>
 Arduino에서 얻은 센서 데이터를 Thing+에 전송하기 위해서는 Internet 연결이 필요합니다. 그러나, 아두이노 자체만으로는 Internet에 연결할 수 없기 때문에 PC 등을 게이트웨이로 사용해야하는데 본 장에서는 라즈베리파이를 게이트웨이로 하고 아두이노를 디바이스로 사용하여 IOT 서비를 연동하는 방법을 설명합니다.
 <br/><br/><br/>
 
-#### 1. Windows 환경 설정
+#### 1. 아두이노 펌웨어 설치
 
-
-<p class="dwExpand"> Windows 환경설정 보기</p>
-
-
-1) Node Js 설치
-- Node JS(v0.10.16)를 설치합니다.
-
-- <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit 다운로드</a>
-- <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit 다운로드</a>
-
-  - `64bit` 사용자는 `Node Js 설치 후` 아래파일를 다운받아 실행시켜 주시기 바랍니다.
-     - <a href="http://support.thingplus.net/download/install/x86_64_env_set.bat" target="_blank"> 64bit 환경설정 다운로드 </a>
-
-2) Cygwin 설치
-
-- <a href="https://cygwin.com/setup-x86.exe" target="_blank"> 32bit 다운로드</a>
-- <a href="https://cygwin.com/setup-x86_64.exe" target="_blank"> 64bit 다운로드</a>
-
-- Cygwin 다운로드 사이트 선택화면이 나오면 `ftp://ftp.kaist.ac.kr`을 선택합니다.
-![Cygwin select ftp site](/assets/cygwin_site_select.png)
-
-- Cygwin Package 선택화면에 'wget', 'git'을 선택합니다.
-
-  - Search에 wget 입력 -> Web -> wget 선택
-  ![Cygwin wget package select](/assets/cygwin_wget.png)
-  -
-  - Search에 git 입력 -> Devel ->  git 선택
-  ![Cygwin git package select](/assets/cygwin_git.png)
+1) 아두이노와 PC를 연결합니다.
 
 <br/>
-
-- 설치가 완료되면 바탕화면에 Cygwin Terminal 아이콘이 보입니다.
-
-![Cygwin Icon](/assets/cygwin_icon.png)
-
-<p class="dwExpand2"></p>
-
-* `Mac OS` 사용자는 이 과정이 필요없습니다. [환경 설정](#id-setting)으로 가세요.
-
-<div id='id-firmware'></div>
-<br/>
-
----
-#### 2. 아두이노 펌웨어 설치
-
-1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치합니다.
+2) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치합니다.
 
    - [다운로드링크](https://www.arduino.cc/en/Main/Software)
 
 <br/>
-2) 아누이노 IDE를 실행합니다.
+3) 아누이노 IDE를 실행합니다.
 
 
 <br/>
-3) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다. (windows에서는 COMxx 입니다.)
+4) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다. (windows에서는 COMxx 입니다.)
 
    - Tools -> Port -> Arduino/Genuino Uno
 ![Arduino Select Port](/assets/arduino_ide_select_port.png)
 
 <br/>
-4) 아두이노에 다운로드 할 펌웨어를 선택합니다.
+5) 아두이노에 다운로드 할 펌웨어를 선택합니다.
 
    - File -> Examples -> Firmata -> StandardFirmata
 ![Arduino Select Firmware](/assets/arduino_ide_select_firmare.png)
 
 <br/>
-5) 펌웨어를 빌드합니다.
+6) 펌웨어를 빌드합니다.
 
 ![Arduino Verify](/assets/arduino_ide_verify.png)
 
 <br/>
-6) 펌웨어를 아두이노에 업로드 합니다..
+7) 펌웨어를 아두이노에 업로드 합니다..
 
 ![Arduino Download](/assets/arduino_ide_upload.png)
 
 <br/>
-7) 펌웨어가 정상적으로 다운로드 되면 IDE 하단에 아래와 같은 메세지가 나옵니다.
+8) 펌웨어가 정상적으로 다운로드 되면 IDE 하단에 아래와 같은 메세지가 나옵니다.
 
 ![Arduino Download Success](/assets/arduino_ide_upload_done.png)
 
@@ -131,8 +88,6 @@ Arduino에서 얻은 센서 데이터를 Thing+에 전송하기 위해서는 Int
 ![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 
 <br/>
-4) 아두이노에 USB Cable을 PC와 연결합니다.
-![Arduino + USB Cable](/assets/arduino_usb.png)
 
 
 
@@ -205,8 +160,6 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 
 <br/>
 8) 라즈베리파이의 시스템 시간을 업데이트한다.
-
-- 진행 중, 설치를 확인하는 질문에서는 `y`를 입력한다.
 
 ```bash
 @Pi2:$ sudo su
