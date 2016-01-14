@@ -1,7 +1,7 @@
 ---
 title: 라즈베리파이 + 아두이노 사용자 가이드
 tags: "open-hardware"
-published: false
+published: true
 permalink: /ko/open-hardware/arduinoPi-user-guide.html
 ---
 
@@ -9,7 +9,7 @@ Thing+ 연동가이드(라즈베리파이 & 아두이노)<br/>
 <div id='id-windows'></div>
 
 1. [아두이노 펌웨어 설치](#id-firmware)
-2. [환경설정](#id-setting)
+2. [디바이스 환경설정](#id-setting)
 3. [라즈베리파이 환경 설정](#id-pi-setting)
 3. [ThingPlus Embedded 패키지 설치](#id-package)
 4. [게이트웨이 등록](#id-register)
@@ -18,9 +18,11 @@ Thing+ 연동가이드(라즈베리파이 & 아두이노)<br/>
 <br/>
 
 ---
-Arduino에서 얻은 센서 데이터를 Thing+에 전송하기 위해서는 Internet 연결이 필요합니다. 그러나, 아두이노 자체만으로는 Internet에 연결할 수 없기 때문에 PC 등을 게이트웨이로 사용해야하는데 본 장에서는 라즈베리파이를 게이트웨이로 하고 아두이노를 디바이스로 사용하여 IOT 서비를 연동하는 방법을 설명합니다.
+_Arduino에서 얻은 센서 데이터를 Thing+에 전송하기 위해서는 Internet 연결이 필요합니다. 그러나, 아두이노 자체만으로는 Internet에 연결할 수 없기 때문에 PC 등을 게이트웨이로 사용해야하는데 본 가이드에서는 라즈베리파이를 게이트웨이로 하고 아두이노를 디바이스로 사용하여 IOT 서비를 연동하는 방법을 설명합니다._
+
 <br/><br/><br/>
 
+---
 #### 1. 아두이노 펌웨어 설치
 
 1) 아두이노와 PC를 연결합니다.
@@ -67,7 +69,7 @@ Arduino에서 얻은 센서 데이터를 Thing+에 전송하기 위해서는 Int
 <br/>
 
 ---
-#### 2. 환경 설정 
+#### 2. 디바이스 환경 설정 
 
 1) <a href="https://www.icbanq.com/P005710113/S" target="_blank"> Grove Starter Kit for Arduino 구매 바로가기</a>
 
@@ -131,8 +133,9 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 5) Raspbian을 설치한 Micro SD card를 라즈베리파이 아래 그림과 같이 **뒷면**의 Micro SD card 슬롯에 꽂습니다.(power cable을 제거 하고 SD 카드 삽입후에 power cable을 연결합니다.)
    ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
-<br/>
 <div id='id-pi-setting-seventh'></div>
+<br/>
+
 6) 부팅이 완전히 이루어지도록 2~3분 정도 대기한 후, 터미널(윈도우즈 PC에서는 putty)을 열고 아래처럼 접속 합니다.
 
    - IP address를 찾기 힘들 경우 [`문제 해결 방법`](/ko/help/troubleshooting.html)을 참고합니다.
@@ -216,7 +219,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
     ```
 
 <br/>
-9) 재부팅이 완료된 라즈베리파이에 재접속합니다. ([`7번 과정`](#id-pi-setting-seventh) 참고)
+9) 재부팅이 완료된 라즈베리파이에 재접속합니다. ([`6번 과정`](#id-pi-setting-seventh) 참고)
 
 <br/>
 10) 4GB 이상의 SD card를 사용하기 위해서, `raspi-config`를 실행한다.
@@ -236,7 +239,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
    b. Tab키를 누르고 Finish를 선택한 후 Reboot할 것이냐는 물음에 `YES`를 선택합니다.
    ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
 
-   ![Raspberry Pi Choose Finish](/assets/choose_finish_2.png)
+   ![Raspberry Pi Choose Finish2](/assets/choose_finish_2.png)
 
 <br/>
    
@@ -250,23 +253,14 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 1) 라즈베리파이에 접속합니다.
 
 <br/>
-
-2) 패키지를 설치할 폴더를 만듭니다.
-
-```bash
-@Pi2:$ mkdir thingplus
-@Pi2:$ cd mkdir
-```
-
-<br/>
-3) 인스톨 스크립트 파일을 다운로드합니다.
+2) 인스톨 스크립트 파일을 다운로드합니다.
 
 ```bash
 @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_arduino_install.sh
 ```
 
 <br/>
-4) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치합니다.
+3) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치합니다.
 
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
@@ -277,7 +271,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
     ```
 
 <br/>
-5) 라즈베리파이를 재시작합니다.
+4) 라즈베리파이를 재시작합니다.
 
 ```bash
 @Pi2:$ sudo reboot

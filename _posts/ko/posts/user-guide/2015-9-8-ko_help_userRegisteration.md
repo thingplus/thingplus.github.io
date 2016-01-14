@@ -1,7 +1,7 @@
 ---
 title: 하드웨어 설치와 회원가입
 tags: "user-guide"
-published: false
+published: true
 permalink: /ko/user-guide/registration.html
 ---
 
@@ -42,7 +42,8 @@ permalink: /ko/user-guide/registration.html
   * 아이디, 이메일(입력 및 확인), 암호(입력 및 확인)를 입력하고, 이용약관에 동의를 하면, “등록 성공” 메세지가 나옵니다.
   * 회원가입 시 입력했던 이메일 주소로 본인 확인용 이메일이 전송됩니다.
   * 이메일 수신을 확인하시고, 아래와 같이 이메일 본문의 이메일 인증 버튼을 누르면, 인증이 완료됩니다.
-![](/assets/2_email.png)
+![email](/assets/2_email.png)
+
 
 #### 서비스 관리자의 가입승인 및 사용권한
   * **iot.thingplus.net** 사용자의 경우 자동 가입처리 됩니다.
@@ -64,9 +65,11 @@ _아직 보유한 게이트웨장비가 없다면, [Thing+ Portal](https://www.t
 
 #### BeagleBone Green, Raspberry Pi 2 & Arduino
 
-_본 가이드는 비글본그린, 라즈베리파이, 아두이노 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다._
+_본 가이드는 비글본그린, 라즈베리파이, 아두이노 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다._이
 
-_아직 라즈베리파이/비글본그린/아두이노에 **Thing+ Embedded 패키지**가 설치되어 있지 않다면 [**라즈베리파이 가이드**](/ko/open-hardware/raspberry-pi-user-guide.html)/[**비글본그린 가이드**](/ko/open-hardware/bbb-user-guide.html)/[**아두이노 가이드**](/ko/open-hardware/arduino-user-guide.html)를 참조하세요._
+_아직 라즈베리파이/비글본그린/아두이노에 **Thing+ Embedded 패키지**가 설치되어 있지 않다면 [**라즈베리파이 가이드**](/ko/open-hardware/raspberry-pi-user-guide.html)/[**비글본그린 가이드**](/ko/open-hardware/bbb-user-guide.html)/[**아두이노 가이드**](/ko/open-hardware/arduino-user-guide.html)를 참고하세요._
+
+_라즈베리파이&아두이노의 경우, 라즈베리가 게이트웨이, 아두이노가 device 입니다. 참고하세요_
 
 <br/>
 1) Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
@@ -203,6 +206,9 @@ xx:xx:xx:xx:xx:xx
  
 exit 0
 ```
+
+- 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
+
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 비글본그린의 경우 </p>
 
@@ -230,6 +236,8 @@ exit 0
  
 exit 0
 ```
+- 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
+
 <div class="dwExpand2"></div>
 
 <br/>
@@ -248,6 +256,11 @@ exit 0
 ![select_devicemodel](/assets/select_devicemodel_rapberry_ko.png)
 
 <div class="dwExpand2"></div>
+<p class="dwExpand" > 라즈베리파이의 의경우: <b>Grove Starter Kit for arduino</b></p>
+
+![select_devicemodel](/assets/select_devicemodel_arduinopi_ko.png)
+
+<div class="dwExpand2"></div>
 
 <p class="dwExpand" > 비글본그린의 경우: <b>Grove Starter Kit for BeagleBone Green</b></p>
 
@@ -261,13 +274,9 @@ exit 0
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" > 아두이노+라즈베리파이 의경우: <b>Grove Starter Kit for arduino</b></p>
-
-![select_devicemodel](/assets/select_devicemodel_arduinopi_ko.png)
-
-<div class="dwExpand2"></div>
 
 <br/>
+
 15) 게이트웨이가 추가될 `사이트`를 선택한 후, `게이트웨이, 디바이스, 센서 등록 진행` 버튼을 누른다.
 ![register](/assets/register_ko.png)
 

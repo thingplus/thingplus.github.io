@@ -1,16 +1,16 @@
 ---
 title: Raspberry Pi + Arduino User Guide
 tags: "open-hardware"
-published: false
+published: true
 permalink: /en/open-hardware/arduinoPi-user-guide.html
 ---
 
-Thing+ Guide for Arduino & Raspberry Pi<br/>
+Thing+ Guide for Raspberry Pi & Arduino<br/>
 <div id='win-setting'></div>
 
-1. [Environment Setting for window](#win-setting)
-2. [Arduino Firmware install](#id-firmware)
-3. [Environment Setting](#id-setting)
+1. [Arduino Firmware install](#id-firmware)
+2. [Environment Setting for Devices](#id-setting)
+3. [Environment Setting for Raspberry Pi](#id-pi)
 4. [Install ThingPlus Embedded package](#id-package)
 5. [Gatway Registration](#id-register)
 
@@ -18,81 +18,48 @@ Thing+ Guide for Arduino & Raspberry Pi<br/>
 <br/>
 
 ---
-#### 1. Environment Setting for Windows 
+_It needs connect internetwork to transfer got sensor data from Arduino. but Arduion, itself, can not connect Internet. so arduino is needed Gateway to connect internetwork as PC. This guide will be explained how to integrate arduino using raspberry pi as Gateway_
 
-<p class="dwExpand"> View environment setting for Windows</p>
-
-<br/>
-1) install Node Js
-- install Node JS(v0.10.16)
-
-- <a href="https://nodejs.org/dist/v0.10.16/node-v0.10.16-x86.msi" target="_blank"> 32bit download</a>
-- <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
-
-  - `For 64bit` after install `Node Js, then download and run as the follow file.
-     - <a href="http://support.thingplus.net/download/install/x86_64_env_set.bat" target="_blank"> download for Environment setting of 64bit </a>
-
-<br/>
-2) install Cygwin 
-
-- <a href="https://cygwin.com/setup-x86.exe" target="_blank"> 32bit download</a>
-- <a href="https://cygwin.com/setup-x86_64.exe" target="_blank"> 64bit download</a>
-
-- If `Choose Download site` for Cygwin is shown, select `ftp://ftp.kaist.ac.kr`
-![Cygwin select ftp site](/assets/cygwin_site_select.png)
-
-- If `Select Package` for Cygwin is shown, select 'wget'
-
-  - Input 'wget' in `Search` field -> Web -> select 1.16.3-1 
-![Cygwin wget package select](/assets/cygwin_wget.png)
-
-<br/>
-
-- When installation is completed, then you can show as the follow icon on your desktop.
-
-![Cygwin Icon](/assets/cygwin_icon.png)
-
-<p class="dwExpand2"></p>
-
-* `Mac OS` user is not requierd this process. Go to [Environment Setting](#id-setting)
-
-<div id='id-firmware'></div>
-<br/>
+<br/><br/><br/>
 
 ---
-#### 2. Arduino Firmware install
-1) Install Arduino IDE upon PC OS environment.
+
+#### 1. Arduino Firmware install
+1) connect Arduino with PC
+
+<br/>
+2) Install Arduino IDE upon PC OS environment.
 
    - <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Download Link</a>
 
 <br/>
-2) Run Arduino IDE.
+3) Run Arduino IDE.
 
 
 <br/>
-3) Select USB for Arduino Port in IDE. (for windows, COMxx)
+4) Select USB for Arduino Port in IDE. (for windows, COMxx)
 
    - Tools -> Port -> Arduino/Genuino Uno
 ![Arduino Select Port](/assets/arduino_ide_select_port.png)
 
 <br/>
-4) Select Firmware to download into Arduino.
+5) Select Firmware to download into Arduino.
 
    - File -> Examples -> Firmata -> StandardFirmata
 ![Arduino Select Firmware](/assets/arduino_ide_select_firmare.png)
 
 <br/>
-5) Build Firmware.
+6) Build Firmware.
 
 ![Arduino Verify](/assets/arduino_ide_verify.png)
 
 <br/>
-6) upload Firmware to Arduino.
+7) upload Firmware to Arduino.
 
 ![Arduino upload](/assets/arduino_ide_upload.png)
 
 <br/>
-7) Check if the below message shown at IDE.
+8) Check if the below message shown at IDE.
 
 ![Arduino upload Success](/assets/arduino_ide_upload_done.png)
 
@@ -101,16 +68,16 @@ Thing+ Guide for Arduino & Raspberry Pi<br/>
 <br/><br/>
 
 ---
-#### 3. Environment Setting
+#### 2. Environment Setting for Devices
 
-0) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
+1) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
 
 <br/>
-1) Connect Arduino and Grove Sensor Board.
+2) Connect Arduino and Grove Sensor Board.
 ![Arduino + Grove Starter kit](/assets/arduino_grove_board.png)
 
 <br/>
-2) Connect sensors to the Grove Sensor Board.<br/>
+3) Connect sensors to the Grove Sensor Board.<br/>
 
 <p class="dwExpand"> Reference : LED polarity</p>
 
@@ -121,66 +88,198 @@ Thing+ Guide for Arduino & Raspberry Pi<br/>
 ![Arduino + Grove Sensor Board + Sensors](/assets/arduino_sensors.png)
 
 <br/>
-3) Connect Arduino and PC via USB cable.
-![Arduino + USB Cable](/assets/arduino_usb.png)
+
+4) Connect cables.
+
+ 1. Power off (detach power cable).
+ 2. Connect Raspberry Pi with sensors of arduino through USB calble. 
+ 3. Connect USB powser cable and Ethernet(Lan cable) on Raspberry Pi board.
+
+   ![Raspberry Pi + arduino](/assets/adupi1.png)
+
+   ![Raspberry Pi + arduino](/assets/adupi2.png)
+
+<div id='id-pi'></div>
+<br/><br/>
+
+---
+#### 3. Environment Setting for Raspberry Pi
+
+_ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain about preparation for install_
+
+<br/>
+1) Micro SD card(8GB+ storage) is required.
+
+<br/>
+2) Download Raspbian image from below link.
+
+   - Raspbian Image Download Link - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
+   - We recommend `2015-09-24-RASPBIAN JESSIE` version one.
+
+<br/>
+3) Intall OS on the micro SD card with the donwloaded image. Please refer the below link for more deails about the OS installation.
+
+   - It can take few minutes to install the Raspbian image to the Micro SD card
+   - https://www.raspberrypi.org/documentation/installation/installing-images/
+
+<br/>
+4) Telnet/SSH Client is required for controlling the Raspberry Pi from your PC.
+
+   - If you are a Mac or Linux user, please use the default terminal utility.
+   - If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
+   - Putty Download link - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+
+<br/>
+5) Insert the Micro SD card into the Micro SD card slot of the **back panel** of your Raspberry Pi.
+   ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
+
+<br/>
+6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
+
+<div id='id-pi-setting-seventh'></div>
+<br/>
+
+7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
+
+   - When you can NOT get the IP Address of your device, please refer the [`Troubleshooting`](en/help/troubleshooting.html) section.
+
+   - ID: **pi**
+   - Password: **raspberry**
+
+    ```bash
+    $ ssh pi@<IP Address>
+    pi@<IP Address>'s password: raspberry
+    ```
+
+     - Example for Mac & Linux
+
+        ```bash
+        $ ssh pi@192.168.1.XXX
+        pi@<IP Address>'s password: raspberry
+        ```
+
+     - Example for Windows
+
+       - Run the putty, and Insert your IP Address, and then, Click the button `Open` and Enter a password.
+       ![Raspberry Pi putty login](/assets/putty_login.png)
+       ![Raspberry Pi putty login](/assets/putty_login_2.png)
+
+> Notice: In case of Windows, you have to re-launch putty, when Raspberry Pi is rebooted.
+
+<br/>
+8) Update time of Raspberry Pi.
+
+- While installing an application, please Enter `y` for installation questions.
+
+```bash
+@Pi2:$ sudo su
+@Pi2:$ apt-get update
+@Pi2:$ apt-get install -y --force-yes ntp ntpdate
+@Pi2:$ ntpdate -u ntp.ubuntu.com
+```
+
+- If you failed to update the time, Update it directly.
+
+ - UTC Time zone [(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): ex) 2015/01/01 00:00:00 => 2015-01-01 00:00:00
+
+    ```bash
+    @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
+    ```
+
+<br/>
+9) To distinguish your Raspberry Pi, you need to modify the hostname of it.
+
+> Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
+  
+  - Modify `/etc/hostname`.
+
+    ```bash
+    @Pi2:$ sudo nano /etc/hostname
+    ```
+
+   - Change the `raspberrypi` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
+   ![Raspberry Pi Modify hostname](/assets/modify_hostname.png)
+
+     - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+
+<br/>
+
+ - Modify `/etc/hosts`.
+
+    ```bash
+    @Pi2:$ sudo nano /etc/hosts
+    ```
+
+   - Change the `raspberrypi` in the file to the same name you changed at before step.
+   ![Raspberry Pi Modify hosts](/assets/modify_hostname_2.png)
+
+ - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
+
+<br/>
+
+ - To apply your modification, please reboot your Raspberry Pi.
+
+    ```bash
+    @Pi2:$ sudo reboot
+    ```
+
+<br/>
+10) Re-connect to your Raspberry Pi. (Refer [`#7 step`](#id-pi-setting-seventh))
+
+<br/>
+11) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
+
+```bash
+@Pi2:$ sudo su
+@Pi2:$ raspi-config
+```
+
+<br/>
+
+   a. To use micro SD card which has storage bigger than 4GB, Choose `1. Expand Filesystem`.
+   ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+
+<br/>
+   b. Press Tab key on your keyboard and choose `Finish`, and then please Select `Yes` for the question about Rebooting the device.
+   ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
+
+   ![Raspberry Pi Choose Finish2](/assets/choose_finish_2.png)
+
+<br/>
 
 <div id='id-package'></div>
-<br/><br/>
-<br/><br/>
 
+<br/><br/>
 
 ---
 #### 4. Install ThingPlus Embedded package
-1) Run the `Terminal`
+1) Run the `Terminal` to Raspberry Pi
 
- - Windows : Run the 'Cygwin Terminal'.
-
- - Mac OS : Run the 'Terminal'.
-
-2) Prepare to download.
+<br/>
+2) Download the install script file.
 
 ```bash
-@PC:$ mkdir $HOME/thingplus
-@PC:$ cd $HOME/thingplus
+@PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_arduino_install.sh
 ```
-
-3) Download the install script file.
-
-<p class="dwExpand"> For Windows</p>
-
-```bash
-@PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_win_install.sh
-```
-
-<div class="dwExpand2"></div>
-
-<p class="dwExpand"> For Mac OS</p>
-
-```bash
-@PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_osx_install.sh
-```
-<div class="dwExpand2"></div>
 <br/>
 
-4) Add excution permission on the script file then Install it.
+3) Add excution permission on the script file then Install it.
 
 - It may take some minutes upon network performance.
 
-<p class="dwExpand"> For Windows</p>
+	```bash
+	@Pi2:$ sudo su
+    @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+	@Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
+	```
 
-```
-@PC:$ chmod 755 thingplus_embedded_sdk_win_install.sh
-@PC:$ ./thingplus_embedded_sdk_win_install.sh
-```
-<div class="dwExpand2"></div>
+<br/>
+4) reboot raspberry pi
 
-<p class="dwExpand"> For Mac OS</p>
+```bash
+@Pi2:$ sudo rebooted
+```
 
-```
-@PC:$ chmod 755 thingplus_embedded_sdk_osx_install.sh
-@PC:$ ./thingplus_embedded_sdk_osx_install.sh
-```
-<div class="dwExpand2"></div>
 
 <div id='id-register'></div>
 <br/><br/>

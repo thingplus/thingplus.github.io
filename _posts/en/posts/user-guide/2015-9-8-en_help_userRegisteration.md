@@ -62,26 +62,34 @@ _If you DO NOT have any devices, you can register a virtual gateway at [Thing+ P
 
 <br>
 
-#### BeagleBone Black and Raspberry Pi 2
+#### BeagleBone Black and Raspberry Pi 2 & Arduino
 
 _This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set other devices you is similar to following progress._
 
-_If you DO NOT install **Thing+ Embedded Pakcage on your Raspberry Pi/BeagleBone Green, Please refer the [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) / [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) / [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html)_
+_If you DO NOT install **Thing+ Embedded Pakcage** on your Raspberry Pi/BeagleBone Green, Please refer the [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) / [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) / [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html)_
+
+_In case of raspberry pi & Arduino, Raspberry Pi is Gateway, Arduino is Device._
 
 <br/>
 1) Go to the `scripts`directory of a directory where Thing+ Embedded package was installed.
 
-- for BeagleBon Black/Raspberry Pi 2: Connect to your device over SSH and go to the `scripts` directory.
+<p class="dwExpand" > for BeagleBon Black/Raspberry Pi 2</p>
+
+- Connect to your device over SSH and go to the `scripts` directory
 
     ```bash
     @shell:$ cd /opt/thingplus/gateway/scripts
     ```
 
-- for Arduino: Go to the `scripts` directory on your PC
+<div class="dwExpand2"></div>
+<p class="dwExpand" > for Arduino </p>
+- Go to the `scripts` directory on your PC
 
     ```bash
     @shell:$ cd $HOME/thingplus/gateway/scripts
     ```
+
+<div class="dwExpand2"></div>
 
 <br/>
 2) Get a MAC Address of the device and copy it to the clipboard.
@@ -112,15 +120,21 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <br/>
 7) Choose a `Gateway Model` you have
 
-- For BeagleBone Green: `BeagleBone Green - Developer`
+<p class="dwExpand" > For BeagleBone Green: <b>BeagleBone Green - Developer</b></p>
+
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_en.png)
 
-- For Raspberry Pi: `Raspberry Pi - Developer`
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Raspberry Pi: <b>Raspberry Pi - Developer</b></p>
+
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_en.png)
 
-- For Arduino: `Arduino, PC - Developer`
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Arduino: <b>Arduino, PC - Developer</b></p>
+
 ![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
 
+<div class="dwExpand2"></div>
 <br/>
 8) Input the MAC address you copied to the `Gateway ID` form and Click the `Get API Key`button.
 ![macaddress](/assets/macaddr_getapikey_en.png)
@@ -132,9 +146,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <br/>
 10) Run Thing+ Gateway S/W with the following commands on **the connected terminal with your device**.
 
-> Notice: The parameter name, 'APIKEY', should be all the capital letters. In case of 'Copied API Key', and, it should be in between Single Quotation Marks('), like `'copied_api_key'`.
+> Notice: In case of 'Copied API Key', and, it should be in between Single Quotation Marks('), like `'copied_api_key'`.
 
-- For Raspberry Pi
+<p class="dwExpand" > For Raspberry Pi</p>
 
     ```bash
     @shell:$ sudo su
@@ -143,8 +157,8 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
     ```
-
-- For BeagleBone Green
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For BeagleBone Green</p>
 
     ```bash
     @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
@@ -152,8 +166,8 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ cd /opt/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
     ```
-
-- For Arduino (**PC**)
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Arduino / Raspberry Pi + Arduino(<b>Mac PC</b>)</p>
 
     ```bash
     @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -161,7 +175,17 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ cd $HOME/thingplus/gateway
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
     ```
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Arduino / Raspberry Pi + Arduino(<b>Windows PC</b>)</p> 
 
+```bash
+@shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd $HOME/thingplus/gateway
+@shell:$ APIKEY='copied_api_key' ./thingplus.bat start
+```
+
+<div class="dwExpand2"></div>
 <br/>
 11) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
 
@@ -169,7 +193,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 > Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
 
-- For Raspberry Pi
+<p class="dwExpand" > For Raspberry Pi</p>
 
     ```bash
     @shell:$ sudo nano /etc/rc.local
@@ -180,8 +204,10 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
     exit 0
     ```
+- Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
-- For BeagleBone Green
+<div class="dwExpand2"></div>
+<p class="dwExpand" >  For BeagleBone Green</p>
 
     ```bash
     @shell:$ nano /etc/rc.local
@@ -191,8 +217,22 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
     exit 0
     ```
-
 - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
+
+<div class="dwExpand2"></div>
+<p class="dwExpand" >  For Raspberry Pi + Arduino</p>
+
+    ```bash
+    @shell:$ nano /etc/rc.local
+    ...
+    (cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit; ./thingplus_device.sh restart)
+    (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+
+    exit 0
+    ```
+- Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
+
+<div class="dwExpand2"></div>
 
 <br/>
 12) Click the `Register Gateway`button.
@@ -205,14 +245,18 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <br/>
 14) Choose a `Device Model`.
 
-- For BeagleBone Black: `Grove Starter Kit for BeagleBone Green`
-![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
-
-- For Raspberry Pi 2: `GrovePi+ Starter Kit`
+<p class="dwExpand" > For Raspberry Pi 2: <b>GrovePi+ Starter Kit</b></p>
 ![select_devicemodel](/assets/select_devicemodel_raspberry_en.png)
-
-- For Arduino: `Grove Kit`
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Raspberry Pi 2: <b>Grove Starter Kit forArduino</b> </p>
+![select_devicemodel](/assets/select_devicemodel_arduinopi_en.png)
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For BeagleBone Black: <b>Grove Starter Kit for BeagleBone Green</b></p>
+![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Arduino: <b>Grove Kit</b></p>
 ![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)
+<div class="dwExpand2"></div>
 
 <br/>
 15) Choose a `Site` this gateway will be added, and then, Click the `Register a Gateway, Devices and Sensors` button.
