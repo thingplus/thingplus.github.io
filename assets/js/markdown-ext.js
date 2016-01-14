@@ -11,6 +11,21 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+    $(".dwfqExpand").addClass('ui-closed').css('cursor','pointer');
+    $(".dwfqExpand").addClass('line');
+    $(".dwfqExpand").nextUntil(".dwfqExpand2").addClass('detail2');
+    $(".dwfqExpand").nextUntil(".dwfqExpand2").slideToggle();
+    $(".dwfqExpand").click(function() {
+      
+      $(this).nextUntil(".dwfqExpand2").slideToggle();
+      $(this).toggleClass('ui-closed ui-open');
+      $(this).toggleClass('line line2');
+      });
+
+});
+
+
 $.expr[':'].external = function(obj){
           return !obj.href.match(/^mailto\:/)
                   && (obj.hostname != location.hostname);

@@ -373,6 +373,7 @@ p.dwExpand {
   font-size: 90%; 
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
 }
+
 .dwExpand.ui-closed:before {
   /*font-family:monospace;*/
   position: absolute; 
@@ -380,6 +381,7 @@ p.dwExpand {
   padding-left: 30px;
   font-family: FontAwesome;
   content:"\f078 ";
+
 }
 .dwExpand.ui-open:before {
   /*font-family:monospace;*/
@@ -391,6 +393,73 @@ p.dwExpand {
   border-left: 5px;
 }
 /* end sidebar */
+/*FAQ*/
+
+p.dwfqExpand {
+  color:#000000; 
+  /*background-color:#f9f2f4; */
+  /*background-color:#e0e8f3; */
+  /*border-radius:4px; */
+  height: 30px;
+  padding: 2px 4px;
+  /*padding-left: 26px; */
+  font-size: 90%;   
+  font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+
+}
+
+.detail2{
+  padding-left: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #f3f3f3;
+}
+.dwfqExpand.ui-open.line2 {
+  /*border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #eeeeee;*/
+
+}
+.dwfqExpand.ui-closed.line {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #eeeeee;
+
+}
+
+.dwfqExpand.ui-closed:before {
+  /*font-family:monospace;*/
+  position: absolute; 
+  right: 50px;
+  padding-left: 30px;
+  height: 67px;
+  font-family: FontAwesome;
+  font-size:14px;
+  color:#979797;
+  content:"\f078 ";
+}
+.dwfqExpand.ui-open:before {
+  /*font-family:monospace;*/
+  position: absolute; 
+  right: 50px;
+  /*padding-left: 30px;*/
+  height: 67px;
+  font-size: 14px;
+  color:#979797;
+  font-family: FontAwesome;
+  content:"\f077 ";
+  border-left: 5px;
+}
+
+
+.answer{
+  font-size: 24px;
+  color: #49526b;
+  font-weight: 700;
+
+}
+/*end FAQ*/
+
 
 
 a.back-to-top {
@@ -459,3 +528,15 @@ a.back-to-top {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;  
 }
+
+/*regisgter window*/
+.register{
+  position: fixed;
+  margin-top: 350px;
+}
+
+.fb_user{
+  position: fixed;
+  margin-top: 730px;
+}
+
