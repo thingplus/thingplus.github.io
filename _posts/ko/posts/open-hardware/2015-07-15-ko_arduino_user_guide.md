@@ -130,8 +130,9 @@ Thing+ 연동가이드(아두이노)<br/>
 <br/>
 4) 아두이노에 USB Cable을 PC와 연결합니다.
 ![Arduino + USB Cable](/assets/arduino_usb.png)
-
-
+<p class="dwExpand"> 전압은 5V로 세팅이 되어 있는지 확인 합니다.</p>
+ ![arduino_set_5v](/assets/arduino_set_5v.png)
+<div class="dwExpand2"></div>
 
 <div id='id-package'></div>
 <br/>

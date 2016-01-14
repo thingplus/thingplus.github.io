@@ -123,7 +123,9 @@ Thing+ Guide for Arduino<br/>
 <br/>
 3) Connect Arduino and PC via USB cable.
 ![Arduino + USB Cable](/assets/arduino_usb.png)
-
+<p class="dwExpand"> Check to Voltage if setted value is 5 volt.</p>
+ ![arduino_set_5v](/assets/arduino_set_5v.png)
+<div class="dwExpand2"></div>
 <div id='id-package'></div>
 <br/><br/>
 <br/><br/>
