@@ -167,6 +167,8 @@ Thing+ 연동가이드(아두이노)<br/>
 ```bash
 @PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_osx_install.sh
 ```
+([wget 설치](/ko/help/faq.html#install_wget))
+
 <div class="dwExpand2"></div>
 <br/>
 

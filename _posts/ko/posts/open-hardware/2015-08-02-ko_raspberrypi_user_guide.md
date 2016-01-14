@@ -209,7 +209,7 @@ Thing+ 연동가이드(라즈베리파이)
 3) 라즈베리파이에 접속한다.
 
 <br/>
-4) 인스톨 스크립트 파일을 다운로드한다.
+4) 인스톨 스크립트 파일을 다운로드한다. ([wget 설치](/ko/help/faq.html#install_wget))
 
 ```bash
 @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh

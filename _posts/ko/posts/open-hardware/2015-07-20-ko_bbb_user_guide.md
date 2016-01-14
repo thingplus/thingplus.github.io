@@ -136,7 +136,7 @@ Thing+ 연동가이드(비글본그린)
 ```
 
 <br/>
-5) 인스톨 스크립트 파일을 다운로드한다.
+5) 인스톨 스크립트 파일을 다운로드한다. ([wget 설치](/ko/help/faq.html#install_wget))
 
 ```bash
 @BBG:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_bbg_install.sh
