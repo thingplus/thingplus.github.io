@@ -1,7 +1,7 @@
 ---
 title: 하드웨어 설치와 회원가입
 tags: "user-guide"
-published: true
+published: false
 permalink: /ko/user-guide/registration.html
 ---
 
@@ -140,7 +140,7 @@ xx:xx:xx:xx:xx:xx
 <br/>
 10) 아래처럼 게이트웨이를 실행한다.
 
-> 주의: APIKEY는 모두 대문자로 써야하며, `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
+> 주의: `복사한 API 키`는 앞뒤를 작은따옴표(')로 감싸야 한다.
 
 <p class="dwExpand" > 라즈베리파이의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
 
@@ -166,7 +166,7 @@ xx:xx:xx:xx:xx:xx
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" > 아두이노의 경우 (<b>Mac PC</b>)</p>
+<p class="dwExpand" > 아두이노의 경우 / 아두이노+라즈베리파이 (<b>Mac PC</b>)</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -176,7 +176,7 @@ xx:xx:xx:xx:xx:xx
 ```
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" > 아두이노의 경우 (<b>windows PC</b>)</p>
+<p class="dwExpand" > 아두이노의 경우 / 아두이노+라즈베리파이 (<b>windows PC</b>)</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -220,6 +220,18 @@ exit 0
 
 <div class="dwExpand2"></div>
 
+<p class="dwExpand" > 라즈베리파이 + 아두이노 의 경우 </p>
+
+```bash
+@shell:$ sudo nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)  
+ 
+exit 0
+```
+<div class="dwExpand2"></div>
+
 <br/>
 12) `게이트웨이 등록하기`버튼을 누른다.
 ![register_gwmodel](/assets/copy_apikey_ko.png)
@@ -243,10 +255,15 @@ exit 0
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" > 아두이노의경우: <b>Grove Starter Kit </b></p>
+<p class="dwExpand" > 아두이노의경우: <b>Grove Starter Kit for arduino </b></p>
 
-- 아두이노 경우: `Grove Kit`
 ![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" > 아두이노+라즈베리파이 의경우: <b>Grove Starter Kit for arduino</b></p>
+
+![select_devicemodel](/assets/select_devicemodel_arduinopi_ko.png)
 
 <div class="dwExpand2"></div>
 
