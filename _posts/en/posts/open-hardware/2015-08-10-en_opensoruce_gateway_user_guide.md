@@ -28,18 +28,18 @@ _This guide will be explained how to regist gateway with other sensors, not grov
 ![register_gateway](/assets/open_gw_03.png)
 
 <br/>
-4) Input your gateway name to `Gateway Name` form. (`Open Source Hardware` - `Open Source Gateway`)
+4) Input your gateway name to `Gateway Model` form. (`Open Source Hardware` - `Open Source Gateway`)
 
 ![input_gateway_name](/assets/open_gw_04.png)
 
 <br/>
-5) Input the [MAC address](/en/user-guide/registration.html#id-gateway) you copied to the `Gateway ID` form and Click the `Get API Key`button.
+5) Input the [MAC address](/en/user-guide/registration.html#id-gateway) of your device to the `Gateway ID` form and Click the `Get API Key`button.
 
 ![input_gateway_id](/assets/open_gw_05.png)
 
- - Except in the case of BeagleBone and Raspberry Pi, `Gateway ID` is unique id as `mac address of eth0` 
+ - Gateway ID is the Unique ID for identifying each device. in general Mac Address of eth0 is used as the Gateway ID except the BeagleBone and Raspberry Pi.
    - If you have any questions, please send email to support@thingplus.net
- - Copy `API KEY` and Do as the [follows (Run Thing+ Gateway S/W)](/en/user-guide/registration.html#id-run-gateway) 
+ - Copy API Key and Follow the section 10 ~ 11 of the [guide](/en/user-guide/registration.html#id-run-gateway)  for running Thing+ Gateway Software.
 
 <br/>
 6) After press `Register Gateway` button, input `Gateway Name`
@@ -47,12 +47,12 @@ _This guide will be explained how to regist gateway with other sensors, not grov
 ![register_gateway](/assets/open_gw_06.png)
 
 <br/>
-7) Input `Device Model`. (`Open Source Device`)
+7) Select `Device Model`. (`Open Source Device`)
 
 ![input_device_model](/assets/open_gw_07.png)
 
 <br/>
-8) If you Input `Device Model` then you can see available sensors. Input `Site Name` and Click `Register ...` button
+8) You can see the list of available sensors after complete to select Device Model. Select your site name and click `register a gateway, devices and sensors` button
 
 ![registration](/assets/open_gw_08.png)
 

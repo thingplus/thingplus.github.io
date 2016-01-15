@@ -48,3 +48,12 @@ $(window).scroll(function() {
     }
 });
 $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:0},"1000");return false})})
+
+function signup(lang){
+console.log(lang);
+  if(lang == "en"){
+    window.open('https://thingplus.net/signup-en/','_blank');
+  }else{
+    window.open('https://thingplus.net/signup/','_blank');
+  }
+}

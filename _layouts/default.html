@@ -200,10 +200,9 @@
                 </ul>
               </li>   
               <!-- register and FaceBook -->
-              
-              
-              <li><div class="register">{{ site.data.i18n[page.lang].make_iot}}
-                    <div class="reg_button" onclick="javascript:window.open('https://iot.thingplus.net/#/register','_blank');">{{ site.data.i18n[page.lang].get_started}}</div>
+                                         
+              <li><div class="register">{{site.data.i18n[page.lang].make_iot}}
+                    <div class="reg_button" onclick="javascript:signup('{{page.lang}}');">{{ site.data.i18n[page.lang].get_started}}</div>
                   </div></li>
               <li><img src='/assets/fb_user_group.png' class="fb_user" onclick="javascript:window.open('https://www.facebook.com/groups/thingplus/','_blank');"></li>
             </ul> 
