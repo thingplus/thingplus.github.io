@@ -136,9 +136,12 @@ xx:xx:xx:xx:xx:xx
 8) 클립보드에 복사했던 MAC 어드레스를 `게이트웨이 아이디`에 붙여넣기 하고 `게이트웨이 API 키 등록 진행` 버튼을 누른다.
 ![macaddress](/assets/macaddr_getapikey_ko.png)
 
+<div id="id-run-gateway"></div>
 <br/>
 9) API 키를 클립보드에 복사한다.
 ![get_apikey](/assets/get_apikey_ko.png)
+
+
 
 <br/>
 10) 아래처럼 게이트웨이를 실행한다.

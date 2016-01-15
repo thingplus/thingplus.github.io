@@ -139,6 +139,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 8) Input the MAC address you copied to the `Gateway ID` form and Click the `Get API Key`button.
 ![macaddress](/assets/macaddr_getapikey_en.png)
 
+<div id="id-run-gateway"></div>
 <br/>
 9) Copy the generated API Key in the below green box.
 ![get_apikey](/assets/get_apikey_en.png)
@@ -181,7 +182,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
     ```
 <div class="dwExpand2"></div>
-<p class="dwExpand" > For Arduino <b>Mac PC</b>)</p>
+<p class="dwExpand" > For Arduino (<b>Mac PC</b>)</p>
 
     ```bash
     @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
