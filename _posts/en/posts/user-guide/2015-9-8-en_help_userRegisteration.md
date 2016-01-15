@@ -240,7 +240,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     ```bash
     @shell:$ nano /etc/rc.local
     ...
-    (cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit; ./thingplus_device.sh restart)
+    (cd /opt/thingplus/openhardware/arduino/grove-starter-kit; ./thingplus_device.sh restart)
     (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
 
     exit 0
