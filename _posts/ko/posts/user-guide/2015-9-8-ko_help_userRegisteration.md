@@ -158,6 +158,19 @@ xx:xx:xx:xx:xx:xx
 
 <div class="dwExpand2"></div>
 
+<p class="dwExpand" > 라즈베리파이 + 아두이노 의 경우 (<b>라즈베리파이 장치에 로그인했던 터미널</b>)</p>
+
+   
+```bash
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+
 <p class="dwExpand" > 비글본그린의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
     
 ```bash
@@ -169,7 +182,7 @@ xx:xx:xx:xx:xx:xx
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" > 아두이노의 경우 / 아두이노+라즈베리파이 (<b>Mac PC</b>)</p>
+<p class="dwExpand" > 아두이노의 경우 (<b>Mac PC</b>)</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -179,7 +192,7 @@ xx:xx:xx:xx:xx:xx
 ```
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" > 아두이노의 경우 / 아두이노+라즈베리파이 (<b>windows PC</b>)</p>
+<p class="dwExpand" > 아두이노의 경우 (<b>windows PC</b>)</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit

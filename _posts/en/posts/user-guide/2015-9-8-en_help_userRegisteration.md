@@ -158,6 +158,20 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
     ```
 <div class="dwExpand2"></div>
+
+<p class="dwExpand" > For Raspberry Pi + Arduino</p>
+
+   
+```bash
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+
 <p class="dwExpand" > For BeagleBone Green</p>
 
     ```bash
@@ -167,7 +181,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
     ```
 <div class="dwExpand2"></div>
-<p class="dwExpand" > For Arduino / Raspberry Pi + Arduino(<b>Mac PC</b>)</p>
+<p class="dwExpand" > For Arduino <b>Mac PC</b>)</p>
 
     ```bash
     @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -176,7 +190,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
     @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
     ```
 <div class="dwExpand2"></div>
-<p class="dwExpand" > For Arduino / Raspberry Pi + Arduino(<b>Windows PC</b>)</p> 
+<p class="dwExpand" > For Arduino (<b>Windows PC</b>)</p> 
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
