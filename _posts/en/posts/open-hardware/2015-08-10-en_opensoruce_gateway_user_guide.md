@@ -28,7 +28,7 @@ _This guide will be explained how to regist gateway with other sensors, not grov
 ![register_gateway](/assets/open_gw_03.png)
 
 <br/>
-4) Input your gateway name to `Gateway Model` form. (`Open Source Hardware` - `Open Source Gateway`)
+4) Select your gateway name to `Gateway Model` form. (`Open Source Hardware` - `Open Source Gateway`)
 
 ![input_gateway_name](/assets/open_gw_04.png)
 
