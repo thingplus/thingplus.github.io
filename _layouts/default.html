@@ -198,10 +198,24 @@
                   {% endif %}
                 {% endfor %}
                 </ul>
-              </li>                 
-            </ul>      
+              </li>   
+              <!-- register and FaceBook -->
+              
+              
+              <li><div class="register">{{ site.data.i18n[page.lang].make_iot}}
+                    <div class="reg_button" onclick="javascript:window.open('https://iot.thingplus.net/#/register','_blank');">{{ site.data.i18n[page.lang].get_started}}</div>
+                  </div></li>
+              <li><img src='/assets/fb_user_group.png' class="fb_user" onclick="javascript:window.open('https://www.facebook.com/groups/thingplus/','_blank');"></li>
+            </ul> 
+          <!-- <div class="register">
+            <img src='/assets/reg.png'>
+          </div>  
+          <div class="fb_user">
+            <img src='/assets/fb_gr.png'>
+          </div>  -->
           </div>
-        </div>
+          
+        </div> 
 
         <div id="main" role="main" class="col-xs-12 col-sm-9">
           {% if page.type != 'pages' %}
@@ -211,15 +225,15 @@
 
           {{content}}
         </div>
-
       </div>
+     </div>
+            
 
-    </div>
 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer pull-right">
-          Copyright &copy; 2015 <a href="http://www.daliworks.net" target="_blank">Daliworks, Inc.</a> ALL RIGHTS RESERVED.
+          Copyright &copy; 2015 <a href="https://thingplus.net" target="_blank">ThngPlus </a> ALL RIGHTS RESERVED.
         </footer>
       </div>
     </div>

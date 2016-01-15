@@ -1,4 +1,5 @@
-/*@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);*/
+@import url(http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
  body {
   padding-top: 70px;
   font-family: "Apple SD Gothic Neo", NanumGothic, "Open Sans", sans-serif;
@@ -539,13 +540,14 @@ a.back-to-top {
   border-bottom-color: #d8d8d8;
   border-right: none;
   border-left: none;
+  font-family: 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
   font-size: 14px;
+  /*font-weight: bold;*/
   border-width: 1px;
   /*position: fixed;*/
   /*margin-top: 350px;*/
   text-align: center;
   padding-top: 29px;
-
 }
 
 .reg_button{
@@ -556,8 +558,10 @@ a.back-to-top {
   background-color: #ffc107;
   font-family: 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
   font-size: 16px;
+  font-weight:bolder; 
   color: #333333;
   text-decoration: bold;
+  cursor: pointer;
   text-align:center;
 }
 
@@ -565,5 +569,6 @@ a.back-to-top {
   /*position: fixed;
   margin-top: 730px;*/
   margin-top: 10px;
+  cursor: pointer;
 }
 

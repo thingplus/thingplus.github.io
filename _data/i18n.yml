@@ -7,6 +7,8 @@ ko:
   submenu_help: "HELP"
   email_contact: "이메일 문의"
   go_thingplus: "Thing+ 바로가기"
+  make_iot : "당신만의 IoT 서비스를 <br> 지금 바로 만들어보세요!"
+  get_started : "지금 바로 시작하기!"
 en:
   lang: "English(en)"
   submenu_user-guide: "User Guide"
@@ -16,3 +18,5 @@ en:
   submenu_help: "HELP"
   email_contact: "Feedback"
   go_thingplus: "Go Thing+"
+  make_iot : "Get your own  <br> IoT Service Today!"
+  get_started : "Get Started Now!"
