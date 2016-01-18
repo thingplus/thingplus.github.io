@@ -4,13 +4,13 @@ tags: "open-hardware"
 published: true
 permalink: /en/open-hardware/opensource-gateway-user-guide.html
 ---
-_This guide will be explained how to regist gateway with other sensors, not grove sensors_
+_This guide will be explained how to register gateway with other sensors, not grove sensors_
 
 <br/>
 
 ---
 
-#### 1. Regist Gateway
+#### 1. Register Gateway
 
 <br/>
 1) Click the `Settings`button and `Gateway Management`
