@@ -16,6 +16,7 @@ rsync_install() {
   pushd . > /dev/nul
   cd /usr/local/bin
   wget http://support.thingplus.net/download/install/edison_asset/rsync
+  chmod +x rsync
   popd > /dev/null
 }
 
