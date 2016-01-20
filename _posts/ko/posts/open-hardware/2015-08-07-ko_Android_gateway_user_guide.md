@@ -26,13 +26,13 @@ _Android 단말에서 모든 설정을 할 수 있습니다. 본 가이드에서
 <br/>
 1) 게이트웨이 등록과 관리를 위한 안드로이드 어플리케이션을 다운로드 합니다.
 
-- 안드로이드 device에서 [다운로드](/assets/Android/android_gateway_v0.8_alpha.apk)합니다.
+- 안드로이드 device에서 [다운로드](/assets/android/android_gateway_v0.8_alpha.apk)합니다.
 
 <br/>
 
 2) 다운로드 받은 `apk` 를 설치 합니다.
 
-![apk install_2](/assets/Android/guide_02.png)
+![apk install_2](/assets/android/guide_02.png)
 
 <div id='id-register'></div>
 <br/>
@@ -41,77 +41,77 @@ _Android 단말에서 모든 설정을 할 수 있습니다. 본 가이드에서
 
 1) 설치한 app을 실행하고 `GET A GATEWAY ID` button을 누릅니다. 
 
-![get a gateway id](/assets/Android/guide_03.png)
+![get a gateway id](/assets/android/guide_03.png)
 
 <br/>
 2) 생성된 `ID` 를 선택합니다. (`Gateway ID`가 복사 됩니다.)
 
-![pick a gateway id](/assets/Android/guide_04.png)
+![pick a gateway id](/assets/android/guide_04.png)
 
 <br/>
 3) `ThingPlus` 포털로 이동 (아래의 그림과 같이 버튼을 누르시면 바로 이동 됩니다.)
 
 - 로그인이 필요 합니다. 
 
-![go to portal](/assets/Android/guide_05.png)
+![go to portal](/assets/android/guide_05.png)
 
 <br/>
 4) `게이트웨이 관리` 를 선택합니다.
 
-![go to portal](/assets/Android/guide_06.png)
+![go to portal](/assets/android/guide_06.png)
 
 <br/>
 5) `게이트웨이 관리` 에서 `(+)` 버튼을 누릅니다.
 
-![go to portal](/assets/Android/guide_07.png)
+![go to portal](/assets/android/guide_07.png)
 
 <br/>
 6) `게이트웨이 인증서/API 키 발급받기` 버튼을 누릅니다. 
 
-![go to portal](/assets/Android/guide_08.png)
+![go to portal](/assets/android/guide_08.png)
 
 <br/>
 7) `게이트웨이 모델` > `Android Basic` 을 선택합니다. 
 
-![go to portal](/assets/Android/guide_09.png)
+![go to portal](/assets/android/guide_09.png)
 
-![go to portal](/assets/Android/guide_10.png)
+![go to portal](/assets/android/guide_10.png)
 
 <br/>
 8) `게이트웨이 아이디` 필드에 `붙여 넣기`를 하면 게이트웨이 아이디가 삽입 됩니다. 
 
-![go to portal](/assets/Android/guide_11.png)
+![go to portal](/assets/android/guide_11.png)
 
 <br/>
 9) `게이트웨이 API키 등록 진행` 버튼을 누릅니다.  
 
-![go to portal](/assets/Android/guide_12.png)
+![go to portal](/assets/android/guide_12.png)
 
 <br/>
 10) `게이트웨이 이름` 을 입력하고 `디바이스 모델`을 선택합니다.
 
-![go to portal](/assets/Android/guide_13.png)
+![go to portal](/assets/android/guide_13.png)
 
 <br/>
 11) `Embeded Sensors`를 선택합니다. 
 
-![go to portal](/assets/Android/guide_14.png)
+![go to portal](/assets/android/guide_14.png)
 
 <br/>
 12) `사이트 이름`을 선택합니다. 
 
-![go to portal](/assets/Android/guide_15.png)
+![go to portal](/assets/android/guide_15.png)
 
 <br/>
 
 13) `게이트웨이, 디바이스, 센서 등록진행` 버튼을 선택합니다.
 
-![go to portal](/assets/Android/guide_16.png)
+![go to portal](/assets/android/guide_16.png)
 
 <br/>
 14) 설치 했었던 `ThingPlus Gateway Sample` app 으로 이동하여 `Start` 버튼을 선택합니다. 
 
-![go to portal](/assets/Android/guide_17.png)
+![go to portal](/assets/android/guide_17.png)
 
 <br/>
 15) 설치는 모두 끝났습니다. `ThingPlus Potal`에서 대쉬보드와 규칙등을 꾸며 보세요
