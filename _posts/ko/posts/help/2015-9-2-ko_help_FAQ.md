@@ -49,6 +49,3 @@ permalink: /ko/help/faq.html
 <p class="dwfqExpand2"></p>
 
 
-<a href="https://www.facebook.com/groups/thingplus" target="_blank">
-![FaceBook image](/assets/fb.png)<span style="padding-left:12px; color:#3b5997; font-size:18px; line-height:25px; vertical-align:bottom;">페이스북에서 물어보기</span>
-</a>

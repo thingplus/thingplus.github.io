@@ -1,7 +1,7 @@
 ---
 title: 안드로이드 게이트웨이 사용자 가이드
 tags: "open-hardware"
-published: false
+published: true
 permalink: /ko/open-hardware/opensource-Android-user-guide.html
 ---
 
@@ -32,7 +32,6 @@ _Android 단말에서 모든 설정을 할 수 있습니다. 본 가이드에서
 
 2) 다운로드 받은 `apk` 를 설치 합니다.
 
-![apk install](/assets/Android/guide_01.png)
 ![apk install_2](/assets/Android/guide_02.png)
 
 <div id='id-register'></div>
@@ -75,6 +74,7 @@ _Android 단말에서 모든 설정을 할 수 있습니다. 본 가이드에서
 7) `게이트웨이 모델` > `Android Basic` 을 선택합니다. 
 
 ![go to portal](/assets/Android/guide_09.png)
+
 ![go to portal](/assets/Android/guide_10.png)
 
 <br/>

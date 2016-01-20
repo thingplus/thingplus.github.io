@@ -1,7 +1,7 @@
 ---
 title: Androd Gateway User Guide
 tags: "open-hardware"
-published: false
+published: true
 permalink: /en/open-hardware/opensource-Android-user-guide.html
 ---
 
@@ -31,7 +31,6 @@ _You can setting and control on Andorid device. This guide will be explained how
 
 2) Install Downloaded `apk`.
 
-![apk install](/assets/Android/guide_01.png)
 ![apk install_2](/assets/Android/guide_18.png)
 
 <div id='id-register'></div>
@@ -74,6 +73,7 @@ _You can setting and control on Andorid device. This guide will be explained how
 7) select `Android Basic` at `Gateway Model` 
 
 ![go to portal](/assets/Android/guide_09.png)
+
 ![go to portal](/assets/Android/guide_10.png)
 
 <br/>
