@@ -63,9 +63,8 @@ _아직 보유한 게이트웨장비가 없다면, [Thing+ Portal](https://www.t
 
 <br>
 
-#### BeagleBone Green, Raspberry Pi 2 & Arduino
 
-_본 가이드는 비글본그린, 라즈베리파이, 아두이노 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다._이
+_본 가이드는 비글본그린, 라즈베리파이, 아두이노 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다._
 
 _아직 라즈베리파이/비글본그린/아두이노에 **Thing+ Embedded 패키지**가 설치되어 있지 않다면 [**라즈베리파이 가이드**](/ko/open-hardware/raspberry-pi-user-guide.html)/[**비글본그린 가이드**](/ko/open-hardware/bbb-user-guide.html)/[**아두이노 가이드**](/ko/open-hardware/arduino-user-guide.html)를 참고하세요._
 
@@ -74,7 +73,7 @@ _라즈베리파이&아두이노의 경우, 라즈베리가 게이트웨이, 아
 <br/>
 1) Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
-<p class="dwExpand" > 비글본그린/라즈베리파이의 경우 타겟보드의 접속 후에 이동</p>
+<p class="dwExpand" > 비글본그린/라즈베리파이/에디슨의 경우 타겟보드의 접속 후에 이동</p>
 
 ```bash
 @shell:$ cd /opt/thingplus/gateway/scripts
@@ -99,7 +98,7 @@ xx:xx:xx:xx:xx:xx
 <br/>
 3) **사용자 PC**의 웹브라우저를 열고 "[서비스 웹사이트](https://www.thingplus.net)"에 로그인한다.
 
- - `Chrom 브라우저`([링크](https://www.google.com/chrome)) 사용을 권장합니다.
+ - `Chrom 브라우저`([크롬 브라우저 설치](https://www.google.com/chrome)) 사용을 권장합니다.
 
 <br/>
 4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
@@ -118,17 +117,23 @@ xx:xx:xx:xx:xx:xx
 
 <p class="dwExpand" > 라즈베리파이의 경우: <b>Raspberry Pi - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_ko.png)
+![select_gateway_model_get_apikey](/assets/pi_gw_model.png)
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 비글본그린의 경우: <b>BeagleBone Green - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_ko.png)
+![select_gateway_model_get_apikey](/assets/bbg_gw_model.png)
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 아두이노의 경우: <b>Arduino, PC - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
+![select_gateway_model_get_apikey](/assets/arduino_gw_model.png)
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" > 에디슨의 경우: <b>Edison Kit for Arduino</b></p>
+
+![select_gateway_model_get_apikey](/assets/edison_gw_model.png)
 
 <div class="dwExpand2"></div>
 
@@ -203,6 +208,26 @@ xx:xx:xx:xx:xx:xx
 @shell:$ cd $HOME/thingplus/gateway
 @shell:$ APIKEY='복사한 API 키' ./thingplus.bat start
 ```
+<div class="dwExpand2"></div>
+<p class="dwExpand" > 에디슨의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
+
+   
+```bash
+@shell:$ cd /opt/thingplus/openhardware/edison/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
+
+> 주의 : 현재 reboot 시에 자동 실행이 되지 않습니다. rebooting 후에는 아래의 command를 입력해주세요
+
+```bash
+@shell:$ cd /opt/thingplus/openhardware/edison/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ ./thingplus.sh start
+```
+
 <div class="dwExpand2"></div>
 
 <br/>
@@ -284,9 +309,15 @@ exit 0
 
 <div class="dwExpand2"></div>
 
-<p class="dwExpand" > 아두이노의경우: <b>Grove Starter Kit for arduino </b></p>
+<p class="dwExpand" > 아두이노의 경우: <b>Grove Starter Kit for arduino </b></p>
 
 ![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" > 에디슨의 경우: <b>Grove Starter Kit for arduino </b></p>
+
+![select_devicemodel](/assets/edison_device_model.png)
 
 <div class="dwExpand2"></div>
 
