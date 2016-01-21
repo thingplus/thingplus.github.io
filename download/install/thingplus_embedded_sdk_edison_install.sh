@@ -13,7 +13,10 @@ RSYNC_PASSWORD="89dkaidjfe0sjdji"
 RSYNC_SIZE_ONLY_OPTION="false"
 
 rsync_install() {
-  pushd . > /dev/nul
+  pushd . > /dev/null
+  if [ ! -d /usr/local/bin ] ; then
+    mkdir -p /usr/local/bin
+  fi 
   cd /usr/local/bin
   wget http://support.thingplus.net/download/install/edison_asset/rsync
   chmod +x rsync
