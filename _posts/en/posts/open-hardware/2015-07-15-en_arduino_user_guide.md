@@ -12,7 +12,7 @@ Thing+ Guide for Arduino<br/>
 2. [Arduino Firmware install](#id-firmware)
 3. [Environment Setting](#id-setting)
 4. [Install ThingPlus Embedded package](#id-package)
-5. [Gatway Registration](#id-register)
+5. [Gateway Registration](#id-register)
 
 
 <br/>

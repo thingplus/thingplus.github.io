@@ -1,8 +1,8 @@
 ---
 title: 에디슨 사용자 가이드
 tags: "open-hardware"
-published: false
-permalink: /ko/open-hardware/edison-pi-user-guide.html
+published: true
+permalink: /ko/open-hardware/edison-user-guide.html
 ---
 
 Thing+ 연동가이드(에디슨)
@@ -28,7 +28,11 @@ Thing+ 연동가이드(에디슨)
    - [참조](https://software.intel.com/en-us/articles/assemble-intel-edison-on-the-arduino-board)
    - 아래 그림과 같이 전원과 USB 두개를 연결 합니다. (USB 는 두개 모두 PC와 연결합니다.)
 
-   ![connection](/assets/edison_connect.png)
+    ![connection](/assets/edison_connect.png)
+
+   - USB connector 사이의 micro-switch 가 있습니다. 그림 아래 방향으로 switching 합니다. 
+
+    ![switch](/assets/edison_ext.png) 
 
 <br/>
 2) 그로브 베이스 쉴드를 연결 합니다.
@@ -64,7 +68,7 @@ Thing+ 연동가이드(에디슨)
    - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
    - [Putty 다운로드 링크](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
 
-<p class="dwExpand"> For Mac and Linux</p>
+<p class="dwExpand"> For Mac OSX and Linux</p>
 
 - Linux 환경일 경우 screen을 설치 합니다.
    - apt-get install screen
@@ -73,7 +77,7 @@ Thing+ 연동가이드(에디슨)
    screen -L /dev/cu.usbserial_XXXXXX 115200 (MAC)
    ```
 
-- 만약 /dev/cb.usbserial_XXXX 없으면 컴퓨터 reboot 합니다.
+- 만약 /dev/cb.usbserial_XXXX 없으면 Edison reboot 합니다.
 - 터미널 화면이 바뀌면 Enter 입력합니다.
 - 계정 : root, 비밀 번호는 없습니다.
 
@@ -81,11 +85,11 @@ Thing+ 연동가이드(에디슨)
 
 <p class="dwExpand"> For windows</p>
 
-- Serial 로 선택을 하고 serial line과 speed를 설정 합니다. speed는 `115200` 입니다.
+- `Serial` 로 선택을 하고 `serial line`과 `speed`를 설정 합니다. speed는 `115200` 입니다.
 
 ![LED 극성](/assets/putty.png)
 
-- Serial line은 PC에서 장치가 설치된 COM port, `COMXX` 을 입력해주시면 됩니다.
+- `Serial line`은 PC에서 장치가 설치된 COM port, `COMXX` 을 입력해주시면 됩니다.
 - 터미널 화면이 바뀌면 Enter 입력합니다.
 - 계정 : root, 비밀 번호는 없습니다.
 

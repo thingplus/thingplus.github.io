@@ -62,18 +62,17 @@ _If you DO NOT have any devices, you can register a virtual gateway at [Thing+ P
 
 <br>
 
-#### BeagleBone Black and Raspberry Pi 2 & Arduino
 
 _This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set other devices you is similar to following progress._
 
-_If you DO NOT install **Thing+ Embedded Pakcage** on your Raspberry Pi/BeagleBone Green, Please refer the [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) / [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) / [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html)_
+_If you DO NOT install **Thing+ Embedded Pakcage** on your Raspberry Pi/BeagleBone Green, Please refer the [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) / [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) / [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html) / [**Guide for Edison**](/ko/open-hardware/edison-user-guide.html)_
 
 _In case of raspberry pi & Arduino, Raspberry Pi is Gateway, Arduino is Device._
 
 <br/>
 1) Go to the `scripts`directory of a directory where Thing+ Embedded package was installed.
 
-<p class="dwExpand" > for BeagleBon Black/Raspberry Pi 2</p>
+<p class="dwExpand" > For BeagleBon Black/Raspberry Pi 2 / Edison</p>
 
 - Connect to your device over SSH and go to the `scripts` directory
 
@@ -82,7 +81,7 @@ _In case of raspberry pi & Arduino, Raspberry Pi is Gateway, Arduino is Device._
     ```
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" > for Arduino </p>
+<p class="dwExpand" > For Arduino </p>
 - Go to the `scripts` directory on your PC
 
     ```bash
@@ -120,19 +119,26 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <br/>
 7) Choose a `Gateway Model` you have
 
-<p class="dwExpand" > For BeagleBone Green: <b>BeagleBone Green - Developer</b></p>
-
-![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_beagle_en.png)
-
-<div class="dwExpand2"></div>
 <p class="dwExpand" > For Raspberry Pi: <b>Raspberry Pi - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_raspberry_en.png)
+![select_gateway_model_get_apikey](/assets/pi_gw_model.png)
 
 <div class="dwExpand2"></div>
+<p class="dwExpand" > For BeagleBone Green: <b>BeagleBone Green - Developer</b></p>
+
+![select_gateway_model_get_apikey](/assets/bbg_gw_model.png)
+
+<div class="dwExpand2"></div>
+
 <p class="dwExpand" > For Arduino: <b>Arduino, PC - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/select_gateway_getapikey_arduino_ko.png)
+![select_gateway_model_get_apikey](/assets/arduino_gw_model.png)
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" > For Edison: <b>Edison Kit for Arduino</b></p>
+
+![select_gateway_model_get_apikey](/assets/edison_gw_model.png)
 
 <div class="dwExpand2"></div>
 <br/>
@@ -201,6 +207,27 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 ```
 
 <div class="dwExpand2"></div>
+<p class="dwExpand" > For Edison </p>
+
+   
+```bash
+@shell:$ cd /opt/thingplus/openhardware/edison/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+```
+
+> remark : When reboot the device, automatically run is not available now. After reboot, Please type below command.
+
+```bash
+@shell:$ cd /opt/thingplus/openhardware/edison/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+
 <br/>
 11) Open `/ect/rc.local` file and add the below 2 lines right ahead the `exit 0` line.
 
@@ -271,6 +298,9 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <div class="dwExpand2"></div>
 <p class="dwExpand" > For Arduino: <b>Grove Kit</b></p>
 ![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Edison: <b>Grove Starter Kit for arduino </b></p>
+![select_devicemodel](/assets/edison_device_model.png)
 <div class="dwExpand2"></div>
 
 <br/>

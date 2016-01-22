@@ -293,34 +293,20 @@ exit 0
 14) `디바이스 모델`을 선택한다.
 
 <p class="dwExpand" > 라즈베리파이의 경우: <b>GrovePi+ Starter Kit</b></p>
-
 ![select_devicemodel](/assets/select_devicemodel_rapberry_ko.png)
-
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 라즈베리파이의 의경우: <b>Grove Starter Kit for arduino</b></p>
-
 ![select_devicemodel](/assets/select_devicemodel_arduinopi_ko.png)
-
 <div class="dwExpand2"></div>
-
 <p class="dwExpand" > 비글본그린의 경우: <b>Grove Starter Kit for BeagleBone Green</b></p>
-
 ![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
-
 <div class="dwExpand2"></div>
-
 <p class="dwExpand" > 아두이노의 경우: <b>Grove Starter Kit for arduino </b></p>
-
 ![select_devicemodel](/assets/select_devicemodel_arduino_ko.png)
-
 <div class="dwExpand2"></div>
-
 <p class="dwExpand" > 에디슨의 경우: <b>Grove Starter Kit for arduino </b></p>
-
 ![select_devicemodel](/assets/edison_device_model.png)
-
 <div class="dwExpand2"></div>
-
 
 <br/>
 
