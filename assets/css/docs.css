@@ -422,7 +422,8 @@ p.dwfqExpand b {
     word-break: break-all;
     word-wrap: break-word;
     margin-right: 5px;
-    background-color: rgba(242, 222, 222, 0.52);
+    background-color: rgb(236, 246, 251); 
+    /*rgba(242, 222, 222, 0.52);*/
     border: 1px solid #f2dede;
     border-radius: 4px;
 }

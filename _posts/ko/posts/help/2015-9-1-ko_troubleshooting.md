@@ -126,3 +126,7 @@ permalink: /ko/help/troubleshooting.html
          ```
 
 <p class="dwfqExpand2"></p>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>
