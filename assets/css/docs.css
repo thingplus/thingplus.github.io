@@ -409,6 +409,23 @@ p.dwfqExpand {
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
 
 }
+p.dwfqExpand b {
+  color:red;
+}
+
+.detail2 pre {
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-right: 5px;
+    background-color: rgba(242, 222, 222, 0.52);
+    border: 1px solid #f2dede;
+    border-radius: 4px;
+}
 
 .detail2{
   padding-left: 30px;
