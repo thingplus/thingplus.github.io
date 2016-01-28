@@ -410,7 +410,7 @@ p.dwfqExpand {
 
 }
 p.dwfqExpand b {
-  color:red;
+  color:#EF9292;
 }
 
 .detail2 pre {
@@ -429,6 +429,7 @@ p.dwfqExpand b {
 
 .detail2{
   padding-left: 30px;
+  padding-bottom: 5px;
   margin-left: 40px;
   margin-right: 40px;
   background-color: #f3f3f3;
@@ -452,11 +453,12 @@ p.dwfqExpand b {
   right: 50px;
   padding-left: 30px;
   height: 67px;
-  font-family: FontAwesome;
+ /* font-family: FontAwesome;
   font-size:14px;
   color:#979797;
-  content:"\f078 ";
+  content:"\f078 ";*/
 }
+
 .dwfqExpand.ui-open:before {
   /*font-family:monospace;*/
   position: absolute; 
@@ -464,10 +466,10 @@ p.dwfqExpand b {
   /*padding-left: 30px;*/
   height: 67px;
   font-size: 14px;
-  color:#979797;
+ /* color:#979797;
   font-family: FontAwesome;
   content:"\f077 ";
-  border-left: 5px;
+  border-left: 5px;*/
 }
 
 
