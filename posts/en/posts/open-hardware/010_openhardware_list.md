@@ -12,7 +12,6 @@ Open Hardware List
 3. [Beagle Board](#id-beagle-guide)
 4. [Arduino](#id-arduino-guide)
 5. [Available Sensor List](#id-sensor-list)
-6. [List of Sensors to Create](#Extra-sensors)
 
 <br/>
 
@@ -26,79 +25,92 @@ Open Hardware List
 <br/>
 ### 2. Raspberry Pi
 - Raspberry Pi I, II
-- Sensor Kit
-  - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-CE-certified-p-2572.html)
-  - [GrovePi+ Only](http://www.seeedstudio.com/depot/GrovePi-p-2241.html)
-  - [Available Sensor List](#available-sensor-list-pi)
 - [Guide link](/en/open-hardware/raspberry-pi-user-guide.html)
+
+<p class="dwExpand">  Sensor Kit </p>
+  - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-CE-certified-p-2572.html)
+  - Separate purchase
+    - [GrovePi+ Only](http://www.seeedstudio.com/depot/GrovePi-p-2241.html)
+    - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
+    - [Light Sensor](http://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html)
+    - [Sound Sensor](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
+    - [Rotary Angle Sensor](http://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)
+    - [Temperature and Humidity Sensor](http://www.seeedstudio.com/depot/Grove-TempHumi-Sensor-p-745.html)
+    - [Ultrasonic Ranger](http://www.seeedstudio.com/depot/Grove-Ultrasonic-Ranger-p-960.html)
+    - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
+    - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
+    - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
+    - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
+
+<p class="dwExpand2"></p>
 
 <br/>
 ### 3. Beagle Board
 - Beaglebone Black, Beaglebone Green
-- Sensor Kit
-  - [Grove Starter Kit for BeagleBone Green (**Including I2C Hub, ADC and 8 Sensors**)](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
-  - [Grove I2C Hub Only](http://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html)
-  - [Grove I2C ADC Only](http://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html)
-  - [Available Sensor List](#available-sensor-list-bbg)
 - [Guide link](/en/open-hardware/bbb-user-guide.html)
+
+<p class="dwExpand">  Sensor Kit </p>
+  - [Grove Starter Kit for BeagleBone Green (**Including I2C Hub, ADC and 8 Sensors**)](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
+  - Separate purchase
+    - [Grove I2C Hub Only](http://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html)
+    - [Grove I2C ADC Only](http://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html)
+    - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
+    - [3-Axis Digital Accelerometer](http://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html)
+    - [Chainable RGB LED](http://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html)
+    - [OLED Display](http://www.seeedstudio.com/depot/Grove-OLED-Display-096-p-824.html)
+
+<p class="dwExpand2"></p>
 
 <div id='id-arduino-guide'></div>
 <br/>
 ### 4. Arduino 
 - Arduino compatible board(uno, orange board, etc)
-- Sensor kit
-  - [Grove - Starter Kit for Arduino](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
-  - [Grove Base shield Only](http://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html)
-  - [Available Sensor List](#available-sensor-list-arduino)
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
 
+<p class="dwExpand">  Sensor Kit </p>
+  - [Grove - Starter Kit for Arduino](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
+  - Separate purchase
+    - [Grove Base shield Only](http://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html)
+    - [Touch sensor](http://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html)
+    - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
+    - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
+    - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
+    - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
+    - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
+    - [Sound Sensor](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
+    - [Rotary Angle Sensor](http://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)
+    - [Light Sensor](http://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html)
+    - [Temperature Sensor](http://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)
+
+<p class="dwExpand2"></p>
+
 <br/>
-### 5. Coming soon
+### 5. Edison
 - Edison
+- [Guide link](/en/open-hardware/edison-user-guide.html)
+
+<p class="dwExpand">  Sensor Kit </p>
+ - [Edison for Arduino](http://www.seeedstudio.com/depot/Intel-Edison-for-Arduino-p-2149.html)
+ - [Grove Base shield Only](http://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html)
+ - Separate purchase
+   - [Touch sensor](http://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html)
+   - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
+   - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
+   - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
+   - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
+   - [Sound Sensor](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
+   - [Rotary Angle Sensor](http://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)
+   - [Light Sensor](http://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html)
+   - [Temperature Sensor](http://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)
+
+<p class="dwExpand2"></p>
+
+<div id='id-sensor-list'></div>
 
 <br/>
-<div id='id-sensor-list'></div>
+
 ### 6. Available Sensor List
-- **We will add new sensors soon.**
 
-<div id='available-sensor-list-pi'></div>
-- Raspbery Pi
- - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
- - [Light Sensor](http://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html)
- - [Sound Sensor](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
- - [Rotary Angle Sensor](http://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)
- - [Temperature and Humidity Sensor](http://www.seeedstudio.com/depot/Grove-TempHumi-Sensor-p-745.html)
- - [Ultrasonic Ranger](http://www.seeedstudio.com/depot/Grove-Ultrasonic-Ranger-p-960.html)
- - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
- - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
- - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
- - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
-
-<div id='available-sensor-list-bbg'></div>
-- Beagle Board
- - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
- - [3-Axis Digital Accelerometer](http://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html)
- - [Chainable RGB LED](http://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html)
- - [OLED Display](http://www.seeedstudio.com/depot/Grove-OLED-Display-096-p-824.html)
-
-<div id='available-sensor-list-arduino'></div>
-- Arduino
- - [Touch sensor](http://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html)
- - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
- - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
- - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
- - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
- - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
- - [Sound Sensor](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
- - [Rotary Angle Sensor](http://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)
- - [Light Sensor](http://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html)
- - [Temperature Sensor](http://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)
-
-
-
-<div id='Extra-sensors'></div>
-<br><br>
-### 6. List of Sensors to Create
 
 |icon                                                           |Type           |Description    | Model                |Categrory         
 |---------------------------------------------------------------|---------------|---------------|----------------------|----------
