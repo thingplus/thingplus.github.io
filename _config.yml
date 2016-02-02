@@ -79,7 +79,7 @@ exclude:
 defaults:
   -
     scope:
-      path: _posts/ko
+      path: ""
     values:
       lang: ko
       layout: default
