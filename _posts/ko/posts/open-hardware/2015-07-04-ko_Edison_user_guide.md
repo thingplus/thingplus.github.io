@@ -5,7 +5,7 @@ published: true
 permalink: /ko/open-hardware/edison-user-guide.html
 ---
 
-<meta property="og:image" content="hhttp://thumb.mt.co.kr/06/2016/02/2016020115081478710_1.jpg" />
+
 
 Thing+ 연동가이드(에디슨)
 <div id='id-setting'></div>
