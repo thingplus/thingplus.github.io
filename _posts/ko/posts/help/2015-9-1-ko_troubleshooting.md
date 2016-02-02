@@ -130,6 +130,40 @@ Gateway가 기등록 되었는지 확인 합니다.
 
 <p class="dwfqExpand2"></p>
 
+<p class="dwfqExpand"> 오픈하드웨어 게이트웨이 구성을 했는데 LED 점멸이 동작하지 않습니다.</p>
+
+지속시간과 점멸시간이 잘못 세팅 되진 않았느지 확인이 필요합니다.
+<br/>
+지속시간은 전체 점멸되는 시간을 의미 합니다. 
+<br/>
+예를 들면, 지속시간을 10초 설정하고 점멸 간격을 1초로 설정 했다면, 아래와 같은 의미 입니다. 실제 5~6 회 점등이 될것입니다.
+  
+ ```
+ 1초 켜짐 - 1초 꺼짐 -  1초 켜짐 - 1초 꺼짐 - 1초 켜짐 - 1초 꺼짐 - 1초 켜짐 - 1초 꺼짐 - 1초 켜짐 - 1초 꺼짐 
+ ```
+소스상으로는 `~/thingplus/openhardware/arduino/grove-starter-kit/led.js` 에서 durationMs가 지속시간에 대한 부분입니다.
+
+  ![led.js](/assets/arduino_led_js.png)
+
+설정이 지속시간이 점멸간격보다 크다면 점멸은 동작되야합니다. 그럼에도 동작이 되지 않는다면, 아래를 참고해주세요. 
+
+`아두이노`의 경우,
+ThingPlus 를 제외 하고 arduino의 예제로 실행을 한번 해보시는 것을 추천드립니다.
+![arduino ide](/assets/arduino_led_ide.png)
+
+파일>예제>01.Basics>Blink 를 선택하시고 compile 후에 upload 하시면 led가 blink 되는 것을 볼 수 있습니다.
+<br/>
+이것이 blink가 되지 않는다면 device의 문제 일 수 도 있습니다. 
+<br/>
+blink가 동작 한다면, contact@thingplus.net로 문의 해주세요.
+
+베이스쉴드에 의한 연결이 아닌 경우, led는 + 가 13번 - 는 GND에 꽂으셔야 합니다.
+![arduino_led](/assets/arduino_led.png)
+
+
+
+<p class="dwfqExpand2"></p>
+
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
 </div>

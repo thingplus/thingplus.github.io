@@ -5,8 +5,6 @@ published: true
 permalink: /ko/open-hardware/edison-user-guide.html
 ---
 
-
-
 Thing+ 연동가이드(에디슨)
 <div id='id-setting'></div>
 
