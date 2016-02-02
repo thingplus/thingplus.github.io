@@ -1,6 +1,6 @@
 ---
 title: ThingPlus
-permalink: /en
+permalink: /en/
 ---
 
 {% include list.html %}

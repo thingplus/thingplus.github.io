@@ -107,7 +107,7 @@
               <span class="icon-bar"></span>
           </button>              
         </div>
-      
+        
         <div class="collapse navbar-collapse" id="navbar-collapse-menu">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://www.thingplus.net/" target="_blank">{{ site.data.i18n[page.lang].go_thingplus }}</a></li>
@@ -115,9 +115,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ site.data.i18n[page.lang].lang }} &nbsp;<b class="caret"></b></a>
               <ul class="dropdown-menu lang-select">
-                {% assign posts=site.posts | where:"date", page.date | sort: 'path' %}
+                {% assign posts=site.pages | where:"name", page.name | sort: 'path' %}
                 {% for post in posts reversed %}     
-                  <li><a href="{{ post.url }}" class="lang">{{ site.data.i18n[post.lang].lang }}</a></li>
+                  <li><a href="{{ post.url }}" class="lang">{{ site.data.i18n[post.lang].lang }} </a> {{ page.author }} {{ post.author }} </li>
                 {% endfor %}
               </ul>
             </li>
@@ -134,7 +134,7 @@
               <!-- User Guide -->
               <li><a href="#">{{ site.data.i18n[page.lang].submenu_user-guide }}</a>
                 <ul>
-                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% assign posts = site.pages | where:"lang", page.lang %} 
                 {% for post in posts %} 
                   {% if post.title != 'ThingPlus' and post.tags contains 'user-guide' %} 
                     {% assign current = nil %} 
@@ -151,7 +151,7 @@
               <!-- Open Hardware -->
               <li><a href="#">{{ site.data.i18n[page.lang].submenu_open-hardware }}</a>
                 <ul>
-                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% assign posts = site.pages | where:"lang", page.lang %} 
                 {% for post in posts %} 
                   {% if post.title != 'ThingPlus' and post.tags contains 'open-hardware' %} 
                     {% assign current = nil %} 
@@ -168,7 +168,7 @@
               <!-- REST API -->
               <li><a href="#">{{ site.data.i18n[page.lang].submenu_rest-api }}</a>
                 <ul>
-                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% assign posts = site.pages | where:"lang", page.lang %} 
                 {% for post in posts %} 
                   {% if post.title != 'ThingPlus' and post.tags contains 'rest-api' %} 
                     {% assign current = nil %} 
@@ -185,7 +185,7 @@
               <!-- FAQ  -->
               <li><a href="#">{{ site.data.i18n[page.lang].submenu_help }}</a>
                 <ul>
-                {% assign posts = site.posts | where:"lang", page.lang %} 
+                {% assign posts = site.pages | where:"lang", page.lang %} 
                 {% for post in posts %} 
                   {% if post.title != 'ThingPlus' and post.tags contains 'help' %} 
                     {% assign current = nil %} 
