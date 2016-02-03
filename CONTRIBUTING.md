@@ -39,7 +39,6 @@ redcarpet:
  - http://jekyllrb.com/docs/installation/ 에서 필요한 것 설치.
  ```
   $ brew install ruby
-  $ gem install jekyll -v '2.5.3'
   $ gem install github-pages
  ```
 
