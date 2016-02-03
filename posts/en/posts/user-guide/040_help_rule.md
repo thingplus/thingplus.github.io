@@ -16,8 +16,10 @@ Guide for rule creation and management.
 
 ---
 <div id='id-rule-about'></div>
+
 ### About Rule
 <br>
+
 #### Rule?
 * Activate an action for specific condition of rule. make a rule as {In case of fire, receive message service.}.
 * By rule, can be available to make automation monitoring system, can adjust data of sensors by one rule.
@@ -53,6 +55,7 @@ Guide for rule creation and management.
 
 ---
 <div id='id-rule-management'></div>
+
 ### Rule Managemenet
 Display existing rules.
 
@@ -65,17 +68,17 @@ Display existing rules.
 * ⑤Switch to activate/disactivate existing rule condtion.  
 
 <br>
+
 #### Description of rule icon
 Make visualization of action of event. 
-<br>
 ![](/assets/4_ruleicon.png)
 
 * As order, means trigger, condition, and action.  
 
 <br>
-
 ---
 <div id='id-rule-creation'></div>
+
 ### Create Rule
 Set the rule by customer own sensor. In addition, make a rule by rule templetes provided. 
 
@@ -110,6 +113,7 @@ Set the rule by customer own sensor. In addition, make a rule by rule templetes 
 
 ---
 <div id='id-rule-info'></div>
+
 ### Rule Information
 Edit rule information that made.  Rule information can find rule managment page, timeline page.  
 ![](/assets/en_4_m_ruleinfo.png)
@@ -120,6 +124,7 @@ Edit rule information that made.  Rule information can find rule managment page,
 <br>
 
 <div id='id-rule-edit'></div>
+
 #### Edit and remove rule
 * **Rule Edit**
   * Can edit rule for anytime. 
@@ -136,6 +141,7 @@ Edit rule information that made.  Rule information can find rule managment page,
 
 ---
 <div id='id-rule-tutorial'></div>
+
 ### Rule Tutorial
 (Will be open shortly.)
 

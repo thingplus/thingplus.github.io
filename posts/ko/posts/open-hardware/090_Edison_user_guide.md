@@ -13,11 +13,9 @@ Thing+ 연동가이드(에디슨)
 3. [기타 설정](#id-hostname)
 4. [에디슨 등록](#id-register)
 
-
-
 <br/>
-
 ---
+
 #### 1. 환경 설정
 
 0) [아두이노 Grove 스타터 센서 키트](https://www.icbanq.com/P005710113/)
@@ -27,11 +25,9 @@ Thing+ 연동가이드(에디슨)
 
    - [참조](https://software.intel.com/en-us/articles/assemble-intel-edison-on-the-arduino-board)
    - 아래 그림과 같이 전원과 USB 두개를 연결 합니다. (USB 는 두개 모두 PC와 연결합니다.)
-
     ![connection](/assets/edison_connect.png)
 
    - USB connector 사이의 micro-switch 가 있습니다. 그림 아래 방향으로 switching 합니다. 
-
     ![switch](/assets/edison_ext.png) 
 
 <br/>
@@ -86,7 +82,6 @@ Thing+ 연동가이드(에디슨)
 <p class="dwExpand"> For windows</p>
 
 - `Serial` 로 선택을 하고 `serial line`과 `speed`를 설정 합니다. speed는 `115200` 입니다.
-
 ![LED 극성](/assets/putty.png)
 
 - `Serial line`은 PC에서 장치가 설치된 COM port, `COMXX` 을 입력해주시면 됩니다.
@@ -119,6 +114,7 @@ configure_edison --wifi
 <br/>
 
 ---
+
 #### 2. ThingPlus Package download 및 install
 
 1) 설치할 위치를 설정합니다.
@@ -135,53 +131,52 @@ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_edison
 ```
 
 3) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치합니다.
-   - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
- ```bash
- edison:/opt/thingplus# chmod 755 thingplus_embedded_sdk_edison_install.sh
- edison:/opt/thingplus# ./thingplus_embedded_sdk_edison_install.sh
- ```
+- Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
+
+```bash
+edison:/opt/thingplus# chmod 755 thingplus_embedded_sdk_edison_install.sh
+edison:/opt/thingplus# ./thingplus_embedded_sdk_edison_install.sh
+```
 
 <div id='id-hostname'></div>
 
 <br/>
 
 ---
+
 #### 3. 기타 설정
 
 1) 장치 구분을 위해 에디슨의 호스트명 변경이 필요합니다.
 
 > 주의: Termianl/Putty에서는 마우스로 커서이동이 불가능하므로, 키보드의 화살표 키를 사용해야 합니다.
 
- - `/etc/hostname`을 수정합니다.
+- `/etc/hostname`을 수정합니다.
 
-    ```bash
-    edison:~/# vi /etc/hostname
-    ```
+  ```bash
+  edison:~/# vi /etc/hostname
+  ```
 
-   - 파일 내부의 `edison`을 아래 그림과 같이 원하는 이름(알파벳 및 숫자, -만 허용)으로 변경합니다.
-   ![Modify hostname](/assets/vi_hostname.png)
+- 파일 내부의 `edison`을 아래 그림과 같이 원하는 이름(알파벳 및 숫자, -만 허용)으로 변경합니다.
+![Modify hostname](/assets/vi_hostname.png)
 
-     - 파일 수정 후 저장은 `ESC`+`wq!`+`Enter` 
+- 파일 수정 후 저장은 `ESC`+`wq!`+`Enter` 
 
 <br/>
 
 2) 변경한 호스트명 적용을 위해 Edison을 재시작합니다.
 
-  ```
-  edison:~/# reboot
-  ```
+```bash
+edison:~/# reboot
+```
 
 
 <div id='id-register'></div>
 
 ---
+
 #### 4. 에디슨 등록
 [게이트웨이 등록 방법](/ko/user-guide/registration.html#id-gateway) 의 절차를 따르면 됩니다.
-
-
-
-</div>
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

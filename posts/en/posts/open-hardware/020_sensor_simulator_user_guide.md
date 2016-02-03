@@ -7,9 +7,8 @@ permalink: /en/open-hardware/sensor-simulator-user-guide.html
 
 Thing+ Integragtion Guide for Sensor Simulator
 
-<br/>
-
 ---
+
 #### 1. Regist Sensor Simulator
 
 <br/>
@@ -46,8 +45,8 @@ Thing+ Integragtion Guide for Sensor Simulator
 <br/>
 9) You can see the registred Gateway from the `Sensor List` Menu
 
-  - Sensor(s) is registered automatically by the Gateway(BeagleBone Black / Raspberry Pi 2) within 1 minute after you complete to register your gateway
-  - Values your Sensor are periodically aggregated and delivered to Thing+ Cloud by the Thing+ Gateway Software. You can see the values from Thing+ Portal after several minutes.
+- Sensor(s) is registered automatically by the Gateway(BeagleBone Black / Raspberry Pi 2) within 1 minute after you complete to register your gateway
+- Values your Sensor are periodically aggregated and delivered to Thing+ Cloud by the Thing+ Gateway Software. You can see the values from Thing+ Portal after several minutes.
 
 <br/>
 

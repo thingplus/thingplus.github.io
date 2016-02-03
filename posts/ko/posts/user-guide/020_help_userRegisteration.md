@@ -13,8 +13,11 @@ permalink: /ko/user-guide/registration.html
 
 ---
 <div id='id-serviceadmin'></div>
+
 ### 서비스 관리자
+
 <br>
+
 #### 가입 및 사용
   * Thing+ 포털 사용을 위해서는 하드웨어 구입과 설치가 필요합니다. 귀사의 맞춤형 하드웨어 구입과 설치를 위해 [iot@daliworks.net](mailto:iot@daliworks.net)으로 연락바랍니다. 최고의 IoT 전문가가 친절히 도와 드리겠습니다.
   * 하드웨어에 대해 알아보기
@@ -31,6 +34,7 @@ permalink: /ko/user-guide/registration.html
 
 ---
 <div id='id-enduser'></div>
+
 ### 일반 사용자
 <br>
 
@@ -58,6 +62,7 @@ permalink: /ko/user-guide/registration.html
 
 ---
 <div id='id-gateway'></div>
+
 ### 게이트웨이 등록
 _아직 보유한 게이트웨장비가 없다면, [Thing+ Portal](https://www.thingplus.net/)의 [센서 시뮬레이터](/ko/open-hardware/sensor-simulator-user-guide.html)를 사용해서 가상 게이트웨이를 등록하실 수 있습니다._
 

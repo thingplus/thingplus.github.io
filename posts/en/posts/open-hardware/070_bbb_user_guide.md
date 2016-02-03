@@ -17,6 +17,7 @@ Thing+ Integration Guide for BeagleBone Green
 <br/>
 
 ---
+
 #### 1. Environment Setting
 
 0) [Go to shop to buy the Grove Starter Kit](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-BeagleBone-Green-p-2526.html)
@@ -24,38 +25,35 @@ Thing+ Integration Guide for BeagleBone Green
 <br/>
 1) Telnet/SSH Client is required for controlling the BeagleBone Green from your PC.
 
-   - If you are a Mac or Linux user, please use the default terminal utility.
-   - If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
-   - [Putty Download link](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-   - [Putty Manual](http://the.earth.li/~sgtatham/putty/0.58/htmldoc/)
+- If you are a Mac or Linux user, please use the default terminal utility.
+- If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
+- [Putty Download link](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+- [Putty Manual](http://the.earth.li/~sgtatham/putty/0.58/htmldoc/)
 
 <br/>
 2) For the communication over the internet, connect the ethernet cable or plug in a Wifi USB Dongle 
-
 ![BBG + Ehternet + USB Cable](/assets/bbg_ethernet_usb.png)
 
 <br/>
 3) After the BeagleBone is booted up completely, connect to it over SSH. The booting process takes 2~3 minutes
 
- - If you can't found IP address, please refer the [`Troubleshooting`](/en/help/troubleshooting.html) section.
+- If you can't found IP address, please refer the [`Troubleshooting`](/en/help/troubleshooting.html) section.
 
-    ```bash
-    $ ssh root@<IP Address>
-    ```
+  ```bash
+  $ ssh root@<IP Address>
+  ```
 
-   - Example for Mac & Linux
+- Example for Mac & Linux
 
-        ```bash
-        $ ssh root@192.168.1.XXX
-        ```
-   
-   - Example for Windows
-     - Run the putty, and Insert your IP Address, and then, Click the button `Open` and Enter a password.
-     ![BBG putty login](/assets/putty_login_bbg.png)
+  ```bash
+  $ ssh root@192.168.1.XXX
+  ```
 
-<br/>
+- Example for Windows
+  - Run the putty, and Insert your IP Address, and then, Click the button `Open` and Enter a password.
+    ![BBG putty login](/assets/putty_login_bbg.png)
 
- - Notice : BeagleBone Green is possible to connect with PC and USB cable. Please refer the [`How to connect with USB on Beaglebone Green`](#id-bbg-usbconnect) section.
+> Notice : BeagleBone Green is possible to connect with PC and USB cable. Please refer the [`How to connect with USB on Beaglebone Green`](#id-bbg-usbconnect) section.
 
 > Notice: In case of Windows, you have to re-launch putty, when BeagleBone Green is rebooted.
 
@@ -84,40 +82,40 @@ Thing+ Integration Guide for BeagleBone Green
 
 > Remark: You can’t move the cursor on the Terminal and/or Putty with your mouse. please use your keyboard to move it.
 
- - Modify `/etc/hostname`.
+- Modify `/etc/hostname`.
 
-    ```bash
-    @BBG:$ nano /etc/hostname
-    ```
+  ```bash
+  @BBG:$ nano /etc/hostname
+  ```
 
-   - Change the `BeagleBone' in the file to your own name(letter, number and hyphen(-) allowed only) like the below image. 
-   ![BBG Modify hostname](/assets/modify_hostname.png)
+- Change the `BeagleBone` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image. 
+  ![BBG Modify hostname](/assets/modify_hostname.png)
 
-     - When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor
+  - When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor
 
-<br/>
 
- - To apply your modification, please reboot your BeagleBone Green.
+- To apply your modification, please reboot your BeagleBone Green.
 
-    ```bash
-    @BBG:$ reboot
-    ```
+  ```bash
+  @BBG:$ reboot
+  ```
 
 <div id='id-package'></div>
 
 <br/><br/>
 
 ---
+
 #### 2. Install Thing+ Embedded Package
 
 1) Connect Grove Starter kit sensor to BeagleBone Green without Ethernet(LAN cable) and Power Cable.
 
 - As the following image : How to Connection BeagleBone Green with I2C hub
-![BBG + Grove](/assets/bbg_grove.png)
-![BBG + Grove](/assets/bbg_grove_2_en.png)
+  ![BBG + Grove](/assets/bbg_grove.png)
+  ![BBG + Grove](/assets/bbg_grove_2_en.png)
 
 - In case of RGB LED, connect to `IN` slot.
-![BBG + Grove](/assets/bbg_grove_3.png)
+  ![BBG + Grove](/assets/bbg_grove_3.png)
 
 <br/>
 2) Connect Ethernet(LAN cable), and Power Cable to BeagleBone Green.
@@ -146,10 +144,10 @@ Thing+ Integration Guide for BeagleBone Green
 
 - It can take few minutes to install the Thing+ Embedded Package.
 
-    ```bash
-    @BBG:$ chmod 755 thingplus_embedded_sdk_bbg_install.sh
-    @BBG:$ ./thingplus_embedded_sdk_bbg_install.sh
-    ```
+  ```bash
+  @BBG:$ chmod 755 thingplus_embedded_sdk_bbg_install.sh
+  @BBG:$ ./thingplus_embedded_sdk_bbg_install.sh
+  ```
 
 <br/>
 7) Reboot BeagleBone Green.
@@ -162,6 +160,7 @@ Thing+ Integration Guide for BeagleBone Green
 <br/><br/>
 
 ---
+
 #### 3. Gatway Registration
 Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway)
 
@@ -184,7 +183,8 @@ _This docuement is based on **NEXT-201N MINI** but you can refer this for other 
 <br/>
 
 ---
-#### 1. How to configure the Wifi Dongle
+
+#### How to configure the Wifi Dongle
 
 <br/>
 1) BeagleBone Green should be restarted after the Wifi Dongle is plugged in
@@ -198,12 +198,10 @@ _This docuement is based on **NEXT-201N MINI** but you can refer this for other 
 
 ```bash
 @shell:$ ifconfig
+
 wlan0
-
 lo        no wireless extensions.
-
 eth0      no wireless extensions.
-
 usb0      no wireless extensions.
 ```
 
@@ -212,37 +210,36 @@ usb0      no wireless extensions.
 <br/>
 4) Network Setting
 
-a) Open `/etc/network/interfaces` file from the Nano editor
+- Open `/etc/network/interfaces` file from the Nano editor
 
-```bash
-@shell:$ sudo nano /etc/network/interfaces
-```
+  ```bash
+  @shell:$ sudo nano /etc/network/interfaces
+  ```
 
-<br/>
-b) Uncomment 2 lines under `# The primary network interface` and 4 lines under `# WiFi Example` (Delete ‘#’). Modify the wifi interface name, wifi SSID and password, properly
+- Uncomment 2 lines under `# The primary network interface` and 4 lines under `# WiFi Example` (Delete ‘#’). Modify the wifi interface name, wifi SSID and password, properly
 
-```bash
-...
+  ```bash
+  ...
 
-# The primary network interface
-auto eth0       :# remove ‘#’ from the beginning of this line
-                :# It is possible that you can see ‘allow-hotplug eth0’ instead of ‘auto eth0’_
-iface eth0 inet dhcp  :# remove ‘#’ from the beginning of this line
-# Example to keep MAC address between reboots
-#hwaddress ether DE:AD:BE:EF:CA:FE
+  # The primary network interface
+  auto eth0       :# remove ‘#’ from the beginning of this line
+                  :# It is possible that you can see ‘allow-hotplug eth0’ instead of ‘auto eth0’_
+  iface eth0 inet dhcp  :# remove ‘#’ from the beginning of this line
+  # Example to keep MAC address between reboots
+  #hwaddress ether DE:AD:BE:EF:CA:FE
 
-...
+  ...
 
-# WiFi Example
-auto wlan0                    :# Change ‘ra0’ to the interface name which you used(In this example, we used ‘wlan0’ and changed ‘ra0’ to ‘wlan0’)
-iface wlan0 inet dhcp         :# remove ‘#’ from the beginning of this line. If you still use ‘ra0’ as the interface name, you should use it at this line
-    wpa-ssid "WiFi SSID"      :# Input your Wifi SSID name
-    wpa-psk  "WiFI password"  :# Input your Wifi password at here and remove ‘#’ from the beginning 
-...
+  # WiFi Example
+  auto wlan0                    :# Change ‘ra0’ to the interface name which you used(In this example, we used ‘wlan0’ and changed ‘ra0’ to ‘wlan0’)
+  iface wlan0 inet dhcp         :# remove ‘#’ from the beginning of this line. If you still use ‘ra0’ as the interface name, you should use it at this line
+      wpa-ssid "WiFi SSID"      :# Input your Wifi SSID name
+      wpa-psk  "WiFI password"  :# Input your Wifi password at here and remove ‘#’ from the beginning 
+  ...
 
-```
+  ```
 
- - When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor.
+- When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor.
 
 <br/>
 5) Reboot the device.
@@ -256,7 +253,9 @@ iface wlan0 inet dhcp         :# remove ‘#’ from the beginning of this line.
 
 ### How to connect your Beagle Bone Green with your computer
 
-_Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not available(**we checked on 12/3/2015**)_<br/>
+_Curretnly, the Beagle Bone Green Driver for Mac OS X El Capitan is not available(**we checked on 12/3/2015**)_
+<br/>
+
 Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a>.
 
 1) Download and Install the proper Beagle Bone Green Driver. You can download the driver from below links for your OS
@@ -265,18 +264,18 @@ Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a
 - [For Windows 32bit](http://beagleboard.org/static/Drivers/Windows/BONE_DRV.exe)
 - [For Linux](http://beagleboard.org/static/Drivers/Linux/FTDI/mkudevrule.sh)
 - Serial Driver for Mac OS X 글
- - [Serial Driver for Mac OS X 10.3 ~ 10.4 32bit](http://www.ftdichip.com/drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
- - [Serial Driver for Mac OS X 10.3 ~ 10.8 64bit](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
- - [Serial Driver for Mac OS X 10.9 ~ 현재 64bit Serial Driver](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg)
+  - [Serial Driver for Mac OS X 10.3 ~ 10.4 32bit](http://www.ftdichip.com/drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
+  - [Serial Driver for Mac OS X 10.3 ~ 10.8 64bit](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg)
+  - [Serial Driver for Mac OS X 10.9 ~ 현재 64bit Serial Driver](http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg)
 - [Network Driver for Mac OS X](http://joshuawise.com/downloads/HoRNDIS-rel7.pkg)
 
 <br/>
 2) Telnet/SSH Client Application is requried for controlling the Beagle Bone Green Device
 
-   - You can use your default terminal client for the Mac and/or Linux OS
-   - We recommend to use ‘Putty’ Client App for the Windows Users
-   - [Putty Donwload Link](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-   - [Putty Manual](http://the.earth.li/~sgtatham/putty/0.58/htmldoc/)
+- You can use your default terminal client for the Mac and/or Linux OS
+- We recommend to use ‘Putty’ Client App for the Windows Users
+- [Putty Donwload Link](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+- [Putty Manual](http://the.earth.li/~sgtatham/putty/0.58/htmldoc/)
 
 <br/>
 3) Connect your Beagle Bone Green with your Computer. You can use the USB Micro 5pin Cable provided with your Beagle Bone Green 
@@ -286,15 +285,15 @@ Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a
 <br/>
 4) Connect to your your device over SSH after your device is booted completely.(In general, it takes 2~3 minutes.)
 
-   - For Mac & Linux
+- For Mac & Linux
 
-        
-        $ ssh root@192.168.7.2
-        
-   
-   - For Windows
-     - Run the putty, and Insert IP Address, and then, Click the button `Open` and Enter a password. 
-     ![BBG putty login](/assets/putty_usb_login_bbg.png)
+  ```
+  $ ssh root@192.168.7.2
+  ```
+
+- For Windows
+  - Run the putty, and Insert IP Address, and then, Click the button `Open` and Enter a password. 
+  ![BBG putty login](/assets/putty_usb_login_bbg.png)
 
 > Remark: In case of Windows OS, You should close and run your putty clinet every time when you reboot your Beagle Bone Green Device
 

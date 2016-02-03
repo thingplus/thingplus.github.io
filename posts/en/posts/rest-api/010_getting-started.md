@@ -15,18 +15,18 @@ Getting Started with the Thing+ REST API
 5. [Code Samples](#id-step4)
 6. [Thing+ REST API Quick Reference](#id-api)
 
-
+---
 
 ## Step 1. Thing+ Service registration & Hardware installation
-  - <a href="https://www.thingplus.net" target="_blank">Thing+ 포털</a>
+  - <a href="https://www.thingplus.net" target="_blank">Thing+ Portal</a>
 
 ### Step 1-1
   - Thing+ service registration is required
-    - <a href="http://support.thingplus.net/ko/user-guide/registration.html" target="_blank">Thing+ service registration</a>
+    - <a href="http://support.thingplus.net/en/user-guide/registration.html" target="_blank">Thing+ service registration</a>
 
 ### Step 1-2
   - Hardware installation is required
-    - [오픈하드웨어 지원 리스트](/ko/open-hardware/openhardware-list.html)
+    - [Available Sensor List of Open Hardware](/en/open-hardware/openhardware-list.html)
 
 <div id='id-step1'></div>
 
@@ -103,7 +103,7 @@ Getting Started with the Thing+ REST API
 
 ### Step 2-5. Obtaining an OAuth Access token with <a href="./oauth2.html#authorization-code-grant-or-web-server" target="_blank">Authorization Code Grant</a> type
 
-   - An Access token Expires in 15 days (possibly can be changed without advance notification)
+___An Access token Expires in 15 days (possibly can be changed without advance notification)___
 
 1. Launch Chrome browser with below URL
   - replace **{CLIENT_ID}** and **{REDIRECT_URI}** to your Client ID and your Service URI
@@ -144,25 +144,23 @@ Getting Started with the Thing+ REST API
 
 ### Step 3-1. Create a <a href="https://www.getpostman.com/docs/environments" target="_blank">Postman Environments</a>
 
-  1. Launch Postman
+1. Launch Postman
 
-  2. Select the 'Manage environments'
+2. Select the 'Manage environments'
+![environment](/assets/environment.png)
 
-    ![environment](/assets/environment.png)
+3. Click the 'Add' button
+![environment add](/assets/environment-add.png)
 
-  3. Click the 'Add' button
+4. Add a 'Key' and 'Value' and Click the 'Submit' button
+![environment submit](/assets/environment-submit.png)
+- Add a 'Thing+ Access Token' to 'New environment' field.
+- Add a **AccessToken** (Case Sensitive) to 'Key' field.
+- Add a your OAuth Access Token to 'Value' field.
+- Close the modal
 
-    ![environment add](/assets/environment-add.png)
-
-  4. Add a 'Key' and 'Value' and Click the 'Submit' button
-<br> ![environment submit](/assets/environment-submit.png)
-    - Add a 'Thing+ Access Token' to 'New environment' field.
-    - Add a **AccessToken** (Case Sensitive) to 'Key' field.
-    - Add a your OAuth Access Token to 'Value' field.
-    - Close the modal
-
-  5. Select a 'Thing+ Access Token'
-<br> ![import](/assets/environment-select.png)
+5. Select a 'Thing+ Access Token'
+![import](/assets/environment-select.png)
 
 **Now you are ready to use the Thing+ REST API with an OAuth Access token**
 
@@ -231,7 +229,7 @@ Getting Started with the Thing+ REST API
 
 ## Step 5. Code Samples
 
-- [Sample apps](/ko/rest-api/api-samples.html)
+- [Sample apps](/en/rest-api/api-samples.html)
 
 
 <div id='id-api'></div>

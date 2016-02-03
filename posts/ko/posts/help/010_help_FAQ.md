@@ -12,7 +12,7 @@ permalink: /ko/help/faq.html
 <p class="dwfqExpand">  대시보드 라인차트 기간 설정 변경은 어떻게 할 수 있나요?</p>
 
 변경하고자 하는 위젯의 우측 상단 <i class="fa fa-cog fa-lg"></i> 설정 아이콘을 클릭하세요
-<br/>
+
 `위젯설정` 화면에서 "기간" 항목의 우측을 클릭하여 원하는 시간 범위를 선택하세요. 최대 24시간까지 선택할 수 있습니다.
 
 <p class="dwfqExpand2"></p>
@@ -41,24 +41,25 @@ permalink: /ko/help/faq.html
 
 wget을 설치 하기 위해서는 brew가 설치 되어 있어야 합니다.  
  
- ```
- ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
- ```
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 brew 명령어를 사용하여 wget을 설치 합니다.  
  
- ```
- brew install wget
- ```
+```
+brew install wget
+```
 
 <p class="dwfqExpand2"></p>
 
 <p class="dwfqExpand"> guide에 있는 것처럼 Gove sensor kit 만 사용해야 하나요? </p>
 
-아닙니다. 참고용으로 예제는 Grove kit을 사용해서 배포 하였지만 약간만 소스를 수정하시면 다른 센서들도 사용 가능 하십니다.
-<br/>
+아닙니다. 
+
+참고용으로 예제는 Grove kit을 사용해서 배포 하였지만 약간만 소스를 수정하시면 다른 센서들도 사용 가능 하십니다.
 추후 관련한 내용을 update 할 예정이지만, 아래의 link에서 임시로 해당 내용에 대해 확인 가능하십니다.
-<br/>
+
 [다양한 센서 연결 방법](https://docs.google.com/document/d/1gk1RsXvfbD9eOiHQblpBcIgyJ7cYqb9pHqNSgId1s7U/edit)
 
 <p class="dwfqExpand2"></p>
@@ -66,11 +67,9 @@ brew 명령어를 사용하여 wget을 설치 합니다.
 <p class="dwfqExpand"> Ethernet이 아닌 WiFi 동글을 붙여서도 Thing+ Portal에 등록이 가능한가요?</p>
 
 네 가능합니다. 
-<br/>
+
 Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이기에, 인터넷이 연결되어 있고, Thing+ Embedded가 설치되어 있다면, Thing+ Portal에 바로 붙여서 사용하실 수 있습니다. 
-<br/>
 또한 해당 하드웨어의 가이드 내용 안에 WiFi 동글을 연결하는 방법을 안내해드리고 있습니다. 
-<br/>
 해당 내용 참고하셔서 연결하시면 됩니다.
 
 <p class="dwfqExpand2"></p>
@@ -78,9 +77,8 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 <p class="dwfqExpand"> 가이드에는 GrovePi+ 쉴드의 특정 포트에 특정 센서를 연결해야 하는데 가이드를 따라서 꽂아야 하나요? </p>
 
 네 그렇습니다.
-<br/>
+
 현재로써는 저희의 가이드 문서에 나와있는 것과 같은 포트에 같은 센서를 연결하셔야 합니다. 
-<br/>
 다만, Thing+ Embedded 내에 설치되어 있는 Openhardware디렉토리(/opt/thingplus/openhardware/) 내의 샘플을 수정하시면 다른 포트에 연결하실 수 있습니다.
 
 <p class="dwfqExpand2"></p>
@@ -88,9 +86,7 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 <p class="dwfqExpand"> 아두이노를 컴퓨터 없이 wifi를 이용해 사용 가능 한가요?</p>
 
 아두이노 + WiFi쉴드만을 이용하시면 Thingplus Cloud에 연결을 할 수 없습니다.
-<br/>
 Thingplus Cloud와 하드웨어 사이에는 SSL을 통한 암호화된 채널을 사용하고 있습니다.
-<br/>
 아두이노는 8비트 MCU로 컴퓨팅파워가 부족하기 때문에 SSL을 사용할 수 없어, 아두이노와 Thingplus Cloud와의 직접 연결은 불가능 합니다.
 
 <p class="dwfqExpand2"></p>
@@ -105,11 +101,8 @@ Thingplus Cloud와 하드웨어 사이에는 SSL을 통한 암호화된 채널�
 <p class="dwfqExpand"> ThingPlus의 서버가 AWS를 이용한 한것인가요? </p>
 
 AWS를 IaaS로만 이용해서 thing+ 소프트웨어를 구축 구조가 맞구요. 
-<br/>
 최근에 AWS에서도 PaaS 형태로 lambda를 이용한 연동 솔루션을 내놓고 있습니다. 
-<br/>
 저희도 그와 시너지를 낼 요소를 고민 하고 있는 중입니다. 
-<br/>
 Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이면서 실제로 REST API 를 제공하는 플랫폼적인 PaaS로써의 서비스도 함께 개발 및 제공하고 있습니다.
 
 <p class="dwfqExpand2"></p>
@@ -127,13 +120,10 @@ Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이
 <p class="dwfqExpand"> 게이트웨이 ID가 컴퓨터 맥주소인거같은데 왜 게이트웨이 ID라고 명명하는지 궁금합니다 </p>
 
 꼭 게이트웨이 ID가 mac address이어야 하는 것은 아닙니다. 
-<br/>
+
 게이트웨이를 구별 할 수 있는 unique 한 ID를 사용한 건데요.
-<br/>
 UUID나 IMEI등, 단말이 unigue 한 구분이 가능하다면 id로 사용할것입니다. 
-<br/>
 현재 오픈하드웨어는 모두 mac address를 id로 사용하고 있습니다. 
-<br/>
 그리고 그러한 혼란을 막기 위해 getmac이라는 script를 getGatewayId로 변경했고(아직 공개되진 않았습니다.) guide에서도 mac adress라는 단어를 지양하려고 합니다.
 
 <p class="dwfqExpand2"></p>

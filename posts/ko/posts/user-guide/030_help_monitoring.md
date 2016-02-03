@@ -17,6 +17,7 @@ permalink: /ko/user-guide/monitoring.html
 
 ---
 <div id='id-dashboard'></div>
+
 ### **대시보드**
 대시보드는 위젯으로 구성된 모니터링화면입니다.
 ![](/assets/3_dashboard.png)
@@ -25,7 +26,7 @@ permalink: /ko/user-guide/monitoring.html
 * 화면에서 다양한 위젯을 추가하여 실시간으로 데이터를 확인할 수 있습니다.
 * <i class="fa fd-widget_sensor"></i> 센서, <i class="fa fd-widget_actuator"></i> 액츄에이터, <i class="fa fd-menu_deviceManagement"></i> 디바이스, <i class="fa fd-widget_gateway"></i> 게이트웨이, <i class="fa fa-tags"></i> 태그, <i class="fa fd-widget_lineChart"></i> 라인차트, <i class="fa fd-widget_eventChart"></i> 이벤트 차트,<i class="fa fd-widget_cumulativeChart"></i> 증감차트, <i class="fa fd-widget_stackedChart"></i> 누적 차트, <i class="fa fd-widget_energyChart"></i> 에너지 차트, <i class="fa fa-laptop"></i> 게이트웨이 모니터, <i class="fa fd-menu_timeline"></i> 타임라인과 같은 다양한 위젯을 제공하고 있습니다.
 
-<br>
+<br/>
 
 #### 위젯에 대해 알아보기
 ![](/assets/3_widget.png)
@@ -34,7 +35,7 @@ permalink: /ko/user-guide/monitoring.html
 * 위젯은 대시보드를 구성하는 요소로, 사용자가 원하는 방식으로 센서 값을 표현할 수 있습니다.
 * 모든 위젯은 상단에 <i class="fa fa-refresh"></i> 새로고침, <i class="fa fa-cog"></i> 설정 아이콘이 있습니다. 새로고침 아이콘이 회전하는 <i class="fa fa-refresh"></i> 녹색이면 위젯이 실시간으로 업데이트 되는 상태이며, 새로고침 아이콘이 <i class="fa fa-refresh"></i> 적색이면 위젯의 업데이트가 끊긴 상태기며, 새로고침 아이콘이 <i class="fa fa-refresh"></i> 회색이면 클릭하여 수동 업데이트가 가능한 상태입니다.
 
-<br>
+<br/>
 
 #### 위젯 추가해보기
 * 대시보드에서 우측 상단의 <i class="fa fa-plus-circle"></i> 버튼을 눌러 위젯을 추가합니다.
@@ -43,13 +44,13 @@ permalink: /ko/user-guide/monitoring.html
 * 먼저 위젯의 1.이름을 입력합니다. 그리고 2.게이트웨이를 선택한 후 3.센서를 고릅니다.
 * 저장버튼을 누르면 해당센서가 센서 위젯에 나타납니다.
 
-<br>
+<br/>
 
 #### 위젯 순서 바꾸기
 * 위젯의 순서를 변경할 수 있습니다. 위젯의 이름영역을 잡고 드래그해서 순서를 바꿔보세요.
 ![](/assets/3_widgetdrag.png)
 
-<br>
+<br/>
 
 #### 위젯 설정
 * <i class="fa fa-cog"></i> 톱니바퀴 아이콘 버튼을 눌러 위젯 설정창으로 이동할 수 있습니다.
@@ -61,10 +62,11 @@ permalink: /ko/user-guide/monitoring.html
 * 위젯 삭제
   - 위젯을 삭제할 수 있습니다. 
 
-<br>
+<br/>
 
 ---
 <div id='id-timeline'></div>
+
 ### **타임라인**
 ![](/assets/3_timeline.png)
 
@@ -73,7 +75,7 @@ permalink: /ko/user-guide/monitoring.html
 * 페이지 상단에는 이벤트 타임라인을 심각도 별로 분류해서 볼 수 있는 버튼이 3개 있습니다. ![](/assets/3_fatalbtn.png) ![](/assets/3_warningbtn.png) ![](/assets/3_infobtn.png) 3개의 심각도 버튼을 눌러서 보여지는 타임라인을 분류할 수 있습니다.
 * 개별 이벤트 알림은 미리 설정된 규칙에 의해 발생합니다. 규칙의 제목을 누르면 규칙에 대한 세부정보 페이지로 이동합니다.
 
-<br>
+<br/>
 
 #### 타임라인 메세지 내용
 ![](/assets/3_timeline_rule.png)
@@ -84,15 +86,16 @@ permalink: /ko/user-guide/monitoring.html
   - ④이벤트 내용
     - 사용자가 지정한(혹은 시스템에서 기본적으로 제공한) 메세지를 보여줍니다.
 
-<br>
+<br/>
 
 ---
 <div id='id-sensorlist'></div>
+
 ### **센서목록**
 현재 보유한 센서목록을 한눈에 볼 수 있습니다. 상단의 탭메뉴를 눌러 게이트웨이 및 태그, 지도뷰로 확인할 수도 있습니다.
 ![](/assets/3_sensorlist.png)
 
-<br>
+<br/>
 
 #### 게이트웨이 기준 목록
 특정 사이트에 속해 있는 게이트웨이와 센서를 보고자 할 때 선택합니다.
@@ -106,7 +109,7 @@ permalink: /ko/user-guide/monitoring.html
 * ⑥해당 센서의 최근 업데이트 시간 : 센서가 마지막으로 업데이트된 시간을 나타냅니다. (녹색: 센서가 잘 작동하고 있음, 적색 : 센서에 문제가 있음)
 * ⑦해당 게이트웨이의 마지막 갱신 시간
 
-<br>
+<br/>
 
 #### 지도 기준 목록
 위치정보를 가진 게이트웨이를 지도 뷰로 확인할 수 있습니다. 위치정보 입력은 [게이트웨이 관리](/ko/user-guide/management.html#id-gateway-management) 페이지에서 입력할 수 있습니다.
@@ -116,7 +119,7 @@ permalink: /ko/user-guide/monitoring.html
 * ②아이콘을 클릭하면 게이트웨이의 이름과 마지막으로 업데이트 된 시간, 디바이스와 센서의 개수가 표시됩니다.
 * 지도 상단의 ③아이콘으로 지도 인터페이스를 제어할 수 있습니다.
 
-<br>
+<br/>
 
 #### 태그 기준 목록
 ![](/assets/3_viewtag.png)
@@ -128,15 +131,16 @@ permalink: /ko/user-guide/monitoring.html
 * ⑤센서 정보 : 센서 이름을 클릭하면 센서정보 페이지로 이동하여 센서에 대한 간략한 그래프를 확인 할 수 있습니다.
 * 이벤트 타임라인 : 해당 태그에 대한 타임라인을 확인 할 수 있습니다.
 
-<br>
+<br/>
 
 ---
 <div id='id-analysis'></div>
+
 ### **센서분석**
 센서분석페이지는 차트와 통계로 나누어져 있습니다.
 ![](/assets/3_sensoranalysis.png)
 
-<br>
+<br/>
 
 #### 차트
 ![](/assets/3_analysis_chart.png)
@@ -156,7 +160,7 @@ permalink: /ko/user-guide/monitoring.html
 - 그래프 전체를 볼 수 있는 Overview 차트 입니다. 원하는 구간을 클릭-드래그하여 화면영역에 표시되는 그래프를 지정할 수 있습니다.
 - 그래프 구간을 이동하여 볼 수 있는 버튼입니다. 클릭하여 확인하기 원하는 그래프 위치로 이동할 수 있습니다.
 
-<br>
+<br/>
 
 #### 통계
 ![](/assets/3_analysis_statics.png)
@@ -167,10 +171,11 @@ permalink: /ko/user-guide/monitoring.html
 1. 게이트웨이를 선택합니다. 
 - 서비스를 선택합니다.
 
-<br>
+<br/>
 
 ---
 <div id='id-tag'></div>
+
 ### **태그 관리**
 ![](/assets/3_m_tag0.png)
 
@@ -193,11 +198,12 @@ permalink: /ko/user-guide/monitoring.html
 - 원하는 센서에 체크합니다.
 - 페이지 하단에 생성버튼을 눌러 태그를 만듭니다.
 
-<br>
+<br/>
 
 
 ---
 <div id='id-rule'></div>
+
 ### **규칙 관리**
 규칙을 생성하고 관리할 수 있습니다. 규칙에 대한 자세한 설명은 [규칙생성 및 제어](/ko/user-guide/rule.html)를 이용해주세요. 
 ![](/assets/3_m_rule0.png)
@@ -228,4 +234,4 @@ Thing+ 를 통해서, IoT의 기본적인 내용인 사물을 연결하고 실�
   - 통계
 -->
 
-<br>
+<br/>

@@ -9,6 +9,7 @@ _본 가이드는 가이드 되어 있지 않은 다른 센서를 사용 할 때
 <br/>
 
 ---
+
 #### 1. 게이트웨이 등록
 
 <br/>
@@ -37,9 +38,9 @@ _본 가이드는 가이드 되어 있지 않은 다른 센서를 사용 할 때
 
 ![input_gateway_id](/assets/open_gw_05.png)
 
- - 비글본 과 라즈베리파 게이트웨이 아이디는 unique 한 ID로 `eth0` 에 해당하는 `mac address`를 사용합니다. 
-   - 관련해서는 support@thingplus.net 에 문의 주세요.
- - 생성된 API key를 복사하고 [게이트웨이를 실행](/ko/user-guide/registration.html#id-run-gateway) 합니다.
+- 비글본 과 라즈베리파 게이트웨이 아이디는 unique 한 ID로 `eth0` 에 해당하는 `mac address`를 사용합니다. 
+  - 관련해서는 support@thingplus.net 에 문의 주세요.
+- 생성된 API key를 복사하고 [게이트웨이를 실행](/ko/user-guide/registration.html#id-run-gateway) 합니다.
 
 <br/>
 6) `게이트웨이 등록하기`버튼을 누른후, 게이트웨이의 이름을 입력합니다.
@@ -47,7 +48,7 @@ _본 가이드는 가이드 되어 있지 않은 다른 센서를 사용 할 때
 ![register_gateway](/assets/open_gw_06.png)
 
 <br/>
-7) '디바이스 모델'을 선택합니다. (`Open Source Device`)
+7) `디바이스 모델`을 선택합니다. (`Open Source Device`)
 
 ![input_device_model](/assets/open_gw_07.png)
 

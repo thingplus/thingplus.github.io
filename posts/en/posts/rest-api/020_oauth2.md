@@ -17,23 +17,32 @@ OAuth2
   - [Errors for the access token request](#id-error-access)
   - [Errors for API request with the access token](#id-error-apireq)
 
+---
+
 OAuth2 is a protocol that lets external apps request authorization to private details in a user’s ThingPlus account without getting their password.
 
 <div id='id-oauth'></div>
-<div id='id-oauth-author'></div>
+
 All developers need to register their application before getting started. A registered OAuth application is assigned a unique Client ID and Client Secret. The Client Secret should not be shared.
+
+---
+
+<div id='id-oauth-author'></div>
 
 ## OAuth 2.0 Grant Types    
 
+<br/>
+
 ### Authorization Code Grant (or Web Server)
+
 #### Step 1
 Redirect the user to allow or not for the Web Server(or Confidential Client) to access the resources of the user with registered scopes
 
-```json
+```JSON
 GET https://api.thingplus.net/v1/oauth2/authorize
 
 Example>
-  GET https://api.thingplus.net/v1/oauth2/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri={REDIRECT_URI}
+GET https://api.thingplus.net/v1/oauth2/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri={REDIRECT_URI}
 ```
 
 * URL Query parameters
@@ -47,7 +56,7 @@ Example>
 #### Step 2
 ThingPlus redirects back to your site with "code" in url when the user accepted your request
 
-```json
+```JSON
 {REDIRECT_URI}/?code={AUTHORIZATION_CODE}
 ```
 
@@ -72,8 +81,10 @@ Content-Type : application/x-www-form-urlencoded
 | client_id     | string        | __Required__ The client ID you received from thingplus when you registered your application
 | client_secret | string        | __Required__ The client secret you received from thingplus when you registered your application
 
+<br/>
 
 ### Implicit Grant (or User Agent)
+
 #### Step 1
 Redirect the user to allow or not for the User Agent(or Public Client) to access the resources of the user with registered scopes
 
@@ -94,19 +105,25 @@ Example>
 
 #### Step 2
 ThingPlus redirects back to your site with token in url when the user accepted your request
-<div id='id-limitations'></div>
+
 ```json
 {REDIRECT_URI}/#access_token={ACCESS_TOKEN}&token_type=Bearer
 ```
+<div id='id-limitations'></div>
+
+<br/>
 
 ## Limitations
 * Authorization code
   - Expire in 10 minutes
   - Exchange for the Access token is possible only one time
 
-<div id='id-scopes'></div>
 * Access token
   - Expire in 15 days (possibly can be changed without advance notification)
+
+<div id='id-scopes'></div>
+
+<br/>
 
 ## Scopes
 Scopes let you specify exactly what type of access you need. Scopes limit access for OAuth tokens. They do not grant any additional permission beyond that which the user already has.
@@ -130,59 +147,64 @@ For the Authorization Code Grant, requested scopes will be displayed to the user
 | site-read          | Site Read                        | Read site in which the user is registered
 | billing-read       | Billing Read                     | ___TBD___ Read billing information of the user
 
-<div id='id-errors'></div>
-<div id='id-error-author'></div>
 ___TBD___ : Not available now
 
+<div id='id-errors'></div>
+<div id='id-error-author'></div>
+
+<br/>
+
 ## Errors
+
 ### Errors for the authorization request
+
 * Missing required parameter
   * If the client_id or response_type or redirect_uri is not provided, you will receive invalid_request AuthorizationError
 
-```json
-{
-  "name": "AuthorizationError",
-  "message": "Missing required parameter: response_type",
-  "code": "invalid_request",
-  "status": 400
-}
-```
+    ```JSON
+    {
+      "name": "AuthorizationError",
+      "message": "Missing required parameter: response_type",
+      "code": "invalid_request",
+      "status": 400
+    }
+    ```
 
 * Unsupported Response type
   * If you request with unsupported response type, you will receive unsupported_response_type AuthorizationError
 
-```json
-{
-  "name": "AuthorizationError",
-  "message": "Unsupported response type: code2",
-  "code": "unsupported_response_type",
-  "status": 501
-}
-```
+  ```JSON
+  {
+    "name": "AuthorizationError",
+    "message": "Unsupported response type: code2",
+    "code": "unsupported_response_type",
+    "status": 501
+  }
+  ```
 
 * Unauthorized Clinet ID
   * If the client_id is not existing or not allowed to use, you will receive unauthorized_client AuthorizationError
 
-```json
-{
-  "name": "AuthorizationError",
-  "message": "The client_id is incorrect",
-  "code": "incorrect_client_credentials",
-  "status": 401
-}
-```
+  ```json
+  {
+    "name": "AuthorizationError",
+    "message": "The client_id is incorrect",
+    "code": "incorrect_client_credentials",
+    "status": 401
+  }
+  ```
 
 * Mismatched Redirect URI
   * If the redirect_uri you registered for the application does not match the redirect_uri of the request, you will receive redirect_uri_mismatch AuthorizationError
 
-```json
-{
-  "name": "AuthorizationError",
-  "message": "Mismatched redirect_uri",
-  "code": "redirect_uri_mismatch",
-  "status": 400
-}
-```
+  ```json
+  {
+    "name": "AuthorizationError",
+    "message": "Mismatched redirect_uri",
+    "code": "redirect_uri_mismatch",
+    "status": 400
+  }
+  ```
 
 * Denied from the User
   * If the user denied your request, you will be redirected back to your site with error in url
@@ -202,6 +224,7 @@ ___TBD___ : Not available now
   "status": 403
 }
 ```
+<br/>
 
 ### Errors for the access token request
 * Unsupported Grant type
@@ -280,6 +303,7 @@ ___TBD___ : Not available now
 * Unauthorized User
   * If the user is unauthorized, you will receive unauthorized_user TokenError
 
+<div id='id-error-apireq'></div>
 ```json
 {
   "name": "TokenError",
@@ -289,7 +313,8 @@ ___TBD___ : Not available now
   "status": 403
 }
 ```
-<div id='id-error-apireq'></div>
+<br/>
+
 ### Errors for API request with the access token
 * Invalid Access token
   * If the Access token is not valid or not correct, you will receive JsonWebTokenError
@@ -323,6 +348,7 @@ ___TBD___ : Not available now
 "expiredAt": "2015-06-10T10:10:34.000Z"
 }
 ```
+
 
 
 <div class='scrolltop'>

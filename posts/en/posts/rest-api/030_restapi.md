@@ -4,7 +4,6 @@ tags: "rest-api"
 published: true
 permalink: /en/rest-api/rest-api.html
 ---
-
 <div id='id-schema'></div>
 REST APIs
 
@@ -18,21 +17,26 @@ REST APIs
 8. [Tags](#id-tags)
 9. [Collection](#id-collection)
 
-
+---
 <div id='id-url'></div>
+
 <br>
+
 ## Schema
   * All API access is over HTTPS
   * All data is sent and received as JSON
 
 <br>
+
 ## Base url
 
     https://api.thingplus.net/v1
 
 <div id='id-types'></div>
 <br>
+
 ## Collection(Listing) response types
+
 ### Array
 
  - Default response type of collection for listing
@@ -83,6 +87,7 @@ REST APIs
 
 <div id='id-queries'></div>
 <br>
+
 ## Collection Queries
 
 Collection queries can be used with retrieving collection of resources such as gateways, tags, rules, etc.
@@ -131,6 +136,7 @@ __Response__
 
 <div id='id-series'></div>
 <br>
+
 ## Series Queries for the sensor values
 
 Series queries can be used with embed or series of sensors.
@@ -336,6 +342,7 @@ Response has series and the series has data and _meta.
 
 <div id='id-gateways'></div>
 <br>
+
 ## Gateways
 
 ### List gateways
@@ -581,7 +588,7 @@ __Response__
   "location": {
     "longitude": 126.9919419,
     "latitude": 37.5608228,
-    "address": "대한민국 서울특별시 중구 퇴계로 182"
+    "address": "182, Toegye-ro, Jung-gu, Seoul, Korea"
   }    
 }
 ```
@@ -675,6 +682,7 @@ __Response__
 <div id='id-sensors'></div>
 
 <br>
+
 ## Sensors
 
 ### List sensors of a gateway
@@ -1092,6 +1100,7 @@ __Request body__
 
 <div id='id-tags'></div>
 <br>
+
 ## Tags
 
 ### List tags
@@ -1237,6 +1246,7 @@ DELETE /tags/:id
 
 <div id='id-collection'></div>
 <br>
+
 ## Collection
 
 ### /{collection}
@@ -1370,6 +1380,7 @@ __Response__
   "id": "1"
 }
 ```
+
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

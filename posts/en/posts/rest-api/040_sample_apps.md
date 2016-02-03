@@ -9,6 +9,7 @@ Thing+ API Sample Apps
 
 
 ---
+
 #### 1. Android
 
 - [Github Repository](https://github.com/daliworks/android-sample-app)
@@ -16,6 +17,7 @@ Thing+ API Sample Apps
 <br/>
 
 ---
+
 #### 2. iOS
 
 - Coming Soon
@@ -23,6 +25,7 @@ Thing+ API Sample Apps
 <br/>
 
 ---
+
 #### 3. Web
 
 - Coming Soon
@@ -30,4 +33,5 @@ Thing+ API Sample Apps
 <br/>
 
 ---
+
 ##### **Please share your Thing+ API based app, we will list up here. contact@thingplus.net**

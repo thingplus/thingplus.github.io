@@ -13,11 +13,10 @@ Thing+ Integration Guide for Edison
 3. [Set Hostname](#id-hostname)
 4. [Gateway Registration](#id-register)
 
-
-
 <br/>
 
 ---
+
 #### 1. Environment Setting
 
 0) [Grove starter sensor kit](http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html)
@@ -25,22 +24,19 @@ Thing+ Integration Guide for Edison
 <br/>
 1) Assemble your board
 
-   - [Reference](https://software.intel.com/en-us/articles/assemble-intel-edison-on-the-arduino-board)
-   - Plug in the power supply. 
-   - Plug in 2 micro-USB cable to the USB connector on the expansion board. (Plug the other end of the USB cable in to your computer.)
+- [Reference](https://software.intel.com/en-us/articles/assemble-intel-edison-on-the-arduino-board)
+- Plug in the power supply. 
+- Plug in 2 micro-USB cable to the USB connector on the expansion board. (Plug the other end of the USB cable in to your computer.)
+  ![connection](/assets/edison_connect.png)
 
-    ![connection](/assets/edison_connect.png)
-   
-   - Find the microswitch in between the USB ports on the expansion board. Switch the microswitch down towards the micro-USB ports, if it isn't already.
-
-    ![switch](/assets/edison_ext.png)
+- Find the microswitch in between the USB ports on the expansion board. Switch the microswitch down towards the micro-USB ports, if it isn't already.
+  ![switch](/assets/edison_ext.png)
 
 <br/>
 2) Connect with Grove base shield.
 
 ![Edison + Grove kit](/assets/edison_base.png)
    
-
 <br/>
 3) Connect with Sensors. 
 
@@ -55,28 +51,26 @@ Thing+ Integration Guide for Edison
 <br/>
 4) Update firmware of Edison.
   
-   - In case of old version, connecing of WiFi is unstable.
-   - [Install "Firmware Installer"](https://software.intel.com/en-us/iot/software/installers)
-   
-    ![installer](/assets/intel_installer.png)
-
-    ![installer](/assets/intel_installer2.png)
+- In case of old version, connecing of WiFi is unstable.
+- [Install "Firmware Installer"](https://software.intel.com/en-us/iot/software/installers)
+  ![installer](/assets/intel_installer.png)
+  ![installer](/assets/intel_installer2.png)
 
 <br/>
 5) Connect to Edison by using USB.
 
-   - If you are a Mac or Linux user, please use the default terminal utility.
-   - If you are a Windows user, we recommend that you use the "Putty" client.
-   - [Install Putty](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+- If you are a Mac or Linux user, please use the default terminal utility.
+- If you are a Windows user, we recommend that you use the "Putty" client.
+- [Install Putty](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
 
 <p class="dwExpand"> For Mac OSX and Linux</p>
 
 - In case of Linux, you should be install "screen".
-   - apt-get install screen
+  - apt-get install screen
 
-   ```
-   screen -L /dev/cu.usbserial_XXXXXX 115200 (MAC)
-   ```
+  ```
+  screen -L /dev/cu.usbserial_XXXXXX 115200 (MAC)
+  ```
 
 - if you can't find "/dev/cb.usbserial_XXXX", then reboot device.
 - When Termianl screen is changed, Press `Enter`.
@@ -87,7 +81,6 @@ Thing+ Integration Guide for Edison
 <p class="dwExpand"> For windows</p>
 
 - Select to `Serial` then set to `serial line` and `speed`. speed set to `115200`.
-
 ![putty](/assets/putty.png)
 
 - `Serial line` is COM port for Edison , `COMXX`.
@@ -110,16 +103,17 @@ configure_edison --password
 configure_edison --wifi
 ```
 
-   - Your board will scan for Wi-Fi networks for approximately 10 seconds. When it is finished, a list of available networks will be displayed. If you don’t see any networks, enter 0 to rescan.
-   - Choose the network you would like to connect to, type the corresponding number from the list, and press Enter. To confirm your entry, type Y and press Enter.
-   - When you see a Done message, your board is connected to a Wi-Fi network.
-   - Note the IP Address. This is your board’s IP Address
+- Your board will scan for Wi-Fi networks for approximately 10 seconds. When it is finished, a list of available networks will be displayed. If you don’t see any networks, enter 0 to rescan.
+- Choose the network you would like to connect to, type the corresponding number from the list, and press Enter. To confirm your entry, type Y and press Enter.
+- When you see a Done message, your board is connected to a Wi-Fi network.
+- Note the IP Address. This is your board’s IP Address
 
 <div id='id-package'></div>
  
 <br/>
 
 ---
+
 #### 2. Install ThingPlus Package
 
 1) Make folder to be install Thing+ Embedded Package and move that folder.
@@ -137,55 +131,53 @@ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_edison
 
 3) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
 
-   - It can take few minutes to install the Thing+ Embedded Package.
+- It can take few minutes to install the Thing+ Embedded Package.
 
-    ```bash
-    edison:/opt/thingplus# chmod 755 thingplus_embedded_sdk_edison_install.sh
-    edison:/opt/thingplus# ./thingplus_embedded_sdk_edison_install.sh
-    ```
+  ```bash
+  edison:/opt/thingplus# chmod 755 thingplus_embedded_sdk_edison_install.sh
+  edison:/opt/thingplus# ./thingplus_embedded_sdk_edison_install.sh
+  ```
 
 <div id='id-hostname'></div>
 
 <br/>
 
 ---
+
 #### 3. Set Host name
 
 1) Change the hostname of your Edison for identifying it.
 
 > Remark: You can’t move the cursor on the Terminal and/or Putty with your mouse. please use your keyboard to move it.
 
- - Modify `/etc/hostname`
+- Modify `/etc/hostname`
 
-    ```bash
-    edison:~/# vi /etc/hostname
-    ```
+  ```bash
+  edison:~/# vi /etc/hostname
+  ```
 
-   - Change the `Edison' in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
-    ![Modify hostname](/assets/vi_hostname.png)
+- Change the `Edison' in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
+  ![Modify hostname](/assets/vi_hostname.png)
 
-   - When you complete the edit task, press `CTRL-O`and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor.
-
+  - When you complete the edit task, press `CTRL-O`and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor.
 
 <br/>
 
 2) To apply your modification, please reboot your Edison.
 
-  ```
-  edison:~/# reboot
-  ```
+```
+edison:~/# reboot
+```
 
 
 <div id='id-register'></div>
 
 ---
+
 #### 4. Gateway Registration
 
 - Please Refer[Gateway Registration](/en/user-guide/registration.html#id-gateway) 
 
-
-
-</div>
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

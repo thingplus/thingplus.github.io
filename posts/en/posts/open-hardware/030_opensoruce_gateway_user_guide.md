@@ -4,9 +4,9 @@ tags: "open-hardware"
 published: true
 permalink: /en/open-hardware/opensource-gateway-user-guide.html
 ---
+
 _This guide will be explained how to register gateway with other sensors, not grove sensors_
 
-<br/>
 
 ---
 

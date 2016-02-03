@@ -15,9 +15,12 @@ Guide for Thing+ service.
 
 ---
 <div id='id-starting'></div>
+
 ### Before you start
 <br>
+
 ![](/assets/1_thingplus.png)
+
 #### What is Thing+?
   * ThingPlus provide user own IoT(Internet of Things) service by cloud.
   * User own IoT service by sign in Thing+. 
@@ -39,8 +42,10 @@ Guide for Thing+ service.
 
 ---
 <div id='id-term'></div>
+
 ### Terminology
 <br>
+
 #### Service, Site
 * Thing+ can manage separately by service and site.
   - For	example, Monitor ambient temperature in classrooms for school.
@@ -89,8 +94,10 @@ Guide for Thing+ service.
 
 ---
 <div id='id-feature'></div>
+
 ### Feature
 <br>
+
 #### Dashboard management
 * Can get own dashboard by various widgets provided from Thing+. 
 * Can monitor data in anytime and anywhere for accessing PC, Table PC, and mobile.
@@ -132,6 +139,7 @@ Guide for Thing+ service.
 
 ---
 <div id='id-anytime'></div>
+
 ### Access
 <br>
 Any web based devices such as desk top, Tablet PC, and smartphone can access system.
@@ -144,9 +152,11 @@ Any web based devices such as desk top, Tablet PC, and smartphone can access sys
 
 ---
 <div id='id-usecase'></div>
+
 ### User Case
 <br>
-####Humidity monitoring for Smart-home
+
+#### Humidity monitoring for Smart-home
   * By use of humidity sensor, check real time humidity. By setting rule, out of range humidity can do further activity. 
 
 1. Preparation

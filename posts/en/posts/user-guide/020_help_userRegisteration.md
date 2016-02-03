@@ -13,8 +13,10 @@ User guide for a progress as hardware synchronization and user sign up.
 
 ---
 <div id='id-serviceadmin'></div>
+
 ### Service Manager
 <br>
+
 #### Sign in and how to use
   * Requires purchasing hardware and installation for Thing+ portal. Please, contact iot@daliworks.net for detail. World best IoT professional will kindly help you.
   * **Hardware for IoT service**
@@ -31,6 +33,7 @@ User guide for a progress as hardware synchronization and user sign up.
 
 ---
 <div id='id-enduser'></div>
+
 ### User
 <br>
 
@@ -57,6 +60,7 @@ User guide for a progress as hardware synchronization and user sign up.
 
 ---
 <div id='id-gateway'></div>
+
 ### Gateway Registration
 _If you DO NOT have any devices, you can register a virtual gateway at [Thing+ Portal](https://www.thingplus.net/) by using [Sensor Simulator](/en/open-hardware/sensor-simulator-user-guide.html)._
 
@@ -69,6 +73,8 @@ _If you DO NOT install **Thing+ Embedded Pakcage** on your Raspberry Pi/BeagleBo
 
 _In case of raspberry pi & Arduino, Raspberry Pi is Gateway, Arduino is Device._
 
+--- 
+
 <br/>
 1) Go to the `scripts`directory of a directory where Thing+ Embedded package was installed.
 
@@ -76,17 +82,17 @@ _In case of raspberry pi & Arduino, Raspberry Pi is Gateway, Arduino is Device._
 
 - Connect to your device over SSH and go to the `scripts` directory
 
-    ```bash
-    @shell:$ cd /opt/thingplus/gateway/scripts
-    ```
+  ```bash
+  @shell:$ cd /opt/thingplus/gateway/scripts
+  ```
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" > For Arduino </p>
 - Go to the `scripts` directory on your PC
 
-    ```bash
-    @shell:$ cd $HOME/thingplus/gateway/scripts
-    ```
+  ```bash
+  @shell:$ cd $HOME/thingplus/gateway/scripts
+  ```
 
 <div class="dwExpand2"></div>
 
@@ -102,7 +108,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 <br/>
 3) Open the web browser on **YOUR PC** and sign in "[Service Website](https://www.thingplus.net)".
 
- - We recommend to use the `Chrome Browser`([Link](https://www.google.com/chrome))
+- We recommend to use the `Chrome Browser`([Link](https://www.google.com/chrome))
 
 <br/>
 4) Click the `Settings`button and `Gateway Management`button.
@@ -157,13 +163,14 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 <p class="dwExpand" > For Raspberry Pi</p>
 
-    ```bash
-    @shell:$ sudo su
-    @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
-    @shell:$ ./thingplus_device.sh start
-    @shell:$ cd /opt/thingplus/gateway
-    @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
-    ```
+```bash
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+```
+
 <div class="dwExpand2"></div>
 
 <p class="dwExpand" > For Raspberry Pi + Arduino</p>
@@ -181,21 +188,23 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 <p class="dwExpand" > For BeagleBone Green</p>
 
-    ```bash
-    @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
-    @shell:$ ./thingplus_device.sh start
-    @shell:$ cd /opt/thingplus/gateway
-    @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
-    ```
+```bash
+@shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+```
+
 <div class="dwExpand2"></div>
 <p class="dwExpand" > For Arduino (<b>Mac PC</b>)</p>
 
-    ```bash
-    @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
-    @shell:$ ./thingplus_device.sh start
-    @shell:$ cd $HOME/thingplus/gateway
-    @shell:$ APIKEY='copied_api_key' ./thingplus.sh start
-    ```
+```bash
+@shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd $HOME/thingplus/gateway
+@shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+```
+
 <div class="dwExpand2"></div>
 <p class="dwExpand" > For Arduino (<b>Windows PC</b>)</p> 
 
@@ -237,41 +246,44 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 <p class="dwExpand" > For Raspberry Pi</p>
 
-    ```bash
-    @shell:$ sudo nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
-    (cd /opt/thingplus/gateway; ./thingplus.sh restart)
-    
+```bash
+@shell:$ sudo nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
 
-    exit 0
-    ```
+
+exit 0
+```
+
 - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" >  For BeagleBone Green</p>
 
-    ```bash
-    @shell:$ nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thingplus_device.sh restart)
-    (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+```bash
+@shell:$ nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
 
-    exit 0
-    ```
+exit 0
+```
+
 - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" >  For Raspberry Pi + Arduino</p>
 
-    ```bash
-    @shell:$ nano /etc/rc.local
-    ...
-    (cd /opt/thingplus/openhardware/arduino/grove-starter-kit; ./thingplus_device.sh restart)
-    (cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+```bash
+@shell:$ nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/arduino/grove-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
 
-    exit 0
-    ```
+exit 0
+```
+
 - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
 <div class="dwExpand2"></div>

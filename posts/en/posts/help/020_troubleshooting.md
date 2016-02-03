@@ -12,6 +12,8 @@ Troubleshooting
 3. [When you can NOT know the IP Address of your Device](#id-trouble3)
 4. [Even though your device is registered at Thing+ Portal and turned on, Status at the Portal is `OFF`](#id-trouble4)
 
+---
+
 ### When you can NOT find a new sensor and/or gateway from the`Sensor` page after you registered it:
 
  - It takes few minutes to register sensors and gateways, so please Refresh the Sensor page after 1~2 minutes.
@@ -26,12 +28,14 @@ Troubleshooting
 
 <div id='id-trouble2'></div>
 <br/>
+
 ### When you can NOT find some sensors:
 
   - Unregistered snesors will be added automatically, when you reboot your Device.
 
 <div id='id-trouble3'></div>
 <br/>
+
 ### When you can NOT know the IP Address of your Device:
 
   - Install `Fing` App on your mobile phone([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
@@ -42,34 +46,35 @@ Troubleshooting
 
 <div id='id-trouble4'></div>
 <br/>
+
 ### Even though your device is registered at Thing+ Portal and turned on, Status at the Portal is `OFF`:
 
 - Connect to your Device using Terminal/Putty, and please Enter the below command to check system clock of your Device.
 
 - Please comapare the System Clock with UTC Time[(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx) whether both times are same or not.
 
-    ```bash
-    @shell:$ date
-    Thu 26 Nov 00:00:00 UTC 2015    #Display current system Clock
-    ```
+  ```bash
+  @shell:$ date
+  Thu 26 Nov 00:00:00 UTC 2015    #Display current system Clock
+  ```
 
 - If both times are not same, please Update the system clock of your Device.
 
-    ```bash
-    @shell:$ ntpdate -u ntp.ubuntu.com
-    @shell:$ hwclock -w -u
-    ```
+  ```bash
+  @shell:$ ntpdate -u ntp.ubuntu.com
+  @shell:$ hwclock -w -u
+  ```
 
 - If you failed to update the time, Update it directly.
 
   - UTC Time zone [(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): ex) 2015/01/01 00:00:00 => 2015-01-01 00:00:00
 
-        ```bash
-        @shell:$ date --set '20XX-XX-XX XX:XX:XX'
-        ```
+    ```bash
+    @shell:$ date --set '20XX-XX-XX XX:XX:XX'
+    ```
 
 - Reboot your Device.
 
-    ```bash
-    @shell:$ reboot
-    ```
+  ```bash
+  @shell:$ reboot
+  ```

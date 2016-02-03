@@ -14,10 +14,9 @@ Thing+ Guide for Arduino<br/>
 4. [Install ThingPlus Embedded package](#id-package)
 5. [Gateway Registration](#id-register)
 
-
 <br/>
-
 ---
+
 #### 1. Environment Setting for Windows 
 
 <p class="dwExpand"> View environment setting for Windows</p>
@@ -30,7 +29,7 @@ Thing+ Guide for Arduino<br/>
 - <a href="https://nodejs.org/dist/v0.10.16/x64/node-v0.10.16-x64.msi" target="_blank"> 64bit download</a>
 
   - `For 64bit` after install `Node Js, then download and run as the follow file.
-     - <a href="http://support.thingplus.net/download/install/x86_64_env_set.bat" target="_blank"> download for Environment setting of 64bit </a>
+    - <a href="http://support.thingplus.net/download/install/x86_64_env_set.bat" target="_blank"> download for Environment setting of 64bit </a>
 
 <br/>
 2) install Cygwin 
@@ -39,18 +38,15 @@ Thing+ Guide for Arduino<br/>
 - <a href="https://cygwin.com/setup-x86_64.exe" target="_blank"> 64bit download</a>
 
 - If `Choose Download site` for Cygwin is shown, select `ftp://ftp.kaist.ac.kr`
-![Cygwin select ftp site](/assets/cygwin_site_select.png)
+  ![Cygwin select ftp site](/assets/cygwin_site_select.png)
 
 - If `Select Package` for Cygwin is shown, select 'wget'
 
   - Input 'wget' in `Search` field -> Web -> select 1.16.3-1 
-![Cygwin wget package select](/assets/cygwin_wget.png)
-
-<br/>
+    ![Cygwin wget package select](/assets/cygwin_wget.png)
 
 - When installation is completed, then you can show as the follow icon on your desktop.
-
-![Cygwin Icon](/assets/cygwin_icon.png)
+  ![Cygwin Icon](/assets/cygwin_icon.png)
 
 <p class="dwExpand2"></p>
 
@@ -60,26 +56,27 @@ Thing+ Guide for Arduino<br/>
 <br/>
 
 ---
+
 #### 2. Arduino Firmware install
+<br/>
+
 1) Install Arduino IDE upon PC OS environment.
 
-   - <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Download Link</a>
+- <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Download Link</a>
 
 <br/>
 2) Run Arduino IDE.
-
-
 <br/>
 3) Select USB for Arduino Port in IDE. (for windows, COMxx)
 
-   - Tools -> Port -> Arduino/Genuino Uno
-![Arduino Select Port](/assets/arduino_ide_select_port.png)
+- Tools -> Port -> Arduino/Genuino Uno
+  ![Arduino Select Port](/assets/arduino_ide_select_port.png)
 
 <br/>
 4) Select Firmware to download into Arduino.
 
-   - File -> Examples -> Firmata -> StandardFirmata
-![Arduino Select Firmware](/assets/arduino_ide_select_firmare.png)
+- File -> Examples -> Firmata -> StandardFirmata
+  ![Arduino Select Firmware](/assets/arduino_ide_select_firmare.png)
 
 <br/>
 5) Build Firmware.
@@ -101,6 +98,7 @@ Thing+ Guide for Arduino<br/>
 <br/><br/>
 
 ---
+
 #### 3. Environment Setting
 
 0) <a href="http://www.seeedstudio.com/depot/Grove-Starter-Kit-for-Arduino-p-1855.html" target="_blank">Grove Starter Kit for Arduino</a>
@@ -123,21 +121,21 @@ Thing+ Guide for Arduino<br/>
 <br/>
 3) Connect Arduino and PC via USB cable.
 ![Arduino + USB Cable](/assets/arduino_usb.png)
+
 <p class="dwExpand"> Check to Voltage if setted value is 5 volt.</p>
  ![arduino_set_5v](/assets/arduino_set_5v.png)
 <div class="dwExpand2"></div>
+
 <div id='id-package'></div>
 <br/><br/>
-<br/><br/>
-
 
 ---
+
 #### 4. Install ThingPlus Embedded package
 1) Run the `Terminal`
 
- - Windows : Run the 'Cygwin Terminal'.
-
- - Mac OS : Run the 'Terminal'.
+- Windows : Run the 'Cygwin Terminal'.
+- Mac OS : Run the 'Terminal'.
 
 2) Prepare to download.
 
@@ -188,6 +186,7 @@ Thing+ Guide for Arduino<br/>
 <br/><br/>
 
 ---
+
 #### 5. Gateway Registration
 Follow the [Guide to register a gateway](/en/user-guide/registration.html#id-gateway)
 

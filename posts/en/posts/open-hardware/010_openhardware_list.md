@@ -11,18 +11,24 @@ Open Hardware List
 2. [Raspberry Pi](#id-pi-guide)
 3. [Beagle Board](#id-beagle-guide)
 4. [Arduino](#id-arduino-guide)
+4. [Edison](#id-edison-guide)
 5. [Available Sensor List](#id-sensor-list)
 
 <br/>
 
 ---
+
 #### ***ThingPlus login is required. Please visit [HERE](https://thingplus.net/signup-en/) to Free user registeration.***
-<hr>
+
+<div id='id-simulator-guide'></div>
+---
 
 ### 1. Sensor Simulator
 - [Guide Link](/en/open-hardware/sensor-simulator-user-guide.html)
 
+<div id='id-pi-guide'></div>
 <br/>
+
 ### 2. Raspberry Pi
 - Raspberry Pi I, II
 - [Guide link](/en/open-hardware/raspberry-pi-user-guide.html)
@@ -44,7 +50,10 @@ Open Hardware List
 
 <p class="dwExpand2"></p>
 
+<div id='id-beagle-guide'></div>
+
 <br/>
+
 ### 3. Beagle Board
 - Beaglebone Black, Beaglebone Green
 - [Guide link](/en/open-hardware/bbb-user-guide.html)
@@ -63,6 +72,7 @@ Open Hardware List
 
 <div id='id-arduino-guide'></div>
 <br/>
+
 ### 4. Arduino 
 - Arduino compatible board(uno, orange board, etc)
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
@@ -84,7 +94,9 @@ Open Hardware List
 
 <p class="dwExpand2"></p>
 
+<div id='id-edison-guide'></div>
 <br/>
+
 ### 5. Edison
 - Edison
 - [Guide link](/en/open-hardware/edison-user-guide.html)

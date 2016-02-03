@@ -14,6 +14,7 @@ Guide for service, site, user and gateway.
 
 ---
 <div id='id-service-management'></div>
+
 ### Service Management
 **Function for Service manager.**
 
@@ -36,10 +37,11 @@ Can set normal setting.
 #### Rule setting
 * Add/change `trigger and action list` of rule command.
 * Rule creation page will display selected trigger and action.  
-<br>
+
 
 ---
 <div id='id-site-management'></div>
+
 ### Site Mangement
 **Function for site manager.**
 
@@ -62,6 +64,7 @@ Create and change the site.
 
 ---
 <div id='id-user-management'></div>
+
 ### User management
 **Function for service ans site manager.**
 ![](/assets/en_5_m_user0.png)
@@ -89,6 +92,7 @@ Create and change the site.
 
 ---
 <div id='id-gateway-management'></div>
+
 ### Gateway management
 **Fuction for site and gateway.**
 ![](/assets/en_5_m_gateway0.png)

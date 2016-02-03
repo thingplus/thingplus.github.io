@@ -8,7 +8,7 @@ permalink: /en/open-hardware/opensource-Android-user-guide.html
 1. [Download and Install APK](#id-inatall)
 2. [Register Gateway](#id-register)
 
-&nbsp; &nbsp;  <a href="https://youtu.be/0fqpZ0PSgl8" target='_blank')><img src='/assets/youtube.png' width='25px' height='25px'> View install guide </a>
+<!-- &nbsp; &nbsp;  <a href="https://youtu.be/0fqpZ0PSgl8" target='_blank')><img src='/assets/youtube.png' width='25px' height='25px'> View install guide </a> -->
 
 
 <br/>
@@ -19,6 +19,7 @@ _This guide will be explained how to register Gateway Using Andorid Devices(smar
 
 _You can setting and control on Andorid device. This guide will be explained how to install, integrate ThingPlus IOT, control the device on Android Device._
 
+---
 
 <br/>
 <div id='id-install'></div>

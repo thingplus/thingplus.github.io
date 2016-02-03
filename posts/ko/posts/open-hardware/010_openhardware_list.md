@@ -14,12 +14,14 @@ permalink: /ko/open-hardware/openhardware-list.html
 4. [아두이노](#id-arduino-guide)
 5. [지원센서 목록](#id-sensor-list)
 
+---
 
-<br/>
 #### ***잠깐! 아직 ThingPlus 회원이 아니세요? [여기](https://thingplus.net/signup/)에서 무료가입을 할 수 있습니다.***
-<hr>
+
+---
 
 <div id='id-pi-guide'></div>
+
 ### 0. 센서 시뮬레이터
 - [연동가이드 바로가기](/ko/open-hardware/sensor-simulator-user-guide.html)
 
@@ -48,6 +50,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 <div id='id-beagle-guide'></div>
 <br/>
+
 ### 2. 비글보드
 - 비글본 블랙, 그린 지원
 - [연동가이드 바로가기](/ko/open-hardware/bbb-user-guide.html)
@@ -66,6 +69,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 <div id='id-arduino-guide'></div>
 <br/>
+
 ### 3. 아두이노
 - 아두이노(우노, 오렌지보드 등) 지원
 - [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
@@ -88,6 +92,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 <p class="dwExpand2"></p>
 
 <br/>
+
 ### 4. 에디슨 
 - 에디슨 지원
 - [연동가이드 바로가기](/ko/open-hardware/edison-user-guide.html)
@@ -108,6 +113,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 	 - [온도센서 (Temperature Sensor)](https://www.icbanq.com/P005713933/)
 
 <p class="dwExpand2"></p>
+
 <div id='id-sensor-list'></div>
 
 <br/>

@@ -17,6 +17,7 @@ Guide for dashboard, rule and timeline, data analysis.
 
 ---
 <div id='id-dashboard'></div>
+
 ### **Dashboard**
 Dashboard can monitor information structured by widget. 
 ![](/assets/en_3_dashboard.png)
@@ -65,6 +66,7 @@ Dashboard can monitor information structured by widget.
 
 ---
 <div id='id-timeline'></div>
+
 ### **Timeline**
 ![](/assets/en_3_timeline.png)
 
@@ -88,6 +90,7 @@ Dashboard can monitor information structured by widget.
 
 ---
 <div id='id-sensorlist'></div>
+
 ### **Sensor list**
 Dispaly sensor list of your own. Click the tap menu on the top. Then display gateway, tag, and location on map.  
 ![](/assets/en_3_sensorlist.png)
@@ -132,6 +135,7 @@ Check map view for gateway if have location information.  Put location in [Gatew
 
 ---
 <div id='id-analysis'></div>
+
 ### **Sensor Aanlysis**
 Sensor analysis page provide chart and statistics. 
 ![](/assets/en_3_sensoranalysis.png)
@@ -171,6 +175,7 @@ Sensor analysis page provide chart and statistics.
 
 ---
 <div id='id-tag'></div>
+
 ### **Tag Management**
 ![](/assets/en-3_m_tag0.png)
 
@@ -188,16 +193,17 @@ Sensor analysis page provide chart and statistics.
 
 
 #### Tag creation
-1. Create new tag by click <i class="widget-add-button fa fa-plus-circle"></i>Add button on top.  
-- Put new name of tag.  For example, we build “all temperature sensors” .
-- Check sensor.
-- Click creation button on bottom of page.  
+- Create new tag by click <i class="widget-add-button fa fa-plus-circle"></i>Add button on top.  
+  - Put new name of tag.  For example, we build “all temperature sensors” .
+  - Check sensor.
+  - Click creation button on bottom of page.  
 
 <br>
 
 
 ---
 <div id='id-rule'></div>
+
 ### **Rule Management**
 Can create and manage the rule. Detail rule description is on  [Rule creation and control](/en/user-guide/rule.html).
 ![](/assets/en_3_m_rule0.png)
