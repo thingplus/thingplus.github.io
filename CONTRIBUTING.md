@@ -40,6 +40,7 @@ redcarpet:
  ```
   $ brew install ruby
   $ gem install jekyll -v '2.5.3'
+  $ gem install github-pages
  ```
 
  - repo 꺼내고,
