@@ -156,26 +156,7 @@ Any web based devices such as desk top, Tablet PC, and smartphone can access sys
 ### User Case
 <br>
 
-#### Humidity monitoring for Smart-home
-  * By use of humidity sensor, check real time humidity. By setting rule, out of range humidity can do further activity. 
-
-1. Preparation
-  * _Will provide hardware store in Daliworks._
-2. Hardware registration
-  * Register hardware in Thing+.
-3. Rule Creation
-  * Click setting rule button on right upper side on menu. Select + button on upper side on setting page.  
-  * Rule should access from trigger, condition, and action. For example, set a rule as “send mobile message when humidity turn below 30%.”
-  * Select trigger type. For example, we set humidity sensor as trigger.  
-  * Set 2nd step as range of humidity. For example, we set humidity range as over 30%. Means abnormal when humidity go below 30%.  
-  * Set 3rd step as detail selection as trigger.  
-    - Set point as rule. For example, we set 30 for humidity. 
-    - Set humidity sensor for trigger. 
-  * After set above, select “action”. Check selected trigger in action initiation page. Push action button to initiates.
-  * Check mobile message for action screen. 
-  * Set “send” for mobile message.  
-  * You can put message for action. Put HTML in double quotes.  For example, we do not have any message so that we put “”.
-  * As final, you can set the name of rule and detail description. Then set detail setting (means Fatal/Warning/notification) and press finish button.  
+***[Case study for Thing+ application](https://thingplus.net/en/usecase-en/)*** 
 
 
 <div class='scrolltop'>
