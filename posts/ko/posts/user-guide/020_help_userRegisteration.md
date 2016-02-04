@@ -25,10 +25,9 @@ permalink: /ko/user-guide/registration.html
     * Thing+에 연결가능한 [하드웨어 목록](http://www.daliworks.net/?page_id=11441)을 참고하시길 바랍니다.
   * 이미 하드웨어를 가지고 있습니까? 새로운 IoT 하드웨어를 계획하고 있습니까?
     * [hw@daliworks.net](mailto:hw@daliworks.net)으로 연락주시면 하드웨어와 Thing+ 연동에 대해 안내해 드리겠습니다.
-  * **오픈하드웨어 기반으로 서비스 이용하기**
-    * [Grove Starter Kit for BeagleBone Green 구매 바로가기](http://www.icbanq.com/P005716600)
-    * [GrovePi+ Starter Kit 구매 바로가기](http://www.icbanq.com/P005700239)
-    * 더 많은 오픈하드웨어를 준비중에 있습니다.
+  * **오픈 하드웨어 기반으로 서비스 이용하기**
+    * [오픈 하드웨어 지원 리스트](/ko/open-hardware/openhardware-list.html)
+
 
 <br>
 
