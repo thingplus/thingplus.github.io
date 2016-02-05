@@ -253,13 +253,10 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 
 4) 라즈베리파이를 재시작합니다.
 
-```bash
+~~~ bash
 @Pi2:$ sudo reboot
-```
+~~~
 <div id='id-register'></div>
-
-
-
 
 
 ---

@@ -19,8 +19,8 @@ Guide for Thing+ service.
 ### Before you start
 <br>
 
-![](/assets/1_thingplus.png)
-
+![](/assets/thingplus_overview.png)
+<br>
 #### What is Thing+?
   * ThingPlus provide user own IoT(Internet of Things) service by cloud.
   * User own IoT service by sign in Thing+. 
