@@ -71,10 +71,10 @@ _아직 보유한 게이트웨장비가 없다면, [Thing+ Portal](https://www.t
 _본 가이드는 비글본그린, 라즈베리파이, 아두이노, 에디슨 기준으로 작성되었으나, 다른 게이트웨이 장비도 비슷한 과정으로 진행하면 됩니다._
 
 _아직 라즈베리파이/비글본그린/아두이노/에디슨에 **Thing+ Embedded 패키지**가 설치되어 있지 않다면, 아래를 참고해주세요._
-  - [**라즈베리파이 가이드**](/ko/open-hardware/raspberry-pi-user-guide.html)
-  - [**비글본그린 가이드**](/ko/open-hardware/bbb-user-guide.html)
-  - [**아두이노 가이드**](/ko/open-hardware/arduino-user-guide.html)
-  - [**에디슨 가이드**](/ko/open-hardware/edison-user-guide.html)
+- [**라즈베리파이 가이드**](/ko/open-hardware/raspberry-pi-user-guide.html)
+- [**비글본그린 가이드**](/ko/open-hardware/bbb-user-guide.html)
+- [**아두이노 가이드**](/ko/open-hardware/arduino-user-guide.html)
+- [**에디슨 가이드**](/ko/open-hardware/edison-user-guide.html)
 
 _라즈베리파이&아두이노의 경우, 라즈베리가 게이트웨이, 아두이노가 device 입니다. 참고하세요_
 
