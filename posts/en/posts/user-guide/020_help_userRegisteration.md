@@ -68,6 +68,7 @@ _If you DO NOT have any devices, you can register a virtual gateway at [Thing+ P
 _This Guide is written for BeagleBone Green & Raspberry Pi 2, but a way to set other devices you is similar to following progress._
 
 _If you DO NOT install **Thing+ Embedded Pakcage** on your Raspberry Pi/BeagleBone Green, Please refer the followings._
+
 - [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) 
 - [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) 
 - [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html) 
