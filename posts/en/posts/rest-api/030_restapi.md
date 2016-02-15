@@ -42,7 +42,7 @@ REST APIs
  - Default response type of collection for listing
  - The max to retrieve is 4000
 
-```js
+```json
 [
   {
     "key1": "value1",
@@ -63,7 +63,7 @@ REST APIs
  - Object response type of collection for listing when URL parameters are used such as count, page, maxId, etc.
  - The maximum number to retrieve is 4000
 
-```js
+```json
 {
   "data": {
     {
@@ -106,14 +106,14 @@ __URL Parameters__
 
 __Request URL__
 
-```js
+```
 GET /gateways
 GET /gateways?count=2&page=1&orderBy=id&orderDir=desc&fields=ctime&fields=virtual&filter[virtual]=y
 ```
 
 __Response__
 
-```js
+```json
 {
   "data": [
     {
@@ -141,7 +141,7 @@ __Response__
 
 Series queries can be used with embed or series of sensors.
 
-```js
+```
 GET /gateways/:owner/sensors/:id/series?dataStart=XXXX&dataEnd=YYYY....
 GET /gateways/:owner/sensors/:id?embed=series&series[dataStart]=XXXX&series[dataEnd]=YYYY...
 GET /gateways/:id?embed=sensors&sensors[embed]=series&sensors[series][dataStart]=XXXX&sensors[series][dataEnd]=YYYY...
@@ -171,7 +171,7 @@ __URL Parameters__
 
 __Request URL__
 
-```js
+```
 GET /gateways/gateway-id-1/sensors/sensor-id-1/series?dataStart=2015-08-12T01:14:00.000Z&dataEnd=2015-08-12T02:14:00.000Z&interval=3m&intervalFunc=sum
 ```
 
@@ -189,7 +189,7 @@ Response has series and the series has data and _meta.
         - interval: the interval unit of retrieved series data
 
 
-```js
+```json
 {
   "id": "sensor-id-1",
   "name": "Sensor Name 1",
@@ -226,8 +226,7 @@ Response has series and the series has data and _meta.
 
 __More examples for Queries__
 
-```js
-
+```
 GET /gateways/gateway-id-1/sensors/sensor-id-1/series?dataStart=2015-08-12T01:14:00.000Z&dataEnd=2015-08-12T02:14:00.000Z&interval=3m&intervalFunc=sum
 
 GET /gateways/gateway-id-1/sensors/sensor-id-1?embed=series&series[dataStart]=2015-08-12T01:14:00.000Z&series[dataEnd]=2015-08-12T02:14:00.000Z&series[interval]=3m&series[intervalFunc]=sum
@@ -261,7 +260,7 @@ __Sub Parameters of statFunc__
 
 __Request URL__
 
-```js
+```
 GET /gateways/gateway-id-1/sensors/sensor-id-1/series?dataStart=2015-08-11T02:00:00.000Z&dataEnd=2015-08-12T02:30:00.000Z&statFunc[id]=seriesStat&statFunc[timeUnit]=day&statFunc[subFunc]=count
 ```
 
@@ -282,7 +281,7 @@ Response has series and the series has data and _meta.
         - timeUnit: the time unit of retrieved statistics data
 
 
-```js
+```json
 {
   "id": "sensor-id-1",
   "name": "Sensor Name 1",
@@ -347,7 +346,7 @@ Response has series and the series has data and _meta.
 
 ### List gateways
 
-```js
+```
 GET /gateways
 ```
 
@@ -376,7 +375,7 @@ __Response Fields__
 
 __Response__
 
-```js
+```json
 
 [
   {
@@ -463,7 +462,7 @@ __Response__
 
 ### Read a gateway
 
-```js
+```
 GET /gateways/:id
 ```
 
@@ -476,7 +475,7 @@ __URL Parameters__
 
 __Response__
 
-```js
+```json
 {
   "id": "gateway-id-1",
   "name": "Gateway Name 1",      
@@ -517,7 +516,7 @@ __Response__
 
 ### Update a gateway
 
-```js
+```
 PUT /gateways/:id
 ```
 
@@ -533,7 +532,7 @@ __Data parameters__
 
 __Request body__
 
-```js
+```json
 {
   "name": "Gateway New Name",
   "virtual": "y",
@@ -554,7 +553,7 @@ __Request body__
 
 __Response__
 
-```js
+```json
 {
   "id": "gateway-id-1",
   "name": "Gateway New Name",      
@@ -595,14 +594,14 @@ __Response__
 
 ### Delete a gateway
 
-```js
+```
 DELETE /gateways/:id
 ```
 
 
 ### Get the status of a gateway
 
-```js
+```
 GET /gateways/:id/status
 GET /gateways/:id?embed=status
 ```
@@ -619,7 +618,7 @@ __Response Fields__
 
 __Response__
 
-```js
+```json
 {
   "id": "gateway-id-1",
   "name": "Gateway Name 1",
@@ -641,7 +640,7 @@ __Response__
 ### Set the status of a gateway
 
 
-```js
+```
 PUT /gateways/:id/status
 ```
 
@@ -665,7 +664,7 @@ __Request Body__
 
 __Response__
 
-```js
+```json
 
 {
   "type": "status",
@@ -687,7 +686,7 @@ __Response__
 
 ### List sensors of a gateway
 
-```js
+```
 GET /gateways/:owner/sensors
 
 :owner - gateway id
@@ -715,7 +714,7 @@ __Response Fields__
 
 __Response__
 
-```js
+```json
 [
   {
     "network": "daliworks",
@@ -740,7 +739,7 @@ __Response__
 
 ### Create a sensor
 
-```js
+```
 POST /gateways/:owner/sensors
 
 :owner - gateway id
@@ -766,7 +765,7 @@ __Data parameters__
 
 __Request body__
 
-```js
+```json
 {
   "reqId": "sensor-id-new",
   "name": "Sensor Name New",  
@@ -784,7 +783,7 @@ __Request body__
 
 __Response__
 
-```js
+```json
 {
   "id": "sensor-id-new",
   "name": "Sensor Name New",  
@@ -805,7 +804,7 @@ __Response__
 
 ### Read a sensor
 
-```js
+```
 GET /gateways/:owner/sensors/:id
 ```
 
@@ -818,7 +817,7 @@ __URL Parameters__
 
 __Response__
 
-```js
+```json
 {
   "id": "sensor-id-3",
   "name": "Sensor Name New",  
@@ -841,7 +840,7 @@ __Response__
 
 ### Update a sensor
 
-```js
+```
 POST /gateways/:owner/sensors/:id
 
 :owner - gateway id
@@ -866,7 +865,7 @@ __Data parameters__
 
 __Request body__
 
-```js
+```json
 {
   "name": "Sensor Name Update",  
   "deviceId": "device-id-update",
@@ -883,7 +882,7 @@ __Request body__
 
 __Response__
 
-```js
+```json
 {
   "id": "sensor-id-new",
   "name": "Sensor Name Update",  
@@ -904,7 +903,7 @@ __Response__
 
 ### Delete a sensor
 
-```js
+```
 DELETE /gateways/:owner/sensors/:id
 
 :owner - gateway id
@@ -912,7 +911,7 @@ DELETE /gateways/:owner/sensors/:id
 
 ### Get the status of a sensor
 
-```js
+```
 GET /gateways/:owner/sensors/:id/status
 GET /gateways/:owner/sensors/:id?embed=status
 
@@ -930,7 +929,7 @@ __Response Fields__
 
 __Response__
 
-```js
+```json
 {
   "id": "sensor-id-1",
   "name": "Sensor Name 1",
@@ -951,7 +950,7 @@ __Response__
 
 ### Set the status of a sensor
 
-```js
+```
 PUT /gateways/:owner/sensors/:id/status
 
 :owner - gateway id
@@ -966,7 +965,7 @@ __Data parameters__
 
 __Request Body__
 
-```js
+```json
 {
   "value": "on",
   "timeout": 90
@@ -975,7 +974,7 @@ __Request Body__
 
 __Response__
 
-```js
+```json
 
 {
   "type": "status",
@@ -993,7 +992,7 @@ __Response__
 
 ### Get the value of a sensor
 
-```js
+```
 GET /gateways/:owner/sensors/:id/series
 GET /gateways/:owner/sensors/:id?embed=series
 
@@ -1017,7 +1016,7 @@ __Response__
 
 latest data (single value)
 
-```js
+```json
 {
   "id": "sensor-id-1",
   "name": "Sensor Name 1",
@@ -1039,7 +1038,7 @@ latest data (single value)
 
 series data (multiple values)
 
-```js
+```json
 {
   "id": "sensor-id-1",
   "name": "Sensor Name 1",
@@ -1073,7 +1072,7 @@ series data (multiple values)
 
 ### Set the value of a sensor
 
-```js
+```
 PUT /gateways/:owner/sensors/:id/series
 
 :owner - gateway id
@@ -1090,7 +1089,7 @@ Arrary of time and value object
 
 __Request body__
 
-```js
+```json
 [
   { time: 1402986075957, value: 30.34 },
   { time: 1402986135957, value: 32.56 },
@@ -1105,7 +1104,7 @@ __Request body__
 
 ### List tags
 
-```js
+```
 GET /tags
 ```
 
@@ -1116,7 +1115,7 @@ __URL Parameters__
 
 __Response__
 
-```js
+```json
 [
   {
     "id": "55",
@@ -1139,7 +1138,7 @@ __Response__
 
 ### Create a tag
 
-```js
+```
 POST /tags
 ```
 
@@ -1152,7 +1151,7 @@ __Data parameters__
 
 __Request body__
 
-```js
+```json
 {
   "name": "Tag Name 2",  
   "sensors": [
@@ -1164,7 +1163,7 @@ __Request body__
 
 ### Read a tag
 
-```js
+```
 GET /tags/:id
 ```
 
@@ -1177,7 +1176,7 @@ __URL Parameters__
 
 __Response__
 
-```js
+```json
 {
   "id": "56",
   "name": "Tag Name 2",  
@@ -1195,7 +1194,7 @@ __Response__
 
 ### Update a tag
 
-```js
+```
 PUT /tags/:id
 ```
 
@@ -1208,7 +1207,7 @@ __Data parameters__
 
 __Request body__
 
-```js
+```json
 {
   "name": "Tag Name 2 - Update",  
   "sensors": [
@@ -1221,7 +1220,7 @@ __Request body__
 
 __Response__
 
-```js
+```json
 {
   "id": "56",
   "name": "Tag Name 2 - Update",  
@@ -1240,7 +1239,7 @@ __Response__
 
 ### Delete a tag
 
-```js
+```
 DELETE /tags/:id
 ```
 
