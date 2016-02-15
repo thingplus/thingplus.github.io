@@ -611,7 +611,7 @@ a.back-to-top {
 .highlight .hll { background-color: #404040 }
 .highlight  { background: #202020; color: #d0d0d0 }
 .highlight .c { color: #999999; font-style: italic } /* Comment */
-.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+/*.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .g { color: #d0d0d0 } /* Generic */
 .highlight .k { color: #6ab825; font-weight: bold } /* Keyword */
 .highlight .l { color: #d0d0d0 } /* Literal */
@@ -678,3 +678,4 @@ a.back-to-top {
 .highlight .vg { color: #40ffff } /* Name.Variable.Global */
 .highlight .vi { color: #40ffff } /* Name.Variable.Instance */
 .highlight .il { color: #3677a9 } /* Literal.Number.Integer.Long */
+
