@@ -1,5 +1,5 @@
 ---
-title: Androd Gateway User Guide
+title: Android Gateway User Guide
 tags: "open-hardware"
 published: true
 permalink: /en/open-hardware/opensource-Android-user-guide.html
