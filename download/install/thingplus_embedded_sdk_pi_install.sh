@@ -38,6 +38,11 @@ DEST_DIR=$GATEWAY_DIR
 EOF
 }
 
+dropbox_uploader_install () {
+  curl "https://raw.githubusercontent.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh" -o /usr/local/bin/dropbox_uploader.sh
+  chmod +x /usr/local/bin/dropbox_uploader.sh
+}
+
 thingplus_install () {
   thingplus_config_set
   wget http://support.thingplus.net/download/install/thingplus_install.sh
@@ -75,6 +80,7 @@ if [ ! -d $SDK_DIR ]; then
   mkdir -p $SDK_DIR
 fi
 
+dropbox_uploader_install
 thingplus_install
 
 thingplus_openhardware_sdk_install $SDK_DIR
