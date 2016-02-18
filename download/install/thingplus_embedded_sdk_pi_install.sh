@@ -16,10 +16,17 @@ RSYNC_SIZE_ONLY_OPTION="false"
 thingplus_openhardware_pi_install () {
   INSTALL_DIR=$1
   PI_SOURCE_DIR=openhardware/raspberrypi/grovePi-starter-kit
+  PI_CAMERA_SOURCE_DIR=openhardware/raspberrypi/camera
+  
+  pushd .
 
   cd $INSTALL_DIR/$PI_SOURCE_DIR;
   npm install
-  cd -
+  
+  cd $INSTALL_DIR/$PI_CAMERA_SOURCE_DIR;
+  npm install
+
+  popd
 }
 
 thingplus_openhardware_sdk_install () {
