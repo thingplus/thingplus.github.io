@@ -45,7 +45,8 @@ permalink: /ko/open-hardware/openhardware-list.html
 	 - [LED](http://www.icbanq.com/P005604557)
 	 - [LCD (LCD RGB Backlight)](http://www.icbanq.com/P005604576)
 	 - [파워 릴레이 (Relay)](http://www.icbanq.com/P005604584)
-
+     - [카메라 (Camera Module)](http://www.icbanq.com/P006477908)
+     
 <p class="dwExpand2"></p>
 
 <div id='id-beagle-guide'></div>

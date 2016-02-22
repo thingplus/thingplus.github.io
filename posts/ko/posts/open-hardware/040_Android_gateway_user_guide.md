@@ -30,8 +30,8 @@ _Android 단말에서 모든 설정을 할 수 있습니다. 본 가이드에서
 - 안드로이드 device에서 [다운로드](/assets/android/android_gateway_v0.8_alpha.apk)합니다.
 
 2) 다운로드 받은 `apk` 를 설치 합니다.
-
-![apk install_2](/assets/android/guide_02.png)
+/android/guide_02.png)
+![apk install_2](/assets
 
 <div id='id-register'></div>
 

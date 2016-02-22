@@ -130,24 +130,29 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 <p class="dwExpand" > For Raspberry Pi: <b>Raspberry Pi - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/pi_gw_model.png)
+![select_gateway_model_pi](/assets/pi_gw_model.png)
+
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Raspberry Pi + Camera: <b>Open Source Gateway</b></p>
+
+![select_gateway_model_open](/assets/openhw_gw_model.png)
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" > For BeagleBone Green: <b>BeagleBone Green - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/bbg_gw_model.png)
+![select_gateway_model_bbg](/assets/bbg_gw_model.png)
 
 <div class="dwExpand2"></div>
 
 <p class="dwExpand" > For Arduino: <b>Arduino, PC - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/arduino_gw_model.png)
+![select_gateway_model_Arduino](/assets/arduino_gw_model.png)
 
 <div class="dwExpand2"></div>
 
 <p class="dwExpand" > For Edison: <b>Edison Kit for Arduino</b></p>
 
-![select_gateway_model_get_apikey](/assets/edison_gw_model.png)
+![select_gateway_model_Edison](/assets/edison_gw_model.png)
 
 <div class="dwExpand2"></div>
 <br/>
@@ -176,6 +181,20 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 
 <div class="dwExpand2"></div>
 
+<p class="dwExpand" > For Raspberry Pi with Camera module</p>
+
+   
+```bash
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/openhardware/raspberrypi/camera
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+
+
 <p class="dwExpand" > For Raspberry Pi + Arduino</p>
 
    
@@ -184,7 +203,7 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 @shell:$ cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit
 @shell:$ ./thingplus_device.sh start
 @shell:$ cd /opt/thingplus/gateway
-@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+@shell:$ APIKEY='copied_api_key' ./thingplus.sh start
 ```
 
 <div class="dwExpand2"></div>
@@ -253,6 +272,21 @@ xx:xx:xx:xx:xx:xx   <= Copy this line
 @shell:$ sudo nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
+
+
+exit 0
+```
+
+- Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
+
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Raspberry Pi (with camera module)</p>
+
+```bash
+@shell:$ sudo nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/raspberrypi/camera; ./thingplus_device.sh restart)
 (cd /opt/thingplus/gateway; ./thingplus.sh restart)
 
 

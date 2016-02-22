@@ -122,27 +122,32 @@ xx:xx:xx:xx:xx:xx
 ![register_with_apikey](/assets/register_with_apikey_ko.png)
 
 <br/>
-7) 새로 추가할 `게이트웨이 모델`을 선택한다.
+7) 새로 추가할 `게이트웨이 모델`을 선택한다. 
 
 <p class="dwExpand" > 라즈베리파이의 경우: <b>Raspberry Pi - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/pi_gw_model.png)
+![select_gateway_model_pi](/assets/pi_gw_model.png)
+
+<div class="dwExpand2"></div>
+<p class="dwExpand" > 라즈베리파이(camera) 경우: <b>Open Sourece Gateway</b></p>
+
+![select_gateway_model_openhw](/assets/openhw_gw_model.png)
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 비글본그린의 경우: <b>BeagleBone Green - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/bbg_gw_model.png)
+![select_gateway_model_bbg](/assets/bbg_gw_model.png)
 
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 아두이노의 경우: <b>Arduino, PC - Developer</b></p>
 
-![select_gateway_model_get_apikey](/assets/arduino_gw_model.png)
+![select_gateway_model_Arduino](/assets/arduino_gw_model.png)
 
 <div class="dwExpand2"></div>
 
 <p class="dwExpand" > 에디슨의 경우: <b>Edison Kit for Arduino</b></p>
 
-![select_gateway_model_get_apikey](/assets/edison_gw_model.png)
+![select_gateway_model_Edison](/assets/edison_gw_model.png)
 
 <div class="dwExpand2"></div>
 
@@ -168,6 +173,19 @@ xx:xx:xx:xx:xx:xx
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" > 라즈베리파이(Camera)의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
+
+   
+```bash
+@shell:$ sudo su
+@shell:$ cd /opt/thingplus/openhardware/raspberrypi/camera
 @shell:$ ./thingplus_device.sh start
 @shell:$ cd /opt/thingplus/gateway
 @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
@@ -252,6 +270,20 @@ xx:xx:xx:xx:xx:xx
 @shell:$ sudo nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)  
+ 
+exit 0
+```
+
+- 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
+
+<div class="dwExpand2"></div>
+<p class="dwExpand" > 라즈베리파이(Camera)의 경우 </p>
+
+```bash
+@shell:$ sudo nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/raspberrypi/camera; ./thingplus_device.sh restart)
 (cd /opt/thingplus/gateway; ./thingplus.sh restart)  
  
 exit 0

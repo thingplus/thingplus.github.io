@@ -1,58 +1,55 @@
 ---
-title: Raspberry PI User Guide
+title: Raspberry Pi with camera module - User Guide
 tags: "open-hardware"
 published: true
-permalink: /en/open-hardware/raspberry-pi-user-guide.html
+permalink: /en/open-hardware/raspberry-camera-user-guide.html
 ---
 
 Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-setting'></div>
 
+
 1. [Environment Setting](#id-setting)
 2. [Install Thing+ Embedded Package](#id-package)
-3. [Gatway Registration](#id-register)
-4. [How to configure the Wifi Dongle](#id-wifi-set)
+3. [Integration with dropbox](#id-dropbox)
+4. [Gatway Registration](#id-register)
 
-<br/>
+---
+___This guide will be explain for IOT with Raspberry Pi and Camera module.
+A Photo is a part of privacy. So in this guide, We will use private storage as the dropbox. 
+Before you try to do as this guide. you must have account for dropbox.___
 
 ---
 
 #### 1. Environment Setting
-<br/>
 
-0) [Go to shop to buy the GrovePi+ Starter Kit](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-CE-certified-p-2572.html)
+0) [Go to shop to buy the `Raspberry Pi Camera Module`](http://www.seeedstudio.com/depot/Raspberry-Pi-Camera-Module-p-1659.html?cPath=122_154_158)
 
-<br/>
 1) Micro SD card(8GB+ storage) is required.
 
-<br/>
 2) Download Raspbian image from below link.
 
 - Raspbian Image Download Link - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
 - We recommend `2015-09-24-RASPBIAN JESSIE` version one.
 
-<br/>
 3) Intall OS on the micro SD card with the donwloaded image. Please refer the below link for more deails about the OS installation.
 
 - It can take few minutes to install the Raspbian image to the Micro SD card
 - https://www.raspberrypi.org/documentation/installation/installing-images/
 
-<br/>
 4) Telnet/SSH Client is required for controlling the Raspberry Pi from your PC.
 
 - If you are a Mac or Linux user, please use the default terminal utility.
 - If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
 - Putty Download link - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
-<br/>
 5) Insert the Micro SD card into the Micro SD card slot of the **back panel** of your Raspberry Pi.
 ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
-<br/>
 6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
 ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
-<br/>
+
 <div id='id-pi-setting-seventh'></div>
 7) Please wait your Raspberry Pi is booted up completely, and then Connect to it by using SSH Client(for Windows, the Putty)
 
@@ -81,7 +78,6 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 > Notice: In case of Windows, you have to re-launch putty, when Raspberry Pi is rebooted.
 
-<br/>
 8) Update time of Raspberry Pi.
 
 - While installing an application, please Enter `y` for installation questions.
@@ -101,7 +97,6 @@ Thing+ Integragtion Guide for Raspberry Pi
     @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
     ```
 
-<br/>
 9) To distinguish your Raspberry Pi, you need to modify the hostname of it.
 
 > Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
@@ -117,7 +112,6 @@ Thing+ Integragtion Guide for Raspberry Pi
 
   - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
 
-<br/>
 
 - Modify `/etc/hosts`.
 
@@ -139,64 +133,46 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 10) Re-connect to your Raspberry Pi. (Refer [`#7 step`](#id-pi-setting-seventh))
 
-11) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
+11) For configration of Environments for Raspberry, Run the `raspi-config`
 
 ```bash
 @Pi2:$ sudo su
 @Pi2:$ raspi-config
 ```
- 
+
+   
 - To use micro SD card which has storage bigger than 4GB, Choose `1. Expand Filesystem`.
-![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+  ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+
+   
+- To Use Camera module, Choose `5. Enable Camera` 
+  ![Raspberry Pi Setting Enable camera](/assets/pi-cam-01.png)
+  ![Raspberry Pi Setting confirm](/assets/pi-cam-02.png)
+
+   
+- Press Tab key on your keyboard and choose `Finish`, and then please Select `Yes` for the question about Rebooting the device.
+  ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
+  ![Raspberry Pi Choose Finish](/assets/choose_finish_2.png)
 
 
-- To use I2C, Choose `8. Advanced Options` --> `A7. I2C`, and then please Select `Yes` for all the following questions.
-![Raspberry Pi + Grove Pi](/assets/advanced_options.png)
-![Raspberry Pi + Grove Pi](/assets/choose_i2c.png)
-
-
-- Press Tab key on your keyboard and choose `Finish`, and then please Select `No` for the question about Rebooting the device.
-![Raspberry Pi Choose Finish](/assets/choose_finish.png)
-![Raspberry Pi Choose Finish](/assets/choose_finish_2.png)
-
-- Open /etc/modules file and add two new lines(`i2c-dev`, `i2c-bcm2708`) on that file.
-
-  ```bash
-  @Pi2:$ nano /etc/modules
-  ```
-
-  ![Raspberry Pi Add i2c settings](/assets/add_i2c_lines.png)
-
-  - `i2c-dev` could be already added, because it depends on Raspbian's version.
-  - Press `CTRL-O` and press `ENTER` to save the changes and press `CTRL-X` to close the current file you opened and modified.
-
-12) Reboot Raspberry Pi
-
-```bash
-@Pi2:$ sudo reboot
-```
 <div id='id-package'></div>
-
-<br/>
 
 ---
 
 #### 2. Install Thing+ Embedded Package
 
-1) Connect Grove Pi+ shield, Sensors to Raspberry Pi without Ethernet(LAN cable) and Power Cable.
-<p class="dwExpand"> Reference : LED polarity</p>
+1) Connect Camera module on Raspberry Pi
 
-![LED polarity](/assets/led.png)
+![Raspberry Pi + Camera](/assets/pi-cam-03.png)
 
-<div class="dwExpand2"></div>
+![Raspberry Pi + Camera](/assets/pi-cam-04.png)
 
-![Raspberry Pi + Grove Pi](/assets/rasp_grovePi.png)
-![Raspberry Pi + Grove Pi](/assets/rasp_grovePi_2.jpg)
 
 2) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
-![Raspberry Pi + Grove Pi + Power + Ethernet](/assets/rasp_grovePi_power_ethernet.png)
+
 
 3) Connect to your Raspberry Pi.
+
 
 4) Download a install script file.
 
@@ -214,14 +190,67 @@ Thing+ Integragtion Guide for Raspberry Pi
   @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
-
 6) Reboot Raspberry Pi
 
 ```bash
 @Pi2:$ sudo reboot
 ```
-<div id='id-register'></div>
 
+<div id='id-dropbox'></div>
+
+---
+
+#### 3. Integration with dropbox
+_To interation with dropbox, please set up as the following._
+
+1) Create app key
+
+``` bash
+@Pi2:$ cd /usr/local/bin
+@Pi2:$ ./dropbox_uploader.sh
+```
+  - Create `app key` as the following.
+  ![uploader.sh](/assets/pi-cam-05.png)
+  
+  - [Connect dropbox](https://www.dropbox.com/developers/apps) and lon-in
+  - Press `Create App` button.
+  ![dropbox](/assets/pi-cam-06.png)
+
+  - Press `Create app` after input some configration factor.
+  ![dropbox config](/assets/pi-cam-07.png)
+  
+  - `app key` and `app secret` is created
+  ![dropbox key](/assets/pi-cam-08.png)
+
+  - Authorization through OAth. please input the created `app key` and `app secrete`
+
+    ```bash
+    # App key: xxxxxxxx 
+    # App secret: yyyyyyyy
+    
+    Permission type:
+    App folder [a]: If you choose that the app only needs access to files it creates
+    Full Dropbox [f]: If you choose that the app needs access to files already on Dropbox
+    
+    # Permission type [a/f]: a
+
+    > App key is xxxxxxxx, App secret is yyyyyyyy and Access level is App Folder. Looks ok? [y/n]: y
+    > Token request... OK
+
+    Please open the following URL in your browser, and allow Dropbox Uploader
+    to access your DropBox folder:
+
+    --> https://www.dropbox.com/1/oauth/authorize?oauth_token=zzzzxxxxyyyy
+
+    Press enter when done...
+    ```
+
+  - Confirm `OAuth Ahthorization prompt`
+  ![dropbox](/assets/pi-cam-09.png)  
+  ![dropbox](/assets/pi-cam-10.png)
+
+
+<div id='id-register'></div>
 
 ---
 
@@ -231,81 +260,7 @@ Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway
 
 <div id='id-wifi-set'></div>
 
---------------------
 
-### How to configure the Wifi Dongle
-
-_This docuement is based on **TP-LINK TL-WN727N** but you can refer this for other kinds of Wifi dongle_
-
-- The Wifi Dongle Model used for this Guide : [TP-LINK TL-WN727N](http://www.tp-link.co.kr/products/details/?model=TL-WN727N)
-
-- You can find out the list of Wifi Dongles supported by Raspberry Pi from the below URL
-  - [The list of Wifi Dongles supported by Raspberry Pi](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
-  - If your Wifi router can support the 5GHz Wifi Channel, your Wifi dongle should support the same spec
-
-> Remark: You should reboot your Raspberry Pi after you plug the Wifi dongle into the Raspberry Pi
-
-<br/>
-
----
-
-#### 1.  How to configure the Wifi Dongle
-
-<br/>
-1) reboot your Raspberry Pi after you plug the Wifi dongle into the Raspberry Pi
-
-<br/>
-2) Connect to your Raspberry Pi over SSH
-
-<br/>
-3) Check `Wifi Interface Name`
-
-```bash
-@shell:$ iwconfig
-wlan0
-
-lo        no wireless extensions.
-
-eth0      no wireless extensions.
-
-usb0      no wireless extensions.
-```
-
-- In this guide, The Wifi Interface Name is `wlan0`. The interface name can be different per each Wifi Dongle like `wlan#`or `ra#` (‘#’ stands for Number)
-
-<br/>
-4) Network Configuration
-
-- open `/etc/network/interfaces` with nano editor
-
-  ```bash
-  @shell:$ sudo nano /etc/network/interfaces 
-  ```
-
-- Configure the Wifi SSID and password at the next line of `wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf` in `auto wlan0` paragraph
-
-- `wlan0` is the `WiFi interface name`
-
-  ```bash
-  ...
-
-  auto wlan0                    # If WiFi interface name is 'ra0',
-  allow-hotplug wlan0           # Change 'wlan0' to 'ra0' in this paragraph
-  iface wlan0 inet manual
-  wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-  wpa-ssid "WiFi SSID"        # Input your Wifi SSID Name 
-  wpa-psk  "WiFI password"    # Input your Wifi Password
-
-  ...
-
-  ```
-
-- When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor.
-
-<br/>
-5) Reboot your device
-
-> Remark: Connection between your device and DC 5V Power Adaptor is required for using the Wifi Dongle because a Wifi Dongle consumes much more power than normal
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

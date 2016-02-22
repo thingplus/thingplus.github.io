@@ -47,7 +47,8 @@ Open Hardware List
     - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
     - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
     - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
-
+    - [Raspberry Pi Camera Module](http://www.seeedstudio.com/depot/Raspberry-Pi-Camera-Module-p-1659.html?cPath=122_154_158)
+    
 <p class="dwExpand2"></p>
 
 <div id='id-beagle-guide'></div>
