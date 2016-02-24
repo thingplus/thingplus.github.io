@@ -1,11 +1,10 @@
 ---
 title: 라즈베리파이+Camera 사용자 가이드
 tags: "open-hardware"
+image: "http://support.thingplus.net/assets/ogp/ogp_raspi_cam.png"
 published: true
 permalink: /ko/open-hardware/raspberry-camera-user-guide.html
 ---
-
-<meta property="og:image" content="http://support.thingplus.net/assets/ogp/ogp_raspi_cam.png" />
 
 Thing+ 연동가이드(라즈베리파이)
 <div id='id-setting'></div>
