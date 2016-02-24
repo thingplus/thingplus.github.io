@@ -5,6 +5,9 @@ published: true
 permalink: /ko/open-hardware/raspberry-camera-user-guide.html
 ---
 
+<!-- <meta property="og:image" content="http://support.thingplus.net/assets/ogp/ogp_raspi_cam.png" /> -->
+<meta property="og:image" content="http://support.thingplus.net/assets/insert_sdcard.png" />
+
 Thing+ 연동가이드(라즈베리파이)
 <div id='id-setting'></div>
 
