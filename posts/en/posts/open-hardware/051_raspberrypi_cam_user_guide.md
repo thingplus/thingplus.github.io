@@ -5,6 +5,8 @@ published: true
 permalink: /en/open-hardware/raspberry-camera-user-guide.html
 ---
 
+<meta property="og:image" content="http://support.thingplus.net/assets/ogp/ogp_raspi_cam.png" />
+
 Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-setting'></div>
 
