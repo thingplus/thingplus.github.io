@@ -9,10 +9,12 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-simulator-guide'></div>
 
 1. [센서 시뮬레이터](#id-simulator-guide)
-2. [라즈베리파이](#id-pi-guide)
-3. [비글보드](#id-beagle-guide)
-4. [아두이노](#id-arduino-guide)
-5. [지원센서 목록](#id-sensor-list)
+2. [안드로이드](#id-android-guide)
+3. [라즈베리파이](#id-pi-guide)
+4. [비글보드](#id-beagle-guide)
+5. [아두이노](#id-arduino-guide)
+6. [에디슨](#id-edison-guide)
+7. [지원센서 목록](#id-sensor-list)
 
 ---
 
@@ -20,16 +22,26 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 ---
 
-<div id='id-pi-guide'></div>
+<div id='id-Andorid-guide'></div>
 
 ### 0. 센서 시뮬레이터
 - [연동가이드 바로가기](/ko/open-hardware/sensor-simulator-user-guide.html)
 
 <br/>
 
-### 1. 라즈베리파이
+### 1. 안드로이드
+- 안드로이드 2.3 + 지원
+- [연동가이드 바로가기](/ko/open-hardware/opensource-Android-user-guide.html)
+
+<br/>
+
+<div id='id-pi-guide'></div>
+
+### 2. 라즈베리파이
 - 라즈베리파이 I, II 지원
 - [연동가이드 바로가기](/ko/open-hardware/raspberry-pi-user-guide.html)
+- [연동가이드 바로가기 (camera)](/ko/open-hardware/raspberry-camera-user-guide.html)
+- [연동가이드 바로가기 (라즈베리파이+아두이노)](/ko/open-hardware/arduinoPi-user-guide.html)
 
 <p class="dwExpand">  센서 구입경로 </p>
  - [라즈베리파이 GrovePi+ 센서 키트 (**쉴드 및 10종 센서 포함**)](http://www.icbanq.com/P005700239)
@@ -52,7 +64,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-beagle-guide'></div>
 <br/>
 
-### 2. 비글보드
+### 3. 비글보드
 - 비글본 블랙, 그린 지원
 - [연동가이드 바로가기](/ko/open-hardware/bbb-user-guide.html)
 
@@ -71,7 +83,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-arduino-guide'></div>
 <br/>
 
-### 3. 아두이노
+### 4. 아두이노
 - 아두이노(우노, 오렌지보드 등) 지원
 - [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
 
@@ -91,10 +103,10 @@ permalink: /ko/open-hardware/openhardware-list.html
 	 - [온도센서 (Temperature Sensor)](https://www.icbanq.com/P005713933/)
 
 <p class="dwExpand2"></p>
-
+<div id='id-edison-guide'></div>
 <br/>
 
-### 4. 에디슨 
+### 5. 에디슨 
 - 에디슨 지원
 - [연동가이드 바로가기](/ko/open-hardware/edison-user-guide.html)
 
@@ -119,7 +131,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 <br/>
 
-### 5. 지원 센서 목록
+### 7. 지원 센서 목록
 
 |icon                                                        |Type         |Description       | Model                |Categrory         
 |------------------------------------------------------------|-------------|-----------|----------------------|----------

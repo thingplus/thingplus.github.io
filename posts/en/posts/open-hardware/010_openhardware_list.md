@@ -8,11 +8,12 @@ permalink: /en/open-hardware/openhardware-list.html
 Open Hardware List
 
 1. [Sensor Simulator](#id-simulator-guide)
-2. [Raspberry Pi](#id-pi-guide)
-3. [Beagle Board](#id-beagle-guide)
-4. [Arduino](#id-arduino-guide)
-4. [Edison](#id-edison-guide)
-5. [Available Sensor List](#id-sensor-list)
+2. [Android](#id-Android-guide)
+3. [Raspberry Pi](#id-pi-guide)
+4. [Beagle Board](#id-beagle-guide)
+5. [Arduino](#id-arduino-guide)
+6. [Edison](#id-edison-guide)
+7. [Available Sensor List](#id-sensor-list)
 
 <br/>
 
@@ -29,9 +30,19 @@ Open Hardware List
 <div id='id-pi-guide'></div>
 <br/>
 
-### 2. Raspberry Pi
+### 2. Android
+- Andorid 2.3 +
+- [Guide link](/en/open-hardware/opensource-Android-user-guide.html)
+
+
+<div id='id-pi-guide'></div>
+<br/>
+
+### 3. Raspberry Pi
 - Raspberry Pi I, II
 - [Guide link](/en/open-hardware/raspberry-pi-user-guide.html)
+- [Guide link with camera](/en/open-hardware/raspberry-camera-user-guide.html)
+- [Guide link with Arduino](/en/open-hardware/arduinoPi-user-guide.html)
 
 <p class="dwExpand">  Sensor Kit </p>
   - [GrovePi+ Starter Kit (**Including GrovePi+ & 10 Sensors**)](http://www.seeedstudio.com/depot/GrovePi-Starter-Kit-for-Raspberry-Pi-CE-certified-p-2572.html)
@@ -55,7 +66,7 @@ Open Hardware List
 
 <br/>
 
-### 3. Beagle Board
+### 4. Beagle Board
 - Beaglebone Black, Beaglebone Green
 - [Guide link](/en/open-hardware/bbb-user-guide.html)
 
@@ -74,7 +85,7 @@ Open Hardware List
 <div id='id-arduino-guide'></div>
 <br/>
 
-### 4. Arduino 
+### 5. Arduino 
 - Arduino compatible board(uno, orange board, etc)
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
 
@@ -98,7 +109,7 @@ Open Hardware List
 <div id='id-edison-guide'></div>
 <br/>
 
-### 5. Edison
+### 6. Edison
 - Edison
 - [Guide link](/en/open-hardware/edison-user-guide.html)
 
@@ -122,7 +133,7 @@ Open Hardware List
 
 <br/>
 
-### 6. Available Sensor List
+### 7. Available Sensor List
 
 
 |icon                                                           |Type           |Description    | Model                |Categrory         
