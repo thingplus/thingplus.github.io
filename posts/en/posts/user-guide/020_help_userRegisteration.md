@@ -342,6 +342,10 @@ exit 0
 <p class="dwExpand" > For Raspberry Pi 2: <b>Grove Starter Kit forArduino</b> </p>
 ![select_devicemodel](/assets/select_devicemodel_arduinopi_en.png)
 <div class="dwExpand2"></div>
+<div class="dwExpand2"></div>
+<p class="dwExpand" > For Raspberry Pi 2: <b>With Camera module</b></p>
+![select_devicemodel](/assets/rasp_cam_dm.png)
+<div class="dwExpand2"></div>
 <p class="dwExpand" > For BeagleBone Black: <b>Grove Starter Kit for BeagleBone Green</b></p>
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
 <div class="dwExpand2"></div>
