@@ -44,6 +44,8 @@ Thing+ Guide for Arduino<br/>
 
   - Input 'wget' in `Search` field -> Web -> select 1.16.3-1 
     ![Cygwin wget package select](/assets/cygwin_wget.png)
+  - Input 'git' in `Search` field  -> Devel ->  git
+    ![Cygwin git package select](/assets/cygwin_git.png)
 
 - When installation is completed, then you can show as the follow icon on your desktop.
   ![Cygwin Icon](/assets/cygwin_icon.png)
