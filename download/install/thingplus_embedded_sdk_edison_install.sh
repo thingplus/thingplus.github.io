@@ -7,9 +7,9 @@ SDK_DIR=.
 
 MODEL="edison"
 #RSYNC_SERVER="rsync.thingplus.net"
-RSYNC_SERVER="devrsync.thingbine.com"
-RSYNC_USER="edison_b2d"
-RSYNC_PASSWORD="89dkaidjfe0sjdji"
+RSYNC_SERVER="rsync.thingplus.net"
+RSYNC_USER="openhardware_edison"
+RSYNC_PASSWORD="LyBNnjlQx2YNQ7Cd"
 RSYNC_SIZE_ONLY_OPTION="false"
 
 rsync_install() {
@@ -44,12 +44,12 @@ DEST_DIR=$GATEWAY_DIR
 EOF
 }
 
-thingplus_install () {
+tube_install () {
   thingplus_config_set
-  wget http://support.thingplus.net/download/install/thingplus_install.sh
-  chmod +x ./thingplus_install.sh
-  ./thingplus_install.sh b2d
-  rm ./thingplus_install.sh
+  wget http://support.thingplus.net/download/install/tube_install.sh
+  chmod +x ./tube_install.sh
+  ./tube_install.sh b2d
+  rm ./tube_install.sh
   rm ./config
 }
 
@@ -72,7 +72,7 @@ thingplus_openhardware_edison_install () {
 
 rsync_install
 git_install
-thingplus_install
+tube_install
 
 if [ ! -d $SDK_DIR ]; then
   mkdir -p $SDK_DIR

@@ -9,8 +9,8 @@ NODE_INSTALL_PREFIX=/usr/local
 
 MODEL="debian"
 RSYNC_SERVER="rsync.thingplus.net"
-RSYNC_USER="debian_b2d"
-RSYNC_PASSWORD="fmLU~e2OhmyKDTj"
+RSYNC_USER="openhardware_pi"
+RSYNC_PASSWORD="SdckrvL3hq9bKHBU"
 RSYNC_SIZE_ONLY_OPTION="false"
 
 thingplus_openhardware_pi_install () {
@@ -50,12 +50,12 @@ dropbox_uploader_install () {
   chmod +x /usr/local/bin/dropbox_uploader.sh
 }
 
-thingplus_install () {
+tube_install () {
   thingplus_config_set
-  wget http://support.thingplus.net/download/install/thingplus_install.sh
-  chmod +x ./thingplus_install.sh
-  ./thingplus_install.sh b2d
-  rm ./thingplus_install.sh
+  wget http://support.thingplus.net/download/install/tube_install.sh
+  chmod +x ./tube_install.sh
+  ./tube_install.sh b2d
+  rm ./tube_install.sh
   rm ./config
 }
 
@@ -88,7 +88,7 @@ if [ ! -d $SDK_DIR ]; then
 fi
 
 dropbox_uploader_install
-thingplus_install
+tube_install
 
 thingplus_openhardware_sdk_install $SDK_DIR
 thingplus_openhardware_pi_install $SDK_DIR

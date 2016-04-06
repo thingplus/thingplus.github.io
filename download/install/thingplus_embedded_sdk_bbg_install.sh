@@ -7,8 +7,8 @@ SDK_DIR=.
 
 MODEL="debian"
 RSYNC_SERVER="rsync.thingplus.net"
-RSYNC_USER="debian_b2d"
-RSYNC_PASSWORD="fmLU~e2OhmyKDTj"
+RSYNC_USER="openhardware_bbg"
+RSYNC_PASSWORD="a93aiiodsiosdiofe0s"
 RSYNC_SIZE_ONLY_OPTION="false"
 
 thingplus_config_set() {
@@ -22,12 +22,12 @@ DEST_DIR=$GATEWAY_DIR
 EOF
 }
 
-thingplus_install () {
+tube_install () {
   thingplus_config_set
-  wget http://support.thingplus.net/download/install/thingplus_install.sh
-  chmod +x ./thingplus_install.sh
-  ./thingplus_install.sh b2d
-  rm ./thingplus_install.sh
+  wget http://support.thingplus.net/download/install/tube_install.sh
+  chmod +x ./tube_install.sh
+  ./tube_install.sh b2d
+  rm ./tube_install.sh
   rm ./config
 }
 
@@ -53,7 +53,7 @@ bbg_uart2gpio() {
 
 ########## START ##########
 
-thingplus_install
+tube_install
 
 if [ ! -d $SDK_DIR ]; then
   mkdir -p $SDK_DIR
