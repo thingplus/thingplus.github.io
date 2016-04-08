@@ -238,6 +238,34 @@ nav {
 }
 
 //
+// intro
+
+.intro-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .intro-box {
+    border-radius: 3px;
+    background-color: #e0e5ee;
+    margin: 12px 0px 12px 0px;
+
+    a {
+      display: block;
+    }
+    
+    .intro-box-top {
+      background-color: #bec9d2;
+      height: 134px;
+    }
+
+    .intro-box-bottom {
+      height: 72px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
+//
 // .main
 //
 

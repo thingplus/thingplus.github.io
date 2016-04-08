@@ -1,5 +1,4 @@
 ---
-title: ThingPlus
 permalink: /en/
 ---
 
