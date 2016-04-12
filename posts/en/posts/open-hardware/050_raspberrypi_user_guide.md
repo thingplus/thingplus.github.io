@@ -2,6 +2,7 @@
 title: Raspberry PI User Guide
 tags: "open-hardware"
 published: true
+img: ic-raspberrypi.png
 permalink: /en/open-hardware/raspberry-pi-user-guide.html
 ---
 

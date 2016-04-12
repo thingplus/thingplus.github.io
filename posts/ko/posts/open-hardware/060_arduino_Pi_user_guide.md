@@ -2,6 +2,7 @@
 title: 라즈베리파이 + 아두이노 사용자 가이드
 tags: "open-hardware"
 published: true
+img: ic-raspberrypi-arduino.png
 permalink: /ko/open-hardware/arduinoPi-user-guide.html
 ---
 

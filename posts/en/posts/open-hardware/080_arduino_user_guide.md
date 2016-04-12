@@ -2,6 +2,7 @@
 title: Arduino User Guide
 tags: "open-hardware"
 published: true
+img: ic-arduino.png
 permalink: /en/open-hardware/arduino-user-guide.html
 ---
 

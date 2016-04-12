@@ -3,10 +3,10 @@ title: Raspberry Pi with camera module - User Guide
 tags: "open-hardware"
 image: "http://support.thingplus.net/assets/ogp/ogp_raspi_cam.png"
 published: true
+img: ic-raspberrypiwithcamera.png
 permalink: /en/open-hardware/raspberry-camera-user-guide.html
 ---
 
-<meta property="og:image" content="http://support.thingplus.net/assets/ogp/ogp_raspi_cam.png" />
 
 Thing+ Integragtion Guide for Raspberry Pi
 <div id='id-setting'></div>

@@ -3,6 +3,7 @@ title: 라즈베리파이+Camera 사용자 가이드
 tags: "open-hardware"
 image: "http://support.thingplus.net/assets/ogp/ogp_raspi_cam.png"
 published: true
+img: ic-raspberrypiwithcamera.png
 permalink: /ko/open-hardware/raspberry-camera-user-guide.html
 ---
 

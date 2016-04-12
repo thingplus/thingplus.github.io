@@ -2,6 +2,7 @@
 title: Rule creation and control
 tags: "user-guide"
 published: true
+img: ic-rule.png
 permalink: /en/user-guide/rule.html
 ---
 

@@ -2,6 +2,7 @@
 title: 라즈베리파이 사용자 가이드
 tags: "open-hardware"
 published: true
+img: ic-raspberrypi.png
 permalink: /ko/open-hardware/raspberry-pi-user-guide.html
 ---
 

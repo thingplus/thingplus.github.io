@@ -2,6 +2,7 @@
 title: 문제 해결 방법
 tags: "help"
 published: true
+img: ic-troubleshooting.png
 permalink: /ko/help/troubleshooting.html
 ---
 
@@ -28,8 +29,7 @@ permalink: /ko/help/troubleshooting.html
 게이트웨이를 재시작하면 자동적으로 미등록 센서를 등록한다.
 
 <p class="dwfqExpand2"></p>
-<p class="dwfqExpand">   장치의 IP address를 확인하는 방법</p>
-
+<p class="dwfqExpand" id="open">   장치의 IP address를 확인하는 방법</p>
 1) 스마트폰의 app store에서 `Fing` app을 설치한다. ([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
 2) 장치가 연결된 공유기에 WiFi를 이용하여 스마트폰을 연결한다.
 3) `Fing`을 실행하면 공유기에 연결되어 있는 장비의 IP address의 목록이 표시된다. 
@@ -160,6 +160,14 @@ blink가 동작 한다면, contact@thingplus.net로 문의 해주세요.
 
 
 <p class="dwfqExpand2"></p>
+
+
+<!-- [![arduino ide](/assets/arduino_led_ide.png)](javascript:open_youtube('https://www.youtube.com/embed/IdA3_FA9wLU?enablejsapi=1&amp;origin=http://thingplus.net'))
+
+<div id='Utube' class="video-contianer drag ui-draggable ui-draggable-handle"></div>
+ -->
+
+
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

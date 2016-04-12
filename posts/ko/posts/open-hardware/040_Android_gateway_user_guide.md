@@ -2,6 +2,8 @@
 title: 안드로이드 게이트웨이 사용자 가이드
 tags: "open-hardware"
 published: true
+img: ic-androidgateway.png
+video: "yes"
 permalink: /ko/open-hardware/opensource-Android-user-guide.html
 ---
 
@@ -21,6 +23,10 @@ _Android 단말에서 모든 설정을 할 수 있습니다. 본 가이드에서
 
 <div id='id-install'></div>
 <br/>
+
+<div align="center" class="embed-responsive embed-responsive-16by9">
+  <iframe src="http://www.youtube.com/embed/SdJRqqCHQIg?hl=en_US&loop=1&autoplay=0&playlist=SdJRqqCHQIg"></iframe>
+</div>
 
 #### 1. APK 다운로드와 설치
 

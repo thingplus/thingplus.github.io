@@ -2,6 +2,7 @@
 title: OpenHardware List
 tags: "open-hardware"
 published: true
+img: ic-openhw-list.png
 permalink: /en/open-hardware/openhardware-list.html
 ---
 

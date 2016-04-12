@@ -2,6 +2,7 @@
 title: Tutorial
 tags: "rest-api"
 published: true
+img: ic-tutorial.png
 permalink: /en/rest-api/getting-started.html
 ---
 

@@ -2,6 +2,7 @@
 title: 일반기능 사용법
 tags: "user-guide"
 published: true
+img: ic-guideforfunction.png
 permalink: /ko/user-guide/monitoring.html
 ---
 

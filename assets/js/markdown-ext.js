@@ -26,9 +26,10 @@ $(document).ready(function(){
 });
 
 
-$.expr[':'].external = function(obj){
+$.expr[':'].external = function(obj){ 
           return !obj.href.match(/^mailto\:/)
-                  && (obj.hostname != location.hostname);
+                  && (obj.hostname != location.hostname);                     
+          
       };
 
 $(function(){
@@ -37,7 +38,6 @@ $('a:external').addClass('external');
 
 // turn target into target=_blank for elements w external class
 $(".external").attr('target','_blank');
-
 })
 
 $(window).scroll(function() {
@@ -57,3 +57,42 @@ console.log(lang);
     window.open('https://thingplus.net/signup/','_blank');
   }
 }
+
+
+// youtube 새창 띄우기 
+// function open_youtube(url){
+// cw=screen.availWidth;     //화면 넓이
+// ch=screen.availHeight;    //화면 높이
+
+// sw=640;    //띄울 창의 넓이
+// sh=480;    //띄울 창의 높이
+
+// ml=(cw-sw)/2;        //가운데 띄우기위한 창의 x위치
+// mt=(ch-sh)/2;         //가운데 띄우기위한 창의 y위치
+
+// window.open(url,'tst','width='+sw+',height='+sh+',top='+mt+',left='+ml+',resizable=no,scrollbars=no');
+// }
+
+$(function() {
+  $( "#Utube" ).draggable();
+});
+
+
+function open_youtube(url){
+cw=screen.availWidth;     //화면 넓이
+ch=screen.availHeight;    //화면 높이
+
+sw=640;    //띄울 창의 넓이
+sh=480;    //띄울 창의 높이
+
+ml=(cw-sw)/2;        //가운데 띄우기위한 창의 x위치
+mt=(ch-sh)/2;         //가운데 띄우기위한 창의 y위치
+var vid_con ='<div style="display: block; left: '+ml+'px; top: '+mt+'px;" width="640">';
+    vid_con +='<div style="background-color: azure;"" >test</div>';
+    vid_con +='<iframe id="player" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="480" src='+url+'></iframe>';
+    vid_con += '</div>';
+$("div#Utube").html(vid_con);
+}
+
+
+

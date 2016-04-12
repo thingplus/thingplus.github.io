@@ -2,6 +2,7 @@
 title: Sample Apps
 tags: "rest-api"
 published: true
+img: ic-sampleapp.png
 permalink: /ko/rest-api/api-samples.html
 ---
 

@@ -2,6 +2,7 @@
 title: 오픈하드웨어 지원 리스트
 tags: "open-hardware"
 published: true
+img: ic-openhw-list.png
 permalink: /ko/open-hardware/openhardware-list.html
 ---
 <div class='thetop'></div>

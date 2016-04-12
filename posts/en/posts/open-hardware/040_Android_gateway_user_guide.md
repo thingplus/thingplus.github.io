@@ -2,6 +2,7 @@
 title: Android Gateway User Guide
 tags: "open-hardware"
 published: true
+img: ic-androidgateway.png
 permalink: /en/open-hardware/opensource-Android-user-guide.html
 ---
 

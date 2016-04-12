@@ -2,6 +2,7 @@
 title: FAQ
 tags: "help"
 published: true
+img: ic-faq.png
 permalink: /en/help/faq.html
 ---
 

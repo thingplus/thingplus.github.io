@@ -2,6 +2,7 @@
 title: Sensor Simulator User Guide
 tags: "open-hardware"
 published: true
+img: ic-sensorsimulator.png
 permalink: /en/open-hardware/sensor-simulator-user-guide.html
 ---
 

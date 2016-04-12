@@ -401,7 +401,7 @@ p.dwfqExpand {
   /*background-color:#f9f2f4; */
   /*background-color:#e0e8f3; */
   /*border-radius:4px; */
-  height: 30px;
+  height: auto;
   padding: 2px 4px;
   /*padding-left: 26px; */
   font-size: 100%;  
@@ -411,6 +411,8 @@ p.dwfqExpand {
 p.dwfqExpand b {
   color:#EF9292;
 }
+
+
 
 .detail2 pre {
     padding: 9.5px;
@@ -445,14 +447,11 @@ p.dwfqExpand b {
   border-bottom-width: thin;
   border-bottom-color: #eeeeee;*/
   font-weight: bolder; 
-
 }
 .dwfqExpand.ui-closed.line {
   border-bottom-style: dotted;
   border-bottom-width: 2px;
   border-bottom-color: #eeeeee;
-
-
 }
 
 .dwfqExpand.ui-closed:before {
@@ -465,6 +464,7 @@ p.dwfqExpand b {
   font-size:14px;
   color:#979797;
   content:"\f054 ";
+  
 }
 
 .dwfqExpand.ui-open:before {
@@ -591,12 +591,14 @@ a.back-to-top {
   cursor: pointer;
   text-align:center;
 }
-
+.fb{
+  text-align: center;
+}
 .fb_user{
   /*position: fixed;
   margin-top: 730px;*/
   margin-top: 10px;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .dweqtable{

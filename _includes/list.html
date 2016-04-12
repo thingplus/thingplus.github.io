@@ -2,7 +2,7 @@
 
 <!-- User Guide -->
 <div class="intro-container">
-  <div>{{ site.data.i18n[page.lang].submenu_user-guide }}</div>
+  <div class="title"><img src="/assets/index/ic-userguide.png"> {{ site.data.i18n[page.lang].submenu_user-guide }}</div>
   <div class="row">
   {% for post in posts %}
     {% if post.title != 'ThingPlus' and post.tags contains 'user-guide' %} 
@@ -10,7 +10,10 @@
         <div class="intro-box">
           <a href="{{ post.url }}" class="{{ post.lang }}">
             <div class="intro-box-top">
-              image area
+            {% if post.video == "yes" %}
+            <div class="video_icon"> </div>
+            {% endif %}
+              <img src="/assets/index/{{ post.img }}">
             </div>
             <div class="intro-box-bottom">
               {{ post.title }}
@@ -23,21 +26,24 @@
   </div>
 </div> 
 <div class="clearfix"></div>
-
+<br/><br/>
 <!-- Open Hardware -->
-<div class="intro-container">
-  <div>{{ site.data.i18n[page.lang].submenu_open-hardware }}</div>
+<div class="op-container">
+  <div class="title"><img src="/assets/index/ic-openhw.png"> {{ site.data.i18n[page.lang].submenu_open-hardware }}</div>
   <div class="row">
   {% for post in posts %}
     {% if post.title != 'ThingPlus' and post.tags contains 'open-hardware' %} 
       <div class="col-xs-12 col-sm-4">
-        <div class="intro-box">
+        <div class="op-box">
           <a href="{{ post.url }}" class="{{ post.lang }}">
-            <div class="intro-box-top">
-              image area
+            <div class="op-box-top">
+            {% if post.video == "yes" %}
+            <div class="video_icon"> </div>
+            {% endif %}
+              <img src="/assets/index/{{ post.img }}">
             </div>
-            <div class="intro-box-bottom">
-              {{ post.title }}
+            <div class="op-box-bottom">
+              {{ post.title | remove: "사용자 가이드" | remove: "User Guide" | remove: "module -"}}            
             </div>
           </a>
         </div>
@@ -47,10 +53,10 @@
   </div>
 </div> 
 <div class="clearfix"></div>
-
+<br/><br/>
 <!-- REST API -->
 <div class="intro-container">
-  <div>{{ site.data.i18n[page.lang].submenu_rest-api }}</div>
+  <div class="title"> <img src="/assets/index/ic-help.png">{{ site.data.i18n[page.lang].submenu_rest-api }}</div>
   <div class="row">
   {% for post in posts %}
     {% if post.title != 'ThingPlus' and post.tags contains 'rest-api' %} 
@@ -58,7 +64,10 @@
         <div class="intro-box">
           <a href="{{ post.url }}" class="{{ post.lang }}">
             <div class="intro-box-top">
-              image area
+            {% if post.video == "yes" %}
+            <div class="video_icon"> </div>
+            {% endif %}
+              <img src="/assets/index/{{ post.img }}">
             </div>
             <div class="intro-box-bottom">
               {{ post.title }}
@@ -71,10 +80,10 @@
   </div>
 </div> 
 <div class="clearfix"></div>
-
+<br/><br/>
 <!-- FAQ  -->
 <div class="intro-container">
-  <div>{{ site.data.i18n[page.lang].submenu_help }}</div>
+  <div class="title"><img src="/assets/index/ic-userguide.png"> {{ site.data.i18n[page.lang].submenu_help }}</div>
   <div class="row">
   {% for post in posts %}
     {% if post.title != 'ThingPlus' and post.tags contains 'help' %} 
@@ -82,7 +91,10 @@
         <div class="intro-box">
           <a href="{{ post.url }}" class="{{ post.lang }}">
             <div class="intro-box-top">
-              image area
+            {% if post.video == "yes" %}
+            <div class="video_icon"> </div>
+            {% endif %}
+              <img src="/assets/index/{{ post.img }}">
             </div>
             <div class="intro-box-bottom">
               {{ post.title }}

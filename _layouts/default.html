@@ -11,9 +11,11 @@
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>    <!--inserted by chris-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="/assets/js/jquery.cookie.min.js"></script>
     <script src="/assets/js/jquery.navgoco.min.js"></script>
+    <script src="/assets/js/jquery.video-ui.js"></script>
     <script src="/assets/js/markdown-ext.js"></script>
     <!-- chris add -->
     <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
@@ -204,7 +206,7 @@
               <li><div class="register">{{site.data.i18n[page.lang].make_iot}}
                     <div class="reg_button" onclick="javascript:signup('{{page.lang}}');">{{ site.data.i18n[page.lang].get_started}}</div>
                   </div></li>
-              <li><img src='/assets/fb_user_group.png' class="fb_user" onclick="javascript:window.open('https://www.facebook.com/groups/thingplus/','_blank');"></li>
+              <li class="fb"><img src='/assets/fb_user_group.png' class="fb_user" onclick="javascript:window.open('https://www.facebook.com/groups/thingplus/','_blank');"></li>
             </ul> 
           <!-- <div class="register">
             <img src='/assets/reg.png'>

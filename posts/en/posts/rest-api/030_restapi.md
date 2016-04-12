@@ -2,6 +2,7 @@
 title: REST-API
 tags: "rest-api"
 published: true
+img: ic-restapi.png
 permalink: /en/rest-api/rest-api.html
 ---
 <div id='id-schema'></div>

@@ -2,6 +2,7 @@
 title: 하드웨어 설치와 회원가입
 tags: "user-guide"
 published: true
+img : ic-hwinstall.png
 permalink: /ko/user-guide/registration.html
 ---
 

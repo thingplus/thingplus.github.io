@@ -2,6 +2,7 @@
 title: 오픈소스 게이트웨이 사용자 가이드
 tags: "open-hardware"
 published: true
+img: ic-opensourcegateway.png
 permalink: /ko/open-hardware/opensource-gateway-user-guide.html
 ---
 _본 가이드는 가이드 되어 있지 않은 다른 센서를 사용 할 때 gateway를 설정 하는 방법을 설명 합니다_

@@ -2,6 +2,7 @@
 title: Open Source Gateway User Guide
 tags: "open-hardware"
 published: true
+img: ic-opensourcegateway.png
 permalink: /en/open-hardware/opensource-gateway-user-guide.html
 ---
 

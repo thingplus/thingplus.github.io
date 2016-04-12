@@ -2,6 +2,8 @@
 title: 센서 시뮬레이터 사용자 가이드
 tags: "open-hardware"
 published: true
+img: ic-sensorsimulator.png
+video: "yes"
 permalink: /ko/open-hardware/sensor-simulator-user-guide.html
 ---
 
@@ -10,6 +12,10 @@ Thing+ 연동가이드(센서 시뮬레이터)
 <br/>
 
 ---
+
+<div align="center" class="embed-responsive embed-responsive-16by9">
+  <iframe src="http://www.youtube.com/v/CY5VPblB8B8&hl=en_US&loop=1&autoplay=0&playlist=CY5VPblB8B8"></iframe>
+</div>
 
 #### 1. 센서 시뮬레이터 등록
 

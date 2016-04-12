@@ -2,6 +2,7 @@
 title: BeagleBone Green User Guide
 tags: "open-hardware"
 published: true
+img: ic-bbg.png
 permalink: /en/open-hardware/bbb-user-guide.html
 ---
 

@@ -2,6 +2,7 @@
 title: 비글본그린 사용자 가이드
 tags: "open-hardware"
 published: true
+img: ic-bbg.png
 permalink: /ko/open-hardware/bbb-user-guide.html
 ---
 

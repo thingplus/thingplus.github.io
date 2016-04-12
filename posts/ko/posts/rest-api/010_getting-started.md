@@ -2,6 +2,7 @@
 title: 튜토리얼
 tags: "rest-api"
 published: true
+img: ic-tutorial.png
 permalink: /ko/rest-api/getting-started.html
 ---
 
@@ -46,6 +47,7 @@ Getting Started with the Thing+ REST API
 <br><br>
   2. Select the 'Download from link'
 <br>![import link](/assets/import-link.png)
+    
     - Add a below link
       - https://www.getpostman.com/collections/f1c2d8efb311d579eff6
     - Click the 'Import' button

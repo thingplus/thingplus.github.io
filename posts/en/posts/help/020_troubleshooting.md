@@ -2,6 +2,7 @@
 title: Troubleshooting
 tags: "help"
 published: true
+img: ic-troubleshooting.png
 permalink: /en/help/troubleshooting.html
 ---
 <div id='id-trouble1'></div>

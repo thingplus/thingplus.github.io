@@ -2,6 +2,7 @@
 title: 관리기능 사용법
 tags: "user-guide"
 published: true
+img : ic-management.png
 permalink: /ko/user-guide/management.html
 ---
 

@@ -2,6 +2,7 @@
 title: "Guide for functions"
 tags: "user-guide"
 published: true
+img: ic-guideforfunction.png
 permalink: /en/user-guide/monitoring.html
 ---
 

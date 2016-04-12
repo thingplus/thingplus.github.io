@@ -2,6 +2,7 @@
 title: "Management guide"
 tags: "user-guide"
 published: true
+img : ic-management.png
 permalink: /en/user-guide/management.html
 ---
 

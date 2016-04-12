@@ -2,6 +2,8 @@
 title: 규칙생성 및 제어
 tags: "user-guide"
 published: true
+img: ic-rule.png
+video: "yes"
 permalink: /ko/user-guide/rule.html
 ---
 
@@ -92,6 +94,11 @@ permalink: /ko/user-guide/rule.html
 <div id='id-rule-creation'></div>
 
 ### 규칙 만들기
+
+<div align="center" class="embed-responsive embed-responsive-16by9">
+  <iframe src="http://www.youtube.com/embed/g6fiOBG0onc?hl=en_US&autoplay=0&loop=1&playlist=g6fiOBG0onc"></iframe>
+</div>
+
 직접 규칙 만들기를 통해 가지고 있는 센서들로 규칙을 만들 수 있습니다. 또한 서비스에서 제공하는 규칙 템플릿을 이용하여 규칙을 만들수도 있습니다.
 
 <br>

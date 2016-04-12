@@ -2,6 +2,7 @@
 title: OAuth2
 tags: "rest-api"
 published: true
+img: ic-oauth-2.png
 permalink: /en/rest-api/oauth2.html
 ---
 

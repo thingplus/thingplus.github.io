@@ -2,6 +2,7 @@
 title: Hardware installation and service registration
 tags: "user-guide"
 published: true
+img : ic-hwinstall.png
 permalink: /en/user-guide/registration.html
 ---
 

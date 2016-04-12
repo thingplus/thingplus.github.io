@@ -237,34 +237,153 @@ nav {
   }
 }
 
-//
+//video icon
+.video_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18.3px;
+  height: 17px;
+}
+//title
+.title{
+  font-family: AppleSDGothicNeo-SemiBold, $nanumGothic;
+  font-size: 24px;
+  color: #1b1b1b;
+}
 // intro
 
 .intro-container {
   padding-left: 20px;
   padding-right: 20px;
+  vertical-align: middle;
+
 
   .intro-box {
     border-radius: 3px;
     background-color: #e0e5ee;
     margin: 12px 0px 12px 0px;
+    // padding-top: 30px;
+    // padding-bottom: 30px;
+    text-align: center;
+
+    .video_icon {
+        background: url(/assets/index/ic-video-black.png)  no-repeat;
+    }
+
+    &:hover, &:active {
+        .intro-box-top {
+          background-color: #212735;
+          height: 134px;
+        }
+        .video_icon {
+            background: url(/assets/index/ic-video.png)  no-repeat;
+         }
+
+        .intro-box-bottom {
+          height: 72px;
+          background-color: #fbc400;
+          font-family: AppleSDGothicNeo-Regular, $nanumGothic;
+          font-size: 16px;
+          color: #333333;
+        }
+      }
 
     a {
       display: block;
+
     }
     
     .intro-box-top {
       background-color: #bec9d2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 134px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
     }
 
     .intro-box-bottom {
       height: 72px;
       text-align: center;
-      vertical-align: middle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: AppleSDGothicNeo-Regular, $nanumGothic;
+      font-size: 16px;
+      color: #333333;
     }
   }
 }
+
+// intro > opensource
+
+.op-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+
+
+  .op-box {
+    border-radius: 3px;
+    border-color: #e8e8e8;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #e0e5ee;
+    margin: 12px 0px 12px 0px;
+    text-align: center;
+
+    .video_icon {
+        background: url(/assets/index/ic-video-black.png)  no-repeat;
+    }
+
+    &:hover, &:active {
+        .op-box-top {
+          background-color: #212735;
+          height: 134px;
+        }
+        .video_icon {
+            background: url(/assets/index/ic-video.png)  no-repeat;
+         }
+        .op-box-bottom {
+          height: 72px;
+          background-color: #fbc400;
+        }
+      }
+
+    a {
+      display: block;
+
+    }
+    
+    .op-box-top {
+      background-color: #f4f7fc;
+      height: 134px;
+      // padding-top: 40px;
+      // padding-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+
+    }
+
+    .op-box-bottom {
+      height: 72px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: AppleSDGothicNeo-Regular, $nanumGothic;
+      font-size: 16px;
+      color: #333333;
+    }
+  }
+}
+
 //
 // .main
 //
