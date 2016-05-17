@@ -104,7 +104,7 @@ _In case of raspberry pi & Arduino, Raspberry Pi is Gateway, Arduino is Device._
 2) Get a MAC Address of the device and copy it to the clipboard.
 
 ```bash
-@shell:$ ./getGatewayID.sh
+@shell:$ ./getmac
 Your MAC address is as below
 xx:xx:xx:xx:xx:xx   <= Copy this line
 ```
