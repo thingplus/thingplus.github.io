@@ -66,7 +66,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 3) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다. (windows에서는 COMxx 입니다.)
 
    - Tools -> Port -> Arduino/Genuino Uno
-  ![Arduino Select Port](/assets/arduino_port.png)
+    ![Arduino Select Port](/assets/arduino_port.png)
 
 <div id='id-firmware'></div>
 
@@ -83,33 +83,29 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - Time
 
   - 아두이노 라이브러리
-  [라이브러리 다운로드 받기](http://support.thingplus.net/download/install/Thingplus.zip) 
-  `Scketch -> Include Library -> Add.Zip Library`
-  <p class="dwExpand">- download 받은 zip 파일 로드</p>
-  ![Arduino Lib](/assets/arduino_lib.png)
-  <div class="dwExpand2"></div>
-  
+    [라이브러리 다운로드 받기](http://support.thingplus.net/download/install/Thingplus.zip) 
+    `Scketch -> Include Library -> Add.Zip Library`
+    <p class="dwExpand">- download 받은 zip 파일 로드</p>
+    ![Arduino Lib](/assets/arduino_lib.png)
+    <div class="dwExpand2"></div>  
   - ArduinoJson
-  `Scketch -> Include Library -> Manage Libraries...`
-  <p class="dwExpand">- 검색 > ArduinoJson > install</p>
-  ![Arduino_json](/assets/arduino_json.png)
-  ![Search Arduino_json](/assets/arduino_json_search.png)
-  <div class="dwExpand2"></div>
-
+    `Scketch -> Include Library -> Manage Libraries...`
+    <p class="dwExpand">- 검색 > ArduinoJson > install</p>
+    ![Arduino_json](/assets/arduino_json.png)
+    ![Search Arduino_json](/assets/arduino_json_search.png)
+    <div class="dwExpand2"></div>
   - PubSubClient
-  `Scketch -> Include Library -> Manage Libraries...`
-  
-  <p class="dwExpand">- 검색 > PubSubClient > install</p>
-  ![Arduino_json](/assets/arduino_json.png)
-  ![Search Arduino_Pubsub](/assets/arduino_pubsub_search.png)
-  <div class="dwExpand2"></div>
-
+    `Scketch -> Include Library -> Manage Libraries...`  
+    <p class="dwExpand">- 검색 > PubSubClient > install</p>
+    ![Arduino_json](/assets/arduino_json.png)
+    ![Search Arduino_Pubsub](/assets/arduino_pubsub_search.png)
+    <div class="dwExpand2"></div>
   - Time 
-  `Scketch -> Include Library -> Manage Libraries...`
-  <p class="dwExpand">- 검색 > timekeep > install</p>
-  ![Arduino_json](/assets/arduino_json.png)
-  ![Search Arduino_Time](/assets/arduino_time_search.png)
-  <div class="dwExpand2"></div>
+    `Scketch -> Include Library -> Manage Libraries...`
+    <p class="dwExpand">- 검색 > timekeep > install</p>
+    ![Arduino_json](/assets/arduino_json.png)
+    ![Search Arduino_Time](/assets/arduino_time_search.png)
+    <div class="dwExpand2"></div>
 
 <br/>
 2) PubSubClient 의 header 파일 수정
