@@ -68,7 +68,8 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 3) Select USB for Arduino Port in IDE. (for windows, COMxx)
 
    - Tools -> Port -> Arduino/Genuino Uno
-  ![Arduino Select Port](/assets/arduino_port.png)
+
+   ![Arduino Select Port](/assets/arduino_port.png)
 
 <div id='id-firmware'></div>
 
@@ -85,36 +86,30 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     - Time
 
   - Arduino Library
-  [Download Library](http://support.thingplus.net/download/install/Thingplus.zip) 
-  `Scketch -> Include Library -> Add.Zip Library`
-
-  <p class="dwExpand">- Load downloaded zip file</p>
-  ![Arduino Lib](/assets/arduino_lib.png)
-  <div class="dwExpand2"></div>
+    - [Download Library](http://support.thingplus.net/download/install/Thingplus.zip) 
+    - `Scketch -> Include Library -> Add.Zip Library`
+      <p class="dwExpand">- Load downloaded zip file</p>
+      ![Arduino Lib](/assets/arduino_lib.png)
+      <div class="dwExpand2"></div>
   
   - ArduinoJson
-  `Scketch -> Include Library -> Manage Libraries...`
-
-  <p class="dwExpand">- Search > ArduinoJson > install</p>
-  ![Arduino_json](/assets/arduino_json.png)
-  ![Search Arduino_json](/assets/arduino_json_search.png)
-  <div class="dwExpand2"></div>
-
+    - `Scketch -> Include Library -> Manage Libraries...`
+      <p class="dwExpand">- Search > ArduinoJson > install</p>
+      ![Arduino_json](/assets/arduino_json.png)
+      ![Search Arduino_json](/assets/arduino_json_search.png)
+      <div class="dwExpand2"></div>
   - PubSubClient
-  `Scketch -> Include Library -> Manage Libraries...`
-  
-  <p class="dwExpand">- Search > PubSubClient > install</p>
-  ![Arduino_json](/assets/arduino_json.png)
-  ![Search Arduino_Pubsub](/assets/arduino_pubsub_search.png)
-  <div class="dwExpand2"></div>
-
+    - `Scketch -> Include Library -> Manage Libraries...`  
+      <p class="dwExpand">- Search > PubSubClient > install</p>
+      ![Arduino_json](/assets/arduino_json.png)
+      ![Search Arduino_Pubsub](/assets/arduino_pubsub_search.png)
+      <div class="dwExpand2"></div>
   - Time 
-  `Scketch -> Include Library -> Manage Libraries...`
-  
-  <p class="dwExpand">- Search > timekeep > install</p>
-  ![Arduino_json](/assets/arduino_json.png)
-  ![Search Arduino_Time](/assets/arduino_time_search.png)
-  <div class="dwExpand2"></div>
+    - `Scketch -> Include Library -> Manage Libraries...`
+      <p class="dwExpand">- Search > timekeep > install</p>
+      ![Arduino_json](/assets/arduino_json.png)
+      ![Search Arduino_Time](/assets/arduino_time_search.png)
+      <div class="dwExpand2"></div>
 
 <br/>
 2) Modify header file in PubSubClient 
