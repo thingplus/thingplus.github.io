@@ -1,8 +1,8 @@
 ---
-title: 아두이노 사용자 가이드
+title: 아두이노 + PC 사용자 가이드
 tags: "open-hardware"
 published: true
-img: ic-arduino.png
+img: ic_arduino_PC.png
 permalink: /ko/open-hardware/arduino-user-guide.html
 ---
 
