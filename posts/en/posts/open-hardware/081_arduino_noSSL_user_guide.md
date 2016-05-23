@@ -69,7 +69,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 
    - Tools -> Port -> Arduino/Genuino Uno
 
-   ![Arduino Select Port](/assets/arduino_port.png)
+     ![Arduino Select Port](/assets/arduino_port.png)
 
 <div id='id-firmware'></div>
 
