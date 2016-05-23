@@ -66,6 +66,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 3) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다. (windows에서는 COMxx 입니다.)
 
    - Tools -> Port -> Arduino/Genuino Uno
+   
     ![Arduino Select Port](/assets/arduino_port.png)
 
 <div id='id-firmware'></div>
