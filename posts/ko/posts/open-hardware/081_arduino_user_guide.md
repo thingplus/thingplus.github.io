@@ -1,12 +1,12 @@
 ---
-title: 아두이노 + PC 사용자 가이드
+title: PC + 아두이노 사용자 가이드
 tags: "open-hardware"
 published: true
 img: ic_arduino_PC.png
 permalink: /ko/open-hardware/arduino-user-guide.html
 ---
 
-Thing+ 연동가이드(아두이노)<br/>
+Thing+ 연동가이드(아두이노 with PC)<br/>
 <div id='id-windows'></div>
 
 0. [Windows 환경 설정](#id-windows)

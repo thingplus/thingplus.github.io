@@ -1,12 +1,12 @@
 ---
-title: Arduino + PC User Guide
+title: PC + Arduino User Guide
 tags: "open-hardware"
 published: true
 img: ic_arduino_PC.png
 permalink: /en/open-hardware/arduino-user-guide.html
 ---
 
-Thing+ Guide for Arduino<br/>
+Thing+ Guide for Arduino with PC<br/>
 <div id='win-setting'></div>
 
 1. [Environment Setting for window](#win-setting)
