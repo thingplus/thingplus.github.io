@@ -124,7 +124,10 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
    - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
    - Putty 다운로드 링크 - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
 
-5) Raspbian을 설치한 Micro SD card를 라즈베리파이 아래 그림과 같이 **뒷면**의 Micro SD card 슬롯에 꽂습니다.(power cable을 제거 하고 SD 카드 삽입후에 power cable을 연결합니다.)
+5) Raspbian을 설치한 Micro SD card를 라즈베리파이 아래 그림과 같이 **뒷면**의 Micro SD card 슬롯에 꽂습니다.
+   (power cable을 제거 하고 SD 카드 삽입후에 power cable을 연결합니다.)
+   ***안정적인 전원 공급을 위해 power cable에 연결하는 것을 권장합니다. USB 허브등에 연결했을때 file resource가 broken 되는 현상이 관찰되었습니다.*** 
+   
    ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
 <div id='id-pi-setting-seventh'></div>

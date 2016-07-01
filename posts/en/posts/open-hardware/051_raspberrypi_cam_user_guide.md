@@ -50,7 +50,8 @@ Before you try to do as this guide. you must have account for dropbox.___
 ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
 6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
-![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
+   ***For stable Power supply, we recommend that you connect the power cable not USB hub.If the power supply is unstable, the file resource can be broken.*** 
+   ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 
 <div id='id-pi-setting-seventh'></div>

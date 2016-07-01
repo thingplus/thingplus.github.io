@@ -51,7 +51,8 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 <br/>
 6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
-![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
+   ***For stable Power supply, we recommend that you connect the power cable not USB hub.If the power supply is unstable, the file resource can be broken.*** 
+   ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 <br/>
 <div id='id-pi-setting-seventh'></div>
