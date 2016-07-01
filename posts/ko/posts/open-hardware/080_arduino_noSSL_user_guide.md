@@ -83,10 +83,10 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - PubSubClient
     - Time
 
-  - 아두이노 라이브러리
-    - [라이브러리 다운로드 받기](http://support.thingplus.net/download/install/Thingplus.zip) 
-    - `Scketch -> Include Library -> Add.Zip Library`
-      <p class="dwExpand">- download 받은 zip 파일 로드</p>
+  - thingplus library
+    - `Scketch -> Include Library -> Manage Libraries...`
+      <p class="dwExpand">- 검색 > thingplus > install</p>
+      ![Arduino_json](/assets/arduino_json.png)
       ![Arduino Lib](/assets/arduino_lib.png)
       <div class="dwExpand2"></div>  
   - ArduinoJson

@@ -85,13 +85,12 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     - PubSubClient
     - Time
 
-  - Arduino Library
-    - [Download Library](http://support.thingplus.net/download/install/Thingplus.zip) 
-    - `Scketch -> Include Library -> Add.Zip Library`
-      <p class="dwExpand">- Load downloaded zip file</p>
+  - thingplus Library
+    - `Scketch -> Include Library -> Manage Libraries...`
+      <p class="dwExpand">- Search > thingplus > install</p>
+      ![Arduino_json](/assets/arduino_json.png)
       ![Arduino Lib](/assets/arduino_lib.png)
-      <div class="dwExpand2"></div>
-  
+      <div class="dwExpand2"></div>  
   - ArduinoJson
     - `Scketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- Search > ArduinoJson > install</p>
