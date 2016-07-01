@@ -55,7 +55,9 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 
 
 6) 라즈베리파이에 Ethernet(LAN 케이블), Power Cable을 연결한다.
-    ***안정적인 전원 공급을 위해 power cable에 연결하는 것을 권장합니다. USB 허브등에 연결했을때 file resource가 broken 되는 현상이 관찰되었습니다.*** 
+  
+  ***안정적인 전원 공급을 위해 power cable에 연결하는 것을 권장합니다. USB 허브등에 연결했을때 file resource가 broken 되는 현상이 관찰되었습니다.*** 
+   
    ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 
