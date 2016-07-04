@@ -29,8 +29,14 @@ tube_install () {
   wget http://support.thingplus.net/download/install/tube_install.sh
   chmod +x ./tube_install.sh
   ./tube_install.sh b2d
-  rm ./tube_install.sh
-  rm ./config
+
+  if [ -e ./tube_install.sh ]; then
+    rm ./tube_install.sh
+  fi
+
+  if [ -e ./config ]; then
+    rm ./config
+  fi
 }
 
 root_permission_check() {
