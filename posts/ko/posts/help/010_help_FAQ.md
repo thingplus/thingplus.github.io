@@ -10,7 +10,7 @@ permalink: /ko/help/faq.html
 
 ---
 
-<p class="dwfqExpand">  대시보드 라인차트 기간 설정 변경은 어떻게 할 수 있나요?</p>
+<p class="dwfqExpand" id="faq_dashboard_01">  대시보드 라인차트 기간 설정 변경은 어떻게 할 수 있나요?</p>
 
 변경하고자 하는 위젯의 우측 상단 <i class="fa fa-cog fa-lg"></i> 설정 아이콘을 클릭하세요
 
@@ -18,7 +18,7 @@ permalink: /ko/help/faq.html
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> 센서의 과거 데이터를 어떻게 조회하나요?</p>
+<p class="dwfqExpand" id = "faq_sensorData"> 센서의 과거 데이터를 어떻게 조회하나요?</p>
 
 1. 상단 메뉴 중 <i class="fa fd-menu_analysis fa-lg"></i> 센서분석 선택
 2. 게이트웨이를 선택
@@ -30,15 +30,14 @@ permalink: /ko/help/faq.html
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> 센서데이터 비교하는 방법</p>
+<p class="dwfqExpand" id ="faq_compare_sensorData"> 센서데이터 비교하는 방법</p>
 
 1. <i class="fa fa-fw fa-plus fa-lg"></i> 아이콘을 클릭하면 센서 선택창을 추가할 수 있습니다.
 2. 이후 데이터 조회하는 방법과 동일하게 설정하여 여러 센서데이터를 비교할 수 있습니다.
 
 <p class="dwfqExpand2"></p>
 
-<div id='install_wget'></div>
-<p class="dwfqExpand"> Mac 에서 wget 설치 방법</p>
+<p class="dwfqExpand" id ="faq_install_wget"> Mac 에서 wget 설치 방법</p>
 
 wget을 설치 하기 위해서는 brew가 설치 되어 있어야 합니다.  
  
@@ -54,7 +53,7 @@ brew install wget
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> guide에 있는 것처럼 Gove sensor kit 만 사용해야 하나요? </p>
+<p class="dwfqExpand" id ="faq_not_grove"> guide에 있는 것처럼 Gove sensor kit 만 사용해야 하나요? </p>
 
 아닙니다. 
 
@@ -65,7 +64,7 @@ brew install wget
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> Ethernet이 아닌 WiFi 동글을 붙여서도 Thing+ Portal에 등록이 가능한가요?</p>
+<p class="dwfqExpand" id ="faq_useWifi"> Ethernet이 아닌 WiFi 동글을 붙여서도 Thing+ Portal에 등록이 가능한가요?</p>
 
 네 가능합니다. 
 
@@ -75,7 +74,7 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> 가이드에는 GrovePi+ 쉴드의 특정 포트에 특정 센서를 연결해야 하는데 가이드를 따라서 꽂아야 하나요? </p>
+<p class="dwfqExpand" id ="faq_sensor_port"> 가이드에는 GrovePi+ 쉴드의 특정 포트에 특정 센서를 연결해야 하는데 가이드를 따라서 꽂아야 하나요? </p>
 
 네 그렇습니다.
 
@@ -84,7 +83,7 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> 아두이노를 컴퓨터 없이 wifi를 이용해 사용 가능 한가요?</p>
+<p class="dwfqExpand" id = "faq_without_pc"> 아두이노를 컴퓨터 없이 wifi를 이용해 사용 가능 한가요?</p>
 
 아두이노 + WiFi쉴드만을 이용하시면 Thingplus Cloud에 연결을 할 수 없습니다.
 Thingplus Cloud와 하드웨어 사이에는 SSL을 통한 암호화된 채널을 사용하고 있습니다.
@@ -92,14 +91,15 @@ Thingplus Cloud와 하드웨어 사이에는 SSL을 통한 암호화된 채널�
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> OAuth2 가 뭔가요?</p>
+<p class="dwfqExpand" id ="faq_oauth2"> OAuth2 가 뭔가요?</p>
 
 웹, 모바일 앱 등 어플리케이션에서 권한 인증을 수행할 수 있는 표준 방법인 오픈 프로토콜입니다. 
 불특정인의 접근을 방지하기 위한 보안 도구이며, Facebook, Twitter 등에서도 사용하고 있는 방법입니다.
+관련 내용은 [여기](http://support.thingplus.net/ko/rest-api/oauth2.html)에서도 확인가능 합니다.
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> ThingPlus의 서버가 AWS를 이용한 한것인가요? </p>
+<p class="dwfqExpand" id="faq_thingplus_infra"> ThingPlus의 서버가 AWS를 이용한 한것인가요? </p>
 
 AWS를 IaaS로만 이용해서 thing+ 소프트웨어를 구축 구조가 맞구요. 
 최근에 AWS에서도 PaaS 형태로 lambda를 이용한 연동 솔루션을 내놓고 있습니다. 
@@ -108,7 +108,7 @@ Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> IaaS, PaaS, SaaS란 무엇인가요?</p>
+<p class="dwfqExpand" id = "faq_service_type"> IaaS, PaaS, SaaS란 무엇인가요?</p>
 
 - `IaaS(Infrastructure as a Service)` : 서버를 운영하기 위해서는 서버 자원, IP, Network, Storage, 전력 등등 인프라를 구축하기 위해 여러가지가 필요합니다. Iaas는 이러한 것들을 가상의 환경에서 쉽고 편하게 이용할 수 있게 서비스 형태로 제공합니다. Iass를 서비스로 제공하기 위해 기존 서버 호스팅보다 H/W 확장성이 좋고 탄력적이며 빠른 제공을 할 수 있는 가상화 기술을 이용합니다. Iass는 Pass, Saas의 기반이 되는 기술입니다.
 
@@ -118,16 +118,91 @@ Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> 게이트웨이 ID가 컴퓨터 맥주소인거같은데 왜 게이트웨이 ID라고 명명하는지 궁금합니다 </p>
+<p class="dwfqExpand" id ="faq_gatewayID"> 게이트웨이 ID가 컴퓨터 맥주소인거같은데 왜 게이트웨이 ID라고 명명하는지 궁금합니다 </p>
 
 꼭 게이트웨이 ID가 mac address이어야 하는 것은 아닙니다. 
 
 게이트웨이를 구별 할 수 있는 unique 한 ID를 사용한 건데요.
-UUID나 IMEI등, 단말이 unigue 한 구분이 가능하다면 id로 사용할것입니다. 
+UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할것입니다. 
 현재 오픈하드웨어는 모두 mac address를 id로 사용하고 있습니다. 
 그리고 그러한 혼란을 막기 위해 getmac이라는 script를 getGatewayId로 변경했고(아직 공개되진 않았습니다.) guide에서도 mac adress라는 단어를 지양하려고 합니다.
 
 <p class="dwfqExpand2"></p>
+
+<!-- <p class="dwfqExpand" id = "faq_raspberry_b"> 라즈베리파이 1 B+ 을 사용하고 싶습니다.</p>
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id = "faq_raspberry_3"> 라즈베리파이 3를 사용하고 싶습니다.</p>
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand"  id = "faq_use_other_sensor"> 가이드 되어 있는 센서외에 다른 센서를 연동하고 싶습니다.</p>
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id = "faq_commercial_service"> 상용으로 서비스를 사용하고 싶습니다.</p>
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id = "faq_check_log"> log 확인 방법을 알고 싶습니다.</p>
+<p class="dwfqExpand2"></p> -->
+
+<p class="dwfqExpand" id = "faq_update"> 오픈하드웨어 update 방법을 알고 싶습니다.</p>
+- Thingplus는 개발자 분들의 이해를 돕기 위해 오픈하드웨어의 오픈 소스를 제공 하고 있습니다.
+
+- 현재는 Raspberry Pi, BeagleBone Green, Edison, Arduino를 지원하고 있습니다.
+
+- Device Agent의 update 방법
+
+  ```bash
+  # cd /opt/thingplus/openhardware
+  # git pull
+  ```
+
+- Gateway update 방법
+
+  - Gateway의 버전을 먼저 확인합니다.
+
+  ```bash
+  # cat /opt/thingplus/gateway/VERSION
+  ```
+
+  - ***현재 최신 버전은 0.4.2 입니다.***
+
+    - v0.4.2  보다 하위 버전에서는 아래 경로에서 update script를 다운로드 받아서 실행합니다.
+
+    ```bash
+    # cd /opt/thingplus/gateway
+
+    (Raspberry PI의 경우)
+    # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_update.sh
+    (BBG의 경우) 
+    # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_bbg_update.sh
+    (Edison의 경우) 
+    # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_edison_update.sh
+
+    # chmod 755 ./thingplus_embedded_sdk_xxx_update.sh
+    # ./thingplus_embedded_sdk_xxx_update.sh
+    ```
+
+    - update가 끝난뒤 Gateway는 재실행되며, devicve agent는 원래 상태 그대로입니다. update 하기전에 `thingplus_device.sh status`가 `stopped` 였다면, 재실행 (`thingplus_device.sh restart`) 해주어야 합니다.
+
+    - v0.4.2 이후 버전 부터는 아래와 같이 실행하시면 됩니다. 
+
+    ```bash
+    # cd /opt/thingplus/gateway
+    # ./thingplus.sh update
+    ```
+
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id = "faq_whatis_gw_device"> 디바이스와 게이트웨이의 차이가 무엇인가요?</p>
+- Gateway는 Thing+와 인터넷으로 연결되는 장치이고, Device는 이 게이트웨이와 센서 사이에서 센서네트워크(시리얼, 지그비, BLE등)로 연결되는 장치. 경우에 따라서 Gateway, Device, Sensor 각각은 하나의 장비에 같이 구성될수도 있습니다.
+
+- 자세한 내용은 아래 저희 support site의 [기본가이드](http://support.thingplus.net/ko/user-guide/preparation.html#id-term)에서 참고해주세요.
+
+<p class="dwfqExpand2"></p>
+
+<!-- <p class="dwfqExpand" id = "faq_Withdrawal"> 회원 탈퇴는 어떻게 할 수 있나요?</p>
+<p class="dwfqExpand2"></p> -->
+
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

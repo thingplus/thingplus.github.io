@@ -6,11 +6,11 @@ img: ic-troubleshooting.png
 permalink: /ko/help/troubleshooting.html
 ---
 
-장비와 ThingPlus IOT를 연동 하실 때 문제가 되시는 부분을 정리 했습니다.
+장비와 ThingPlus IoT를 연동 하실 때 문제가 되시는 부분을 정리 했습니다.
 
 ---
 
-<p class="dwfqExpand">&nbsp;<b>센서목록</b> 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우</p>
+<p class="dwfqExpand" id= "trbs_invisible_sensors">&nbsp;<b>센서목록</b> 페이지에서 등록한 게이트웨이나 센서가 보이지 않을 경우</p>
 
 등록 절차를 수행하는데 수십 초 정도가 소요되므로, 1분 정도 대기한 후 페이지를 리프레쉬한다
 몇 분이 지난 후에도 해당 증상이 계속되면, 터미널/Putty를 사용해 장치에 접속하여 아래 명령을 실행하여 내용을 확인한다.
@@ -24,18 +24,18 @@ permalink: /ko/help/troubleshooting.html
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand">   한 개 이상의 센서가 등록되지 않았을 경우</p>
+<p class="dwfqExpand" id= "trbs_discover_sensors">   한 개 이상의 센서가 등록되지 않았을 경우</p>
 
 게이트웨이를 재시작하면 자동적으로 미등록 센서를 등록한다.
 
 <p class="dwfqExpand2"></p>
-<p class="dwfqExpand" id="open">   장치의 IP address를 확인하는 방법</p>
+<p class="dwfqExpand"  id= "trbs_">   장치의 IP address를 확인하는 방법</p>
 1) 스마트폰의 app store에서 `Fing` app을 설치한다. ([Google Play](https://play.google.com/store/apps/details?id=com.overlook.android.fing) / [Apple AppStore](https://itunes.apple.com/kr/app/fing-network-scanner/id430921107?mt=8))
 2) 장치가 연결된 공유기에 WiFi를 이용하여 스마트폰을 연결한다.
 3) `Fing`을 실행하면 공유기에 연결되어 있는 장비의 IP address의 목록이 표시된다. 
 
 <p class="dwfqExpand2"></p>
-<p class="dwfqExpand">   Thing+ Portal에 등록되어 있는 장치가 전원이 들어와 있음에도 불구하고, 상태가 <b>OFF</b> 일 경우</p>
+<p class="dwfqExpand" id= "trbs_time_sync">   Thing+ Portal에 등록되어 있는 장치가 전원이 들어와 있음에도 불구하고, 상태가 <b>OFF</b> 일 경우</p>
 
 터미널/Putty를 사용해 장치에 접속하여 아래 명령을 실행하여 내용을 확인한다.
 장치의 현재 시각이 UTC 시간 기준[(링크)](http://www.worldtimeserver.com/current_time_in_UTC.aspx)과 동일한지 확인한다.
@@ -68,7 +68,7 @@ UTC 시간 기준 [(링크)](http://www.worldtimeserver.com/current_time_in_UTC.
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand">   [Windows][Arduino] <b>./thingplus_device.sh start</b> 에서의 오류 발생 </p>
+<p class="dwfqExpand" id= "trbs_arduino_start_error">   [Windows][Arduino] <b>./thingplus_device.sh start</b> 에서의 오류 발생 </p>
 
 node의 버전 문제 : 아래의 command를 실행하여 버전을 확인합니다.
 
@@ -97,7 +97,7 @@ cd $HOME/thingplus/gateway
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand">   Gateway 등록시 <b>실패</b> 메세지가 발생했습니다. </p>
+<p class="dwfqExpand" id= "trbs_error_gw_register">   Gateway 등록시 <b>실패</b> 메세지가 발생했습니다. </p>
     
 Gateway가 기등록 되었는지 확인 합니다. 
 
@@ -127,7 +127,7 @@ Gateway가 기등록 되었는지 확인 합니다.
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand"> 오픈하드웨어 게이트웨이 구성을 했는데 LED 점멸이 동작하지 않습니다.</p>
+<p class="dwfqExpand"  id= "trbs_led_blink"> 오픈하드웨어 게이트웨이 구성을 했는데 LED 점멸이 동작하지 않습니다.</p>
 
 지속시간과 점멸시간이 잘못 세팅 되진 않았느지 확인이 필요합니다.
 
@@ -161,6 +161,20 @@ blink가 동작 한다면, contact@thingplus.net로 문의 해주세요.
 
 <p class="dwfqExpand2"></p>
 
+<!-- <p class="dwfqExpand" id= "trbs_error_rpc"> 게이트웨이 등록시 rpc error 가 발생합니다.</p>
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id= "trbs_error_key"> key 발급 에러</p>
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id= "trbs_error_rspi"> 라즈베리파이 등록시 에러 : <code>/usr/local/bin/node: not found</code> </p>
+<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id= "trbs_error_install"> 설치시 에러 : <code>./thingplus_embedded_sdk_pi_install.sh: pushd: not found</code> </p>
+<p class="dwfqExpand2"></p>
+ -->
+<!-- <p class="dwfqExpand"></p>
+<p class="dwfqExpand2"></p> -->
 
 <!-- [![arduino ide](/assets/arduino_led_ide.png)](javascript:open_youtube('https://www.youtube.com/embed/IdA3_FA9wLU?enablejsapi=1&amp;origin=http://thingplus.net'))
 

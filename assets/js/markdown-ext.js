@@ -22,7 +22,17 @@ $(document).ready(function(){
       $(this).toggleClass('ui-closed ui-open');
       $(this).toggleClass('line line2');
       });
-
+var locHash = window.location.hash;
+var locPath = window.location.pathname;
+if (locPath.indexOf("faq") != -1 |  locPath.indexOf("troubleshooting") != -1){
+  //console.log(locPath);
+  if (locHash != ""){
+    //console.log(locHash);   
+    $(locHash).nextUntil(".dwfqExpand2").slideToggle();
+    $(locHash).toggleClass('ui-closed ui-open');
+    $(locHash).toggleClass('line line2');
+  }
+}
 });
 
 
