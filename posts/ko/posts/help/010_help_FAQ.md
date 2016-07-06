@@ -3,6 +3,7 @@ title: 자주 묻는 질문
 tags: "help"
 published: true
 img: ic-faq.png
+image: "http://support.thingplus.net/assets/ogp/ogp_faq.png"
 permalink: /ko/help/faq.html
 ---
 
