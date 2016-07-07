@@ -110,8 +110,12 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 
 2) 아래의 다운로드 페이지에서 Raspbian image를 다운로드 합니다.
 
-   - Raspbian Image 다운로드 링크 - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
-   - `2015-09-24-RASPBIAN JESSIE` 이미지 권장
+   - RaspberryPi 2
+     - Raspbian Image 다운로드 링크 - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
+     - `2015-09-24-RASPBIAN JESSIE` 이미지 권장
+   - RaspberryPi 3
+     - Raspbian Image 다운로드 링크 - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/2016-05-27-raspbian-jessie.zip)
+     - `2016-05-27-RASPBIAN JESSIE` 이미지 권장
 
 3) 아래의 웹페이지를 참조하여 Micro SD card에 다운로드 받은 이미지로 OS를 설치합니다.
 
@@ -240,22 +244,39 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 
 1) 라즈베리파이에 접속합니다.
 
-2) 인스톨 스크립트 파일을 다운로드합니다. ([wget 설치](/ko/help/faq.html#faq_install_wget))
+2) 인스톨 스크립트 파일을 다운로드한다. ([wget 설치](/ko/help/faq.html#faq_install_wget))
 
-```bash
-@Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_arduino_install.sh
-```
+- RaspberryPi2
 
+  ```bash
+  @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+  ```
 
-3) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치합니다.
+- RaspberryPi3
+
+  ```bash
+  @Pi3:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi3_install.sh
+  ```
+
+3) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치한다.
 
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
-```bash
-@Pi2:$ sudo su
-@Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
-@Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
-```
+  - RaspberryPi2
+
+  ```bash
+  @Pi2:$ sudo su
+  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+  @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
+  ```
+
+  - RaspberryPi3
+  
+  ```bash
+  @Pi2:$ sudo su
+  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
+  @Pi2:$ ./thingplus_embedded_sdk_pi3_install.sh
+  ```
 
 4) 라즈베리파이를 재시작합니다.
 

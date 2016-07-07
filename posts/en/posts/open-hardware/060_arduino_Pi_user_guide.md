@@ -115,8 +115,13 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 <br/>
 2) Download Raspbian image from below link.
 
-- Raspbian Image Download Link - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
-- We recommend `2015-09-24-RASPBIAN JESSIE` version one.
+   - In case of RaspberryPi 2
+     - Raspbian Image Download Link - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2015-09-28/2015-09-24-raspbian-jessie.zip)
+     - We recommend `2015-09-24-RASPBIAN JESSIE` version one.
+   - In case of RaspberryPi 3
+     - Raspbian Image Download Link - [Raspbian Image](https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-05-31/2016-05-27-raspbian-jessie.zip)
+     - We recommend `2016-05-27-RASPBIAN JESSIE` version one.
+
 
 <br/>
 3) Intall OS on the micro SD card with the donwloaded image. Please refer the below link for more deails about the OS installation.
@@ -254,19 +259,28 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 ---
 
 #### 4. Install ThingPlus Embedded package
+
 1) Run the `Terminal` to Raspberry Pi
 
-<br/>
 2) Download the install script file.
 
-```bash
-@PC:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_arduino_install.sh
-```
-<br/>
+- In case of RaspberryPi2
 
-3) Add excution permission on the script file then Install it.
+  ```bash
+  @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+  ```
 
-- It may take some minutes upon network performance.
+- In case of RaspberryPi3
+
+  ```bash
+  @Pi3:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi3_install.sh
+  ```
+
+3) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
+
+- It can take few minutes to install the Thing+ Embedded Package.
+
+  - In case of RaspberryPi2
 
   ```bash
   @Pi2:$ sudo su
@@ -274,7 +288,15 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
   @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
-<br/>
+  - In case of RaspberryPi3
+  
+  ```bash
+  @Pi2:$ sudo su
+  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
+  @Pi2:$ ./thingplus_embedded_sdk_pi3_install.sh
+  ```
+
+
 4) reboot raspberry pi
 
 ```bash
