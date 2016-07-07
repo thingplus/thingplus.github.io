@@ -273,9 +273,9 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
   - RaspberryPi3
   
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
-  @Pi2:$ ./thingplus_embedded_sdk_pi3_install.sh
+  @Pi3:$ sudo su
+  @Pi3:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
+  @Pi3:$ ./thingplus_embedded_sdk_pi3_install.sh
   ```
 
 4) 라즈베리파이를 재시작합니다.

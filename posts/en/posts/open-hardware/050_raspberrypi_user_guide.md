@@ -235,9 +235,9 @@ Thing+ Integragtion Guide for Raspberry Pi
   - In case of RaspberryPi3
   
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
-  @Pi2:$ ./thingplus_embedded_sdk_pi3_install.sh
+  @Pi3:$ sudo su
+  @Pi3:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
+  @Pi3:$ ./thingplus_embedded_sdk_pi3_install.sh
   ```
 
 6) Reboot Raspberry Pi
