@@ -181,10 +181,10 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 - While installing an application, please Enter `y` for installation questions.
 
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ apt-get update
-  @Pi2:$ apt-get install -y --force-yes ntp ntpdate
-  @Pi2:$ ntpdate -u ntp.ubuntu.com
+  @Pi:$ sudo su
+  @Pi:$ apt-get update
+  @Pi:$ apt-get install -y --force-yes ntp ntpdate
+  @Pi:$ ntpdate -u ntp.ubuntu.com
   ```
 
 - If you failed to update the time, Update it directly.
@@ -192,7 +192,7 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
   - UTC Time zone [(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): ex) 2015/01/01 00:00:00 => 2015-01-01 00:00:00
 
     ```bash
-    @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
+    @Pi:$ date --set '20XX-XX-XX XX:XX:XX'
     ```
 
 <br/>
@@ -203,7 +203,7 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 - Modify `/etc/hostname`.
 
   ```bash
-  @Pi2:$ sudo nano /etc/hostname
+  @Pi:$ sudo nano /etc/hostname
   ```
 
 - Change the `raspberrypi` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
@@ -215,7 +215,7 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 - Modify `/etc/hosts`.
 
   ```bash
-  @Pi2:$ sudo nano /etc/hosts
+  @Pi:$ sudo nano /etc/hosts
   ```
 
 - Change the `raspberrypi` in the file to the same name you changed at before step.
@@ -227,7 +227,7 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 - To apply your modification, please reboot your Raspberry Pi.
 
   ```bash
-  @Pi2:$ sudo reboot
+  @Pi:$ sudo reboot
   ```
 
 <br/>
@@ -237,8 +237,8 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 11) To use micro SD card which has storage bigger than 4GB, Run `raspi-config`.
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ raspi-config
+@Pi:$ sudo su
+@Pi:$ raspi-config
 ```
 
 <br/>
@@ -264,43 +264,25 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 
 2) Download the install script file.
 
-- In case of RaspberryPi2
-
-  ```bash
-  @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
-  ```
-
-- In case of RaspberryPi3
-
-  ```bash
-  @Pi3:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi3_install.sh
-  ```
+```bash
+@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+```
 
 3) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
 
 - It can take few minutes to install the Thing+ Embedded Package.
 
-  - In case of RaspberryPi2
-
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
-  @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
-  ```
-
-  - In case of RaspberryPi3
-  
-  ```bash
-  @Pi3:$ sudo su
-  @Pi3:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
-  @Pi3:$ ./thingplus_embedded_sdk_pi3_install.sh
+  @Pi:$ sudo su
+  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+  @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
 
 4) reboot raspberry pi
 
 ```bash
-@Pi2:$ sudo rebooted
+@Pi:$ sudo rebooted
 ```
 
 

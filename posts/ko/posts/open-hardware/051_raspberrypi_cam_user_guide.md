@@ -98,10 +98,10 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 - 진행 중, 설치를 확인하는 질문에서는 `y`를 입력한다.
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ apt-get update
-@Pi2:$ apt-get install -y --force-yes ntp ntpdate
-@Pi2:$ ntpdate -u ntp.ubuntu.com
+@Pi:$ sudo su
+@Pi:$ apt-get update
+@Pi:$ apt-get install -y --force-yes ntp ntpdate
+@Pi:$ ntpdate -u ntp.ubuntu.com
 ```
 
 - 만약, 시스템 시간 업데이트에 실패할 경우, 직접 시간을 갱신한다.
@@ -109,7 +109,7 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
   - UTC 시간 기준 [(링크)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): 2015년 01월 01일 00:00:00 경우, 2015-01-01 00:00:00
 
     ```bash
-    @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
+    @Pi:$ date --set '20XX-XX-XX XX:XX:XX'
     ```
 
 
@@ -120,7 +120,7 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 - `/etc/hostname`을 수정한다.
 
   ```bash
-  @Pi2:$ sudo nano /etc/hostname
+  @Pi:$ sudo nano /etc/hostname
   ```
 
 - 파일 내부의 `raspberrypi`를 아래 그림과 같이 원하는 이름(알파벳 및 숫자, -만 허용)으로 변경한다.
@@ -133,7 +133,7 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 - `/etc/hosts`를 수정한다.
 
   ```bash
-  @Pi2:$ sudo nano /etc/hosts
+  @Pi:$ sudo nano /etc/hosts
   ```
 
 - 파일 내부의 `raspberrypi`를 아래 그림과 같이 위와 동일한 이름으로 변경한다.
@@ -144,7 +144,7 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 - 변경한 호스트명 적용을 위해 라즈베리파이를 재시작한다.
 
   ```bash
-  @Pi2:$ sudo reboot
+  @Pi:$ sudo reboot
   ```
 
 10) 재부팅이 완료된 라즈베리파이에 재접속한다. ([`7번 과정`](#id-pi-setting-seventh) 참고)
@@ -153,8 +153,8 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 11) Raspberry의 환경설정 설정을 위해서, `raspi-config`를 실행한다.
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ raspi-config
+@Pi:$ sudo su
+@Pi:$ raspi-config
 ```
 
    
@@ -195,42 +195,25 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 
 4) 인스톨 스크립트 파일을 다운로드한다. ([wget 설치](/ko/help/faq.html#faq_install_wget))
 
-- RaspberryPi2
-
-  ```bash
-  @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
-  ```
-
-- RaspberryPi3
-
-  ```bash
-  @Pi3:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi3_install.sh
-  ```
+```bash
+@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+```
 
 5) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치한다.
 
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
-  - RaspberryPi2
-
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
-  @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
+  @Pi:$ sudo su
+  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+  @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
-  - RaspberryPi3
-  
-  ```bash
-  @Pi3:$ sudo su
-  @Pi3:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
-  @Pi3:$ ./thingplus_embedded_sdk_pi3_install.sh
-  ```
 
 6) 라즈베리파이를 재시작한다.
 
 ```bash
-@Pi2:$ sudo reboot
+@Pi:$ sudo reboot
 ```
 
 <div id='id-dropbox'></div>
@@ -243,8 +226,8 @@ _드롭 박스 업로더와 연동 하기 위해 다음의 절차로 설정 한�
 1) key 발급 및 설정
 
 ``` bash
-@Pi2:$ cd /usr/local/bin
-@Pi2:$ ./dropbox_uploader.sh
+@Pi:$ cd /usr/local/bin
+@Pi:$ ./dropbox_uploader.sh
 ```
   - 아래의 가이드 대로 따라 하여 key를 발급 받는다.
   ![uploader.sh](/assets/pi-cam-05.png)

@@ -167,10 +167,10 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 7) 라즈베리파이의 시스템 시간을 업데이트합니다.
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ apt-get update
-@Pi2:$ apt-get install -y --force-yes ntp ntpdate
-@Pi2:$ ntpdate -u ntp.ubuntu.com
+@Pi:$ sudo su
+@Pi:$ apt-get update
+@Pi:$ apt-get install -y --force-yes ntp ntpdate
+@Pi:$ ntpdate -u ntp.ubuntu.com
 ```
 
 - 만약, 시스템 시간 업데이트에 실패할 경우, 직접 시간을 갱신합니다.
@@ -178,7 +178,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
   - UTC 시간 기준 [(링크)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): 2015년 01월 01일 00:00:00 경우, 2015-01-01 00:00:00
 
     ```bash
-    @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
+    @Pi:$ date --set '20XX-XX-XX XX:XX:XX'
     ```
 
 8) 장치 구분을 위해 라즈베리파이의 호스트명 변경이 필요합니다.
@@ -188,7 +188,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
  - `/etc/hostname`을 수정합니다.
 
    ```bash
-   @Pi2:$ sudo nano /etc/hostname
+   @Pi:$ sudo nano /etc/hostname
    ```
 
    - 파일 내부의 `raspberrypi`를 아래 그림과 같이 원하는 이름(알파벳 및 숫자, -만 허용)으로 변경합니다.
@@ -200,7 +200,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
  - `/etc/hosts`를 수정합니다.
 
    ```bash
-   @Pi2:$ sudo nano /etc/hosts
+   @Pi:$ sudo nano /etc/hosts
    ```
 
    - 파일 내부의 `raspberrypi`를 아래 그림과 같이 위와 동일한 이름으로 변경합니다.
@@ -212,7 +212,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 - 변경한 호스트명 적용을 위해 라즈베리파이를 재시작합니다.
 
   ```bash
-  @Pi2:$ sudo reboot
+  @Pi:$ sudo reboot
   ```
 
 9) 재부팅이 완료된 라즈베리파이에 재접속합니다. ([`6번 과정`](#id-pi-setting-seventh) 참고)
@@ -220,8 +220,8 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 10) 4GB 이상의 SD card를 사용하기 위해서, `raspi-config`를 실행한다.
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ raspi-config
+@Pi:$ sudo su
+@Pi:$ raspi-config
 ```
 
 
@@ -246,43 +246,26 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 
 2) 인스톨 스크립트 파일을 다운로드한다. ([wget 설치](/ko/help/faq.html#faq_install_wget))
 
-- RaspberryPi2
+```bash
+@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+```
 
-  ```bash
-  @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
-  ```
-
-- RaspberryPi3
-
-  ```bash
-  @Pi3:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi3_install.sh
-  ```
 
 3) 다운로드한 스크립트 파일에 실행권한을 부여하고 Thing+ Embedded 패키지를 설치한다.
 
 - Thing+ Embedded 패키지를 설치하는데 네트워크 상태에 따라 수분이 소요될 수 있습니다.
 
-  - RaspberryPi2
-
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
-  @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
-  ```
-
-  - RaspberryPi3
-  
-  ```bash
-  @Pi3:$ sudo su
-  @Pi3:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
-  @Pi3:$ ./thingplus_embedded_sdk_pi3_install.sh
+  @Pi:$ sudo su
+  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+  @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
 4) 라즈베리파이를 재시작합니다.
 
-~~~ bash
-@Pi2:$ sudo reboot
-~~~
+``` bash
+@Pi:$ sudo reboot
+```
 <div id='id-register'></div>
 
 

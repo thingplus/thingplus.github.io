@@ -94,10 +94,10 @@ Before you try to do as this guide. you must have account for dropbox.___
 - While installing an application, please Enter `y` for installation questions.
 
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ apt-get update
-  @Pi2:$ apt-get install -y --force-yes ntp ntpdate
-  @Pi2:$ ntpdate -u ntp.ubuntu.com
+  @Pi:$ sudo su
+  @Pi:$ apt-get update
+  @Pi:$ apt-get install -y --force-yes ntp ntpdate
+  @Pi:$ ntpdate -u ntp.ubuntu.com
   ```
 
 - If you failed to update the time, Update it directly.
@@ -105,7 +105,7 @@ Before you try to do as this guide. you must have account for dropbox.___
   - UTC Time zone [(Link)](http://www.worldtimeserver.com/current_time_in_UTC.aspx): ex) 2015/01/01 00:00:00 => 2015-01-01 00:00:00
 
     ```bash
-    @Pi2:$ date --set '20XX-XX-XX XX:XX:XX'
+    @Pi:$ date --set '20XX-XX-XX XX:XX:XX'
     ```
 
 9) To distinguish your Raspberry Pi, you need to modify the hostname of it.
@@ -115,7 +115,7 @@ Before you try to do as this guide. you must have account for dropbox.___
 - Modify `/etc/hostname`.
 
   ```bash
-  @Pi2:$ sudo nano /etc/hostname
+  @Pi:$ sudo nano /etc/hostname
   ```
 
 - Change the `raspberrypi` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
@@ -127,7 +127,7 @@ Before you try to do as this guide. you must have account for dropbox.___
 - Modify `/etc/hosts`.
 
   ```bash
-  @Pi2:$ sudo nano /etc/hosts
+  @Pi:$ sudo nano /etc/hosts
   ```
 
 - Change the `raspberrypi` in the file to the same name you changed at before step.
@@ -139,7 +139,7 @@ Before you try to do as this guide. you must have account for dropbox.___
 - To apply your modification, please reboot your Raspberry Pi.
 
   ```bash
-  @Pi2:$ sudo reboot
+  @Pi:$ sudo reboot
   ```
 
 10) Re-connect to your Raspberry Pi. (Refer [`#7 step`](#id-pi-setting-seventh))
@@ -147,8 +147,8 @@ Before you try to do as this guide. you must have account for dropbox.___
 11) For configration of Environments for Raspberry, Run the `raspi-config`
 
 ```bash
-@Pi2:$ sudo su
-@Pi2:$ raspi-config
+@Pi:$ sudo su
+@Pi:$ raspi-config
 ```
 
    
@@ -187,42 +187,24 @@ Before you try to do as this guide. you must have account for dropbox.___
 
 4) Download a install script file.
 
-- In case of RaspberryPi2
-
-  ```bash
-  @Pi2:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
-  ```
-
-- In case of RaspberryPi3
-
-  ```bash
-  @Pi3:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi3_install.sh
-  ```
+```bash
+@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+```
 
 5) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
 
 - It can take few minutes to install the Thing+ Embedded Package.
 
-  - In case of RaspberryPi2
-
   ```bash
-  @Pi2:$ sudo su
-  @Pi2:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
-  @Pi2:$ ./thingplus_embedded_sdk_pi_install.sh
-  ```
-
-  - In case of RaspberryPi3
-  
-  ```bash
-  @Pi3:$ sudo su
-  @Pi3:$ chmod 755 thingplus_embedded_sdk_pi3_install.sh
-  @Pi3:$ ./thingplus_embedded_sdk_pi3_install.sh
+  @Pi:$ sudo su
+  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
+  @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
 6) Reboot Raspberry Pi
 
 ```bash
-@Pi2:$ sudo reboot
+@Pi:$ sudo reboot
 ```
 
 <div id='id-dropbox'></div>
@@ -235,8 +217,8 @@ _To interation with dropbox, please set up as the following._
 1) Create app key
 
 ``` bash
-@Pi2:$ cd /usr/local/bin
-@Pi2:$ ./dropbox_uploader.sh
+@Pi:$ cd /usr/local/bin
+@Pi:$ ./dropbox_uploader.sh
 ```
   - Create `app key` as the following.
   ![uploader.sh](/assets/pi-cam-05.png)

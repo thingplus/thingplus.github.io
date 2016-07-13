@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 THINGPLUS_PREFIX=/opt/thingplus
 GATEWAY_DIR=$THINGPLUS_PREFIX/gateway
@@ -19,6 +19,9 @@ thingplus_openhardware_pi_install () {
   PI_CAMERA_SOURCE_DIR=openhardware/raspberrypi/camera
   
   pushd .
+
+  rm -rf ~/.node-gyp
+  npm cache clean
 
   cd $INSTALL_DIR/$PI_SOURCE_DIR;
   npm install
@@ -75,11 +78,18 @@ root_permission_check() {
   fi
 }
 
+npm_verify() {
+  npm help > /dev/null
+  return $?
+}
+
 ########## START ##########
 root_permission_check
 
-node --version
-if [ "$?" != "0" ]; then
+INSTALLED_NODE_VERSION="$(node --version)"
+if [ $INSTALLED_NODE_VERSION != v"$NODE_VERSION" ]; then
+  node_install
+elif  ! npm_verify; then
   node_install
 fi
 
