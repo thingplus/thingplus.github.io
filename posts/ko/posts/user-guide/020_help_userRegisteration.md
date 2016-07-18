@@ -97,11 +97,11 @@ _라즈베리파이&아두이노의 경우, 라즈베리가 게이트웨이, 아
 <div class="dwExpand2"></div>
 <br/>
 
-2) 장치의 MAC 어드레스를 얻어 클립보드에 복사한다.
+2) 장치의 Gateway ID 를 얻어 클립보드에 복사한다.
 
 ```bash
-@shell:$ ./getmac
-Your MAC address is as below
+@shell:$ ./getGatewayID.sh
+Your Gateway ID is as below
 xx:xx:xx:xx:xx:xx
 ```
 
