@@ -68,7 +68,7 @@ UTC 시간 기준 [(링크)](http://www.worldtimeserver.com/current_time_in_UTC.
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id= "trbs_arduino_start_error">   [Windows][Arduino] <b>./thingplus_device.sh start</b> 에서의 오류 발생 </p>
+<p class="dwfqExpand" id= "trbs_arduino_start_error">   [Windows][Arduino] <b>./thingplus.sh start</b> 에서의 오류 발생 </p>
 
 node의 버전 문제 : 아래의 command를 실행하여 버전을 확인합니다.
 
@@ -161,10 +161,25 @@ blink가 동작 한다면, contact@thingplus.net로 문의 해주세요.
 
 <p class="dwfqExpand2"></p>
 
-<!-- <p class="dwfqExpand" id= "trbs_error_rpc"> 게이트웨이 등록시 rpc error 가 발생합니다.</p>
+<p class="dwfqExpand" id= "trbs_error_rpc"> 게이트웨이 등록시 rpc error 가 발생합니다.</p>
+
+- 게이트웨이 등록시에 rpc timeout 이 나는 경우는 게이트웨이와 cloud 가 통신을 하고 있지 않은 상태입니다.
+
+  1. APIKEY가 정상적으로 입력이 되지 않았거나
+  2. thingplus_device.sh / thingplus.sh 가 실행되지 않았거나
+  3. 게이트웨이에 네트웍이 연결되지 않은 경우 중에 하나 일것 같습니다.
+
+- 어떤 문제가 있는지 로그를 확인하는 방법은 아래와 같습니다.
+
+  ```bash
+  $ tail -F -n 300 /opt/thingplus/gateway/log/thingplus.log
+  ```
+
+- 확인해보시고 이상점을 찾기 어려우시면, 로그를 저희에게 보내주시면 확인해보겠습니다.
+
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id= "trbs_error_key"> key 발급 에러</p>
+<!-- <p class="dwfqExpand" id= "trbs_error_key"> key 발급 에러</p>
 <p class="dwfqExpand2"></p>
 
 <p class="dwfqExpand" id= "trbs_error_rspi"> 라즈베리파이 등록시 에러 : <code>/usr/local/bin/node: not found</code> </p>
