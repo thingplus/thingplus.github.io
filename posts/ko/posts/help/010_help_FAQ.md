@@ -201,6 +201,42 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
 
 <p class="dwfqExpand2"></p>
 
+<p class="dwfqExpand" id = "faq_sensorAct"> 다른 서버나 서비스에 command나 value를 전달 할 수는 없나요?</p>
+
+- 네, 가능합니다. string-actuator를 사용하면 원하는 값이나 command를 작성하여 전달 하실수 있습니다.
+
+- device agent에서 string-actuator를 등록합니다. 현재 `/opt/thingplus/openhardware`에서 `git pull` 하시면 적용됩니다.
+
+  - [참고](https://github.com/daliworks/openhardware/commit/10c4cdf81bbe3098d496fdc2a77512314d84ae44)
+
+- gateway model은 `open souce hardware` 를 선택하셔서 게이트웨이 등록을 합니다.
+
+  ![register-open_source_hardware](/assets/openSourceHW_reg.png)
+
+- device agent 에서 string-actuator.js 부분을 수정합니다. 아래 예제 코드를 참고해주세요
+
+  - option.text가 actuator를 실행할때 입력했던 문자를 받아옵니다.
+
+  - 아래 예제는 입력한 값을 `slack`에 보내주는 예제입니다.
+
+```javascript
+StringActuator.prototype.doCommand = function(name, cmd, options) {
+  if (options.text) {
+    console.log('YOUR TEXT IS');
+    console.log(options.text);
+    
+     var cmd = 'curl -X POST --data-urlencode \'payload={"channel": "#channel", "username": "userName", "text": "'+options.text+'", "icon_emoji": ":ghost:"}\' https://hooks.slack.com/services/xxxxxxxxxxxxxxxxxxx';
+     console.log(cmd);
+     exec(cmd);
+  
+  }
+};
+```
+
+- thingplus_device.sh restart 와 Thingplus.sh restart를 실행해줍니다.
+
+<p class="dwfqExpand2"></p>
+
 <!-- <p class="dwfqExpand" id = "faq_Withdrawal"> 회원 탈퇴는 어떻게 할 수 있나요?</p>
 <p class="dwfqExpand2"></p> -->
 
