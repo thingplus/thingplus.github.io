@@ -7,7 +7,7 @@ img: ic-arduino.png
 permalink: /ko/open-hardware/arduino-noSSL-user-guide.html
 ---
 
-Thing+ 연동가이드(아두이노 - NoneSSL)<br/>
+Thing+ 연동가이드(아두이노 & Non-SSL)<br/>
 <div id='id-ide'></div>
 
 1. [아두이노 IDE 설치](#id-ide)
@@ -82,6 +82,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - ArduinoJson
     - PubSubClient
     - Time
+    - Timer
 
   - thingplus library
     - `Scketch -> Include Library -> Manage Libraries...`
@@ -89,23 +90,33 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
       ![Arduino_json](/assets/arduino_json.png)
       ![Arduino Lib](/assets/arduino_lib.png)
       <div class="dwExpand2"></div>  
+
   - ArduinoJson
     - `Scketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > ArduinoJson > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_json](/assets/arduino_json_search.png)
       <div class="dwExpand2"></div>
+
   - PubSubClient
     - `Scketch -> Include Library -> Manage Libraries...`  
       <p class="dwExpand">- 검색 > PubSubClient > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Pubsub](/assets/arduino_pubsub_search.png)
       <div class="dwExpand2"></div>
+
   - Time 
     - `Scketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > timekeep > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Time](/assets/arduino_time_search.png)
+      <div class="dwExpand2"></div>
+
+  - Timer
+    - [라이브러리 다운로드 받기](https://github.com/JChristensen/Timer/archive/master.zip) 
+    - `Scketch -> Include Library -> Add .ZIP Library...`
+      <p class="dwExpand">- download 받은 zip 파일 로드</p>
+      ![Arduino_timer](/assets/arduino_lib_timer.png)
       <div class="dwExpand2"></div>
 
 <br/>

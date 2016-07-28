@@ -7,7 +7,7 @@ img: ic-arduino.png
 permalink: /en/open-hardware/arduino-noSSL-user-guide.html
 ---
 
-Thing+ Guide for Arduino(Arduino with NoneSSL)<br/>
+Thing+ Guide for Arduino(Arduino with Non-SSL)<br/>
 <div id='id-ide'></div>
 
 1. [ Install Arduino IDE](#id-ide)
@@ -84,6 +84,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     - ArduinoJson
     - PubSubClient
     - Time
+    - Timer
 
   - thingplus Library
     - `Scketch -> Include Library -> Manage Libraries...`
@@ -109,8 +110,15 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Time](/assets/arduino_time_search.png)
       <div class="dwExpand2"></div>
+  - Timer
+    - [Download `Timer` Library](https://github.com/JChristensen/Timer/archive/master.zip) 
+    - `Scketch -> Include Library -> Add .ZIP Library...`
+      <p class="dwExpand">- To load downloaded .zip file</p>
+      ![Arduino_timer](/assets/arduino_lib_timer.png)
+      <div class="dwExpand2"></div>
 
 <br/>
+
 2) Modify header file in PubSubClient 
 
   - Arduino Library Directory Path
