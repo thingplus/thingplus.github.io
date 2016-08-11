@@ -16,7 +16,8 @@
               <img src="/assets/index/{{ post.img }}">
             </div>
             <div class="intro-box-bottom">
-              {{ post.title }}
+              {{ post.title }} &nbsp;
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </div>
           </a>
         </div>
@@ -43,7 +44,8 @@
               <img src="/assets/index/{{ post.img }}">
             </div>
             <div class="op-box-bottom">
-              {{ post.title | remove: "사용자 가이드" | remove: "User Guide" | remove: "module -"}}            
+              {{ post.title | remove: "사용자 가이드" | remove: "User Guide" | remove: "module -"}} &nbsp;
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>           
             </div>
           </a>
         </div>
@@ -56,7 +58,7 @@
 <br/><br/>
 <!-- REST API -->
 <div class="intro-container">
-  <div class="title"> <img src="/assets/index/ic-help.png"> {{ site.data.i18n[page.lang].submenu_rest-api }}</div>
+  <div class="title"> { } {{ site.data.i18n[page.lang].submenu_rest-api }}</div>
   <div class="row">
   {% for post in posts %}
     {% if post.title != 'ThingPlus' and post.tags contains 'rest-api' %} 
@@ -70,7 +72,8 @@
               <img src="/assets/index/{{ post.img }}">
             </div>
             <div class="intro-box-bottom">
-              {{ post.title }}
+              {{ post.title }} &nbsp;
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </div>
           </a>
         </div>
@@ -83,7 +86,7 @@
 <br/><br/>
 <!-- FAQ  -->
 <div class="intro-container">
-  <div class="title"><img src="/assets/index/ic-userguide.png"> {{ site.data.i18n[page.lang].submenu_help }}</div>
+  <div class="title"><img src="/assets/index/ic-help.png"> {{ site.data.i18n[page.lang].submenu_help }}</div>
   <div class="row">
   {% for post in posts %}
     {% if post.title != 'ThingPlus' and post.tags contains 'help' %} 
@@ -97,7 +100,8 @@
               <img src="/assets/index/{{ post.img }}">
             </div>
             <div class="intro-box-bottom">
-              {{ post.title }}
+              {{ post.title }} &nbsp;
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </div>
           </a>
         </div>

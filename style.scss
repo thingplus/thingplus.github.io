@@ -261,7 +261,7 @@ nav {
 
   .intro-box {
     border-radius: 3px;
-    background-color: #e0e5ee;
+    border: solid 1px #78a3cd;
     margin: 12px 0px 12px 0px;
     // padding-top: 30px;
     // padding-bottom: 30px;
@@ -273,7 +273,7 @@ nav {
 
     &:hover, &:active {
         .intro-box-top {
-          background-color: #212735;
+          background-color: #cde5f9;
           height: 134px;
         }
         .video_icon {
@@ -282,10 +282,9 @@ nav {
 
         .intro-box-bottom {
           height: 72px;
-          background-color: #fbc400;
           font-family: AppleSDGothicNeo-Regular, $nanumGothic;
           font-size: 16px;
-          color: #333333;
+          color: #ffffff;
         }
       }
 
@@ -295,7 +294,7 @@ nav {
     }
     
     .intro-box-top {
-      background-color: #bec9d2;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -313,7 +312,9 @@ nav {
       align-items: center;
       font-family: AppleSDGothicNeo-Regular, $nanumGothic;
       font-size: 16px;
-      color: #333333;
+      color: #ffffff;
+      background-color: #4e87c0;
+      border-top: solid 1px #78a3cd;
     }
   }
 }
@@ -328,7 +329,7 @@ nav {
 
   .op-box {
     border-radius: 3px;
-    border-color: #e8e8e8;
+    border: solid 1px #78a3cd;
     border-width: 1px;
     border-style: solid;
     background-color: #e0e5ee;
@@ -341,15 +342,16 @@ nav {
 
     &:hover, &:active {
         .op-box-top {
-          background-color: #212735;
+          background-color: #cde5f9;
           height: 134px;
         }
         .video_icon {
             background: url(/assets/index/ic-video.png)  no-repeat;
          }
         .op-box-bottom {
-          height: 72px;
-          background-color: #fbc400;
+          font-family: AppleSDGothicNeo-Regular, $nanumGothic;
+          font-size: 16px;
+          color: #ffffff;
         }
       }
 
@@ -359,7 +361,7 @@ nav {
     }
     
     .op-box-top {
-      background-color: #f4f7fc;
+      background-color: #ffffff;
       height: 134px;
       // padding-top: 40px;
       // padding-bottom: 40px;
@@ -379,7 +381,9 @@ nav {
       align-items: center;
       font-family: AppleSDGothicNeo-Regular, $nanumGothic;
       font-size: 16px;
-      color: #333333;
+      background-color: #4e87c0;
+      color: #ffffff;
+      border-top: solid 1px #78a3cd;
     }
   }
 }

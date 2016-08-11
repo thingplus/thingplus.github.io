@@ -225,9 +225,14 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
     console.log('YOUR TEXT IS');
     console.log(options.text);
     
-     var cmd = 'curl -X POST --data-urlencode \'payload={"channel": "#channel", "username": "userName", "text": "'+options.text+'", "icon_emoji": ":ghost:"}\' https://hooks.slack.com/services/xxxxxxxxxxxxxxxxxxx';
-     console.log(cmd);
-     exec(cmd);
+    var username = 'Thingplus', 
+        channel = '#random',
+        emo_icon = ':ghost:',
+        webHookURL = 'https://hooks.slack.com/services/xxxxxxxxxxxx';
+
+    var cmd = 'curl -X POST --data-urlencode \'payload={"channel": "'+channel+'", "username": "'+username+'", "text": "'+options.text+'", "icon_emoji": "'+emo_icon+'"}\' '+webHookURL ;
+    console.log(cmd);
+  exec(cmd);
   
   }
 };
