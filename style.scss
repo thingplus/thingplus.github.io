@@ -262,10 +262,12 @@ nav {
   .intro-box {
     border-radius: 3px;
     border: solid 1px #78a3cd;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #e0e5ee;
     margin: 12px 0px 12px 0px;
-    // padding-top: 30px;
-    // padding-bottom: 30px;
     text-align: center;
+
 
     .video_icon {
         background: url(/assets/index/ic-video-black.png)  no-repeat;
@@ -301,7 +303,8 @@ nav {
       height: 134px;
       padding-top: 30px;
       padding-bottom: 30px;
-
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
     }
 
     .intro-box-bottom {

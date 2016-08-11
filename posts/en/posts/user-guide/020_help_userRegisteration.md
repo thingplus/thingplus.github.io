@@ -1,5 +1,5 @@
 ---
-title: Hardware installation and service registration
+title: Gateway registration
 tags: "user-guide"
 published: true
 img : ic-hwinstall.png

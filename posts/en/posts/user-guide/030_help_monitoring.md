@@ -1,5 +1,5 @@
 ---
-title: "Guide for functions"
+title: "Main features"
 tags: "user-guide"
 published: true
 img: ic-guideforfunction.png
