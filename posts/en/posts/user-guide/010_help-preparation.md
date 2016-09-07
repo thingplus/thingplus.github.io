@@ -1,5 +1,5 @@
 ---
-title: "Instruction"
+title: “Overview”
 tags: "user-guide"
 published: true
 img : ic-instruction.png
@@ -7,7 +7,7 @@ video: "yes"
 permalink: /en/user-guide/preparation.html
 ---
 
-Guide for Thing+ service.
+Overview for usage of Thing+ services
 
 1. [Before you start ](#id-starting)
 2. [Terminology ](#id-term) 
@@ -27,21 +27,25 @@ Guide for Thing+ service.
 <br>
 
 #### What is Thing+?
-  * ThingPlus provide user own IoT(Internet of Things) service by cloud.
-  * User own IoT service by sign in Thing+. 
-  * Install IoT service by synchronization between Thing+ and qualified hardware.  
-  * Cloud Eco environment such as smart home, smart farm, smart energy and so on.
+  * ThingPlus is a cloud-based IoT service for your Things
+  * Sign into Thing+ to begin using the service
+  * The service is installed through synchronization between Thing+ and qualified hardware
+  * Usage examples:
+    - Smart Home
+    - Smart Farming
+    - Energy conservation & measurement
+    - Etc..
 
-#### How useful tool named Thing+?
-* User can experience IoT eco environment by simple installation with cost competitiveness.
-* Check detail case to use various applications.  [Click](http://www.daliworks.net/?page_id=94&lang=en)
+#### What can I do with Thing+?
+* Simple, cost effective installation and instant access to a powerful API that allows you to create IoT solutions for real world problems
+* See here for detailed use cases: [Click](http://www.daliworks.net/?page_id=94&lang=en)
 
-#### Start Thing+ by simple progress.
-  *	Sign in Thing+ portal.
-  *	Connect Thing+ by purchasing accessible hardware.
-  *	Monitor and analyze data generated from sensors.
-  *	Control sensors by rule design for customer needs.
-  *	Access to Thing+ without physical limitation.
+#### Thing+ Simple Startup
+  *	Sign into the Thing+ portal
+  *	Connect compatible hardware to Thing+
+  *	Monitor and analyze data generated from sensors
+  *	Control sensors via rule design/API following customer needs
+  *	Note: Thing+ use is not limited in any way
  
 <br>
 
@@ -52,48 +56,48 @@ Guide for Thing+ service.
 <br>
 
 #### Service, Site
-* Thing+ can manage separately by service and site.
-  - For	example, Monitor ambient temperature in classrooms for school.
-    - Deploy a school as service. 
-    - Set each classroom as a site.
-    - Install and register temperature sensor for each site. 
-    - Students from each classroom sign in Thing+ portal. 
-    - Each student can get temperature data from each class by access Thing+ portal.
-* Service also can be provided for company.
-* Service will have separated URL such as {service name}.thingplus.net.  
-  - For exmaple, smarthome.thingplus.net, hello.thingplus.net and so on.
-* Service can create and manage internal sites.  
-  - For exmaple, smart-home service owner can control its own sites from each building setting such as #101, #102, #103.  
-* Site cannot authorize or share information for other site.
-* Site can authorize users and gateway.  
+* Thing+ can be managed separately as either a service or a site.
+  - For	example, consider monitoring the ambient temperature in a school classroom:
+    - Deploy a the school as a "service" on Thing+ 
+    - Set each classroom as a "site"
+    - Install and register a temperature sensor at each site
+    - Teachers from each classroom can sign in using the Thing+ portal
+    - Each teacher could directly get temperature data about their class using the Thing+ portal, and rules could be set up to perform actions based on a class's temperature
+* Services can also be provided directly as a package to companies.
+* Services will have separated URLs where they can be directly accessed - {service name}.thingplus.net.  
+  Eg. smarthome.thingplus.net, hello.thingplus.net and so on.
+* Services can also create and manage internal sites.  
+  - For exmaple, a smart-home service owner could control each building on it's own divided by building number - #101, #102, #103.  
+* Sites cannot authorize or share information with other sites.
+* Sites can authorize users and gateways. 
 
-#### Manager, User
-* Manager can be separated between service manager and site manager.  
-  - Service manager can get all authorization for internal service. 
-  - Site manager can get all authorization for internal site. 
-  - User means registered in site, manager will allow user for access to specific gateway.
+#### Managers & Users
+* Managers can be separated into a service manager and a site manager.  
+  - Service managers have total authorization for internal services. 
+  - Site managers can get authorization for specific internal sites. 
+  - Users refer to those registered on the thingplus site, where a manager will allow users access to specific information and specific gateways.
 
-#### Gateway, device, sensor 
-* Hardware has three property as gateway > Device > sensor.
-    - For exmaple, Rasberrypie > Aduido > temperature sensor
-    - For exmaple, Smartphone > Bluetooth > 3-Axes sensor 
-* Gateway has Thing+ Embedded(Gateway or Device) and connects Thing+ Cloud.
-* Gateway can send and receive signals from connected devices.
-* Device has sensors and connects gateway for wire or wireless network.
-* Sensor consists of 'Sensor' receives data and 'Actuator' controls switchs, camera and so on.
-  - For example, Sensor - temperature, humidity, illumination and so on 
-  - For exmaple, Actuator – light switch, Power switch, Camera and so on. 
+#### Gateway, Device, Sensor 
+* Hardware can be divided into three categories: Gateways > Devices > Sensors.
+    Eg. Rasberrypie > Aduido > temperature sensor
+    Eg. Smartphone > Bluetooth > 3-Axis sensor 
+* Gateways have Thing+ Embedded(Gateway or Device) and can connect directly with the Thing+ Cloud.
+* Gateways can send and receive signals from connected devices.
+* Devices have sensors and connect directly to a gateway via wired or a wireless network.
+* Sensors consist of 'Sensors' that receive data and 'Actuators' that can control switchs, cameras and so on.
+    Eg. Sensor - temperature, humidity, illumination and so on 
+    Eg. Actuator – light switch, Power switch, Camera and so on. 
 
-#### Tag
-* Tag allows grouping for logical sensors. 
-  - For example, smart-home groups 3 CO2 sensors for each apartment from #101, #102, #103 by our apartment tagging. 
+#### Tags
+* Tags allow grouping for logical sensors. 
+  - For example, a smart-home groups 3 CO2 sensors for each apartment from #101, #102, #103 via tagging
 
-#### Rule
-* Rule will run for customer need by setting limit on data.  
-  - For exaple, Receive SNS message for fire alarm. Run air cleaner for high CO2 level.  
+#### Rules
+* Rules are used to automatically create action or limit data based on customer needs. 
+    Eg. Receive an SNS message from a fire alarm. Run an air cleaner on detection of high CO2 levels
 
 #### Timeline
-* Timeline records all events that generated rule.  
+* The timeline records all events that generate rules and is a central location to access time-sensitive data.  
 
 <br>
 

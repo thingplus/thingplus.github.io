@@ -6,17 +6,15 @@ img: ic-faq.png
 permalink: /en/help/faq.html
 ---
 
-Answer for frequently asked questionaires.
+* Q. I don't know anything about IoT, can I use Thing+?
 
-* Q. Do not have enough knowledeg on IoT, can I use Thing+?
+* Q. Who built Thing+?
 
-* Q. Who build Thing+?
+* Q. How long can Thing+ be used for?
 
-* Q. How long we can use Thing+?
+* Q. How much does Thing+ cost?
 
-* Q. price quotation of Thing+?
-
-* Q. How to set line chart on Dash board? 
+* Q. How do I set up a line chart to appear on the Dash board? 
   - Click set icon for upper side <i class="fa fa-cog fa-lg"></i> of widget.
   - Click "time zone" on right side of "Set widget" screen. Can set up to 24 hours. 
 
