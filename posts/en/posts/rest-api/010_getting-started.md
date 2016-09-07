@@ -1,5 +1,5 @@
 ---
-title: Tutorial
+title: Getting Started
 tags: "rest-api"
 published: true
 img: ic-tutorial.png
@@ -10,7 +10,7 @@ Getting Started with the Thing+ REST API
 <div id='id-step0'></div>
 
 1. [Thing+ Service registration & Hardware installation](#id-step0)
-2. [Prerequisite](#id-step1)
+2. [Prerequisites](#id-step1)
 3. [Using the Thing+ REST API with an OAuth Access token](#id-step2)
 4. [Try some APIs](#id-step3)
 5. [Code Samples](#id-step4)
@@ -21,41 +21,41 @@ Getting Started with the Thing+ REST API
 ## Step 1. Thing+ Service registration & Hardware installation
 
 ### Step 1-1
-  - Thing+ service registration is required
+  - Thing+ service registration is required before you start
     - <a href="http://support.thingplus.net/en/user-guide/registration.html" target="_blank">Thing+ service registration</a>
 
 ### Step 1-2
-  - Hardware installation is required
-    - [Available Sensor List of Open Hardware](/en/open-hardware/openhardware-list.html)
+  - Hardware installation/procurement is next
+    - [List of Available Open Hardware](/en/open-hardware/openhardware-list.html)
 
 <div id='id-step1'></div>
 
-## Step 2. Prerequisite
+## Step 2. Prerequisites
 
 ### Step 2-1. Postman for getting started with the Thing+ REST API
   - Install <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a>
   - Install <a href="https://www.getpostman.com/docs/introduction" target="_blank">Postman</a>
-    - <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" target="_blank">Direct link for Chrome browser user</a>
-    - You don't need to sign up, click the 'Go to the app' button
+    - <a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop" target="_blank">Direct link for Chrome browser users</a>
+    - You don't need to sign up, just click the 'Go to the app' button
       <br> ![import](/assets/postman-first-launch.png)
     - Postman guide
-      - <a href="https://www.getpostman.com/docs/launch" target="_blank">Launch Postman</a> and <a href="https://www.getpostman.com/docs/requests" target="_blank">Sending requests</a>
+      - <a href="https://www.getpostman.com/docs/launch" target="_blank">Launching Postman</a> and <a href="https://www.getpostman.com/docs/requests" target="_blank"> sending requests</a>
 
 ### Step 2-2. Import a Postman collection
   1. Click the 'Import' button
 <br> ![import](/assets/import.png)
 <br><br>
-  2. Select the 'Download from link'
+  2. Select 'Download from link'
 <br>![import link](/assets/import-link.png)
-    - Add a below link
+    - Add the below link
       - https://www.getpostman.com/collections/f1c2d8efb311d579eff6
     - Click the 'Import' button
 <br><br>
-  3. Close the modal
+  3. Close the module
 
 ### Step 2-3. Check the imported collection
 
-  1. Select 'Collections' tab and select 'Getting Started with the Thing+ REST API' collection
+  1. Select the 'Collections' tab and then select the 'Getting Started with the Thing+ REST API' collection
 
 <br/>
 <div id='id-step1-4'></div>
@@ -63,9 +63,9 @@ Getting Started with the Thing+ REST API
 ![collection](/assets/collection.png)
 
 
-### Step 2-4. Creating a Thing+ OAuth Client ID & Client Secret
+### Step 2-4. Creating a Thing+ OAuth Client ID & Client Secret Key
 
-1. Open Chrome browser on Chrome browser of a compute and <a href="https://www.thingplus.net/#/login" target="_blank">Sign in </a> to Thing+ Portal
+1. Open Chrome browser and <a href="https://www.thingplus.net/#/login" target="_blank">Sign in </a> to the Thing+ Portal
 <br> ![interceptor enable](/assets/sign-in.png)
 <br><br>
 2. Launch Postman

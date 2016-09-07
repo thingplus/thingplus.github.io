@@ -1,12 +1,12 @@
 ---
-title: "Management guide"
+title: "Management Guide"
 tags: "user-guide"
 published: true
 img : ic-management.png
 permalink: /en/user-guide/management.html
 ---
 
-Guide for service, site, user and gateway.  
+Guides covering service, site, user and gateway management.  
 
 1. [Service Management](#id-service-management)
 2. [Site Managment](#id-site-management)
@@ -17,77 +17,74 @@ Guide for service, site, user and gateway.
 <div id='id-service-management'></div>
 
 ### Service Management
-**Function for Service manager.**
+**Functions for managing an entire service.**
 
-#### Display informaton 
-Can set service management.
+#### Overview
+You can set up service management related settings here.
 
-#### Normal Setting
-Can set normal setting.
+#### General Settings
 
-* `Name`: Display name of service. Service name will be displayed on right upper side of portal.
-* `Contact`: mail for web push alarm and related information. Contact will be displayed as a link of contact on below side of portal.
-* `Detail Explanation`: Detail explanation of service. Will be displayed at Log-in screen and Sign up screen.
-* `Service logo`: Put url of your own logo which will be displayed at Log-in screen and Sign up screen, if you have. If not, service name will be dispalyed.
-* `Service Hompage`: Put url of your own homepage or help page which will be displayed at Log-in screen and Sign up screen.
+* `Name`: Display name of the service. Service name will be displayed on right upper side of the portal.
+* `Contact`: mail for web push alarms and related information. Contact information will be displayed as a contact link at the bottom of the portal page.
+* `Detailed Explanation`: Detailed explanation of the service. Will be displayed at the Log-in screen and Sign up screen.
+* `Service logo`: Put the url of your own logo which will be displayed at both the Log-in screen and Sign up screen, if they exist. If not, service name will be displayed.
+* `Service Hompage`: Include the url of your own homepage or help page which will be displayed at both the Log-in screen and Sign up screen.
 
-#### Dashboard setting
-* Add/change `widget list` on dash board.
-* Selected widget list will be diplayed on bottom of dashboard page.  
+#### Dashboard Settings
+* From here, you can Add/change the list of widgets that will be displayed on your dashboard
+* This widget list will also be displayed at the bottom of your dashboard page
 
-#### Rule setting
-* Add/change `trigger and action list` of rule command.
-* Rule creation page will display selected trigger and action.  
+#### Rule Settings
+* Add/change the `trigger and action list` for site-wide rules
+* Via the rule creation page, you can display selected actions and triggers
 
 
 ---
 <div id='id-site-management'></div>
 
 ### Site Mangement
-**Function for site manager.**
+**Management options for site managers.**
 
-#### Display information 
-Create and change the site.
+#### Overview
 
-* Display the list of sites.  
-* Check name and code of each site by click.
+* Here, you can display a full list of sites
+* Via clicking on an item, you can display the site's name and code
 
-#### Select site
-* Select site by click site name. Only selected site will be dispalyed.
+#### Selecting a Site
+* By selecting a specific site, you can drill down to a more detailed view
 
-#### Regisiter site  
-* Move site registration page by click <i class="fa fa-plus-circle"></i> button on right upper side of page.
-* Can registor site by plug in site name and code.  
-* Select service options by registering site.  
-* Service option will be saved. 
+#### Regisiter a Site  
+* You can move directly to the site registration page by clicking the <i class="fa fa-plus-circle"></i> button on the right upper side of page
+* Can register a site by entering a unique site name and code pair 
+* Select your desired service options
 
 <br>
 
 ---
 <div id='id-user-management'></div>
 
-### User management
-**Function for service ans site manager.**
+### User Management
+**Functions created to support the management of end users.**
 ![](/assets/en_5_m_user0.png)
 
-#### Display information
+#### Overview
 ![](/assets/en_5_user_m.png)
 
-* Check list of users on sites of service. 
+* You can drill down to a list of users on a per-site basis
 
-#### Select Site
-* Select site on top  of ①site name. Click site and user list on selected site.  
+#### Selecting a Site
+* Select a via it's ① site name
 
 #### User List
-* Can find user list on ②each site.
-* Edit ④User ID, ⑤e-mail, ⑥Authorization on ③User list. (If Authorized)  
+* ② each site contains it's own user list, which can be accessed here
+* You can directly edit or view ④ User IDs, ⑤ E-mail, ⑥ Authorizations via the ③User list. (If authorized to do so)
 
-#### User Management
-* Manager edit authorization for user's limited access.  
-  -  EX. Display gateway, Authorization of gateway setting 
-* Reset password
-* User authoriziation/unathorization
-* Remove user
+#### Editing Users
+* Managers can edit authorization to limit the access of each user
+  -  EX. You want to allow user(s) to view a gateway... in this case you would need to enable authorization for gateway viewing
+* Reset user passwords
+* User authoriziation/de-athorization
+* Removing users
 
 <br>
 
@@ -95,46 +92,46 @@ Create and change the site.
 <div id='id-gateway-management'></div>
 
 ### Gateway management
-**Fuction for site and gateway.**
+**Fuctions related to usage and editing of gateways.**
 ![](/assets/en_5_m_gateway0.png)
 
-#### Dispaly screen
+#### Overview
 ![](/assets/en_5_m_gateway.png)
 
 #### Gateway
-* Site name
-* Gateway name
+* Site name - the site that a given gateway is attached to
+* Gateway name - the unique name for each gateway
 
-#### Gateway list
-* Basic information of gateway 
+#### Gateway List Overview
+* Basic information related to each gateway 
   - ID
   - Registration data
   - Name
-  - Term of transmitting data 
-  - Automatic add on search list 
-    - Decide automatically adding sensor list of gateway.  
-* Additional Options
+  - Data update interval 
+  - Discovery / Neighborhood search list
+    - Automatically creates a list of sensors within range of the gateway that you may potentially wish to attach to the gateway 
+* Additional Options.
   - Location
   - E-mail
-  - Mobile
-  - Detail information
-* Add sensor and device 
-* Remove gateway/device/sensor 
-* Software managment  
-  - Version info of software
-  - Update version of software
-* Rerun gateway
+  - Mobile #
+  - Detailed information
+* Directly add a sensor and device
+* Remove gateways/devices/sensors
+* Software Management 
+  - Version info for currently installed software
+  - Potential versions of software that can be updated to
+* Restart a gateway
 
 <br>
 
-#### Gateway registration 
+#### Gateway Registration Process 
 ![](/assets/en_5_m_gateway2.png)
 
-1. Click <i class="fa fa-plus-circle"></i> button on right top side to add a new gateway
-* Select ①gateway  model and device model.
-* Put ②gateway ID, and ③name.
-* Check activating sensor.
-* Select ④registration site.
+* To begin the registration process click the <i class="fa fa-plus-circle"></i> button on the right top side to add a new gateway
+* Select ① Gateway/Device model
+* Enter a ② gateway ID, and ③ name
+* Check sensors you would like to immediately attach to the gateway
+* Select the ④ site of registration
 
 <br>
 
