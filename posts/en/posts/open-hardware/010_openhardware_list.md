@@ -87,7 +87,7 @@ Open Hardware List
 <br/>
 
 ### 5. Arduino 
-- Arduino compatible board(uno, orange board, etc)
+- Arduino compatible board(uno, orange board, ESP8266, Boards using ARM CORETEX-M chip-set etc)
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
 
 <p class="dwExpand">  Sensor Kit </p>

@@ -85,7 +85,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 <br/>
 
 ### 4. 아두이노
-- 아두이노(우노, 오렌지보드 등) 지원
+- 아두이노(우노, 오렌지보드, ESP8266, ARM CORETEX-M chip-set을 사용하는 bord 등) 지원
 - [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
 
 <p class="dwExpand"> 센서 구입경로 </p>   
