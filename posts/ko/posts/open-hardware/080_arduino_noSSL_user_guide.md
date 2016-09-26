@@ -28,6 +28,12 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 ---
 
+#### Thingplus 아두이노 라이브러리 호환보드
+
+- Arduino Board / Orange Board
+- ESP8266
+- ARM CORETEX-M chip을 사용하는 보드 
+
 #### 1. 아두이노 IDE 설치
 
 1) 사용하는 PC OS버전에 맞는 아두이노 IDE를 설치합니다. 1.6.9 이상의 버전을 권장 합니다.

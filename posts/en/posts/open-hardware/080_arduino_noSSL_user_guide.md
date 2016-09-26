@@ -30,6 +30,12 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 
 ---
 
+#### Compatible Board for Thingplus Arduino Library
+
+- Arduino Board / Orange Board
+- ESP8266
+- Board using ARM CORETEX-M chip
+
 #### 1.  Install Arduino IDE
 
 1) nstall Arduino IDE upon PC OS environment. Please use above version. 1.6.9. 
