@@ -36,6 +36,8 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 - ESP8266
 - Board using ARM CORETEX-M chip
 
+<br/>
+
 #### 1.  Install Arduino IDE
 
 1) nstall Arduino IDE upon PC OS environment. Please use above version. 1.6.9. 
