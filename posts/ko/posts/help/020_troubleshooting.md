@@ -179,6 +179,14 @@ blink가 동작 한다면, contact@thingplus.net로 문의 해주세요.
 
 <p class="dwfqExpand2"></p>
 
+<p class="dwfqExpand" id= "trbs_arduino_actuator"> arduino guide 를 따라하고 있는데 led 점등이 되지 않습니다.</p>
+
+- PubSubClient 에서 MQTT_MAX_PACKET_SIZE와 MQTT_KEEPALIVE의 설정값을 변경했는지 확인해주세요.
+
+- [참조](../open-hardware/arduino-noSSL-user-guide.html#id-pubsub)
+
+<p class="dwfqExpand2"></p>
+
 <!-- <p class="dwfqExpand" id= "trbs_error_key"> key 발급 에러</p>
 <p class="dwfqExpand2"></p>
 

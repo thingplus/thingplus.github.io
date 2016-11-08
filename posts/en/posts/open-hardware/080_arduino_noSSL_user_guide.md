@@ -125,7 +125,9 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
       ![Arduino_timer](/assets/arduino_lib_timer.png)
       <div class="dwExpand2"></div>
 
+
 <br/>
+<div id='id-pubsub'></div>
 
 2) Modify header file in PubSubClient 
 
@@ -138,9 +140,11 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     ```
   
   - open _**LibrayPath**/PubSubClient/src/PubSubClient.h_ and modify as the following.
-    - MQTT_MAX_PACKET_SIZE 196
-    - MQTT_KEEPALIVE 120
+    - `MQTT_MAX_PACKET_SIZE 196`
+    - `MQTT_KEEPALIVE 120`
     ![Arduino_Edit_Pubsub](/assets/arduino_edit_pubsub.png)
+
+> Notice : If you didn't modify this part, actuator will be not works.
 
 <div id='id-gateway'></div>
 

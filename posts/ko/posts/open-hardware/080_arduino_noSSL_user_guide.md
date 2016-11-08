@@ -128,6 +128,8 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
       <div class="dwExpand2"></div>
 
 <br/>
+<div id='id-pubsub'></div>
+
 2) PubSubClient 의 header 파일 수정
 
   - Arduino Library Directory Path
@@ -139,9 +141,12 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     ```
   
   - _**LibrayPath**/PubSubClient/src/PubSubClient.h_ 파일을 열어서 아래 부분을 수정합니다.
-    - MQTT_MAX_PACKET_SIZE 196
-    - MQTT_KEEPALIVE 120
+
+    - `MQTT_MAX_PACKET_SIZE 196`
+    - `MQTT_KEEPALIVE 120`
     ![Arduino_Edit_Pubsub](/assets/arduino_edit_pubsub.png)
+
+> 주의 : 이 부분을 수정하지 않으면 actuator의 동작이 실행이 되지 않습니다.
 
 <div id='id-gateway'></div>
 
