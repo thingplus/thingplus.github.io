@@ -66,7 +66,7 @@ Getting Started with the Thing+ REST API
 
 ### Step 2-4. Creating a Thing+ OAuth Client ID & Client Secret
 
-1. Open Chrome browser on Chrome browser of a compute and <a href="https://www.thingplus.net/#/login" target="_blank">Sign in </a> to Thing+ Portal
+1. Open Chrome browser then <a href="https://www.thingplus.net/#/login" target="_blank">Sign in </a> to Thing+ Portal
 <br> ![interceptor enable](/assets/sign-in.png)
 <br><br>
 2. Launch Postman

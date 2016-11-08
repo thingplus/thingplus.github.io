@@ -144,6 +144,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
     - `MQTT_MAX_PACKET_SIZE 196`
     - `MQTT_KEEPALIVE 120`
+    
     ![Arduino_Edit_Pubsub](/assets/arduino_edit_pubsub.png)
 
 > 주의 : 이 부분을 수정하지 않으면 actuator의 동작이 실행이 되지 않습니다.
