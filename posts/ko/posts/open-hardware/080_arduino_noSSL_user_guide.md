@@ -31,7 +31,8 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 #### Thingplus 아두이노 라이브러리 호환보드
 
 - Arduino Board / Orange Board
-- ESP8266
+- ESP8266 (without Aruino board)
+- Aruino WizFi250
 - ARM CORETEX-M chip을 사용하는 보드 
 
 <br/>
@@ -50,10 +51,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 1) 아두이노와 PC를 USB로 연결 합니다.
 
-  - 본 예제에서는 LED와 Temperature만 연결 합니다. Grove shield에 아래와 같이 연결 합니다.
-  ![Arduino Select Port](/assets/arduino_hw2.png)
-  
-  - LED는 D8에, Temperature는 A0 에 연결 합니다.
+  - 아래와 같이 센서를 연결합니다.
   ![Arduino Select Port](/assets/arduino_hw1.png)
   
   - Ethernet Shield 후면에 있는 mac address를 확인합니다.
@@ -92,7 +90,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - Time
     - Timer
 
-  - thingplus library
+  - thingplus library (v1.0.7 이상)
     - `Scketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > thingplus > install</p>
       ![Arduino_json](/assets/arduino_json.png)
@@ -158,9 +156,14 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 1) 게이트웨이 키 발급 및 센서등록
 
-  - _**LibrayPath**/Thingplus/examples/ReadTemperatureWriteLed/ReadTemperatureWriteLed.ino_ 을 선택하면 arduino SDK에서 열립니다.
-    - 예제 파일에 led와 temperature 에 대한 내용을 추가했습니다. 다른 센서를 추가 하거나 다른 동작을 시키길 원하시면 해당 부분을 수정/추가 해주시면 됩니다.
-    - 예제 에서는 온도센서는 A0에, LED는 GPIO8로 설정했습니다. **예제의 LED는 blink와 duration이 동작 하지 않습니다.** 
+  - _**LibrayPath**/Thingplus/examples/_ 에 3개의 예제가 있습니다.(v1.0.7 기준)
+    - ArduinoEthernet : Aruino를 ethernet shield를 이용해 연동하는 경우 사용
+    - ArduinoWizFi250 : Wiznet의 wifi 모듈인 WizFi250을 Arduino와 함께 사용하는 경우
+    - ESP8266 : ESP8266에 프로그램을 직접로드해서 사용하는 경우(without Arduino board) 
+  - 본 가이드에서는 Arduino board에 ethernet 연결 예제 이므로 `LibrayPath/Thingplus/examples/ArduinoEthernet/ArduinoEthernet.ino` 를 사용 합니다.
+  - _ArduinoEthernet.ino_ 를 선택하면 arduino SDK에서 열립니다.
+    - 예제 파일에 없는 다른 센서를 추가 하거나 다른 동작을 시키길 원하시면 해당 부분을 수정/추가 해주시면 됩니다.
+ 
 <br/>
 
   - Ethernet Shield에서 확인한 mac address를 사용하여 thingplus portal에서 APIKEY를 발급 받습니다.
@@ -199,20 +202,21 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     ![Arduino  Register Finish](/assets/arduino_reg_finish.png)
 <br/>
 
-    - [게이트웨이관리로 이동합니다.](https://iot.thingplus.net/#/gatewaymgmt)    
+    - [게이트웨이관리로 이동합니다.](https://iot.thingplus.net/#/gatewaymgmt)  
     
     - 아래와 같이 센서 아이디가 보입니다.
     ![Arduino  Sensor ID](/assets/arduino_sensor_id.png)
 <br/>
 
-  - _ReadTemperatureWriteLed.ino_ 파일에 해당 내용을 업데이트 합니다.
+  - _ArduinoEthernet.ino_ 파일에 해당 내용을 업데이트 합니다.
     - mac 부분에 mac address를 2자리씩 끊어서 `0x`와 함께 입력합니다.
     ![Arduino mac address input](/assets/arduino_id_input.png) 
 
-    - 복사한 API KEY를 수정하던 ReadTemperatureWriteLed.ino 파일에 붙여 넣습니다. 
+    - 복사한 API KEY를 수정하던 _ArduinoEthernet.ino_ 파일에 붙여 넣습니다. 
     ![Arduino APIKEY Register](/assets/arduino_key_reg.png)
-    - 해당 센서 아이디를 변경 해줍니다.
-    ![Arduino Setting](/assets/arduino_seonsor_id_input.png)
+
+    - 해당 센서 아이디를 변경 해줍니다. (00000000000 대신 mac address를 넣어줍니다.)
+    ![Arduino Setting](/assets/arduino_sensor_id_input.png)
  
  > 주의 : 
  > 위 예제의 gatewayID와 api key 등을 노출 한것은 이해를 돕기 위한것입니다. 

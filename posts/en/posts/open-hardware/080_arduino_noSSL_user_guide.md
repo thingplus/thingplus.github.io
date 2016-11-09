@@ -211,7 +211,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     ![Arduino APIKEY Register](/assets/arduino_key_reg.png)
 
     - Update sensor ID 
-    ![Arduino Setting](/assets/arduino_seonsor_id_input.png)
+    ![Arduino Setting](/assets/arduino_sensor_id_input.png)
  
  > Notice : 
  > The `Gateway ID` and `API KEY` is just for help to understand.
