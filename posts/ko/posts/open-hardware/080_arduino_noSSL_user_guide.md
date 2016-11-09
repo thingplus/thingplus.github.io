@@ -215,7 +215,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - 복사한 API KEY를 수정하던 _ArduinoEthernet.ino_ 파일에 붙여 넣습니다. 
     ![Arduino APIKEY Register](/assets/arduino_key_reg.png)
 
-    - 해당 센서 아이디를 변경 해줍니다. (00000000000 대신 mac address를 넣어줍니다.)
+    - 해당 센서 아이디를 변경 해줍니다. (`00000000000` 대신 `mac address`를 넣어줍니다.)
     ![Arduino Setting](/assets/arduino_sensor_id_input.png)
  
  > 주의 : 

@@ -33,14 +33,15 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 #### Compatible Board for Thingplus Arduino Library
 
 - Arduino Board / Orange Board
-- ESP8266
+- ESP8266 (without Aruino board)
+- Aruino WizFi250
 - Board using ARM CORETEX-M chip
 
 <br/>
 
 #### 1.  Install Arduino IDE
 
-1) nstall Arduino IDE upon PC OS environment. Please use above version. 1.6.9. 
+1) Install Arduino IDE upon PC OS environment. Please use above version. 1.6.9. 
 
    - [Download Link](https://www.arduino.cc/en/Main/Software)
 
@@ -52,10 +53,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 
 1) Connect Arduino and PC.
 
-  - In this example, We will support only LED and Temperature sensor. Connect with Grove shield as the belows.
-  ![Arduino Select Port](/assets/arduino_hw2.png)
-  
-  - Connect LED is D8 and Temperature is A0.
+  - Connect sensors as the following.
   ![Arduino Select Port](/assets/arduino_hw1.png)
   
   - Check mac address at bottom of Ethernet Shield 
@@ -94,7 +92,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     - Time
     - Timer
 
-  - thingplus Library
+  - thingplus Library (above. v1.0.7)
     - `Scketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- Search > thingplus > install</p>
       ![Arduino_json](/assets/arduino_json.png)
@@ -156,9 +154,13 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 
 1) Get API key and register sensors
 
-  - open _**LibrayPath**/Thingplus/examples/ReadTemperatureWriteLed/ReadTemperatureWriteLed.ino_ on Arduino IDE
-    - In example file, we added script about led and temperature sensors. If you want to add `another sensors or another actions`, then modify/add the scripts. 
-    - In example, Temperature is setted to A0 and LED is setted to GPIO8 **In LED of example code, blink and duration does not works.** 
+  - There are 3 examples in _**LibrayPath**/Thingplus/examples/_ (above thingplus library v1.0.7)
+    - ArduinoEthernet : For Aruino + ethernet shield
+    - ArduinoWizFi250 : For Arduino + WizFi250(wifi module of Wiznet)
+    - ESP8266 : For ESP8266 (without Arduino board)
+  - This guide is guide of Arduino+Ethernet, so we use `LibrayPath/Thingplus/examples/ArduinoEthernet/ArduinoEthernet.ino`.
+  -  If you want to add `another sensors or another actions`, then modify/add the scripts. 
+
 <br/>
 
   - Get API KEY in thingplus portal using mac address. (you might checked mac address on Ethernet Shield)
@@ -210,7 +212,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     - Update api key : update using `Copied API KEY`. 
     ![Arduino APIKEY Register](/assets/arduino_key_reg.png)
 
-    - Update sensor ID 
+    - Update sensor ID (input `mac address` in place of `00000000000`)
     ![Arduino Setting](/assets/arduino_sensor_id_input.png)
  
  > Notice : 
