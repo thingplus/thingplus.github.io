@@ -29,6 +29,25 @@ REST APIs
 
 <br>
 
+## Recommendation
+
+  - Whenever you send a request by using Rest API, you can receive a **Cookie**, like this, **dwTPlus=__COOKIE_STRING__** at a **set-cookie** field of response hedaer.
+
+    ```
+    HTTP response header
+    set-cookie: dwTPlus=__COOKIE_STRING__;
+    ```
+
+  - If you add the **Cookie** at request header like this, **cookie: dwTPlus=__COOKIE_STRING__**, you can get an improvement of API resonse speed.
+
+    ```
+    HTTP request header
+    Cookie: dwTPlus=__COOKIE_STRING__;
+    ```
+
+
+<br>
+
 ## Base url
 
     https://api.thingplus.net/v1
@@ -257,7 +276,7 @@ __Sub Parameters of statFunc__
 | id            | string        | __Required__ Statistics function id. Now only "seriesStat" is available.
 | timeUnit      | string        | Time unit of statistics data - hour, day(default), week, month, year
 | subFunc       | string        | Function to apply for the data in each time unit. Functions are count, min, max, sum, avg, range, diff, first, last.
-
+| timeInerval   | string        | Time interval of statistics data. Now only for "hour" timeUnit. 2, 3, 4, 6, 8, 12 are available. If you enter other numbers which is not included in the numbers, you will receive a result of 1hour interval.
 
 __Request URL__
 
@@ -299,11 +318,6 @@ Response has series and the series has data and _meta.
     "id": "series.sensor.-krKlN",
     "data": [
       {
-        "_id": {
-          "year": 2015,
-          "month": 8,
-          "day": 11
-        },
         "count": 12035,
         "btime": {
           "year": 2015,
@@ -312,11 +326,6 @@ Response has series and the series has data and _meta.
         }
       },
       {
-        "_id": {
-          "year": 2015,
-          "month": 8,
-          "day": 12
-        },
         "count": 1665,
         "btime": {
           "year": 2015,
