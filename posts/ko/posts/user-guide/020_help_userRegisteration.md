@@ -83,7 +83,7 @@ _라즈베리파이&아두이노의 경우, 라즈베리가 게이트웨이, 아
 <br/>
 1) Thing+ Embedded 패키지가 설치된 디렉토리의 `scripts` 디렉토리로 이동한다.
 
-<p class="dwExpand" > 비글본그린/라즈베리파이/에디슨의 경우 타겟보드의 접속 후에 이동</p>
+<p class="dwExpand" > 비글본그린/라즈베리파이/에디슨/비글본에의 경우 타겟보드의 접속 후에 이동</p>
 
 ```bash
 @shell:$ cd /opt/thingplus/gateway/scripts
@@ -135,7 +135,7 @@ xx:xx:xx:xx:xx:xx
 ![select_gateway_model_openhw](/assets/openhw_gw_model.png)
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" > 비글본그린의 경우: <b>BeagleBone Green - Developer</b></p>
+<p class="dwExpand" > 비글본그린/비글본에의 경우: <b>BeagleBone Green - Developer</b></p>
 
 ![select_gateway_model_bbg](/assets/bbg_gw_model.png)
 
@@ -211,6 +211,17 @@ xx:xx:xx:xx:xx:xx
     
 ```bash
 @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+
+<p class="dwExpand" > 비글본에어의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
+    
+```bash
+@shell:$ cd /opt/thingplus/openhardware/bba/grove-starter-kit
 @shell:$ ./thingplus_device.sh start
 @shell:$ cd /opt/thingplus/gateway
 @shell:$ APIKEY='복사한 API 키' ./thingplus.sh start
@@ -309,6 +320,22 @@ exit 0
 
 <div class="dwExpand2"></div>
 
+<p class="dwExpand" > 비글본에어의 경우 </p>
+
+
+```bash
+@shell:$ nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/bba/grove-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+ 
+exit 0
+```
+
+- 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.
+
+<div class="dwExpand2"></div>
+
 <p class="dwExpand" > 라즈베리파이 + 아두이노 의 경우 </p>
 
 ```bash
@@ -343,7 +370,7 @@ exit 0
 <p class="dwExpand" > 라즈베리파이의 경우: <b>With Camera module</b></p>
 ![select_devicemodel](/assets/rasp_cam_dm.png)
 <div class="dwExpand2"></div>
-<p class="dwExpand" > 비글본그린의 경우: <b>Grove Starter Kit for BeagleBone Green</b></p>
+<p class="dwExpand" > 비글본그린/에의 경우: <b>Grove Starter Kit for BeagleBone Green</b></p>
 ![select_devicemodel](/assets/select_devicemodel_beagle_ko.png)
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 아두이노의 경우: <b>Grove Starter Kit for arduino </b></p>

@@ -111,4 +111,32 @@
   </div>
 </div> 
 <div class="clearfix"></div>
+<br/><br/>
+<!-- Tutorial -->
+<div class="intro-container">
+  <div class="title"><img src="/assets/index/ic-tutorial-icon.png"> {{ site.data.i18n[page.lang].submenu_tutorial }}</div>
+  <div class="row">
+  {% for post in posts %}
+    {% if post.title != 'ThingPlus' and post.tags contains 'tutorial' %} 
+      <div class="col-xs-12 col-sm-4">
+        <div class="intro-box">
+          <a href="{{ post.url }}" class="{{ post.lang }}">
+            <div class="intro-box-top">
+            {% if post.video == "yes" %}
+            <div class="video_icon"> </div>
+            {% endif %}
+              <img src="/assets/index/{{ post.img }}">
+            </div>
+            <div class="intro-box-bottom">
+              {{ post.title }} &nbsp;
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div> 
+<div class="clearfix"></div>
 

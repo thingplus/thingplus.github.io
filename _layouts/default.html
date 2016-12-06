@@ -201,6 +201,23 @@
                 {% endfor %}
                 </ul>
               </li>   
+              <!-- Tutorial  -->
+              <li><a href="#">{{ site.data.i18n[page.lang].submenu_tutorial }}</a>
+                <ul>
+                {% assign posts = site.pages | where:"lang", page.lang %} 
+                {% for post in posts %} 
+                  {% if post.title != 'ThingPlus' and post.tags contains 'tutorial' %} 
+                    {% assign current = nil %} 
+                    {% if page.url contains post.url %} 
+                      {% assign current = 'active' %} 
+                    {% endif %}
+                    <li data-section="{{ post.url }}" class="{{ current }} lang">
+                      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+              </li>   
               <!-- register and FaceBook -->
                                          
               <li><div class="register">{{site.data.i18n[page.lang].make_iot}}

@@ -82,7 +82,7 @@ _In the case of raspberry pi & Arduino, the Raspberry Pi is a "Gateway" and Ardu
 <br/>
 1) Go to the `scripts`directory of the directory where your Thing+ Embedded package was installed.
 
-<p class="dwExpand" > For BeagleBon Black/Raspberry Pi 2 / Edison</p>
+<p class="dwExpand" > For BeagleBon Black/Raspberry Pi 2 / Edison어 / Beaglebone Air</p>
 
 - Connect to your device over SSH and go to the `scripts` directory
 
@@ -139,7 +139,7 @@ xx:xx:xx:xx:xx:xx
 ![select_gateway_model_open](/assets/openhw_gw_model.png)
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" > For BeagleBone Green: <b>BeagleBone Green - Developer</b></p>
+<p class="dwExpand" > For BeagleBone Green어/Beaglebone Air: <b>BeagleBone Green - Developer</b></p>
 
 ![select_gateway_model_bbg](/assets/bbg_gw_model.png)
 
@@ -219,6 +219,18 @@ xx:xx:xx:xx:xx:xx
 ```
 
 <div class="dwExpand2"></div>
+
+<p class="dwExpand" > For BeagleBone Air</p>
+
+```bash
+@shell:$ cd /opt/thingplus/openhardware/bba/grove-starter-kit
+@shell:$ ./thingplus_device.sh start
+@shell:$ cd /opt/thingplus/gateway
+@shell:$ APIKEY='copied_api_key' ./thingplus.sh start
+```
+
+<div class="dwExpand2"></div>
+
 <p class="dwExpand" > For Arduino (<b>Mac PC</b>)</p>
 
 ```bash
@@ -311,6 +323,22 @@ exit 0
 - Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
 
 <div class="dwExpand2"></div>
+
+<p class="dwExpand" >  For BeagleBone Air</p>
+
+```bash
+@shell:$ nano /etc/rc.local
+...
+(cd /opt/thingplus/openhardware/bba/grove-starter-kit; ./thingplus_device.sh restart)
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+
+exit 0
+```
+
+- Press `CTRL-O` and Enter to overwrite the changes and press `CTRL-X` to close the file you've modified.
+
+<div class="dwExpand2"></div>
+
 <p class="dwExpand" >  For Raspberry Pi + Arduino</p>
 
 ```bash
@@ -347,7 +375,7 @@ exit 0
 <p class="dwExpand" > For Raspberry Pi 2: <b>With Camera module</b></p>
 ![select_devicemodel](/assets/rasp_cam_dm.png)
 <div class="dwExpand2"></div>
-<p class="dwExpand" > For BeagleBone Black: <b>Grove Starter Kit for BeagleBone Green</b></p>
+<p class="dwExpand" > For BeagleBone Green/Beaglebone Air: <b>Grove Starter Kit for BeagleBone Green</b></p>
 ![select_devicemodel](/assets/select_devicemodel_beagle_en.png)
 <div class="dwExpand2"></div>
 <p class="dwExpand" > For Arduino: <b>Grove Kit</b></p>

@@ -156,6 +156,7 @@ Thing+ Integration Guide for BeagleBone Green
 ```bash
 @BBG:$ reboot
 ```
+
 <div id='id-register'></div>
 
 <br/><br/>

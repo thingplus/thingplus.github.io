@@ -1,17 +1,17 @@
 ---
-title: 아두이노 사용자 가이드 
+title: NodeMCU 사용자 가이드 
 tags: "open-hardware"
 published: true
-image: "http://support.thingplus.net/assets/ogp/ogp_arduino.png"
-img: ic-arduino.png
-permalink: /ko/open-hardware/arduino-noSSL-user-guide.html
+image: "http://support.thingplus.net/assets/ogp/ogp_esp8266.png"
+img: ic-esp-8266.png
+permalink: /ko/open-hardware/nodemcu-user-guide.html
 ---
 
-Thing+ 연동가이드(아두이노 & Non-SSL)<br/>
+Thing+ 연동가이드(NodeMCU)<br/>
 <div id='id-ide'></div>
 
 1. [아두이노 IDE 설치](#id-ide)
-2. [아두이노 단말 환경 세팅](#id-setting)
+2. [NodeMCU 단말 환경 세팅](#id-setting)
 3. [아두이노 펌웨어 설치](#id-firmware)
 4. [게이트웨이 등록](#id-gateway)
 5. [펌웨어 빌드 및 실행](#id-build)
@@ -32,10 +32,13 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 - Arduino Board / Orange Board
 - ESP8266 (without Aruino board)
-- Aruino WizFi250
+- Arduino WizFi250
 - NodeMCU
 - ARM CORETEX-M chip을 사용하는 보드 
 
+<br/>
+**_본 가이드에서는 ESP8266 과 NodeMCU의 연동 방법을 다룹니다._**
+**_NodeMCU를 기준으로 다룰 것이며, ESP8266은 같은 방법으로 참고하시면 됩니다. ESP8266은 3.3v 이기 때문에 이점 주의해주세요_**
 <br/>
 
 #### 1. 아두이노 IDE 설치
@@ -48,33 +51,33 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 <br/>
 
-#### 2. 아두이노 단말 환경 세팅
+#### 2. NodeMCU 단말 환경 세팅
 
-1) 아두이노와 PC를 USB로 연결 합니다.
-
-  - 아래와 같이 센서를 연결합니다.
-  ![Arduino Select Port](/assets/arduino_hw1.png)
+1) 본 가이드에서는 LED와 온도센서만 연결합니다.
   
-  - Ethernet Shield 후면에 있는 mac address를 확인합니다.
-  ![Arduino Mac Address](/assets/arduino-mac-address.png)
+  - LED는 grove led를 사용하였고 온도센서는 grove temperature 센서를 사용하였습니다.
+  
+    ![](/assets/nodemcu_sensors.png)
 
-  - Arduino Uno(Orange Board) 와 grove shield 연결 하고 그위에 Ethernet shield를 연결 합니다.
-  ![Arduino Select Port](/assets/arduino_hw3.png)
+2) 센서를 연결 합니다.
 
-  - Ethernet Port에 Lan 선을 연결하고, USB port를 PC와 연결 합니다.
-  ![Arduino Select Port](/assets/arduino_hw4.png)
+  - temperature의 `SIG`를 `A0`에 연결하고 `VCC`와 `GND`를 연결합니다.
+  
+  - LED의 `SIG`를 `D1`에 연결하고 `VCC`와 `GND`를 연결합니다.
+
+  - PC와 NodeMCU를 usb cable로 연결 합니다.
+
+<br/>
+
+3) 아누이노 IDE를 실행합니다.
 
 <br/>
 
-2) 아누이노 IDE를 실행합니다.
+4) 아두이노 IDE에서 board와 port를 선택합니다. 
 
+   - Tools -> Board -> NodeMCU 1.0
 
-<br/>
-3) 아두이노 IDE에서 아두이노 포트를 USB로 선택합니다. (windows에서는 COMxx 입니다.)
-
-   - Tools -> Port -> Arduino/Genuino Uno
-
-     ![Arduino Select Port](/assets/arduino_port.png)
+     ![Arduino Select Port](/assets/nodeMCU_setboard.png)
 
 <div id='id-firmware'></div>
 
@@ -91,7 +94,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - Time
     - Timer
 
-  - thingplus library (v1.0.7 이상)
+  - thingplus library (v1.0.9 이상)
     - `Scketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > thingplus > install</p>
       ![Arduino_json](/assets/arduino_json.png)
@@ -160,15 +163,20 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
   - _**LibrayPath**/Thingplus/examples/_ 에 3개의 예제가 있습니다.(v1.0.7 기준)
     - ArduinoEthernet : Aruino를 ethernet shield를 이용해 연동하는 경우 사용
     - ArduinoWizFi250 : Wiznet의 wifi 모듈인 WizFi250을 Arduino와 함께 사용하는 경우
-    - ESP8266 : ESP8266에 프로그램을 직접로드해서 사용하는 경우(without Arduino board) 
-  - 본 가이드에서는 Arduino board에 ethernet 연결 예제 이므로 `LibrayPath/Thingplus/examples/ArduinoEthernet/ArduinoEthernet.ino` 를 사용 합니다.
-  - _ArduinoEthernet.ino_ 를 선택하면 arduino SDK에서 열립니다.
+    - ESP8266 : ESP8266에 프로그램을 직접로드해서 사용하는 경우(without Arduino board), NodeMCU 사용. 
+  - 본 가이드에서는 NodeMCU 예제 이므로 `LibrayPath/Thingplus/examples/Esp8266/Esp8266.ino` 를 사용 합니다.
+  - _Esp8266.ino_ 를 선택하면 arduino SDK에서 열립니다.
     - 예제 파일에 없는 다른 센서를 추가 하거나 다른 동작을 시키길 원하시면 해당 부분을 수정/추가 해주시면 됩니다.
  
 <br/>
+  
+  - NodeMCU의 Mac address를 확인합니다.
+    - _Esp8266.ino_ 파일에서 수정 없이 그대로 upload 합니다.
+    - upload가 완료되면 serial monitor를 엽니다.
+    - serial Monitor에 나오는 Mac address를 메모해둡니다.
 
-  - Ethernet Shield에서 확인한 mac address를 사용하여 thingplus portal에서 APIKEY를 발급 받습니다.
-    - 확인된 mac address가 `11-FF-1F-F9-03-DF` 라는 예로 설명을 드리겠습니다.
+  - 확인한 mac address를 사용하여 thingplus portal에서 APIKEY를 발급 받습니다.
+    - 확인된 mac address가 `3C:D1:EF:1D:1D:2E` 라는 예로 설명을 드리겠습니다.
 
     - https://iot.thingplus.net/ > 로그인 > 설정 > 게이트웨이 관리
     ![Arduino Register](/assets/arduino_register.png)
@@ -179,14 +187,14 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 <br/>
 
 
-    - Gateway ID에 확인된 mac address를 입력합니다. 
+    - Gateway ID에 확인된 mac address를 입력합니다.(serial monotor에서 copy 했다면 그대로 붙여넣어도 됩니다.) 
 
     - `API KEY 발급 받기` 버튼을 선택합니다.
-    ![Arduino Get APIKEY](/assets/arduino_getAPIkey.png)
+    ![Arduino Get APIKEY](/assets/NodeMCU_getapikey.png)
 <br/>
 
     - 아래 30일 기한의 API KEY가 발급되었습니다. **API KEY를 복사 합니다.**
-    ![Arduino APIKEY](/assets/arduino_apikey.png)
+    ![Arduino APIKEY](/assets/NodeMCU_regGW.png)
 <br/>
 
     - `게이트웨이 등록` 버튼을 선택합니다.
@@ -196,7 +204,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - device model은 `grove startkit for Arduino`로 선택합니다.
 
     - device 이름을 적습니다.
-    ![Arduino  Register](/assets/arduino_Register_form.png)
+    ![Arduino  Register](/assets/NodeMCU_inputName.png)
 <br/>
 
     - 하단의 `게이트웨이 등록하기` 버튼을 선택합니다.
@@ -206,18 +214,16 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - [게이트웨이관리로 이동합니다.](https://iot.thingplus.net/#/gatewaymgmt)  
     
     - 아래와 같이 센서 아이디가 보입니다.
-    ![Arduino  Sensor ID](/assets/arduino_sensor_id.png)
+    ![Arduino  Sensor ID](/assets/NodeMCU_sensorId.png)
 <br/>
 
-  - _ArduinoEthernet.ino_ 파일에 해당 내용을 업데이트 합니다.
-    - mac 부분에 mac address를 2자리씩 끊어서 `0x`와 함께 입력합니다.
-    ![Arduino mac address input](/assets/arduino_id_input.png) 
+  - _Esp8266.ino_ 파일에 해당 내용을 업데이트 합니다.
 
-    - 복사한 API KEY를 수정하던 _ArduinoEthernet.ino_ 파일에 붙여 넣습니다. 
-    ![Arduino APIKEY Register](/assets/arduino_key_reg.png)
+    - 복사한 API KEY를 수정하던 _Esp8266.ino_ 파일에 붙여 넣습니다. 
+    - 해당 센서 아이디를 변경 해줍니다. (위에서 확인한 id를 입력합니다.)
+    ![Arduino APIKEY Register](/assets/NodeMCU_inoset.png)
 
-    - 해당 센서 아이디를 변경 해줍니다. (`00000000000` 대신 `mac address`를 넣어줍니다.)
-    ![Arduino Setting](/assets/arduino_sensor_id_input.png)
+
  
  > 주의 : 
  > 위 예제의 gatewayID와 api key 등을 노출 한것은 이해를 돕기 위한것입니다. 
@@ -232,12 +238,12 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 1) 펌웨어를 빌드합니다.
 
-![Arduino Verify](/assets/arduino_build.png)
+![Arduino Verify](/assets/NodeMCU_complile.png)
 
 <br/>
 2) 펌웨어를 아두이노에 업로드 합니다.
 
-![Arduino Download](/assets/arduino_upload.png)
+![Arduino Download](/assets/NodeMCU_upload.png)
 
 <br/>
 3) 펌웨어가 정상적으로 다운로드 되면 IDE 하단에 아래와 같은 메세지가 나옵니다.

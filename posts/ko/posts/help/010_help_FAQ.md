@@ -84,14 +84,6 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_without_pc"> 아두이노를 컴퓨터 없이 wifi를 이용해 사용 가능 한가요?</p>
-
-아두이노 + WiFi쉴드만을 이용하시면 Thingplus Cloud에 연결을 할 수 없습니다.
-Thingplus Cloud와 하드웨어 사이에는 SSL을 통한 암호화된 채널을 사용하고 있습니다.
-아두이노는 8비트 MCU로 컴퓨팅파워가 부족하기 때문에 SSL을 사용할 수 없어, 아두이노와 Thingplus Cloud와의 직접 연결은 불가능 합니다.
-
-<p class="dwfqExpand2"></p>
-
 <p class="dwfqExpand" id ="faq_oauth2"> OAuth2 가 뭔가요?</p>
 
 웹, 모바일 앱 등 어플리케이션에서 권한 인증을 수행할 수 있는 표준 방법인 오픈 프로토콜입니다. 
@@ -126,7 +118,7 @@ Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이
 게이트웨이를 구별 할 수 있는 unique 한 ID를 사용한 건데요.
 UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할것입니다. 
 현재 오픈하드웨어는 모두 mac address를 id로 사용하고 있습니다. 
-그리고 그러한 혼란을 막기 위해 getmac이라는 script를 getGatewayId로 변경했고(아직 공개되진 않았습니다.) guide에서도 mac adress라는 단어를 지양하려고 합니다.
+그리고 그러한 혼란을 막기 위해 getmac이라는 script를 getGatewayId로 변경했습니다. guide에서도 mac adress라는 단어를 지양하려고 합니다.
 
 <p class="dwfqExpand2"></p>
 
@@ -238,7 +230,7 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
 };
 ```
 
-- thingplus_device.sh restart 와 Thingplus.sh restart를 실행해줍니다.
+- `thingplus_device.sh restart` 와 `thingplus.sh restart`를 실행해줍니다.
 
 <p class="dwfqExpand2"></p>
 
