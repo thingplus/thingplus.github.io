@@ -247,7 +247,7 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 2) 인스톨 스크립트 파일을 다운로드한다. ([wget 설치](/ko/help/faq.html#faq_install_wget))
 
 ```bash
-@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_arduino_install.sh
 ```
 
 
@@ -257,8 +257,8 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 
   ```bash
   @Pi:$ sudo su
-  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
-  @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
+  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_arduino_install.sh
+  @Pi:$ ./thingplus_embedded_sdk_pi_arduino_install.sh
   ```
 
 4) 라즈베리파이를 재시작합니다.

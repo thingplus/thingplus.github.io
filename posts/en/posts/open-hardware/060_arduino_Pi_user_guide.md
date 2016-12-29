@@ -265,7 +265,7 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 2) Download the install script file.
 
 ```bash
-@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install.sh
+@Pi:$ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_arduino_install.sh
 ```
 
 3) Grant a run permission to the script you downloaded and Install the Thing+ Embedded Package.
@@ -274,8 +274,8 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 
   ```bash
   @Pi:$ sudo su
-  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_install.sh
-  @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
+  @Pi:$ chmod 755 thingplus_embedded_sdk_pi_arduino_install.sh
+  @Pi:$ ./thingplus_embedded_sdk_pi_arduino_install.sh
   ```
 
 
