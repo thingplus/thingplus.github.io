@@ -111,7 +111,7 @@ Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id ="faq_gatewayID"> 게이트웨이 ID가 컴퓨터 맥주소인거같은데 왜 게이트웨이 ID라고 명명하는지 궁금합니다 </p>
+<p class="dwfqExpand" id ="faq_gatewayID"> 게이트웨이 ID가 컴퓨터 맥주소인것 같은데 왜 게이트웨이 ID라고 명명하는지 궁금합니다 </p>
 
 꼭 게이트웨이 ID가 mac address이어야 하는 것은 아닙니다. 
 
@@ -122,20 +122,72 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
 
 <p class="dwfqExpand2"></p>
 
-<!-- <p class="dwfqExpand" id = "faq_raspberry_b"> 라즈베리파이 1 B+ 을 사용하고 싶습니다.</p>
+<p class="dwfqExpand" id = "faq_raspberry_b"> 라즈베리파이 1 B+ 을 사용하고 싶습니다.</p>
+
+- `라즈베리파이 1 B+`를 사용하기 위해서는 [Guide](http://support.thingplus.net/ko/open-hardware/raspberry-pi-user-guide.html)를 참고하세요.
+
+- `2-4` 에서 thingplus install script를 다운받을 때 아래의 script를 다운로드 받으시면 나머지는 동일합니다.
+
+  ```
+  $ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install_PI1B.sh
+  ```
+
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_raspberry_3"> 라즈베리파이 3를 사용하고 싶습니다.</p>
+<!-- <p class="dwfqExpand" id = "faq_raspberry_3"> 라즈베리파이 3를 사용하고 싶습니다.</p>
 <p class="dwfqExpand2"></p>
 
 <p class="dwfqExpand"  id = "faq_use_other_sensor"> 가이드 되어 있는 센서외에 다른 센서를 연동하고 싶습니다.</p>
+<p class="dwfqExpand2"></p>-->
+
+<p class="dwfqExpand" id = "faq_contact"> 문의 하기</p>
+
+- 상용으로 서비스를 사용하고 싶으시면 `biz@daliworks.net` 으로 메일을 주세요
+- 하드웨어 연동 관련해서 문의가 있으시다면, `contact@thingplus.net` 로 메일을 주시거나, thingplus.net 에서 로그인후 우측 하단에 보이는 icon을 눌러서 intercom 문의를 해주세요.
+
+- 문의를 주실 때는 아래 내용을 포함 해서 문의 부탁드립니다.
+  - 소속(company, 학생)
+  - thingplus와 연동하려는 목적
+  - 사용하려고하는 장비와 센서의 정보
+  - 문의 내용
+
+
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_commercial_service"> 상용으로 서비스를 사용하고 싶습니다.</p>
-<p class="dwfqExpand2"></p>
+
+<p class="dwfqExpand" id = "faq_arduino_esp8266"> Arduino에 ESP8266을 연결해서 thingplus와 연동하고 싶습니다.</p>
+
+- 통신 모듈로서 ESP8266을 쓰고 Arduino를 게이트웨이로써 연동하고자 한다면 [Guide](http://support.thingplus.net/ko/esp8266.html)를 참고하세요
+
+<p class="dwfqExpand2"></p> 
+
 
 <p class="dwfqExpand" id = "faq_check_log"> log 확인 방법을 알고 싶습니다.</p>
-<p class="dwfqExpand2"></p> -->
+
+- 오픈하드웨어를 연동하였는데 어떤 문제가 발행하였을 경우, 문제의 원인을 찾기 위해 로그를 확인 할 수 있습니다.
+
+- 로그는 두가지로 `게이트웨이 로그`와 `센서디바이스 로그`를 제공합니다.
+  - 게이트웨이로그는 센서로 부터 전달받은 센서 값을 thingplus 서버로 전송하는 MQTT 로그 등을 포함합니다.
+  - 센서디바이스 로그는 센서가 일정 주기로 수집하는 센서 값에 대해 확인 가능합니다.
+
+- 그래서 센서에서 센서값이 없는지 비정상적인것인지, 서버로 전송할때 error가 발생하는 것인지를 로그를 통해 확인할 수 있습니다.
+
+- 게이트웨이로그
+
+  ```
+  $ cd /opt/thingplus/gateway/
+  $ tail -f -n 300 log/thingplus.log
+  ```
+
+- 센서 디바이스 로그
+
+  ```
+  #./thingplus_device.sh 를 실행했던 경로로 이동
+  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ 동
+  $ tail -f -n 300 log/thingplus_device.log
+  ```
+
+<p class="dwfqExpand2"></p>
 
 <p class="dwfqExpand" id = "faq_update"> 오픈하드웨어 update 방법을 알고 싶습니다.</p>
 - Thingplus는 개발자 분들의 이해를 돕기 위해 오픈하드웨어의 오픈 소스를 제공 하고 있습니다.

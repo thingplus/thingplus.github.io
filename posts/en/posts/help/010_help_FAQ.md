@@ -19,8 +19,7 @@ On the `Widget Setting` screen, click the right side of the" Period "item and se
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_sensorData"> How can I view historical data from sensors?</p> 
-
+<p class="dwfqExpand" id = "faq_sensorData"> How can I view historical data from sensors?</p>
 1. Select `sensor analysis` <i class = "fa fd-menu_analysis fa-lg"> </i> among the top menu
 2. Select gateway
 3. Select sensor type
@@ -121,20 +120,72 @@ To prevent such confusion, I changed the getmac script to getGatewayId. I'm goin
 
 <p class="dwfqExpand2"></p>
 
-<!-- <p class="dwfqExpand" id = "faq_raspberry_b"> 라즈베리파이 1 B+ 을 사용하고 싶습니다. I would like to use raspberry pie 1 B +.</p>
+<p class="dwfqExpand" id = "faq_raspberry_b"> I would like to use raspberry pie 1 B +</p>
+
+- To use `Raspberry Pie 1 B +`, please refer to  [Guide](http://support.thingplus.net/en/open-hardware/raspberry-pi-user-guide.html).
+
+- In the `2-4`, Download the script below when downloading the thingplus install script
+
+  ```
+  $ wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_install_PI1B.sh
+  ```
+
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_raspberry_3"> 라즈베리파이 3를 사용하고 싶습니다.I would like to use Raspberry Pie 3.</p>
+<!-- <p class="dwfqExpand" id = "faq_raspberry_3"> 라즈베리파이 3를 사용하고 싶습니다.I would like to use Raspberry Pie 3.</p>
 <p class="dwfqExpand2"></p>
 
 <p class="dwfqExpand"  id = "faq_use_other_sensor"> 가이드 되어 있는 센서외에 다른 센서를 연동하고 싶습니다. I would like to link other sensor besides the guided sensor.</p>
+<p class="dwfqExpand2"></p>-->
+
+<p class="dwfqExpand" id = "faq_contact"> Contact us</p>
+
+- If you want to use the service for commercial use, please send an e-mail to `biz@daliworks.net`
+- If you have any inquiry about hardware integration, please send an e-mail to `contact@thingplus.net` OR please use intercom inquiry by clicking on the icon at the bottom right after login from thingplus.net.
+
+- Inquiry Please include the following information.
+  - company (or student)
+  - What would you like to do with the thingplus service?
+  - Information about the Devivce and sensors you plan to use
+  - Inquiry contents
+
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_commercial_service"> 상용으로 서비스를 사용하고 싶습니다.I want to use the service for commercial purposes.</p>
-<p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_check_log"> log 확인 방법을 알고 싶습니다. I want to know how to check the log.</p>
-<p class="dwfqExpand2"></p> -->
+<p class="dwfqExpand" id = "faq_arduino_esp8266"> I want to connection ESP8266 and Arduino to thingplus.</p>
+
+If you use ESP8266 as a WIFI module and want to connect Arduino as a gateway, please refer to [this guide](http://support.thingplus.net/en/esp8266.html).
+
+<p class="dwfqExpand2"></p> 
+
+
+<p class="dwfqExpand" id = "faq_check_log"> I want to know how to check the log.</p>
+
+- If you used open-hardware and have issued a problem, you can check the log to find the cause of the problem.
+
+- The log provides two types of `gateway log` and `sensor device log`.
+  - The gateway log includes MQTT log that sends the sensor value received from the sensor to the thingplus server.
+  - The sensor device log can check the sensor value that the sensor collects at regular intervals.
+
+- So, you can check whether the sensor is abnormal or not, or if the error occurs when sending it to the server.
+
+- Gateway log
+
+  ```
+  $ cd /opt/thingplus/gateway/
+  $ tail -f -n 300 log/thingplus.log
+  ```
+
+- Sensor device log
+
+  ```
+  # Navigate to the path where you ran ./thingplus_device.sh
+  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ 동
+  $ tail -f -n 300 log/thingplus_device.log
+  ```
+
+
+<p class="dwfqExpand2"></p> 
 
 <p class="dwfqExpand" id = "faq_update"> I want to know how to update open hardware.</p>
 
