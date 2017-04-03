@@ -1,7 +1,7 @@
 ---
 title: 고급기능 사용법
 tags: "user-guide"
-published: true
+published: false
 img: ic-guideforfunction.png
 permalink: /ko/user-guide/comment.html
 ---
