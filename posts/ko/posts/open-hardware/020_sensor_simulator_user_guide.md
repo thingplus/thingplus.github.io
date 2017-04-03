@@ -14,7 +14,7 @@ Thing+ 연동가이드(센서 시뮬레이터)
 ---
 
 <div align="center" class="embed-responsive embed-responsive-16by9">
-  <iframe src="http://www.youtube.com/embed/CY5VPblB8B8&hl=en_US&loop=1&autoplay=0&playlist=CY5VPblB8B8"></iframe>
+  <iframe src="http://www.youtube.com/embed/CY5VPblB8B8?hl=en_US&loop=1&autoplay=0&playlist=CY5VPblB8B8"></iframe>
 </div>
 
 #### 1. 센서 시뮬레이터 등록
