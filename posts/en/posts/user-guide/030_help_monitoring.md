@@ -8,12 +8,12 @@ permalink: /en/user-guide/monitoring.html
 
 A guide on using the dashboard, rules, data timeline, and data analysis features. 
 
-1. [Dashboard](#id-dashbaord)
-2. [Timeline](#id-timeline)
-3. [Sensor list](#id-sensorlist)
-4. [Sensor Analysis](#id-analysis)
-5. [Tag management](#id-tag)
-6. [Rule Management](#id-rule)
+1. [The Dashboard Tab](#id-dashbaord)
+2. [The Timeline Tab](#id-timeline)
+3. [The Sensor Tab](#id-sensorlist)
+4. [The Analysis Tab](#id-analysis)
+5. [Settings - Tag Management](#id-tag)
+6. [Settings - Rule Management](#id-rule)
 
 
 ---
@@ -69,6 +69,7 @@ On the dashboard, by default, incoming data and information is processed and dis
 <div id='id-timeline'></div>
 
 ### **The Timeline Tab**
+You can check the events that occurred by the rule in the latest order.
 ![](/assets/en_3_timeline.png)
 
 #### Usage Timeline 
@@ -85,7 +86,10 @@ On the dashboard, by default, incoming data and information is processed and dis
   - ② Severity level of this event (Colors can be configured for Fatal/Warning/Information)
   - ③ Time of this event
   - ④ Event message
-    - Message will be displayed manually from a user or can be otherwise provided.  
+    - Message will be displayed manually from a user or can be otherwise provided.
+    - if rule is fail, message is printed as follows.<br>
+    ![](/assets/en_3_timeline_rule_fail.png)
+  - ⑤ You can check the condition and the actual value of the rule.  
 
 <br>
 
@@ -99,16 +103,37 @@ The sensor list displays a full, sortable list of sensors in your network. The t
 <br>
 
 #### List of gateways
-For each site, there is a list dedicated to gateways and the sensors they are connected to.
+there is a list dedicated to gateways and the sensors they are connected to.
 ![](/assets/en_3_viewgateway.png)
 
-* ① Gateway selection screen : This dropdown allows you to select specific gateways and sensors in this site. 
-* ② Name of gateway.
-* ③ Detailed charts for this gateway : click this to move to a display of sensors and charts related to this gateway. 
-* ④ List of sensors attached to this gateway.
-* ⑤ Data update settings for this sensor.
-* ⑥ Display time to update : Time since last update. (Green: Normal, Red : Sensor error)
-* ⑦ Last time this gateway's information was updated.
+* ① Gateway selection screen : You can select the desired gateway. It contains a search function that allows you to find the gateway you want with the gateway name. 
+* ② Name of gateway : You can click the gateway name to go to the gateway information page and see the gateway status graph.
+* ③ Gateway last update time : Last time this gateway's information was updated.<br/>
+(green : connection, red : disconnection, black : error)
+* ④ Refresh: Refresh the sensor value.
+* ⑤ option : You can go to Gateway Management and view/modify the gateway information.
+* ⑥ Name of device : Click on the device name to go to the device page and see the list of sensors included in the device.
+* ⑦ Name of sensor : Click on the sensor name to go to [Sensor](#id-sensorinfo) page.
+* ⑧ Latest data of sensor
+* ⑨ Sensor Last Update Time: Indicates the last time the Sensor was updated.<br/> 
+(green : connection, red : disconnection, black : error)
+
+
+
+<br>
+
+#### Tag List Tab
+![](/assets/en_3_viewtag.png)
+
+* ① Tag selection screen : select a registered tag.
+* ② Device information icon : You can see the devices/gateways of the sensors belonging to the tag.
+* ③ Chart analysis icon : Go to the Sensor Analysis page. You can select and view the graphs of the sensors included in the tag.
+* ④ Refresh: Refresh the sensor value.
+* ⑤ option : You can go to Tag Management and modify/delete the tags.
+* ⑥ Name of tag
+* ⑦ Name of sensor : Click on the sensor name to go to [Sensor](#id-sensorinfo) page.
+* ⑧ Event timeline : You can see the timeline for the sensors in the tag.
+
 
 <br>
 
@@ -116,29 +141,44 @@ For each site, there is a list dedicated to gateways and the sensors they are co
 If gateways and sensors have geographical/physical positioning data, they will be displayed here.  You can manually add location data via the [Gateway management](/en/user-guide/management.html#id-gateway-management) page.
 ![](/assets/en_3_viewmap.png)
  
-* Using the dropdown at ① will allow you to show specific gateways and sensors on the map.
-* Display updated time of gateway and device and sensor units by clicking the ② icon. 
-* Control the map interface by selecting the ③ icon on top of the map. 
+* ① Gateway selection screen : Using the dropdown to select gateway will allow you to show specific gateways and sensors on the map.
+* ② Display updated time of gateway and device and sensor units by clicking the icon. 
+* ③ The icons at the top of the map can return the map to the previous zoom ratio. Also It can be reset to its initial position and zoom ratio.
 
-<br>
+<br/>
 
-#### Tag List Tab
-![](/assets/en_3_viewtag.png)
+<div id='id-sensorinfo'></div>
+#### Sensor
+Click on the sensor name to go to the sensor page and you can see the details of the selected sensor.
+![](/assets/en_3_sensorinfo.png)
 
-* ① Tag selection : select a tag.
-* ② Device information icon : Display devices related to the tag.
-* ③ Chart analysis icon : move a page to display detail graphs using data from tagged items. 
-* ④ Tag settings : Move to tag management page.  
-* ⑤ Sensor information : Click the sensor name to move to and display the sensors graphs & data.  
-* Event timeline : Check the event timeline utilizing all devices related to this tag.
+* ① [Sensor setting](#id-sensorsetting): You can modify sensor name and add/delete chart guidelines.
+* ② Period setting: Set the date range to view.
+* ③ Reference date: You can see the sensor value up to the reference date.
+* ④ Chart: It shows sensor value in graph. Cf) If the sensor value is a character string, no chart. If the sensor is a location sensor, it is displayed as a map instead of a graph.
+* ⑤ Table: Shows the sensor value and the time at which the sensor value was obtained.
+* ⑥ Chart Guideline: Select whether to show guidelines on the chart.
+* ⑦ Data analysis: Go to sensor data analysis page.
+* ⑧ Event Timeline: You can check the timeline for rules that include that sensors.
 
-<br>
+<br/>
+
+<div id='id-sensorsetting'></div>
+#### sensor setting
+![](/assets/en_3_sensorsetting.png)
+
+* ① Name of sensor : You can modify the sensor name.
+* ② Chart Guideline : You can add/remove guidelines shown in charts and line charts.
+
+![](/assets/en_3_linechart.png)
+* Create a line chart widget in the dashboard.
+* You can set the Draw guideline in <i class="fa fa-cog"></i>.
 
 ---
 <div id='id-analysis'></div>
 
 ### **The Analysis Tab**
-The analysis tab includes tools to analyze and create actionable data from your Things'.
+The analysis tab includes tools to analyze and create actionable data from your Things. Also The analysis tab is divided into charts and statistics.
 ![](/assets/en_3_sensoranalysis.png)
 
 <br>
@@ -165,8 +205,11 @@ The analysis tab includes tools to analyze and create actionable data from your 
 * Provides detailed statistics for a selected gateway. Select the ② gateway, and click the search button. For comparisons, you can ③ add more sensors. Check ④ time range and ⑤ starting date (month/year).  
 
 #### Statistic tutorial
-1. Select Gateway. 
-- Select a service.
+- Select the desired service, Gateway<i class="fa fd-common_gateway"></i> or Tag<i class="fa fa-tags"></i>.
+- Select the gateway or tag with the sensor to be shown in the statistics.
+- Select the time to show the data.
+- Click View. The values of the sensors of the selected gateway or tag are output by time unit.
+- Select the desired data value type for each sensor. (count, max, min, sum, average, first, last, range, diff, frequency)
 
 <br>
 
@@ -174,8 +217,8 @@ The analysis tab includes tools to analyze and create actionable data from your 
 <div id='id-tag'></div>
 
 ### **Settings - Tag Management**
+Tags can be added, edited and managed in this settings panel. Tags are excellent for creating logical groupings of sensors and gateways used for reporting and other purposes later on.
 ![](/assets/en-3_m_tag0.png)
-* Tags can be added, edited and managed in this settings panel. Tags are excellent for creating logical groupings of sensors and gateways used for reporting and other purposes later on.
 
 #### Tag Screen in Detail
 ![](/assets/en_3_m_tag_desc.png)

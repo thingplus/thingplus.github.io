@@ -17,6 +17,8 @@ REST APIs
 7. [Sensors](#id-sensors)
 8. [Tags](#id-tags)
 9. [Collection](#id-collection)
+10. [Response Status Codes](#id-response)
+11. [API Error Codes](#id-error)
 
 ---
 <div id='id-url'></div>
@@ -1389,6 +1391,62 @@ __Response__
   "id": "1"
 }
 ```
+
+<div id='id-response'></div>
+<br>
+
+## Response Status Codes
+The http response status code is the same as here.
+
+
+| StatusCode | Description | example
+| --- | --- | ---
+| 200 | OK |
+| 201 | Created |
+| 204 | No Content |
+| 207 | Multi-Status| gateway create success but create sensor is fail when you use `registerGateway`
+| 400 | Bad Request |
+| 401 | Unauthorized |
+| 403 | Forbidden | try access a resource what you don't have permition
+| 404 | Not Found |
+| 409 | Conflict | resource is already exist when you try create
+| 429 | Too Many Requests |
+| 444 | Unknown |
+| 471 | Billing (Temporary) | over your billing plan when you add `gateway, sensor, device, rule`
+| 500 | Internal Server Error |
+| 504 | Gateway Time-out | occurd timeout from gateway when you use `controlActuator`
+| 600 | Gateway Error |
+
+
+<div id='id-error'></div>
+<br>
+
+## API Error Codes
+Thing+ API Error Categories & Codes are `strings`
+
+| Category | Code | Description
+| --- | --- | ---
+| REQUEST_ERROR | SCHEMA_VALIDATE | validate schema fail
+|  | NOT_FOUND | resource not found
+|  | MISMATCH_ERROR | request value is not equal value in DB
+|  | CONFLICT | already exist
+|  | INVALID_INPUT | wrong parameter
+| AUTHENTICATION_ERROR | NEED_LOGIN | need login
+| AUTHORIZATION_ERROR | ACCESSGROUP_DENY | ACL deny
+|  | ACL_DENY | ACL deny
+| SERVER_ERROR | JSON_PARSING | json parsing exception
+|  | USER_ERROR | internal error
+|  | AUTH_ERROR | internal error
+|  | ACL_ERROR | internal error
+|  | LIBRARY_ERROR | internal error
+|  | INTERNAL_ERROR | internal error
+| DB_ERROR | RELATION_ERROR | internal error
+|  | QUERY_RESULT_EMPTY | internal error
+|  | NOT_FOUND_IN_ITEM | internal error
+|  | DB_INTERNAL_ERROR | internal error
+| BILLING_ERROR | BILLING | need increase billing
+| GATEWAY_ERROR | PROCESS_COMMAND_RESULT | unknown error when receiving result from gateway
+| UNKNOWN | - |
 
 
 <div class='scrolltop'>
