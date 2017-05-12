@@ -60,7 +60,7 @@ No.
 For reference, the example was distributed using the Grove kit, but other sensors can be used if you modify the source slightly.
 We will update the information in the future, but you can temporarily check the contents at the link below.
 
-[How to connect various sensors](https://docs.google.com/document/d/1gk1RsXvfbD9eOiHQblpBcIgyJ7cYqb9pHqNSgId1s7U/edit)
+[How to connect various sensors](../arduinoSensor.html)
 
 <p class="dwfqExpand2"></p>
 

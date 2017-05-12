@@ -61,7 +61,7 @@ brew install wget
 참고용으로 예제는 Grove kit을 사용해서 배포 하였지만 약간만 소스를 수정하시면 다른 센서들도 사용 가능 하십니다.
 추후 관련한 내용을 update 할 예정이지만, 아래의 link에서 임시로 해당 내용에 대해 확인 가능하십니다.
 
-[다양한 센서 연결 방법](https://docs.google.com/document/d/1gk1RsXvfbD9eOiHQblpBcIgyJ7cYqb9pHqNSgId1s7U/edit)
+[다양한 센서 연결 가이드](../arduinoSensor.html)를 참고하세요
 
 <p class="dwfqExpand2"></p>
 
