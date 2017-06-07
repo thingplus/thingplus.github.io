@@ -33,8 +33,8 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 #### Compatible Board for Thingplus Arduino Library
 
 - Arduino Board / Orange Board
-- ESP8266 (without Aruino board)
-- Aruino WizFi250
+- ESP8266 (without Arduino board)
+- Arduino WizFi250
 - Board using ARM CORETEX-M chip
 
 <br/>
@@ -93,32 +93,32 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     - Timer
 
   - thingplus Library (above. v1.0.7)
-    - `Scketch -> Include Library -> Manage Libraries...`
+    - `Sketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- Search > thingplus > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Arduino Lib](/assets/arduino_lib.png)
       <div class="dwExpand2"></div>  
   - ArduinoJson
-    - `Scketch -> Include Library -> Manage Libraries...`
+    - `Sketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- Search > ArduinoJson > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_json](/assets/arduino_json_search.png)
       <div class="dwExpand2"></div>
   - PubSubClient
-    - `Scketch -> Include Library -> Manage Libraries...`  
+    - `Sketch -> Include Library -> Manage Libraries...`  
       <p class="dwExpand">- Search > PubSubClient > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Pubsub](/assets/arduino_pubsub_search.png)
       <div class="dwExpand2"></div>
   - Time 
-    - `Scketch -> Include Library -> Manage Libraries...`
+    - `Sketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- Search > timekeep > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Time](/assets/arduino_time_search.png)
       <div class="dwExpand2"></div>
   - Timer
     - [Download `Timer` Library](https://github.com/JChristensen/Timer/archive/master.zip) 
-    - `Scketch -> Include Library -> Add .ZIP Library...`
+    - `Sketch -> Include Library -> Add .ZIP Library...`
       <p class="dwExpand">- To load downloaded .zip file</p>
       ![Arduino_timer](/assets/arduino_lib_timer.png)
       <div class="dwExpand2"></div>
@@ -137,7 +137,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     Linux : /home/<your user name>/sketchbook/libraries
     ```
   
-  - open _**LibrayPath**/PubSubClient/src/PubSubClient.h_ and modify as the following.
+  - open _**LibraryPath**/PubSubClient/src/PubSubClient.h_ and modify as the following.
     - `MQTT_MAX_PACKET_SIZE 196`
     - `MQTT_KEEPALIVE 120`
     
@@ -154,11 +154,11 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 
 1) Get API key and register sensors
 
-  - There are 3 examples in _**LibrayPath**/Thingplus/examples/_ (above thingplus library v1.0.7)
-    - ArduinoEthernet : For Aruino + ethernet shield
+  - There are 3 examples in _**LibraryPath**/Thingplus/examples/_ (above thingplus library v1.0.7)
+    - ArduinoEthernet : For Arduino + ethernet shield
     - ArduinoWizFi250 : For Arduino + WizFi250(wifi module of Wiznet)
     - ESP8266 : For ESP8266 (without Arduino board)
-  - This guide is guide of Arduino+Ethernet, so we use `LibrayPath/Thingplus/examples/ArduinoEthernet/ArduinoEthernet.ino`.
+  - This guide is guide of Arduino+Ethernet, so we use `LibraryPath/Thingplus/examples/ArduinoEthernet/ArduinoEthernet.ino`.
   -  If you want to add `another sensors or another actions`, then modify/add the scripts. 
 
 <br/>
