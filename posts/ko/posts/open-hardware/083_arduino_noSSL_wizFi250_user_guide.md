@@ -31,8 +31,8 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 #### Thingplus 아두이노 라이브러리 호환보드
 
 - Arduino Board / Orange Board
-- ESP8266 (without Aruino board)
-- Aruino WizFi250
+- ESP8266 (without Arduino board)
+- Arduino WizFi250
 - ARM CORETEX-M chip을 사용하는 보드 
 
 <br/>
@@ -89,28 +89,28 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     - wizFi250
 
   - thingplus library (v1.0.7 이상)
-    - `Scketch -> Include Library -> Manage Libraries...`
+    - `Sketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > thingplus > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Arduino Lib](/assets/arduino_lib.png)
       <div class="dwExpand2"></div>  
 
   - ArduinoJson
-    - `Scketch -> Include Library -> Manage Libraries...`
+    - `Sketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > ArduinoJson > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_json](/assets/arduino_json_search.png)
       <div class="dwExpand2"></div>
 
   - PubSubClient
-    - `Scketch -> Include Library -> Manage Libraries...`  
+    - `Sketch -> Include Library -> Manage Libraries...`  
       <p class="dwExpand">- 검색 > PubSubClient > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Pubsub](/assets/arduino_pubsub_search.png)
       <div class="dwExpand2"></div>
 
   - Time 
-    - `Scketch -> Include Library -> Manage Libraries...`
+    - `Sketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > timekeep > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Time](/assets/arduino_time_search.png)
@@ -118,13 +118,13 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
   - Timer
     - [라이브러리 다운로드 받기](https://github.com/JChristensen/Timer/archive/master.zip) 
-    - `Scketch -> Include Library -> Add .ZIP Library...`
+    - `Sketch -> Include Library -> Add .ZIP Library...`
       <p class="dwExpand">- download 받은 zip 파일 로드</p>
       ![Arduino_timer](/assets/arduino_lib_timer.png)
       <div class="dwExpand2"></div>
 
   - WizFi250
-    - `Scketch -> Include Library -> Manage Libraries...`
+    - `Sketch -> Include Library -> Manage Libraries...`
       <p class="dwExpand">- 검색 > wizFi250 > install</p>
       ![Arduino_json](/assets/arduino_json.png)
       ![Search Arduino_Time](/assets/arduino_lib_wizfi250.png)
@@ -143,7 +143,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     Linux : /home/<your user name>/sketchbook/libraries
     ```
   
-  - _**LibrayPath**/PubSubClient/src/PubSubClient.h_ 파일을 열어서 아래 부분을 수정합니다.
+  - _**LibraryPath**/PubSubClient/src/PubSubClient.h_ 파일을 열어서 아래 부분을 수정합니다.
 
     - `MQTT_MAX_PACKET_SIZE 196`
     - `MQTT_KEEPALIVE 120`
@@ -161,11 +161,11 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 1) 게이트웨이 키 발급 및 센서등록
 
-  - _**LibrayPath**/Thingplus/examples/_ 에 3개의 예제가 있습니다.(v1.0.7 기준)
-    - ArduinoEthernet : Aruino를 ethernet shield를 이용해 연동하는 경우 사용
+  - _**LibraryPath**/Thingplus/examples/_ 에 3개의 예제가 있습니다.(v1.0.7 기준)
+    - ArduinoEthernet : Arduino를 ethernet shield를 이용해 연동하는 경우 사용
     - ArduinoWizFi250 : Wiznet의 wifi 모듈인 WizFi250을 Arduino와 함께 사용하는 경우
     - ESP8266 : ESP8266에 프로그램을 직접로드해서 사용하는 경우(without Arduino board) 
-  - 본 가이드에서는 Arduino board에 WizFi250 연결을 통한 wifi 연결 예제 이므로 `LibrayPath/Thingplus/examples/ArduinoWizFi250/ArduinoWizFi250.ino` 를 사용 합니다.
+  - 본 가이드에서는 Arduino board에 WizFi250 연결을 통한 wifi 연결 예제 이므로 `LibraryPath/Thingplus/examples/ArduinoWizFi250/ArduinoWizFi250.ino` 를 사용 합니다.
   - _ArduinoWizFi250.ino_ 를 선택하면 arduino SDK에서 열립니다.
     - 예제 파일에 없는 다른 센서를 추가 하거나 다른 동작을 시키길 원하시면 해당 부분을 수정/추가 해주시면 됩니다.
  
