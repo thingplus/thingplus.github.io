@@ -20,11 +20,14 @@ Thing+ 연동가이드(아두이노 with PC)<br/>
 
 ---
 
+> 현재 cygwin을 설치할때 git을 설치하면 v2.12.2가 설치 됩니다. 
+> 해당버전은 cygwin과 호환되지 않습니다. 설치시 오류가 발생하시면 git 버전을 확인해보세요. 
+> cygwin의 안정적인 새 버전이 나올 때 까지 windows 버전은 지원하지 않음을 알려드립니다.
+
 #### 1. Windows 환경 설정
 
 
 <p class="dwExpand"> Windows 환경설정 보기</p>
-
 
 1) Node Js 설치
 - Node JS(v0.10.16)를 설치합니다.
