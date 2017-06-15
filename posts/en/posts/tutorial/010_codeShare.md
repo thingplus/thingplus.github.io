@@ -1,5 +1,5 @@
 ---
-title: Tutorial
+title: IR-Sensor examples
 tags: "tutorial"
 published: true
 img : ic_codeshare.png

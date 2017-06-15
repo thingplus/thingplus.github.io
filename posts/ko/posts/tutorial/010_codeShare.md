@@ -1,5 +1,5 @@
 ---
-title: 활용 예제 가이드
+title: IR-Sensor 활용 예제
 tags: "tutorial"
 published: true
 img : ic_codeshare.png
