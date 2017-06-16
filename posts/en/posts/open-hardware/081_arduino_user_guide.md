@@ -16,7 +16,12 @@ Thing+ Guide for Arduino with PC<br/>
 5. [Gateway Registration](#id-register)
 
 <br/>
+
 ---
+
+> When you install cygwin, when you install git, v2.12.2 is installed.
+> This version is not compatible with cygwin. If you get errors during installation, check out git version.
+> Please note that Windows versions are not supported until a stable new version of cygwin is available.
 
 #### 1. Environment Setting for Windows 
 
