@@ -241,6 +241,9 @@ Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway
 
 --------------------
 
+
+<p class="dwExpand"> [Optional] How to configure the Wifi Dongle</p>
+
 ### How to configure the Wifi Dongle
 
 _This docuement is based on **TP-LINK TL-WN727N** but you can refer this for other kinds of Wifi dongle_
@@ -257,7 +260,7 @@ _This docuement is based on **TP-LINK TL-WN727N** but you can refer this for oth
 
 ---
 
-#### 1.  How to configure the Wifi Dongle
+#### 1. How to configure the Wifi Dongle
 
 <br/>
 1) reboot your Raspberry Pi after you plug the Wifi dongle into the Raspberry Pi
@@ -314,6 +317,9 @@ usb0      no wireless extensions.
 5) Reboot your device
 
 > Remark: Connection between your device and DC 5V Power Adaptor is required for using the Wifi Dongle because a Wifi Dongle consumes much more power than normal
+
+
+<div class="dwExpand2"></div>
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

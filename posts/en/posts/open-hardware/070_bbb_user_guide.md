@@ -170,6 +170,9 @@ Plesase refer [Gateway Registration](/en/user-guide/registration.html#id-gateway
 
 --------------------
 
+
+<p class="dwExpand"> [optional] WiFi Dongle Setting</p>
+
 ### [Optional] WiFi Dongle Setting
 
 _This docuement is based on **NEXT-201N MINI** but you can refer this for other kinds of Wifi dongle._
@@ -249,9 +252,15 @@ usb0      no wireless extensions.
 <div id='id-bbg-usbconnect'></div>
 > Remark: Connection between your device and DC 5V Power Adaptor is required for using the Wifi Dongle because a Wifi Dongle consumes much more power than normal
 
+
+<div class="dwExpand2"></div>
+
 <div id='id-usb-set'></div>
 
 ----------------------------------
+
+
+<p class="dwExpand"> How to connect your Beagle Bone Green with your computer</p>
 
 ### How to connect your Beagle Bone Green with your computer
 
@@ -298,6 +307,9 @@ Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a
   ![BBG putty login](/assets/putty_usb_login_bbg.png)
 
 > Remark: In case of Windows OS, You should close and run your putty clinet every time when you reboot your Beagle Bone Green Device
+
+
+<div class="dwExpand2"></div>
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

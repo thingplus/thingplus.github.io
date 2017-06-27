@@ -243,7 +243,9 @@ Thing+ 연동가이드(라즈베리파이)
 
 --------------------
 
-### WiFi 동글 설정
+<p class="dwExpand"> [optional] WiFi 동글 설정</p>
+
+### [Optional] WiFi 동글 설정
 
 _본 가이드는 **TP-LINK TL-WN727N**을 기준으로 작성되었으나, 다른 WiFi 동글도 비슷한 과정으로 진행하면 됩니다._
 
@@ -315,6 +317,9 @@ usb0      no wireless extensions.
 5) 장치를 재시작한다.
 
 > 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
+
+
+<div class="dwExpand2"></div>
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

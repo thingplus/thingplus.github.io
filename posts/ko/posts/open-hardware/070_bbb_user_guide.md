@@ -174,6 +174,8 @@ Thing+ 연동가이드(비글본그린)
 
 --------------------
 
+<p class="dwExpand"> [optional] WiFi 동글 설정</p>
+
 ### [옵션] WiFi 동글 설정
 
 _본 가이드는 **NEXT-201N MINI**를 기준으로 작성되었으나, 다른 WiFi 동글도 비슷한 과정으로 진행하면 됩니다._
@@ -247,9 +249,15 @@ usb0      no wireless extensions.
 <div id='id-bbg-usbconnect'></div>
 > 주의: WiFi 동글을 이용할 경우 전원을 많이 사용하므로, 반드시 DC 5V 전원 어댑터를 연결하여 사용해야 한다.
 
+
+<div class="dwExpand2"></div>
+
+
 <div id='id-usb-set'></div>
 
 ----------------------------------
+
+<p class="dwExpand"> 비글본그린 USB로 연결하기</p>
 
 ### 비글본그린 USB로 연결하기
 
@@ -292,6 +300,9 @@ _Mac OS X El Capitan은 현재 드라이버 미지원(**2015-12-3 기준**)이�
      ![BBG putty login](/assets/putty_usb_login_bbg.png)
 
 > 주의: Windows의 경우, 비글본그린을 재부팅할 때마다, putty를 새로 실행해야함.
+
+
+<div class="dwExpand2"></div>
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
