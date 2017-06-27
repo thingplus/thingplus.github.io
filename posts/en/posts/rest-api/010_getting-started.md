@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 tags: "rest-api"
-published: true
+published: false
 img: ic-tutorial.png
 permalink: /en/rest-api/getting-started.html
 ---

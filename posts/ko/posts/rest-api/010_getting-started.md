@@ -1,7 +1,7 @@
 ---
 title: 튜토리얼
 tags: "rest-api"
-published: true
+published: false
 img: ic-tutorial.png
 permalink: /ko/rest-api/getting-started.html
 ---

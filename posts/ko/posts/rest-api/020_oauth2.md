@@ -1,7 +1,7 @@
 ---
 title: OAuth2
 tags: "rest-api"
-published: true
+published: false
 img: ic-oauth-2.png
 permalink: /ko/rest-api/oauth2.html
 ---
