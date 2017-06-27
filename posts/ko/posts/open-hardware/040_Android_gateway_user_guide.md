@@ -1,7 +1,7 @@
 ---
 title: 안드로이드 게이트웨이 사용자 가이드
 tags: "open-hardware"
-published: true
+published: false
 img: ic-androidgateway.png
 video: "yes"
 permalink: /ko/open-hardware/opensource-Android-user-guide.html
