@@ -87,7 +87,7 @@ However, if you modify the samples in the `Openhardware directory(/opt/thingplus
  
 It is an open protocol that is the standard way to perform authorization authentication in applications such as web and mobile apps.
 It is a security tool to prevent unauthorized access, and is also used in Facebook and Twitter.
-For more information, please visit [here](http://support.thingplus.net/en/rest-api/oauth2.html).
+For more information, please visit [here](https://thingplus.api-docs.io/2.0/oauth2).
 
 <p class="dwfqExpand2"></p>
 

@@ -88,7 +88,7 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 
 웹, 모바일 앱 등 어플리케이션에서 권한 인증을 수행할 수 있는 표준 방법인 오픈 프로토콜입니다. 
 불특정인의 접근을 방지하기 위한 보안 도구이며, Facebook, Twitter 등에서도 사용하고 있는 방법입니다.
-관련 내용은 [여기](http://support.thingplus.net/ko/rest-api/oauth2.html)에서도 확인가능 합니다.
+관련 내용은 [여기](https://thingplus.api-docs.io/2.0/oauth2)에서도 확인가능 합니다.
 
 <p class="dwfqExpand2"></p>
 
