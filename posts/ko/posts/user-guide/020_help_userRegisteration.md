@@ -108,7 +108,7 @@ xx:xx:xx:xx:xx:xx
 <br/>
 3) **사용자 PC**의 웹브라우저를 열고 "[서비스 웹사이트](https://www.thingplus.net)"에 로그인한다.
 
- - `Chrom 브라우저`([크롬 브라우저 설치](https://www.google.com/chrome)) 사용을 권장합니다.
+ - `Chrome 브라우저`([크롬 브라우저 설치](https://www.google.com/chrome)) 사용을 권장합니다.
 
 <br/>
 4) `설정` --> `게이트웨이 관리` 버튼을 누른다.
