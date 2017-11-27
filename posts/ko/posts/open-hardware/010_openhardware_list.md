@@ -30,15 +30,10 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 <br/>
 
-### 1. 안드로이드
-- 안드로이드 2.3 + 지원
-- [연동가이드 바로가기](/ko/open-hardware/opensource-Android-user-guide.html)
-
-<br/>
 
 <div id='id-pi-guide'></div>
 
-### 2. 라즈베리파이
+### 1. 라즈베리파이
 - 라즈베리파이 I, II 지원
 - [연동가이드 바로가기](/ko/open-hardware/raspberry-pi-user-guide.html)
 - [연동가이드 바로가기 (camera)](/ko/open-hardware/raspberry-camera-user-guide.html)
@@ -65,7 +60,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-beagle-guide'></div>
 <br/>
 
-### 3. 비글보드
+### 2. 비글보드
 - 비글본 블랙, 그린 지원
 - [연동가이드 바로가기](/ko/open-hardware/bbb-user-guide.html)
 
@@ -84,7 +79,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-arduino-guide'></div>
 <br/>
 
-### 4. 아두이노
+### 3. 아두이노
 - 아두이노(우노, 오렌지보드, ESP8266, ARM CORETEX-M chip-set을 사용하는 bord 등) 지원
 - [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
 
@@ -107,7 +102,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-edison-guide'></div>
 <br/>
 
-### 5. 에디슨 
+### 4. 에디슨 
 - 에디슨 지원
 - [연동가이드 바로가기](/ko/open-hardware/edison-user-guide.html)
 
@@ -132,7 +127,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 <br/>
 
-### 7. 지원 센서 목록
+### 5. 지원 센서 목록
 
 |icon                                                        |Type         |Description       | Model                |Categrory         
 |------------------------------------------------------------|-------------|-----------|----------------------|----------

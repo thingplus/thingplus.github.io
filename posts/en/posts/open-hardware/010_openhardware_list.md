@@ -25,21 +25,18 @@ Open Hardware List
 <div id='id-simulator-guide'></div>
 ---
 
-### 1. Sensor Simulator
+### 0. Sensor Simulator
 - [Guide Link](/en/open-hardware/sensor-simulator-user-guide.html)
 
 <div id='id-pi-guide'></div>
 <br/>
 
-### 2. Android
-- Andorid 2.3 +
-- [Guide link](/en/open-hardware/opensource-Android-user-guide.html)
 
 
 <div id='id-pi-guide'></div>
 <br/>
 
-### 3. Raspberry Pi
+### 1. Raspberry Pi
 - Raspberry Pi I, II
 - [Guide link](/en/open-hardware/raspberry-pi-user-guide.html)
 - [Guide link with camera](/en/open-hardware/raspberry-camera-user-guide.html)
@@ -67,7 +64,7 @@ Open Hardware List
 
 <br/>
 
-### 4. Beagle Board
+### 2. Beagle Board
 - Beaglebone Black, Beaglebone Green
 - [Guide link](/en/open-hardware/bbb-user-guide.html)
 
@@ -86,7 +83,7 @@ Open Hardware List
 <div id='id-arduino-guide'></div>
 <br/>
 
-### 5. Arduino 
+### 3. Arduino 
 - Arduino compatible board(uno, orange board, ESP8266, Boards using ARM CORETEX-M chip-set etc)
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
 
@@ -110,7 +107,7 @@ Open Hardware List
 <div id='id-edison-guide'></div>
 <br/>
 
-### 6. Edison
+### 4. Edison
 - Edison
 - [Guide link](/en/open-hardware/edison-user-guide.html)
 
@@ -134,7 +131,7 @@ Open Hardware List
 
 <br/>
 
-### 7. Available Sensor List
+### 5. Available Sensor List
 
 
 |icon                                                           |Type           |Description    | Model                |Categrory         
