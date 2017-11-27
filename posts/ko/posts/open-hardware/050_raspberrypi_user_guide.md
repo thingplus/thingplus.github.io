@@ -156,7 +156,7 @@ Thing+ 연동가이드(라즈베리파이)
   ![Raspberry Pi Setting File sytsem](/assets/expand_file_system.png)
 
    
-- I2C를 사용하기 위해서 `8. Advanced Options` --> `A7. I2C`을 선택하고 이후 물음에 모두 `Yes`를 선택한다.
+- I2C를 사용하기 위해서 `Advanced Options` --> `A7. I2C`을 선택하고 이후 물음에 모두 `Yes`를 선택한다.
   ![Raspberry Pi Setting advanced options](/assets/advanced_options.png)
   ![Raspberry Pi Setting choose i2c](/assets/choose_i2c.png)
 

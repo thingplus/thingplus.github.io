@@ -158,7 +158,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
 
 
-- To use I2C, Choose `8. Advanced Options` --> `A7. I2C`, and then please Select `Yes` for all the following questions.
+- To use I2C, Choose `Advanced Options` --> `A7. I2C`, and then please Select `Yes` for all the following questions.
 ![Raspberry Pi + Grove Pi](/assets/advanced_options.png)
 ![Raspberry Pi + Grove Pi](/assets/choose_i2c.png)
 
