@@ -56,7 +56,7 @@ permalink: /ko/help/code-share.html
    :-------------------:|:--------------------:
    GND                  |         39
    VCC                  |          1
-   RX                   |         15
+   RX                   |         16
 
 - Raspberry pi Pin map 참조 : [pin map](https://developer.microsoft.com/ko-kr/windows/iot/win10/samples/pinmappingsrpi2) 
 

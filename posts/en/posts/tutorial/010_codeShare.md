@@ -54,7 +54,7 @@ permalink: /en/help/code-share.html
    :-------------------:|:--------------------:
    GND                  |         39
    VCC                  |          1
-   RX                   |         15
+   RX                   |         16
 
 - Reference : [pin map](https://developer.microsoft.com/ko-kr/windows/iot/win10/samples/pinmappingsrpi2) 
 
@@ -236,7 +236,7 @@ dtoverlay=lirc-rpi,gpio_in_pin=23,gpio_out_pin=22
 
 6) Downloading IR code of remote control
 
-- The IR code for the remote control should be found in [HERE] (http://lirc.sourceforge.net/remotes/).
+- The IR code for the remote control should be found in [HERE](http://lirc.sourceforge.net/remotes/).
 
 ```bash
 sudo wget http://lirc.sourceforge.net/remotes/lg/6711A20015N -O  /etc/lirc/lircd.conf
