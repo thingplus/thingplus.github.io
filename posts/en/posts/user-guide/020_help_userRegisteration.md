@@ -129,12 +129,12 @@ xx:xx:xx:xx:xx:xx
 <br/>
 7) Choose the `Gateway Model` you are using
 
-<p class="dwExpand" > For Raspberry Pi: <b>Raspberry Pi - Developer</b></p>
+<!-- <p class="dwExpand" > For Raspberry Pi: <b>Raspberry Pi - Developer</b></p>
 
 ![select_gateway_model_pi](/assets/pi_gw_model.png)
 
-<div class="dwExpand2"></div>
-<p class="dwExpand" > For Raspberry Pi + Camera: <b>Open Source Gateway</b></p>
+<div class="dwExpand2"></div> -->
+<p class="dwExpand" > For Raspberry Pi : <b>Open Source Gateway</b></p>
 
 ![select_gateway_model_open](/assets/openhw_gw_model.png)
 
