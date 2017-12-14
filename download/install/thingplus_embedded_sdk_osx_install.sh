@@ -5,7 +5,7 @@ GATEWAY_DIR=./gateway
 # Destination directory for Open Hardware SDK
 SDK_DIR=.
 
-NODE_VERSION=0.10.16
+NODE_VERSION=0.10.28
 NODE_INSTALL_PREFIX=$(PWD)/./openhardware/arduino/node/
 
 MODEL="osx"

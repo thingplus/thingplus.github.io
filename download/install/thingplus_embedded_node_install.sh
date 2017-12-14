@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NODE_VERSION=0.10.16
+NODE_VERSION=0.10.28
 PREFIX=/usr/local
 
 node_install() {
@@ -11,7 +11,7 @@ node_install() {
       NODE_FILE=node-v$NODE_VERSION-darwin-x64.tar.gz
     ;;
     'Linux')
-      if [ $NODE_VERSION == '0.10.16' ] ; then
+      if [ $NODE_VERSION == '0.10.28' ] ; then
         NODE_FILE=node-v$NODE_VERSION-linux-arm-pi.tar.gz
       else
         NODE_FILE=node-v$NODE_VERSION-linux-armv7l.tar.gz
