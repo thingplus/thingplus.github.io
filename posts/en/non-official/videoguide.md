@@ -7,19 +7,35 @@ permalink: /en/introduction.html
 
 
 
+|Thing+ Video guide|
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<a href='#!' class='show-modal' value='klNt5xd5BRE'><img src='https://i.ytimg.com/vi/klNt5xd5BRE/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLCfi6HBbbUPr_M0ThyrqkwRovaA6g' alt='intro'></a><br>Intro|<a href='#!' class='show-modal' value='fnxnSban0Pk'><img src='https://i.ytimg.com/vi/fnxnSban0Pk/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDebBH4h990jB7QqujBXxT0-So2_Q' alt='dashboard'></a><br>Dashboard|<a href='#!' class='show-modal' value='Bn8fyi9lg3o'><img src='https://i.ytimg.com/vi/Bn8fyi9lg3o/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDqZXudRAEPU4STXjWUT1lnAdDiMA' alt='sensor&gateways'></a><br>Sensor&gateways|
+|<a href='#!' class='show-modal' value='3hBgOccPpZM'><img src='https://i.ytimg.com/vi/3hBgOccPpZM/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDnTYYs7hzt-Ft6digCmSAmuKh1KQ' alt='rule'></a><br>Rule|<a href='#!' class='show-modal' value='s1s7u80uGpA'><img src='https://i.ytimg.com/vi/s1s7u80uGpA/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDGp7QvzUI5_y8JXLvGSZBaQRS_ng' alt='billing'></a><br>Billing|<a href='#!' class='show-modal' value='1qjPCyhqmrk'><img src='https://i.ytimg.com/vi/1qjPCyhqmrk/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLCUDhgyJJ9PfwK3a1UkzAcckUKw-w' alt='service&user'></a><br>Service & User|
+|<a href='#!' class='show-modal' value='RMLcF1SS4AM'><img src='https://i.ytimg.com/vi/RMLcF1SS4AM/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLCIhFvgeJxfGrqnGZBFs6x_vOgY8Q' alt='API'></a><br>API|||
+{: .videotable }
 
-1.  Overview: [https://youtu.be/klNt5xd5BRE](https://youtu.be/klNt5xd5BRE)
-2.  Dashboard: [https://youtu.be/fnxnSban0Pk](https://youtu.be/fnxnSban0Pk)
-3.  Sensors and Gateways: [https://youtu.be/Bn8fyi9lg3o](https://youtu.be/Bn8fyi9lg3o)
-4.  Rules Engine: [https://youtu.be/3hBgOccPpZM](https://youtu.be/3hBgOccPpZM)
-5.  Billing: [https://youtu.be/s1s7u80uGpA](https://youtu.be/s1s7u80uGpA)
-6.  Admin: [https://youtu.be/1qjPCyhqmrk](https://youtu.be/1qjPCyhqmrk)
-7.  API: [https://youtu.be/RMLcF1SS4AM](https://youtu.be/RMLcF1SS4AM)
 
-<br/>
-<br/>
-<br/>
-<br/>
+
+
+
+<script>
+ jQuery(document).ready(function ($) {
+            $('.show-modal').on('click', function () {
+                var $this = $(this);
+                var vid = $this.attr('value');
+                $.showYtVideo({
+                    videoId: vid
+                });
+            });
+        });
+</script>
+
+
+
+
+
+
+
 <br/>
 <br/>
 <br/>

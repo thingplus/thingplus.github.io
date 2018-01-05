@@ -481,6 +481,43 @@ p.dwfqExpand b {
 }
 
 
+/*chris*/
+.videotable {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+.videotable caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+.videotable tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+.videotable tr:nth-child(even) {
+  background: #f8f8f8;  
+}
+.videotable th,
+.videotable td {
+  padding: .625em;
+  text-align: left;
+}
+.videotable th {
+  background: #999;
+  color: #fff;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.videotable td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*chris*/
+
 .answer{
   font-size: 24px;
   color: #49526b;

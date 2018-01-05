@@ -73,7 +73,7 @@ _If you DID NOT install the **Thing+ Embedded Package** on your Raspberry Pi/Bea
 - [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) 
 - [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) 
 - [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html) 
-- [**Guide for Edison**](/ko/open-hardware/edison-user-guide.html)
+- [**Guide for Edison**](/en/open-hardware/edison-user-guide.html)
 
 _In the case of raspberry pi & Arduino, the Raspberry Pi is a "Gateway" and Arduino is a "Device"._
 
@@ -82,7 +82,7 @@ _In the case of raspberry pi & Arduino, the Raspberry Pi is a "Gateway" and Ardu
 <br/>
 1) Go to the `scripts`directory of the directory where your Thing+ Embedded package was installed.
 
-<p class="dwExpand" > For BeagleBon Black/Raspberry Pi 2 / Edison어 / Beaglebone Air</p>
+<p class="dwExpand" > For BeagleBon Black/Raspberry Pi 2 / Edison / Beaglebone Air</p>
 
 - Connect to your device over SSH and go to the `scripts` directory
 
