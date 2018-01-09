@@ -1,7 +1,7 @@
 ---
 title: Edison User Guide
 tags: "open-hardware"
-published: true
+published: false
 img: ic-edison.png
 permalink: /en/open-hardware/edison-user-guide.html
 ---

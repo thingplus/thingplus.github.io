@@ -1,7 +1,7 @@
 ---
 title: 에디슨 사용자 가이드
 tags: "open-hardware"
-published: true
+published: false
 img: ic-edison.png
 permalink: /ko/open-hardware/edison-user-guide.html
 ---
