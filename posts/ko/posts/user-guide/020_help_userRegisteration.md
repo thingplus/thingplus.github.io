@@ -130,7 +130,7 @@ xx:xx:xx:xx:xx:xx
 ![select_gateway_model_pi](/assets/pi_gw_model.png) 
 
 <div class="dwExpand2"></div>-->
-<p class="dwExpand" > 라즈베리파이 경우: <b>Open Sourece Gateway</b></p>
+<p class="dwExpand" > 라즈베리파이 경우: <b>Open Source Gateway</b></p>
 
 ![select_gateway_model_openhw](/assets/openhw_gw_model.png)
 
