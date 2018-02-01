@@ -22,7 +22,7 @@ permalink: /en/rest-api/rest-api.html
 ### How to push sensor data / status to Thing+
 
 - MQTT protocol should be used.
-- Please refer to THIS GUIDE as well as: [mqtt guide](https://github.com/daliworks/thingplus-embedded/blob/master/docs/Thingplus_Embedded_Guide_EN.md)
+- Please refer to [THIS GUIDE](https://github.com/daliworks/thingplus-embedded/blob/master/docs/Thingplus_Embedded_Guide_EN.md) as well as: 
   - [Pushing sensor status data](https://github.com/daliworks/thingplus-embedded/blob/master/docs/Thingplus_Embedded_Guide_EN.md#224-transmission-of-the-sensor-status-data)
   - [Pushing sensor value data](https://github.com/daliworks/thingplus-embedded/blob/master/docs/Thingplus_Embedded_Guide_EN.md#226-transmission-of-the-sensor-value-data)
 
