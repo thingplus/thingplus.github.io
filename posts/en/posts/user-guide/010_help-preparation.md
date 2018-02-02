@@ -100,6 +100,11 @@ Overview for usage of Thing+ services
 * The timeline records all events that generate rules and is a central location to access time-sensitive data.  
 
 <br>
+<br>
+<br>
+<br>
+<br>
+
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>

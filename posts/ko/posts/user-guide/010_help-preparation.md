@@ -146,6 +146,10 @@ Thing+ 서비스에 대해서 전반적인 내용을 파악할 수 있는 가이
 * 타임라인은 규칙에 의해서 발생되는 모든 이벤트들을 시간 순서로 보여주는 역할을 합니다.
 
 <br>
+<br>
+<br>
+<br>
+<br>
 
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
