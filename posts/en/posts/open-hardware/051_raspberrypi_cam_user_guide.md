@@ -49,7 +49,10 @@ Before you try to do as this guide. you must have account for dropbox.___
 
 - If you are a Mac or Linux user, please use the default terminal utility.
 - If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
-- Putty Download link - http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe
+  - [Putty Download link](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
+  
+> note: SSH is not enabled by default on Raspberry PI devices
+- [How to enable SSH on Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
 5) Insert the Micro SD card into the Micro SD card slot of the **back panel** of your Raspberry Pi.
 ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)

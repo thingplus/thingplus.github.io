@@ -46,7 +46,9 @@ Thing+ 연동가이드(라즈베리파이)
    - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
    - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
    - [Putty 다운로드 링크](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-
+  
+> note: Raspberry PI 에서 ssh 는 disable이 default 입니다.
+- [Raspberry pi 에서 ssh enable 하는 방법](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
 5) Raspbian을 설치한 Micro SD card를 라즈베리파이 아래 그림과 같이 **뒷면**의 Micro SD card 슬롯에 꽂는다.
    ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
