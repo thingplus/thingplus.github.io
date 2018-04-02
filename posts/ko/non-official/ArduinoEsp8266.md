@@ -38,8 +38,8 @@ permalink: /ko/esp8266.html
 
 1.2 ESP8266 Flash Tool, SDK Download
 
-  - Flash Tool : [Download](https://espressif.com/sites/default/files/tools/flash_download_tools_v3.4.4.zip)
-  - SDK : [Download](https://espressif.com/sites/default/files/sdks/esp8266_nonos_sdk_v2.0.0_16_08_10.zip)
+  - Flash Tool : [Flash Download Tools (ESP8266 & ESP32)](https://www.espressif.com/en/support/download/other-tools)
+  - SDK : [ESP8266 NONOS SDK V2.0.0 20160810](https://www.espressif.com/en/support/download/sdks-demos)
 
 <br/>
 
