@@ -219,7 +219,24 @@
                   {% endif %}
                 {% endfor %}
                 </ul>
-              </li>   
+              </li>
+              <!-- Release Note  -->
+              <li><a href="#">{{ site.data.i18n[page.lang].submenu_notice }}</a>
+                <ul>
+                {% assign posts = site.pages | where:"lang", page.lang %} 
+                {% for post in posts %} 
+                  {% if post.title != 'ThingPlus' and post.tags contains 'notice' %} 
+                    {% assign current = nil %} 
+                    {% if page.url contains post.url %} 
+                      {% assign current = 'active' %} 
+                    {% endif %}
+                    <li data-section="{{ post.url }}" class="{{ current }} lang">
+                      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+              </li>      
               <!-- register and FaceBook -->
                                          
               <li><div class="register">{{site.data.i18n[page.lang].make_iot}}
@@ -261,6 +278,6 @@
    <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
     <script>$("li.active").parents('li').toggleClass("active");</script>    
 
-    {% include analytics.html %}
+    <!-- {% include analytics.html %} -->
   </body>
 </html>
