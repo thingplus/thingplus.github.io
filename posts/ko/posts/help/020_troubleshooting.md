@@ -103,7 +103,7 @@ Gateway가 기등록 되었는지 확인 합니다.
 
 - 상단 메뉴에서 `센서목록`에 가서 등록하려던 Gateway가 이미 등록 되어 있는지 확인합니다.
 - 이미 등록이 되어 있고 정상동작을 하지 않는다면, `게이트웨이관리`에서 해당 gateway를 삭제 합니다.
-- `./getmac` 으로 받아온 값을 이용해서 API KEY를 받고 최초 실행시 APIKEY를 입력 했는지 확인합니다. 
+- `/opt/thingplus/gateway/scripts/getGatewayId.sh` 으로 받아온 값을 이용해서 API KEY를 받고 최초 실행시 APIKEY를 입력 했는지 확인합니다. 
 
   ```
   cd [thingplus가 설치된 위치]/gateway/thingplus-gateway/device/config

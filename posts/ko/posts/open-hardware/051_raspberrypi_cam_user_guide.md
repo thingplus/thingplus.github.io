@@ -161,15 +161,18 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 ```
 
    
-- 4GB 이상의 SD card를 사용하기 위해서 `1. Expand Filesystem`을 선택한다.
+- 4GB 이상의 SD card를 사용하기 위해서 `7. Advanced Options` - `A1. Expand Filesystem` 을 선택한다.
   ![Raspberry Pi Setting File sytsem](/assets/expand_file_system.png)
+  ![Raspberry Pi Setting File sytsem](/assets/expand_file_system2.png)
 
    
-- Camera 모듈을 사용하기 위해서 `5. Enable Camera` 
+- I2C를 사용하기 위해서 `5.Interfacing Options` --> `P5 I2C`을 선택하고 이후 물음에 모두 `Yes`를 선택한다.
+  ![Raspberry Pi Setting advanced options](/assets/advanced_options.png)
+  ![Raspberry Pi Setting choose i2c](/assets/choose_i2c.png)
+
+- Camera 모듈을 사용하기 위해서 `P1.  Camera`를 선택하고 이후 물음에 모두 `Yes`를 선택한다.
   ![Raspberry Pi Setting Enable camera](/assets/pi-cam-01.png)
-  ![Raspberry Pi Setting confirm](/assets/pi-cam-02.png)
 
-   
 - Tab키를 누르고 Finish를 선택한 후 Reboot할 것이냐는 물음에 `Yes`를 선택한다.
   ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
   ![Raspberry Pi Choose Finish](/assets/choose_finish_2.png)

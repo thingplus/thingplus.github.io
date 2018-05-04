@@ -228,14 +228,14 @@ ThingPlus Embeded는 Gateway인 라즈베리파이에서 설치 합니다. 본 �
 ```
 
 
-  - 4GB 이상의 SD card를 사용하기 위해서 `1. Expand Filesystem`을 선택합니다.
-    ![Raspberry Pi Setting File sytsem](/assets/expand_file_system.png)
-
+- 4GB 이상의 SD card를 사용하기 위해서 `7. Advanced Options` - `A1. Expand Filesystem`을 선택한다.
+  ![Raspberry Pi Setting File sytsem](/assets/expand_file_system.png)
+  ![Raspberry Pi Setting File sytsem](/assets/expand_file_system2.png)
    
-  - Tab키를 누르고 Finish를 선택한 후 Reboot할 것이냐는 물음에 `YES`를 선택합니다.
-    ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
-
-    ![Raspberry Pi Choose Finish2](/assets/choose_finish_2.png)
+  
+- Tab키를 누르고 Finish를 선택한 후 Reboot할 것이냐는 물음에 `No`를 선택한다.
+  ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
+  ![Raspberry Pi Choose Finish](/assets/choose_finish_2.png)
 
    
 <div id='id-package'></div>

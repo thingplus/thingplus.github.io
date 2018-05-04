@@ -157,11 +157,12 @@ Thing+ Integragtion Guide for Raspberry Pi
 @Pi:$ raspi-config
 ```
  
-- To use micro SD card which has storage bigger than 4GB, Choose `1. Expand Filesystem`.
+- To use micro SD card which has storage bigger than 4GB, Choose `7. Advanced Options` - `A1. Expand Filesystem`.
 ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+![Raspberry Pi + Grove Pi](/assets/expand_file_system2.png)
 
 
-- To use I2C, Choose `Advanced Options` --> `I2C`, and then please Select `Yes` for all the following questions.
+- To use I2C, Choose `5.Interfacing Options` --> `P5 I2C`, and then please Select `Yes` for all the following questions.
 ![Raspberry Pi + Grove Pi](/assets/advanced_options.png)
 ![Raspberry Pi + Grove Pi](/assets/choose_i2c.png)
 

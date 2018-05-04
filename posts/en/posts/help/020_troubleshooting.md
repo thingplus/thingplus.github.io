@@ -97,7 +97,7 @@ Make sure Gateway is pre-registered.
 
 - If it is already registered and does not operate normally, delete the gateway from `Gateway Management`.
 
-- `./getmac`` to get the API KEY and make sure that APIKEY is entered at first execution.
+- `/opt/thingplus/gateway/scripts/getGatewayId.sh` to get the API KEY and make sure that APIKEY is entered at first execution.
 
   ```
   cd [Location where thingplus is installed]/gateway/thingplus-gateway/device/config

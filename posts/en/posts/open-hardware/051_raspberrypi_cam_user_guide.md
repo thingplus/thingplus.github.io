@@ -155,13 +155,17 @@ Before you try to do as this guide. you must have account for dropbox.___
 ```
 
    
-- To use micro SD card which has storage bigger than 4GB, Choose `1. Expand Filesystem`.
+- To use micro SD card which has storage bigger than 4GB, Choose `7. Advanced Options` - `A1. Expand Filesystem`.
   ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+  ![Raspberry Pi + Grove Pi](/assets/expand_file_system2.png)
 
-   
-- To Use Camera module, Choose `5. Enable Camera` 
+
+- To use I2C, Choose `5.Interfacing Options` --> `P5 I2C`, and then please Select `Yes` for all the following questions.
+  ![Raspberry Pi + Grove Pi](/assets/advanced_options.png)
+  ![Raspberry Pi + Grove Pi](/assets/choose_i2c.png)
+
+- To Use Camera module, Choose `P1  Enable Camera`, and then please Select `Yes` for all the following questions. 
   ![Raspberry Pi Setting Enable camera](/assets/pi-cam-01.png)
-  ![Raspberry Pi Setting confirm](/assets/pi-cam-02.png)
 
    
 - Press Tab key on your keyboard and choose `Finish`, and then please Select `Yes` for the question about Rebooting the device.

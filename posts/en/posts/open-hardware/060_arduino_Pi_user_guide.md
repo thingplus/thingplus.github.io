@@ -246,8 +246,9 @@ _ThingPlus Embeded will be installed on Raspberry pi. This guide will be explain
 
 <br/>
 
-- To use micro SD card which has storage bigger than 4GB, Choose `1. Expand Filesystem`.
-   ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+- To use micro SD card which has storage bigger than 4GB, Choose `7. Advanced Options` - `A1. Expand Filesystem`.
+  ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
+  ![Raspberry Pi + Grove Pi](/assets/expand_file_system2.png)
 
 - Press Tab key on your keyboard and choose `Finish`, and then please Select `Yes` for the question about Rebooting the device.
   ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
