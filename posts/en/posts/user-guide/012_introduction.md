@@ -1,8 +1,11 @@
 ---
-title: Thing+ Commercial Platform Introduction
+title: Thing+ Platform Introduction
+tags: "user-guide"
 published: true
-img: ic-troubleshooting.png
-permalink: /en/videoguide_sample.html
+image: "http://support.thingplus.net/assets/ogp/ogp_default.png"
+img: ic_codeshare.png
+video: "yes"
+permalink: /en/introduction.html
 ---
 
 
