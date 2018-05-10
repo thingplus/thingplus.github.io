@@ -2,8 +2,8 @@
 title: Thing+ Platform Introduction
 tags: "user-guide"
 published: true
-image: "http://support.thingplus.net/assets/ogp/ogp_default.png"
-img: ic_codeshare.png
+image: "http://support.thingplus.net/assets/ogp/ogp_videolecture.png"
+img: ic-videolecture.png
 video: "yes"
 permalink: /en/introduction.html
 ---
