@@ -2,7 +2,7 @@
 title: IR-Sensor examples
 tags: "tutorial"
 published: true
-img : ic_codeshare.png
+img : ic_ir.png
 permalink: /en/help/code-share.html
 ---
 ### example contents 

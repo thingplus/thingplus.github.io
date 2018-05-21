@@ -2,7 +2,7 @@
 title: IR-Sensor 활용 예제
 tags: "tutorial"
 published: true
-img : ic_codeshare.png
+img : ic_ir.png
 permalink: /ko/help/code-share.html
 ---
 ### 예제 목차 
