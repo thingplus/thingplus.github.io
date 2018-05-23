@@ -10,7 +10,7 @@ permalink: /en/notice/20180511.html
 ## Release date
 - Sandbox server: Test server for daliwork partners, used to test equipment before creating a service on production. 
   - URL format `https://*.sandbox.thingplus.net`. 
-  - Sandbox will be released on 2018-5-17
+  - Sandbox will be released on 2018-5-23
 - Production server: 
   - URL format `https://*.thingplus.net` or `https://*.thingplus.eu`. 
   - Release date: TBD

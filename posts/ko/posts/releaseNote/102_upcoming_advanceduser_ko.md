@@ -10,7 +10,7 @@ permalink: /ko/notice/20180511.html
 ## Release 일정
 - sandbox 서버 : daliworks 파트너사가 thingplus 사용서버에 서비스를 개설하기 전에 연동테스트를 하기 위해 임시로 사용하는 테스트 서버
   - `https://*.sandbox.thingplus.net`
-  - sandbox 서버 릴리즈 : 2018년 5월 17일
+  - sandbox 서버 릴리즈 : 2018년 5월 23일
 - 상용 서버 : 실제로 고객이 실 서비스를 제공하는 서버.
   - `https://*.thingplus.net` , `https://*.thingplus.eu` 
   - 상용 서버 릴리즈 : 미정
