@@ -1,7 +1,7 @@
 ---
 title: Raspberry Pi + Arduino User Guide
 tags: "open-hardware"
-published: true
+published: false
 img: ic-raspberrypi-arduino.png
 permalink: /en/open-hardware/arduinoPi-user-guide.html
 ---

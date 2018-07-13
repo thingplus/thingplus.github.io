@@ -1,7 +1,7 @@
 ---
 title: PC + Arduino User Guide
 tags: "open-hardware"
-published: true
+published: false
 img: ic_arduino_PC.png
 permalink: /en/open-hardware/arduino-user-guide.html
 ---
