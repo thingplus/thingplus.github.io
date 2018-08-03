@@ -139,6 +139,8 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     Linux : /home/<your user name>/sketchbook/libraries
     ```
 
+<div id='config-setting'></div>
+
   - _**LibraryPath**/PubSubClient/src/PubSubClient.h_ 파일을 열어서 아래 부분을 수정합니다.
 
     - `MQTT_MAX_PACKET_SIZE 196`
@@ -147,6 +149,7 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
     ![Arduino_Edit_Pubsub](/assets/arduino_edit_pubsub.png)
 
 > 주의 : 이 부분을 수정하지 않으면 actuator의 동작이 실행이 되지 않습니다.
+
 
 
 3) config 설정

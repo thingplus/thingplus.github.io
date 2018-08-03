@@ -228,6 +228,7 @@ Thing+ 연동가이드(라즈베리파이)
   @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
+<div id='config-setting'></div>
 
 6) 라즈베리파이를 재시작한다.
 

@@ -127,6 +127,8 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 <br/>
 <div id='id-pubsub'></div>
 
+
+
 2) Modify header file in PubSubClient
 
   - Arduino Library Directory Path
@@ -136,6 +138,8 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
     Mac : ~/Documents/Arduino/libraries/
     Linux : /home/<your user name>/sketchbook/libraries
     ```
+
+<div id='config-setting'></div>
 
   - open _**LibraryPath**/PubSubClient/src/PubSubClient.h_ and modify as the following.
     - `MQTT_MAX_PACKET_SIZE 196`

@@ -226,6 +226,7 @@ Thing+ Integragtion Guide for Raspberry Pi
   @Pi:$ ./thingplus_embedded_sdk_pi_install.sh
   ```
 
+<div id='config-setting'></div>
 
 6) Reboot Raspberry Pi
 
