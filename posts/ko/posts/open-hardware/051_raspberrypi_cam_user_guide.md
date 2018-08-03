@@ -17,8 +17,8 @@ Thing+ 연동가이드(라즈베리파이)
 
 
 ---
-___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이드 입니다. 
-사진은 개인적인 부분이므로 개인이 소유하고 있는 dropbox에 저장 하는 것으로 가이드 합니다. 
+___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이드 입니다.
+사진은 개인적인 부분이므로 개인이 소유하고 있는 dropbox에 저장 하는 것으로 가이드 합니다.
 그러므로 dropbox에 계정이 있으셔야 합니다.___
 
 ---
@@ -62,9 +62,9 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 
 
 6) 라즈베리파이에 Ethernet(LAN 케이블), Power Cable을 연결한다.
-  
-  ***안정적인 전원 공급을 위해 power cable에 연결하는 것을 권장합니다. USB 허브등에 연결했을때 file resource가 broken 되는 현상이 관찰되었습니다.*** 
-   
+
+  ***안정적인 전원 공급을 위해 power cable에 연결하는 것을 권장합니다. USB 허브등에 연결했을때 file resource가 broken 되는 현상이 관찰되었습니다.***
+
    ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 
@@ -160,12 +160,12 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 @Pi:$ raspi-config
 ```
 
-   
+
 - 4GB 이상의 SD card를 사용하기 위해서 `7. Advanced Options` - `A1. Expand Filesystem` 을 선택한다.
   ![Raspberry Pi Setting File sytsem](/assets/expand_file_system.png)
   ![Raspberry Pi Setting File sytsem](/assets/expand_file_system2.png)
 
-   
+
 - I2C를 사용하기 위해서 `5.Interfacing Options` --> `P5 I2C`을 선택하고 이후 물음에 모두 `Yes`를 선택한다.
   ![Raspberry Pi Setting advanced options](/assets/advanced_options.png)
   ![Raspberry Pi Setting choose i2c](/assets/choose_i2c.png)
@@ -222,6 +222,22 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 @Pi:$ sudo reboot
 ```
 
+7) config 설정
+- mqtt와 api 의 host 설정을 위해 `/opt/thingplus/gateway/thingplus-gateway/device/config`경로에 `runetim.json` 파일을 아래와 같이 만들거나 수정합니다.
+
+```
+{
+  "Server": {
+    "mqtt": {
+      "host": "dmqtt.sandbox.thingplus.net"
+    },
+    "service": {
+      "host": "api.sandbox.thingplus.net"
+    }
+  }
+}
+```
+
 <div id='id-dropbox'></div>
 
 ---
@@ -237,27 +253,27 @@ _드롭 박스 업로더와 연동 하기 위해 다음의 절차로 설정 한�
 ```
   - 아래의 가이드 대로 따라 하여 key를 발급 받는다.
   ![uploader.sh](/assets/pi-cam-05.png)
-  
+
   - [Browser 접속](https://www.dropbox.com/developers/apps) 후에 로그인을 한다.
   - `Create App` button을 누른다.
   ![dropbox](/assets/pi-cam-06.png)
 
   - 아래 스크린샷을 참조하여 설정하고 `Create app` 버튼을 누른다.
   ![dropbox config](/assets/pi-cam-07.png)
-  
+
   - 아래와 같이 app key와 app secret가 발급 되었다.
   ![dropbox key](/assets/pi-cam-08.png)
 
   - 터미널창에서 요구 하고 있는 key와 secret을 입력하고 가이드 된 url로 브라우저 접속후에 OAuth 인증 한다.
 
     ```bash
-    # App key: xxxxxxxx 
+    # App key: xxxxxxxx
     # App secret: yyyyyyyy
-    
+
     Permission type:
     App folder [a]: If you choose that the app only needs access to files it creates
     Full Dropbox [f]: If you choose that the app needs access to files already on Dropbox
-    
+
     # Permission type [a/f]: a
 
     > App key is xxxxxxxx, App secret is yyyyyyyy and Access level is App Folder. Looks ok? [y/n]: y
@@ -272,7 +288,7 @@ _드롭 박스 업로더와 연동 하기 위해 다음의 절차로 설정 한�
     ```
 
   - OAuth 인증 허용
-  ![dropbox](/assets/pi-cam-09.png)  
+  ![dropbox](/assets/pi-cam-09.png)
   ![dropbox](/assets/pi-cam-10.png)
 
 

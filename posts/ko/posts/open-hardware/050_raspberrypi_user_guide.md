@@ -46,7 +46,7 @@ Thing+ 연동가이드(라즈베리파이)
    - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
    - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
    - [Putty 다운로드 링크](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-  
+
 > note: Raspberry PI 에서 ssh 는 disable이 default 입니다.
 - [Raspberry pi 에서 ssh enable 하는 방법](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
@@ -56,7 +56,7 @@ Thing+ 연동가이드(라즈베리파이)
 
 6) 라즈베리파이에 Ethernet(LAN 케이블), Power Cable을 연결한다.
 
-  ***안정적인 전원 공급을 위해 power cable에 연결하는 것을 권장합니다. USB 허브등에 연결했을때 file resource가 broken 되는 현상이 관찰되었습니다.*** 
+  ***안정적인 전원 공급을 위해 power cable에 연결하는 것을 권장합니다. USB 허브등에 연결했을때 file resource가 broken 되는 현상이 관찰되었습니다.***
 
    ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
@@ -153,22 +153,22 @@ Thing+ 연동가이드(라즈베리파이)
 @Pi:$ raspi-config
 ```
 
-   
+
 - 4GB 이상의 SD card를 사용하기 위해서 `7. Advanced Options` - `A1. Expand Filesystem`을 선택한다.
   ![Raspberry Pi Setting File sytsem](/assets/expand_file_system.png)
   ![Raspberry Pi Setting File sytsem](/assets/expand_file_system2.png)
 
-   
+
 - I2C를 사용하기 위해서 `5.Interfacing Options` --> `P5 I2C`을 선택하고 이후 물음에 모두 `Yes`를 선택한다.
   ![Raspberry Pi Setting advanced options](/assets/advanced_options.png)
   ![Raspberry Pi Setting choose i2c](/assets/choose_i2c.png)
 
-   
+
 - Tab키를 누르고 Finish를 선택한 후 Reboot할 것이냐는 물음에 `No`를 선택한다.
   ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
   ![Raspberry Pi Choose Finish](/assets/choose_finish_2.png)
 
-   
+
 - /etc/modules에 `i2c-dev`와 `i2c-bcm2708`을 추가한다.
 
   ```bash
@@ -233,6 +233,22 @@ Thing+ 연동가이드(라즈베리파이)
 
 ```bash
 @Pi:$ sudo reboot
+```
+
+7) config 설정
+- mqtt와 api 의 host 설정을 위해 `/opt/thingplus/gateway/thingplus-gateway/device/config`경로에 `runetim.json` 파일을 아래와 같이 만들거나 수정합니다.
+
+```
+{
+  "Server": {
+    "mqtt": {
+      "host": "dmqtt.sandbox.thingplus.net"
+    },
+    "service": {
+      "host": "api.sandbox.thingplus.net"
+    }
+  }
+}
 ```
 
 <div id='id-register'></div>
@@ -327,3 +343,6 @@ usb0      no wireless extensions.
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
 </div>
+<br/>
+<br/>
+<br/>

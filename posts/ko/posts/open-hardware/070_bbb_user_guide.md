@@ -29,7 +29,7 @@ Thing+ 연동가이드(비글본그린)
    - Mac 또는 Linux 사용자일 경우 기본 터미널을 사용하시면 됩니다.
    - 윈도우 사용자일 경우, Putty 클라이언트 사용을 권장합니다.
    - [Putty 다운로드 링크](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-   - [Putty 사용자 설명서](http://suhjin.tistory.com/37) 
+   - [Putty 사용자 설명서](http://suhjin.tistory.com/37)
 
 <br/>
 2) 비글본그린을 Ethernet(LAN 케이블), Power Cable을 연결한다.
@@ -50,7 +50,7 @@ Thing+ 연동가이드(비글본그린)
      ```bash
      $ ssh root@192.168.1.XXX
      ```
-   
+
    - Windows의 경우
      - putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
      ![BBG putty login](/assets/putty_login_bbg.png)
@@ -161,6 +161,23 @@ Thing+ 연동가이드(비글본그린)
 ```bash
 @BBG:$ reboot
 ```
+
+8) config 설정
+- mqtt와 api 의 host 설정을 위해 `/opt/thingplus/gateway/thingplus-gateway/device/config`경로에 `runetim.json` 파일을 아래와 같이 만들거나 수정합니다.
+
+```
+{
+  "Server": {
+    "mqtt": {
+      "host": "dmqtt.sandbox.thingplus.net"
+    },
+    "service": {
+      "host": "api.sandbox.thingplus.net"
+    }
+  }
+}
+```
+
 
 <div id='id-register'></div>
 <br/><br/>
@@ -293,8 +310,8 @@ _Mac OS X El Capitan은 현재 드라이버 미지원(**2015-12-3 기준**)이�
      ```
      $ ssh root@192.168.7.2
      ```
-        
-   
+
+
    - Windows의 경우
      - putty 실행 후, 아래 그림과 같이 IP주소를 입력 후, `Open`버튼을 클릭하고 비밀번호를 입력한다.
      ![BBG putty login](/assets/putty_usb_login_bbg.png)

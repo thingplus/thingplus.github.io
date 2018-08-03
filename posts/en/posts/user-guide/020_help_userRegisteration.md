@@ -9,8 +9,8 @@ permalink: /en/user-guide/registration.html
 User guide for setting up basic hardware synchronization and user credentials.
 
 1. [Service Administrator](#id-serviceadmin)
-2. [Users](#id-enduser) 
-3. [Gateway Registration](#id-gateway) 
+2. [Users](#id-enduser)
+3. [Gateway Registration](#id-gateway)
 
 ---
 <div id='id-serviceadmin'></div>
@@ -36,7 +36,7 @@ User guide for setting up basic hardware synchronization and user credentials.
 ### For Users
 <br>
 
-#### Signing into the Thing+ portal 
+#### Signing into the Thing+ portal
   * Put your service address in your internet browser address bar.
 ![](/assets/2_address.png)
 
@@ -47,14 +47,20 @@ User guide for setting up basic hardware synchronization and user credentials.
 ![](/assets/en_2_email.png)
 
 #### Sign up and Authorization progress for service administrators
-  * Similarly to users, go to **iot.thingplus.net** and register using your email.
+  * Similarly to users, go to **trial.sandbox.thingplus.net** and register using your email.
   * After confirmation of your e-mail, follow the included sign up instructions.
   * You should get a confirmation e-mail after authorization from your service manager.
   * It will take a few seconds to minutes for authorization as the data populates through our system. If you did not receive any e-mail, please:
     * Check that your entered email address is correct.
     * Check your spam mail box and trash.
   * After receiving confirmation, enter your ID and Password to log in.
-
+  * There are the following restrictions regarding the use of the services provided free of charge.
+    * 2 gateways, 20 sensors, 5 rules can be used.
+    * The period of use is 90 days. (After 90 days, there may be data deletion, login restrictions, etc.)
+    * Data transmission cycle is recommended to 5 minutes, minimum 1 minute.
+    * If you use the API or mqtt abnormally, we can disable the token or gatewayKey without notification.
+    * If you use email as the action of a rule, there is a limit of 200 emails sent per month. If you exceed this limit, the rule will stop functioning.
+    * We can deactivate a rule without notification if you have a rule associated with an email account that is not being received.
 <br>
 
 ---
@@ -70,14 +76,14 @@ _This Guide is written for BeagleBone Green & Raspberry Pi 2, but most devices s
 
 _If you DID NOT install the **Thing+ Embedded Package** on your Raspberry Pi/BeagleBone Green, please refer to the following:_
 
-- [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html) 
-- [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html) 
-- [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html) 
+- [**Guide for Raspberry Pi**](/en/open-hardware/raspberry-pi-user-guide.html)
+- [**Guide for Beaglebone Green**](/en/open-hardware/bbb-user-guide.html)
+- [**Guide for Arduino**](/en/open-hardware/arduino-user-guide.html)
 - [**Guide for Edison**](/en/open-hardware/edison-user-guide.html)
 
 _In the case of raspberry pi & Arduino, the Raspberry Pi is a "Gateway" and Arduino is a "Device"._
 
---- 
+---
 
 <br/>
 1) Go to the `scripts`directory of the directory where your Thing+ Embedded package was installed.
@@ -184,7 +190,7 @@ xx:xx:xx:xx:xx:xx
 
 <p class="dwExpand" > For Raspberry Pi with Camera module</p>
 
-   
+
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/openhardware/raspberrypi/camera
@@ -198,7 +204,7 @@ xx:xx:xx:xx:xx:xx
 
 <p class="dwExpand" > For Raspberry Pi + Arduino</p>
 
-   
+
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit
@@ -241,7 +247,7 @@ xx:xx:xx:xx:xx:xx
 ```
 
 <div class="dwExpand2"></div>
-<p class="dwExpand" > For Arduino (<b>Windows PC</b>)</p> 
+<p class="dwExpand" > For Arduino (<b>Windows PC</b>)</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
@@ -253,7 +259,7 @@ xx:xx:xx:xx:xx:xx
 <div class="dwExpand2"></div>
 <p class="dwExpand" > For Edison </p>
 
-   
+
 ```bash
 @shell:$ cd /opt/thingplus/openhardware/edison/grove-starter-kit
 @shell:$ ./thingplus_device.sh start
@@ -315,7 +321,7 @@ exit 0
 @shell:$ nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
 
 exit 0
 ```
@@ -330,7 +336,7 @@ exit 0
 @shell:$ nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/bba/grove-starter-kit; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
 
 exit 0
 ```
@@ -345,7 +351,7 @@ exit 0
 @shell:$ nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/arduino/grove-starter-kit; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
 
 exit 0
 ```

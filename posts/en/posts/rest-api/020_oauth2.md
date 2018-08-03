@@ -30,7 +30,7 @@ All developers need to register their application before getting started. A regi
 
 <div id='id-oauth-author'></div>
 
-## OAuth 2.0 Grant Types    
+## OAuth 2.0 Grant Types
 
 <br/>
 
@@ -40,16 +40,18 @@ All developers need to register their application before getting started. A regi
 Redirect the user to allow or not for the Web Server(or Confidential Client) to access the resources of the user with registered scopes
 
 ```JSON
-GET https://api.thingplus.net/v1/oauth2/authorize
+GET https://api.thingplus.net/v1/oauth2/authorize (Commercial Server)
+GET https://api.sandbox.thingplus.net/v1/oauth2/authorize (Sandbox Server)
 
 Example>
-GET https://api.thingplus.net/v1/oauth2/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri={REDIRECT_URI}
+GET https://api.thingplus.net/v1/oauth2/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri={REDIRECT_URI} (Commercial Server)
+GET https://api.sandbox.thingplus.net/v1/oauth2/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri={REDIRECT_URI} (Commercial Server)
 ```
 
 * URL Query parameters
 
-|      Name     |      Type     |   Description |                          
-| ------------- | ------------- | ------------- |  ------------------------------------------------------------ 
+|      Name     |      Type     |   Description |
+| ------------- | ------------- | ------------- |  ------------------------------------------------------------
 | client_id     | string        | __Required__ The client ID you received from thingplus |
 | response_type | string        | __Required__ Use "code" |
 | redirect_uri  | string        | __Required__ The URL in your app where users will be sent after authorization. |
@@ -74,8 +76,8 @@ Content-Type : application/x-www-form-urlencoded
 
 <div id='id-oauth-implicit'></div>
 
-|      Name     |      Type     |                         Description                          
-| ------------- | ------------- | ------------------------------------------------------------ 
+|      Name     |      Type     |                         Description
+| ------------- | ------------- | ------------------------------------------------------------
 | code          | string        | __Required__ The code you received as a response from Step 2
 | grant_type    | string        | __Required__ Use "authorization_code"
 | redirect_uri  | string        | __Required__ The redirect URL when you registered your application
@@ -98,8 +100,8 @@ Example>
 
 * URL Query parameters
 
-|      Name     |      Type     |                         Description                          
-| ------------- | ------------- | ------------------------------------------------------------ 
+|      Name     |      Type     |                         Description
+| ------------- | ------------- | ------------------------------------------------------------
 | client_id     | string        | __Required__ The client ID you received from thingplus
 | response_type | string        | __Required__ Use "token"
 | redirect_uri  | string        | __Required__ The URL in your app where users will be sent after authorization.
@@ -132,7 +134,7 @@ Scopes let you specify exactly what type of access you need. Scopes limit access
 For the Authorization Code Grant, requested scopes will be displayed to the user on the authorize form.
 
 |     Scope          |                Name              |                         Description
-| ------------------ | -------------------------------- | ------------------------------------------------------------ 
+| ------------------ | -------------------------------- | ------------------------------------------------------------
 | (no scope)         |                                  | Cannot access any scopes
 | user-profile       | User Profile Read and Update     | ___TBD___ Read and update the profile of the user
 | user-profile-read  | User Profile Read                | Read the profile of the user

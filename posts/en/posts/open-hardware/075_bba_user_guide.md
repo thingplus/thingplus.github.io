@@ -48,7 +48,7 @@ Thing+ Integration Guide for BeagleBone Air
      ```bash
      $ ssh root@192.168.1.XXX
      ```
-   
+
 - Example for Windows
   - Run the putty, and Insert your IP Address, and then, Click the button `Open` and Enter a password.
     ![BBG putty login](/assets/putty_login_bbg.png)
@@ -69,7 +69,7 @@ Thing+ Integration Guide for BeagleBone Air
   @BBA:$ nano /etc/hostname
   ```
 
-- Change the `BeagleBone` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image. 
+- Change the `BeagleBone` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
   ![BBG Modify hostname](/assets/modify_hostname.png)
 
   - When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor
@@ -133,6 +133,22 @@ Thing+ Integration Guide for BeagleBone Air
 
 ```bash
 @BBA:$ reboot
+```
+
+8) config setting
+- Create or modify the `runetim.json` file in the `/opt/thingplus/gateway/thingplus-gateway/device/config` as shown below for the mqtt and api host configuration.
+
+```
+{
+  "Server": {
+    "mqtt": {
+      "host": "dmqtt.sandbox.thingplus.net"
+    },
+    "service": {
+      "host": "api.sandbox.thingplus.net"
+    }
+  }
+}
 ```
 
 <div id='id-register'></div>

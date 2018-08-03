@@ -75,7 +75,7 @@ Arrangements: Arduino, Arduino AC power, ESP8266
 
   - To check whether ESP8266 is booted normally, send `AT` command and check whether `OK` response is coming.
   - Send `AT + GMR` command to check the firmware version.
-  - Finally, to set the Baudrate of the ESP8266 to `9600`, transmit `AT + UART_DEF = 9600,8,1,0,0`. 
+  - Finally, to set the Baudrate of the ESP8266 to `9600`, transmit `AT + UART_DEF = 9600,8,1,0,0`.
   - If it is set to 9600 normally, it should be reset to 9600 as the baud rate of the serial monitor.
   
    > All `AT commands` must be capitalized.
@@ -106,12 +106,12 @@ Arrangements: Arduino, Arduino AC power, ESP8266
 
 2.2 Install libraries
 
-  - Scketch -> Include Library -> Manage Libraries -> Search and Install `WiFiEsp` 
-  - Scketch -> Include Library -> Manage Libraries -> Search and Install `Thingplus` 
-  - Scketch -> Include Library -> Manage Libraries -> Search and Install `ArduinoJson` 
-  - Scketch -> Include Library -> Manage Libraries -> Search and Install `PubSubClient` 
-  - Scketch -> Include Library -> Manage Libraries -> Search and Install `Time` 
-  - Scketch -> Include Library -> Manage Libraries -> Search and Install `Timer` 
+  - Scketch -> Include Library -> Manage Libraries -> Search and Install `WiFiEsp`
+  - Scketch -> Include Library -> Manage Libraries -> Search and Install `Thingplus`
+  - Scketch -> Include Library -> Manage Libraries -> Search and Install `ArduinoJson`
+  - Scketch -> Include Library -> Manage Libraries -> Search and Install `PubSubClient`
+  - Scketch -> Include Library -> Manage Libraries -> Search and Install `Time`
+  - Scketch -> Include Library -> Manage Libraries -> Search and Install `Timer`
 
 Reference : [Install arduino firmware](/ko/open-hardware/arduino-noSSL-user-guide.html#id-firmware)
 
@@ -134,8 +134,33 @@ Reference : [Install arduino firmware](/ko/open-hardware/arduino-noSSL-user-guid
 
     ![Arduino_Edit_Pubsub](/assets/arduino_edit_pubsub.png)
 
+2.2.2 config setting
+- open **_LibraryPath_/Thingplus/src/Thingplus.cpp** and modify as the following.(at line: 230)
+  - `mqtt.thingplus.net` -> `mqtt.sandbox.thingplus.net`
+
+```c++
+void ThingplusClass::begin(Client& client, byte mac[], const char *apikey) {
+	const char *server = "dmqtt.sandbox.thingplus.net";
+	const int port = 1883;
+
+	this->mac = mac;
+	snprintf(this->gatewayId, sizeof(this->gatewayId), PSTR("%02x%02x%02x%02x%02x%02x"),
+			mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+	this->apikey = apikey;
+
+	this->mqtt.setCallback(mqttSubscribeCallback);
+	this->mqtt.setServer(server, port);
+	this->mqtt.setClient(client);
+}
+```
+
 #### 3. Register gateway
 
 Reference : [Register Gateway](/ko/open-hardware/arduino-noSSL-user-guide.html#id-gateway)
 
 - In this guide, we will use `LibrayPath/Thingplus/examples/ArduinoEsp8266/ArduinoEsp8266.ino` as it is an example of connecting the esp8266 to the Arduino board.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

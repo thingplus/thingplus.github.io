@@ -40,14 +40,14 @@ permalink: /ko/help/faq.html
 
 <p class="dwfqExpand" id ="faq_install_wget"> Mac 에서 wget 설치 방법</p>
 
-wget을 설치 하기 위해서는 brew가 설치 되어 있어야 합니다.  
- 
+wget을 설치 하기 위해서는 brew가 설치 되어 있어야 합니다.
+
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-brew 명령어를 사용하여 wget을 설치 합니다.  
- 
+brew 명령어를 사용하여 wget을 설치 합니다.
+
 ```
 brew install wget
 ```
@@ -56,7 +56,7 @@ brew install wget
 
 <p class="dwfqExpand" id ="faq_not_grove"> guide에 있는 것처럼 Gove sensor kit 만 사용해야 하나요? </p>
 
-아닙니다. 
+아닙니다.
 
 참고용으로 예제는 Grove kit을 사용해서 배포 하였지만 약간만 소스를 수정하시면 다른 센서들도 사용 가능 하십니다.
 추후 관련한 내용을 update 할 예정이지만, 아래의 link에서 임시로 해당 내용에 대해 확인 가능하십니다.
@@ -67,10 +67,10 @@ brew install wget
 
 <p class="dwfqExpand" id ="faq_useWifi"> Ethernet이 아닌 WiFi 동글을 붙여서도 Thing+ Portal에 등록이 가능한가요?</p>
 
-네 가능합니다. 
+네 가능합니다.
 
-Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이기에, 인터넷이 연결되어 있고, Thing+ Embedded가 설치되어 있다면, Thing+ Portal에 바로 붙여서 사용하실 수 있습니다. 
-또한 해당 하드웨어의 가이드 내용 안에 WiFi 동글을 연결하는 방법을 안내해드리고 있습니다. 
+Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이기에, 인터넷이 연결되어 있고, Thing+ Embedded가 설치되어 있다면, Thing+ Portal에 바로 붙여서 사용하실 수 있습니다.
+또한 해당 하드웨어의 가이드 내용 안에 WiFi 동글을 연결하는 방법을 안내해드리고 있습니다.
 해당 내용 참고하셔서 연결하시면 됩니다.
 
 <p class="dwfqExpand2"></p>
@@ -79,14 +79,14 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 
 네 그렇습니다.
 
-현재로써는 저희의 가이드 문서에 나와있는 것과 같은 포트에 같은 센서를 연결하셔야 합니다. 
+현재로써는 저희의 가이드 문서에 나와있는 것과 같은 포트에 같은 센서를 연결하셔야 합니다.
 다만, Thing+ Embedded 내에 설치되어 있는 Openhardware디렉토리(/opt/thingplus/openhardware/) 내의 샘플을 수정하시면 다른 포트에 연결하실 수 있습니다.
 
 <p class="dwfqExpand2"></p>
 
 <p class="dwfqExpand" id ="faq_oauth2"> OAuth2 가 뭔가요?</p>
 
-웹, 모바일 앱 등 어플리케이션에서 권한 인증을 수행할 수 있는 표준 방법인 오픈 프로토콜입니다. 
+웹, 모바일 앱 등 어플리케이션에서 권한 인증을 수행할 수 있는 표준 방법인 오픈 프로토콜입니다.
 불특정인의 접근을 방지하기 위한 보안 도구이며, Facebook, Twitter 등에서도 사용하고 있는 방법입니다.
 관련 내용은 [여기](https://thingplus.api-docs.io/2.0/oauth2)에서도 확인가능 합니다.
 
@@ -94,9 +94,9 @@ Ethernet이나 WiFi는 모두 인터넷에 연결하기 위한 도구일 뿐이�
 
 <p class="dwfqExpand" id="faq_thingplus_infra"> ThingPlus의 서버가 AWS를 이용한 한것인가요? </p>
 
-AWS를 IaaS로만 이용해서 thing+ 소프트웨어를 구축 구조가 맞구요. 
-최근에 AWS에서도 PaaS 형태로 lambda를 이용한 연동 솔루션을 내놓고 있습니다. 
-저희도 그와 시너지를 낼 요소를 고민 하고 있는 중입니다. 
+AWS를 IaaS로만 이용해서 thing+ 소프트웨어를 구축 구조가 맞구요.
+최근에 AWS에서도 PaaS 형태로 lambda를 이용한 연동 솔루션을 내놓고 있습니다.
+저희도 그와 시너지를 낼 요소를 고민 하고 있는 중입니다.
 Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이면서 실제로 REST API 를 제공하는 플랫폼적인 PaaS로써의 서비스도 함께 개발 및 제공하고 있습니다.
 
 <p class="dwfqExpand2"></p>
@@ -113,11 +113,11 @@ Infra 만을 쓰고 사용자와 서비스 관리 기능들이 포함된 SaaS이
 
 <p class="dwfqExpand" id ="faq_gatewayID"> 게이트웨이 ID가 컴퓨터 맥주소인것 같은데 왜 게이트웨이 ID라고 명명하는지 궁금합니다 </p>
 
-꼭 게이트웨이 ID가 mac address이어야 하는 것은 아닙니다. 
+꼭 게이트웨이 ID가 mac address이어야 하는 것은 아닙니다.
 
 게이트웨이를 구별 할 수 있는 unique 한 ID를 사용한 건데요.
-UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할것입니다. 
-현재 오픈하드웨어는 모두 mac address를 id로 사용하고 있습니다. 
+UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할것입니다.
+현재 오픈하드웨어는 모두 mac address를 id로 사용하고 있습니다.
 그리고 그러한 혼란을 막기 위해 getmac이라는 script를 getGatewayId로 변경했습니다. guide에서도 mac adress라는 단어를 지양하려고 합니다.
 
 <p class="dwfqExpand2"></p>
@@ -159,7 +159,7 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
 
 - 통신 모듈로서 ESP8266을 쓰고 Arduino를 게이트웨이로써 연동하고자 한다면 [Guide](http://support.thingplus.net/ko/esp8266.html)를 참고하세요
 
-<p class="dwfqExpand2"></p> 
+<p class="dwfqExpand2"></p>
 
 
 <p class="dwfqExpand" id = "faq_check_log"> log 확인 방법을 알고 싶습니다.</p>
@@ -218,9 +218,9 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
 
     (Raspberry PI의 경우)
     # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_update.sh
-    (BBG의 경우) 
+    (BBG의 경우)
     # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_bbg_update.sh
-    (Edison의 경우) 
+    (Edison의 경우)
     # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_edison_update.sh
 
     # chmod 755 ./thingplus_embedded_sdk_xxx_update.sh
@@ -229,7 +229,7 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
 
     - update가 끝난뒤 Gateway는 재실행되며, devicve agent는 원래 상태 그대로입니다. update 하기전에 `thingplus_device.sh status`가 `stopped` 였다면, 재실행 (`thingplus_device.sh restart`) 해주어야 합니다.
 
-    - v0.4.2 이후 버전 부터는 아래와 같이 실행하시면 됩니다. 
+    - v0.4.2 이후 버전 부터는 아래와 같이 실행하시면 됩니다.
 
     ```bash
     # cd /opt/thingplus/gateway
@@ -268,8 +268,8 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
   if (options.text) {
     console.log('YOUR TEXT IS');
     console.log(options.text);
-    
-    var username = 'Thingplus', 
+
+    var username = 'Thingplus',
         channel = '#random',
         emo_icon = ':ghost:',
         webHookURL = 'https://hooks.slack.com/services/xxxxxxxxxxxx';
@@ -277,7 +277,7 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
     var cmd = 'curl -X POST --data-urlencode \'payload={"channel": "'+channel+'", "username": "'+username+'", "text": "'+options.text+'", "icon_emoji": "'+emo_icon+'"}\' '+webHookURL ;
     console.log(cmd);
   exec(cmd);
-  
+
   }
 };
 ```
@@ -294,3 +294,7 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>

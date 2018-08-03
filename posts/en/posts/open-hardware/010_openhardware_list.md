@@ -9,18 +9,16 @@ permalink: /en/open-hardware/openhardware-list.html
 Open Hardware List
 
 1. [Sensor Simulator](#id-simulator-guide)
-2. [Android](#id-Android-guide)
-3. [Raspberry Pi](#id-pi-guide)
-4. [Beagle Board](#id-beagle-guide)
-5. [Arduino](#id-arduino-guide)
-6. [Edison](#id-edison-guide)
-7. [Available Sensor List](#id-sensor-list)
+2. [Raspberry Pi](#id-pi-guide)
+3. [Beagle Board](#id-beagle-guide)
+4. [Arduino](#id-arduino-guide)
+5. [Available Sensor List](#id-sensor-list)
 
 <br/>
 
 ---
 
-#### ***ThingPlus login is required. Please visit [HERE](https://thingplus.net/signup-en/) to Free user registeration.***
+#### ***ThingPlus login is required. Please visit [HERE](https://trial.sandbox.thingplus.net/#/register) to Free user registeration.***
 
 <div id='id-simulator-guide'></div>
 ---
@@ -57,7 +55,7 @@ Open Hardware List
     - [LCD RGB Backlight](http://www.seeedstudio.com/depot/Grove-LCD-RGB-Baßcklight-p-1643.html)
     - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
     - [Raspberry Pi Camera Module](http://www.seeedstudio.com/depot/Raspberry-Pi-Camera-Module-p-1659.html?cPath=122_154_158)
-    
+
 <p class="dwExpand2"></p>
 
 <div id='id-beagle-guide'></div>
@@ -83,7 +81,7 @@ Open Hardware List
 <div id='id-arduino-guide'></div>
 <br/>
 
-### 3. Arduino 
+### 3. Arduino
 - Arduino compatible board(uno, orange board, ESP8266, Boards using ARM CORETEX-M chip-set etc)
 - [Guide link](/en/open-hardware/arduino-user-guide.html)
 
@@ -107,25 +105,6 @@ Open Hardware List
 <div id='id-edison-guide'></div>
 <br/>
 
-### 4. Edison
-- Edison
-- [Guide link](/en/open-hardware/edison-user-guide.html)
-
-<p class="dwExpand">  Sensor Kit </p>
- - [Edison for Arduino](http://www.seeedstudio.com/depot/Intel-Edison-for-Arduino-p-2149.html)
- - [Grove Base shield Only](http://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html)
- - Separate purchase
-   - [Touch sensor](http://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html)
-   - [Buzzer](http://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
-   - [Button Sensor](http://www.seeedstudio.com/depot/Grove-Button-p-766.html)
-   - [LED](http://www.seeedstudio.com/depot/Grove-White-LED-p-1140.html)
-   - [Relay](http://www.seeedstudio.com/depot/Grove-Relay-p-769.html)
-   - [Sound Sensor](http://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)
-   - [Rotary Angle Sensor](http://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)
-   - [Light Sensor](http://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html)
-   - [Temperature Sensor](http://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)
-
-<p class="dwExpand2"></p>
 
 <div id='id-sensor-list'></div>
 
@@ -134,9 +113,9 @@ Open Hardware List
 ### 5. Available Sensor List
 
 
-|icon                                                           |Type           |Description    | Model                |Categrory         
+|icon                                                           |Type           |Description    | Model                |Categrory
 |---------------------------------------------------------------|---------------|---------------|----------------------|----------
-|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png)         |7colorRGBLed   |7Color RGB LED |jsonrpc7colorRGBLed   |actuator              
+|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png)         |7colorRGBLed   |7Color RGB LED |jsonrpc7colorRGBLed   |actuator
 |![accelerometer](/assets/icon/icon-accelerometer-small.png)    |accelerometer  |Accelerometer  |jsonrpcAccelerometer  |sensor
 |![aircondition](/assets/icon/icon-airConditioner-small.png)    |airConditioner |Air Conditioner|jsonrpcAirConditioner |actuator
 |![battery](/assets/icon/icon-batteryGauge-small.png)           |batteryGauge   |Battery Gauge  |jsonrpcBatteryGauge   |sensor

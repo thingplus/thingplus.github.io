@@ -71,15 +71,15 @@ node --version
 ```
 
 Make sure `app.min.exe` is running with the command below.
-     
+
 ```
-tasklist | grep app.min  
+tasklist | grep app.min
 ```
 
 If you see running `app.min.exe`, kill the process and run it again.
 
 ```
-tasklist /f /pid [pid of app.min.exe] 
+tasklist /f /pid [pid of app.min.exe]
 
 cd $HOME/thingplus/openhardware/arduino/grove-starter-kit
 ./thingplus_device.sh restart
@@ -89,8 +89,8 @@ cd $HOME/thingplus/gateway
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id= "trbs_error_gw_register">&nbsp;<b>Failure </b> message occurred when registering gateway. </p> 
-    
+<p class="dwfqExpand" id= "trbs_error_gw_register">&nbsp;<b>Failure </b> message occurred when registering gateway. </p>
+
 Make sure Gateway is pre-registered.
 
 - Go to `Sensor List` in the upper menu and check whether the gateway you have registered is already registered.
@@ -106,7 +106,7 @@ Make sure Gateway is pre-registered.
 
 - You will see something like this: Make sure the APIKEY part is the same as the APIKEY you have been issued.
 - If you do copy and paste, typing directly will result in confusion between the lower case I and upper case I.
-        
+
   ```
   ...
 
@@ -128,7 +128,7 @@ Make sure Gateway is pre-registered.
 - Duration means the whole flashing time.
 
 - For example, if the duration is set to 10 seconds and the flashing interval is set to 1 second, it means the following. It will be lit 5 ~ 6 times actually.
-  
+
 ```
 1 second on - 1 second off - 1 second on - 1 second off - 1 second on - 1 second off - 1 second on - 1 second off - 1 second on - 1 second off
 ```
@@ -158,9 +158,9 @@ If the connection is not by the base shield, the LED should be plugged to + 13 a
 - If rpc timeout occurs during gateway registration, gateway and cloud are not communicating.
 
   1. If APIKEY is not entered normally
-  
+
   2. Thingplus_device.sh or thingplus.sh did not run
-  
+
   3. This is probably one of the cases where no network is connected to the gateway.
 
 - Here's how to check the logs to see if there are any problems.
@@ -203,3 +203,10 @@ If the connection is not by the base shield, the LED should be plugged to + 13 a
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

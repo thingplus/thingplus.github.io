@@ -32,7 +32,7 @@ Thing+ Integration Guide for BeagleBone Green
 - [Putty Manual](http://the.earth.li/~sgtatham/putty/0.58/htmldoc/)
 
 <br/>
-2) For the communication over the internet, connect the ethernet cable or plug in a Wifi USB Dongle 
+2) For the communication over the internet, connect the ethernet cable or plug in a Wifi USB Dongle
 ![BBG + Ehternet + USB Cable](/assets/bbg_ethernet_usb.png)
 
 <br/>
@@ -89,7 +89,7 @@ Thing+ Integration Guide for BeagleBone Green
   @BBG:$ nano /etc/hostname
   ```
 
-- Change the `BeagleBone` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image. 
+- Change the `BeagleBone` in the file to your own name(letter, number and hyphen(-) allowed only) like the below image.
   ![BBG Modify hostname](/assets/modify_hostname.png)
 
   - When you complete the edit task, press `CTRL-O` and `Enter` for saving the updates. Press `CTRL-X` to close the nano editor
@@ -123,7 +123,7 @@ Thing+ Integration Guide for BeagleBone Green
 ![BBG + Grove + Ehternet + Power](/assets/bbg_grove_ethernet_power.png)
 
 <br/>
-3) Connect to your BeagleBone Green.  
+3) Connect to your BeagleBone Green.
 
 <br/>
 4) Make folder to be install Thing+ Embedded Package and move that folder.
@@ -155,6 +155,22 @@ Thing+ Integration Guide for BeagleBone Green
 
 ```bash
 @BBG:$ reboot
+```
+
+8) config setting
+- Create or modify the `runetim.json` file in the `/opt/thingplus/gateway/thingplus-gateway/device/config` as shown below for the mqtt and api host configuration.
+
+```
+{
+  "Server": {
+    "mqtt": {
+      "host": "dmqtt.sandbox.thingplus.net"
+    },
+    "service": {
+      "host": "api.sandbox.thingplus.net"
+    }
+  }
+}
 ```
 
 <div id='id-register'></div>
@@ -239,7 +255,7 @@ usb0      no wireless extensions.
   auto wlan0                    :# Change ‘ra0’ to the interface name which you used(In this example, we used ‘wlan0’ and changed ‘ra0’ to ‘wlan0’)
   iface wlan0 inet dhcp         :# remove ‘#’ from the beginning of this line. If you still use ‘ra0’ as the interface name, you should use it at this line
       wpa-ssid "WiFi SSID"      :# Input your Wifi SSID name
-      wpa-psk  "WiFI password"  :# Input your Wifi password at here and remove ‘#’ from the beginning 
+      wpa-psk  "WiFI password"  :# Input your Wifi password at here and remove ‘#’ from the beginning
   ...
 
   ```
@@ -289,7 +305,7 @@ Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a
 - [Putty Manual](http://the.earth.li/~sgtatham/putty/0.58/htmldoc/)
 
 <br/>
-3) Connect your Beagle Bone Green with your Computer. You can use the USB Micro 5pin Cable provided with your Beagle Bone Green 
+3) Connect your Beagle Bone Green with your Computer. You can use the USB Micro 5pin Cable provided with your Beagle Bone Green
 
 ![BBG + USB Cable](/assets/bbg_usb_cable.png)
 
@@ -303,7 +319,7 @@ Please refer to  <a href="http://joshuawise.com/horndis" target="_blank">here</a
   ```
 
 - For Windows
-  - Run the putty, and Insert IP Address, and then, Click the button `Open` and Enter a password. 
+  - Run the putty, and Insert IP Address, and then, Click the button `Open` and Enter a password.
   ![BBG putty login](/assets/putty_usb_login_bbg.png)
 
 > Remark: In case of Windows OS, You should close and run your putty clinet every time when you reboot your Beagle Bone Green Device

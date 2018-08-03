@@ -8,7 +8,7 @@ permalink: /en/InquiryGuide.html
 This is a guide you can use before contacting us for a quick and accurate answer.
 
 1. [Contact us](#id-inquiry)
-2. [Things to check in case of trouble](#id-check) 
+2. [Things to check in case of trouble](#id-check)
 3. [FAQ](#id-faq)
 
 ---
@@ -25,20 +25,20 @@ __You can find more examples in [FAQ](http://support.thingplus.net/en/help/faq.h
 Please contact us with your inquiry form for a quick and accurate answer.
 <br>
 * For commercial service inquiries, please send an e-mail to `biz@daliworks.net`.
-* If you have any inquiries regarding hardware interlock, please send an e-mail to `contact@thingplus.net` or intercom inquiry by clicking on the icon at the bottom right after login from thingplus.net.
+* If you have any inquiries regarding hardware interlock, please send an e-mail to `contact@thingplus.net` or intercom inquiry by clicking on the icon at the bottom right after login from sandbox.thingplus.net.
 
 * Please contact us with the following information.
 
 <div id='id-inquirytable'></div>
 #### Inquiry form
 
-|      `List`       |                         `Contents`                         
+|      `List`       |                         `Contents`
 | ---------------- | :-----------------------------------------------------------------------------:
 | Belong            | `ex)  developer(name of company), student`
 | Purpose to work with Thing +         | `ex) developement(POC), education, study, launching new service ...`
-| Hardware to use   | `ex) RaspberryPi, Beagleboard, Arduino, Android, SensorSimulator ...` 
+| Hardware to use   | `ex) RaspberryPi, Beagleboard, Arduino, Android, SensorSimulator ...`
 | Sensors to use           | `ex) temperature, humidty, LED ...`
-| Source Code Received Path    | `ex) support site, It received a personal request, Other routes ...` 
+| Source Code Received Path    | `ex) support site, It received a personal request, Other routes ...`
 | Gateway version    | `ex) openhardware-pi-v0.4.4`
 
 <br>
@@ -70,8 +70,8 @@ If you can not find the cause after checking the checklist below, please send us
 * Sensor Device
 
   ```
-  #Go to the path where you ran./thingplus_device.sh 
-  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ //ex)RaspberryPi 
+  #Go to the path where you ran./thingplus_device.sh
+  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ //ex)RaspberryPi
   $ ./thingplus_device.sh status //If it is not running, restart it.
   $ ./thingplus_device.sh restart
   ```
@@ -95,7 +95,7 @@ If you can not find the cause after checking the checklist below, please send us
 * Sensor Device log
 
   ```
-  #Go to the path where you ran./thingplus_device.sh 
+  #Go to the path where you ran./thingplus_device.sh
   $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ //ex)RaspberryPi
   $ tail -f -n 500 log/thingplus_device.log
   ```
@@ -137,7 +137,7 @@ This is a frequently asked question. Please check if it is included.
    ...
 
   ```
-* If you do copy and paste, it will not be a problem. If you typing yourself, you may be confused with the lowercase `ㅣ` and the uppercase `I`. 
+* If you do copy and paste, it will not be a problem. If you typing yourself, you may be confused with the lowercase `ㅣ` and the uppercase `I`.
 
 
 

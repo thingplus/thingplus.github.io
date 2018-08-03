@@ -48,7 +48,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 - If you are a Mac or Linux user, please use the default terminal utility.
 - If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
   - [Putty Download link](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-  
+
 > note: SSH is not enabled by default on Raspberry PI devices
 - [How to enable SSH on Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
@@ -58,9 +58,9 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 <br/>
 6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
-   
-   ***For stable Power supply, we recommend that you connect the power cable not USB hub.If the power supply is unstable, the file resource can be broken.*** 
-   
+
+   ***For stable Power supply, we recommend that you connect the power cable not USB hub.If the power supply is unstable, the file resource can be broken.***
+
    ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 <br/>
@@ -116,7 +116,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 9) To distinguish your Raspberry Pi, you need to modify the hostname of it.
 
 > Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
-  
+
 - Modify `/etc/hostname`.
 
   ```bash
@@ -156,7 +156,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 @Pi:$ sudo su
 @Pi:$ raspi-config
 ```
- 
+
 - To use micro SD card which has storage bigger than 4GB, Choose `7. Advanced Options` - `A1. Expand Filesystem`.
 ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
 ![Raspberry Pi + Grove Pi](/assets/expand_file_system2.png)
@@ -232,6 +232,23 @@ Thing+ Integragtion Guide for Raspberry Pi
 ```bash
 @Pi:$ sudo reboot
 ```
+
+7) config setting
+- Create or modify the `runetim.json` file in the `/opt/thingplus/gateway/thingplus-gateway/device/config` as shown below for the mqtt and api host configuration.
+
+```
+{
+  "Server": {
+    "mqtt": {
+      "host": "dmqtt.sandbox.thingplus.net"
+    },
+    "service": {
+      "host": "api.sandbox.thingplus.net"
+    }
+  }
+}
+```
+
 <div id='id-register'></div>
 
 
@@ -294,7 +311,7 @@ usb0      no wireless extensions.
 - open `/etc/network/interfaces` with nano editor
 
   ```bash
-  @shell:$ sudo nano /etc/network/interfaces 
+  @shell:$ sudo nano /etc/network/interfaces
   ```
 
 - Configure the Wifi SSID and password at the next line of `wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf` in `auto wlan0` paragraph
@@ -308,7 +325,7 @@ usb0      no wireless extensions.
   allow-hotplug wlan0           # Change 'wlan0' to 'ra0' in this paragraph
   iface wlan0 inet manual
   wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-  wpa-ssid "WiFi SSID"        # Input your Wifi SSID Name 
+  wpa-ssid "WiFi SSID"        # Input your Wifi SSID Name
   wpa-psk  "WiFI password"    # Input your Wifi Password
 
   ...
@@ -328,3 +345,6 @@ usb0      no wireless extensions.
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
 </div>
+<br/>
+<br/>
+<br/>

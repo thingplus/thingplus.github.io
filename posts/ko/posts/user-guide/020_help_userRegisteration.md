@@ -9,8 +9,8 @@ permalink: /ko/user-guide/registration.html
 서비스를 사용하기 위해 필요한 하드웨어 연동 및 회원가입에 대한 가이드입니다.
 
 1. [서비스 관리자](#id-serviceadmin)
-2. [일반 사용자](#id-enduser) 
-3. [게이트웨이 등록](#id-gateway) 
+2. [일반 사용자](#id-enduser)
+3. [게이트웨이 등록](#id-gateway)
 
 ---
 <div id='id-serviceadmin'></div>
@@ -50,14 +50,20 @@ permalink: /ko/user-guide/registration.html
 
 
 #### 서비스 관리자의 가입승인 및 사용권한
-  * **iot.thingplus.net** 사용자의 경우 자동 가입처리 됩니다.
+  * **trial.sandbox.thingplus.net** 사용자의 경우 자동 가입처리 됩니다.
   * 이메일 인증 성공 후, 해당 서비스 관리자의 가입 승인 절차가 이뤄지게 됩니다.
   * 관리자의 가입 승인이 확인되면, 승인 안내 이메일이 전송됩니다정.
   * 관리자의 가입 승인 안내 이메일은 몇초에서부터 몇분까지 걸릴 수 있습니다. 만약 승인 안내 이메일을 받지 못했다면 다음을 확인해주세요.
     * 이메일을 올바르게 입력하셨습니까?
     * 스팸메일함을 확인하셨습니까?
   * 관리자의 승인 안내 이메일을 받은 후에 로그인창에 아이디와 비밀번호를 입력하여 로그인 할 수 있습니다.
-
+  * 무료로 제공되는 서비스 이용과 관련하여 다음의 제한을 둡니다.
+    * 2개 게이트웨이, 20개 센서, 5개 룰을 사용 할 수 있습니다..
+    * 사용기한은 90일로 합니다. (90일 후에는 data 삭제, login 제한등이 있을 수 있습니다.)
+    * 데이터 전송주기는 5분 권장, 최소 1분으로 합니다.
+    * API나 mqtt를 비정상적으로 사용하면 해당 token이나 gatewayKey를  고지없이 비활성화 할 수 있습니다.
+    * rule의 action으로 email을 사용할 경우 월 200개가 초과하면 고지없이 해당 rule이 disable 될 수 있습니다.
+    * 수신이 되지 않는 이메일 계정으로 규칙을 연동했을경우 고지없이 규칙을 비활성화 할수 있습니다.
 <br>
 
 ---
@@ -89,7 +95,7 @@ _라즈베리파이&아두이노의 경우, 라즈베리가 게이트웨이, 아
 @shell:$ cd /opt/thingplus/gateway/scripts
 ```
 <div class="dwExpand2"></div>
-<p class="dwExpand" > 아두이노의 경우 PC에서 이동</p> 
+<p class="dwExpand" > 아두이노의 경우 PC에서 이동</p>
 
 ```bash
 @shell:$ cd $HOME/thingplus/gateway/scripts
@@ -123,11 +129,11 @@ xx:xx:xx:xx:xx:xx
 ![register_with_apikey](/assets/register_with_apikey_ko.png)
 
 <br/>
-7) 새로 추가할 `게이트웨이 모델`을 선택한다. 
+7) 새로 추가할 `게이트웨이 모델`을 선택한다.
 
 <!-- <p class="dwExpand" > 라즈베리파이의 경우: <b>Raspberry Pi - Developer</b></p>
 
-![select_gateway_model_pi](/assets/pi_gw_model.png) 
+![select_gateway_model_pi](/assets/pi_gw_model.png)
 
 <div class="dwExpand2"></div>-->
 <p class="dwExpand" > 라즈베리파이 경우: <b>Open Source Gateway</b></p>
@@ -170,7 +176,7 @@ xx:xx:xx:xx:xx:xx
 
 <p class="dwExpand" > 라즈베리파이의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
 
-   
+
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
@@ -183,7 +189,7 @@ xx:xx:xx:xx:xx:xx
 
 <p class="dwExpand" > 라즈베리파이(Camera)의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
 
-   
+
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/openhardware/raspberrypi/camera
@@ -196,7 +202,7 @@ xx:xx:xx:xx:xx:xx
 
 <p class="dwExpand" > 라즈베리파이 + 아두이노 의 경우 (<b>라즈베리파이 장치에 로그인했던 터미널</b>)</p>
 
-   
+
 ```bash
 @shell:$ sudo su
 @shell:$ cd /opt/thingplus/openhardware/arduino/grovePi-starter-kit
@@ -208,7 +214,7 @@ xx:xx:xx:xx:xx:xx
 <div class="dwExpand2"></div>
 
 <p class="dwExpand" > 비글본그린의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
-    
+
 ```bash
 @shell:$ cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit
 @shell:$ ./thingplus_device.sh start
@@ -219,7 +225,7 @@ xx:xx:xx:xx:xx:xx
 <div class="dwExpand2"></div>
 
 <p class="dwExpand" > 비글본에어의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
-    
+
 ```bash
 @shell:$ cd /opt/thingplus/openhardware/bba/grove-starter-kit
 @shell:$ ./thingplus_device.sh start
@@ -250,7 +256,7 @@ xx:xx:xx:xx:xx:xx
 <div class="dwExpand2"></div>
 <p class="dwExpand" > 에디슨의 경우 (<b>장치에 로그인했던 터미널</b>)</p>
 
-   
+
 ```bash
 @shell:$ cd /opt/thingplus/openhardware/edison/grove-starter-kit
 @shell:$ ./thingplus_device.sh start
@@ -282,8 +288,8 @@ xx:xx:xx:xx:xx:xx
 @shell:$ sudo nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)  
- 
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
+
 exit 0
 ```
 
@@ -296,8 +302,8 @@ exit 0
 @shell:$ sudo nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/raspberrypi/camera; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)  
- 
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
+
 exit 0
 ```
 
@@ -311,8 +317,8 @@ exit 0
 @shell:$ nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/beaglebonegreen/grove-starter-kit; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
- 
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
+
 exit 0
 ```
 
@@ -327,8 +333,8 @@ exit 0
 @shell:$ nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/bba/grove-starter-kit; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)    
- 
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
+
 exit 0
 ```
 
@@ -342,8 +348,8 @@ exit 0
 @shell:$ sudo nano /etc/rc.local
 ...
 (cd /opt/thingplus/openhardware/arduino/grove-starter-kit; ./thingplus_device.sh restart)
-(cd /opt/thingplus/gateway; ./thingplus.sh restart)  
- 
+(cd /opt/thingplus/gateway; ./thingplus.sh restart)
+
 exit 0
 ```
 - 파일 수정 후 저장은 CTRL-O키를 누른 후, 엔터키를 누르고, 종료할 때는 CTRL-X키를 누른다.

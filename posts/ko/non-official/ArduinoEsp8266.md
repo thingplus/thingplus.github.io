@@ -78,7 +78,7 @@ permalink: /ko/esp8266.html
   - ESP8266이 정상부팅 되었는지 확인하기 위해서 "AT"명령어를 전송하여 "OK"응답이 오는지 확인한다.
   - 펌웨어 버전을 확인 하기 위하여 `AT+GMR` 명령어를 전송한다.
   - 마지막으로 ESP8266의 Baudrate를 9600으로 설정하기 위해 `AT+UART_DEF=9600,8,1,0,0`를 전송한다. 9600으로 정상적으로 설정이 되었다면, 시리얼 모니터의 보드레이트로 9600으로 재설정해야 한다.
-  
+
   > 모든 AT 명령어는 대문자로 적어야 한다.
 
   |명령어|응답|설명|
@@ -135,8 +135,33 @@ permalink: /ko/esp8266.html
 
     ![Arduino_Edit_Pubsub](/assets/arduino_edit_pubsub.png)
 
+
+2.2.2 config 설정
+  - **_LibraryPath_/Thingplus/src/Thingplus.cpp** 파일을 아래와 같이 수정합니다..(at line: 230)
+    - `mqtt.thingplus.net` -> `mqtt.sandbox.thingplus.net`
+
+```c++
+void ThingplusClass::begin(Client& client, byte mac[], const char *apikey) {
+	const char *server = "dmqtt.sandbox.thingplus.net";
+	const int port = 1883;
+
+	this->mac = mac;
+	snprintf(this->gatewayId, sizeof(this->gatewayId), PSTR("%02x%02x%02x%02x%02x%02x"),
+			mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+	this->apikey = apikey;
+
+	this->mqtt.setCallback(mqttSubscribeCallback);
+	this->mqtt.setServer(server, port);
+	this->mqtt.setClient(client);
+}
+```
+
 #### 3. 게이트웨이 등록
 
 참조 : [게이트웨이 등록](/ko/open-hardware/arduino-noSSL-user-guide.html#id-gateway)
 
 - 본 가이드에서는 Arduino board에 esp8266 연결 예제 이므로 `LibrayPath/Thingplus/examples/ArduinoEsp8266/ArduinoEsp8266.ino` 를 사용 합니다.
+
+<br/>
+<br/>
+<br/>

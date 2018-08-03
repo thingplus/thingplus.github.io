@@ -3,6 +3,7 @@ title: Thing+ 연동 프로세스
 tags: "user-guide"
 img: ic_process.png
 published: false
+permalink: /ko/integation.html
 ---
 
 Thing+ 연동 프로세스 가이드
@@ -58,3 +59,10 @@ Thing+ GW를 설치하신 후 작성하신 센서값 읽는 프로그램을 Thin
 - Arduino + PC의 [다양한 센서 연결 방법](https://docs.google.com/document/d/1gk1RsXvfbD9eOiHQblpBcIgyJ7cYqb9pHqNSgId1s7U/edit) <br/>
 
 마지막으로 ThingPlus에서 게이트웨이 등록을 하연 센서값을 확인한 수 있습니다.  <br/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

@@ -10,12 +10,10 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-simulator-guide'></div>
 
 1. [센서 시뮬레이터](#id-simulator-guide)
-2. [안드로이드](#id-android-guide)
-3. [라즈베리파이](#id-pi-guide)
-4. [비글보드](#id-beagle-guide)
-5. [아두이노](#id-arduino-guide)
-6. [에디슨](#id-edison-guide)
-7. [지원센서 목록](#id-sensor-list)
+2. [라즈베리파이](#id-pi-guide)
+3. [비글보드](#id-beagle-guide)
+4. [아두이노](#id-arduino-guide)
+5. [지원센서 목록](#id-sensor-list)
 
 ---
 
@@ -54,7 +52,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 	 - [LCD (LCD RGB Backlight)](http://www.icbanq.com/P005604576)
 	 - [파워 릴레이 (Relay)](http://www.icbanq.com/P005604584)
      - [카메라 (Camera Module)](http://www.icbanq.com/P006477908)
-     
+
 <p class="dwExpand2"></p>
 
 <div id='id-beagle-guide'></div>
@@ -83,7 +81,7 @@ permalink: /ko/open-hardware/openhardware-list.html
 - 아두이노(우노, 오렌지보드, ESP8266, ARM CORETEX-M chip-set을 사용하는 bord 등) 지원
 - [연동가이드 바로가기](/ko/open-hardware/arduino-user-guide.html)
 
-<p class="dwExpand"> 센서 구입경로 </p>   
+<p class="dwExpand"> 센서 구입경로 </p>
  - [아두이노 Grove 스타터 센서 키트](https://www.icbanq.com/P005710113/)
  - 별도 구매
 	 - [Grove 호환 베이스 쉴드 별도 구매](https://www.icbanq.com/P005700460/)
@@ -102,26 +100,6 @@ permalink: /ko/open-hardware/openhardware-list.html
 <div id='id-edison-guide'></div>
 <br/>
 
-### 4. 에디슨 
-- 에디슨 지원
-- [연동가이드 바로가기](/ko/open-hardware/edison-user-guide.html)
-
-<p class="dwExpand"> 센서 구입경로 </p>
- - [에디슨 아두이노 킷](http://www.icbanq.com/P005632309/)
- - [아두이노 Grove 스타터 센서 키트](https://www.icbanq.com/P005710113/)
- - 별도 구매
-	 - [Grove 호환 베이스 쉴드 별도 구매](https://www.icbanq.com/P005700460/)
-	 - [터치 센서 (Touch Sensor)](https://www.icbanq.com/P005604590/)
-	 - [버저 (Buzzer)](http://www.icbanq.com/P005604566)
-	 - [버튼 센서 (Button Sensor)](http://www.icbanq.com/P005604580)
-	 - [LED](http://www.icbanq.com/P005604557)
-	 - [파워 릴레이 (Relay)](http://www.icbanq.com/P005604584)
-	 - [소리 센서 (Sound Sensor)](http://www.icbanq.com/P005713936)
-	 - [회전각 센서 (Rotary Angle Sensor)](http://www.icbanq.com/P005604574)
-	 - [조도 센서 (Light Sensor)](http://www.icbanq.com/P005700527)
-	 - [온도센서 (Temperature Sensor)](https://www.icbanq.com/P005713933/)
-
-<p class="dwExpand2"></p>
 
 <div id='id-sensor-list'></div>
 
@@ -129,9 +107,9 @@ permalink: /ko/open-hardware/openhardware-list.html
 
 ### 5. 지원 센서 목록
 
-|icon                                                        |Type         |Description       | Model                |Categrory         
+|icon                                                        |Type         |Description       | Model                |Categrory
 |------------------------------------------------------------|-------------|-----------|----------------------|----------
-|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png)      |7colorRGBLed |7색 컬러 LED | jsonrpc7colorRGBLed |actuator              
+|![7colorLED](/assets/icon/icon-7colorRGBLed-small.png)      |7colorRGBLed |7색 컬러 LED | jsonrpc7colorRGBLed |actuator
 |![accelerometer](/assets/icon/icon-accelerometer-small.png) |accelerometer|가속도 | jsonrpcAccelerometer |sensor
 |![aircondition](/assets/icon/icon-airConditioner-small.png) |airConditioner|에어컨|jsonrpcAirConditioner|actuator
 |![battery](/assets/icon/icon-batteryGauge-small.png)        |batteryGauge|배터리|jsonrpcBatteryGauge|sensor

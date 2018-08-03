@@ -19,7 +19,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 
 ---
 ___This guide will be explain for IOT with Raspberry Pi and Camera module.
-A Photo is a part of privacy. So in this guide, We will use private storage as the dropbox. 
+A Photo is a part of privacy. So in this guide, We will use private storage as the dropbox.
 Before you try to do as this guide. you must have account for dropbox.___
 
 ---
@@ -50,7 +50,7 @@ Before you try to do as this guide. you must have account for dropbox.___
 - If you are a Mac or Linux user, please use the default terminal utility.
 - If you are a Windows user, we recommend that you use the "Putty" client to access your Raspberry Pi.
   - [Putty Download link](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-  
+
 > note: SSH is not enabled by default on Raspberry PI devices
 - [How to enable SSH on Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
@@ -58,9 +58,9 @@ Before you try to do as this guide. you must have account for dropbox.___
 ![Raspberry Pi + Micro SD card](/assets/insert_sdcard.png)
 
 6) Connect Ethernet(LAN cable), and Power Cable to Raspberry Pi.
-   
-   ***For stable Power supply, we recommend that you connect the power cable not USB hub.If the power supply is unstable, the file resource can be broken.*** 
-   
+
+   ***For stable Power supply, we recommend that you connect the power cable not USB hub.If the power supply is unstable, the file resource can be broken.***
+
    ![Raspberry Pi + Ethernet & power cable](/assets/rasp_power_ethernet.jpg)
 
 
@@ -114,7 +114,7 @@ Before you try to do as this guide. you must have account for dropbox.___
 9) To distinguish your Raspberry Pi, you need to modify the hostname of it.
 
 > Notice: You MUST use arrow buttons on your keyboard, when you want to move a cursor
-  
+
 - Modify `/etc/hostname`.
 
   ```bash
@@ -154,7 +154,7 @@ Before you try to do as this guide. you must have account for dropbox.___
 @Pi:$ raspi-config
 ```
 
-   
+
 - To use micro SD card which has storage bigger than 4GB, Choose `7. Advanced Options` - `A1. Expand Filesystem`.
   ![Raspberry Pi + Grove Pi](/assets/expand_file_system.png)
   ![Raspberry Pi + Grove Pi](/assets/expand_file_system2.png)
@@ -164,10 +164,10 @@ Before you try to do as this guide. you must have account for dropbox.___
   ![Raspberry Pi + Grove Pi](/assets/advanced_options.png)
   ![Raspberry Pi + Grove Pi](/assets/choose_i2c.png)
 
-- To Use Camera module, Choose `P1  Enable Camera`, and then please Select `Yes` for all the following questions. 
+- To Use Camera module, Choose `P1  Enable Camera`, and then please Select `Yes` for all the following questions.
   ![Raspberry Pi Setting Enable camera](/assets/pi-cam-01.png)
 
-   
+
 - Press Tab key on your keyboard and choose `Finish`, and then please Select `Yes` for the question about Rebooting the device.
   ![Raspberry Pi Choose Finish](/assets/choose_finish.png)
   ![Raspberry Pi Choose Finish](/assets/choose_finish_2.png)
@@ -214,6 +214,22 @@ Before you try to do as this guide. you must have account for dropbox.___
 @Pi:$ sudo reboot
 ```
 
+7) config setting
+- Create or modify the `runetim.json` file in the `/opt/thingplus/gateway/thingplus-gateway/device/config` as shown below for the mqtt and api host configuration.
+
+```
+{
+  "Server": {
+    "mqtt": {
+      "host": "dmqtt.sandbox.thingplus.net"
+    },
+    "service": {
+      "host": "api.sandbox.thingplus.net"
+    }
+  }
+}
+```
+
 <div id='id-dropbox'></div>
 
 ---
@@ -229,27 +245,27 @@ _To interation with dropbox, please set up as the following._
 ```
   - Create `app key` as the following.
   ![uploader.sh](/assets/pi-cam-05.png)
-  
+
   - [Connect dropbox](https://www.dropbox.com/developers/apps) and lon-in
   - Press `Create App` button.
   ![dropbox](/assets/pi-cam-06.png)
 
   - Press `Create app` after input some configration factor.
   ![dropbox config](/assets/pi-cam-07.png)
-  
+
   - `app key` and `app secret` is created
   ![dropbox key](/assets/pi-cam-08.png)
 
   - Authorization through OAth. please input the created `app key` and `app secrete`
 
     ```bash
-    # App key: xxxxxxxx 
+    # App key: xxxxxxxx
     # App secret: yyyyyyyy
-    
+
     Permission type:
     App folder [a]: If you choose that the app only needs access to files it creates
     Full Dropbox [f]: If you choose that the app needs access to files already on Dropbox
-    
+
     # Permission type [a/f]: a
 
     > App key is xxxxxxxx, App secret is yyyyyyyy and Access level is App Folder. Looks ok? [y/n]: y
@@ -264,7 +280,7 @@ _To interation with dropbox, please set up as the following._
     ```
 
   - Confirm `OAuth Ahthorization prompt`
-  ![dropbox](/assets/pi-cam-09.png)  
+  ![dropbox](/assets/pi-cam-09.png)
   ![dropbox](/assets/pi-cam-10.png)
 
 

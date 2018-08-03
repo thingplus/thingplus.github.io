@@ -11,7 +11,7 @@ We have prepared answers to your frequently asked questions.
 
 ---
 
-<p class="dwfqExpand" id="faq_dashboard_01"> How can I change the Dashboard Line Chart Period setting?</p> 
+<p class="dwfqExpand" id="faq_dashboard_01"> How can I change the Dashboard Line Chart Period setting?</p>
 
 Click on the top right <i class = "fa fa-cog fa-lg"> </i> setting icon of the widget you want to change
 
@@ -37,23 +37,23 @@ On the `Widget Setting` screen, click the right side of the" Period "item and se
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id ="faq_install_wget"> How to install wget on Mac</p> 
+<p class="dwfqExpand" id ="faq_install_wget"> How to install wget on Mac</p>
 
 To install wget, brew must be installed.
- 
+
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Install wget using the brew command.
- 
+
 ```
 brew install wget
 ```
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id ="faq_not_grove"> Should I use only the Gove sensor kit as in the guide? </p> 
+<p class="dwfqExpand" id ="faq_not_grove"> Should I use only the Gove sensor kit as in the guide? </p>
 
 No.
 
@@ -64,7 +64,7 @@ We will update the information in the future, but you can temporarily check the 
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id ="faq_useWifi"> Can I register with Thing + Portal even if I attach a WiFi dongle instead of Ethernet?</p> 
+<p class="dwfqExpand" id ="faq_useWifi"> Can I register with Thing + Portal even if I attach a WiFi dongle instead of Ethernet?</p>
 
 Yes.
 
@@ -74,7 +74,7 @@ Please refer to the contents for connection.
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id ="faq_sensor_port"> Do I need to plug a specific sensor into a specific port on the GrovePi + shield? </p> 
+<p class="dwfqExpand" id ="faq_sensor_port"> Do I need to plug a specific sensor into a specific port on the GrovePi + shield? </p>
 
 Yes
 
@@ -83,15 +83,15 @@ However, if you modify the samples in the `Openhardware directory(/opt/thingplus
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id ="faq_oauth2"> What is OAuth2?</p>  
- 
+<p class="dwfqExpand" id ="faq_oauth2"> What is OAuth2?</p>
+
 It is an open protocol that is the standard way to perform authorization authentication in applications such as web and mobile apps.
 It is a security tool to prevent unauthorized access, and is also used in Facebook and Twitter.
 For more information, please visit [here](https://thingplus.api-docs.io/2.0/oauth2).
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id="faq_thingplus_infra"> Does ThingPlus server use AWS?</p>  
+<p class="dwfqExpand" id="faq_thingplus_infra"> Does ThingPlus server use AWS?</p>
 
 I use AWS only with IaaS, so I built the thing + software with this structure
 Recently, AWS has also introduced an interoperation solution using lambda in the form of PaaS.
@@ -100,7 +100,7 @@ We provides the service with Infra deployed and SaaS-typed with user and service
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id = "faq_service_type"> What is IaaS, PaaS, SaaS?</p>  
+<p class="dwfqExpand" id = "faq_service_type"> What is IaaS, PaaS, SaaS?</p>
 
 - `IaaS(Infrastructure as a Service)` : In order to operate the server, various things are needed to build infrastructure such as server resources, IP, network, storage, power and so on. IaaS provides these services in a form that is easy and convenient to use in a virtual environment.  In order to provide IasS as a service, we use virtualization technology that can provide H / W scalability, resiliency and speed faster than existing server hosting. IasS is the underlying technology of Pass and Saas.
 
@@ -110,7 +110,7 @@ We provides the service with Infra deployed and SaaS-typed with user and service
 
 <p class="dwfqExpand2"></p>
 
-<p class="dwfqExpand" id ="faq_gatewayID"> I wonder if the gateway ID is a computer MAC address and why is it called the gateway ID?</p> 
+<p class="dwfqExpand" id ="faq_gatewayID"> I wonder if the gateway ID is a computer MAC address and why is it called the gateway ID?</p>
 
 The gateway ID does not have to be a mac address.
 I used a unique ID to distinguish the gateway.
@@ -141,7 +141,7 @@ To prevent such confusion, I changed the getmac script to getGatewayId. I'm goin
 <p class="dwfqExpand" id = "faq_contact"> Contact us</p>
 
 - If you want to use the service for commercial use, please send an e-mail to `biz@daliworks.net`
-- If you have any inquiry about hardware integration, please send an e-mail to `contact@thingplus.net` OR please use intercom inquiry by clicking on the icon at the bottom right after login from thingplus.net.
+- If you have any inquiry about hardware integration, please send an e-mail to `contact@thingplus.net` OR please use intercom inquiry by clicking on the icon at the bottom right after login from sandbox.thingplus.net.
 
 - Inquiry Please include the following information.
   - company (or student)
@@ -156,7 +156,7 @@ To prevent such confusion, I changed the getmac script to getGatewayId. I'm goin
 
 If you use ESP8266 as a WIFI module and want to connect Arduino as a gateway, please refer to [this guide](http://support.thingplus.net/en/esp8266.html).
 
-<p class="dwfqExpand2"></p> 
+<p class="dwfqExpand2"></p>
 
 
 <p class="dwfqExpand" id = "faq_check_log"> I want to know how to check the log.</p>
@@ -185,7 +185,7 @@ If you use ESP8266 as a WIFI module and want to connect Arduino as a gateway, pl
   ```
 
 
-<p class="dwfqExpand2"></p> 
+<p class="dwfqExpand2"></p>
 
 <p class="dwfqExpand" id = "faq_update"> I want to know how to update open hardware.</p>
 
@@ -208,7 +208,7 @@ If you use ESP8266 as a WIFI module and want to connect Arduino as a gateway, pl
   # cat /opt/thingplus/gateway/VERSION
   ```
 
-  - ***The current version is currently 0.4.2.***  
+  - ***The current version is currently 0.4.2.***
 
     - In versions below v0.4.2, download the update script from the following path and execute it.
 
@@ -217,16 +217,16 @@ If you use ESP8266 as a WIFI module and want to connect Arduino as a gateway, pl
 
     (For Raspberry PI)
     # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_pi_update.sh
-    (For BBG) 
+    (For BBG)
     # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_bbg_update.sh
-    (For Edison)  
+    (For Edison)
     # wget http://support.thingplus.net/download/install/thingplus_embedded_sdk_edison_update.sh
 
     # chmod 755 ./thingplus_embedded_sdk_xxx_update.sh
     # ./thingplus_embedded_sdk_xxx_update.sh
     ```
 
-    - After the update is finished, the Gateway is rerun, and the devicve agent is left as it is. 
+    - After the update is finished, the Gateway is rerun, and the devicve agent is left as it is.
     - If `thingplus_device.sh status` was` stopped` before updating, you have to re-execute (`thingplus_device.sh restart`).
 
     - From v0.4.2 and later versions, you can do the following.
@@ -268,8 +268,8 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
   if (options.text) {
     console.log('YOUR TEXT IS');
     console.log(options.text);
-    
-    var username = 'Thingplus', 
+
+    var username = 'Thingplus',
         channel = '#random',
         emo_icon = ':ghost:',
         webHookURL = 'https://hooks.slack.com/services/xxxxxxxxxxxx';
@@ -277,7 +277,7 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
     var cmd = 'curl -X POST --data-urlencode \'payload={"channel": "'+channel+'", "username": "'+username+'", "text": "'+options.text+'", "icon_emoji": "'+emo_icon+'"}\' '+webHookURL ;
     console.log(cmd);
   exec(cmd);
-  
+
   }
 };
 ```
@@ -293,3 +293,9 @@ StringActuator.prototype.doCommand = function(name, cmd, options) {
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
