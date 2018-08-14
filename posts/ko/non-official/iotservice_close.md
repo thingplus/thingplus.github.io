@@ -7,7 +7,7 @@ permalink: ko/notifRelatediotService.html
 
 
 
->1st Email
+>1st Email (26.July, GMT+9, KST)
 
 
 
@@ -58,7 +58,7 @@ thingplus는 개발 중인 단말이나 app을 테스트 하기 위해서 1년 �
 
 ---
 
->2nd Email
+>2nd Email (2.August, GMT+9, KST)
 
 안녕하세요
 달리웍스(thingplus) 입니다.
@@ -77,6 +77,48 @@ thingplus는 개발 중인 단말이나 app을 테스트 하기 위해서 1년 �
 
 감사합니다.
 
+>3rd Email (14.August, GMT+9, KST)
+
+안녕하세요
+
+달릭웍스입니다. (Thing+)
+
+<br>
+
+기 공지 드린대로 `iot.thingplus.net`은 금일 close 되었습니다.
+
+더 이상 iot.thingplus.net에 login 해서 사용하지 못한다는 의미입니다.
+
+계속 해서 무료 계정으로 thingplus service를 이용하고 싶으시다면, [여기](https://trial.sandbox.thingplus.net/#/register) 에서 가입후에 장비를 재등록 하시고 사용해주십시요.
+
+`iot.thingplus.net`에서 사용했던 장비의 data는 이전 되지 않습니다.
+
+<br>
+무료 계정의 경우, 3개월간 2개 게이트웨이 20개 센서에 대해 사용이 보장되며, 3개월 후에는 삭제 될 수도 있음을 알려드립니다.
+
+반드시 삭제 되는 것이 아니라, 서비스 운용상 필요하다고 판단 되었을때, 가입후 3개월 이상인 계정중 오래된 계정 부터 삭제 되게 됩니다.
+
+3개월 이후 안정적으로 사용하기 위해서는 유료 계정으로 전환할 수 있습니다.
+
+<br>
+무료 계정에 대한 약관의 내용은 다음과 같습니다.
+
+1. 기존과 동일하게 2개 게이트웨이, 20개 센서, 5개 룰을 사용할 수 있습니다.
+2. 사용기한을 90일로 합니다.
+3. 데이터 전송주기는 5분 권장, 최소 1분으로 합니다.
+4. API나 mqtt를 비정상적으로 사용하면 해당 token이나 gatewayKey를  고지없이 비활성화 할 수 있습니다.
+5. rule의 action으로 email을 사용할 경우 월 200개가 초과하면 고지없이 해당 rule이 disable 될 수 있습니다.
+6. 수신이 되지 않는 이메일 계정으로 규칙을 연동했을경우 고지없이 규칙을 비활성화 할수 있습니다.
+
+[이용약관](https://trial.sandbox.thingplus.net/#/about/terms)의 12조 7항을 참조해주세요.
+
+<br>
+
+계속해서 관심과 이용 부탁드립니다.
+
+<br>
+
+감사합니다.
 
 <br>
 <br>

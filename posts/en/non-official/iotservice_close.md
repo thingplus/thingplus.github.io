@@ -5,7 +5,7 @@ permalink: en/notifRelatediotService.html
 ---
 
 
->1st Email
+>1st Email (26.July, GMT+9, KST)
 
 Hi,
 
@@ -53,7 +53,7 @@ Thank you.
 
 ---
 
->2nd email
+>2nd email (2.August, GMT+9, KST)
 
 Hi,
 This is Daliworks (Thing+)
@@ -68,7 +68,56 @@ If you would like to delete your account, please reply with your account ID and 
 
 Thanks.
 
+---
 
+
+> 3rd Email (14.August, GMT+9, KST)
+
+Hello,
+
+This is the Thing+ dev team.
+
+<br>
+
+`iot.thingplus.net` was closed today.
+
+<br>
+
+This means that you can no longer login and use iot.thingplus.net.
+
+If you would like to continue to use Thing+ with a free account, please register a new account and re-register your devices at the following [link](https://trial.sandbox.thingplus.net/#/register)
+
+The data of the devices used in previous iot.thingplus.net services has not been transferred.
+
+<br>
+
+Free accounts on the new Thing+ Trial Sandbox are allowed to use up to 20 sensors and 2 gateways free for up to 3 months.
+
+After this period, you may upgrade to a paid commercial account.
+
+Please note that trial accounts which have gone over this three month limit will not be accessible after that time period.
+
+<br>
+
+Please see more details below:
+
+1. You may use up to 2 gateways, 20 sensors, and 5 rules for free as before.
+2. The maximum period of use is 90 days.
+3. Data transmission cycles on sensors and other data sources4. If you use our API or MQTT abnormally, we reserve the right to disable your token or gateway key without notification.
+5. If you use email as the action of a rule, there is a limit of 200 emails sent per month. If you exceed this limit, the rule will stop functioning.
+6. Rules will be deactivated without notification if a black-listed, or non-existent email address is set as the destination of your rules. We also enforce anti-spam measures and reserve the right to immediately terminate your trial account if misused.
+
+<br>
+
+Please refer to Section 12.7 of [the Terms and Conditions](https://trial.sandbox.thingplus.net/#/about/terms)
+
+<br>
+
+If you have any questions or feedback, please feel free to directly reply to this email.
+
+<br>
+
+Thank you for your continued interest in our platform.
 
 
 <br>
