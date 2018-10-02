@@ -28,6 +28,7 @@ permalink: /en/thingplusgw.html
 ### Test data push on thingplus using thingplus gateway
 > This guide is only shared with companies that have an MOU with daliworks.
 
+- we recommend node v0.10.29
 - I will try to test at `https://trial.sandbox.thingplus.net/`. So my test host name is sandbox.
 
 - Download thingplus library file
@@ -45,31 +46,31 @@ tar -xvzf general-linux-v0.0.3.1.tgz
 
 - Open `runtime.json` and Edit as the following
   - In case of sandbox
-```json
-{
-  "Server": {
-    "mqtt": {
-       "host": "mqtt.sandbox.thingplus.net"
-    },
-    "service": {
-       "host": "api.sandbox.thingplus.net"
+  ```json
+    {
+      "Server": {
+        "mqtt": {
+          "host": "mqtt.sandbox.thingplus.net"
+        },
+        "service": {
+          "host": "api.sandbox.thingplus.net"
+        }
+      }
     }
-  }
-}
 ```
   - In case of commercial
-```json
-{
-  "Server": {
-    "mqtt": {
-       "host": "mqtt.thingplus.net"
-    },
-    "service": {
-       "host": "api.thingplus.net"
+  ```json
+    {
+      "Server": {
+        "mqtt": {
+          "host": "mqtt.thingplus.net"
+        },
+        "service": {
+          "host": "api.thingplus.net"
+        }
+      }
     }
-  }
-}
-```
+  ```
 
 - You should be get `APIKEY` at `thingplus portal`
   - Settings > Gateway Management > click `+` button > Request For Gateway Certificates Or API Key
