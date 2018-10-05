@@ -8,11 +8,11 @@ permalink: /en/thingplusgw.html
 
 ### What is meant by "Host Name"?
 
-- You can see it in the url of the "thingplus" service you have access to.
+- You can see it in the url of the "`thingplus`" service you have access to.
 - The "service code" is the same as the service's sub-domain (XXXX.website.com, where XXXX is the sub-domain).
 - The "domain" your service is running on is very important. This is related to the mqtt host and api hostname you will use (if using our API).
-  - If you can see "sandbox.thingplus.net", that service is running on our "sandbox" domain, for example
-  - If just you see only "thingplus.net", that service is on our "commercial" domain, located in the Tokyo region (additional regions are also available)
+  - If you can see "`sandbox.thingplus.net`", that service is running on our "`sandbox`" domain, for example
+  - If just you see only "`thingplus.net`", that service is on our "`commercial`" domain, located in the Tokyo region (additional regions are also available)
 
 ![](/assets/hostname.png)
 
