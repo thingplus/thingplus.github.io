@@ -141,7 +141,7 @@ To prevent such confusion, I changed the getmac script to getGatewayId. I'm goin
 <p class="dwfqExpand" id = "faq_contact"> Contact us</p>
 
 - If you want to use the service for commercial use, please send an e-mail to `biz@daliworks.net`
-- If you have any questions, please refer to [Inquiry guide](../inquiryGuide.html) and please send email to `support@thingplus.net`.
+- If you have any questions, please refer to [Inquiry guide](../InquiryGuide.html) and please send email to `support@thingplus.net`.
 
 
 <p class="dwfqExpand2"></p>
