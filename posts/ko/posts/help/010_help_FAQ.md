@@ -143,7 +143,7 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
 <p class="dwfqExpand" id = "faq_contact"> 문의 하기</p>
 
 - 상용으로 서비스를 사용하고 싶으시면 `biz@daliworks.net` 으로 메일을 주세요
-- 하드웨어 연동 관련해서 문의가 있으시다면, [Inquiry guide](../inquiryguide.html)을 참고하셔서 `support@thingplus.net` 로 메일을 주세요.
+- 하드웨어 연동 관련해서 문의가 있으시다면, [Inquiry guide](../inquiryGuide.html)을 참고하셔서 `support@thingplus.net` 로 메일을 주세요.
 
 
 
