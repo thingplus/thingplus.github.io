@@ -141,13 +141,8 @@ To prevent such confusion, I changed the getmac script to getGatewayId. I'm goin
 <p class="dwfqExpand" id = "faq_contact"> Contact us</p>
 
 - If you want to use the service for commercial use, please send an e-mail to `biz@daliworks.net`
-- If you have any inquiry about hardware integration, please send an e-mail to `contact@thingplus.net` OR please use intercom inquiry by clicking on the icon at the bottom right after login from sandbox.thingplus.net.
+- If you have any questions, please refer to [Inquiry guide](../inquiryguide.html) and please send email to `support@thingplus.net`.
 
-- Inquiry Please include the following information.
-  - company (or student)
-  - What would you like to do with the thingplus service?
-  - Information about the Devivce and sensors you plan to use
-  - Inquiry contents
 
 <p class="dwfqExpand2"></p>
 

@@ -8,7 +8,7 @@ permalink: /ko/InquiryGuide.html
 신속하고 정확한 답변을 위해 문의 하기 전 참고할 수 있는 가이드입니다.
 
 1. [문의하기](#id-inquiry)
-2. [문제 발생시 확인사항](#id-check) 
+2. [문제 발생시 확인사항](#id-check)
 3. [자주 묻는 질문](#id-faq)
 
 ---
@@ -25,21 +25,29 @@ __`HELP`의 [자주 묻는 질문](http://support.thingplus.net/ko/help/faq.html
 신속하고 정확한 답변을 위해 문의사항 양식에 맞춰 문의해주시기 바랍니다.
 <br>
 * 상용 서비스 관련 문의는`biz@daliworks.net` 으로 메일을 주세요.
-* 하드웨어 연동 관련해서 문의가 있으시다면, `contact@thingplus.net` 로 메일을 주시거나, thingplus.net 에서 로그인 후 우측 하단에 보이는 icon을 눌러서 intercom 문의를 해주세요.
+* 하드웨어 연동 관련해서 문의가 있으시다면, `support@thingplus.net` 로 메일을 주세요.
 
 * 문의를 주실 때는 아래 내용을 포함 해서 문의 부탁드립니다.
+* 아래 내용과 문제 상황의 log, screenshot 등을 첨부해주셔야 빠르고 정확한 답변을 드릴 수 있습니다.
+* 답변은 가급적 빨리 드릴것이고 담당자 부재시 최대 7일까지 늦어질 수 있습니다.
 
 <div id='id-inquirytable'></div>
 #### 문의사항 양식
 
-|      `작성목록`       |                         `작성 내용`                         
+|      `작성목록`       |                         `작성 내용`
 | ---------------- | :-----------------------------------------------------------------------------:
 | 소속            | `ex) 개발자(회사명), 학생`
 | Thing+와 연동하는 목적         | `ex) 개발(POC), 교육, 스터디, 신규서비스 런칭 ...`
-| 사용할 하드웨어   | `ex) 라즈베리파이, 비글보드, 아두이노, 안드로이드, 센서시뮬레이터 ...` 
+| 사용할 하드웨어   | `ex) 라즈베리파이, 비글보드, 아두이노, 안드로이드, 센서시뮬레이터 ...`
 | 사용할 센서           | `ex) 온도센서, 습도센서, LED ...`
-| 소스코드 받은 출처    | `ex) support site, 개인적 요청으로 수령, 그 외 출처 ...` 
+| 소스코드 받은 출처    | `ex) support site, 개인적 요청으로 수령, 그 외 출처 ...`
 | 게이트웨이 버젼     | `ex) openhardware-pi-v0.4.4`
+| Thingplus url   | `ex) http://trial.sandbox.thingplus.net`
+| 게이트웨이 아이디    | `연동하시는(문제가 발생한) 게이트웨이 아이디`
+| 계정 정보         | `ex) ID: xxx, (PW :xxx , password는 공개 하실 수 있으시면 알려주세요.)`
+| 문제점 요약        | `ex) 장비 등록을 했는데 데이터가 올라오지 않습니다. log 첨부합니다`
+
+* `gateway log` , `screenshot`
 
 <br>
 
@@ -70,7 +78,7 @@ __`HELP`의 [자주 묻는 질문](http://support.thingplus.net/ko/help/faq.html
 * 센서 디바이스
 
   ```
-  #./thingplus_device.sh 를 실행했던 경로로 이동 
+  #./thingplus_device.sh 를 실행했던 경로로 이동
   $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ //ex)라즈베리파이
   $ ./thingplus_device.sh status //running이 아닌 경우 restart
   $ ./thingplus_device.sh restart
@@ -95,7 +103,7 @@ __`HELP`의 [자주 묻는 질문](http://support.thingplus.net/ko/help/faq.html
 * 센서 디바이스 로그
 
   ```
-  #./thingplus_device.sh 를 실행했던 경로로 이동 
+  #./thingplus_device.sh 를 실행했던 경로로 이동
   $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ //ex)라즈베리파이
   $ tail -f -n 500 log/thingplus_device.log
   ```
@@ -105,6 +113,11 @@ __`HELP`의 [자주 묻는 질문](http://support.thingplus.net/ko/help/faq.html
 ---
 <div id='id-faq'></div>
 
+### MQTT guide
+* Thingplus는 data의 전송은 MQTT를 권장합니다.
+* API를 이용한 HTTPS 도 가능하지만 지양합니다.
+* 장비 없이 device에서 직접 데이터를 전송해서 테스트를 해보고자 하시면 [MQTT guide](../en/mqttguide.html)를 참고 하세요.
+
 ### 자주 묻는 질문
 자주 묻는 질문입니다. 해당사항에 포함되는 경우 확인해보시길 바랍니다.
 
@@ -112,7 +125,8 @@ __`HELP`의 [자주 묻는 질문](http://support.thingplus.net/ko/help/faq.html
 
 #### 게이트웨이 등록시 400 error 또는 409 error
 * 사용하려는 게이트웨이가 다른 서비스에서 이미 등록되어 있는 상태일 수 있습니다.
-* 이미 등록되어 있는 게이트웨이를 삭제 후 다시 등록하여야 합니다. [문의사항 양식](#id-inquirytable)과 함께 `게이트웨이 아이디`를 포함하여 Intercom으로 문의해주시면 확인 후 답변을 드릴 수 있습니다.
+* 이미 등록되어 있는 게이트웨이를 삭제 후 다시 등록하여야 합니다.
+* [문의사항 양식](#id-inquirytable)과 함께 `게이트웨이 아이디`를 포함하여 이메일문의(`support@daliworks.net`) 주시면 답변을 드리겠습니다.
 
 <br>
 
@@ -137,7 +151,7 @@ __`HELP`의 [자주 묻는 질문](http://support.thingplus.net/ko/help/faq.html
    ...
 
   ```
-* copy and paste를 했다면 문제가 없을 텐데 직접 typing 하신 경우 소문자`ㅣ` 과 대문자 `I` 가 혼동 될 수 있습니다.  
+* copy and paste를 했다면 문제가 없을 텐데 직접 typing 하신 경우 소문자`ㅣ` 과 대문자 `I` 가 혼동 될 수 있습니다.
 
 
 

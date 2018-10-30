@@ -143,13 +143,8 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
 <p class="dwfqExpand" id = "faq_contact"> 문의 하기</p>
 
 - 상용으로 서비스를 사용하고 싶으시면 `biz@daliworks.net` 으로 메일을 주세요
-- 하드웨어 연동 관련해서 문의가 있으시다면, `contact@thingplus.net` 로 메일을 주시거나, thingplus.net 에서 로그인후 우측 하단에 보이는 icon을 눌러서 intercom 문의를 해주세요.
+- 하드웨어 연동 관련해서 문의가 있으시다면, [Inquiry guide](../inquiryguide.html)을 참고하셔서 `support@thingplus.net` 로 메일을 주세요.
 
-- 문의를 주실 때는 아래 내용을 포함 해서 문의 부탁드립니다.
-  - 소속(company, 학생)
-  - thingplus와 연동하려는 목적
-  - 사용하려고하는 장비와 센서의 정보
-  - 문의 내용
 
 
 <p class="dwfqExpand2"></p>

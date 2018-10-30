@@ -25,9 +25,11 @@ __You can find more examples in [FAQ](http://support.thingplus.net/en/help/faq.h
 Please contact us with your inquiry form for a quick and accurate answer.
 <br>
 * For commercial service inquiries, please send an e-mail to `biz@daliworks.net`.
-* If you have any inquiries regarding hardware interlock, please send an e-mail to `contact@thingplus.net` or intercom inquiry by clicking on the icon at the bottom right after login from sandbox.thingplus.net.
+* If you have any inquiries regarding hardware interlock, please send an e-mail to `support@thingplus.net`.
 
 * Please contact us with the following information.
+* When sending e-mail with the following contents, please attach log, screenshot, etc. of problem situation to get quick and accurate answer.
+* We will be given the answer as soon as possible and it may be delayed up to 7 days when there is no in charge of person..
 
 <div id='id-inquirytable'></div>
 #### Inquiry form
@@ -39,7 +41,13 @@ Please contact us with your inquiry form for a quick and accurate answer.
 | Hardware to use   | `ex) RaspberryPi, Beagleboard, Arduino, Android, SensorSimulator ...`
 | Sensors to use           | `ex) temperature, humidty, LED ...`
 | Source Code Received Path    | `ex) support site, It received a personal request, Other routes ...`
+| Thingplus url         |    `ex) http://trial.sandbox.thingplus.net`
+| Account information         | `ex) ID: xxx, (PW :xxx , password is not mandatory)`
+| Qustions        | `ex) I registered the device, but the data does not come up. I attached log`
 | Gateway version    | `ex) openhardware-pi-v0.4.4`
+
+
+* `gateway log` , `screenshot`
 
 <br>
 
@@ -105,6 +113,12 @@ If you can not find the cause after checking the checklist below, please send us
 ---
 <div id='id-faq'></div>
 
+### MQTT guide
+* Thingplus recommends MQTT for data transmission.
+* For data transmission, HTTPS using API is possible, but it is not recommended.
+* If you want to send data directly from device without equipment, please refer to [MQTT guide](../en/mqttguide.html).
+
+
 ### FAQ
 This is a frequently asked question. Please check if it is included.
 
@@ -112,7 +126,8 @@ This is a frequently asked question. Please check if it is included.
 
 #### 400 error or 409 error when registering gateway
 * The gateway you are trying to use may already be registered with another service.
-* You must delete the registered gateway and register it again. Please contact us with your [inquiry form](#id-inquirytable), including your `gateway ID`, to Intercom.
+* You must delete the registered gateway and register it again.
+
 
 <br>
 
@@ -141,7 +156,13 @@ This is a frequently asked question. Please check if it is included.
 
 
 
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-arrow-circle-up"></i></div>
+</div>
 
+<br/>
+<br/>
+<br/>
 
 
 
