@@ -152,7 +152,7 @@ If you want to use the API KEY over 30 days, please extend the valid duration be
 
 3) config setting
 - open **_LibraryPath_/Thingplus/src/Thingplus.cpp** and modify as the following.(at line: 230)
-  - `mqtt.thingplus.net` -> `mqtt.sandbox.thingplus.net`
+  - `dmqtt.thingplus.net` -> `mqtt.sandbox.thingplus.net`
 
 ```c++
 void ThingplusClass::begin(Client& client, byte mac[], const char *apikey) {
