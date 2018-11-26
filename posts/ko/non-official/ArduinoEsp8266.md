@@ -142,7 +142,7 @@ permalink: /ko/esp8266.html
 
 ```c++
 void ThingplusClass::begin(Client& client, byte mac[], const char *apikey) {
-	const char *server = "dmqtt.sandbox.thingplus.net";
+	const char *server = "mqtt.sandbox.thingplus.net";
 	const int port = 1883;
 
 	this->mac = mac;

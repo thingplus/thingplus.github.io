@@ -145,7 +145,7 @@ Thing+ 연동가이드(비글본에어)
 {
   "Server": {
     "mqtt": {
-      "host": "dmqtt.sandbox.thingplus.net"
+      "host": "mqtt.sandbox.thingplus.net"
     },
     "service": {
       "host": "api.sandbox.thingplus.net"

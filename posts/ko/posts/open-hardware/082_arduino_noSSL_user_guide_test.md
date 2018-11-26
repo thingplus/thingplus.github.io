@@ -190,11 +190,11 @@ Arduino None SSL 버전 사용을 위한 API KEY는 30일 사용가능한 key이
 
 3) config 설정
 - **_LibraryPath_/Thingplus/src/Thingplus.cpp** 파일을 아래와 같이 수정합니다..(at line: 230)
-  - `dmqtt.thingplus.net` -> `mqtt.sandbox.thingplus.net`
+  - `mqtt.thingplus.net` -> `mqtt.sandbox.thingplus.net`
 
 ```c++
 void ThingplusClass::begin(Client& client, byte mac[], const char *apikey) {
-	const char *server = "dmqtt.sandbox.thingplus.net";
+	const char *server = "mqtt.sandbox.thingplus.net";
 	const int port = 1883;
 
 	this->mac = mac;

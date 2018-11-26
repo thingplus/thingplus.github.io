@@ -140,7 +140,7 @@ Reference : [Install arduino firmware](/ko/open-hardware/arduino-noSSL-user-guid
 
 ```c++
 void ThingplusClass::begin(Client& client, byte mac[], const char *apikey) {
-	const char *server = "dmqtt.sandbox.thingplus.net";
+	const char *server = "mqtt.sandbox.thingplus.net";
 	const int port = 1883;
 
 	this->mac = mac;

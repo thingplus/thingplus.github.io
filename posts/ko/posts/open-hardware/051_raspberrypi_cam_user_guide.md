@@ -229,7 +229,7 @@ ___이 가이드는 Raspberry pi와 Camera 모듈을 연동한 IOT 사용 가이
 {
   "Server": {
     "mqtt": {
-      "host": "dmqtt.sandbox.thingplus.net"
+      "host": "mqtt.sandbox.thingplus.net"
     },
     "service": {
       "host": "api.sandbox.thingplus.net"

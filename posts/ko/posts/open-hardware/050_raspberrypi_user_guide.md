@@ -243,7 +243,7 @@ Thing+ 연동가이드(라즈베리파이)
 {
   "Server": {
     "mqtt": {
-      "host": "dmqtt.sandbox.thingplus.net"
+      "host": "mqtt.sandbox.thingplus.net"
     },
     "service": {
       "host": "api.sandbox.thingplus.net"

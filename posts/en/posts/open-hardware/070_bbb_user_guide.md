@@ -164,7 +164,7 @@ Thing+ Integration Guide for BeagleBone Green
 {
   "Server": {
     "mqtt": {
-      "host": "dmqtt.sandbox.thingplus.net"
+      "host": "mqtt.sandbox.thingplus.net"
     },
     "service": {
       "host": "api.sandbox.thingplus.net"

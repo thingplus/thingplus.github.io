@@ -241,7 +241,7 @@ Thing+ Integragtion Guide for Raspberry Pi
 {
   "Server": {
     "mqtt": {
-      "host": "dmqtt.sandbox.thingplus.net"
+      "host": "mqtt.sandbox.thingplus.net"
     },
     "service": {
       "host": "api.sandbox.thingplus.net"
