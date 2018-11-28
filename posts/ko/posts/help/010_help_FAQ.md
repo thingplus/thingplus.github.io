@@ -174,11 +174,37 @@ UUID나 IMEI등, 단말이 unique 한 구분이 가능하다면 id로 사용할�
   $ tail -f -n 300 log/thingplus.log
   ```
 
-- 센서 디바이스 로그
+- 디바이스 로그의 위치는 아래에서 확인하시면 됩니다.
 
   ```
-  #./thingplus_device.sh 를 실행했던 경로로 이동
-  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ 동
+  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+  $ vi logger_cfg.json
+  ```
+
+  ```json
+  {
+    "levels": {
+      "Main":   "INFO",
+      "Sensor": "INFO"
+    },
+    "replaceConsole": true,
+    "appenders": [
+      {
+        "type": "file",
+        "filename": "thingplus_device.log",
+        "maxLogSize": 524288,
+        "backups": 10
+      }
+    ]
+  }
+  ```
+- 센서 디바이스 로그
+
+  - `./thingplus_device.sh` 를 실행했던 경로로 이동
+  - 위에서 확인한 `filename` 으로 open.
+
+  ```
+  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/
   $ tail -f -n 300 log/thingplus_device.log
   ```
 

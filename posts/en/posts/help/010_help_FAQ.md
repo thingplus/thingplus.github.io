@@ -170,12 +170,38 @@ If you use ESP8266 as a WIFI module and want to connect Arduino as a gateway, pl
   $ cd /opt/thingplus/gateway/
   $ tail -f -n 300 log/thingplus.log
   ```
+- Check the path of the `device log` below.
+
+  ```
+  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit
+  $ vi logger_cfg.json
+  ```
+
+  ```json
+  {
+    "levels": {
+      "Main":   "INFO",
+      "Sensor": "INFO"
+    },
+    "replaceConsole": true,
+    "appenders": [
+      {
+        "type": "file",
+        "filename": "thingplus_device.log",
+        "maxLogSize": 524288,
+        "backups": 10
+      }
+    ]
+  }
+  ```
 
 - Sensor device log
 
+  - Navigate to the path where you ran `./thingplus_device.sh`
+  - Open with `filename` you checked at above.
+
   ```
-  # Navigate to the path where you ran ./thingplus_device.sh
-  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/ 동
+  $ cd /opt/thingplus/openhardware/raspberrypi/grovePi-starter-kit/
   $ tail -f -n 300 log/thingplus_device.log
   ```
 
@@ -203,7 +229,7 @@ If you use ESP8266 as a WIFI module and want to connect Arduino as a gateway, pl
   # cat /opt/thingplus/gateway/VERSION
   ```
 
-  - ***The current version is currently 0.4.2.***
+  - **The current version is currently 0.4.2.**
 
     - In versions below v0.4.2, download the update script from the following path and execute it.
 

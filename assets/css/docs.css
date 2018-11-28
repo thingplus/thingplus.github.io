@@ -188,7 +188,7 @@ a, a:visited {
 }
 
 @media (max-width: 768px) {
-  
+
   body {
     padding-top: 50px;
   }
@@ -338,7 +338,7 @@ ul#sidebar {
 }
 
 
-.ledtip { font:Verdana, Geneva, sans-serif; font-size:12px; font-weight:bold; color:#666; position:relative;  
+.ledtip { font:Verdana, Geneva, sans-serif; font-size:12px; font-weight:bold; color:#666; position:relative;
 
 
 }
@@ -350,35 +350,35 @@ ul#sidebar {
 
  background-image: url('/../assets/led.png');
  display:block;
- position:relative; top:20px; 
+ position:relative; top:20px;
  white-space:nowrap;
 }
 ledtip:hover:before{
  display:block;
  content:"";
  position:absolute; top:15px; left:50px;
- border-right:10px solid transparent; 
- border-bottom:10px solid #333; 
- border-left:10px solid transparent;  
+ border-right:10px solid transparent;
+ border-bottom:10px solid #333;
+ border-left:10px solid transparent;
 }
 
 /*chris*/
 
 
 p.dwExpand {
-  color:#000000; 
+  color:#000000;
   /*background-color:#f9f2f4; */
-  background-color:#e0e8f3; 
-  border-radius:4px; 
+  background-color:#e0e8f3;
+  border-radius:4px;
   padding: 2px 4px;
-  padding-left: 26px; 
-  font-size: 90%; 
+  padding-left: 26px;
+  font-size: 90%;
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
 }
 
 .dwExpand.ui-closed:before {
   /*font-family:monospace;*/
-  position: absolute; 
+  position: absolute;
   right: 50px;
   padding-left: 30px;
   font-family: FontAwesome;
@@ -387,7 +387,7 @@ p.dwExpand {
 }
 .dwExpand.ui-open:before {
   /*font-family:monospace;*/
-  position: absolute; 
+  position: absolute;
   right: 50px;
   padding-left: 30px;
   font-family: FontAwesome;
@@ -398,14 +398,14 @@ p.dwExpand {
 /*FAQ*/
 
 p.dwfqExpand {
-  color:#000000; 
+  color:#000000;
   /*background-color:#f9f2f4; */
   /*background-color:#e0e8f3; */
   /*border-radius:4px; */
   height: auto;
   padding: 2px 4px;
   /*padding-left: 26px; */
-  font-size: 100%;  
+  font-size: 100%;
   font-family: Menlo,Monaco,Consolas,Courier New,monospace;
 
 }
@@ -424,7 +424,7 @@ p.dwfqExpand b {
     word-break: break-all;
     word-wrap: break-word;
     margin-right: 5px;
-    background-color: rgb(236, 246, 251); 
+    background-color: rgb(236, 246, 251);
     /*rgba(242, 222, 222, 0.52);*/
     border: 1px solid #f2dede;
     border-radius: 4px;
@@ -447,7 +447,7 @@ p.dwfqExpand b {
   /*border-bottom-style: solid;
   border-bottom-width: thin;
   border-bottom-color: #eeeeee;*/
-  font-weight: bolder; 
+  font-weight: bolder;
 }
 .dwfqExpand.ui-closed.line {
   border-bottom-style: dotted;
@@ -465,7 +465,7 @@ p.dwfqExpand b {
   font-size:14px;
   color:#979797;
   content:"\f054 ";
-  
+
 }
 
 .dwfqExpand.ui-open:before {
@@ -498,7 +498,7 @@ p.dwfqExpand b {
   padding: .35em;
 }
 .videotable tr:nth-child(even) {
-  background: #f8f8f8;  
+  background: #f8f8f8;
 }
 .videotable th,
 .videotable td {
@@ -562,7 +562,7 @@ a.back-to-top {
   margin:0 auto;
   position:fixed;
   bottom:20px;
-  right:10px; 
+  right:10px;
 }
 .scroll {
   position:absolute;
@@ -575,13 +575,13 @@ a.back-to-top {
   transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;    
+  -o-transition: 0.5s;
 }
 .scroll:hover {
   transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;    
+  -o-transition: 0.5s;
 }
 .scroll:hover .fa {
   padding-top:-10px;
@@ -593,7 +593,7 @@ a.back-to-top {
   transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;  
+  -o-transition: 0.5s;
 }
 
 /*regisgter window*/
@@ -605,7 +605,7 @@ a.back-to-top {
   border-bottom-color: #d8d8d8;
   border-right: none;
   border-left: none;
-  font-family: 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
   font-size: 14px;
   /*font-weight: bold;*/
   border-width: 1px;
@@ -621,9 +621,9 @@ a.back-to-top {
   /*width: 214px;*/
   height: 44px;
   background-color: #ffc107;
-  font-family: 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
   font-size: 16px;
-  font-weight:bolder; 
+  font-weight:bolder;
   color: #333333;
   text-decoration: bold;
   cursor: pointer;
@@ -636,7 +636,7 @@ a.back-to-top {
   /*position: fixed;
   margin-top: 730px;*/
   margin-top: 10px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .dweqtable{
@@ -650,7 +650,7 @@ a.back-to-top {
   height: 24px;
   background-color: #88C6EA;
   color: #FFFFFF;
-  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
   font-size: 14px;
 }
 .release-tag {
@@ -658,21 +658,21 @@ a.back-to-top {
   width: 90px;
   border: 1px solid #D9D9D9;
   background-color: #F2F2F2;
-  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
   color : #4287BD;
 }
 .release-title {
   height: 16px;
   width: 197px;
   color: #4287BD;
-  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
   font-size: 14px;
 }
 .release-date {
   height: 11px;
   width: 76px;
   color: #424242;
-  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
   font-size: 14px;
 }
 
@@ -682,7 +682,7 @@ a.back-to-top {
 .release-table > thead > tr > th{
   height: 41px;
   background-color: #F7F7F7;
-  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
   color: #787878;
 }
 
@@ -690,7 +690,7 @@ a.back-to-top {
   background-color: #FFFFFF;
   border-bottom: 1px solid #dedede;
   line-height: 2;
-  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif'; 
+  font-family: 'Noto Sans CJK KR', 'Spoqa Han Sans', 'SpoqaHanSans-kr', 'Sans-serif';
 }
 
 .release-table td:nth-of-type(1) {
@@ -717,7 +717,6 @@ a.back-to-top {
 }
 /*chris added*/
 .highlight .hll { background-color: #404040 }
-.highlight  { background: #202020; color: #d0d0d0 }
 .highlight .c { color: #999999; font-style: italic } /* Comment */
 /*.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .g { color: #d0d0d0 } /* Generic */
